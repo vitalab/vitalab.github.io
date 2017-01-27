@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Welcome to the Literature Review site of the [Videos & Images Theory and Analytics Laboratory (VITAL) of Sherbrooke University](http://vital.dinf.usherbrooke.ca/), headed by Professor Pierre-Marc Jodoin. This lab focuses on researching state of the art algorithms in image processing, computer vision, video analytics, medical imaging and statistical models. If you’d be interested in collaborating with us, do not hesitate to [contact us](http://vital.dinf.usherbrooke.ca/contact/)!
