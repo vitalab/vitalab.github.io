@@ -3,18 +3,32 @@ layout: page
 title: Tags
 permalink: /tags/
 ---
-<ul>
+<style>
+    .taglist
+    {
+        display: none;
+        margin-left: 50px;
+    }
+    input[type=checkbox] {
+        float: left;
+        margin-top: 1.4em;
+        margin-right: 0.5em;
+    }
+    input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+</style>
 {% for tag in site.tags %}
-  <li>{{ tag | first }}</a>
-    <ul>
+<div>
+<input type="checkbox" id="{{ tag | first }}"><h2><label for="{{ tag | first }}">{{ tag | first }}</label></h2>
+<ul class="taglist">
     {% for posts in tag %}
-      {% for post in posts %}
-      	{% if post.url %}
-        	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+        {% for post in posts %}
+            {% if post.url %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
-    </ul>
-  </li>
-{% endfor %}
 </ul>
+</div>
+{% endfor %}
