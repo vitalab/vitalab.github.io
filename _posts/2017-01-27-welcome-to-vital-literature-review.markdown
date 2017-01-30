@@ -20,6 +20,8 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
     ---
     layout: review
     title:  Title of your Review
+    author: Your name
+    link:   http://link.to.the.paper.com
     tags:   convolutional-networks deep-learning  # put relevant tags here
     ---
     
