@@ -35,7 +35,7 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
 
 This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all the markdown files and generates a static html website.
 
-1.  [Install Ruby using rbenv](/how-to-install-ruby).
+1.  [Install Ruby using rbenv](/how-to-install-ruby). Don't use `apt-get` since its version of Ruby is too old.
 2.  Install Jekyll by running : `gem install bundler jekyll`.
 3.  Go where you cloned the repo and run : `bundle install`. This will install the dependencies for our Jekyll site.
 4.  Run a local webserver using : `bundle exec jekyll serve`.
