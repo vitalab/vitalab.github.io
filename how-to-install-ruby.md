@@ -16,6 +16,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 ## Get rbenv
 In the following instructions, replace `.bashrc` by `.profile` or `.bash_profile` if you know what you're doing.
+
 ~~~
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
@@ -36,10 +37,12 @@ rbenv install -v 2.4.0  # Replace by the latest version of Ruby
 rbenv global 2.4.0
 ~~~
 Make sure you have the right version installed and selected :
+
 ~~~
 ruby -v
 ~~~
 It is likely that you will not want Rubygems to generate local documentation for each gem that you install, as this process can be lengthy. To disable this, run :
+
 ~~~
 echo "gem: --no-document" > ~/.gemrc
 ~~~
