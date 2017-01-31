@@ -7,14 +7,15 @@ permalink: /welcome-how-to/
 
 ## Goal of this website
 
-The goal of this website is to collaborate by helping each other stay up to date with new advances. It will also help people that are new to the field to acquire essential knowledge about the state of the art.
+The goal of this website is to collaborate by helping each other stay up to date with new advances. It will also help people that are new to the field to acquire essential knowledge about the state of the art. On this site, you'll find all the essential papers the VITALab members should be aware of.
 
 ## How to add a review
 
 The process for adding reviews is _git-centric_. Basically, **you just need to add a file to the repo and make a pull request**. Let's go into the details :
 
 1. Clone [the `vitalab.github.io` repo](https://github.com/vitalab/vitalab.github.io) on your computer.
-2. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in the folder `/_posts`. `name-of-your-review` can be the title of the paper, for example. **The format is important, the name of the file must begin by the date of creation of your review.**
+2. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in the folder `/_posts`.  
+**You must use this format : date at the beginning and no spaces.** Else the page won't be built. A valid name would be : `2017-01-31-going-deeper-with-convolutions.markdown`.
 3.  Copy this template in your new file :  
     ``` markdown
     ---
@@ -42,4 +43,4 @@ This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all 
 3.  Go where you cloned the repo and run : `bundle install`. This will install the dependencies for our Jekyll site.
 4.  Run a local webserver using : `bundle exec jekyll serve`.
 
-Note that the site is automatically rebuilt when you make changes to a file.
+Note that the site is automatically rebuilt when change a file.

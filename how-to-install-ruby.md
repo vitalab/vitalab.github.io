@@ -15,6 +15,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 ~~~
 
 ## Get rbenv
+In the following instructions, replace `.bashrc` by `.profile` or `.bash_profile` if you know what you're doing.
 ~~~
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
