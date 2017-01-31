@@ -21,15 +21,15 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
 
 1. Clone [the `vitalab.github.io` repo](https://github.com/vitalab/vitalab.github.io) on your computer.
 2. Determine the category in which you will add your post. Categories are managed using folders :  
-    
-    ```
+
+    ~~~
     _posts/           # A post added here will have no category
     course/
-        _posts/       # A post added here will be in the `course` category
+        _posts/       # A post added here will be in the "course" category
     machine-learning/
-        _posts/       # Same thing for the `machine-learning` category
+        _posts/       # Same thing for the "machine-learning" category
     ...               # There are other categories, you can add one too.
-    ```
+    ~~~
 3. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in right folder (see above).  
 **You must use this format : date at the beginning and no spaces.** Else the page won't be built. A valid name would be : `2017-01-31-going-deeper-with-convolutions.markdown`.
 4.  Copy this template in your new file :  
