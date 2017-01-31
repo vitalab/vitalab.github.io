@@ -5,6 +5,12 @@ date:      2017-01-27 12:18:56 -0500
 permalink: /welcome-how-to/
 ---
 
+<style>
+    li {
+        margin-bottom: 0.7rem; /* This will make the lists easier to read. */
+    }
+</style>
+
 ## Goal of this website
 
 The goal of this website is to collaborate by helping each other stay up to date with new advances. It will also help people that are new to the field to acquire essential knowledge about the state of the art. On this site, you'll find all the essential papers the VITALab members should be aware of.
@@ -14,9 +20,18 @@ The goal of this website is to collaborate by helping each other stay up to date
 The process for adding reviews is _git-centric_. Basically, **you just need to add a file to the repo and make a pull request**. Let's go into the details :
 
 1. Clone [the `vitalab.github.io` repo](https://github.com/vitalab/vitalab.github.io) on your computer.
-2. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in the folder `/_posts`.  
+2. Determine the category in which you will add your post. Categories are managed using folders :
+    ```
+    _posts/           # A post added here will have no category
+    course/
+        _posts/       # A post added here will be in the `course` category
+    machine-learning/
+        _posts/       # Same thing for the `machine-learning` category
+    ...               # There are other categories, you can add one too.
+    ```
+3. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in right folder (see above).  
 **You must use this format : date at the beginning and no spaces.** Else the page won't be built. A valid name would be : `2017-01-31-going-deeper-with-convolutions.markdown`.
-3.  Copy this template in your new file :  
+4.  Copy this template in your new file :  
     ``` markdown
     ---
     layout: review
@@ -29,10 +44,10 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
     Content of your review.
     ```
     You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.
-4.  **Make a new branch**, commit your file and push.
-5.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
-6.  **Add reviewers**: everybody that you think are knowledgeable about the subject or simply would be interested in your review.
-7.  When everybody is satisfied, **merge your branch and delete it**.
+5.  **Make a new branch**, commit your file and push.
+6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
+7.  **Add reviewers**: everybody that you think are knowledgeable about the subject or simply would be interested in your review.
+8.  When everybody is satisfied, **merge your branch and delete it**.
 
 ## Previewing your post locally
 
