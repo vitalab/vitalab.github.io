@@ -25,9 +25,9 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
     ~~~
     _posts/           # A post added here will have no category
     course/
-        _posts/       # A post added here will be in the "course" category
+    . . _posts/       # A post added here will be in the "course" category
     machine-learning/
-        _posts/       # Same thing for the "machine-learning" category
+    . . _posts/       # Same thing for the "machine-learning" category
     ...               # There are other categories, you can add one too.
     ~~~
 3. Create the file `YYYY-MM-DD-title-of-your-review.markdown` in right folder (see above).  
