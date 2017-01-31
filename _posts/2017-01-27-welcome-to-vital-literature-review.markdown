@@ -20,7 +20,7 @@ The goal of this website is to collaborate by helping each other stay up to date
 The process for adding reviews is _git-centric_. Basically, **you just need to add a file to the repo and make a pull request**. Let's go into the details :
 
 1. Clone [the `vitalab.github.io` repo](https://github.com/vitalab/vitalab.github.io) on your computer.
-2. Determine the category in which you will add your post. Categories are managed using folders :
+2. Determine the category in which you will add your post. Categories are managed using folders :  
     
     ```
     _posts/           # A post added here will have no category
