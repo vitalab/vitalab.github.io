@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
+title: Installing Ruby using rbenv
 hidden: true  # Excluded from the menu
 permalink: /how-to-install-ruby/
 ---
-
-# Installing Ruby using rbenv
 
 ## Install dependencies
 
