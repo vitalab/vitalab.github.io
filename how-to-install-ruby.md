@@ -1,5 +1,6 @@
 ---
 layout: default
+title: # Setting title to empty string will prevent from showing in the menu
 permalink: /how-to-install-ruby/
 ---
 
