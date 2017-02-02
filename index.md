@@ -1,7 +1,7 @@
 ---
 layout:     page
 title:      The Literature Review site of VITAL
-hidden:     true
+hidden:     true  # Excluded from the menu
 ---
 
 <style>
