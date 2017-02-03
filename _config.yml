@@ -18,7 +18,7 @@ title: VITAL Literature Review
 description: > # this means to ignore newlines until "baseurl:"
   You are on the Literature Review site of VITAL (Videos & Images Theory and Analytics Laboratory) of Sherbrooke University.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "vitalab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vitalab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
