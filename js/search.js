@@ -41,7 +41,6 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('category');
       this.field('content'); // SPEEDUP: Comment this to disable content indexing
       this.field('tags');
     });
@@ -51,7 +50,6 @@
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
-        'category': window.store[key].category,
         'tags': window.store[key].tags,
         'content': window.store[key].content
       });

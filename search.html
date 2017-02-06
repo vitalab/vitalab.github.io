@@ -1,9 +1,28 @@
 ---
 layout: default
+permalink: /search/
 ---
-<form action="/search.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
+<style>
+  ul#search-results {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  ul#search-results li {
+    margin-bottom: 30px;
+    list-style-type: none;
+  }
+  ul#search-results h3 {
+    margin-bottom: 0px;
+  }
+  input#search-box {
+    width: 400px;
+  }
+</style>
+
+<h1>Search</h1>
+
+<form action="{{ page.url }}" method="get">
+  <input type="text" id="search-box" name="query" placeholder="Title, author, content, tags">
   <input type="submit" value="search">
 </form>
 
@@ -15,7 +34,6 @@ layout: default
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
-        "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "tags": "{{ post.tags | join: ' ' }}",
         "url": "{{ post.url | xml_escape }}"
