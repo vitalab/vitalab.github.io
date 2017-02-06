@@ -1,3 +1,7 @@
+/*
+  Adapted from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
+*/
+
 (function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
