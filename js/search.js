@@ -46,7 +46,7 @@
       this.field('title', { boost: 10 });
       this.field('author');
       this.field('content'); // SPEEDUP: Comment this to disable content indexing
-      this.field('tags');
+      this.field('tags', { boost: 4 });
     });
 
     for (var key in window.store) { // Add the data to lunr
