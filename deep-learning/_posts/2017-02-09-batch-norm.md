@@ -6,8 +6,6 @@ link: /papers/batch-norm.pdf
 tags: deep-learning essentials regularization
 ---
 
-# What it is
-
 Batch Normalization (_Batch Norm_, BN) is a layer to be inserted in a deep neural network, to accelerate training.
 
 # Why use it
@@ -20,11 +18,31 @@ Training converges faster when the inputs of the network are whitened (linearly 
 
 # How it works
 
-**Why do we need to backprop through it ?**{: .phead} Consider a layer $$ x = u + b $$, where $$ b $$ is a learned bias. We normalize the result using the mean of the activation computed over the whole training data : $$ \hat{x} = x - E[x] $$. If a gradient descent step ignores the dependence of $$ E[x] $$ on $$ b $$, then it will update $$ b \leftarrow b + \Delta b $$, where $$ \Delta b \propto \partial \text{loss} / \partial \hat{x} $$. Then,
-  
-$$ u + (b + \Delta b) - E[u + (b + \Delta b)] = u + b - E[u + b] $$
+**Normalize each feature independently.**{: .phead} Consider a layer with $$ d $$-dimensional input $$ \bold{x} = (x^{(1)} \ldots x^{(d)}) $$. We normalize each dimension $$ k $$ like so :
 
-thus the normalization cancelled the effect of the update of $$ b $$. As training continues, $$ b $$ **will grow indefinitely while the loss remains constant**.
+$$ \hat{x}^{(k)} = \frac{x^{(k)} - \mathrm{E}[x^{(k)}]}{\sqrt{\mathrm{Var}[x^{(k)}]}} $$
+
+where the mean and variance are computed on the **mini-batch**.
+
+**Add an affine transform just after.**{: .phead} Only applying a normalization can reduce the representational power of the network. For example, a sigmoid would be constrained to its linear regime. Following the normalization by a learnable affine transform addresses this issue. The BN operation becomes :
+
+$$ y^{(k)} = \gamma^{(k)}\hat{x}^{(k)} + \beta^{(k)} $$
+
+Notice that if the parameters would learn the values $$ \gamma^{(k)} = \sqrt{\mathrm{Var}[x^{(k)}]} $$ and $$ \beta^{(k)} = \mathrm{E}[x^{(k)}] $$, we would recover the original activations, if that were the optimal thing to do.
+
+**Why do we need to backprop through it ?**{: .phead} Consider a layer $$ x = u + b $$, where $$ b $$ is a learned bias. We normalize the result using the mean of the activation computed over the whole training data : $$ \hat{x} = x - \mathrm{E}[x] $$. If a gradient descent step ignores the dependence of $$ \mathrm{E}[x] $$ on $$ b $$, then it will update $$ b \leftarrow b + \Delta b $$, where $$ \Delta b \propto \partial \text{loss} / \partial \hat{x} $$. Then,
+  
+$$ u + (b + \Delta b) - \mathrm{E}[u + (b + \Delta b)] = u + b - \mathrm{E}[u + b] $$
+
+thus the normalization cancelled the effect of the update of $$ b $$. As training continues, $$ b $$ **will grow indefinitely while the loss remains constant**. To address this, we must view the normalization as a transformation taking both the sample $$ \bold{x} $$ and the whole mini-batch $$ \mathcal{X} $$ :
+
+$$ \hat{x} = \mathrm{Norm}(\bold{x}, \mathcal{X}) $$
+
+This means that we need to compute two Jacobians :
+
+$$ \frac{\partial \mathrm{Norm}(\bold{x}, \mathcal{X})}{\partial \bold{x}} \qquad \frac{\partial \mathrm{Norm}(\bold{x}, \mathcal{X})}{\partial \mathcal{X}} $$
+
+The latter term allows us to consider the mini-batch statistics in the process of gradient descent, which in turn avoids the parameter explosion described above.
 
 # How to use it
 
