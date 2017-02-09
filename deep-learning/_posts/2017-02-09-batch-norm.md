@@ -1,9 +1,12 @@
 ---
 layout: review
-title: Batch Normalization
+title:  Batch Normalization
+tags:   deep-learning essentials regularization
 author: Carl Lemaire
-link: /papers/batch-norm.pdf
-tags: deep-learning essentials regularization
+pdf:    /papers/batch-norm.pdf
+cite:
+  - arXiv:1502.03167                  # link label
+  - https://arxiv.org/abs/1502.03167  # link url
 ---
 
 Batch Normalization (BN) is a layer to be inserted in a deep neural network, to accelerate training.[^1]
@@ -16,7 +19,7 @@ Batch Normalization (BN) is a layer to be inserted in a deep neural network, to 
 
 # Why use it
 
-We want to reduce _**Internal Covariate Shift**_ : the change in the distributions of internal nodes of a deep network during training. It is advantageous for the distribution of a layer input $$ x $$ to remain fixed over time. To do so, we will **fix the means and variances of layer inputs**.
+We want to reduce _**Internal Covariate Shift**_, the change in the distributions of internal nodes of a deep network during training. It is advantageous for the distribution of a layer input to remain fixed over time. To do so, we will **fix the means and variances of layer inputs**.
 
 Consider a layer with sigmoid activation $$ z = g(Wu + b) $$. For all dimensions of $$ x = Wu + b $$ except those with small absolute values, the gradient flowing down to $$ u $$ will vanish and the model will train slowly. Since $$ x $$ is affected by $$ W, b $$ and the parameters of the layers below, changes to those parameters during training will likely move many dimensions of $$ x $$ into the saturated regime of the sigmoid and **slow down training**.
 
@@ -28,7 +31,7 @@ Training converges faster when the inputs of the network are whitened (linearly 
 
 $$ \hat{x}^{(k)} = \frac{x^{(k)} - \mathrm{E}[x^{(k)}]}{\sqrt{\mathrm{Var}[x^{(k)}]}} $$
 
-where the mean and variance are computed on the **mini-batch**.
+where the mean and variance are computed on the *mini-batch*.
 
 **Add an affine transform just after.**{: .phead} Only applying a normalization can reduce the representational power of the network. For example, a sigmoid would be constrained to its linear regime. Following the normalization by a learnable affine transform addresses this issue. The BN operation becomes :
 
@@ -36,13 +39,13 @@ $$ y^{(k)} = \gamma^{(k)}\hat{x}^{(k)} + \beta^{(k)} $$
 
 Notice that if the parameters would learn the values $$ \gamma^{(k)} = \sqrt{\mathrm{Var}[x^{(k)}]} $$ and $$ \beta^{(k)} = \mathrm{E}[x^{(k)}] $$, we would recover the original activations, if that were the optimal thing to do.
 
-**Constant normalization during inference.**{: .phead} During inference, we want the output to depend only on its input (not on other examples). For this, instead of the mini-batch statistics, we use statistics from the whole population, which are constant. In practice, we compute these statistics during training using moving averages. Since the transformation is now fixed, it can be composed with the scaling by $$ \gamma $$ and shift by $$ \beta $$, to yield a single linear transform.
+**Constant normalization during inference.**{: .phead} During inference, we want the output to depend only on its input (not on other examples). For this, instead of the mini-batch statistics, we use statistics from the whole population, which are constant. In practice, we compute these statistics during training using moving averages. Since the normalization is now fixed, it can be composed with the scaling by $$ \gamma $$ and shift by $$ \beta $$, to yield a single linear transform.
 
 **Why do we need to backprop through it ?**{: .phead} Consider a layer $$ x = u + b $$, where $$ b $$ is a learned bias. We normalize the result using the mean of the activation computed over the whole training data : $$ \hat{x} = x - \mathrm{E}[x] $$. If a gradient descent step ignores the dependence of $$ \mathrm{E}[x] $$ on $$ b $$, then it will update $$ b \leftarrow b + \Delta b $$, where $$ \Delta b \propto \partial \text{loss} / \partial \hat{x} $$. Then,
   
 $$ u + (b + \Delta b) - \mathrm{E}[u + (b + \Delta b)] = u + b - \mathrm{E}[u + b] $$
 
-thus the normalization canceled the effect of the update of $$ b $$. As training continues, $$ b $$ **will grow indefinitely while the loss remains constant**. To address this, we must view the normalization as a transformation taking both the sample $$ \bold{x} $$ and the whole mini-batch $$ \mathcal{X} $$ :
+thus the normalization canceled the effect of the update of $$ b $$. As training continues, $$ b $$ *will grow indefinitely while the loss remains constant*. To address this, we must view the normalization as a transformation taking both the sample $$ \bold{x} $$ and the whole mini-batch $$ \mathcal{X} $$ :
 
 $$ \hat{x} = \mathrm{Norm}(\bold{x}, \mathcal{X}) $$
 
@@ -55,7 +58,9 @@ The latter term allows us to consider the mini-batch statistics in the process o
 # How to use it
 
 **Put BN before nonlinearities.**{: .phead} Since the input $$ u $$ of an affine layer $$ x = Wu + b $$ is likely the output of another nonlinearity, the shape of its distribution is likely to change during training, and constraining
-its first and second moments _would not eliminate the covariate shift_. Thus, we normalize $$ x $$, not $$ u $$. Note that since we normalize $$ Wu + b $$, the bias $$ b $$ will be canceled by the mean subtraction. Thus, we replace $$ z = g(Wu + b) $$ by $$ z = g(\mathrm{BN}(Wu)) $$, and the role of $$ b $$ will be played by $$ \beta $$.
+its first and second moments _would not eliminate the covariate shift_. Thus, we normalize $$ x $$, not $$ u $$.
+
+Note that since we normalize $$ Wu + b $$, the bias $$ b $$ will be canceled by the mean subtraction. Thus, we replace $$ z = g(Wu + b) $$ by $$ z = g(\mathrm{BN}(Wu)) $$, and the role of $$ b $$ will be played by $$ \beta $$.
 
 Interestingly, with BN, back-propagation through a layer is unaffected by the scale of its parameters :
 
@@ -63,7 +68,7 @@ $$ \mathrm{BN}((aW)u) = \mathrm{BN}(Wu) $$
 
 $$ \frac{\partial \mathrm{BN}((aW)u)}{\partial u} = \frac{\partial \mathrm{BN}(Wu)}{\partial u} $$
 
-$$ \frac{\partial \mathrm{BN}((aW)u)}{\partial (aW)} = \frac{1}{a} \cdot \frac{\partial \mathrm{BN}(Wu)}{\partial (aW)} $$
+$$ \frac{\partial \mathrm{BN}((aW)u)}{\partial (aW)} = \frac{1}{a} \cdot \frac{\partial \mathrm{BN}(Wu)}{\partial W} $$
 
 As seen above, larger weights even lead to _smaller_ gradients.
 
