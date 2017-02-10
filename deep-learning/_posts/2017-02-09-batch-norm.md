@@ -45,13 +45,13 @@ Notice that if the parameters would learn the values $$ \gamma^{(k)} = \sqrt{\ma
   
 $$ u + (b + \Delta b) - \mathrm{E}[u + (b + \Delta b)] = u + b - \mathrm{E}[u + b] $$
 
-thus the normalization canceled the effect of the update of $$ b $$. As training continues, $$ b $$ *will grow indefinitely while the loss remains constant*. To address this, we must view the normalization as a transformation taking both the sample $$ \bold{x} $$ and the whole mini-batch $$ \mathcal{X} $$ :
+thus the normalization canceled the effect of the update of $$ b $$. As training continues, $$ b $$ *will grow indefinitely while the loss remains constant*. To address this, we must view the normalization as a transformation taking both the sample $$ x $$ and the whole mini-batch $$ \mathcal{X} $$ :
 
-$$ \hat{x} = \mathrm{Norm}(\bold{x}, \mathcal{X}) $$
+$$ \hat{x} = \mathrm{Norm}(x, \mathcal{X}) $$
 
 This means that we need to compute two Jacobians :
 
-$$ \frac{\partial \mathrm{Norm}(\bold{x}, \mathcal{X})}{\partial \bold{x}} \qquad \frac{\partial \mathrm{Norm}(\bold{x}, \mathcal{X})}{\partial \mathcal{X}} $$
+$$ \frac{\partial \mathrm{Norm}(x, \mathcal{X})}{\partial x} \qquad \frac{\partial \mathrm{Norm}(x, \mathcal{X})}{\partial \mathcal{X}} $$
 
 The latter term allows us to consider the mini-batch statistics in the process of gradient descent, which in turn avoids the parameter explosion described above.
 
