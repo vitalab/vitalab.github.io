@@ -48,4 +48,4 @@ echo "gem: --no-document" > ~/.gemrc
 ~~~
 **You are done.**
 
-[Go back to **Previewing your post locally**](/welcome-how-to/#previewing-your-post-locally)
+[Go back to **Previewing your post locally**](/#previewing-your-post-locally)
