@@ -30,3 +30,15 @@ layout: default
     <p>If you have a question about the subject of this post, please ask it on Slack in the #papers channel, and <strong><a href="https://get.slack.help/hc/en-us/articles/115000769927-Message-threads">start a thread</a></strong> in order to keep the answers organized.</p>
   </div>
 </article>
+
+<script>
+  $("script[type='math/tex']").replaceWith(function() {
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function() {
+      var tex = $(this).html();
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
