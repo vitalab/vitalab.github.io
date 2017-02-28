@@ -1,18 +1,19 @@
 ---
 layout: review
-title:  Batch Normalization
+title:  "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
 tags:   deep-learning essentials regularization
 author: Carl Lemaire
 pdf:    /papers/batch-norm.pdf
 cite:
-  - arXiv:1502.03167                  # link label
-  - https://arxiv.org/abs/1502.03167  # link url
+  authors: "Sergey Ioffe, Christian Szegedy"
+  title:   "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+  venue:   "ICML 2015"
 ---
 
 Batch Normalization (BN) is a layer to be inserted in a deep neural network, to accelerate training.[^1]
 
 <style>
-  main.page-content p {
+  main.post-content p {
     text-align: justify; /* helps the reading flow */
   }
 </style>
