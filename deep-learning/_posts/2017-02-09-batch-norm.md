@@ -12,12 +12,6 @@ cite:
 
 Batch Normalization (BN) is a layer to be inserted in a deep neural network, to accelerate training.[^1]
 
-<style>
-  div.post-content p {
-    text-align: justify; /* helps the reading flow */
-  }
-</style>
-
 # Why use it
 
 We want to reduce _**Internal Covariate Shift**_, the change in the distributions of internal nodes of a deep network during training. It is advantageous for the distribution of a layer input to remain fixed over time. To do so, we will **fix the means and variances of layer inputs**.
