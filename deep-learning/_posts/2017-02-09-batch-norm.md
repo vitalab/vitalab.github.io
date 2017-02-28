@@ -13,7 +13,7 @@ cite:
 Batch Normalization (BN) is a layer to be inserted in a deep neural network, to accelerate training.[^1]
 
 <style>
-  main.post-content p {
+  div.post-content p {
     text-align: justify; /* helps the reading flow */
   }
 </style>
