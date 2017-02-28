@@ -4,8 +4,6 @@ title: How-to
 permalink: /howto/
 ---
 
-
-
 ## How to add a review
 
 The process for adding reviews is _git-centric_. Basically, **you just need to add a file to the repo and make a pull request**. Let's go into the details :
@@ -40,7 +38,20 @@ It is **important that you respect this format : date at the beginning and no sp
    Famous 2D image segmentation CNN made of a series of convolutions and deconvolutions.  The convolution feature maps are connected to the deconv maps of the same size.  The network was tested on the 2 class 2D ISBI cell segmentation [dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).  Used the crossentropy loss and a lot of data augmentation.
 
     ```
-    You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.
+    You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.\\
+**NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
+    ~~~
+| CNN              | DBM           | GAN               | RBM              |
+| RNN              | LSTM          | MRI               | autoencoder      | 
+| benchmarking     | brain         | cardiac           | course           |
+| ct-scan          | essentials    | deep-learning     | graph-cut        | 
+| layers           | localization  | machine-learning  | medical          | 
+| motion-detection | pedestrian-detection| segmentation| survey           | 
+| surveillance     | tractography  | tractometry       | traffic          |
+    ~~~
+
+
+
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
 7.  **Add reviewers**: everyone that you think are knowledgeable about the subject or simply would be interested in your review.
