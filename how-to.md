@@ -3,20 +3,6 @@ layout: page
 title: How-to
 permalink: /howto/
 ---
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:2px solid #ff0000;
-}
-
-th{
-    border:2px solid #000000;
-}
-
-td{
-    border:1px solid #000000;
-}
-
 
 ## How to add a review
 
@@ -55,13 +41,13 @@ It is **important that you respect this format : date at the beginning and no sp
     You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.\\
 **NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
     ~~~
-| CNN              | GAN           | RNN              | LSTM                 |
-| MRI              | autoencoder   | benchmarking     | brain                | 
-| cardiac          | course        | ct-scan          | essentials           | 
-| deep-learning    | graph-cut     | layers           | localization         |
-| machine-learning | medical       | motion-detection | pedestrian-detection | 
-| segmentation     | survey        | surveillance     | tractography         | 
-| tractometry      | traffic       |
+| CNN              | DBM           | GAN               | RBM              |
+| RNN              | LSTM          | MRI               | autoencoder      | 
+| benchmarking     | brain         | cardiac           | course           |
+| ct-scan          | essentials    | deep-learning     | graph-cut        | 
+| layers           | localization  | machine-learning  | medical          | 
+| motion-detection | pedestrian-detection| segmentation| survey           | 
+| surveillance     | tractography  | tractometry       | traffic          |
     ~~~
 
 
