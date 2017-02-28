@@ -5,11 +5,23 @@ layout: default
   main.page-content {
     padding-bottom: 0;
   }
+  h1.post-title {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+  header p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
   div#comments {
     margin-top: 4rem;
     padding: 0.8rem 10px 0.8rem 10px;
     background-color: #eee;
     border-top: 2px solid black;
+  }
+  strong.phead {
+    /* For inline paragraph headers */
+    margin-right: 1rem;
   }
 </style>
 
@@ -18,7 +30,14 @@ layout: default
   <header class="post-header">
     <div class="post-meta" style="margin-bottom: 0.5rem">{% for tag in page.tags %}<span style="margin-right: 1em">{{ tag }}</span>{% endfor %}</div>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • Review by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.link %} • <a href="{{page.link}}">{{page.link}}</a>{% endif %}</p>
+    <p class="post-meta">
+      Reviewed on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.pdf %} • <a href="{{ page.pdf }}">{{ page.pdf }}</a>{% endif %}
+    </p>
+    {% if page.cite %}
+      <p class="post-meta">
+        <strong>Reference</strong> : {{ page.cite.authors }}. <em>{{ page.cite.title }}.</em> {{ page.cite.venue }}.
+      </p>
+    {% endif %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
