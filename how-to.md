@@ -24,18 +24,28 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
     ~~~
 3.  Create a file `YYYY-MM-DD-title-of-your-review.markdown` and put it in right folder (see above).  
 It is **important that you respect this format : date at the beginning and no spaces.** Else the page won't build properly. Here is an example of a valid name : `2017-01-31-going-deeper-with-convolutions.markdown`.
-4.  Copy this template in your new file :  
+4.  Copy this example in your new file and change it accordingly :  
     
     ``` markdown
     ---
     layout: review
-    title:  Title of your Review
-    author: Your name
-    link:   http://link.to.the.paper.com
-    tags:   convolutional-networks deep-learning  # put relevant tags here
+    title: U-Net Convolutional Networks for Biomedical Image Segmentation
+    tags: deep-learning CNN segmentation medical essentials
+    cite:
+        authors: "O. Ronneberger, P. Fischer, T. Brox"
+        title:   "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+        venue:   "Proceedings of MICCAI 2015, p.234-241"
+    pdf: "https://arxiv.org/pdf/1505.04597.pdf"
     ---
     
-    Content of your review.
+    <style>
+        div.post-content p {
+        text-align: justify; /* helps the reading flow */
+        }
+    </style>
+    ---
+   Famous 2D image segmentation CNN made of a series of convolutions and deconvolutions.  The convolution feature maps are connected to the deconv maps of the same size.  The network was tested on the 2 class 2D ISBI cell segmentation [dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).  Used the crossentropy loss and a lot of data augmentation.
+
     ```
     You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.
 5.  **Make a new branch**, commit your file and push your branch.
