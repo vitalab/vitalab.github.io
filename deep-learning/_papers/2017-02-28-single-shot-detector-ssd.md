@@ -20,7 +20,7 @@ Single shot MultiBox Detector
 
 The model is using the **VGG-16** model for its base. It then uses severals features maps to produce its output.
 
-It's a more complex model than **YOLO** but it's faster because the input size is smaller. 
+It's a more complex model than **YOLO** but it's faster because the input size is smaller.
 
 ![ssd_model][/deep-learning/images/ssd_model.png]
 
@@ -36,7 +36,7 @@ Default boxes are computed from the training sets, they are similar to the ancho
 
 ## Loss
 
-The loss function is similar to **YOLO**'s loss function. Instead of multiples detection per cell, it predict a box per default box. The loss is computed on the default boxes with a Jaccard overlap bigger than 0.5. This allows multiples prediction per cell. 
+The loss function is similar to **YOLO**'s loss function. Instead of multiples detection per cell, it predicts a box per prior box. The loss is computed on the prior boxes with a Jaccard overlap bigger than 0.5. This allows multiples prediction per cell.
 
 
 
@@ -45,8 +45,3 @@ The loss function is similar to **YOLO**'s loss function. Instead of multiples d
 [SSD_Tensorflow](https://github.com/seann999/ssd_tensorflow)
 
 [SSD Keras](https://github.com/rykov8/ssd_keras)
-
-
-
-
-
