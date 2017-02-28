@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "CS231n: Convolutional Neural Networks for Visual Recognition"
-tags: convolutional-networks deep-learning course vision
+tags: CNN deep-learning course vision
 author: Carl Lemaire
 link: http://cs231n.stanford.edu/index.html
 ---
