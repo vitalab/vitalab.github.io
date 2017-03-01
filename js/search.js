@@ -45,7 +45,9 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('content'); // SPEEDUP: Comment this to disable content indexing
+      this.field('cite_authors');
+      this.field('cite_venue');
+      //this.field('content'); This is commented out: content is not indexed.
       this.field('tags', { boost: 4 });
     });
 
@@ -54,6 +56,8 @@
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
+        'cite_authors': window.store[key].cite_authors,
+        'cite_venue': window.store[key].cite_venue,
         'tags': window.store[key].tags,
         'content': window.store[key].content
       });

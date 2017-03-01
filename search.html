@@ -33,8 +33,10 @@ permalink: /search/
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
-        "author": "{{ post.author | xml_escape }}",
-        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "author": "{{ post.author | xml_escape }}",  // Author of the review
+        "cite_authors": "{{ post.cite.authors | xml_escape }}", // Authors of the paper
+        "cite_venue": "{{ post.cite.venue | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }}, // important for showing a content excerpt in search results
         "tags": "{{ post.tags | join: ' ' }}",
         "url": "{{ post.url | xml_escape }}"
       }
