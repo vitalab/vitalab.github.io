@@ -11,7 +11,8 @@ tags:   cnn deep-learning object-detection bounding-boxes
 ---
 ## Summary
 
-**SSD** is an adaptation of **YOLO** to support prior shapes. Using prior shapes, **SSD** doesn't need to learn the aspect ratio, it predicts the correct prior box and the class. Also, SSD is using multiples feature maps to achieve a better performance.
+**SSD** is an adaptation of **YOLO** to support prior boxes. Prior boxes (called default boxes in the paper) are pre-calculated boxes with different aspect ratios and scales.
+At prediction time, **SSD** predicts the correct prior box and the associated class. Also, SSD is using multiples feature maps to achieve a better performance.
 
 |--------------+--------------------+------+---------|
 | Model        | Mean avg precision | FPS |Input size|
@@ -40,7 +41,7 @@ Using [Atrous Convolution](https://arxiv.org/abs/1606.00915) speeds up the model
 
 ### Default boxes
 
-Default boxes are computed from the training sets, they are similar to the anchor boxes from R-CNN. They help the network getting the right aspect-ratio.
+Default boxes are computed from the training sets, they are similar to the anchor boxes from Faster R-CNN. They help the network getting the right aspect-ratio.
 
 
 
