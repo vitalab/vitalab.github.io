@@ -29,7 +29,7 @@ At prediction time, **SSD** predicts the correct prior box and the associated cl
 
 ## Model
 
-The model is using the **VGG-16** model for its base. It then uses severals feature maps to produce its output.
+The model is using the **VGG-16** model for its base. It then uses several feature maps to produce its output.
 
 It's a more complex model than **YOLO** but it's faster because the input size is smaller.
 

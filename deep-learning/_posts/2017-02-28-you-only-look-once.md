@@ -12,7 +12,7 @@ tags:   cnn deep-learning object-detection bounding-boxes
 
 ## Summary
 
-**YOLO** is an unified solution to the object detection problem. Other approches like **R-CNN** are using a two step process *(localization and classification)* where **YOLO** is a one step process. Also, **Fast YOLO** (or tiny-yolo) is achieving 155 fps where **Faster R-CNN** is doing 18 fps.
+**YOLO** is a unified solution to the object detection problem. Other approches like **R-CNN** are using a two step process *(localization and classification)* where **YOLO** is a one step process. Also, **Fast YOLO** (or tiny-yolo) is achieving 155 fps where **Faster R-CNN** is doing 18 fps.
 
 On the Pascal VOC-2012 dataset, **YOLO** is achieving 63.4 mAP where **Faster R-CNN** is doing 73.2. In this case, **Faster R-CNN** is not real-time (7 fps) while **YOLO** is doing around 60 fps.
 
@@ -28,7 +28,7 @@ It's important to know that **YOLO V1** only supports a **single** aspect ratio,
 
 ## Output
 
-Since **YOLO** is predicting multiple boxes per cell, the output is a **dense** layer with *{nb_detection * (4 + nb_classes + 1)}* dimensions. For each cell, the network predicts the boundaries *(x,y,w,h)*, a one-hot vector of the classes and the probability that there is an object in this cell. *x,y* are relative to the top-left corner of the cell and the *w,h* are computed as the proportion of the entire frame.
+Since **YOLO** is predicting multiple boxes per cell, the output is a **dense** layer with *{nb_detection * (4 + nb_classes + 1)}* dimensions. For each cell, the network predicts the boundaries *(x,y,w,h)*, a probability vector of the classes and the probability that there is an object in this cell. *x,y* are relative to the top-left corner of the cell and the *w,h* are computed as the proportion of the entire frame.
 
 
 
