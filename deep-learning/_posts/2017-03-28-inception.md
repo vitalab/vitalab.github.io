@@ -10,7 +10,7 @@ pdf:   "http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convo
 ---
 
  
-Winner of the ILSVRC 2014 competitions, both for the classification and the localization.  The main novelty of this paper is the use of inception layers which is a series of conv layers with different receptive fields.
+Winner of the ILSVRC 2014 competition, both for the classification and the localization.  The main novelty of this paper is the use of inception layers which is a series of conv layers with different receptive fields.
  
 ![](/deep-learning/images/googleNet/inception_2.png)
 
