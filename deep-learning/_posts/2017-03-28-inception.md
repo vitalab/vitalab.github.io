@@ -1,7 +1,7 @@
 ---
 layout: review
 title: " GoogLeNet, Inception (Going Deeper with Convolutions)"
-tags: deep-learning CNN essentials classification
+tags: deep-learning CNN essentials classification localization
 cite:
     authors: "K He, X Zhang, S. Ren, J. Sun"
     title:   "Deep Residual Learning for Image Recognition"
