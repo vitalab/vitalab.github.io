@@ -1,7 +1,7 @@
 ---
 layout: review
 title: Layer Normalization
-tags: deep-learning essentials 
+tags: deep-learning essentials layers
 cite:
     authors: "Ba, J.L., Kiros, J.R. and Hinton, G.E"
     title:   "Layer Normalization"
@@ -15,15 +15,13 @@ Layer Normalization is a simple method used to reduce training time in deep neur
 # How it works
 Layer normalization works by computing the normalization statistics (mean and variance) from all of the summed inputs to the neurons within a hidden layer (on a single training case).
 
-# Background
+# Notation
 
-A feed-forward neural network is a non-linear mapping from a input pattern $$\mathbf x$$ to an output vector $$y$$.
-Consider the $$l^{th}$$ hidden layer in a deep feed-forward network, and let $$a^l$$ be the vector representation of the summed inputs to the neurons in the layer. 
-The summed inputs are computed through a linear projection with the weight matrix $$W^l$$ and the bottom-up inputs $$h_l$$ given as follows:
+We consider the $$l^{th}$$ hidden layer of a feed-forward neural network. The input vector to each hidden unit is noted as $$h^l$$, while the output of the $$i^{th}$$ unit is noted as $$h_i^{l+1}$$ and is computed as such:
 
-$$ a^i_l = {w_i^l}^{\top} h^l  \qquad \qquad  h_i^{l+1} = f(a_i^l + b_i^l) $$
+$$ a_i^l = {w_i^l}^{\top} h^l  \qquad \qquad  h_i^{l+1} = f(a_i^l + b_i^l) $$
 
-where $$f(\cdot)$$ is an element-wise non-linear function and $$w_i^l$$ is the incoming weights to the $$i^{th}$$ hidden units and $$b_i^l$$ is the scalar bias parameter.
+where $$a_i^l$$ is the *summed inputs* to the unit, $$f(\cdot)$$ is an element-wise non-linear function, $$w_i^l$$ is the weight vector and $$b_i^l$$ is the scalar bias parameter.
 
 # Batch normalization
 
@@ -43,11 +41,11 @@ $$ \mu^l = \frac{1}{H} \sum\limits_{i=1}^H a_i^l  \qquad  \sigma^l = \sqrt{\frac
 
 where $$H$$ is the number of hidden units in the layer.
 
-Results of a unidirectional attentive reader model trained on the CNN corpus question-answering task: 
+Here are the results of a unidirectional attentive reader model trained on the CNN corpus question-answering task: 
 ![](/deep-learning/images/layer-normalization/layer_norm_fig2.png)
 
 
 # Limitations
-**Speed**: While layer normalization will speed up training in terms of epochs/training steps, it will also slow down training in terms of time per epoch/update, because moment computation is much slower on GPU compared to simple matrix multiplications. Overall, it should still usually speed up global training time, and hopefully give better results, but there is no guarantee.
+**Speed**: While layer normalization will speed up training in terms of the number of epochs/updates, it will also slow down training in terms of time per epoch/update, because moment computation is much slower on GPU compared to simple matrix multiplications. Overall, it should still usually speed up global training time, and hopefully give better results, but there is no guarantee.
 
 **CNNs**: "In our preliminary experiments, we observed that layer normalization offers a speedup over the baseline model without normalization, but batch normalization outperforms the other methods. [...] We think further research is needed to make layer normalization work well in ConvNets."
