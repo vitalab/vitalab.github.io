@@ -1,7 +1,7 @@
 ---
 layout: review
 title: Layer Normalization
-tags: deep-learning essentials layers
+tags: deep-learning essentials layers cnn
 cite:
     authors: "Ba, J.L., Kiros, J.R. and Hinton, G.E"
     title:   "Layer Normalization"
