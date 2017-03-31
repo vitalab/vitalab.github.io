@@ -7,7 +7,7 @@ cite:
     title:   "You only look once: Unified, real-time object detection"
     venue:   "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 779-788)"
 pdf: "https://arxiv.org/pdf/1506.02640.pdf"
-tags:   cnn deep-learning object-detection bounding-boxes
+tags:   cnn deep-learning localization bounding-boxes
 ---
 
 ## Summary
