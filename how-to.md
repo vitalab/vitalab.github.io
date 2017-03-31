@@ -48,7 +48,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | graph-cut        | layers           | localization        | machine-learning |
     | medical          | motion-detection | pedestrian-detection| segmentation     |
     | survey           | surveillance     | tractography        | tractometry      | 
-    | traffic          |
+    | traffic          | GMM
 
 
 
