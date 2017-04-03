@@ -11,7 +11,7 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
 0.  Send an e-mail to Pierre-Marc Jodoin asking him to include you as a member of the [github.com/vitalab](https://github.com/vitalab) organization.
 1.  Clone the [`vitalab.github.io`](https://github.com/vitalab/vitalab.github.io) repo on your computer.
 2.  Determine the category in which you will add your post. Categories are managed using folders :  
-    
+
     ~~~
     _posts/           # A post added here will have no category
     course/
@@ -23,7 +23,7 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
 3.  Create a file `YYYY-MM-DD-title-of-your-review.markdown` and put it in right folder (see above).  
 It is **important that you respect this format : date at the beginning and no spaces.** Else the page won't build properly. Here is an example of a valid name : `2017-01-31-going-deeper-with-convolutions.markdown`.
 4.  Copy this example in your new file and change it accordingly :  
-    
+
     ``` markdown
     ---
     layout: review
@@ -41,15 +41,15 @@ It is **important that you respect this format : date at the beginning and no sp
     You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.\\
 **NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
 
-    | CNN                 | DBM              | GAN                 | GMM                 |
-    | KDE                 | LSTM             | MRI                 | RBM                 |
-    | RNN                 | 
-    | autoencoder         | benchmarking     | bounding-boxes      | brain               |
-    | cardiac             | classification   | course              | ct-scan             |
-    | essentials          | deep-learning    | graph-cut           | layers              |
-    | localization        | machine-learning | medical             | motion-detection    |
-    | pedestrian-detection| segmentation     | survey              | surveillance        |
-    | tractography        | tractometry      | traffic             |
+    | CNN                  | DBM              | GAN                 | GMM                 |
+    | KDE                  | LSTM             | MRI                 | RBM                 |
+    | RNN                  |                  |                     |                     |
+    | autoencoder          | benchmarking     | bounding-boxes      | brain               |
+    | cardiac              | classification   | course              | ct-scan             |
+    | essentials           | deep-learning    | graph-cut           | layers              |
+    | localization         | machine-learning | medical             | motion-detection    |
+    | pedestrian-detection | siamese          | segmentation        | survey              |
+    | surveillance         | tractography     | tractometry         | traffic             |
 
 
 
