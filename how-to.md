@@ -48,8 +48,8 @@ It is **important that you respect this format : date at the beginning and no sp
     | cardiac              | classification   | course              | ct-scan             |
     | deep-learning        | essentials       | graph-cut           | layers              |
     | localization         | machine-learning | medical             | motion-detection    |
-    | pedestrian-detection | siamese          | segmentation        | survey              |
-    | surveillance         | tractography     | tractometry         | traffic             |
+    | pedestrian-detection | segmentation     | siamese             | surveillance        |
+    | survey               | tractography     | tractometry         | traffic             |
 
 
 
