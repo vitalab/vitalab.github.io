@@ -45,12 +45,12 @@ It is **important that you respect this format : date at the beginning and no sp
     | KDE                  | LSTM             | MRI                 | PCA                 |
     | RBM                  | RNN              |                     |                     |
     | autoencoder          | benchmarking     | bounding-boxes      | brain               |
-    | cardiac              | classification   | course              | ct-scan             |
-    | deep-learning        | essentials       | graph-cut           | layers              |
-    | localization         | machine-learning | medical             | motion-detection    |
-    | pedestrian-detection | segmentation     | siamese             | surveillance        |
-    | survey               | tractography     | tractometry         | traffic             |
-
+    | cardiac              | classification   | codebook            | course              |
+    | ct-scan              | deep-learning    | essentials          | graph-cut           |
+    | k-means              | layers           | localization        | machine-learning    |
+    | medical              | motion-detection | pedestrian-detection| segmentation        |
+    | siamese              | surveillance     | survey              | tractography        |
+    | tractometry          | traffic          |                     |                     |
 
 
 
