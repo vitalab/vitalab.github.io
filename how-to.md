@@ -42,14 +42,14 @@ It is **important that you respect this format : date at the beginning and no sp
 **NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
 
     | CNN                  | DBM              | GAN                 | GMM                 |
-    | KDE                  | LSTM             | MRI                 | RBM                 |
-    | RNN                  |                  |                     |                     |
+    | KDE                  | LSTM             | MRI                 | PCA                 |
+    | RBM                  | RNN              |                     |                     |
     | autoencoder          | benchmarking     | bounding-boxes      | brain               |
     | cardiac              | classification   | course              | ct-scan             |
-    | essentials           | deep-learning    | graph-cut           | layers              |
+    | deep-learning        | essentials       | graph-cut           | layers              |
     | localization         | machine-learning | medical             | motion-detection    |
-    | pedestrian-detection | siamese          | segmentation        | survey              |
-    | surveillance         | tractography     | tractometry         | traffic             |
+    | pedestrian-detection | segmentation     | siamese             | surveillance        |
+    | survey               | tractography     | tractometry         | traffic             |
 
 
 
