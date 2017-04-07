@@ -9,7 +9,7 @@ cite:
   title:   "Feature Pyramid Networks for Object Detection"
   venue:   "Computer Vision and Pattern Recognition, 2017. CVPR 2017"
 ---
-s
+
 The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}). The main difference is that there is multiple prediction layers: one for each upsampling layer.
 <div align="middle">
   <img src="/deep-learning/images/fpn/architecture.png" width="400">
