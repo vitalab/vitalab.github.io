@@ -9,7 +9,7 @@ cite:
   title:   "Feature Pyramid Networks for Object Detection"
   venue:   "Computer Vision and Pattern Recognition, 2017. CVPR 2017"
 ---
-
+s
 The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}). The main difference is that there is multiple prediction layers: one for each upsampling layer.
 <div align="middle">
   <img src="/deep-learning/images/fpn/architecture.png" width="400">
@@ -17,10 +17,11 @@ The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }
 
 
 ## FPN for region-proposal
-To achieve region-proposal, the authors add a 3x3 Conv layer followed by two 1x1 Conv for classification and regression on each upsampling layer. These additions are called **heads** and the weights are shared. For each head, you assign the sames anchors boxes, resized to match the head's shape. The ground truth labels are assigned to the anchor if it has >70% IoU.
+To achieve region-proposal, the authors add a 3x3 Conv layer followed by two 1x1 Conv for classification and regression on each upsampling layer. These additions are called **heads** and the weights are shared. For each head, you assign a set of anchors boxes resized to match the head's shape. The anchors are of multiple pre-defined scales and
+aspect ratios in order to cover objects of different shapes. Training labels are then assigned to each anchor based on the IoU. A positive label is assigned if the IoU is greater than 70%.
 
 ## FPN for object Detection
-Using Fast(er) R-CNN, they can use FPN as the region proposal part. The proposals are used in combination with RoiPooling and then they can do the same works as Fast(er) R-CNN.
+Using Fast(er) R-CNN, they can use FPN as the region proposal part. The proposals are used in combination with RoiPooling and then they can do the same work as Fast(er) R-CNN.
 
 ## Results
 Faster R-CNN on FPN with a ResNet-101 backbone is achieving state of the art on the COCO detection benchmark. It's also faster than Resnet-101 Faster R-CNN by a significant margin because of the weight sharing in the heads.
