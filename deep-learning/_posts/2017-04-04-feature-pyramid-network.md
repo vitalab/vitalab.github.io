@@ -10,7 +10,7 @@ cite:
   venue:   "Computer Vision and Pattern Recognition, 2017. CVPR 2017"
 ---
 
-The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}). The main difference is that there is multiple prediction layers: one for each upsampling layer.
+The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}). The main difference is that there is multiple prediction layers: one for each upsampling layer. Like the U-Net, the FPN has laterals connection between the bottom-up pyramid (left) and the top-down pyramid (right). But, where U-net only copy the features and append them, FPN apply a 1x1 convolution layer before adding them. This allows the bottom-up pyramid called "backbone" to be pretty much whatever you want. In their experiments, the authors use Resnet-50 as their backbone.
 <div align="middle">
   <img src="/deep-learning/images/fpn/architecture.png" width="400">
 </div>
@@ -27,7 +27,7 @@ Using Fast(er) R-CNN, they can use FPN as the region proposal part. The proposal
 Faster R-CNN on FPN with a ResNet-101 backbone is achieving state of the art on the COCO detection benchmark. It's also faster than Resnet-101 Faster R-CNN by a significant margin because of the weight sharing in the heads.
 
 ### Effect of lateral connections
-FPN performs better than normal U-Net because the U-Net's feature maps are wrong.
-The authors argue that the locations of these maps are not precise,
+FPN performs better than a normal Conv-Deconv because the Conv-Deconv's feature maps are wrong according to the authors.
+Indeed, they argue that the locations of these maps are not precise,
 because these maps have been downsampled and upsampled
 several times. There is a 10% jump in accuracy using lateral connections.
