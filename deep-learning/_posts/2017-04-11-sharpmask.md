@@ -10,9 +10,9 @@ cite:
   venue:   "European Conference on Computer Vision (pp. 75-91). Springer International Publishing."
 ---
 
-SharpMask was designed as a successor to [DeepMask]({{ site.baseurl }}{% link deep-learning/_posts/2017-04-10-deepmask.md %}). The main drawbacks from DeepMask are speed and performances. Both can be used as an object detection method when combined with R-CNN. This approach is using the popular [U-Net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}) architecture to combine low and high-level features.
+SharpMask was designed as a successor to [DeepMask]({{ site.baseurl }}{% link deep-learning/_posts/2017-04-10-deepmask.md %}). The main drawbacks from DeepMask are speed and performances. Both can be used as an object detection method when combined with [R-CNN]({{ site.baseurl }}{% link deep-learning/_posts/2017-04-18-rcnn.md %}). This approach is using the popular [U-Net]({{ site.baseurl }}{% link deep-learning/_posts/2017-02-27-unet.md %}) architecture to combine low and high-level features.
 
-SharpMask, using a double pyramid layout, is faster and more accurate than DeepMask. Indeed, SharpMask has an inference time of 0.8s where DeepMask needs more than 1.3 seconds to perform the same task. The authors used DeepMask for the bottom-up pyramid, but they switched the finals layers, called "head" to be more efficient. They then add a top-down pyramid and laterals connections to make a prediction in the same way as DeepMask.
+SharpMask, using a double pyramid layout, is faster and more accurate than DeepMask. Indeed, SharpMask has an inference time of 0.8s where DeepMask needs more than 1.3 seconds to perform the same task. The authors used DeepMask for the bottom-up pyramid, but they switched the final layers, called "head" to be more efficient. They then add a top-down pyramid and lateral connections to make a prediction in the same way as DeepMask.
 
 SharpMask is able to output more precise masks because of the fusion of low-level features and high-level features.
 <div align="middle">
