@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "DelugeNet : Deep Networks with Massive and Flexible Cross-layer Information Inflows"
-tags:   deep-learning CNN localization
+tags:   deep-learning CNN classification
 author: Pierre-Marc Jodoin
 pdf:   "https://arxiv.org/pdf/1611.05552.pdf"
 
@@ -26,7 +26,7 @@ The layers inside a block are `bottleneck` layers similar to that used in [ResNe
 </div>
 <br>
 
-In order to reduce the number of parameters, DelugeNet uses before the bottleneck layer a `cross-layer depthwise convolutional` layer (the red arrow in Fig.1) which concatenates the channels of feature map outputs of many layers, and then applies (channel,spatial)-independent filters to the concatenated channels (c.f. Fig.2).  At the output of a `block` is a `Transition` layer made of a cross-layer depthwise convolutional layer followed by 3×3 spatial convolutional layer.
+In order to reduce the number of parameters, DelugeNet uses before the bottleneck layer a `cross-layer depthwise convolutional` layer (the red arrow in Fig.1) which concatenates the channels of feature map outputs of many layers, and then applies (channel,spatial)-independent filters to the concatenated channels (c.f. Fig.2).  At the output of a `block` is a `transition` layer made of a cross-layer depthwise convolutional layer followed by 3×3 spatial convolutional layer.
 
 <br>
 
@@ -37,7 +37,7 @@ In order to reduce the number of parameters, DelugeNet uses before the bottlenec
 
 ## Results
 
-Deluge net is slighly more accurate than Densenet while having fewer parameters.
+Deluge net is slighly more accurate than Densenet on CIFAR100 (not really on CIFAR10 though) while having fewer parameters.
 
 <div align="middle">
   <img src="/deep-learning/images/delugeNet/sc03.jpg" width="800">
