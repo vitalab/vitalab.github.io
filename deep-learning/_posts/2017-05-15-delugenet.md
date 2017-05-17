@@ -26,7 +26,7 @@ The layers inside a block are `bottleneck` layers similar to that used in [ResNe
 </div>
 <br>
 
-In order to reduce the number of parameters, DelugeNet uses before the bottleneck layer a `cross-layer depthwise convolutional` layer (the red arrow in Fig.1) which concatenates the channels of feature map outputs of many layers, and then applies (channel,spatial)-independent filters to the concatenated channels (c.f. Fig.2).  At the output of a `block` is a `transition` layer made of a cross-layer depthwise convolutional layer followed by 3×3 spatial convolutional layer.
+In order to reduce the number of parameters, DelugeNet uses before the bottleneck layer a `cross-layer depthwise convolutional` layer (the red arrow in Fig.1) which concatenates the channels of feature map outputs of many layers, and then applies (channel,spatial)-independent filters to the concatenated channels (c.f. Fig.2).  At the end of a `block` is a `transition` layer made of a `cross-layer depthwise convolutional` layer followed by 3×3 spatial convolutional layer.
 
 <br>
 
