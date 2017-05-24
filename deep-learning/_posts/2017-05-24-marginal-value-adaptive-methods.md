@@ -28,9 +28,7 @@ In the figure below, "HB" stands for _Polyak’s heavy-ball_ method, which is co
 
 ![](/deep-learning/images/adaptive-methods-comparison.png)
 
-Lastly, the authors suggest a method for tuning the initial step size $$ \alpha_0 $$ and step size decay of SGD that worked well in all of their experiments. To find $$ \alpha_0 $$, the authors conduct a grid search with $$ \alpha_0 = 2^k $$ over five consecutive values of $$ k \in \mathbb{Z} $$. If the best performance is achieved at one extreme of the grid, they try new grid points so that the best performance is contained in the middle of the grid.
-
-The step size decay scheme they propose is the following: they keep track of the best validation performance so far, and at each epoch they decay the learning rate by a constant factor $$ \delta $$ if the model does not attain a new best value.
+Lastly, the authors suggest a method for tuning the initial step size $$ \alpha_0 $$ that worked well in all of their experiments. To find $$ \alpha_0 $$, the authors conduct a grid search with $$ \alpha_0 = 2^k $$ over five consecutive values of $$ k \in \mathbb{Z} $$. If the best performance is achieved at one extreme of the grid, they try new grid points so that the best performance is contained in the middle of the grid.
 
 ---
 
