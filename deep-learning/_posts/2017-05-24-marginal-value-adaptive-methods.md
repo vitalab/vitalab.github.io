@@ -24,6 +24,8 @@ As a second contribution, authors compare the empirical "generalization capabili
 
 All of these findings seem to contradict Stanford's CS231n course material. In the 2016 version of this course, the presentation of RMSProp and Adam suggest that those methods converge faster, without notable drawbacks.
 
+In the figure below, "HB" stands for _Polyak’s heavy-ball_ method, which is considered to be part of the stochastic momentum methods. 
+
 ![](/deep-learning/images/adaptive-methods-comparison.png)
 
 Lastly, the authors suggest a method for tuning the initial step size $$ \alpha_0 $$ and step size decay of SGD that worked well in all of their experiments. To find $$ \alpha_0 $$, the authors conduct a grid search with $$ \alpha_0 = 2^k $$ over five consecutive values of $$ k \in \mathbb{Z} $$. If the best performance is achieved at one extreme of the grid, they try new grid points so that the best performance is contained in the middle of the grid.
