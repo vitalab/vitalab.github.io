@@ -46,12 +46,11 @@ It is **important that you respect this format : date at the beginning and no sp
     | RBM                  | RNN              | optimization        |                     |
     | autoencoder          | benchmarking     | bounding-boxes      | brain               |
     | cardiac              | classification   | codebook            | course              |
-    | ct-scan              | deep-learning    | essentials          | graph-cut           |
-    | k-means              | layers           | localization        | machine-learning    |
-    | medical              | motion-detection | pedestrian-detection| segmentation        |
-    | siamese              | surveillance     | survey              | tractography        |
-    | tractometry          | traffic          |                     |                     |
-
+    | ct-scan              | deep-learning    | essentials          | genetic-algorithm   |
+    | graph-cut            | k-means          | layers              | localization        |
+    | machine-learning     | medical          | motion-detection    | neural-network      |
+    | pedestrian-detection | segmentation     | siamese             | surveillance        | 
+    | survey               | tractography     | tractometry         | traffic             |
 
 
 5.  **Make a new branch**, commit your file and push your branch.
