@@ -12,7 +12,7 @@ pdf: "https://vision.cornell.edu/se3/wp-content/uploads/2017/04/cui2017cvpr.pdf"
 # Idea
   'Feature pooling' means encoding and aggregating feature maps to obtain higher-order and non linear feature interactions between features (ex : add x1x2 to [x1,x2] as a new feature), and 'kernel pooling' implies to learn from the data which kernels would be best by using a differentiable approximated representation to learn the kernels' parameters.
    
-# method
+# Method
   Learn parameters of Taylor series kernels approximating gaussian RBF kernels
   
   The p-level tensor product is the pth order polynomial kernel and the Taylor series kernel is the sum of the polynomial kernel multiplied by factors from 1 up to p.
