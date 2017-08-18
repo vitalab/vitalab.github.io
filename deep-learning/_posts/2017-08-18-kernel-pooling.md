@@ -18,22 +18,24 @@ pdf: "https://vision.cornell.edu/se3/wp-content/uploads/2017/04/cui2017cvpr.pdf"
   The p-level tensor product is the pth order polynomial kernel and the Taylor series kernel is the sum of the polynomial kernel multiplied by factors from 1 up to p.
 	Its standard form is hardly applicable due to memory limitations => compact form with Count Sketch kernel approximation (TensorSketch): unbiased approximation
 	
-! p=4 is enough to approximate a gaussian kernel and other decomposable kernels could be approximated (especially by learning coefficients)!
+! p=4 is enough to approximate a gaussian kernel and other decomposable kernels could be approximated (especially by learning coefficients) !
 
 # Application
 Tested on : ImageNet / CUB-200 / Stanford car set / FGComp2013 / Food101 
 with : VGG-16 / ResNet-50
 When compared to bilinear pooling and state-of-the-art, this shows an improvement of about 1-3% with both architectures
-! With VGG, 2nd and 3rd order feature interactions were weighted a lot more than with ResNet, possibly there is a better intrinsic capture information with ResNet large receptive field and residual modules!
 
-[code for TensorSketch available from http://www.itu.dk/people/pagh/papers/tensorsketch.pdf]
-(http://www.itu.dk/people/ndap/TensorSketch.m).
+! With VGG, 2nd and 3rd order feature interactions were weighted a lot more than with ResNet, possibly there is a better intrinsic capture information with ResNet large receptive field and residual modules !
 
-Approximating gaussian kernels with Taylor series :
+[TensorSketch paper]("http://www.itu.dk/people/pagh/papers/tensorsketch.pdf")
+
+[code for TensorSketch]("http://www.itu.dk/people/ndap/TensorSketch.m").
+
+Approximating gaussian kernels :
 ![](/deep-learning/images/kernelpooling/gaussian-kernel-approx.png)
 
 Architecture to learn kernels :
-![](/deep-learning/images/kernelpooling/architecture.png
+![](/deep-learning/images/kernelpooling/architecture.png)
 
 
 
