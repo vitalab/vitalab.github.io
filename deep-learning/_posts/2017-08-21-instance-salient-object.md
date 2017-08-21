@@ -10,25 +10,24 @@ cite:
   venue:   "CVPR 2017"
 ---
 
-Instead of only doing salient object detection, this paper also segment different salient objects into different instances.
+Instead of only doing salient object detection, the method proposed in this paper also segment different salient objects into different instances.
 
 ![](/deep-learning/images/salient-instance/idea.jpg)
 
 # Contributions
 
 1. A new dataset (1000 images of instance-level salient objects).
-2. A multi-scale segmentation networks. 
+2. A multi-scale segmentation network. 
 
 # Framework
 ![](/deep-learning/images/salient-instance/framework.jpg)
 
-1. A multi-scale segmentation network is used to compute the saliency map and contours.
+1. A multi-scale segmentation network is used to compute the saliency map and contour map.
 2. The multiscale combinatorial grouping (MCG) algorithm [[1]](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/resources/MCG_CVPR2014.pdf) was used to generate object proposals, and the subset optimization method [[2]](http://users.eecs.northwestern.edu/~xsh835/assets/cvpr2016_sod.pdf) selected the final salient proposals. 
-3. A fully connected CRF step [[3]](https://arxiv.org/abs/1210.5644) was adopted to get the final instance segmenation. 
+3. A fully connected CRF step [[3]](https://arxiv.org/abs/1210.5644) was adopted to get the final instance segmentation. 
 
 ### 1. Multiscale segmentation network
-- A U-Net like network architecture
-- fusing segmentation result of multi-scale
+- A U-Net like network architecture fusing segmentation result from multiple scales.
 
 ![](/deep-learning/images/salient-instance/msnet_1.jpg)
 
