@@ -27,6 +27,9 @@ Instead of only doing salient object detection, this paper also segment differen
 3. A fully connected CRF step [[3]](https://arxiv.org/abs/1210.5644) was adopted to get the final instance segmenation. 
 
 ### 1. Multiscale segmentation network
+>- A U-Net like network architecture
+>- fusing segmenation result of multi-scale
+
 ![](/deep-learning/images/salient-instance/msnet_1.jpg)
 
 ### 2. Proposal step
