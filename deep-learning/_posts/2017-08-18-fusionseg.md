@@ -2,6 +2,7 @@
 layout: review
 title: "FusionSeg: Learning to Combine Motion and Appearance for Fully Automatic Segmentation of Generic Objects in Videos"
 tags: deep-learning CNN segmentation motion-detection
+author: "Philippe Poulin"
 cite:
     authors: "S. D. Jain, B. Xiong, K. Grauman"
     title:   "FusionSeg: Learning to Combine Motion and Appearance for Fully Automatic Segmentation of Generic Objects in Videos"
