@@ -18,7 +18,6 @@ Instead of only doing salient object detection, this paper also segment differen
 
 1. A new dataset (1000 images of instance-level salient objects).
 2. A multi-scale segmenation networks. 
-3. CRF optimization.
 
 # Framework
 ![](/deep-learning/images/salient-instance/framework.jpg)
