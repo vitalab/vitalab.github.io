@@ -14,39 +14,44 @@ Instead of only doing salient object detection, this paper also segment differen
 
 ![](/deep-learning/images/salient-instance/idea.jpg)
 
-### Contributions
+# Contributions
 
-1. A new instance-level salient object segmentation dataset
+1. A new dataset (1000 images of instance-level salient objects).
+2. A multi-scale segmenation networks. 
+3. CRF optimization.
 
-2. A multi-scale segmenation 
-
-3. CRF optimization
-
-
-### Whole Framework
-
+# Framework
 ![](/deep-learning/images/salient-instance/framework.jpg)
 
-1. A multi-scale U-Net like model is used to get the saliency map and contours.
+1. A multi-scale segmentation network is used to compute the saliency map and contours.
+2. The multiscale combinatorial grouping (MCG) algorithm [[1]](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/resources/MCG_CVPR2014.pdf) was used to generate object proposals, and the proposal subset optimization method [[2]](http://users.eecs.northwestern.edu/~xsh835/assets/cvpr2016_sod.pdf) selects the final salient proposals. 
+3. A fully connected CRF step was adopted to get the final instance segmenation. 
 
-2. 
+### 1. Multiscale segmentation network
+![](/deep-learning/images/salient-instance/msnet_1.jpg)
 
-As their first contribution, the authors construct a binary classification problem where the data is linearly separable, and prove that for this problem, (stochastic) gradient descent achieve zero error, and AdaGrad, Adam and RMSProp attain test errors close to 50%.
+### 2. Proposal step
 
-As a second contribution, authors compare the empirical "generalization capability" of the methods on four state-of-the-art deep learning models, one of which is a CNN designed for CIFAR-10[^1]. Here are some of their findings:
+>- 800 salient object proposals for any given image based on the contour map.
+>- Discard those proposals with fewer than 80% salient pixels
+>- The subset optimization is used produce a compact set of object proposals. (The final number of instances) 
 
-* Adaptive methods find solutions that **generalize worse** than those found by non-adaptive methods.
-* Adaptive methods often display faster initial progress on the training set, but their performance **quickly plateaus** on the development set.
-* Though conventional wisdom suggests that Adam does not require tuning, we find that **tuning the initial learning rate and decay scheme for Adam yields significant improvements** over its default settings in all cases.
+### 3. CRF step
+>- Suppose the number of salient instances is K, and the background is treated as K+1 class.
+>- Define a probability map with K+1 channels
+>>- If a salient pixel is covered by a single detected salient instance, the probability of correposed channel is 1. 
+>>- If a salient pixel is not covered by any detected salient instance, the probability of the pixel having any label is 1/K .
+>>- If a salient pixel is covered by m overlapping salient instances, the probability of the pixel having a label associated with one of the m salient instances is 1/m .   
+>>- If a background pixel is covered by m overlapping salient instances, the probability of the pixel having a label associated with one of the m salient instances is 1/(m+1) , and the probability of the pixel having the background label is also 1/(m+1). 
 
-All of these findings seem to contradict Stanford's CS231n course material. In the 2016 version of this course, the presentation of RMSProp and Adam suggest that those methods converge faster, without notable drawbacks.
+>- A fully connected CRF[[3]](https://arxiv.org/abs/1210.5644) is used for the final segmentation.
 
-In the figure below, "HB" stands for _Polyak’s heavy-ball_ method, which is considered to be part of the stochastic momentum methods. 
+# Experiment Result
 
-![](/deep-learning/images/adaptive-methods-comparison.png)
+### The Multiscale segmentation network for saliency detection
 
-Lastly, the authors suggest a method for tuning the initial step size $$ \alpha_0 $$ that worked well in all of their experiments. To find $$ \alpha_0 $$, the authors conduct a grid search with $$ \alpha_0 = 2^k $$ over five consecutive values of $$ k \in \mathbb{Z} $$. If the best performance is achieved at one extreme of the grid, they try new grid points so that the best performance is contained in the middle of the grid.
+![](/deep-learning/images/salient-instance/result_1.jpg)
 
----
+### Instance-Level segmenation
 
-[^1]: The model is [cifar.torch](http://torch.ch/blog/2015/07/30/cifar.html). They say it is state-of-the-art but this is not correct. It has a classification accuracy 1% worse than ResNet ([source](http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html)).
+![](/deep-learning/images/salient-instance/result_2.jpg)
