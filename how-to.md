@@ -50,7 +50,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | k-means              | layers           | localization        | machine-learning    |
     | medical              | motion-detection | pedestrian-detection| segmentation        |
     | siamese              | surveillance     | survey              | tractography        |
-    | tractometry          | traffic          |                     |                     |
+    | tractometry          | traffic          | face-detection      |                     |
 
 
 
