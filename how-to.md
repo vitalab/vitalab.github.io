@@ -43,7 +43,7 @@ It is **important that you respect this format : date at the beginning and no sp
 
     | CNN                  | DBM              | GAN                 | GMM                 |
     | KDE                  | LSTM             | MRI                 | PCA                 |
-    | RBM                  | RNN              | optimization        |                     |
+    | RBM                  | RNN              | optimization        | few-shot-learning   |
     | autoencoder          | benchmarking     | bounding-boxes      | brain               |
     | cardiac              | classification   | codebook            | course              |
     | ct-scan              | deep-learning    | essentials          | genetic-algorithm   |
