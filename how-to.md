@@ -54,6 +54,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | face-detection       |                  |                     |                     |
 
 
+
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
 7.  **Add reviewers**: everyone that you think are knowledgeable about the subject or simply would be interested in your review.
