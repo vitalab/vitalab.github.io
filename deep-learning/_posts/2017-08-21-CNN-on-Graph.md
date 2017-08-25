@@ -14,7 +14,7 @@ In this paper, the authors perform point cloud classification (like image classi
 
 ![](/deep-learning/images/cnn-on-graph/sc01.png)
 
-Since the the number of edges is not the same for each vertices (unlike an image for example) they propose a new type of convolution operator which involves a function $$F$$ which converts an edge label $$L$$ and the weight vector $$w$$ to a floating point value $$\Theta$$.  Note that in Fig.2, the use of $$F(L,w)$$ allows to obtain a  normal convolution (second equation).  Note that $$X$$ are feature maps, $$l$$ is the layer index, $$w^l$$ is the weight vector of layer $$l$$, and $$b^l$$ is the bias of layer $$l$$. 
+Since the number of edges is not the same for each vertices (unlike an image for example) they propose a new type of convolution operator which involves a function $$F$$ which converts an edge label $$L$$ and the weight vector $$w$$ to a floating point value $$\Theta$$.  Note that in Fig.2, the use of $$F(L,w)$$ allows to obtain a  normal convolution (second equation).  Note that $$X$$ are feature maps, $$l$$ is the layer index, $$w^l$$ is the weight vector of layer $$l$$, and $$b^l$$ is the bias of layer $$l$$. 
 
 ![](/deep-learning/images/cnn-on-graph/sc02.png)
 ![](/deep-learning/images/cnn-on-graph/sc03.png)
