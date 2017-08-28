@@ -20,11 +20,11 @@ Their end-to-end network, which outputs a variable number of instances per input
 
 An **important** note is that you need to guess $$ D $$ the number of instances in the image.
 
-They did some work on the loss function to avoid ordering error. In other models, labelling the first person $$ 2 $$ and the first one $$ 1 $$ would be an error. (Sec 3.4)
+They did some work on the loss function to avoid ordering error. In other models, labeling the first person $$ 2 $$ and the first one $$ 1 $$ would be an error. (Sec 3.4)
 
 ## CRF
 
-The CRF takes three terms. First, the box term encourages a pixel to be assigned to a box if it's inside of it. Second, the Global term which assign a segmented pixel without box to an instance. Finally, the Shape term which uses prior shapes to assign pixels. This term helps with merged objects.
+The CRF takes three terms. First, the box term encourages a pixel to be assigned to a box if it's inside of it. Second, the Global term which assigns a segmented pixel without a box to an instance. Finally, the Shape term which uses prior shapes to assign pixels. This term helps with merged objects.
 
 To train the network, they train the segmentation part first and then finetune with the instance segmentation network. The RPN is not trained.
 
