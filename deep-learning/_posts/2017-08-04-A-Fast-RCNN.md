@@ -41,4 +41,3 @@ They report result three dataset, [PASCAL VOC 2007](http://host.robots.ox.ac.uk/
 
 ![](/deep-learning/images/afrcnn/voc2012.png)
 
-![](/deep-learning/images/afrcnn/mscoco.png)
