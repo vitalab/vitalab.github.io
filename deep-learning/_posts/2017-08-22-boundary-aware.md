@@ -10,7 +10,7 @@ cite:
 pdf:   "https://infoscience.epfl.ch/record/227439/files/HayderHeSalzmannCVPR17.pdf"
 ---
 
-In this paper, the authors propose a **boundary-aware** method which is resilient to error from the RPN. Most methods use a RPN to extract boxes and then estimate a binary mask to perform instance segmentation. Those methods suffer from the inaccuracy of the RPN.
+In this paper, the authors propose a **boundary-aware** method which is resilient to error from the **region proposal network** (RPN). Most methods use a RPN to extract boxes and then estimate a binary mask to perform instance segmentation. Those methods suffer from the inaccuracy of the RPN.
 To resolve this problem, the authors propose a new representation which is based on the distance between the pixel and the nearest boundary.
 
 <div align="middle">
