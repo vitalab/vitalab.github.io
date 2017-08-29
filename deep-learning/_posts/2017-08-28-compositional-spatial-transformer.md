@@ -28,8 +28,10 @@ which can be represented as a recurrent network
 
 ## Experiments and results
 
+The authors show that the use of a recurrent transformation network gives better results while preventing from the boundary effect.
 ![](/deep-learning/images/icstn/sc3.png)
 
+![](/deep-learning/images/icstn/sc4.png)
 
 
 [1] M. Jaderberg, K. Simonyan, A. Zisserman, et al. Spatial transformer networks. In Advances in Neural Information Processing Systems, pages 2017–2025, 2015
