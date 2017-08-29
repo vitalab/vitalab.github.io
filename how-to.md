@@ -51,6 +51,8 @@ It is **important that you respect this format : date at the beginning and no sp
     | machine-learning     | medical          | motion-detection    | neural-network      |
     | pedestrian-detection | segmentation     | siamese             | surveillance        | 
     | survey               | tractography     | tractometry         | traffic             |
+    | face-detection       |                  |                     |                     |
+
 
 
 5.  **Make a new branch**, commit your file and push your branch.
