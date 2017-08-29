@@ -12,7 +12,7 @@ pdf:   "https://arxiv.org/pdf/1704.02386.pdf"
 
 In this paper, the authors use localization and semantic segmentation to perform instance segmentation.
 
-Their end-to-end network, which outputs a variable number of instances per input image, begins with an initial semantic segmentation module. The following, dynamic part of the network, then uses information from an object detector and a Conditional Random Field (CRF) model to distinguish different instances.
+Their end-to-end network, which outputs a variable number of instances per input image, begins with an initial semantic segmentation module. The following dynamic part of the network uses information from an object detector and a Conditional Random Field (CRF) model to distinguish different instances.
 
 <div align="middle">
   <img src="/deep-learning/images/dynamic_crf/model.png" width="600">
@@ -24,7 +24,7 @@ They did some work on the loss function to avoid ordering error. In other models
 
 ## CRF
 
-The CRF takes three terms. First, the box term encourages a pixel to be assigned to a box if it's inside of it. Second, the Global term which assigns a segmented pixel without a box to an instance. Finally, the Shape term which uses prior shapes to assign pixels. This term helps with merged objects.
+The CRF takes three terms. First, the box term encourages a pixel to be assigned to a box if it's inside of it. Second, the global term which assigns a segmented pixel without a box to an instance. Finally, the shape term which uses prior shapes to assign pixels. This term helps with merged objects.
 
 To train the network, they train the segmentation part first and then finetune with the instance segmentation network. The RPN is not trained.
 
