@@ -14,21 +14,31 @@ cite:
 Paper :
    - [code](https://github.com/xiaolonw/adversarial-frcnn)
 
-This papers train an adversarial network to generate occlusion/deformation/illumination changes to help an object detector network to generalize better.
+This paper shows a way to train an adversarial network to generate occlusion/deformation changes to help an object detector network to generalize better.
 
 As an object detector network they use [Faster-RCNN]({{ site.baseurl }}{% post_url /deep-learing/2017-05-14-fastrcnn %}).
 
-# Model
+## Model
 
 The adversarial model has two part (Fig.), the first one is a spatial dropout occlusion, it generates occlusion maps on the object features after the ROI layer.
 To select which pixel to mask, they use importance sampling on the mask and keep only the top $$ \frac{1}{3} $$ pixels.
 
-The second part is a spatial transformer network, it generates deformation on the object features. The deformation is mostly focus on rotation, and they found that limiting the rotation is a key factor in their experiment to not have upside down rotation and fool the prediction network. The rotation limit is in between $$ -10^\circ $$ to $$ 10^\circ $$. The other details about the rotation is that they divide the feature maps into 4 blocks given the channel axis and apply different rotation for these blocks.
+The second part is a spatial transformer network, it generates deformation on the object features. The deformation is mostly focused on the rotation. They found that limiting the rotation is a key factor in their experiment to not have upside down rotations and fool the prediction network. The rotation limit is in between $$ -10^\circ $$ to $$ 10^\circ $$. The feature maps are divided into 4 blocks given the channel axis and differents rotations are applied on these blocks.
 
 <div align="middle">
      <img src="/deep-learning/images/afrcnn/network.png"/>
 </div>
 
-# Results
+## Training
 
-They report result on [PASCAL VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) dataset
+They use a pre-trained FRCNN network on ImageNet. The training is done in a staged manner. First, they train FRCNN on the new database for localization. After, they fix the weights of the detector and train the adversarial model to create occlusion or rotation. In the end, they train both models at the same time to improve the detector network.
+
+## Results
+
+They report result three dataset, [PASCAL VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/), [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/), and [MSCOCO](http://cocodataset.org).
+
+![](/deep-learning/images/afrcnn/voc2007.png)
+
+![](/deep-learning/images/afrcnn/voc2012.png)
+
+![](/deep-learning/images/afrcnn/mscoco.png)
