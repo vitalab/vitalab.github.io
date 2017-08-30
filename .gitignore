@@ -2,3 +2,4 @@ _site
 _previews
 .sass-cache
 .jekyll-metadata
+.Rhistory
