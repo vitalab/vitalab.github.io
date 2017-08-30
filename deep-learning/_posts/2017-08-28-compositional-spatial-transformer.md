@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Inverse Compositional Spatial Transformer Networks"
-tags: deep-learning CNN
+tags: deep-learning CNN RNN
 author: "Pierre-Marc Jodoin"
 cite:
     authors: "Chen-Hsuan Lin and Simon Lucey"
@@ -35,5 +35,8 @@ The authors show that the use of a recurrent transformation network gives better
 
 ![](/deep-learning/images/icstn/sc4.png)
 
+## Code
+
+The code is available at [https://github.com/ericlin79119/IC-STN](https://github.com/ericlin79119/IC-STN). It uses Python/Tensorflow.
 
 [1] M. Jaderberg, K. Simonyan, A. Zisserman, et al. Spatial transformer networks. In Advances in Neural Information Processing Systems, pages 2017–2025, 2015
