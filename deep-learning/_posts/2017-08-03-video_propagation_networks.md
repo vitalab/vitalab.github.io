@@ -18,7 +18,7 @@ Paper :
    - [suplementary material](https://varunjampani.github.io/papers/jampani17_VPN_supp.pdf)
 
 
-The goal of this papers is to take a video and a task image as input and apply the task image on the entire video, this task could be pixel segmentation, pixel colorization, etc.
+The goal of this paper is to take a video and a task image as input and apply the task image on the entire video. This task could be pixel segmentation, pixel colorization, etc.
 
 ## Models
 
@@ -36,7 +36,7 @@ This model is used in a staged flavor by first generating a segmentation and ref
 
 ## Evaluation
 
-The VPN model is tested on three different propagation task, foreground mask, semantic label and color propagation.
+The VPN model is tested on three different propagation task: foreground mask, semantic labeling and color propagation.
 
 They use the [DAVIS](http://davischallenge.org/) dataset to evaluate their model. The tables show three metrics for the evaluation, Intersection over Union (IoU), contour accuracy ($$\mathcal{F}$$) and the temporal instability score ($$\mathcal{T}$$).
 
@@ -45,7 +45,7 @@ They use the [DAVIS](http://davischallenge.org/) dataset to evaluate their model
 <img src="/deep-learning/images/vpn/results_davis.png"/>
 </div>
 
-Their model with pretraining achieves an improvement of 5% on all the metrics and 10 times faster against the best reported method (OFL).
+Their model with pretraining achieves an improvement of 5% on all the metrics while being 10 times faster than the best reported method (OFL).
 
 - The results on Semantic segmentation on [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/){:target="_blank"} dataset:
 <div align="middle">
