@@ -1,93 +1,87 @@
 ---
 layout: review
-title: "Inverse Compositional Spatial Transformer Networks"
+title: "Unsupervised Learning of Depth and Ego-Motion from Video"
 tags: deep-learning CNN RNN
 author: "Faezeh Amjadi"
 cite:
-    authors: "Chen-Hsuan Lin and Simon Lucey"
-    title:  "Inverse Compositional Spatial Transformer Networks" 
+    authors: "Tinghui Zhou, Matthew Brown, Noah Snavely,David G. Lowe"
+    title:  "Unsupervised Learning of Depth and Ego-Motion from Video" 
     venue:   "CVPR 2017"
-pdf: "https://arxiv.org/pdf/1612.03897.pdf"
+pdf: "https://people.eecs.berkeley.edu/~tinghuiz/projects/SfMLearner/cvpr17_sfm_final.pdf"
 ---
    
 
 
 
-## Prerequest
+## Prerequisite
 
 
 ***novel view synthesis image***: given one input view of a scene, synthesize a new image of the scen seen from a different camera pose.
-If we have rotation, translation Matrix and Intern camera parameters (R,T,K) **or** depth and translation Matrix (D,T), it is enough to generate new view image.
+If we have rotation, translation and intern camera matrix (R,T,K) **or** depth and translation matrix (D,T), would be enough to generate new view image.
 
-$$ x_{s} = K_{1} R_{1} T_{2} P_{w}$$
+$$ x_{s} = K_{1} R_{1} T_{1} P_{w}$$<br>
 
-$$ x_{t} = K_{1} R_{2} T_{2} P_{w}$$
+$$ x_{t} = \acute{ K_{1}} \acute{R_{2}} \acute{T_{2}} P_{w}$$<br>
 
-$$ p_{w} = T_{2} R_{2} K_{1} x_{t} $$
+$$ x_{s} =K_{1} R_{1} T_{1} \acute{T_{2}}^{-1} \acute{R_{2}}^{-1} \acute{K_{1}}^{-1} x_{t} $$<br>
 
-$$ p_{w} = K_{1} T_{2} T_{2} K_{1} x_{t} $$
-
- fig:
 
 ***Forward/Backward Warping*** : There are two ways to get from a pixel’s original location in an image to its new location. The first method is forward warping. In this method, every point in the original image is transformed and sent to its new location. However, this mode of warping can result in holes and splattering. The better approach is to perform inverse warping. This algorithm goes through every pixel in the new, transformed image, undoes the transformation, and figures out which original pixel to grab. If the original pixel happens to fall between two pixels, simply interpolate the source image.
 
-fig:
+![](/deep-learning/images/icstn/img0.png =200x200)
+<img src="/deep-learning/images/icstn/img0.png"  width="400" height='200' />
 
 **Note:**
-The most problem occurs when: the scene is dynamic or there is  occlusion between target and source images or surface is Lambertian.
+Some factors corrupt the process such as: The scene is dynamic or there is  occlusion between target and source images or surface is Lambertian.
 
 
                              
 ## Summary
 
-The authors present a unsupervised and end to end method for novel view synthesis image by CNN and also it does not need pose information, that it would be a part of learning framework. The propose network has two parts: **depth predection** network and **pose** network. The auther improves  the robustness of learning pipline by adding a **explaniability mask** network (for problems as mention in prerequest). **Depth predection** network is based on DispNet that is mainly an encoder-decoder with skip connectiona and multi-scale side prediction. The **pose** and **explanability mask** network share five first convolution layers then branch out to pose output  and explainability mask, that followed by five deconvolution layer with multi scale predection. 
+The authors present an unsupervised and end to end method for novel view synthesis image by CNN and also it does not need the pose information, that it would be a part of learning framework. The proposed network contains two parts: **depth prediction** network and **pose** network. The input of depth network is just target image and its output is depth prediction, also the input of pose network is source images and target images and depth predictions as shown below. 
+
+<img src="/deep-learning/images/icstn/img1.png"  width="600" height='300' />
 
 
-The view synthesis objective can be formulate as :
-
- $$ l_{us} = \sum_{s}\sum_{p}| I_{t}(p) - \hat{I_{s}}(p)|$$
-
-but output of explainability mask is per_pixel softmax $$\hat{E_{s}}$$ for each target source pair:
-
- $$ l_{us} = \sum_{s}\sum_{p}\hat{E_{s}}| I_{t}(p) - \hat{I_{s}}(p)|$$
-
-beacuse the network is unsupervised, then it is always predecting $$\hat{E_{s}$$ to be zero, so we add a regularization term to out loss.
-
-There is come out the other problem when :
-
-
-Then final objective is :
-
- $$ l_{final} =  \sum_{l}\hat{l_{us}} + \lambda_{s}\hat{l_{smooth}} + \lambda_{e} \sum_{s}l_{reg}\E_{s}$$
-
-where $$l$$ is index over different image scale, $$s$$ index over source images and $$\lambda_{s}$$ and  $$\lambda_{e}$$ are the weighting for  depth smoothness loss and explainability regularization. 
+ **Depth prediction** network is based on DispNet that is mainly an encoder-decoder with skip connection and multi-scale side prediction. The multi_scale helps to the gradiants that derived from pixels with low texture region, so smoothness and multi-scale reduce this problem. The author improves the robustness into the factors (mention in the note), by adding a **explainability mask** network to indicate for each pixel in the source image, network successfully can find the corresponding pixel in the target image. The **pose** and **explainability mask** network share five first convolution layers then branch out to pose output and explainability mask, that followed by five deconvolution layer with multi scale predection as shown below. 
 
 
 
+![](/deep-learning/images/icstn/img2.png)
 
 
-![](/deep-learning/images/icstn/sc1.png)
+The view synthesis objective can be formulate as:
+
+$$ l_{us} = \sum_{s}\sum_{p}| I_{t}(p) -\bar{I_{s}}(p)|$$ 
+
+But the explainability mask account a parameter $$\bar{E_{s}}$$ per pixel to encourage minimize the objective, but allowed a certain amount of discounting the factors not considered by the model.
+
+$$ l_{us} = \sum_{s}\sum_{p}\bar{E_{s}}| I_{t}(p) - \bar{I_{s}}(p)|$$
+
+Beacuse the network is unsupervised, then it is always predecting $$\bar{E_{s}}$$ to be zero, so they added a regularization term to the loss. Then final objective is:
+
+ $$ l_{final} =  \sum_{L}l_{us}^l + \lambda_{s} L_{smooth}^l + \lambda_{e} \sum_{s}l_{reg} \bar{E_{s}^l}$$
+
+Where $$l$$ indexes over different image scale, $$s$$ indexes over source images and $$\lambda_{s} $$and $$\lambda_{e}$$ are weighting for depth smoothness loss and explainability regularization.
  
 
+## Depth Result 
+
+<img src="/deep-learning/images/icstn/img3.png"  width="350" height='250' />
+<img src="/deep-learning/images/icstn/img7.png"  width="350" height='250' />
+
+<img src="/deep-learning/images/icstn/img4.png"  width="900" height='300' />
+
+## Pose Estimation
+
+<img src="/deep-learning/images/icstn/img5.png"  width="400" height='300' />
 
 
+## Explainability mask Result 
 
-## Experiments and results
-
-Depth result :
-![](/deep-learning/images/icstn/sc3.png)
-![](/deep-learning/images/icstn/sc4.png)
-![](/deep-learning/images/icstn/sc4.png)
-
-Pose estimation :
-![](/deep-learning/images/icstn/sc4.png)
-
-
-explainability mask result : 
-![](/deep-learning/images/icstn/sc4.png)
+<img src="/deep-learning/images/icstn/img6.png"  width="600" height='400' />
 
 ## Code
 
-The code is available at [https://github.com/ericlin79119/IC-STN](https://github.com/ericlin79119/IC-STN). It uses Python/Tensorflow.
+The code is available at [https://github.com/tinghuiz/SfMLearner](https://github.com/tinghuiz/SfMLearner). 
 
-[1] M. Jaderberg, K. Simonyan, A. Zisserman, et al. Spatial transformer networks. In Advances in Neural Information Processing Systems, pages 2017–2025, 2015
