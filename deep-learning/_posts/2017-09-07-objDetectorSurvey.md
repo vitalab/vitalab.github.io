@@ -1,11 +1,11 @@
 ---
 layout: review
-title: "Survey Speed/accuracy trade-offs for modern convolutional object detectors"
+title: "Speed/accuracy trade-offs for modern convolutional object detectors"
 tags: deep-learning CNN localization essentials survey benchmarking
 author: "Pierre-Marc Jodoin"
 cite:
     authors: "J Huang, V Rathod, C Sun, M Zhu, A Korattikara, A Fathi, I Fischer, Z Wojna, Y Song, S Guadarrama, K Murphy"
-    title:   "Survey : Speed/accuracy trade-offs for modern convolutional object detectors"
+    title:   "Speed/accuracy trade-offs for modern convolutional object detectors"
     venue:   "CVPR 2017"
 pdf: "http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_SpeedAccuracy_Trade-Offs_for_CVPR_2017_paper.pdf"
 ---
@@ -34,7 +34,7 @@ tested the impact of using various number of box proposals (between 10 and 300),
 
 ![](/deep-learning/images/objDetector17/sc01.png)
 <div style="text-align:center">
-<img src="/deep-learning/images/objDetector17/sc03.png" width="400">
+<img src="/deep-learning/images/objDetector17/sc03.png" width="500">
 </div>
 ![](/deep-learning/images/objDetector17/sc04.png)
 
