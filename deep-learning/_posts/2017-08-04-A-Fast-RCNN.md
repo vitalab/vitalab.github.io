@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "A-Fast-RCNN: Hard Positive Generation via Adversary for Object Detection"
-tags:   deep-learning localization CNN GAN
+tags:   deep-learning localization CNN GAN classification detection
 author: Clément Zotti
 pdf:   "https://arxiv.org/pdf/1704.03414.pdf"
 
