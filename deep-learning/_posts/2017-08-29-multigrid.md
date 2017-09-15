@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Multigrid Neural Architectures"
-tags: deep-learning CNN segmentation
+tags: deep-learning CNN classification segmentation
 cite:
   authors: "T. Ke, M. Maire,  S.X. Yu"
   title: "Multigrid Neural Architectures"
@@ -11,7 +11,7 @@ pdf: http://ttic.uchicago.edu/~mmaire/papers/pdf/nmg_cvpr2017.pdf
 
 This paper presents a new way of using convolution. They test their models for three differents task namely, classification, semantic segmentation, and spatial transformation.
 
-Rather than using a convolution on only one scale they use multiple convolutions at each scale of the input. Each of these scales also contains information from the scales close to him.
+Rather than using a convolution on only one scale they use multiple convolutions at each scales of the input. Each of these scales also contains information from the scales close to him.
 
 <div align='middle'>
      <img src="/deep-learning/images/multigrid/layer.png" />
