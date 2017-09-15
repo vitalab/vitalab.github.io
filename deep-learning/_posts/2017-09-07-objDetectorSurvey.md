@@ -15,7 +15,7 @@ This is a survey/benchmarking paper focused on localization methods.  This paper
 a detection architecture that achieves the right speed/memory/accuracy balance by investigating various ways to
 trade accuracy for speed and memory usage in object detection CNN methods.  In that purpose, they implemented three "meta-architectures":
 
-- SSN (Single Shot Detector)
+- SSD (Single Shot Detector)
 - Faster R-CNN
 - R-FCN
 
@@ -42,6 +42,6 @@ tested the impact of using various number of box proposals (between 10 and 300),
 ## Conclusion
 
 - Fig.4a shows that **Faster-RCNN + inception ResNet v2** is the top performing configuration.
-- Fig.4b shows that an input resolution of 300 is best for large objects and 600 is best for small objects.
-- Fig.6 shows that using more than **50 box proposals** do not improve mAP while requiring more processing power. 
-- Table 4 shows that their top method acheives a mAP of .347 on COCO while ensemble methods reach 0.416, the best result ever.
+- Fig.4b shows that an input resolution of 300 should only be use when we car about small objects.
+- Fig.6 shows that using more than **50 box proposals** does not improve mAP while requiring more processing power. 
+- Table 4 shows that their top method achieves a mAP of 0.347 on COCO while ensemble methods reach 0.416, the best result ever.
