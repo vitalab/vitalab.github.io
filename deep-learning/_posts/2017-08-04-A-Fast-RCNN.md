@@ -23,7 +23,7 @@ As an object detector network they use [Faster-RCNN]({% post_url /deep-learning/
 The adversarial model has two parts (Fig.4). The first one is a spatial dropout occlusion (ASDN), it generates occlusion maps on the object features after the ROI layer.
 To select which pixel to mask, they use importance sampling on the mask and keep only the top $$ \frac{1}{3} $$ pixels.
 
-The second part is a spatial transformer network (ASTN), it generates deformation on the object features. The deformation is mostly focused on the rotation. They found that limiting the rotation is a key factor in their experiment to not have upside down rotations and fool the prediction network. The rotation limit is in between $$ -10^\circ $$ to $$ 10^\circ $$. The feature maps are divided into 4 blocks given the channel axis and different rotations are applied on these blocks.
+The second part is a spatial transformer network (ASTN), it generates deformation on the object features. The deformation is mostly focused on the rotation. They found that limiting the rotation is a key factor in their experiment to not have upside down rotations and fool the prediction network. The rotation limit is in between $$ -10^\circ $$ to $$ 10^\circ $$. The feature maps are divided into 4 blocks along the channel axis and different rotations are applied on these blocks.
 
 <div align="middle">
      <img src="/deep-learning/images/afrcnn/network.png"/>
