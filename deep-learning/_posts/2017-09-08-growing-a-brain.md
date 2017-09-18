@@ -43,15 +43,13 @@ The authors also state that their method help features capture more discriminati
 ![](/deep-learning/images/growing-a-brain/fig7.png)
 {: style="clear: right"}
 
-![](/deep-learning/images/growing-a-brain/fig6.png){: style="width: 430px; margin-left: 10px"}
-{: style="float: right"}
-
-Next, the **cooperative behavior** of old and new units are studied.
+Next, the **cooperative behavior** of old and new units is studied.
 
 Without the normalization and scaling (WA-CNN-ori), the new units are less useful for classification than the old. By adding the operations (WA-CNN-grow), we can see that the new units are more useful than the old!
 
+![](/deep-learning/images/growing-a-brain/fig6-2.png)
+
 # Conclusion
-{: style="clear: right"}
 
 * Increasing model capacity (and using **normalization and scaling**) significantly helps existing units better adapt and specialize to the target task.
 * There is a slight but consistent benefit for widening the network, in comparison with deepening.
