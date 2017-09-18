@@ -24,7 +24,7 @@ The goal of the system is to learn an adjacency matrix as well as the state of e
 
 ![](/deep-learning/images/GSNN/sc02.png)
 
-However, since learning the entier graph all at once is time expansive, they start by propagating information from visual nodes detected by Faster R-CNN.
+However, since learning the entier graph all at once is time expensive, they start by propagating information from visual nodes detected by Faster R-CNN.
 They then add the nodes adjacent to the initial nodes to the active set and propagate the beliefs about the initial
 nodes to all of the adjacent nodes. After the first time step, we need a way of deciding which nodes to expand next. This is done with an **importance network**
 
