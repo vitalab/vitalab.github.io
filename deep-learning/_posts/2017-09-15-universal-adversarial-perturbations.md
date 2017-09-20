@@ -15,7 +15,7 @@ The authors propose a systematic algorithm for computing universal perturbations
 
 ![](/deep-learning/images/univ-adv-perturbations/figure1.png)
 
-The proposed algorithm has to parameters:
+The proposed algorithm has two parameters:
 1. The norm of the perturbation to be added to images
 2. The desired fooling rate
 
