@@ -28,8 +28,8 @@ To be efficient the coordinate rotation and orientation spin are calculated by t
 ### Oriented Response Convolution (ORConv)
 
 The ORConv can be seen as a composition of the ARF $$ \mathcal{F} $$ and a N-channel input feature map $$ \mathcal{M} $$.
-This combination is denoted as $$ \tilde\mathcal{M} = \mathbf{ORConv}(\mathcal{F}, \mathcal{M}) $$,
-where $$ \tilde\mathcal{M} $$ are the output feature maps with $$ \mathcal{N} $$ orientation.
+This combination is denoted as $$ \hat\mathcal{M} = \mathbf{ORConv}(\mathcal{F}, \mathcal{M}) $$,
+where $$ \hat\mathcal{M} $$ are the output feature maps with $$ \mathcal{N} $$ orientation.
 
 <div align="middle">
      <img src="/deep-learning/images/orn/orconv.png" />
