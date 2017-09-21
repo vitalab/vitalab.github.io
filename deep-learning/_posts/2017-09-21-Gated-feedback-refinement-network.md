@@ -31,7 +31,7 @@ The main idea behind this is that lower resolution label maps integrate higher-f
 
 ## Results
 
-They test their method on three dataset namely, CamVid, Pascal VOC 2012, and a subset of Pascal VOC 2012 with only horses and cows and separate each part of the animal.
+They test their method on three dataset namely, CamVid, Pascal VOC 2012, and a subset of Pascal VOC 2012 with only horses and cows where the task is to separate each part of the animal.
 
 #### CamVid
 ![](/deep-learning/images/gfrn/tab1.png){: style="width: 730px"}
