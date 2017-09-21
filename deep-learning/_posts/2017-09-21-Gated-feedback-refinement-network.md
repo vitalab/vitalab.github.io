@@ -13,6 +13,7 @@ pdf: "http://www.cs.umanitoba.ca/~ywang/papers/cvpr17.pdf"
 
 ## Model
 
+This paper is a follow up of [Label Refinement Network](https://arxiv.org/pdf/1703.00551v1.pdf).
 The model is based on a encoding-decoding architecture with skip connections, the encoding is done by a VGG-16 network where only the convolutional layers are used.
 The novelty of their work is the use of gating mechanism in the skip connection.
 
