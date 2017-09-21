@@ -12,7 +12,8 @@ pdf: https://arxiv.org/pdf/1701.01833.pdf
 ## Model
 
 This papers provide a new way to use convolutions. In conventional convolution neural network, the filters are invariant to translation,
-with their techniques they are also invariant to rotation. This method is called Oriented Responde Network (ORN). The ORN is built on top of Active Rotatiing Filters (ARF).
+with their techniques they also become invariant to rotation. This method is called Oriented Responde Network (ORN). 
+The ORN is built on top of Active Rotating Filters (ARF).
 
 
 ### ARF
@@ -42,7 +43,7 @@ By default the feature maps of ORN are not rotation invariant. When the task nee
 Notation: $$ \hat\mathcal{M}\{i\}^{(d)} $$ where $$ i $$ is the i-th feature map of the ORConv layer, and $$ d $$ is the orientation.
 
 #### ORAlign
-The ORAlign simpy compute the dominant orientation $$ \mathcal{D} = \text{argmax}_d \hat\mathcal{M}\{i\}^{(d)} $$ and spin the feature by $$ -\mathcal{D}\frac{2\pi}{N} $$.
+The ORAlign simply compute the dominant orientation $$ \mathcal{D} = \text{argmax}_d \hat\mathcal{M}\{i\}^{(d)} $$ and spin the feature by $$ -\mathcal{D}\frac{2\pi}{N} $$.
 
 #### ORPooling
 
