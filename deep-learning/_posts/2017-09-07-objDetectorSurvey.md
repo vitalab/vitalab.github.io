@@ -42,6 +42,6 @@ tested the impact of using various number of box proposals (between 10 and 300),
 ## Conclusion
 
 - Fig.4a shows that **Faster-RCNN + inception ResNet v2** is the top performing configuration.
-- Fig.4b shows that an input resolution of 300 should only be use when we car about small objects.
+- Fig.4b shows that an input resolution of 600 is better than 300, especially when dealing with small objects.
 - Fig.6 shows that using more than **50 box proposals** does not improve mAP while requiring more processing power. 
 - Table 4 shows that their top method achieves a mAP of 0.347 on COCO while ensemble methods reach 0.416, the best result ever.
