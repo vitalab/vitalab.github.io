@@ -1,7 +1,7 @@
 ---
 layout: review
-title: "Semi_Supervis for  Depth Prediction"
-tags: semi_supervise for predict depth
+title: "Semi-Supervised Monocular Depth Map Prediction"
+tags: semi-supervise depth prediction
 author: Faezeh Amjadi
 cite:
     authors: "Yevhen Kuznietsov, Jorg Stuckler, Bastin Leibe"
@@ -15,17 +15,17 @@ semi-supervised way for a monocular image. The network is a CNN (a deep residual
 
 The network is trained by unsupervised and supervised depth cues. The supervised part compares the output of network with the ground truth.
 
-The unsupervised part learns depth prediction, directly from the stereo images that the left image was fed to the network, so with the left image and disparity (output of the network), each pixel from the left image can be mapped to the right image and inverse. Thus, the authors define loss by direct image alignment error in both directions in this part. [ unsupervised because the network does not use ground truth to calculate the loss].
+The unsupervised part learns depth prediction, directly from the stereo images that the left image was fed to the network, so with the left image and disparity (output of the network), each pixel from the left image can be mapped to the right image and inverse. Thus, the authors define loss by direct image alignment error in both directions in this part. We call unsupervised because the network does not use ground truth to calculate the loss].
 
 
-An **important** note is that the author use BerHu_norm instead of L2_norm in supervised loss that performs better on test set and reduce the noise. 
+An **important** note is that the author use BerHu-norm(https://arxiv.org/pdf/1207.6868.pdf) instead of L2-norm in supervised loss that performs better on test set and reduce the noise. 
 
 <div align="middle">
   <img src="/deep-learning/images/pred_depth/1.png" width="400">
 </div>
 
 
-## Experiments and results
+## Results
 
 
 <div align="middle">
