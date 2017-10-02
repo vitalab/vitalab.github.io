@@ -15,24 +15,24 @@ pdf: "http://www.cs.umanitoba.ca/~ywang/papers/cvpr17.pdf"
 
 This paper is a follow up of [Label Refinement Network](https://arxiv.org/pdf/1703.00551v1.pdf).
 The model is based on a encoding-decoding architecture with skip connections, the encoding is done by a VGG-16 network where only the convolutional layers are used.
-The novelty of their work is the use of gating mechanism in the skip connection.
+The novelty of their work is the use of a gating mechanism in the skip connection.
 
 ![](/deep-learning/images/gfrn/fig2.png)
 
-As you can see they use multiple crossentropy loss for each resolution of feature maps on the decoding part. This help the network to extract better information at each resolution.
+As you can see they use multiple crossentropy losses for each resolution of feature maps on the decoding part. This help the network to extract better information at each resolution.
 
 ## Gate Refinement unit
 
-The **Gate unit** merge two resolution of feature maps by upsampling the lower resolution and make an element wise product of the features. These features are finally handled by the **Refinement unit** that produce a label segmentation map.
+The **Gate unit** merges two resolution of feature maps by upsampling the lower resolution and make an element wise product of the features. These features are finally handled by the **Refinement unit** that produces a label segmentation map.
 
-The main idea behind this is that lower resolution label maps integrate higher-frequency details and that lead to better segmentation maps.
+The main idea behind this is that lower resolution label maps integrate higher-frequency details from the skip connections and that lead to better segmentation maps.
 
 ![](/deep-learning/images/gfrn/fig3.png){: style="width: 365px"}
 ![](/deep-learning/images/gfrn/fig4.png){: style="width: 365px"}
 
 ## Results
 
-They test their method on three dataset namely, CamVid, Pascal VOC 2012, and a subset of Pascal VOC 2012 with only horses and cows where the task is to separate each part of the animal.
+They test their method on three datasets namely, CamVid, Pascal VOC 2012, and a subset of Pascal VOC 2012 with only horses and cows where the task is to separate each part of the animal.
 
 #### CamVid
 ![](/deep-learning/images/gfrn/tab1.png){: style="width: 730px"}
