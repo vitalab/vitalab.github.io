@@ -43,15 +43,15 @@ It is **important that you respect this format : date at the beginning and no sp
 
     | CNN                  | DBM              | GAN                 | GMM                 |
     | KDE                  | LSTM             | MRI                 | PCA                 |
-    | RBM                  | RNN              | optimization        | few-shot-learning   |
+    | RBM                  | RNN              | VAE                 |                     |
     | autoencoder          | benchmarking     | bounding-boxes      | brain               |
     | cardiac              | classification   | codebook            | course              |
-    | ct-scan              | deep-learning    | essentials          | genetic-algorithm   |
-    | graph-cut            | k-means          | layers              | localization        |
-    | machine-learning     | medical          | motion-detection    | neural-network      |
-    | pedestrian-detection | segmentation     | siamese             | surveillance        | 
-    | survey               | tractography     | tractometry         | traffic             |
-    | face-detection       |                  |                     |                     |
+    | ct-scan              | deep-learning    | essentials          | face-detection      |
+    | few-shot-learning    | genetic-algorithm| graph-cut           | k-means             | 
+    | layers               | localization     | machine-learning    | medical             |
+    | motion-detection     | neural-network   | optimization        | pedestrian-detection| 
+    | segmentation         | siamese          | surveillance        | survey              | 
+    | tractography         | tractometry      | traffic             |                     |
 
 
 
