@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Learning from Simulated and Unsupervised Images through Adversarial Training"
-tags: deep-learning 
+tags: deep-learning GAN
 author: "Philippe Poulin"
 cite:
     authors: "A. Shrivastava, T. Pfister, O. Tuzel, J. Susskind, W. Wang, R. Webb"
