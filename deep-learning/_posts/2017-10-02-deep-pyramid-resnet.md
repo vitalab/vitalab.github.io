@@ -13,11 +13,11 @@ cite:
 Paper:
 - [code](https://github.com/jhkim89/PyramidNet)
     
-This paper has two main contributions, a pyramidal architecture that concentrate the feature map dimension, they change slightly the usual resnet block by adding a zero-padded shortcut, and also try differents layers combinasion inside the block.
+This paper has two main contributions, a pyramidal architecture that concentrates the feature map dimension, they change slightly the usual resnet block by adding a zero-padded shortcut, and also try different layer combinations inside the block.
 
 ## Model
 
-This model is a regular resnet but the numbers of feature maps in each layers are calculted by a formula.
+This model is a regular resnet but the number of feature maps in each layer are calculted by a formula.
 
 ![](/deep-learning/images/dpyres/eq2.png)
 ![](/deep-learning/images/dpyres/eq3.png)
@@ -31,13 +31,13 @@ The new shortcut included in the residual block include a zero padding of the fe
 ![](/deep-learning/images/dpyres/fig5.png)
 
 
-Finally, they found empiricaly some impacts of the relu activation and batch normalization given their positions in the network.
+Finally, they found empirically some impacts of the relu activation and batch normalization given their position in the network.
 
 ![](/deep-learning/images/dpyres/fig6.png)
 
 ## Results
 
-They report results on three dataset namely, CIFAR-10, CIFAR-100, and ImageNet.
+They report results on three datasets namely, CIFAR-10, CIFAR-100, and ImageNet.
 
 #### CIFAR-10 & CIFAR-100 
 ![](/deep-learning/images/dpyres/table4.png)
