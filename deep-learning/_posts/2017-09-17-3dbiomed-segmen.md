@@ -33,10 +33,11 @@ Feature concatenation often requires additional learnable weights because of the
 
 The label image contains five labels: non-tumor, necrosis, edema, non-enhancing tumor and enhancing tumor. The evaluation system separates the tumor structure into three regions due to practical clinical applications:
 
-1.Complete score: it considers all tumor areas and evaluates all labels 1, 2, 3, 4 (0 for normal tissue, 1 for
-edema, 2 for non-enhancing core, 3 for necrotic core, and 4 for enhancing core).
-2.Core score: it only takes tumor core region into account and measures the labels 1, 3, 4.
-3.Enhancing score: it represents the active tumor region, i.e., only containing the enhancing core (label 4) structures for high-grade cases.
+1. Complete score: it considers all tumor areas and evaluates all labels 1, 2, 3, 4 (0 for normal tissue, 1 for edema, 2 for non-enhancing core, 3 for necrotic core, and 4 for enhancing core).
+
+2. Core score: it only takes tumor core region into account and measures the labels 1, 3, 4.
+
+3. Enhancing score: it represents the active tumor region, only containing the enhancing core (label 4) structures for high-grade cases.
 
 There are three kinds of evaluation criteria: Dice, Positive
 Predicted Value and Sensitivity.Where T1 is the true lesion area and P1 is the subset of voxels predicted
