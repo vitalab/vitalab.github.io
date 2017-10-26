@@ -12,7 +12,7 @@ pdf: "https://arxiv.org/pdf/1703.05593.pdf"
 
 ## Summary
 
-The authors propose a convolutional neural network architecture for geometric matching, trainable end-to-end. They also show that teh model is trainable using synthetically warped images without needing any manual annotation.
+The authors propose a convolutional neural network architecture for geometric matching, trainable end-to-end. They also show that the model is trainable using synthetically warped images without needing any manual annotation.
 
 ![](/deep-learning/images/conv-geometric-matching/figure1.png)
 
@@ -43,7 +43,7 @@ Instead of trying to directly predict a complex transformation, the authors prop
 
 ### Training
 
-The model is trained by measuring the los on an "imaginary" grid of points which is deformed by the transformation. The loss is then the summed squared distances between the points deformed by the ground truth transformation and the predicted transformation.
+The model is trained by measuring the loss on an "imaginary" grid of points which is deformed by the transformation. The loss is then the summed squared distances between the points deformed by the ground truth transformation and the predicted transformation.
 
 Note that the affine transformation network and the TPS transformation network are trained independently.
 
