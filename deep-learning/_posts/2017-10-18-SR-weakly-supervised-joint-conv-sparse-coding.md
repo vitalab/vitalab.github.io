@@ -27,7 +27,7 @@ Learning the filters and sparse feature maps is done by minimizing both a recons
 
 ## Hetero-domain image alignment
 
-The dataset is comprised of a small number of paired images (LR and HR MRI images of the same subject across idfferent modalities), and a high number of unpaired images (LR and HR MRI images are from different different subjects and different modalities).
+The dataset is comprised of a small number of paired images (LR and HR MRI images of the same subject across idfferent modalities), and a high number of unpaired images (LR and HR MRI images are from different different subjects and modalities).
 
 Using paired data, an alignement between LR and HR images is learned using manually extracted high-frequency (HF) features (edges for the low-resolution images and textures for HR images). The alignment is then used to find new pairs in the unpaired images and augment the dataset.
 
