@@ -16,22 +16,22 @@ The task of the model is to generate image captioning for the MSCOCO dataset usi
 
 ## Model
 
-Their model is separate in three part, the policy network, the value network and the visual-semantic embedding.
+Their model is separated in three parts, the policy network, the value network and the visual-semantic embedding.
 
 
 #### Policy network
-The policy is a combination of the VGG16 and an LSTM, it is used to predict the next action given the current state, as shown in figure 2.
+The policy is a combination of the VGG16 and an LSTM. It is used to predict the next action given the current state, as shown in figure 2.
 
 ![](/deep-learning/images/deep-rl-caption/fig2.png)
 
 #### Value network
-The value network has the same combination as the policy network but they add an MLP used for the regression task. It is used to evaluate the next word given the previous sentence generated.
+The value network has the same combination as the policy network but they add an MLP used for the regression task. It is used to evaluate the next word given the image features and the previous words sentence generated in the sentence.
 
 ![](/deep-learning/images/deep-rl-caption/fig3.png)
 
 #### Training
-These two network are first pretrain before using the reinforcement learning algorithm to make them work together.
-The policy network is train using a crossentropy on the sentence, and the value network is train to do a regression task on the final reward.
+These two networks are first pretrained before using the reinforcement learning algorithm to make them work together.
+The policy network is trained using a crossentropy on the sentence, and the value network is trained to do a regression task on the final reward.
 
 After this pretaining, they use the actor-critic algrotihm to train both of them, and use the visual-semantic embedding as a reward.
 
