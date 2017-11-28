@@ -51,7 +51,8 @@ It is **important that you respect this format : date at the beginning and no sp
     | layers               | localization     | machine-learning    | medical             |
     | motion-detection     | neural-network   | optimization        | pedestrian-detection| 
     | segmentation         | siamese          | surveillance        | survey              | 
-    | tractography         | tractometry      | traffic             |                     |
+    | tractography         | tractometry      | traffic             | reinforcement       |
+    | caption              |                  |                     |                     |
 
 
 
