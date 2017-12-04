@@ -12,11 +12,13 @@ pdf: ""
 
 ## Summary
 
-- Supervised training
-- Direct bundle segmentation 
-- Learned spatial priors
-- 3 fODFs peaks (MRtrix CSD + peak extraction) used as input = 9-channel input image (less memory usage than raw DWI or SH coeffs)
+The authors propose a U-Net based approach for direct bundle segmentation. This means that tractography is effectively bypassed, and no streamlines are needed to predict a bundle's probability map. The raw diffusion signal (or SH coeffs) is too large to fit in memory, therefore the images are processed and 3 fODFs peaks are extracted per voxel (using MRtrix CSD + peak extraction). Input images thus have 9 channels instead of between 50 and 200.
 
+The model is used for a binary classification task; the final prediction is a 3D probability map, where each voxel's value is its probability of belonging to the bundle of interest.
+
+Training data is obtained by 1) whole-brain tracking, 2) valid streamlines segmentation for the chosen bundle, then 3) generating a binary coverage map.
+
+**Model**
 - Three U-Nets trained independently (one per axis) = 3 predictions per voxel
 - Fourth U-Net takes the 3 predictions combined as a 3-channel input image (3D segmentation? Unclear...)
 - Binary classification target (bundle-specific model)
