@@ -13,7 +13,7 @@ via Convex Relaxations"
 ---
 
 The authors propose an unsupervised method to discover transformation matrices to describe a dataset.
-To do so, the method looks at the closest neighbor of some samples and optimize a novel convex problem.
+To do so, the method looks at the closest neighbor of some samples and optimizes a novel convex problem.
 
 
 ## Problem
@@ -42,7 +42,7 @@ It took 10 minutes to find the most important transformations on MNIST. The auth
 
 ![](/machine-learning/images/translearning/qualitative.png)
 
-Here are some quantitative result.
+Here are some quantitative results.
 
 *Note* : The **Convex** method is where they do not add a trace regularization and they do not use gradient descent.
 
