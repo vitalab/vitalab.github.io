@@ -53,7 +53,7 @@ At the same time, the validation losses all converged to a low level, and the va
 **Strong points**
 *  Recurrent layers can handle variable-length input sequences.
 *  The small number of images needed.
-*  Easy to understand the extract information in the convolutional layers.
+*  Easy to understand the extracted information in the convolutional layers.
 
 ### In the future
 They want to explore the semi-supervised deep learning techniques for hyperspectral image classification.
