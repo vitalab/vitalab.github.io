@@ -12,7 +12,7 @@ Object Orientation Estimation"
   venue:   "arXiv:1702.01499, 6 Feb 2017"
 ---
 
-In this work, the authors demonstrate how CNNs can be used to estimate the orientation of an object between 0<sup>o</sup> and 360<sup>o</sup>.  For this, they propose and test 3 different methods. For each method, they assume that each image comes with a single prominent object located at the center of the image.  Each method is texted with a ResNet-201 pretrained on ImageNet. 
+In this work, the authors demonstrate how CNNs can be used to estimate the orientation of an object between 0<sup>o</sup> and 360<sup>o</sup>.  For this, they propose and test 3 different methods. For each method, they assume that each image comes with a single prominent object located at the center of the image.  Each method is tested with a ResNet-201 pretrained on ImageNet. 
 
 # Method 1
 Orientation is defined by a vector $$\vec v=(cos(\theta),sin(\theta))$$ and the loss is a L1 norm.  During testing, the predicted vector $$\vec v=(x,y)$$ is converted to an angle with a ```atan2``` function.
