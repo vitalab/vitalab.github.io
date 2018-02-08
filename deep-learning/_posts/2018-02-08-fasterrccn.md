@@ -13,7 +13,7 @@ cite:
 This is an effort to improve [R-CNN]({{ site.baseurl }}{% link deep-learning/_posts/2017-04-18-rcnn.md %}) and [Fast-CNN]({{ site.baseurl }}{% link deep-learning/_posts/2017-05-14-fastrcnn.md %}). 
 The main improvements are : 
 
-* The use a Region Proposal Network (RPN) that proposes boxes out of a given feature map which allows end-to-end training (previous methods used a third party proposal method).
+* The author uses a Region Proposal Network (RPN) that proposes boxes out of a given feature map which allows end-to-end training (previous methods used a third party proposal method).
 
 * They use multi-resolution anchor boxes
 
