@@ -7,7 +7,7 @@ pdf:    https://arxiv.org/pdf/1707.06879
 cite:
   authors: "Pascal Kaiser, Jan Dirk Wegner, Aurelien Lucchi, Martin Jaggi, Thomas Hofmann, Konrad Schindler"
   title:   "Learning Aerial Image Segmentation from Online Maps"
-  venue:   "Published in IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+  venue:   "Published in IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING, Pages: 6054 - 6068, Volume: 55, Issue: 11, Nov. 2017"
 ---
 
 #### What they do
@@ -64,6 +64,11 @@ The finals results are:
 <img src="/deep-learning/images/FCN_OSm/result_2.png" width="600">
 
 <img src="/deep-learning/images/FCN_OSm/result_3.png" width="600">
+
+### Conclusions
+- Large scale, nevertheless significantly improves segmentation performance, and improves generalization ability of the models.
+- Training only on open data, without manual labelling, achieves reasonable results.
+- Large-scale pre-training with OSM labels significantly benefits semantic segmentation.
 
 ***
 
