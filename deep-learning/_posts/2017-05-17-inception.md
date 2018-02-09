@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "Inception-v3 : Rethinking the Inception Architecture for Computer Vision"
-tags:   deep-learning CNN classification
+tags:   deep-learning CNN classification essentials
 author: Frédéric Branchaud-Charron
 pdf:   "https://arxiv.org/pdf/1512.00567.pdf"
 

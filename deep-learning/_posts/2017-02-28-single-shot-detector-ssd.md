@@ -7,7 +7,7 @@ cite:
     title:   "SSD: Single Shot MultiBox Detector"
     venue:   "European Conference on Computer Vision (pp. 21-37). Springer International Publishing"
 pdf: "https://arxiv.org/pdf/1512.02325.pdf"
-tags:   cnn deep-learning object-detection bounding-boxes
+tags:   cnn deep-learning object-detection bounding-boxes essentials
 ---
 ## Summary
 
