@@ -52,7 +52,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | motion-detection     | neural-network   | optimization        | pedestrian-detection|
     | segmentation         | siamese          | surveillance        | survey              |
     | tractography         | tractometry      | traffic             | reinforcement       |
-    | caption              | hyperspectral    |                     |                     |
+    | caption              | hyperspectral    | remote-sensing              |                     |
 
 
 
