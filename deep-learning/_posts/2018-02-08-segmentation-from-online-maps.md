@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "Learning Aerial Image Segmentation from Online Maps"
-tags:   CNN, segmentation, classification, deep-learning
+tags:   CNN, segmentation, classification, deep-learning, remote-sensing
 author: Charles Authier
 pdf:    https://arxiv.org/pdf/1707.06879
 cite:
@@ -31,22 +31,22 @@ They use OSM like weakly labeled training data for three classes, buildings, roa
 - If low-accuracy, large-scale training data helps, it may allow substituting a large portion of the manually annotated high-quality data.
 
 #### Model
-FCN (Fully convolutional network) with modifications and in input a 500x500pixel patch (mini batch 1 image).
+FCN (Fully convolutional network) with modifications and as input, an 500x500pixel patch (mini batch 1 image).
 
-<img src="/deep-learning/images/FCN_OSm/fcn.png" width="600">
+<img src="/deep-learning/images/FCN_OSm/fcn.png" width="900">
 
-they make some pre-training before the real training to get better results.
-One by the Pascal VOC[^fn] and the other with the OSM data.
+They make some pre-training before the real training to get better results.
+One by the Pascal VOC 2010[^fn] and the other with the OSM data.
 
 ### Experiments
 - Complete substitution (No manual labeling).
 - Augmentation (pre-training help or not).
 - Partial substitution (pre-training with OSM labeling in the training).
 
-#### Dataset
+#### Datasets
 <img src="/deep-learning/images/FCN_OSm/dataset.png" width="500">
 > ###### ground sampling distance (GSD).
-> ###### Potsdam - 1 image (6000x6000 pixel) = 144 images (500x500 pixel), only 21 are labeling.
+> ###### Potsdam - 1 image (6000x6000 pixel) = 144 images (500x500 pixel), only 21 have been manually labeled.
 
 ### Results
 For Chicago with only the OSM training.
