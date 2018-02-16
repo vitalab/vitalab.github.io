@@ -83,8 +83,3 @@ Instead of relying in a single estimate of the network parameters, the authors p
 **Uncertainty visualization**
 
 ![](/deep-learning/images/dmri-sr-uncertainty/figure5.png)
-
-
-
-## Results
-
