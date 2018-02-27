@@ -10,7 +10,7 @@ cite:
   venue:   "arxiv:1802.02950"
 ---
 
-This paper is built upon Elastic Weight Consolidation [^fn] (EWC), a common method to avoid catastrophic forgetting. In this setting, we want to learn the $$Kth$$ task without forgetting the $$K-1$$ tasks. To do so, EWC compute the optimal $$ \theta_{:K} $$ given $$\theta_{:K-1}$$ such that it maximizes the posterior $$p_{:K} = p(\theta \vert D_{:K})$$ where $$D_{:K}$$ are all datasets up to task $$K$$.
+This paper is built upon Elastic Weight Consolidation [^fn] (EWC), a common method to avoid catastrophic forgetting. In this setting, we want to learn the $$Kth$$ task without forgetting the $$K-1$$ previous tasks. To do so, EWC compute the optimal $$ \theta_{:K} $$ given $$\theta_{:K-1}$$ such that it maximizes the posterior $$p_{:K} = p(\theta \vert D_{:K})$$ where $$D_{:K}$$ are all datasets up to task $$K$$.
 
 This can be done using the Fisher matrix of previous task $$\bar F_{:K-1}$$ (See eq. 3).
 
