@@ -12,9 +12,9 @@ cite:
 
 ### Description
 	
-The goal of this work is to making the prediction on unlabeled data and using them to update the model as self-training without the requirement of training a large set of models. The authors proposed a method by ensembling the predictions from multiple transformations of unlabeled data, using a single model, to automatically generate new training annotation.
+The goal of this work is to predict on unlabeled data and using them to update the model as self-training without the requirement of training a large set of models. The authors proposed a method by ensembling the predictions from multiple transformations of unlabeled data, using a single model, to automatically generate new training annotation.
 
-There is a single model which run on different transformations (flipping and scaling) of an unlabeled image and then ensemble the result. In comparison with distilling knowledge, which predictions of multiple models are considered, there is a single model run on multiple transformed unlabeled images.
+There is a single model which run on different transformations (flipping and scaling) of an unlabeled image and then ensemble the result. In comparison with distilling knowledge, which predictions of multiple models are considered, there is a single model runs on multiple transformed unlabeled images.
 
 <img src="/deep-learning/images/DataDistilling/1.png" width="600">
 
