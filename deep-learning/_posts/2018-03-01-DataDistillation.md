@@ -19,7 +19,7 @@ There is a single model which run on different transformations (flipping and sca
 <img src="/deep-learning/images/DataDistilling/1.png" width="600">
 
 
-There is four step for data distillation:
+There is four steps for data distillation:
 1. training a model on manually labeled data.
 2. applying the trained model to multiple transformations of unlabeled data.
 3. converting the predictions on the unlabeled data into labeles by ensembling the predictions.
