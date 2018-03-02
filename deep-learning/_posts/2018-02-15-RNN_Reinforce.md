@@ -25,7 +25,7 @@ The actual policy gradient equation is as follows where $$T$$ is the number of h
 </div>
 
 
-Here is an exemple of a recurrent controler generating the structure of a simple CNN (not clear what is input is though)
+Here is an exemple of a recurrent controler generating the structure of a simple CNN (the input is random noise)
 
 <div align="middle">
   <img src="/deep-learning/images/rnn_reinforce_arch_search/sc02.png" width="600">
