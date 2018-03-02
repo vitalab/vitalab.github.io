@@ -47,7 +47,7 @@ The authors address 2 types of uncertainty:
 
 **Intrinsic uncertainty**
 
-Minimising a mean squared error is equivalent to minimising the NLL under a Gaussian noise model:
+Minimizing a mean squared error is equivalent to minimising the NLL under a Gaussian noise model:
 
 ![](/deep-learning/images/dmri-sr-uncertainty/equation1.png)
 
@@ -55,7 +55,7 @@ In this case, the variance is fixed and represents the *intrinsic uncertainty* i
 
 ![](/deep-learning/images/dmri-sr-uncertainty/equation2.png)
 
-Here, the mean and variance are estimate by two different 3D-ESPCN models:
+Here, the mean and variance are estimated by two different 3D-ESPCN models:
 
 ![](/deep-learning/images/dmri-sr-uncertainty/figure2.png)
 
