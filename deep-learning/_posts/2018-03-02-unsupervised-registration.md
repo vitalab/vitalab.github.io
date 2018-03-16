@@ -10,7 +10,6 @@ cite:
 pdf: "https://arxiv.org/abs/1802.02604"
 ---
 
-## Unsupervised Learning Model for Medical Image Registration
 
 The goal is to train a CNN for deformable, pairwise 3D medical image registration.
 
