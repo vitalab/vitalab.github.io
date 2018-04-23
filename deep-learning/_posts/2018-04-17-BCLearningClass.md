@@ -16,12 +16,12 @@ In an other paper [^fn], they proposed a learning method named *Between-Class le
 The advantages of BC learning are not limited only to the increase in variation of the training data. They argued that BC learning has the ability to impose constraints on the feature distributions, which
 cannot be achieved with standard learning, and thus the generalization ability is improved.
 
-They achieved a performance surpasses the human level in sound classification tasks.
+They achieved a performance that surpasses the human classification accuracy.
 
-This paper, is the awnser of the question: Can BC learning also perform on images?
+This paper tries to answer the question : does BC learning also applied to images?
 
 ## The main idea
-They argue that CNNs have an aspect of treating input data as waveforms. Thus, a mixture of two images is a mixture of two waveforms.
+They argue that CNNs have an aspect of treating input data as waveforms. Thus, a mixture of two images can be seen as a mixture of two waveforms.
 
 ![](/deep-learning/images/BC_learning/BClearning_input.png)
 
@@ -30,7 +30,7 @@ They argue that CNNs have an aspect of treating input data as waveforms. Thus, a
 - Domonstrated the effectiveness of BC learning for images.
 
 ## Mixing method
-- Simple mixing: $$r x_1+(1-r)x_2$$ where $$r = U(0, 1)$$
+- Simple mixing: $$r x_1+(1-r)x_2$$ where $$r = U(0, 1)$$ and $$x_1, x_2$$ the two images.
 
 ![](/deep-learning/images/BC_learning/BC_standar.png)
 
