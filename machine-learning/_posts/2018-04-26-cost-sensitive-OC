@@ -11,7 +11,7 @@ cite:
 ---
 
 ## Intro
-They proposed fiew empirically algorithms and validate their effectiveness and properties.
+They proposed three empirically algorithms and validate their effectiveness and properties.
 They introduce the sketching technique into our algorithms, which significantly accelerates the computational speed with quite slight performance loss.
 
 ## Algorithms
