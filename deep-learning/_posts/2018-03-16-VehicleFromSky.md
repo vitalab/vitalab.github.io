@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "Segment-before-Detect: Vehicle Detection and Classification through Semantic Segmentation of Aerial Images"
-tags:   classification, traffic, deep-learning, remote-sensing, segmentation
+tags:   classification, traffic, deep-learning, remote-sensing, segmentation, CNN
 author: Charles Authier
 pdf:    http://www.mdpi.com/2072-4292/9/4/368/pdf
 cite:
@@ -11,7 +11,7 @@ cite:
 ---
 
 ### Description
-They proposed a three-step *segment-before-detect* for vehicle extraction and classification in very high-resolution remote-sensing.
+They proposed a three-step *segment-before-detect* method for vehicle extraction and classification in very high-resolution remote-sensing.
 - Segmentation.
 - Vehicle detection (regression on the bounding boxes of connected components).
 - Object-level classification.
