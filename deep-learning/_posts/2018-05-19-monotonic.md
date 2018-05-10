@@ -30,7 +30,7 @@ The authors propose a simple solution to improve the monotonic attention. They c
 Metrics
 * Word error rate (WER), lower is better
 * ROUGE-1, overlap between prediction and groundtruth for 1-gram
-* ROUGE-1, overlap between prediction and groundtruth for bigram
+* ROUGE-2, overlap between prediction and groundtruth for bigram
 
 Notes :
 1. Almost as good as offline methods
