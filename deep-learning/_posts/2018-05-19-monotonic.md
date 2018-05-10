@@ -12,11 +12,12 @@ cite:
 
 
 
-Attention is widely used for offline models like Sequence-to-sequence. A huge drawback from the common soft attention algorithm is their huge time consumption, making them unusable for online tasks. This papers aims at bringing attention to real-time tasks.
+Attention is widely used for offline models like Sequence-to-sequence. A huge drawback from the common soft attention algorithm is the huge time consumption, making it unusable for online tasks. This papers aims at bringing attention to real-time tasks.
 
 
 ### Monotonic attention
-In 2017, Raffael & al. proposed a monotonic attention which would compute the action of the reader per timestep (move or attend). This enables the use of attention for real-time applications, but the performance were not good.
+In 2017, Raffael & al. proposed a monotonic attention. At each timestep, a reader could move or attend a node along the memory axis. The feature vector would then be all of the attended nodes.
+This enables the use of attention for real-time applications, but the performance were not good.
 
 
 ### Monotonic chunkwise attention
