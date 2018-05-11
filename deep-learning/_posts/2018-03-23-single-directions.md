@@ -26,7 +26,7 @@ In a layer that has high _class selectivity_, a neuron will fire up for a class 
 
 # Generalization and single directions
 
-* Generalization capability is related to a network’s reliance on single directions
+* Networks that rely more on single directions tend to have lower generalization capability
 * Introducing noise in labels forces the network to memorize
 
 ![](/deep-learning/images/directions/fig1.png)
