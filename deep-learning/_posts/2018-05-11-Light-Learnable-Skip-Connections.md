@@ -12,13 +12,12 @@ cite:
 
 
 They propose a light, learnable skip connections which learn to select the most discriminative channels and then attend to the most discriminative regions of the selected feature maps.
-The skip connections output will be a unique feature map which reduces the memory usage, the network parameters to a high extent, and improving the segmentation accuracy. They claim that the proposed skip connections can outperform the traditional heavy skip connections in terms of segmentation accuracy, memory usage, and number of network parameters.
+The skip connections output will be a unique feature map which reduces the memory usage, the network parameters to a high extent, and improving the segmentation accuracy. They claim that the proposed skip connections can outperform the traditional heavy skip connections in terms of segmentation accuracy, memory usage, and the number of network parameters.
 
 
 ### Segmentation Network
-* 2D U-net
-* 3D U-net
-* 3D V-net
+* 2D/3D U-net
+* 2D/3D V-net
 * The One Hundred Layers Tiramisu (DensNet)
 
 
@@ -39,11 +38,11 @@ The skip connections output will be a unique feature map which reduces the memor
 
 ![](/deep-learning/images/LLSC/RSAT.png)
 
-On the Tiramisu, they reach 2 to 3% in accuracy compare to the original skip connections.
+On the Tiramisu, they reach 2%(MRI) to 3%(Skin) for the accuracy compare to the original skip connections.
 
-For the parameters reduction, it's between 7 and 30% of reduction depending of the network.
+For the parameters reduction, it's between 7 and 30% of reduction depending on the network.
 
 ## Improvement
-* **channels selection and attention**: less feature maps, less memory use, focus on spatial regions in the input.
+* **channels selection and attention**: fewer feature maps, less memory use, focus on spatial regions in the input.
 * **consistent segmentation**: segmentation more consistent, smaller std than the original skip connections.
 * **SAT in Densely connected network**: help preventing gradient vanishing, reduce memory usage in blocks.
