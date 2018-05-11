@@ -38,9 +38,9 @@ The skip connections output will be a unique feature map which reduces the memor
 
 ![](/deep-learning/images/LLSC/RSAT.png)
 
-On the Tiramisu, they reach 2%(MRI) to 3%(Skin) for the accuracy compare to the original skip connections.
+On the Tiramisu, they reach an improvement of 2% of Dice score for MRI and 3% for the Skin, compare to the original skip connections.
 
-For the parameters reduction, it's between 7 and 30% of reduction depending on the network.
+For the parameters, it's between 7% and 30% of parameters reduction depending on the network.
 
 ## Improvement
 * **channels selection and attention**: fewer feature maps, less memory use, focus on spatial regions in the input.
