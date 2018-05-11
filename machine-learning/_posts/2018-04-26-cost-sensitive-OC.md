@@ -11,18 +11,18 @@ cite:
 ---
 
 ## Intro
-They proposed three empirically algorithms and validate their effectiveness and properties.
-They introduce the sketching technique into our algorithms, which significantly accelerates the computational speed with quite slight performance loss.
-
+They proposed three algorithms and validate their effectiveness and properties for solving cost-sensitive online classification problems.
+They approximate the second covariance matrix Σ by a small number of carefully selective directions.
+That technique is called *sketch*, which significantly accelerates the computational speed with little performance losses.
 ## Algorithms
 
-![](/machine-learning/images/acog/algo1.png)
+![](/machine-learning/images/acog/algo1.png){:height="300" width="450px"}
 
-![](/machine-learning/images/acog/algo2.png)
+![](/machine-learning/images/acog/algo2.png){:height="400" width="450px"}
 
-![](/machine-learning/images/acog/algo3.png)
+![](/machine-learning/images/acog/algo3.png){:height="400" width="450px"}
 
-![](/machine-learning/images/acog/algo4.png)
+![](/machine-learning/images/acog/algo4.png){:height="400" width="450px"}
 
 ## Results
 
