@@ -44,17 +44,16 @@ It is **important that you respect this format : date at the beginning and no sp
     | CNN                  | DBM              | GAN                 | GMM                 |
     | KDE                  | LSTM             | MRI                 | PCA                 |
     | RBM                  | RNN              | VAE                 | 3D                  |
-    | autoencoder          | benchmarking     | blog                | bounding-boxes      |
-    | brain                | cardiac          | classification      | codebook            |
-    | course               | ct-scan          | deep-learning       | essentials          |
-    | face-detection       | few-shot-learning| genetic-algorithm   | graph-cut           |
-    | k-means              | layers           | localization        | machine-learning    |
-    | medical              | motion-detection |neural-network       | network-compression |
-    | network-pruning      | optimization     | pedestrian-detection| segmentation        |
+    | autoencoder          | benchmarking     | blog                | bounding-boxes      | 
+    | brain                | caption          | cardiac             | classification      | 
+    | codebook             | course           | ct-scan             | deep-learning       |
+    | essentials           | face-detection   | few-shot-learning   | genetic-algorithm   |
+    | graph-cut            | hyperspectral    | k-means             | layers              |
+    | localization         | machine-learning | medical             | motion-detection    |
+    | neural-network       | network-compression | network-pruning  | optimization        |
+    | pedestrian-detection | reinforcement    | remote-sensing      | segmentation        |
     | siamese              | surveillance     | survey              | tractography        |
-    | tractometry          | traffic          | reinforcement       | caption             |
-    | hyperspectral        | remote-sensing   | topology            |                     |
-
+    | tractometry          | traffic          | transfer-learning   |                     |
 
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
