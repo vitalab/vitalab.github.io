@@ -10,7 +10,7 @@ cite:
   venue:   "https://arxiv.org/abs/1804.01322"
 ---
 
-The main contribution of this paper is a network that allows to do segmentation and geolocalization of arial images at the same time.  As shown in fig.1, the multi-stage multi-task (MSMT) network has 2 stages and makes 3 predictions.  
+The main contribution of this paper is a network that allows to do segmentation and geolocalization of aerial images at the same time.  As shown in fig.1, the multi-stage multi-task (MSMT) network has 2 stages and makes 3 predictions.  
 
 #### Stage 1
 
