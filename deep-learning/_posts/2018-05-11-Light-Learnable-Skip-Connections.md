@@ -7,7 +7,7 @@ pdf:    https://arxiv.org/pdf/1804.05181v3
 cite:
   authors: "Saeid Asgari Taghanaki, Aicha Bentaieb, Anmol Sharma, S. Kevin Zhou, Yefeng Zheng, Bogdan Georgescu, Puneet Sharma, Sasa Grbic, Zhoubing Xu, Dorin Comaniciu, Ghassan Hamarneh"
   title:   "Select, Attend, and Transfer: Light, Learnable Skip Connections"
-  venue:   "Arxiv 2018"
+  venue:   "Submitted on arxiv the 14 Apr 2018 (v1), last revised 3 May 2018, arXiv:1804.05181 "
 ---
 
 
@@ -18,12 +18,15 @@ The skip connections output will be a unique feature map which reduces the memor
 ### Segmentation Network
 * 2D/3D U-net
 * 2D/3D V-net
-* The One Hundred Layers Tiramisu (DensNet)
+* The One Hundred Layers Tiramisu (DenseNet)
 
 
 ### The Select-Attend-Transfer (SAT) gate
 1. Select: re-weighting the channels of the input, using a learned weight vector with sparsity constraints, only those channels with non-zero weights are selected.
 2. Attend: discovering the most salient spatial locations within the final feature map.
+
+![](/deep-learning/images/LLSC/SAT_attention.png)
+
 3. Transfer: transferring the output into layers via a skip connection.
 
 ![](/deep-learning/images/LLSC/SAT.png)
