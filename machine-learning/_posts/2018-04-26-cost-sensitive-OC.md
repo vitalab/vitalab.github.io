@@ -11,9 +11,14 @@ cite:
 ---
 
 ## Intro
-They proposed three algorithms and validate their effectiveness and properties for solving cost-sensitive online classification problems.
+They proposed three algorithms and validate their effectiveness and properties for solving cost-sensitive online classification problems. In the real world, a cost-sensitive classification problem can be very different from the regular classification one and can be used by applications like targeted marketing, information retrieval, medical decision making, object recognition and intrusion detection.
+
+The first approach of the Adaptive Regularized Cost-Sensitive Online Gradient Descent algorithms (named ACOG), has one limitation that it will take a large amount of time when receiving quite high-dimensional samples. To better balance the performance and the running time, they propose an enhanced version of algorithms, named Sketched Adaptive Regularized Cost-Sensitive Online Gradient Descent (SACOG).
+
 They approximate the second covariance matrix Σ by a small number of carefully selective directions.
 That technique is called *sketch*, which significantly accelerates the computational speed with little performance losses.
+The enhanced version of ACOG via sketch method is designed to accelerate computation efficiency when the second order matrix of sequential data is low rank. They use that second covariance matrix instances of full-matrix that have low effective rank. The regret bound of diagonal ACOG may be much worse than its full-matrix version due to the lack of enough dependence on the data dimensionality.
+
 ## Algorithms
 
 ![](/machine-learning/images/acog/algo1.png){:height="300" width="450px"}
