@@ -11,14 +11,14 @@ cite:
 ---
 
 
-The authors propose using dilated convolution for weakly-supervised semantic segmentation.
-In particular, they want to use their method where we only have the image labels.
+The authors propose using dilated convolutions for weakly-supervised semantic segmentation.
+In particular, they designed their method for when we only have the image labels.
 
 As we can see below, the dilated convolution allows to transfer informations to neighboring pixels.
 
 ![](/deep-learning/images/weak-sem-seg/fig2.png)
 
-The model is describe below, it takes the features maps from a classification networks and then use several dilation scheme to extract features.
+The model is describe below, it takes the features maps from a classification network and then use several dilation schemes to extract features.
 
 
 ![](/deep-learning/images/weak-sem-seg/fig1.png)
@@ -27,12 +27,12 @@ The model is describe below, it takes the features maps from a classification ne
 The final segmentation map is $$H = H_0 + \frac{1}{n_d} \sum_{i=0}^{n_d}H_i$$ where $$H_0$$ is the output without dilation and $$n_d$$ is the number of dilation scheme.
 
 To train the network, they compare $$H$$ to the output of a saliency detector.
-
+---
 By adding a CRF at the end, they get SotA results on Pascal.
 
 ![](/deep-learning/images/weak-sem-seg/table2.png)
+---
 
-
-By training their network with 2.9k **strong** samples (ie. sample fully-annotated) they can get much better results.
+By training their network with 2.9k **strong** samples (ie. samples fully-annotated) they can get much better results.
 
 ![](/deep-learning/images/weak-sem-seg/table4.png)
