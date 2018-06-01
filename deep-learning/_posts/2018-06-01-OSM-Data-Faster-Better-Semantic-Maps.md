@@ -12,9 +12,9 @@ cite:
 
 
 They propose to use different cases and deep network architectures to leverage OpenStreetMap data for semantic labeling of aerial and satellite images.
-Especially, the fusion based architectures and coarseto-fine segmentation to include the OpenStreetMap layer into a convolutional networks.
+Especially, the fusion-based architectures and coarse-to-fine segmentation to include the OpenStreetMap layer into convolutional networks.
 They used on two public datasets: ISPRS Potsdam and DFC2017.
-At the end, they show that OpenStreetMap data can efficiently be integrated into the vision-based deep learning models and that it significantly improves both the accuracy performance and the convergence speed of the networks.
+In the end, they show that OpenStreetMap data can efficiently be integrated into the vision-based deep learning models and that it significantly improves both the accuracy performance and the convergence speed of the networks.
 
 
 ### Segmentation Network
@@ -32,7 +32,7 @@ At the end, they show that OpenStreetMap data can efficiently be integrated into
 
 ![](/deep-learning/images/osm_faster/res_osm.png)
 
-## Problemes
+## Problems
 * For segmentation, we can only use roads, buildings and vegetation landuse OSM class.
 * They use more recent OSM data than the ISPRS dataset (some buildings are on OSM and not on Potsdam).
 * Using different channel with the OSM data can quickly bust all the memory.
