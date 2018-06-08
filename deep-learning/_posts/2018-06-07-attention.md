@@ -1,58 +1,43 @@
 ---
 layout: review
-title:  "DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs"
-tags:   deep-learning CNN segmentation essentials
+title:  "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"
+tags:   deep-learning CNN RNN LSTM essentials
 author: "Pierre-Marc Jodoin"
-pdf: "https://arxiv.org/pdf/1606.00915.pdf"
+pdf: "https://arxiv.org/pdf/1502.03044.pdf"
 cite:
-  authors: "Liang-C Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan L. Yuille"
-  title:   "DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs"
-  venue:   "PAMI 2018"
+  authors: "Kelvin Xu, Jimmy Lei Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard S. Zemel,Yoshua Bengio "
+  title:   "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"
+  venue:   "ICML 2015"
 ---
 
 ## Introduction
-The segmentation method presented in this paper comes with 3 innovations:
 
-1. Instead of an encoder-decoder architecture, they use **atrous** convolutions (or dilated conv) at the end of a VGG16 and a ResNet101 to **enlarge the spatial context**
+One of the most highly cited attention paper.  The goal is to generate a caption (sequence of words) from an image (a 2D array of pixels). As mentioned in [this blog](https://shadowthink.com/blog/research/2017/06/11/review-image-captioning#m-rnn), this method generalizes over previous recurrent image-to-text methods.
 
-2. To be more resilient to **multiresolution objects**, they use **atrous spatial pyramid pooling (ASPP)**
+# Description
 
-3. They use a **conditional random field (CRF)** at the CNN output to improve segmentation accuracy
+As shown in the following 2 figures
 
 
-![](/deep-learning/images/deepLab/sc04.png)
+![](/deep-learning/images/attention/sc01.png)
 
-# atrous conv
+![](/deep-learning/images/attention/sc04.png)
 
-The **atrous** convolutions are convolutions with zeros in it.  This increases the receptive field without increasing the number of parameters
 
-![](/deep-learning/images/deepLab/sc01.png)
 
-# ASSP
-
-The **ASPP** is a parallel architecture which aggregate the feature maps obtained with atrous conv with various rate sizes a bit like an inception model.
-
-![](/deep-learning/images/deepLab/sc02.png)
-
-![](/deep-learning/images/deepLab/sc08.png)
-
-# CRF
-
-The **CRF**` minimizes the following 2 equations
-
-![](/deep-learning/images/deepLab/sc09.png)
-![](/deep-learning/images/deepLab/sc10.png)
-
-where $$p$$ stands for pixel position and $$I$$ for input image.  This function is minimized with an iterative message passing function.
-
-![](/deep-learning/images/deepLab/sc03.png)
+ the method processes an image with a CNN.  This results into a set of $$14 \times 14 \times 512$$ feature maps after the fourth convolutional layer.  These feature maps are then fed to an LSTM.  The output of this LSTM is two fold : 1) the prediction of a word and 2) a $$14 \times 14$$ mask with values between 0 and 1.  This mask is called the **attention** associated to the predicted work.  The attention mask is then multiplied element wise to the feature maps which is fed back into the input of the LSTM.  The system stops iterating when the LSTM generates the symbol "EOS" (End of Sentence).
 
 ## Results
 
-![](/deep-learning/images/deepLab/sc05.png)
-.
-![](/deep-learning/images/deepLab/sc06.png)
-.
-![](/deep-learning/images/deepLab/sc07.png)
+Results are cool!
+
+![](/deep-learning/images/attention/sc02.png)
+
+![](/deep-learning/images/attention/sc03.png)
+
+
+# Code
+
+The code can be [found here](https://github.com/yunjey/show-attend-and-tell).
 
 
