@@ -7,7 +7,7 @@ pdf: "http://openaccess.thecvf.com/content_cvpr_2017/papers/Khoreva_Simple_Does_
 cite:
   authors: "Anna Khoreva, Rodrigo Benenson, Jan Hosang, Matthias Hein, B Schiele" 
   title:   "Simple Does It: Weakly Supervised Instance and Semantic Segmentation"
-  venue:   "CVPR 2018"
+  venue:   "CVPR 2017"
 ---
 
 ## Introduction
