@@ -3,18 +3,18 @@ layout: review
 title:  "Knowledge Distillation by On-the-Fly Native Ensemble"
 tags:   Deep Learning
 author: Faezeh Amjadi
-pdf:    https://arxiv.org/abs/1806.04606
+pdf:    https://arxiv.org/pdf/1806.04606.pdf
 cite:
   authors: "Xu Lan, Xiatian Zhu, Shaogang Gong"
   title:   "Knowledge Distillation by On-the-Fly Native Ensemble"
-  venue:   "arxiv"
+  venue:   "CVPR2018"
 ---
 
 ### Description
 
 
-Knowledge Distillation normally works with two networks, while these days trying to bring it to a network end to end like Snapshot Ensemble model. In this work, The authors employ a network model with branch like Resnet(a category of two branch
-network where one branch is the identity mapping) which in high-level layers, they design a multi-branch as ensemble models and features are largely shared across different branches in low-level layers. 
+Knowledge distillation normally works with two networks, while these days trying to bring it to a network end to end like snapshot ensemble model. In this work, The authors employ a network model with branch like Resnet(a category of two branch
+network where one branch is the identity mapping). In high-level layers, they design a multi-branch as ensemble models and features are largely shared across different branches in low-level layers. 
 
 
 
