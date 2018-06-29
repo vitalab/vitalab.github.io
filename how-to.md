@@ -53,7 +53,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | neural-network       | network-compression | network-pruning  | optimization        |
     | pedestrian-detection | reinforcement    | remote-sensing      | segmentation        |
     | siamese              | surveillance     | survey              | tractography        |
-    | tractometry          | traffic          | transfer-learning   |                     |
+    | tractometry          | traffic          | transfer-learning   | weakly-supervised   |
 
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
