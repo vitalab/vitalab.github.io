@@ -7,7 +7,7 @@ pdf: "https://arxiv.org/pdf/1710.07558.pdf"
 cite:
   authors: "Vivek Sharma, Ali Diba, Davy Neven, Michael S. Brown, Luc Van Gool, and Rainer Stiefelhagen"
   title:   "Classification Driven Dynamic Image Enhancement"
-  venue:   "CVPR 2015"
+  venue:   "CVPR 2018"
 ---
 
 ## Introduction
