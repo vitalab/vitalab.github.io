@@ -61,7 +61,7 @@ To augment the number of images, they created a simulator to generate synthetic 
 
 ## Results
 
-They are use five of these methods in their neural network implementation: Fletcher-Reeves, Polak-Ribière, Hestenes-Stiefel, Shanno, and steepest descent. The learning parameters ($$\alpha_{\,k}$$), are 0.1, 0.3, 0.5, 0.7, and 0.9.
+They are use five of these methods in their neural network implementation: Fletcher-Reeves, Polak-Ribière, Hestenes-Stiefel, Shanno, and steepest descent. The learning parameters (a convergence parameter), are 0.1, 0.3, 0.5, 0.7, and 0.9.
 
 ![](/deep-learning/images/Ship_wake_detection/1991_table1.png)
 
