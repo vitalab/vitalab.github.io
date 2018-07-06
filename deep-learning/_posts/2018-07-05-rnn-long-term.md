@@ -11,7 +11,7 @@ pdf: "https://arxiv.org/pdf/1803.00144"
 ---
 
 **TL;DR**:
-For a sequence classification task using an RNN, adding small reconstruction/prediction tasks throughout the sequence reduces the need for full BPTT and increases performance. Even when using only the auxiliary loss (no supervised loss backprop in the LSTM), results are "good" (40#% accuracy on CIFAR-10).
+For a sequence classification task using an RNN, adding small reconstruction/prediction tasks throughout the sequence reduces the need for full BPTT and increases performance. Even when using only the auxiliary loss (no supervised loss backprop in the LSTM), results are "good" (40% accuracy on CIFAR-10).
 
 
 ## Summary
