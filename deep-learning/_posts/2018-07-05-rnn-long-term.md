@@ -6,7 +6,7 @@ author: "Philippe Poulin"
 cite:
     authors: "H. Trinh, T., M. Dai, A., Minh-Thang, L., Quoc V., L."
     title:   "Learning Longer-term Dependencies in RNNs with Auxiliary Losses"
-    venue:   "Arxiv"
+    venue:   "ICML2018"
 pdf: "https://arxiv.org/pdf/1803.00144"
 ---
 
