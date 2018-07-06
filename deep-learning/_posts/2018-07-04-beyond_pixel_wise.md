@@ -22,7 +22,7 @@ structures, so this loss treats every pixel independently and does not capture t
 First, they used a U-net architecture to get a prediction of input data on segmentation task. Then, a VGG19 network pre-trained on ImageNet dataset used as a description of the higher-level features of
 the delineations which tries to minimize the differences between the higher-level
 visual features of the linear structures in the ground-truth
-and those in predicted image. The penalty is the measure distance on the m-th feature map in the n-th layer of the pre-trained VGG19 network and N is the number of convolutional layers and M is number of channels in yhe n-th feature map.
+and those in predicted image. The penalty is the measured distance on the m-th feature map in the n-th layer of the pretrained VGG19 network and N is the number of convolutional layers and M is number of channels in the n-th feature map.
 
 <img src="/deep-learning/images/TAD/1.png" width="400">
 
@@ -34,7 +34,7 @@ by the simpler pixel-wise loss while their loss correctly measures the topologic
 
 
 
-The authors applied an iterative refinement to remove small gaps in lines that should be uninterrupted. Therefore use the U-net and applied K times refinement of the target. Finally, when K=0, target is an empty image, and in last iteration, the target would be our ground-truth.
+The authors applied an iterative refinement to remove small gaps in lines that should be uninterrupted. Therefore use the U-net and applied K times refinement of the target. Finally, when K=0, target is an empty image, and in last iteration, the input segmentation map would be our ground-truth.
 
 <img src="/deep-learning/images/TAD/4.png" width="400">
 
