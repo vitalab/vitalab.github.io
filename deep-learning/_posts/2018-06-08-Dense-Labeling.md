@@ -10,7 +10,7 @@ cite:
   venue:   "Arxiv, Submitted on 30 May 2018 for 2018 IGARSS"
 ---
 
-The *normal* way to cut the images is to cut it in *"tiles"*, but this approach suffers from computational inefficiency and can result in discontinuities at output boundaries.
+The *normal* way to cut the images is to cut it in *"tiles"*, but this approach suffers from computational inefficiency and can result in discontinuities at output boundaries to overcome this problem, and substantially reduce the negative impacts of label stitching, by **artificially increasing the input-patch size of CNNs only during label inferenc**.
 
 ![](/deep-learning/images/dense-labeling/other_paper.png)
 
