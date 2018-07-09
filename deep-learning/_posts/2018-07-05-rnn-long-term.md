@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Learning Longer-term Dependencies in RNNs with Auxiliary Losses"
-tags: deep-learning RNN
+tags: deep-learning RNN classification
 author: "Philippe Poulin"
 cite:
     authors: "H. Trinh, T., M. Dai, A., Minh-Thang, L., Quoc V., L."
@@ -81,7 +81,7 @@ For a sequence classification task using an RNN, adding small reconstruction/pre
 
 ### Notes
 
-- The authors never used both auxiliary losses at the same time, whoch would have been interesting
+- The authors never used both auxiliary losses at the same time, which would have been interesting
 - No validation set is used, only a fixed number of epochs (overfitting doesn't seem to be an issue here)
 - In the results table, no std or confidence score is provided
 - Many details are missing, but the idea is interesting
