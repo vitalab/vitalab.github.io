@@ -24,6 +24,8 @@ This method can replace backpropagation. It has many advantages:
 
 # Formulation
 
+Here, we will compare formulations in a regression setting, but we could also do it for classification.
+
 ## The Nested Objective Function
 
 We can write the usual nested training approach as follows:
