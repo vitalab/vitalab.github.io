@@ -15,7 +15,7 @@ The authors propose an approach based on GANs to close the performance gap due t
 
 ### Training scheme
 
-More specifically, they adress Unsupervised Domain Adaptation, when the data is composed of two sets : the source domain - for which we possess segmentation maps - and the target domain - that we would like to segment. This could at end be used to create ground truth for unlabeled datasets.
+More specifically, they address Unsupervised Domain Adaptation, when the data is composed of two sets : the source domain - for which we possess segmentation maps - and the target domain - that we would like to segment. This could eventually be used to create ground truth for unlabeled datasets.
 
 ![](/deep-learning/images/domain-shift/scheme.png)
 
@@ -37,4 +37,4 @@ Here are the results on the 16 / 19 shared classes :
 
 ![](/deep-learning/images/domain-shift/res.png)
 
-On each experiment, the supervision by a generative network improved results. They also show that each component of their final loss is beneficial and that the improvement is consistent with image size.
+For each experiment, the supervision by a generative network improved results. They also show that each component of their final loss is beneficial and that the improvement is consistent with image size.
