@@ -7,20 +7,20 @@ pdf: http://openaccess.thecvf.com/content_cvpr_2018/papers/LaLonde_ClusterNet_De
 cite:
   authors: "Rodney LaLonde, Dong Zhang, Mubarak Shah"
   title:   "ClusterNet: Detecting Small Objects in Large Scenes by Exploiting Spatio-Temporal Information"
-  venue:   "The IEEE Conference on Computer Vision and Pattern Recognition (CVPR, June, 2018) "
+  venue:   "The IEEE Conference on Computer Vision and Pattern Recognition (CVPR, June 2018) "
 ---
 
 ### Contribution
 
 1. Thier method utilizes both spatial and temporal information from a set of video frames to locate multiple objects simultaneously in WAMI (wide area motion imagery).
 2. This approach **removes the need for computing background subtracted images**, thus reducing the computational burden and the effect of errors in frame registration.
-3. The two-stage network shows the potential to **reduce the large search space** in WAMI data with a minimal effect on accuracy.
+3. The two-stage network shows the potential to ** reduces the large search space** in WAMI data with a minimal effect on accuracy.
 4. The proposed method can detect completely stationary vehicles in WAMI.
-5. The method also outperforms the state-of-the-art in WAMI in F1 score for moving object detection and a 50% improvement for stationary vehicles, in addition of reducing the average error distance of true positive detections from the previous state-of-the-art 5.5 pixels to roughly 2 pixels.
+5. The method also outperforms the state-of-the-art in WAMI in an F1 score for moving object detection and a 50% improvement for stationary vehicles, in addition of reducing the average error distance of true positive detections from the previous state-of-the-art 5.5 pixels to roughly 2 pixels.
 
 ### Ideas
 
-The proposes work to generate all object proposals simultaneously using a multiframe in previous papers, two-stage CNN for videos in WAMI in a more computationally efficient manner than background subtraction or sliding-windows, effectively combining both spatial and temporal information in a deep-learning-based algorithm.
+The proposed work to generate all object proposals simultaneously using a multiframe in previous papers, two-stage CNN for videos in WAMI in a more computationally efficient manner than background subtraction or sliding-windows, effectively combining both spatial and temporal information in a deep-learning-based algorithm.
 
 ### ClusterNet & FoveaNet: Two-Stage CNN
 
@@ -31,11 +31,11 @@ Following the focus on the second stage of the network on each proposed ROOBI to
 
 ![](/deep-learning/images/ClusterNet/clusternet_network.png)
 
-The effect is ClusterNet allows to ignore large regions of the search space while focusing a small high-resolution fovea centralis over regions which contain at least one to several hundred vehicles, illustrated bellow.
+The effect is ClusterNet allows ignoring large regions of the search space while focusing a small high-resolution fovea centralis over regions which contain at least one to several hundred vehicles, illustrated below.
 
 ![](/deep-learning/images/ClusterNet/clusternet_feova.png)
 
-FoveaNet then predicts the location all of vehicles within that region to a high degree of accuracy for the given temporal frame of interest.
+FoveaNet then predicts the location all of the vehicles within that region to a high degree of accuracy for the given time frame of interest.
 
 ### Results
 
