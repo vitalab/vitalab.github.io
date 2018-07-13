@@ -27,7 +27,7 @@ Where $$cut$$ is the cost of cutting the graph in two and $$assoc$$ is the size 
 
 Since the minimization of (4) is NP-Hard, as usual $$S^k$$ is replaced by a soft vector with values between 0 and 1.
 
-The poposed loss is the sum of a usual cross-entropy and a normalized cut term:
+The proposed loss is the sum of a usual cross-entropy and a normalized cut term:
 
 
 ![](/deep-learning/images/nc/sc03.png)
