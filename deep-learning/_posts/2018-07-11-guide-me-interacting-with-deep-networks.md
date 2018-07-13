@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Guide Me: Interacting with Deep Networks"
-tags: deep-learning CNN segmentation
+tags: deep-learning CNN segmentation RNN
 author: "Philippe Poulin"
 cite:
     authors: "Rupprecht, C., Laina, I., Navab, N., Hager, G. D., & Tombari, F."
@@ -42,7 +42,7 @@ Then, a class is selected from the possible choices and a query is generated bas
 
 ## Experiments
 
-Various exeperiments were done on PascalVOC (2012) and MSCOCO-Stuff (2014), that evaluate where the guiding block should be placed, how many hints are needed, how complex should the hints be, etc.
+Various experiments were done on PascalVOC (2012) and MSCOCO-Stuff (2014), that evaluate where the guiding block should be placed, how many hints are needed, how complex should the hints be, etc.
 
 ![](/deep-learning/images/guide-me-interacting-with-deep-networks/figure3.png)
 ![](/deep-learning/images/guide-me-interacting-with-deep-networks/figure4.png)
