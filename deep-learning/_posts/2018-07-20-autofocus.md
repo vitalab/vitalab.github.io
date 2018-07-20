@@ -27,7 +27,7 @@ Also, the dilated convolutions share the same weights to make features scale-inv
 
 ### Experiments
 
-They gradually replace classical convolutions of Deep with their autofocus layer to see the impact. Dilation rates are 2, 6, 10 and 14.
+They gradually replace classical convolutions of Deep Medic upper scale branch with their autofocus layer to see the impact. Dilation rates are 2, 6, 10 and 14.
 
 They apply this on multi-organ and brain segmentations:
 1. Two datasets of pelvic CT scans, one used for train and the other for test
