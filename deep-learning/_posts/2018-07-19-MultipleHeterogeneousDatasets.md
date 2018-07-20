@@ -19,7 +19,11 @@ The network is the first to be simultaneously trained on three different dataset
 The network is able to handle different class imbalances and different annotation types (per-pixel and bounding-box).
 Their implementation achieves inference rates of 17 fps at a resolution of 520x706 for 108 classes.
 
-![](/deep-learning/images/DOTA/dota_example.png)
+![](/deep-learning/images/multipledataset/multipledataset_network.png)
+
+To include the *GTSDB* during training, they propose a neew hierarchical loss.
+
+![](/deep-learning/images/multipledataset/multipledataset_bb.png)
 
 ## Initiative
 To incrase the number of recognizable classes they use existing auxiliary datasets only for new (sub)classes. In that case, all classes of *GTSDB* are subclasses of the traffic sign class in *Cityscapes*. The straightforward approach of combining classes from both datasets in a conventional flat classifier is infeasible, since a traffic sign pixel cannot have different labels depending on the dataset it comes from.
@@ -27,3 +31,19 @@ To incrase the number of recognizable classes they use existing auxiliary datase
 To summarize, the contributions of this work to per-pixel semantic segmentation are:
 * A methodology for combined training on datasets with disjoint, but semantically connected, label spaces.
 * A modular architecture of hierarchical classifiers that can replace the classification stage in modern convolutional networks.
+
+![](/deep-learning/images/multipledataset/multipledataset_h.png)
+
+## Semantic hierarchy of label spaces
+
+Multiple dataset training requires a common label space for all selected datasets.
+They combine individual label spaces into the common space, containing labels from all datasets, by a hierarchical manner into a semantic tree of labels.
+This approach solves any conflict in the semantic definition of labels, by introducing the necessary parent or intermediate nodes and/or grouping of existing labels.
+
+Each classifier (root, rider, drivable, t. sign, front) classifies the children labels of a node and the whole tree of classifiers is trained, in an end-to-end.
+
+## Results
+
+![](/deep-learning/images/multipledataset/multipledataset_ri.png)
+
+![](/deep-learning/images/multipledataset/multipledataset_rt.png)
