@@ -14,13 +14,13 @@ cite:
 
 1. Thier method utilizes both spatial and temporal information from a set of video frames to locate multiple objects simultaneously in WAMI (wide area motion imagery).
 2. This approach **removes the need for computing background subtracted images**, thus reducing the computational burden and the effect of errors in frame registration.
-3. The two-stage network shows the potential to ** reduces the large search space** in WAMI data with a minimal effect on accuracy.
+3. The two-stage network shows the potential **reduce the large search space** in WAMI data with a minimal effect on accuracy.
 4. The proposed method can detect completely stationary vehicles in WAMI.
 5. The method also outperforms the state-of-the-art in WAMI in an F1 score for moving object detection and a 50% improvement for stationary vehicles, in addition of reducing the average error distance of true positive detections from the previous state-of-the-art 5.5 pixels to roughly 2 pixels.
 
 ### Ideas
 
-The proposed work to generate all object proposals simultaneously using a multiframe in previous papers, two-stage CNN for videos in WAMI in a more computationally efficient manner than background subtraction or sliding-windows, effectively combining both spatial and temporal information in a deep-learning-based algorithm.
+The proposed work to generates all object proposals simultaneously using a multiframe in previous papers, two-stage CNN for videos in WAMI in a more computationally efficient manner than background subtraction or sliding-windows, effectively combining both spatial and temporal information in a deep-learning-based algorithm.
 
 ### ClusterNet & FoveaNet: Two-Stage CNN
 
