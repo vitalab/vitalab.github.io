@@ -7,7 +7,7 @@ pdf:  https://arxiv.org/pdf/1803.05675v2
 cite:
   authors: "Panagiotis Meletis, Gijs Dubbelman"
   title:   "Training of Convolutional Networks on Multiple Heterogeneous Datasets for Street Scene Semantic Segmentation"
-  venue:   " 	IEEE Intelligent Vehicles 2018, 8 Jully 2018"
+  venue:   "     IEEE Intelligent Vehicles 2018, 8 Jully 2018"
 ---
 
 **Full implementation code for training, evaluation and inference, and
@@ -21,12 +21,12 @@ Their implementation achieves inference rates of 17 fps at a resolution of 520x7
 
 ![](/deep-learning/images/multipledataset/multipledataset_network.png)
 
-To include the *GTSDB* during training, they propose a neew hierarchical loss.
+To include the *GTSDB* during training, they propose a new hierarchical loss.
 
 ![](/deep-learning/images/multipledataset/multipledataset_bb.png)
 
 ## Initiative
-To incrase the number of recognizable classes they use existing auxiliary datasets only for new (sub)classes. In that case, all classes of *GTSDB* are subclasses of the traffic sign class in *Cityscapes*. The straightforward approach of combining classes from both datasets in a conventional flat classifier is infeasible, since a traffic sign pixel cannot have different labels depending on the dataset it comes from.
+To increase the number of recognizable classes they use existing auxiliary datasets only for new (sub)classes. In that case, all classes of *GTSDB* are subclasses of the traffic sign class in *Cityscapes*. The straightforward approach of combining classes from both datasets in a conventional flat classifier is infeasible since a traffic sign pixel cannot have different labels depending on the dataset it comes from.
 
 To summarize, the contributions of this work to per-pixel semantic segmentation are:
 * A methodology for combined training on datasets with disjoint, but semantically connected, label spaces.
@@ -40,7 +40,7 @@ Multiple dataset training requires a common label space for all selected dataset
 They combine individual label spaces into the common space, containing labels from all datasets, by a hierarchical manner into a semantic tree of labels.
 This approach solves any conflict in the semantic definition of labels, by introducing the necessary parent or intermediate nodes and/or grouping of existing labels.
 
-Each classifier (root, rider, drivable, t. sign, front) classifies the children labels of a node and the whole tree of classifiers is trained, in an end-to-end.
+Each classifier (root, rider, drivable, t. sign, front) classifies the children labels of a node and the whole tree of classifiers are trained, in an end-to-end.
 
 ## Results
 
