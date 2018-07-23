@@ -1,13 +1,13 @@
 ---
 layout: review
-title: "VggNet: Very Deep Convolutional Networks for Large-Scale Image Recognition"
-tags: deep-learning CNN essentials classification
+title: "Wasserstein Introspective Neural Networks "
+tags: deep-learning CNN GAN
+author: Frédéric Branchaud-Charron
 cite:
-    authors: "K. Simonyan, A. Zisserman"
-    title:   "Very Deep Convolutional Networks for Large-Scale Image Recognition"
-    venue:   "Proceedings of ICLR 2015, p.1-14"
-pdf:   "https://arxiv.org/pdf/1409.1556.pdf"
-project page: "http://www.robots.ox.ac.uk/~vgg/research/very_deep/"
+    authors: "Kwonjoon Lee, Weijian Xu, Fan Fan, Zhuowen Tu"
+    title:   "Wasserstein Introspective Neural Networks"
+    venue:   "CVPR 2018"
+pdf:   "http://pages.ucsd.edu/~ztu/publication/cvpr18_winn.pdf"
 ---
 
 The authors propose to apply the Wasserstein distance to **Introspective Neural Networks (INN)**. This work is heavily inspired by WGAN.
@@ -25,3 +25,5 @@ Using a combination of 4 WINN models, they get an Inception score close to the r
 
 
 ![](/deep-learning/images/winn/fig6.png)
+
+The code is available here : https://github.com/kjunelee/WINN
