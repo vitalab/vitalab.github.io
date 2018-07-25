@@ -23,6 +23,12 @@ Their implementation achieves inference rates of 17 fps at a resolution of 520x7
 
 To include the *GTSDB* during training, they propose a new hierarchical loss.
 
+$$L^{j}=-\dfrac{1}{|P^{j}_{1}|}\sum_{p\;\epsilon\; P^{j}_{1}}\log{\sigma^{j,p}_{y^{j,p}}}-\dfrac{1}{|P^{j}_{2}|}\sum_{p\;\epsilon\; P^{j}_{2}}\log{\sigma^{j,p}_{y^{j,p}}}$$
+
+Where $$|\cdot|$$ is the cardinality of the pixel’s set, and $$y^{j,p}\;\epsilon\; C^j$$ selects the element of $$\sigma$$ that corresponds to the ground truth class of pixel *p* for classifier *j*.
+Pixels $$P_1^j$$ with per-pixel annotations are trained using the standard one-hot cross-entropy loss.
+Pixels $$P_1^j$$ with non-per-pixel annotations are trained with generated per-pixel ground truth using a modified cross-entropy loss.
+
 ![](/deep-learning/images/multipledataset/multipledataset_bb.png)
 
 ## Initiative
