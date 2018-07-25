@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "“Learning-Compression” Algorithms for Neural Net Pruning"
-tags:   deep-learning
+tags:   deep-learning network-pruning network-compression
 author: Carl Lemaire
 pdf:    http://faculty.ucmerced.edu/mcarreira-perpinan/papers/cvpr18.pdf
 cite:
@@ -10,11 +10,11 @@ cite:
   venue:   "CVPR 2018"
 ---
 
-The authors propose a method for obtaining resource-efficient neural networks. This method allows to specify a constraint, such a respecting a neuron budget. The method is inspired by the [Method of Auxiliary Coordinates]({% post_url 2018-07-04-method-of-auxiliary-coordinates  %}).
+The authors propose a method for obtaining resource-efficient neural networks. This method allows to specify a constraint, such as respecting a neuron budget. The method is inspired by the [Method of Auxiliary Coordinates]({% post_url 2018-07-04-method-of-auxiliary-coordinates  %}).
 
 # Neural network pruning as an optimization problem
 
-The authors study 3 pruning costs: $$ C(\textbf{w}) = ||w||_p $$ where $$ p \in [0, 1, 2] $$. These costs are used with 2 different approaches: the constraint form and the penality form.
+The authors study 3 pruning costs: $$ C(\textbf{w}) = ||w||_p $$ where $$ p \in [0, 1, 2] $$. These costs are used with 2 different approaches: the constraint form and the penalty form.
 
 ![](/deep-learning/images/learning-compression/eq1.png)
 
@@ -38,9 +38,9 @@ $$ ||w - \theta||^2 $$ s.t. $$ C(\theta) < \kappa $$.
 
 In practice, the Compression step is done algorithmically by keeping the top-$$ \kappa $$ weights in $$ \theta $$ and zeroing-out the rest (remember that only $$ \theta $$ is changed here, not $$ w $$). See paper for all the crunchy details, formulas, theorems and proofs.
 
-## Penality form
+## Penalty form
 
-The penality form is very similar and is proved to be equivalent. The Learning step is the same, and the Compression step replaces the constraint with a term to minimize.
+The penalty form is very similar and is proved to be equivalent. The Learning step is the same, and the Compression step replaces the constraint with a term to minimize.
 
 ## Global vs. Local sparsity
 
