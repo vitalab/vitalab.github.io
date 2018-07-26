@@ -7,7 +7,7 @@ pdf:  https://arxiv.org/pdf/1803.05675v2
 cite:
   authors: "Panagiotis Meletis, Gijs Dubbelman"
   title:   "Training of Convolutional Networks on Multiple Heterogeneous Datasets for Street Scene Semantic Segmentation"
-  venue:   "     IEEE Intelligent Vehicles 2018, 8 Jully 2018"
+  venue:   "     IEEE Intelligent Vehicles, 8 Jully 2018"
 ---
 
 **Full implementation code for training, evaluation and inference, and
