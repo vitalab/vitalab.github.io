@@ -14,6 +14,8 @@ The authors propose to apply the Wasserstein distance to **Introspective Neural 
 
 INNs are models which are both classifiers and generators. They do so by using **gradient ascent** to generate new samples. Just like WGAN, they used the Wasserstein distance instead of the Jensen-Shannon distance.
 
+Gradient ascent is a technique used typically to perform style transfer. The idea is to let the gradient modify the original images such that it minimizes the loss. In style transfer for example, the image is minimized such that it keeps its original features while including features from the style image.
+
 The model is described in fig. 1.
 ![](/deep-learning/images/winn/fig1.png)
 
