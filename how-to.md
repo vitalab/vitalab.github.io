@@ -53,7 +53,7 @@ It is **important that you respect this format : date at the beginning and no sp
     | motion-detection     | neural-network       | network-compression | network-pruning     |
     | optimization         | pedestrian-detection | reinforcement       | remote-sensing      |
     | segmentation         | siamese              | surveillance        | survey              |
-    | tractography         |tractometry           | traffic             | transfer-learning   |
+    | tractography         | tractometry          | traffic             | transfer-learning   |
     | weakly-supervised    |                      |                     |                     |
 
 
