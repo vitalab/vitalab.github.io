@@ -47,14 +47,14 @@ They evaluate their loss function on three applications with GoogLeNet :
 2. C-Arm X-Ray to Computed Tomography alignment
 3. Motion compensation in fetal MRI
 
-They compare to weighted regression on parameters (PoseNet) and Anchor points, where the regression is performed on three static points using L2-norm.
+They compare to weighted regression on parameters (PoseNet) and anchor points, where the regression is performed on three static points using L2-norm.
 
 
 Here are the results, with GD the geodesic distance on the manifold :
 
 ![](/deep-learning/images/riemannian-loss/res1.png)
 
-The parameter weights are set to be inversely proportional to the parameters variance on the validation set so that prone-error parameters would be tight closer to the mean. This gives more accurate prediction results but implies that the parameters no longer follow the manifold, as can be seen on the geodesic distance.
+The parameter weights are set to be inversely proportional to the parameters variance on the validation set so that error-prone parameters would be closer to the mean. This gives more accurate prediction results but implies that the parameters no longer follow the manifold, as can be seen on the geodesic distance.
 
 ![](/deep-learning/images/riemannian-loss/res2.png)
 
