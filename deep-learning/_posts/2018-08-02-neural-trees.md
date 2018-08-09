@@ -7,7 +7,7 @@ pdf:   https://arxiv.org/pdf/1807.06699.pdf
 cite:
   authors: "Tanno, Ryutaro and Arulkumaran, Kai and Alexander, Daniel and Criminisi, Antonio and Nori, Aditya"
   title:   "Adaptive Neural Trees"
-  venue:   "July 2018"
+  venue:   "arXiv:1807.06699"
 ---
 
 
@@ -23,7 +23,7 @@ Decision Trees:
 - don't require a predefinite architecture (they "grow" and scale to the problem needs by clustering the data)
 - Inference is conditional : it doesn't involve the whole model
 
-The idea is take the best out of the two.
+The idea is take the best of the two.
 
 ### ANTs
 
@@ -35,7 +35,7 @@ Exemple :
 - transformer: $$1*conv5-40$$
 - solver: $$FC$$
 
-The local optimization algorithm that determine the nature of a node uses back propagation and a classification loss (Negative log-likelihood).
+The local optimization algorithm that determines the nature of a node uses back propagation and a classification loss (Negative log-likelihood).
 
 ![](/deep-learning/images/neural-trees/training.png)
 
