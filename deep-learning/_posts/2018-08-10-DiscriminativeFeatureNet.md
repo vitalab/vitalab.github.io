@@ -26,7 +26,7 @@ they propose a Discriminative Feature Network (DFN), which contains two sub-nets
 
 ## Smooth Network
 
-The smooth network is designed to address the intra-class inconsistency issue. It is like a U-Net by with Channel Attention Blocks (CAB) (c.f. Fig.3), which utilizes the high-level features to guide the selection of low-level features stage-by-stage.  They also use a Refinenemtn Residual Block (RRB) which is a fancy residual block.  This network is trained with a usual *cross-entropy*.
+The smooth network is designed to address the intra-class inconsistency issue. It is like a U-Net by with Channel Attention Blocks (CAB) (c.f. Fig.3), which utilizes the high-level features to guide the selection of low-level features stage-by-stage.  They also use a Refinement Residual Block (RRB) which is a fancy residual block.  This network is trained with a usual *cross-entropy*.
 
 
 <center><img src="/deep-learning/images/DFN/sc03.png" width="400"></center>
