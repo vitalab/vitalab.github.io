@@ -32,7 +32,7 @@ each anchor sample only *k* nearest neighbours would have to be computed.
 
 #### Selection of training samples
  
- * Positive samples are defined as the set of k-nearest-neighbours in the euclidean sense subtracted
+ * Positive samples are defined as the set of k-nearest-neighbours in the Euclidean sense subtracted
    by the set of k-nearest-neighbours on the manifold of the anchor point $$\mathbf{x}^r$$ in
    the given representation space (i.e. $$\mathbf{y}^r = g(\mathbf{x}^r)$$ where $$g$$ denotes
    the feature transform):
