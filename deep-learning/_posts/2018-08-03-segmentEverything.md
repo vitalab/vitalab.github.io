@@ -5,9 +5,9 @@ tags:   Segmentation CNN
 author: Pierre-Marc Jodoin
 pdf:    https://arxiv.org/pdf/1711.10370.pdf  
 cite:
-authors: "Ronghang Hu, Piotr Dollar, Kaiming He, Trevor Darrell, Ross Girshick"
-title:   "Learning to Segment Every Thing"
-venue:   "CVPR 2018"
+  authors: "Ronghang Hu, Piotr Dollar, Kaiming He, Trevor Darrell, Ross Girshick"
+  title:   "Learning to Segment Every Thing"
+  venue:   "CVPR 2018"
 ---
 
 ### Description
