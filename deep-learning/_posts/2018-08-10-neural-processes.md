@@ -16,9 +16,9 @@ In this article, the authors present a new hybrid model between Gaussian Process
 
 ### Gaussian Processes and Neural Processes
 
-Alternative to NN to perform regression tasks : stochastic process where inference is conditioned on some observations (ex: image pixels). They rely on a gaussian approximation of parameters distributions.
+Alternative to NN to perform regression tasks : stochastic process where inference is conditioned on some observations (ex: image pixels). They rely on a Gaussian approximation of parameters distributions.
 
-They can represent as many functions as observations and thus capture uncertainty over predictions. Fast to train but computationnaly costly at test time, especially with many context points.
+They can represent as many functions as observations and thus capture uncertainty over predictions. They are fast to train but computationnaly costly at test time, especially with many context points.
 
 
 Here the idea is to construct a model that :
