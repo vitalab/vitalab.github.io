@@ -11,7 +11,7 @@ cite:
 ---
 
 ## Dataset
-Over 1 million images from over 200 countries. Each image, provide at least one bounding box annotation containing one of 63 categories.
+Over 1 million images from over 200 countries. Each image provides at least one bounding box annotation containing one of 63 categories.
 
 the dataset includes:
 - UTM Zone (zone of projection)
@@ -41,4 +41,7 @@ Approaches:
 
 ![](/deep-learning/images/FunctionalMapoftheWorld/results_world.png)
 
-In conclusion, the concatenation of the metadata and the features of DenseNet help the classification of world images.
+That temporal changes may not be particularly important for several of the categories.
+CNN-I and CNN-IM are already reasoning about temporal information while making predictions by summing the softmax outputs over each temporal view.
+The results for approaches using metadata are only making improvements because of bias exploitation.
+To show that metadata helps beyond inherent bias, they removed all instances from the test set where the metadata-only baseline (LSTM-M) is able to predict some of the category well.
