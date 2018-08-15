@@ -13,19 +13,20 @@ cite:
 ## Dataset
 Over 1 million images from over 200 countries. Each image, provide at least one bounding box annotation containing one of 63 categories.
 
-the dataset include:
+the dataset includes:
 - UTM Zone (zone of projection)
 - Timestamp (year, month, day, hour, minute, second, and day of the week UTC)
 - GSD (Ground sample distance)
 - Angles (the sensor is imaging the ground, as well as the angular location)
 - Image+box sizes
 
-3 types of images: 8/4/3 bands, 4 and 8 are RGB with multispectral images (MSI) all images are 256x256 with roughly 30cm resolution.
+3 types of images: 8/4/3 bands, 4 and 8 are RGB with multispectral images (MSI).
+All images are 256x256 with roughly 30cm resolution.
 
 ![](/deep-learning/images/FunctionalMapoftheWorld/class_world.png)
 
 ## Meaning of the paper
-The paper present an analysis of the dataset along with a baseline approaches that reason about metadata and temporal views.
+The paper presents an analysis of the dataset along with baseline approaches to show relation about metadata and temporal views.
 
 Approaches:
 - LSTM-M An LSTM architecture trained using temporal sequences of metadata features.
@@ -39,3 +40,5 @@ Approaches:
 ## Results
 
 ![](/deep-learning/images/FunctionalMapoftheWorld/results_world.png)
+
+In conclusion, the concatenation of the metadata and the features of DenseNet help the classification of world images.
