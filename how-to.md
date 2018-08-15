@@ -41,21 +41,23 @@ It is **important that you respect this format : date at the beginning and no sp
     You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.\\
 **NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
 
-    | CNN                  | DBM                  | GAN                 | GMM                 |
-    | KDE                  | LSTM                 | MRI                 | PCA                 |
-    | RBM                  | RNN                  | VAE                 | 3D                  |
-    | autoencoder          | benchmarking         | blog                | bounding-boxes      |
-    | brain                | caption              | cardiac             | classification      |
-    | codebook             | course               | ct-scan             | dataset             |
-    | deep-learning        | essentials           | face-detection      | few-shot-learning   |
-    | genetic-algorithm    | graph-cut            | hyperspectral       | k-means             |
-    | layers               | localization         | machine-learning    | medical             |
-    | motion-detection     | neural-network       | network-compression | network-pruning     |
-    | optimization         | pedestrian-detection | reinforcement       | remote-sensing      |
-    | segmentation         | siamese              | surveillance        | survey              |
-    | tractography         | tractometry          | traffic             | transfer-learning   |
-    | weakly-supervised    |                      |                     |                     |
-
+<br>
+<table style="width:100%">
+  {% assign cl_id = 0 %}
+  {% assign all_tags = site.data.tags.tags | sort %}
+  <tr>
+  {% for tag in all_tags %}
+      <td>{{tag}}</td>
+      {% assign cl_id = cl_id | plus:1 %}
+      {% assign end_line  = cl_id | modulo: 4 %}
+      {% if end_line == 0 and cl_id > 0 %}
+        </tr>
+        <tr>
+      {% endif %}
+  {% endfor %}
+  </tr>
+</table>
+<br>
 
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
