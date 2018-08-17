@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "Attentive Generative Adversarial Network for Raindrop Removal from A Single Image"
-tags:   Segmentation CNN
+tags:   GAN autoencoder LSTM CNN
 author: Pierre-Marc Jodoin
 pdf:    https://arxiv.org/pdf/1711.10098.pdf
 cite:
