@@ -22,7 +22,7 @@ This paper aims at removing raindrops from color images.  It does so with a GAN 
 
 The first section of the generative network is a recurrent network (with LSTM) that aims at localizing raindrops.  It does so by iteratively predicting attention maps (c.f. fig.3).  
 
-Once the attention map have been estimated, it is fed to an autoencoder together with the input image.  The output of the decoder is the expected image.  More details on the auto-encoder is shown in Fig.4
+Once the attention map is been estimated, it is fed to an autoencoder together with the input image.  The output of the decoder is the expected image.  More details on the auto-encoder is shown in Fig.4
 
 <center><img src="/deep-learning/images/raindrops/sc02.png" width="700"></center>
 <center><img src="/deep-learning/images/raindrops/sc03.png" width="600"></center>
