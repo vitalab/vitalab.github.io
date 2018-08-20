@@ -31,7 +31,7 @@ Though it is never explicitly said, the first stage seems to go farther than ini
 
 ![](/deep-learning/images/cliqueCNN/opt.png)
 
-The idea is that residual connections can be extrapolated as a RNN as they give "later" layer saccess  to "earlier" (unprocessed) information. 
+The idea is that residual connections can be extrapolated as a RNN as they give "later" layers access  to "earlier" (unprocessed) information. 
 DenseNet, which consists in aggregating outputs of all previous layers as inputs, shows a rapid growth of parameters. To alleviate this, a clique structure recycles its weights.
 
 
