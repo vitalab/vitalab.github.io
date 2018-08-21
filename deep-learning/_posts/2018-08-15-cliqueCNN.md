@@ -53,7 +53,7 @@ The feature maps from a clique are forced to be reduced by half in number (compr
 Implementation details : They use three to four scales with cliques of 5 layers. Each layer contains 36 filters, use batchNorm and ReLu. 
 Note : They strongly benefit from decaying the learning rate.
 
-They apply their approach on classification problems : CIFAR 10/100, SVHN (Street View House Number) and ImageNet.
+They apply their approach to classification problems : CIFAR 10/100, SVHN (Street View House Number) and ImageNet.
 
 ![](/deep-learning/images/cliqueCNN/res1.png)
 
