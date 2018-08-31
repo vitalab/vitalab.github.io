@@ -20,9 +20,9 @@ Everything is there : CNN, RNN, Reinforcement Learning, Gated Graph Neural Netwo
 
 ![](/deep-learning/images/polygon-rnn-plusplus/figure2.png)
 
-1) CNN predicts first vertex, and provides features for the GGNN
+1) CNN predicts the first vertex, and provides features for the GGNN
 
-2) RNN predicts multiple sequence of vertices (beam search) to build rough (28x28) candidate polygons
+2) RNN predicts multiple sequences of vertices (beam search) to build rough (28x28) candidate polygons
 
 3) "Evaluator" network scores polygons to keep the best
 
@@ -64,7 +64,7 @@ Everything is there : CNN, RNN, Reinforcement Learning, Gated Graph Neural Netwo
 ### Gated Graph Neural Network
 
 - Extends RNN to graphs using message passing between nodes for a predefined number of steps (T=5)
-- Input: polygon represented as a cyclic graph; for each node, a pach is extracted from the image
+- Input: polygon represented as a cyclic graph; for each node, a patch is extracted from the image
 - Prediction : relative displacement in a D'xD' grid (treated as a classification task)
 - Cross-entropy loss
 
