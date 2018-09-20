@@ -14,12 +14,12 @@ Current methods for 3D objects reconstruction often generate unnatural objects. 
 
 ![](/deep-learning/images/3d-completion/fig2.png)
 
-The task is the following. From a 2D image, the model generates the full 3D object. The output is a 3D cube and is learned with binary crossentropy.
+The task is the following, from a 2D image, the model generates the full 3D object. The output is a 3D cube and is learned by binary crossentropy.
 
 ![](/deep-learning/images/3d-completion/fig3.png)
 
-The metrics used are the IoU of the volume generated and the Chamfer Distance which is the distance between a point and the closest point. On most task, they are better than methods that require the groundtruth mask and are overall better than all method.
+The metrics used are the IoU between the volume generated and the groundtruth volume or the Chamfer Distance, which is the distance between a point and its closest groundtruth point. On most task, they are even better than methods that require a mask and are overall better than all previous methods.
 
-To enforce the *naturalness* of the object, they train a WGAN that will classifiy wheter an object is natural or not.
+To enforce the *naturalness* of the object, they train a WGAN that will classify whether an object is natural or not.
 
 ![](/deep-learning/images/3d-completion/fig5.png)
