@@ -34,9 +34,11 @@ The goal is to train a CNN for deformable, pairwise 3D medical image registratio
 
 ![](/deep-learning/images/unsupervised-registration/figure2.png)
 
-**2 models** 
+**2 models**
 - VoxelMorph-1: One less layer at the final resolution and fewer channels in the last 3 layers
 - VoxelMorph-2: Full network
+
+![](/deep-learning/images/unsupervised-registration/figure3.png)
 
 The deformed image is computed using a differentiable operation based on spatial transformer networks (subpixel locations + interpolation)
 
@@ -53,8 +55,8 @@ Regularization: L2 norm on the spatial gradients (approximated using differences
 
 ## Experiments
 
-**Dataset**: 
-Multiple datasets are combined: ADNI, OASIS, ABIDE, ADHD200, MCIC, PPMI, HABS, Harvard GSP. 
+**Dataset**:
+Multiple datasets are combined: ADNI, OASIS, ABIDE, ADHD200, MCIC, PPMI, HABS, Harvard GSP.
 All scans are resampled to 256x256x256, 1mm isotropic.
 FreeSurfer is used for affine spatial normalization and brain extraction, then images are cropped to 160x192x224.
 Dataset sizes (train/valid/test): 7329 / 250 / 250.
@@ -63,9 +65,13 @@ An atlas is used as the fixed image for all image pairs.
 
 Test set ground truth is provided by expert-labeled anatomical segmentations.
 
+**Evaluation**: Dice score: volume overlap of anatomical segmentations. Include
+any anatomical structures that are at least 100 voxels in volume for all test
+subjects, resulting in 29 structures.
 
 **Baseline**: Symmetric Normalization (ANTs)
 
+**Implementation**: Tensorflow using Keras.
 
 ![](/deep-learning/images/unsupervised-registration/figure5.png)
 
