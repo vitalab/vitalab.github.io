@@ -10,7 +10,7 @@ cite:
   venue:   "CVPR 2018"
 ---
 
-The authors propose a method for obtaining resource-efficient neural networks. This method allows to specify a constraint, such as respecting a neuron budget. The method is inspired by the [Method of Auxiliary Coordinates]({% post_url 2018-07-04-method-of-auxiliary-coordinates  %}).
+The authors propose a method for obtaining resource-efficient neural networks. This method allows to specify a constraint, such as respecting a neuron budget. The method is inspired by the Method of Auxiliary Coordinates (see my other post on that paper).
 
 # Neural network pruning as an optimization problem
 
