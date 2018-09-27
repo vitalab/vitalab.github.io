@@ -11,7 +11,7 @@ pdf: "https://arxiv.org/pdf/1809.06191.pdf"
 
 ### The idea
 
-This approach claims that most CNN used for brain tumor segmentation only concatenate modalities (T1, T2, flair, etc.) and then try to learn a single representation for all of them. With their approach, they train on each modality seperatly and then fuse the different representations at different "fusion points" in their architecture and using different methods. They claim an increase in accuracy of 30% over previous methods and an increase of 5% accuracy over the baseline model.
+This approach claims that most CNN used for brain tumor segmentation only concatenate modalities (T1, T2, flair, etc.) and then try to learn a single representation for all of them. With their approach, they train on each modality separately and then fuse the different representations at different "fusion points" in their architecture and using different methods. They claim an increase in accuracy of 30% over previous methods and an increase of 5% accuracy over the baseline model.
 
 ### The implementation
 ![](/deep-learning/images/multi-modal-cnn-brain-tumors/baseline.png)
@@ -27,6 +27,8 @@ Their idea is to consider all modalities as seperate inputs to different CNNs, a
 They used Tensorflow for their implementation, Adam optimizer, cross-entropy loss, L1 and L2 reg and dropout for FC and conv layers and trained 50 epochs on the BRATS 2015 dataset (50 patients used for test and 224 for training). No pre-processing was done except normalization.
 
 ### The results
+The actual results are super sketchy. See notes below
+
 ![](/deep-learning/images/multi-modal-cnn-brain-tumors/results.png)
 For the early, middle and late fusion points respectively. Dice score is calculated like this: ![](/deep-learning/images/multi-modal-cnn-brain-tumors/dice.png) where P is the set of voxels predicted to be a tumor and T is the ground truth.
 
