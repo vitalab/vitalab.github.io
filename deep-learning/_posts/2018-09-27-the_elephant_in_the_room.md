@@ -45,7 +45,7 @@ It is widely accepted that partial occlusion is a challenge for object detectors
 Since the objects are only 'pasted', abrupt edges are created at the object's border. These edges might be out-of-distribution. This experiment might be considered as some kind of an adversarial attack, but with sometimes the opposite effect: The detector is 'blind' to the attack.
 
 ### (Lack of) signal preservation
-Spatial pooling, very much used in CNNs, actually prevents networks from being shift-invariant, and the authors of <sup>[1](https://arxiv.org/abs/1805.12177)<sup> also observed that small changes to the object, like scalling, can have a dramatic effect.
+Spatial pooling, very much used in CNNs, actually prevents networks from being shift-invariant, and the authors of <sup>[\[1\]](https://arxiv.org/abs/1805.12177)</sup> also observed that small changes to the object, like scalling, can have a dramatic effect.
 
 ### Contextual reasoning
 It is possible that network end up doing some contextual reasoning even if it is not explicitely learned, explaining why matching two objects that were never shown together during training (an elephant and a book, for example) might cause catasprophic failures.
