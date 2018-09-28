@@ -19,15 +19,15 @@ All the experiments used images from COCO 2017's validation set. Models are from
 The first test was to extract an object (a elephant, wink) from another image and transplant it at various locations in another image (a living room, wink) on which the detector was trained (Faster-RCNN with NASNet backbone). Results:
 
 ![](/deep-learning/images/the_elephant_in_the_room/litteral-elephant.png)
-![](/deep-learning/images/the_elephant_in_the_room/polar-bear.png)
 ![](/deep-learning/images/the_elephant_in_the_room/sandwich.png)
-![](/deep-learning/images/the_elephant_in_the_room/bus.png)
-![](/deep-learning/images/the_elephant_in_the_room/horse.png)
-![](/deep-learning/images/the_elephant_in_the_room/surfboard.png)
+
+---
 
 The second test was to duplicate an object in the same image:
 
 ![](/deep-learning/images/the_elephant_in_the_room/duplicates.png)
+
+---
 
 Anectodically, they also tested Google OCR and it also broke:
 
@@ -35,6 +35,7 @@ Anectodically, they also tested Google OCR and it also broke:
 
 ## The results
 ![](/deep-learning/images/the_elephant_in_the_room/table.png)
+where 'tau' is the threshold of accepted difference between bounding boxes
 
 ## The reasoning
 ### Partial occlusion
@@ -55,6 +56,6 @@ Assume an object A that is no longer being detected because it is now (partially
 ### Feature inference:
 ![](/deep-learning/images/the_elephant_in_the_room/cat.png)
 
-It is possible that features outside the object's ROI might influence the object's detection. This could help object detection in cases where the object is partially occluded, but also hinder object detection. Pixels in the ROI which are not the object (like backgroun) could also influence detection. The authors suggest that this is the main cause of problems.
+It is possible that features outside the object's ROI might influence the object's detection. This could help object detection in cases where the object is partially occluded, but also hinder object detection. Pixels in the ROI which are not the object (like background) could also influence detection. The authors suggest that this is the main cause of problems.
 
-
+[Article in Quanta Magazine](https://www.quantamagazine.org/machine-learning-confronts-the-elephant-in-the-room-20180920/)
