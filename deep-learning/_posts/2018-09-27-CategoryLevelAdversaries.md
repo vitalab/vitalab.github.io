@@ -11,11 +11,11 @@ cite:
 ---
 
 ## Main Idea
-A new network name category-level adversarial network (CLAN), aiming to address the problem of semantic inconsistency incurred by global feature alignment during unsupervised domain adaptation (UDA).
+A new network named category-level adversarial network (CLAN), aiming to address the problem of semantic inconsistency incurred by global feature alignment during unsupervised domain adaptation (UDA).
 
 ![](/deep-learning/images/CLAN/clan_uda.png)
 
-CLAN adaptively weight the adversarial loss for each feature according to how well their category-level alignment is.
+CLAN adaptively weights the adversarial loss for each feature according to how well their category-level alignment is.
 This method effectively prevents the well-aligned features from being incorrectly mapped by the side effect of pure global distribution alignment.
 
 ## CLAN
@@ -52,4 +52,4 @@ Finally, an up-sampling layer to the last layer to rescale the output to the siz
 
 ## To Understand
 
-We can improve the prediction on a new dataset by using a pre-trained network on another dataset by given some image from the new dataset. Those images from the new dataset are no need to be labeled.
+We can improve the prediction on a new dataset by using a pre-trained network on another dataset by given some image from the new dataset. Those images from the new dataset do not need to be labelled.
