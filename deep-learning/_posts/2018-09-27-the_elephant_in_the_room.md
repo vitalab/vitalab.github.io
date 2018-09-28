@@ -35,6 +35,7 @@ Anectodically, they also tested Google OCR and it also broke:
 
 ## The results
 ![](/deep-learning/images/the_elephant_in_the_room/table.png)
+
 where 'tau' is the threshold of accepted difference between bounding boxes
 
 ## The reasoning
