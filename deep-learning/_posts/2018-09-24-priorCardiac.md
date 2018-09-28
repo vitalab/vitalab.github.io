@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Automatic 3D bi-ventricular segmentation of cardiac images by a shape-constrained multi-task deep learning approach"
-tags: deep-learning CNN segmentation 
+tags: deep-learning CNN segmentation cardiac  medical 
 author: Pierre-Marc Jodoin
 cite:
     authors: "J. Duan, G. Bello, J. Schlemper, W. Bai, T. J. W Dawes, C. Biffi, A. de Marvao, G. Doumou, D.P. O’Regan, D. Rueckert"
