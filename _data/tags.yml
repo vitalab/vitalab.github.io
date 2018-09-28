@@ -13,6 +13,7 @@ tags:
 - 3D
 - action-recognition
 - adversarial
+- attention-maps
 - autoencoder
 - benchmarking
 - blog
@@ -26,6 +27,7 @@ tags:
 - ct-scan
 - dataset
 - deep-learning
+- detection
 - essentials
 - face-detection
 - few-shot-learning
