@@ -1,66 +1,43 @@
 ---
 layout: review
-title: "MorphNet: Fast & Simple Resource-Constrained Structure Learning of Deep Networks"
-tags: deep-learning CNN network-compression
+title: "Automatic 3D bi-ventricular segmentation of cardiac images by a shape-constrained multi-task deep learning approach"
+tags: deep-learning CNN segmentation 
 author: Pierre-Marc Jodoin
 cite:
-    authors: "Ariel Gordon, Elad Eban, Ofir Nachum, Bo Chen, Hao Wu, Tien-Ju Yang, Edward Choi"
-    title:   "MorphNet: Fast & Simple Resource-Constrained Structure Learning of Deep Networks"
-    venue:   "CVPR 2018"
-pdf: "https://arxiv.org/pdf/1711.06798.pdf"
+    authors: "J. Duan, G. Bello, J. Schlemper, W. Bai, T. J. W Dawes, C. Biffi, A. de Marvao, G. Doumou, D.P. O’Regan, D. Rueckert"
+    title:   "Automatic 3D bi-ventricular segmentation of cardiac images by a shape-constrained multi-task deep learning approach"
+    venue:   "arXiv:1808.08578, 2018"
+pdf: "https://arxiv.org/pdf/1808.08578.pdf"
 ---
 
 ### Introduction
 
-![](/deep-learning/images/morphNet/sc01.png)
+![](/deep-learning/images/priorCardiac/sc01.png)
 
-MorphNet is an approach to automate the design of neural network structures. MorphNet **iteratively shrinks and expands a network**, shrinking via a resource weighted 
-sparsifying regularizer on activations and expanding via a uniform multiplicative factor on all layers.  The proposed method has 3 advantages :
-
-* it is scalable to large models and large datasets; 
-* it can optimize a DNN structure targeting a specific resource, such as FLOPs per inference, while allowing the usage of untargeted resources such as model size (number of parameters), to grow;
-* it can learn a structure that improves performance while reducing the targeted resource usage
-
-![](/deep-learning/images/morphNet/sc02.png)
-
-### Method
-
-Let $$ O_L $$ be the output wight (number of output feature maps) or layer L and $$ O_{1:M} $$ the total number of feature maps between the first and last layer (M is the index of the last layer).  They formalized their problem as follows:
+This paper proposes a method for MRI cardiac segmentation built upon a shape prior.  The method seams to work well both on high and low resolution images (i.e. 3D images with small and large inter-slice thickness).  The overall method is illustrated in Figure 2.  In short, the method first segment the input image and locate 6 anatomical points as shown in figure 3.  Note that the full 3D volume is fed to the Network but only conv2D operations are used in the rest of the network.  Then, the anatomical points are used to register the 3D shape prior which is then combined to the segmented result. 
 
 
-![](/deep-learning/images/morphNet/sc03.png)
+![](/deep-learning/images/priorCardiac/sc02.png)
+
+### Further details. 
+
+The loss involves 3 terms:
+
+![](/deep-learning/images/priorCardiac/sc03.png)
+
+where $$L_D(W)$$ is the segmentation loss that evaluates spatial overlap
+with ground-truth labels and $$ L_L(W) $$ is the landmark associated loss
+for predicting landmark locations.
+
+![](/deep-learning/images/priorCardiac/sc04.png)
+
+![](/deep-learning/images/priorCardiac/sc05.png)  
+
+### Results 
+
+Results are convincing both on high and low resolution images.  The method also seams to out perform state-of-the-art methods.
 
 
-where the goal is to find the most accurate model (with the lowest loss) but which respect a limited resource.  For example here, the total number of flops must be below $$\zeta$$.  They then reformulate the problem as
+![](/deep-learning/images/priorCardiac/sc06.png)  
 
-![](/deep-learning/images/morphNet/sc04.png)
-
-where $$g(\theta)$$ is a sparsity regularizer which depends on $$ F(O_{1:M} )$$.  Since their method has no guarantee to satisfy $$F(O_{1:M})$$ < $$ \zeta $$, they proposed Algo 1 where step 1 and 2 are compression steps and step 3 is an expansion step.
-
-![](/deep-learning/images/morphNet/sc03.png)
-
-### The regularizer
-
-The regularizer is given by the following formula:
-
-![](/deep-learning/images/morphNet/sc05.png)  
-
-where
-
-![](/deep-learning/images/morphNet/sc06.png)  
-
-
-![](/deep-learning/images/morphNet/sc08.png)  
-
-and $$f,g$$ is the spatial dimension of the filter at layer L and $$x,z $$ the spatial dimension of the feature maps of layer L.  Also, $$A_{L,i}$$ ($$B_{L,j}$$) is an indicator function which equals one
-if the i-th input (j-th output) of layer L is alive – not zeroed out.
-
-
-### Results
-
-And ... the method works!
-
-![](/deep-learning/images/morphNet/sc10.png)   
-![](/deep-learning/images/morphNet/sc11.png)   
-![](/deep-learning/images/morphNet/sc12.png)   
-
+![](/deep-learning/images/priorCardiac/sc07.png)  
