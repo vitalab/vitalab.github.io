@@ -14,7 +14,7 @@ The authors propose a method for obtaining resource-efficient neural networks. T
 
 # Neural network pruning as an optimization problem
 
-The authors study 3 pruning costs: $$ C(\textbf{w}) = |w|_p $$ where $$ p \in [0, 1, 2] $$. These costs are used with 2 different approaches: the constraint form and the penalty form.
+The authors study 3 pruning costs: `C(w) = ||w||_p where p ∈ [0, 1, 2]`. These costs are used with 2 different approaches: the constraint form and the penalty form.
 
 ![](/deep-learning/images/learning-compression/eq1.png)
 
@@ -34,7 +34,7 @@ $$ L(w) + \frac{\mu}{2} |w - \theta|^2 $$
 
 We will drive $$ \mu \to \infty $$. In the compression step, we minimize
 
-$$ |w - \theta|^2 $$ s.t. $$ C(\theta) < \kappa $$.
+`||w - \theta||^2 s.t. C(\theta) < \kappa.`
 
 In practice, the Compression step is done algorithmically by keeping the top-$$ \kappa $$ weights in $$ \theta $$ and zeroing-out the rest (remember that only $$ \theta $$ is changed here, not $$ w $$). See paper for all the crunchy details, formulas, theorems and proofs.
 
