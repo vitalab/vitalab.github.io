@@ -12,6 +12,8 @@ tags:
 - VAE
 - 3D
 - action-recognition
+- adversarial
+- attention-maps
 - autoencoder
 - benchmarking
 - blog
@@ -25,6 +27,7 @@ tags:
 - ct-scan
 - dataset
 - deep-learning
+- detection
 - essentials
 - face-detection
 - few-shot-learning
@@ -37,6 +40,7 @@ tags:
 - machine-learning
 - medical
 - motion-detection
+- multiple-sclerosis
 - neural-network
 - network-compression
 - network-pruning
@@ -53,3 +57,5 @@ tags:
 - traffic
 - transfer-learning
 - weakly-supervised
+- multi-task
+- white-matter
