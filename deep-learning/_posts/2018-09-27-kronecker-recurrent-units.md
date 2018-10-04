@@ -57,7 +57,7 @@ The vanishing and exploding gradient problem is tackled through a soft unitary c
 
 ![](/deep-learning/images/kronecker-recurrent-units/equation4.png)
 
-If factors are 2 x 2, then there are $$\log_2 N$$ factors, the number of parameters is $$8 \log_2 N$$ (when using complex factors), and he time complexity of the hidden state computation is $$O(N \log_2 N)$$.
+If factors are 2 x 2, then there are $$\log_2 N$$ factors, the number of parameters is $$8 \log_2 N$$ (when using complex factors), and the time complexity of the hidden state computation is $$O(N \log_2 N)$$.
 
 If factors are N x N, then there is a single N x X factor and the standard RNN is recovered.
 
