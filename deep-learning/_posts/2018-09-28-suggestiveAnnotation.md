@@ -29,7 +29,7 @@ The method works as follows:
 2. Train a series of FCN segmentation networks such as the on in figure 2.
 3. Segment a set of unannotated images with all the FCNs
 4. For each unannotated image, measure at each pixel how much the FCNs disagree.  This provides an uncertainty measure as in figure 3. 
-5. Select the N unannotaed images with the largest amount of uncertainty
+5. Select the N unannotated images with the largest amount of uncertainty
 6. From those N images, select the M<N most "representative". 
 7. Ask someone to manually annotate the M images and put those newly annoted images in the training set
 8. GOTO 2 until uptimal accuracy reached.
