@@ -13,7 +13,7 @@ cite:
 
 ### Description
 
-In this paper, the authors present a technique to improve the segmentation accuracy of a deepUNet (a UNet with Res Connections).  The idea is to better disantangle classes that the UNet easily get confused with.
+In this paper, the authors present a technique to improve the segmentation accuracy of a deepUNet (a UNet with Res Connections).  The idea is to better disentangle classes that the UNet easily get confused with.
 The proposed solution is called **TreeSegNet** which adopts an adaptive network to increase the classification rate at the
 pixelwise level.
 
@@ -39,7 +39,7 @@ These operations are summarized in Fig.3.  Note that each node of that tree is a
 
 ### Results
 
-They tested their method on the well-known **Postdam remote-sensing dataset** and outperformed state-of-the-art methods, although by a tiny margin.
+They tested their method on the well-known **Potsdam remote-sensing dataset** and outperformed state-of-the-art methods, although by a tiny margin.
 
 
 <center><img src="/deep-learning/images/treeSegNet/sc04.png" width="600"></center>
