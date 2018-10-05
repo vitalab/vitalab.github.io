@@ -15,13 +15,13 @@ Batch normalization works really well but is really slow even with parralel opti
 
 ![](/deep-learning/images/batch_normalization_sampling/slow.png)
 
-But the authors suggest that you can speedup the process but sampling only part of the batch and estimating mean and variance. Models C, D are Resnet-18 and Model E is Resnet-50
+The authors suggest that you can speedup the process by sampling only part of the batch and estimating mean and variance. Models C, D are Resnet-18 and Model E is Resnet-50
 
 ## The method
 
 ![](/deep-learning/images/batch_normalization_sampling/sampling.png)
 
-Multiple samping methods are proposed, but the authors mostly used BS and FS. They also used Virtual Dataset Normalization where estimation is both done on virtual data and sampled data according to a predermined ratio.
+Multiple sampling methods are proposed, but the authors mostly used Batch Sampling (BS) and Feature Sampling (FS). See above image for explanation of approaches. They also used Virtual Dataset Normalization where estimation is both done on virtual data and sampled data according to a predetermined ratio.
 
 ## The results
 
@@ -29,4 +29,5 @@ Multiple samping methods are proposed, but the authors mostly used BS and FS. Th
 ![](/deep-learning/images/batch_normalization_sampling/accuracy.png)
 ![](/deep-learning/images/batch_normalization_sampling/speedup.png)
 
+From the above results, we can see that the model converges as fast as full batch normalization, with potential substantial speedup and negligible accuracy loss.
 
