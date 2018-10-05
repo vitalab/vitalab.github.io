@@ -3,3 +3,4 @@ _previews
 .sass-cache
 .jekyll-metadata
 .Rhistory
+*.swp
