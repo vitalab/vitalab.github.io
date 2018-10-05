@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Batch normalization sampling"
-tags: deep-learning
+tags: deep-learning optimization layers
 author: "Antoine Théberge"
 cite:
     authors: "Anonymous authors"
