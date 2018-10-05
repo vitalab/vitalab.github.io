@@ -68,5 +68,3 @@ Instead, a straight-through estimator is used, which corresponds to computing th
 **New binary kernel is 7x faster on GPU**:
 
 > ![](/deep-learning/images/binarized-neural-networks/figure2.png)
-
-- ImageNet
