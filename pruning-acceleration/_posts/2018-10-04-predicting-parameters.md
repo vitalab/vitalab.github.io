@@ -24,7 +24,7 @@ In this view, the columns of $$U$$ are a dictionnary of basis functions, and the
 
 # Choice of dictionnary
 
-* Train an single-layer unsupervised model and use the learned features as a dictionnary.
+* Train a single-layer unsupervised model and use the learned features as a dictionnary.
 * Use Fourier or wavelet bases.
 * Use kernel ridge regression to predict filter weights from a small subset of known weights values. A good kernel for first-layer features is the exponential kernel, since natural images are smooth.
 
