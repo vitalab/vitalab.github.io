@@ -7,7 +7,7 @@ pdf:    https://arxiv.org/pdf/1706.04737.pdf
 cite:
   authors: "Lin Yang, Yizhe Zhang, Jianxu Chen, Siyuan Zhang, Danny Z. Chen"
   title:   "Suggestive Annotation: A Deep Active Learning Framework for Biomedical Image Segmentation"
-  venue:   "CVPR 2018"
+  venue:   "MICCAI 2017"
 ---
 
 
