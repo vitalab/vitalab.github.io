@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Divide-and-Conquer Reinforcement Learning"
-tags: deep-learning
+tags: deep-learning reinforcement-learning
 author: "Antoine Théberge"
 cite:
     authors: "Dibya Ghosh, Avi Singh, Aravind Rajeswaran, Vikash Kumar, Sergey Levine"
@@ -17,7 +17,7 @@ Problems that exhibit high initial station variation produce high variance polic
 
 ## The method
 
-Initial states are sampled and then clustered using k-means into contexts $$ \omega_i $$, each associated with a policy $$ \pi_i(s,a) = \pi((\omega_i,s),a) $$. A central policiy is defined as $$ \pi_c(s,a)=\sum _{\omega\in\Omega} p({\omega}{\mid}s) \pi_{\omega} (s,a) $$ Each policy should stay as close to the central policy as possible by maximizing $$ \eta(\pi_i) - \alpha \mathbb{E}[D_{KL}(\pi_i{\mid}{\mid}\pi_c)] {\forall i} $$. They also want to keep the divergence between policies w.r.t 
+Initial states are sampled and then clustered using k-means into contexts $$ \omega_i $$, each associated with a policy $$ \pi_i(s,a) = \pi((\omega_i,s),a) $$. A central policy is defined as $$ \pi_c(s,a)=\sum _{\omega\in\Omega} p({\omega}{\mid}s) \pi_{\omega} (s,a) $$ Each policy should stay as close to the central policy as possible by maximizing $$ \eta(\pi_i) - \alpha \mathbb{E}[D_{KL}(\pi_i{\mid}{\mid}\pi_c)] {\forall i} $$. They also want to keep the divergence between policies w.r.t 
 
 ![](/deep-learning/images/divide_and_conquer/eq1.png)
 
