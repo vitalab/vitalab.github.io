@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Divide-and-Conquer Reinforcement Learning"
-tags: deep-learning reinforcement-learning
+tags: deep-learning reinforcement
 author: "Antoine Théberge"
 cite:
     authors: "Dibya Ghosh, Avi Singh, Aravind Rajeswaran, Vikash Kumar, Sergey Levine"
