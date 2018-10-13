@@ -53,7 +53,7 @@ They optain 2 Network, DSen2 and VDSen2, the difference is the $$d$$ and $$f$$ t
 
 ![](/deep-learning/images/superpixS2/2xtable.png)
 
-![](/deep-learning/images/superpixS2/6ximage.png)
+![](/deep-learning/images/superpixS2/2ximage.png)
 
 ![](/deep-learning/images/superpixS2/6xtable.png)
 
