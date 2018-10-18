@@ -17,7 +17,7 @@ This paper builds upon Squeeze-and-Excite (S&E) by adding spatial attention in a
 
 They modified the **S&E Module** by adding an Avg pooling before applying the MLP to generate the channel attention map.
 
-The **Spatial Attention Module** is pretty similar, they first concatente the output of a Max and Avg pooling layers. They then combine them using a Conv layer to produce the attention map.
+The **Spatial Attention Module** is pretty similar, they first concatenate the output of a Max and Avg pooling layers. They then combine them using a Conv layer to produce the attention map.
 
 ![](/deep-learning/images/convblock/fig2.png)
 
