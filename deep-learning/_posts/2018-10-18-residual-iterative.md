@@ -22,7 +22,7 @@ In my opinion, this is misleading. The residual connections seem to be a "bonus"
 
 ![](/deep-learning/images/residual-iterative/dessin2.png)
 
-Same network, different interpretation. Here, the residual connections are drawn as straight lines, highlighting the continuity of the features throughout the layers. Now, the residual branch becomes the "main branch", and the secondary branch computes a "delta" that "refines" the existing signal. This illustration also highlights the fact that a ResBlock cannot increase the number of features (or change the spatial dimensions) of the main signal.
+Same network, different interpretation. Here, the residual connections are drawn as straight lines, highlighting the continuity of the features throughout the layers. Now, the residual branch becomes the "main branch", and the secondary branch computes a "delta" that "refines" the existing signal. This illustration also highlights the fact that a ResBlock do not (generally) change the number of features (or change the spatial dimensions) of the main signal.
 
 # Iterative refinement in ResNets
 
