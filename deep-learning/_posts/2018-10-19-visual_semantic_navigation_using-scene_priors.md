@@ -25,10 +25,10 @@ The goal is to navigate to a specified target object category using only RGB inp
 
 For visual analysis, the model uses a ResNet-50 pre-trained on ImageNet. The current frame as well as the last three frames are input to the ResNet-50 to provide some sense of time-steps. Word embedding is done using fastText <sup>[1](https://arxiv.org/pdf/1607.01759.pdf)</sup> and scene priors are extracted via a Graph Convolutional Network <sup>[2](https://arxiv.org/pdf/1609.02907.pdf)</sup>. 
 
-A3C is used to output an action at each time step, where only one MLP outputing both the value and the policy has been implemented. The environment is provided by the AI2-THOR framework which provides "near photo-realisitic" customizable environments<sup>[3](https://ai2thor.allenai.org/)</sup>
+A3C is used output an action at each time step, where only one MLP outputting both the value and the policy has been implemented. The environment is provided by the AI2-THOR framework which provides "near photo-realistic" customizable environments<sup>[3](https://ai2thor.allenai.org/)</sup>
 
 ## The results
-SPL is Success weighted by Path Length, which provides a more accurate reprensation of performance than plain Success Rate.
+SPL is Success weighted by Path Length, which provides a more accurate representation of performance than plain Success Rate.
 
 First results show performance in case the agent has to provide the "stop" action, telling the environment that he has found the object's category. Second results show performance in case the environment tells the agent that he has found the object's category. The authors also mention that using the Graph Convolutional Network only adds 0.12 GFLOPs compared to A3C.
 
