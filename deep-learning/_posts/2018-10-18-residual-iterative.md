@@ -22,7 +22,7 @@ In my opinion, this is misleading. The residual connections seem to be a "bonus"
 
 ![](/deep-learning/images/residual-iterative/dessin2.png)
 
-Same network, different interpretation. Here, the residual connections are drawn as straight lines, highlighting the continuity of the features throughout the layers. Now, the residual branch becomes the "main branch", and the secondary branch computes a "delta" that "refines" the existing signal. This illustration also highlights the fact that a ResBlock do not (generally) change the number of features (or change the spatial dimensions) of the main signal.
+Same network, different interpretation. Here, the residual connections are drawn as straight lines, highlighting the continuity of the features throughout the layers. Now, the residual branch becomes the "main branch", and the secondary branch computes a "delta" that "refines" the existing signal. This illustration also highlights the fact that a ResBlock does not (generally) change the number of features (or change the spatial dimensions) of the main signal.
 
 # Iterative refinement in ResNets
 
@@ -32,13 +32,13 @@ The authors provide 3 interesting contributions:
 
     ![](/deep-learning/images/residual-iterative/fig4.png)
 
-2. **They observe that resnets can perform both hierarchical reprensentation learning and iterative feature refinement**. They find that lower layers focus on representation learning, and upper layers on refinement. Since the upper layers are only refining, they can be removed with minimal effect on the accuracy.
+2. **They observe that resnets can perform both hierarchical representation learning and iterative feature refinement**. They find that lower layers focus on representation learning, and upper layers on refinement. Since the upper layers are only refining, they can be removed with minimal effect on the accuracy.
 
     ![](/deep-learning/images/residual-iterative/fig2.png)
 
     ![](/deep-learning/images/residual-iterative/fig3.png)
 
-3. **They find a method for reusing resblocks, thus obtaining truly iterative interence.** By sharing the parameters of the resblocks, we obtain an iterative application of the same transform; and it reduces the parameter count. But naïvely sharing parameters in a Resnet leads to bad performance. The authors propose a way to overcome this issue; but sadly goods results are obtained when matching the number of parameters of the non-iterative baseline.
+3. **They find a method for reusing resblocks, thus obtaining truly iterative inference.** By sharing the parameters of the resblocks, we obtain an iterative application of the same transform; and it reduces the parameter count. But naively sharing parameters in a Resnet leads to bad performance. The authors propose a way to overcome this issue; but sadly good results are obtained when matching the number of parameters of the non-iterative baseline.
 
     ![](/deep-learning/images/residual-iterative/tab1.png)
 
