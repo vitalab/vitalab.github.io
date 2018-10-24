@@ -5,7 +5,7 @@ tags:   deep-learning CNN network-pruning
 author: Carl Lemaire
 pdf:    "https://openreview.net/forum?id=rJlnB3C5Ym"
 cite:
-    authors: "(Anonymous authors)"
+    authors: "Zhuang Liu, Mingjie Sun, Tinghui Zhou, Gao Huang, Trevor Darrell"
     title:   "Rethinking the Value of Network Pruning"
     venue:   "In review for ICLR 2019"
 ---
