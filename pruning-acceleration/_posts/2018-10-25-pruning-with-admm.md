@@ -20,6 +20,8 @@ They combine ADMM regularization and masked retraining into a 3-step iterative p
 
 # ADMM formulation
 
+In the following, f() is the loss function, W and b are the weights and biases respectively.
+
 ![](/pruning-acceleration/images/pruning-admm/eq_a.png)
 
 **Here are the 2 sub problems:**
