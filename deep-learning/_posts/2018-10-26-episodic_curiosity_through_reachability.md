@@ -28,6 +28,8 @@ The agent keeps track of novel observations that it has seen and estimates how m
 
 The agent was given 9 actions: move forward/backward, turn left/right, strafe left/right, turn left or right and move forward, fire. The first figure in this section is the room setup they used. Sparse, very sparse in this context mean that the reward was placed further than the agent's spawn point. Sparse + doors means that keys were placed around the environment and the agent was rewarded for finding keys and opening doors. No reward means that the task completion bears no reward (to encourage exploration). No reward - fire means (quite unintuitively) that the agent had his fire action, which produces a blue circly thing, was removed as well as having no task reward. Dense is similar to the second figure, but the agents were placed closer to the reward.
 
+[Videos](https://sites.google.com/view/episodic-curiosity)
+
 
 
 
