@@ -8,7 +8,7 @@
    authors: "Charis Lanaras, José Bioucas-Dias, Silvano Galliani, Emmanuel Baltsavias, Konrad Schindler"
    title:   "Super-resolution of Sentinel-2 images: Learning a globally applicable deep neural network"
    venue:   "Arxiv, 12 Mar 2018 and ISPRS Journal of Photogrammetry and Remote Sensing, 146 (2018), pp. 305-319"
- ---
+---
 
 A big problem in deep-learning is the lack of data. In remote sensing, in addition to the fact that the publicly available data is rare, most of it do not have the same resolution.
 
