@@ -1,47 +1,40 @@
 ---
 layout: review
-title:  "Functional Map of the World"
-tags:   deep-learning, classification, bounding-boxes, CNN, LSTM, remote-sensing, dataset
+title:  "Domain Adaptive Segmentation in Volume Electron Microscopy Imaging"
+tags:   deep-learning, segmentation, domain adaptation
 author: Charles Authier
-pdf:  https://arxiv.org/pdf/1711.07846
+pdf:  https://arxiv.org/abs/1810.09734v1
 cite:
-  authors: "Gordon Christie, Neil Fendley, James Wilson, Ryan Mukherjee"
-  title:   "Functional Map of the World"
-  venue:   "CVPR 2018"
+  authors: "Joris Roels, Julian Hennies, Yvan Saeys, Wilfried Philips, Anna Kreshuk"
+  title:   "Domain Adaptive Segmentation in Volume Electron Microscopy Imaging"
+  venue:   "ISBI 2019 (under review)"
 ---
 
-## Dataset
-Over 1 million images from over 200 countries. Each image provides at least one bounding box annotation containing one of 63 categories.
+Code: https://github.com/JorisRoels/domain-adaptive-segmentation
 
-the dataset includes:
-- UTM Zone (zone of projection)
-- Timestamp (year, month, day, hour, minute, second, and day of the week UTC)
-- GSD (Ground sample distance)
-- Angles (the sensor is imaging the ground, as well as the angular location)
-- Image+box sizes
+## Method
+The new method adds a reconstrcution decoder to the classical encoder-decoder segmentation in order to align source and target encoder features.
 
-3 types of images: 8/4/3 bands, 4 and 8 are RGB with multispectral images (MSI).
-All images are 256x256 with roughly 30cm resolution.
+## Ynet
+![](/deep-learning/images/ynet/ynet.png)
 
-![](/deep-learning/images/FunctionalMapoftheWorld/class_world.png)
+The method want to compensate the domain shift between source and target domain by introducing feature (distribution) similarity metrics.
+They introducing a second decoder to the classical encoder-decoder setup which serves to reconstruct the input data which originates from both source and target domain.
+The complete architecture is trained end-to-end with the following loss function:
 
-## Meaning of the paper
-The paper presents an analysis of the dataset along with baseline approaches to show relation about metadata and temporal views.
+![](/deep-learning/images/ynet/loss.png)
 
-Approaches:
-- LSTM-M An LSTM architecture trained using temporal sequences of metadata features.
-- CNN-I A standard CNN approach using only images, where DenseNet is fine-tuned after ImageNet. Softmax outputs are summed over each temporal view, after which an argmax is used to make the final prediction. The CNN is trained on all images across all temporal sequences of train + val.
-- CNN-IM A similar approach to CNN-I, but with metadata features concatenated to the features of DenseNet before the fully connected layers.
-- LSTM-I An LSTM architecture trained using features extracted from CNN-I.
-- LSTM-IM An LSTM architecture trained using features extracted from CNN-IM.
+Where $$L_r$$ is the reconstruction loss function, in their case is a mean-squared error, $$\hat{x}^{s/t}$$ are reconstructions of the source/target inputs obtained by the auto-encoding sub-network.
 
-![](/deep-learning/images/FunctionalMapoftheWorld/images_world.png)
+The network is initially trained in an unsupervised fashion, after which the reconstruction decoder is discarded.
 
 ## Results
 
-![](/deep-learning/images/FunctionalMapoftheWorld/results_world.png)
+* FT: Finetuning baseline.
+* MMD: Maximum mean discrepancy.
+* Coral: Correlation difference.
+* DANN: Distributions in an adversarial setup.
 
-That temporal changes may not be particularly important for several of the categories.
-CNN-I and CNN-IM are already reasoning about temporal information while making predictions by summing the softmax outputs over each temporal view.
-The results for approaches using metadata are only making improvements because of bias exploitation.
-To show that metadata helps beyond inherent bias, they removed all instances from the test set where the metadata-only baseline (LSTM-M) is able to predict some of the category well.
+![](/deep-learning/images/ynet/table.png)
+
+![](/deep-learning/images/ynet/results.png)
