@@ -1,12 +1,12 @@
 ---
 layout: review
 title: "Privacy-preserving generative deep neural networks support clinical data sharing"
-tags: deep-learning
+tags: deep-learning GAN CNN medical
 author: "Philippe Poulin"
 cite:
     authors: "Beaulieu-Jones, B.K., Wu, Z.S., Williams, C. and Greene, C.S."
     title:   "Privacy-preserving generative deep neural networks support clinical data sharing"
-    venue:   "biorxiv, 2017"
+    venue:   "biorxiv"
 pdf: "https://www.biorxiv.org/content/biorxiv/early/2017/07/05/159756.full.pdf"
 ---
 
