@@ -1,0 +1,52 @@
+---
+layout: review
+title:  "Cascaded Transforming Multi-task Networks For Abdominal Biometric Estimation from Ultrasound "
+tags:   deep-learning segmentation CNN multi-task
+author: Pierre-Marc Jodoin  
+pdf:    https://arxiv.org/pdf/1710.04773.pdf
+cite:
+  authors: "Matthew D. Sinclair, Juan Cerrolaza Martinez, Emily Skelton, Yuanwei Li, Christian F. Baumgartner, Wenjia Bai, Jacqueline Matthew, Caroline L. Knight, Sandra Smith, Jo Hajnal, Andrew P. King, Bernhard Kainz, Daniel Rueckert"
+  title:   "Cascaded Transforming Multi-task Networks For Abdominal Biometric Estimation from Ultrasound "
+  venue:   "MIDL 2018"
+---
+
+# Description
+
+In this paper, the authors propose a method to measure biometrics from fetal ultrasound (US), in particular the abdominal circumference (AC) extracted from an ellipse.  To do so, they propose a simple CNN architecture that resemble an FCNN but at the same time regresses the parameters of the ellipse.  C.f. Fig.1 for more details.
+
+
+![](/deep-learning/images/cascadedFCNUS/sc01.png)
+
+
+# Implementation details
+
+Since their network aims to segment the image AND recover the parameters of the ellipse, their method minimizes the following multi-task loss 
+
+![](/deep-learning/images/cascadedFCNUS/sc05.png)
+
+where $$ L_s $$ is the usual crossentropy:
+
+![](/deep-learning/images/cascadedFCNUS/sc02.png)
+
+and $$ L_r $$ is an L2 loss of the ellipse parameters:
+
+![](/deep-learning/images/cascadedFCNUS/sc04.png)
+
+where $$ \sigma $$ is a 5-D vector contianing the ellipse parameters $$(a,b,c_x,c_y,\phi)$$
+
+![](/deep-learning/images/cascadedFCNUS/sc03.png)
+
+
+In order to further improve results, they implemented a cascaded network.  Instead of implementing a usual cascade (c.f. Fig.2(a)), they concatenate the output of the first network to a rotated version of the input image (c.f. Fig.2(b)).
+
+![](/deep-learning/images/cascadedFCNUS/sc06.png)
+
+# Results
+
+Their method beats results from FCN and cascaded FCN while being within the inter-obs variation.
+
+![](/deep-learning/images/cascadedFCNUS/sc08.png)
+![](/deep-learning/images/cascadedFCNUS/sc07.png)
+
+
+
