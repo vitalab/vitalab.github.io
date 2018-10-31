@@ -27,6 +27,7 @@ tags:
 - ct-scan
 - dataset
 - deep-learning
+- denoising
 - detection
 - essentials
 - face-detection
@@ -52,6 +53,7 @@ tags:
 - siamese
 - surveillance
 - survey
+- synthesis
 - tractography
 - tractometry
 - traffic
