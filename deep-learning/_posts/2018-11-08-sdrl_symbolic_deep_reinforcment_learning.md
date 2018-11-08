@@ -28,13 +28,13 @@ For example, here is the BC domain of Montezuma's Revenge:
 
 ![](/deep-learning/images/sdrl/bc.png)
 
-At any episode $$ t $$, the symbolic planner uses a logical representation $$ D $$, an initial state $$ I $$ and an intrinsic goal $$ G $$ (goal state) to generate a symbolic plan $$ \Pi_t $$. The transitions in $$ \Pi_t $$ each correspond to a sub-task and the controller uses Double-Deep Q Learning to learn a policy for each sub-task. Since reward provided by the environment may be too sparse, an _instrinsic_ reward is given to the agent. The intrinsic reward is defined as 
+At any episode $$ t $$, the symbolic planner uses a logical representation $$ D $$, an initial state $$ I $$ and an intrinsic goal $$ G $$ (goal state) to generate a symbolic plan $$ \Pi_t $$. The transitions in $$ \Pi_t $$ each correspond to a sub-task and the controller uses Double-Deep Q Learning to learn a policy for each sub-task. Since rewards provided by the environment may be too sparse, an _instrinsic_ reward is given to the agent. The intrinsic reward is defined as 
 
 ![](/deep-learning/images/sdrl/intrinsic.png)
 
 where $$ \phi $$ is a large number to encourage sub-task completion, $$ \beta (s) $$ means sub-task completion and $$ r $$ is the reward provided by the environment. 
 
-After the sub-task is completed or a pre-determined number of steps is reached, the success rate or the true environmental reward is used to define an _extrinsic_ reward:
+After the sub-task is completed or a pre-determined number of steps is reached, the success rate of the true environmental reward is used to define an _extrinsic_ reward:
 
 ![](/deep-learning/images/sdrl/extrinsic.png)
 
@@ -42,7 +42,7 @@ where $$ \epsilon $$ is the success rate of the sub-task, $$ - \psi $$ is a larg
 
 The meta controller then uses standard Q-Learning to evaluate the transitions between sub-tasks. An overall plan quality is then calculated and the results are passed back to the planner, which then tries to generate a better plan. The process is repeated until the plan cannot be further improved.
 
-For finickiness' stake, here is the full algorithm:
+For completion's sake, here is the full algorithm:
 
 ![](/deep-learning/images/sdrl/algorithm.png)
 
