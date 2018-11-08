@@ -23,7 +23,7 @@ pdf: "https://www.biorxiv.org/content/biorxiv/early/2017/07/05/159756.full.pdf"
 
 For example, given a model and a real subject's data, it might be possible to determine if this subject was part of the model's training set.
 
-**Solution**: Include a differential privacy contraint during training.
+**Solution**: Include a differential privacy constraint during training.
 
 > Differential privacy : Define strong guarantees on the likelihood that a subject could be identified as a member of the trial.
 > Informally, differential privacy requires that no subject in the study has a significant influence on the information released by the algorithm.
