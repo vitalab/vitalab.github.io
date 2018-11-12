@@ -56,7 +56,7 @@ This network is a variant of U-net.
 
 - Fine-tuning: They use a similar strategy to fixed representation. The only difference is that while training the network, instead of only the classification layers, they optimize the whole network using only the new training data.
 
-- Incremental learning: This strategy require for the memory network to generate probability maps from the training patches to optimize $$L_distil$$.
+- Incremental learning: This strategy requires for the memory network to generate probability maps from the training patches to optimize $$L_distil$$.
 
 ![](/deep-learning/images/incrementallearning/compare.png)
 
