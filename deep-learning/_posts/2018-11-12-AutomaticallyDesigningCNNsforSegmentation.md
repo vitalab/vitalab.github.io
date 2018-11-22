@@ -33,7 +33,7 @@ $$
 P(\pi_0) = \{\pi_1, \pi_2,..., \pi_p\}
 $$
 
-define p random pemutations near $$\pi_0$$, where:
+define p random perturbations near $$\pi_0$$, where:
 
 $$
 \pi_i = \pi_0 + \Delta_i \text{ for } i \in \{1, 2,..., p\}
@@ -55,7 +55,7 @@ These functions are the learnable hyperparameters for each layer:
 
 The segmentation network is trained with the p generated policies and a reward is obtained from each policy.
 
-To estimate the partial derivate of the policy function for each dimension (hyperparameter), each pertuation is grouped to non-overlapping categores of negative pertubations, zero pertubations and positive pertubations. $$C^d_-$$, $$C^d_0$$ and $$C^d_+$$ such that $$\pi^d_i \in \{C^d_-, C^d_0, C^d_+\}$$. This categorizations is based on the perturbation that was applied in that dimension ($$\{-\epsilon^d, 0, +\epsilon^d\} $$).
+To estimate the partial derivate of the policy function for each dimension (hyperparameter), each perturbation is grouped to non-overlapping categores of negative perturbations, zero perturbations and positive perturbations. $$C^d_-$$, $$C^d_0$$ and $$C^d_+$$ such that $$\pi^d_i \in \{C^d_-, C^d_0, C^d_+\}$$. This categorizations is based on the perturbation that was applied in that dimension ($$\{-\epsilon^d, 0, +\epsilon^d\} $$).
 
 Then, the absolute reward for each category is calculated as a mean of all the rewards $$Ave^d = \{Ave^d_-, Ave^d_0, Ave^d_+\}$$ for each dimension d.
 
