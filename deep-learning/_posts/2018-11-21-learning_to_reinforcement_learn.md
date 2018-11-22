@@ -52,3 +52,4 @@ The authors also reported an experiment from <sup>[1](https://arxiv.org/pdf/1611
 
 However, the authors did not try to compare their agent to "classic" feed-forward deep reinforcement-learning agents (except for the reported maze experiment), so we cannot know if the behaviors shown by the LSTM agent are unique to it or general to all deep RL agents, although I would be surprised if they are.
 
+Implementation: [https://github.com/awjuliani/Meta-RL](https://github.com/awjuliani/Meta-RL)
