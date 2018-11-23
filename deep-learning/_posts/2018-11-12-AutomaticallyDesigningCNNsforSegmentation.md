@@ -2,6 +2,7 @@
 layout: review
 title: Automatically Designing CNN Architectures for Medical Image Segmentation
 tags: deep-learning CNN segmentation medical reinforcement cardiac
+author: "Thierry Judge"
 cite:
     authors: "Aliasghar Mortazi and Ulas Bagci"
     title:   "Automatically Designing CNN Architectures for Medical Image Segmentation"
@@ -13,7 +14,7 @@ pdf: "https://arxiv.org/pdf/1807.07663.pdf"
 # Introduction
 
 The authors of this paper propose a new and simple technique to automatically design neural networks using policy gradients.
-The technique involves learning the optimal hyperparameters for an encoder-decoder network used for segmentation with the ACDC dataset. An optimal policy is found by iteratively perturbating a random policy and updating it with the perturbations that yielded the best reward (i.e. dice index).
+The technique involves learning the optimal hyperparameters for an encoder-decoder network used for segmentation with the ACDC dataset. An optimal policy is found by iteratively perturbating a random policy and updating it with the perturbations that yielded the best reward (i.e. Dice index).
 
 
 
@@ -55,7 +56,7 @@ These functions are the learnable hyperparameters for each layer:
 
 The segmentation network is trained with the p generated policies and a reward is obtained from each policy.
 
-To estimate the partial derivate of the policy function for each dimension (hyperparameter), each perturbation is grouped to non-overlapping categores of negative perturbations, zero perturbations and positive perturbations. $$C^d_-$$, $$C^d_0$$ and $$C^d_+$$ such that $$\pi^d_i \in \{C^d_-, C^d_0, C^d_+\}$$. This categorizations is based on the perturbation that was applied in that dimension ($$\{-\epsilon^d, 0, +\epsilon^d\} $$).
+To estimate the partial derivate of the policy function for each dimension (hyperparameter), each perturbation is grouped to non-overlapping categores of negative perturbations, zero perturbations and positive perturbations. $$C^d_-$$, $$C^d_0$$ and $$C^d_+$$ such that $$\pi^d_i \in \{C^d_-, C^d_0, C^d_+\}$$. This categorization is based on the perturbation that was applied in that dimension ($$\{-\epsilon^d, 0, +\epsilon^d\} $$).
 
 Then, the absolute reward for each category is calculated as a mean of all the rewards $$Ave^d = \{Ave^d_-, Ave^d_0, Ave^d_+\}$$ for each dimension d.
 
