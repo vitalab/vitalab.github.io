@@ -16,14 +16,14 @@ pdf: "https://arxiv.org/pdf/1809.02058.pdf"
 
 
 The authors of the paper propose a novel way to counter catastrophic forgetting during sequential learning 
-of GANs. They propose _Memory Replay GANs_ (MeRGANs), a conditional GANs that integrates memory replay. 
+of GANs. They propose _Memory Replay GANs_ (MeRGANs), a conditional GAN that integrates memory replay. 
 
 
 ## Sequential learning 
 
 The task proposed by the authors is to sequentially learn from a training set $$S = \{ S_1, ..., S_M\} $$ 
-where M is the number of categories. Each set $$S_C$$ represents the training set for a specific category 
-and is learning it is considered a task. The goal is to train a conditional GAN to generate images from all
+where M is the number of categories. Each subset $$S_C$$ represents the training set for a specific category 
+and is considered a task t. The goal is to train a conditional GAN to generate images from all
 the sets after being trained on each set sequentially.
 
 
@@ -120,8 +120,7 @@ on the generated data to evaluate forgetting.
 ![](/deep-learning/images/memorygan/fig5.png)
 ![](/deep-learning/images/memorygan/fig6.png)
 
-Like for the digit generation, the authors used a classifier to evaluate forgetting. They tested a 
-classifier trained on real data on generated data and a classifier trained on generated data on real data 
+The authors used a classifier to evaluate forgetting. They tested a classifier trained on real data on generated data and a classifier trained on generated data on real data 
 (Rev acc.). Finally, they tested the Frechet Inception Distance (FID) on the generated data. 
 ![](/deep-learning/images/memorygan/table2.png)
 
