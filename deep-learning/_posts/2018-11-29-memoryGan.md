@@ -6,7 +6,7 @@ author: "Thierry Judge"
 cite:
     authors: "Chenshen Wu, Luis Herranz, Xialei Liu, Yaxing Wang, Joost van de Weijer, Bogdan Raducanu"
     title:   "Memory Replay GANs: learning to generate images from new categories without forgetting"
-    venue:   "NIPS 2018"
+    venue:   "NeurIPS 2018"
 pdf: "https://arxiv.org/pdf/1809.02058.pdf"
 ---
 
@@ -46,8 +46,7 @@ The GAN's parameters are denoted as $$\theta = (\theta^G, \theta^D, \theta^C)$$ 
 __Joint learning__
 
 This method is not sequential learning, all categories are learned at the same time. The classical GAN 
-optimization is used with 
-WGAN modifications. 
+optimization is used with WGAN modifications. 
 
 ![](/deep-learning/images/memorygan/eqn1.png)
 
@@ -101,11 +100,11 @@ L2 loss between the current and previous GAN outputs for the same category c and
 
 ## Results
 
-The authors tested their two MeRGANs on digits generation with Mnist and SVHN and scene generation with 4 
+The authors tested their two MeRGANs on digits generation with MNIST and SVHN and scene generation with 4 
 classes from the LSUN dataset. They compared their results to joint training, sequential fine tuning, 
 Elastic Weight Consolidation and deep generative replay (Unconditional GAN with replay memory).
 
-# Mnist and SVHN
+# MNIST and SVHN
 ![](/deep-learning/images/memorygan/fig3.png)
 
 ![](/deep-learning/images/memorygan/fig4.png)
@@ -122,6 +121,7 @@ on the generated data to evaluate forgetting.
 
 The authors used a classifier to evaluate forgetting. They tested a classifier trained on real data on generated data and a classifier trained on generated data on real data 
 (Rev acc.). Finally, they tested the Frechet Inception Distance (FID) on the generated data. 
+
 ![](/deep-learning/images/memorygan/table2.png)
 
 
