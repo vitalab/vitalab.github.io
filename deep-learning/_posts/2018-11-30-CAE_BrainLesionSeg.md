@@ -27,7 +27,7 @@ pdf: "https://arxiv.org/pdf/1811.09655.pdf"
 
 Due to space limitation, the authors process a brain patch-wise, each patch being a 80x80x80 volume.  For training, patches have a stride of 40 while at test time they use a stride of 20 (with an average of overlapping voxels).  The use the following reconstruction loss :
 
-$$ L = (Y^p − Y^p)^2 $$
+$$ L = (Y^p - \hat{Y}^p)^2 $$
 
 with p=3.  A brainmask is applied before the loss so the background is
 not considered.  Furthermore, Gaussian noise with zero mean and a standard deviation of 0.05 was added to the input during training for noise
