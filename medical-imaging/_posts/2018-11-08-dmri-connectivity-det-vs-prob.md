@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Mapping connectomes with diffusion MRI: deterministic or probabilistic tractography?"
-tags: deep-learning tractography brain white-matter
+tags: tractography brain white-matter
 author: "Philippe Poulin"
 cite:
     authors: "Sarwar, T., Ramamohanarao, K. and Zalesky, A."
