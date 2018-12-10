@@ -38,7 +38,7 @@ For a total of three losses:
 
 ![](/deep-learning/images/incrementallearning/loss12.png)
 
-- $$L_{rem}$$ is the costum loss for the incremental learning
+- $$L_{rem}$$ is the costOm loss for the incremental learning
 
 ![](/deep-learning/images/incrementallearning/loss3.png)
 
@@ -62,7 +62,7 @@ This network is a variant of U-net.
 
 ## Results
 
-Not better than state-of-the-art, but show that it is not far and allows the network to learn new classes.
+The results are competitive with the state-of-the-art single-dataset methods, while allowing the network to learn new classes.
 
 ![](/deep-learning/images/incrementallearning/luxcarta.png)
 
