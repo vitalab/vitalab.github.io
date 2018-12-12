@@ -28,7 +28,7 @@ With $$w$$ being the set of parameters for a 3D rotation and translation, $$f$$ 
 
 ![](/deep-learning/images/strike_with_a_pose/vgd.png)
 
-To backpropagate gradients to scene parameters, they both used a differentiable 3D renderer<sup>[1](https://github.com/hiroharu-kato/neural_renderer)</sup> and calculated gradient analytically, which was possible due to their small number of parameters (6). They also used random search (RS) to find parameters.
+To backpropagate gradients to scene parameters, they both used a differentiable 3D renderer ([github](https://github.com/hiroharu-kato/neural_renderer)) and calculated gradient analytically, which was possible due to their small number of parameters (6). They also used random search (RS) to find parameters.
 
 ![](/deep-learning/images/strike_with_a_pose/model.png)
 
@@ -43,3 +43,6 @@ The authors first trained on Inception-v3 and ImageNet and found that the model 
 They also found that misclassification rates transferred highly to AlexNet (99.9%) and Resnet-50(99.4%), both trained on ImageNet and tested on the same adversarial examples. They also found that 75.5%  of adversarial poses generated for Inception-v3 caused misclassification errors of the object detector YOLOv3 trained on MS-COCO. Finally, they tried Adversarial Training on AlexNet and got encouraging results.
 
 ![](/deep-learning/images/strike_with_a_pose/training.png)
+
+
+Github link of project : https://github.com/airalcorn2/strike-with-a-pose
