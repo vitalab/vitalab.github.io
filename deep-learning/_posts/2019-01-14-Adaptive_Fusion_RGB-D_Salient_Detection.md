@@ -22,7 +22,7 @@ To make full supervision of the network, they adding three losses: saliency supe
 ![](/deep-learning/images/RGB_D/images.png)
 
 ## Method
-They say they have two significant concerns existing in RGB-D saliency detection are how to the depth-induced saliency and how to fuse RGB and depth modalities for achieving better performance.
+They say they have two significant concerns existing in RGB-D saliency detection are how to the depth-induced saliency, and how to fuse RGB and depth modalities for achieving better performance.
 
 ![](/deep-learning/images/RGB_D/network.png)
 
@@ -35,7 +35,7 @@ $$Y^{sw}=S^{rgb} \odot Y +(1-S^{rgb})\odot (1-Y)$$
 $$S^{fused}=SW \odot S^{rgb}+(1+SW) \odot S^{d}$$
 
 # **Loss Function**
-**Saliency Loss**. There are three saliency maps produced in the network, they applied a standard cross-entropy for every ones. $$L_{sal}=L^{rgb}_{sal}+L^{d}_{sal}+L^{fused}_{sal}$$.
+**Saliency Loss**. There are three saliency maps produced in the network, they applied a standard cross-entropy for each. $$L_{sal}=L^{rgb}_{sal}+L^{d}_{sal}+L^{fused}_{sal}$$.
 
 $$L^{m}_{sal}=-\sum^{N}_{i=1}\sum^{T}_{j=1}(y_{i,j}\log S^{m}_{i,j}+(1-y_{i,j})\log (1-S^{m}_{i,j}))$$
 
@@ -43,7 +43,7 @@ $$L^{m}_{sal}=-\sum^{N}_{i=1}\sum^{T}_{j=1}(y_{i,j}\log S^{m}_{i,j}+(1-y_{i,j})\
 
 $$L_{sw}=-\sum^{N}_{i=1}\sum^{T}_{j=1}(y^{sw}_{i,j}\log SW_{i,j}+(1-y^{sw}_{i,j})\log (1-SW_{i,j}))$$
 
-**Edge-preserving Loss**. The edge-preserving property has considered in previous RGB saliency detection to obtain sharp salient object boundaries and improve detection performance.
+**Edge-preserving Loss**. The edge-preserving property has been considered previously RGB saliency detection works to obtain sharp salient object boundaries and improve detection performance.
 
 $$L_{edge}=\frac{1}{N}\sum^{N}_{i=1}\| \partial_{x}(S^{fused}_{i})-\partial_{x}(Y_{i})\|^{2}_{2}+\| \partial_{y}(S^{fused}_{i})-\partial_{y}(Y_{i})\|^{2}_{2}$$
 
