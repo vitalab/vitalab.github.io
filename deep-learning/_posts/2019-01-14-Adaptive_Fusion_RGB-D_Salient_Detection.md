@@ -17,7 +17,7 @@ The RGB-D images are used in salient object detection to identify the most visua
 
 They design a two-streamed convolutional neural network (CNN), each of which extracts features and predicts a saliency map from either RGB or depth modality.
 
-To make full supervision of the network, they adding three losses: saliency supervision, switch map supervision, and edge-preserving constraints.
+To have full supervision of the network, they added three losses: saliency supervision, switch map supervision, and edge-preserving constraints.
 
 ![](/deep-learning/images/RGB_D/images.png)
 
