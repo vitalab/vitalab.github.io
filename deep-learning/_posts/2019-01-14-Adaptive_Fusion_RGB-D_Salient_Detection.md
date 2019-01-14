@@ -13,22 +13,22 @@ cite:
 Code: https://github.com/Lucia-Ningning/Adaptive_Fusion_RGBD_Saliency_Detection
 
 ## Summary
-The RGB-D images are use in salient object detection to identify the most visually distinctive objects in a pair of color and depth images.
+The RGB-D images are used in salient object detection to identify the most visually distinctive objects in a pair of color and depth images.
 
 They design a two-streamed convolutional neural network (CNN), each of which extracts features and predicts a saliency map from either RGB or depth modality.
 
-To make a full supervision of the network, they adding three losses: saliency supervision, switch map supervision, and edge-preserving constraints.
+To make full supervision of the network, they adding three losses: saliency supervision, switch map supervision, and edge-preserving constraints.
 
 ![](/deep-learning/images/RGB_D/images.png)
 
 ## Method
-They say they have two major concerns existing in RGB-D saliency detection are how to the depth-induced saliency and how to fuse RGB and depth modalities for achieving better performance.
+They say they have two significant concerns existing in RGB-D saliency detection are how to the depth-induced saliency and how to fuse RGB and depth modalities for achieving better performance.
 
 ![](/deep-learning/images/RGB_D/network.png)
 
 # **Saliency Fusion Module**
 The switch map is a 1-channel image whose pixel values are assigned in [0, 1].
-This will plays a role to adaptively weigh the RGB and depth predictions, and therefore the fused saliency map is a weighted sum of the two predictions.
+This will play a role to adaptively weigh the RGB and depth predictions, and therefore the fused saliency map is a weighted sum of the two predictions.
 
 $$Y^{sw}=S^{rgb} \odot Y +(1-S^{rgb})\odot (1-Y)$$
 
