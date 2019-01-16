@@ -22,7 +22,7 @@ without assuming a specific diffusion mode.
 - Authors propose to use a discrete classification framework, rather than a
 regression framework to allow for probabilistic tracking.
 - Improved performance scores are reported over state-of-the art classical and
-DL methods on the ISMRM 2015 Challenge dataset [^1].
+DL methods on the ISMRM 2015 Challenge dataset [Maier-Hein:2016:biorxiv].
 
 
 # Introduction
@@ -109,8 +109,8 @@ stopping criteria: $$a=3$$, $$b=10$$ and $$c=4.5$$.
 
 ## Data
 
-- ISMRM 2015 Tractography Challenge phantom dataset [^1].
-- Training on (i) ground-truth tractogram; (ii) MITK [^2] tractogram.
+- ISMRM 2015 Tractography Challenge phantom dataset [Maier-Hein:2016:biorxiv].
+- Training on (i) ground-truth tractogram; (ii) MITK [MITK] tractogram.
 - "Ground-truth" whole brain tractography created using Q-ball reconstruction,
 followed by probabilistic streamline tracking using MITK diffusion tool.
 Resulting streamlines were randomly divided into training and validation sets.
@@ -120,7 +120,7 @@ in the training set.
 
 # Results
 
-- Evaluation using the Tractometer [^3] score.
+- Evaluation using the Tractometer [Cote:2013:MIA] score.
 - Overfitting when training on ground-truth data.
 - Better generalization than ISMRM 2015 Challenge contestants when training on
 MITK output.
@@ -147,7 +147,7 @@ algorithms.
 # Comments
 
 - Looks heavily inspired (including network architecture and tracking
-parameters) by Poulin *et al.* [^4].
+parameters) by Poulin *et al.* [Poulin:2018:MICCAI].
 - The way the assessment is made seems not to be a standardized way to do it,
 using MITK both to generate a training dataset and its results being reported
 in the comparison.
@@ -164,21 +164,22 @@ results.
 
 # References
 
-[^1]: Klaus Maier-Hein, Peter Neher, Jean-Christophe Houde, Marc-Alexandre
-Côté, Eleftherios Garyfallidis, Jidan Zhong, Maxime Chamberland, Fang-Cheng Yeh,
-Ying Chia Lin, Qing Ji, et al. Tractography-based connectomes are dominated by
-false-positive connections. biorxiv, page 084137, 2016.
+[Maier-Hein:2016:biorxiv]: Klaus Maier-Hein, Peter Neher, Jean-Christophe
+Houde, Marc-Alexandre Côté, Eleftherios Garyfallidis, Jidan Zhong, Maxime
+Chamberland, Fang-Cheng Yeh, Ying Chia Lin, Qing Ji, et al. Tractography-based
+connectomes are dominated by false-positive connections. biorxiv, page 084137,
+2016.
 
-[^2]: The Medical Imaging Interaction Toolkit (MITK):
+[MITK]: The Medical Imaging Interaction Toolkit (MITK):
 http://mitk.org/wiki/The_Medical_Imaging_Interaction_Toolkit_(MITK)
 
-[^3]: Marc-Alexandre Côté, Gabriel Girard, Arnaud Boré, Eleftherios
+[Cote:2013:MIA]: Marc-Alexandre Côté, Gabriel Girard, Arnaud Boré, Eleftherios
 Garyfallidis, Jean-Christophe Houde, and Maxime Descoteaux. Tractometer:
 towards validation of tractography pipelines. Medical image analysis,
 17(7):844–857, 2013.
 
-[^4]: Philippe Poulin, Marc-Alexandre Côté, Jean-Christophe Houde,
-Laurent Petit, Peter F Neher, Klaus H Maier-Hein, Hugo Larochelle, and Maxime
-Descoteaux. Learn to track: Deep learning for tractography. In International
-Conference on Medical Image Computing and Computer-Assisted Intervention, pages
-540–547. Springer, 2017.
+[Poulin:2018:MICCAI]: Philippe Poulin, Marc-Alexandre Côté, Jean-Christophe
+Houde, Laurent Petit, Peter F Neher, Klaus H Maier-Hein, Hugo Larochelle, and
+Maxime Descoteaux. Learn to track: Deep learning for tractography. In
+International Conference on Medical Image Computing and Computer-Assisted
+Intervention, pages 540–547. Springer, 2017.
