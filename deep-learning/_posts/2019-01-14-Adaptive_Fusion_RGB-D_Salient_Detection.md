@@ -22,7 +22,7 @@ To have full supervision of the network, they added three losses: saliency super
 ![](/deep-learning/images/RGB_D/images.png)
 
 ## Method
-They say they have two significant concerns existing in RGB-D saliency detection are how to the depth-induced saliency, and how to fuse RGB and depth modalities for achieving better performance.
+They say they have two significant concerns existing in RGB-D saliency detection for achieving better performance: how to model the depth-induced saliency, and how to fuse RGB and depth modalities.
 
 ![](/deep-learning/images/RGB_D/network.png)
 
