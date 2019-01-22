@@ -7,7 +7,7 @@ pdf:  https://arxiv.org/abs/1901.01369v2
 cite:
   authors: "Ningning Wang, Xiaojin Gong"
   title:   "Adaptive Fusion for RGB-D Salient Object Detection"
-  venue:   "ISBI 2019 (under review)"
+  venue:   "arXiv:1901.01369"
 ---
 
 Code: https://github.com/Lucia-Ningning/Adaptive_Fusion_RGBD_Saliency_Detection
