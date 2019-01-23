@@ -25,5 +25,5 @@ where $$V(s_t)$$ is the value function, the sum of all expected rewards at this 
 
 (See poster, table 1 for results)
 
-We can see that the RL algorithm performs much better at finding valid tracts than a deterministic algorithm (EuDX, which is old and not used very much anymore).  However, we do not know many invalid tracts the RL algorithm has found. After all it might just brute-force it. It would have been much more informative to display precision, recall or any other metric than solely the true-positives rate. Also, to reiterate, they had the massive advantage of having an end goal, which most definitely helped them design their reward.
+We can see that the RL algorithm performs much better at finding valid tracts than a deterministic algorithm (EuDX, which is old and not used very much anymore).  However, we do not know how many invalid tracts the RL algorithm has found. After all it might just brute-force it. It would have been much more informative to display precision, recall or any other metric than solely the true-positives rate. Also, to reiterate, they had the massive advantage of having an end goal, which most definitely helped them design their reward.
 
