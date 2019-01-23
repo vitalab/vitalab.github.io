@@ -12,9 +12,9 @@ pdf: "https://arxiv.org/abs/1811.04323"
 
 ## Introduction
 
-Reinforcement learning methods are typically used to control robots and have only recently been used for image processing purposes. The authors of the paper do the latter by assigning an agent per pixel, where the agent changes the pixel value by taking an action. They apply the method to three image processing tasks: Image denoising, image restoration and local color enhancement. They claim to achieve comparable or better performances than state-of-the-art methods.
+Reinforcement learning methods are typically used to control robots and have only recently been used for image processing purposes. The authors of the paper do the latter by assigning an agent per pixel, where the agent changes the pixel value by taking an action. They apply the method to three image processing tasks: Image denoising, image restoration and local color enhancement. They claim to achieve comparable or better performances than state-of-the-art methods, as well as having more interpretability than supervised methods.
 
-## Formally
+## Method
 
 They extend A3C by assigning an agent to each pixel of the image, where each agent trains a Policy Network to determine the best action to take and a Value Network that tries to approximate the future rewards. Of course, it would be computationally impractical to have a single network per agent, therefore the authors used a Fully-Convolutional Network to have the agents share the same network.
 
