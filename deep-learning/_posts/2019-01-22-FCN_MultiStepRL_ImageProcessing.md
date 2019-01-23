@@ -16,7 +16,7 @@ Reinforcement learning methods are typically used to control robots and have onl
 
 ## Formally
 
-They extend A3C by assigning an agent to each pixel of the image, where each agent trains a Policy Network to determine the best action to take and a Value Network that tries to approximate the future rewards. Of course, it would be computationally impractical to actually train an agent per pixel, therefore the authors used a Fully-Convolutional Network to have the networks share the same parameters.
+They extend A3C by assigning an agent to each pixel of the image, where each agent trains a Policy Network to determine the best action to take and a Value Network that tries to approximate the future rewards. Of course, it would be computationally impractical to have a single network per agent, therefore the authors used a Fully-Convolutional Network to have the agents share the same network.
 
 ![](/deep-learning/images/fcn_rl_image/model.png)
 
