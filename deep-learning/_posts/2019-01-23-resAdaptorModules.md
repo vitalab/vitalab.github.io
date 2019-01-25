@@ -36,6 +36,6 @@ They also add **batch normalization** modules after convolutional layers in orde
 
 <center><img src="/deep-learning/images/resadm/sc02.png" width="450"></center> 
 
-They tested their method on the Visual Decathlon challenge which combines ten well-known datasets from multiple visual domains.  And show that their method is smaller and better than using 1 model per domain.  It is also far better than a naive fine tuning.
+They tested their method on the Visual Decathlon challenge which combines ten well-known datasets from multiple visual domains.  The show that their method is smaller and as good (if no better) than using 1 model per domain.  It is also far better than a naive one model + fine tuning approach.
 
 <center><img src="/deep-learning/images/resadm/sc03.png" width="800"></center> 
