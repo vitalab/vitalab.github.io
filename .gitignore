@@ -4,3 +4,4 @@ _previews
 .jekyll-metadata
 .Rhistory
 *.swp
+Gemfile.lock
