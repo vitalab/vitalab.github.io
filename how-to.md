@@ -38,7 +38,7 @@ It is **important that you respect this format : date at the beginning and no sp
    Famous 2D image segmentation CNN made of a series of convolutions and deconvolutions.  The convolution feature maps are connected to the deconv maps of the same size.  The network was tested on the 2 class 2D ISBI cell segmentation [dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).  Used the crossentropy loss and a lot of data augmentation.
 
     ```
-    You can [preview your post while you write it](#previewing-your-post-locally) ; see the next section about this.\\
+    You can [preview your post while you write it](#how-to-preview-your-post-locally) ; see the next section about this.\\
 **NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
 
 <br>
@@ -70,8 +70,8 @@ This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all 
 
 1.  [Install Ruby using rbenv](/how-to-install-ruby). Don't use `apt-get` since its version of Ruby is too old.
 2.  Install Jekyll by running : `gem install bundler jekyll`.
-3.  Go where you cloned the repo and run : `bundle install`. This will install the dependencies for our Jekyll site.
+3.  Go where you cloned the VITAL literature review repository and run : `bundle install`. This will install the dependencies for our Jekyll site.
 4.  Run a local webserver using : `bundle exec jekyll serve`.
 5.  Access the site locally at : <http://127.0.0.1:4000/>
 
-Note that the site is automatically rebuilt when change a file.
+Note that the site is automatically rebuilt when a file has been modified.
