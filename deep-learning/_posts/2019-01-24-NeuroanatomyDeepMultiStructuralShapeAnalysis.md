@@ -32,12 +32,12 @@ among others, because point cloud representations do not possess an underlying
 Euclidean or grid-like structure.
 
 Traditional approaches rely on computing pre-defined shape features. The
-variational auto-encoder architecture proposed by Shakeri *et al.*[ref^1]
+variational auto-encoder architecture proposed by Shakeri *et al.*[^1]
 does not perform an end-to-end training, relies on computing mesh
 correspondences and focuses on a single structure.
 
 Authors introduce a method for medical shape data modelling based on
-[PointNet](https://github.com/vitalab/vitalab.github.io/blob/master/deep-learning/_posts/2018-12-20-pointnet.md),
+[PointNet](https://vitalab.github.io/deep-learning/2018/12/20/pointnet.html),
 a deep neural network architecture which operates directly on a point cloud and
 predicts a label in an end-to-end fashion. Their method, named Multi-
 Structure PointNet (MSPNet), is able to simultaneously predict a label given the
@@ -84,7 +84,7 @@ database MRI T1-weighed 7,974 images (2,423 healthy subjects; 978 Alzheimer's
 Disease, and 4,625 mild cognitive impairment) are used.
 
 Results are compared to the standard PointNet architecture and spectral shape
-descriptors in BrainPrint[ref^2].
+descriptors in BrainPrint[^2].
 
 ![](/deep-learning/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Classification_accuracy_results.png)
 
@@ -110,12 +110,12 @@ assumes an *a priori* knowledge.
 
 # References
 
-[ref^1]: Mahsa Shakeri, Herve Lombaert, Shashank Tripathi, Samuel Kadoury. Deep
-Spectral-Based Shape Features for Alzheimer’s Disease Classification.
-Proceedings of International Workshop on Spectral and Shape Analysis in Medical
-Imaging (SeSAMI). Medical Image Computing and Computer Assisted Interventions
-(MICCAI), pp 15-24. 2016.
+[^1]: Mahsa Shakeri, Herve Lombaert, Shashank Tripathi, and Samuel Kadoury.
+      Deep Spectral-Based Shape Features for Alzheimer’s Disease Classification.
+      Proceedings of International Workshop on Spectral and Shape Analysis in
+      Medical Imaging (SeSAMI). Medical Image Computing and Computer Assisted
+      Interventions (MICCAI), 15-24. 2016.
 
-[ref^2]: Christian Wachinger, Polina Golland, William Kremen, Bruce Fischl,
-Martin Reuter. BrainPrint: A discriminative characterization of brain
-morphology. Neuroimage 109, 232–248 (2015).
+[^2]: Christian Wachinger, Polina Golland, William Kremen, Bruce Fischl, and
+      Martin Reuter. BrainPrint: A discriminative characterization of brain
+      morphology. Neuroimage 109, 232-248 (2015).
