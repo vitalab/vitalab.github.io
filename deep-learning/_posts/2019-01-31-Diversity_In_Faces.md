@@ -6,13 +6,13 @@ author: "Antoine Théberge"
 cite:
     authors: "Michele Merler, Nalini Ratha, Rogerio S. Feris, John R. Smith"
     title:   "Diversity in Faces"
-    venue:   ""
+    venue:   "Arxiv"
 pdf: "https://arxiv.org/pdf/1806.01069.pdf"
 ---
 
 # Introduction
 
-Facial recognition algorithms have recently reached incredible accuracy. However, it is a well known fact that neural networks learn what they are taught. What if what they were taught was biased, was not representative of the diversity in the human race ? To build fair and accurate models, the training data usedm must provide sufficient coverage and balance. But what is sufficient coverage ? 
+Facial recognition algorithms have recently reached incredible accuracy. However, it is a well-known fact that neural networks learn what they are taught. What if what they were taught was biased, was not representative of the diversity in the human race? To build fair and accurate models, the training data used must provide sufficient coverage and balance. But what is sufficient coverage? 
 
 # Prior work
 
@@ -24,7 +24,7 @@ In the past, most database focused on simple attributes such as age, skin tone a
 
 # Chosen features
 
-Are age, gender and skin tone sufficient? What about other highly personal attributes that are part of our identity, such as race, ethnicity, culture, geography, or visible forms of self-expression that are reflected in our faces in a myriad of ways? Is it even still relevant to represent gender as a binary attribute ?
+Are age, gender and skin tone sufficient? What about other highly personal attributes that are part of our identity, such as race, ethnicity, culture, geography, or visible forms of self-expression that are reflected in our faces in a myriad of ways? Is it even still relevant to represent gender as a binary attribute?
 
 Instead of trying to answer these questions, the authors focused on biological traits present in faces. These traits, or coding schemes, have been chosen for their strong scientific basis as evidenced by highly cited work, while ensuring that extracting these coding schemes was computationally feasible, making sure that the values provided were continuous instead of categorical and that these values would be interpretable by a human.
 
@@ -54,7 +54,7 @@ Generally, a higher diversity and an evenness closer to 1 are preferable.
 ![](/deep-learning/images/Diversity_in_Faces/results.png)
 
 Because reading the whole table above would be painful, here is the gist of it:
-Individual measurements seem to have a higher diversity and evenness than the feature (age, genre, race) they represent.
+Individual measurements seem to have higher diversity and evenness than the feature (age, genre, race) they represent.
 
 
 [Blog post](https://www.ibm.com/blogs/research/2019/01/diversity-in-faces/)
