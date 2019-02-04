@@ -33,7 +33,7 @@ source ~/.bashrc
 
 ## Install Ruby
 ~~~
-rbenv install -v 2.4.0  # Replace by the latest version of Ruby
+rbenv install -v 2.4.0
 rbenv global 2.4.0
 ~~~
 Make sure you have the right version installed and selected :
@@ -48,4 +48,4 @@ echo "gem: --no-document" > ~/.gemrc
 ~~~
 **You are done.**
 
-[Go back to **Previewing your post locally**](/#previewing-your-post-locally)
+[Go back to **How to preview your post locally**](/howto/#how-to-preview-your-post-locally).
