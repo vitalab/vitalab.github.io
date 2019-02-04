@@ -21,7 +21,7 @@ pdf: "https://arxiv.org/abs/1808.01595"
 - Model-free (spherical harmonics do not impose a model on the data)
 
 
-#### Model
+## Model
 
 > ![](/medical-imaging/images/sh-harmonization-resnet/figure1.png)
 
@@ -37,7 +37,7 @@ Reminder:
 
 
 
-#### Results
+## Results
 
 **Datasets**: 
 
@@ -54,7 +54,7 @@ CDMRI harmonization Challenge
 - Evaluate the ability to reduce inter-scanner variance in the signal itself and metrics like FA/MD (Figures 2,3,4)
 - 10-fold cross-validation using the 10 subjects (8 training, 1 validation, 1 test).
 
-The only reported baseline is the Golkov method, a 3-layer, 150 units neural network with ReLu and Dropout designed, applied on a single voxel at a time; it was "designed" for the estimation of scalar measures from diffusion data, and seems completely unrelated to harmonization.
+The only reported baseline is the Golkov method[^1], a 3-layer, 150 units neural network with ReLU and Dropout designed, applied on a single voxel at a time; it was "designed" for the estimation of scalar measures from diffusion data, and seems completely unrelated to harmonization.
 
 **There is no classical method baseline...**
 
@@ -67,3 +67,4 @@ The only reported baseline is the Golkov method, a 3-layer, 150 units neural net
 > ![](/medical-imaging/images/sh-harmonization-resnet/figure4.png)
 
 
+[^1]: Golkov, V., Dosovitskiy, A., Sperl, J.I., Menzel, M.I., Czisch, M., Sämann, P., Brox, T. and Cremers, D., 2016. Q-space deep learning: twelve-fold shorter and model-free diffusion MRI scans. IEEE transactions on medical imaging, 35(5), pp.1344-1351.
