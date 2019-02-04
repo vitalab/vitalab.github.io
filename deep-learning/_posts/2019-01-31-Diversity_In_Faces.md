@@ -54,7 +54,7 @@ Generally, a higher diversity and an evenness closer to 1 are preferable.
 ![](/deep-learning/images/Diversity_in_Faces/results.png)
 
 Because reading the whole table above would be painful, here is the gist of it:
-Individual measurements seem to have higher diversity and evenness than the feature (age, genre, race) they represent.
+Individual measurements seem to have higher diversity and evenness than the feature (age, gender, race) they represent.
 
 
 [Blog post](https://www.ibm.com/blogs/research/2019/01/diversity-in-faces/)
