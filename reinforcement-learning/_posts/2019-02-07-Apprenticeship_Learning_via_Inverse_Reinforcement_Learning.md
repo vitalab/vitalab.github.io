@@ -40,3 +40,13 @@ Termination of the algorithm then provides
 ![](/reinforcement-learning/images/al-irl/eq13.png)
 
 which means there is atleast one policy found whose performance is atleast as good as the expert's performance minus $$\epsilon$$, where $$w$$ was found using a SVM or QP solver.
+
+If access to a SVM/QP is impossible or undesirable
+
+TODO
+
+## Results
+
+In our first set of experiments, the authors used 128 by 128 gridworlds with multiple/sparse rewards. The reward is not known to the algorithm, but we can sample trajectories from an expert’s (optimal) policy. The agent has four actions to try to move in each of the four compass directions, but with 30% chance an action fails and results in a random move. The grid is divided into non-overlapping regions of 16 by 16 cells; the authors call these 16x16 regions “macrocells.” A small number of the resulting 64 macrocells have positive rewards. For each value of $$i = 1, . . . , 64$$, there is one feature $$\phi_i(s)$$ indicating whether that state $$s$$ is in macrocell $$i$$. In this case, the expert policy is the optimal policy according to the grid layout.
+
+![](/reinforcement-learning/images/al-irl/res1.png)
