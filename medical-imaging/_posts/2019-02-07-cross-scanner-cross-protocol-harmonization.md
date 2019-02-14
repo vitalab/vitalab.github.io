@@ -6,15 +6,15 @@ author: "Philippe Poulin"
 cite:
     authors: "Tax, C.M., Grussu, F., Kaden, E., Ning, L., Rudrapatna, U., Evans, J., St-Jean, S., Leemans, A., Koppers, S., Merhof, D. and Ghosh, A."
     title:   "Cross-scanner and cross-protocol diffusion MRI data harmonisation: A benchmark database and evaluation of algorithms"
-    venue:   ""
-pdf: ""
+    venue:   "Neuroimage 2019"
+pdf: "https://www.sciencedirect.com/science/article/pii/S1053811919300837"
 ---
 
 ## Summary
 
 This paper is the result of the "Diffusion MRI Harmonisation Challenge", organized at the MICCAI 2017 CDMRI workshop.
 It presents a benchmark of 5 dMRI harmonisation algorithms, using a dataset of 14 participants scanned on 3 systems of different gradient strengths (40, 80 and 300 mT/m).
-In addition to the standard protocol, a state-of-the-art protocol was used with 2 of the 3 systems.sc
+In addition to the standard protocol, a state-of-the-art protocol was used with 2 of the 3 systems.
 
 ## Dataset
 
