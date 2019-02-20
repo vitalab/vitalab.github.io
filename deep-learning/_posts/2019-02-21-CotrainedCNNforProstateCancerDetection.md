@@ -29,8 +29,8 @@ This paper presents an automated Prostate cancer (mentionned as PCa) detection s
 
 Mettre loss
 
-##Contributions
-1. 1st work of PCa detection which performs multimodal fusion by co-training CNN features for both modalities, where the information of each modality is employed to guide the CNN feature learning of the other modality.
+## Contributions
+1st work of PCa detection which performs multimodal fusion by co-training CNN features for both modalities, where the information of each modality is employed to guide the CNN feature learning of the other modality.
 
 **gras**
 
