@@ -27,6 +27,6 @@ This paper presents a simple but apparently effective method for segmenting pros
 
 ## Results
 
-Results on the PROMISE12 challenge dataset seams good. 
+Results on the PROMISE12 challenge dataset seem good. 
 
 > ![](/medical-imaging/images/proSeg/sc03.png)
