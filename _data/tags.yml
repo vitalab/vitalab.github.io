@@ -26,6 +26,7 @@ tags:
 - codebook
 - course
 - ct-scan
+- data-augmentation
 - dataset
 - deep-learning
 - denoising
@@ -47,6 +48,7 @@ tags:
 - neural-network
 - network-compression
 - network-pruning
+- one-shot-segmentation
 - optimization
 - pedestrian-detection
 - point-cloud
