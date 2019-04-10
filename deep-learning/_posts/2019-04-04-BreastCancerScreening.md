@@ -5,7 +5,7 @@ tags:   deep-learning medical-imaging
 author: Antoine Théberge
 pdf:    "https://arxiv.org/abs/1903.08297"
 cite:
-    authors: "Nan Wu, Jason Phang, Jungkyu Park, Yiqiu Shen, Zhe Huang, Masha Zorin, Stanisław Jastrzębski, Thibault Févry, Joe Katsnelson, Eric Kim, Stacey Wolfson, Ujas Parikh, Sushma Gaddam, Leng Leng Young Lin, Kara Ho, Joshua D. Weinstein, Beatriu Reig, Yiming Gao, Hildegard Toth, Kristine Pysarenko, Alana Lewin, Jiyon Lee, Krystal Airola, Eralda Mema, Stephanie Chung, Esther Hwang, Naziya Samreen, S. Gene Kim, Laura Heacock, Linda Moy, Kyunghyun Cho, Krzysztof J. Geras"
+    authors: "Nan Wu, Jason Phang, Jungkyu Park, Yiqiu Shen, Zhe Huang et al."
     title:   "Deep Neural Networks Improve Radiologists' Performance in Breast Cancer Screening"
     venue:   "CVPR 2019"
 ---
@@ -24,7 +24,7 @@ The authors propose a deep-learning method leveraging both pixel-level and patch
 
 ## Dataset
 
-Two challenges arise in breast cancer detection. One, the most commonly used mammography dataset contains only about 10 000 images. Second, mammography images are very high resolution (around 2000x2000). [Prior work](https://arxiv.org/abs/1703.07047) shows that downsampling these images can significantly hurt performance of computer vision model, so it is not a viable option.
+Two challenges arise in breast cancer detection. One, the most commonly used mammography dataset contains only about 10 000 images. Second, mammography images are very high resolution (around 2000x2000). [Prior work](https://arxiv.org/abs/1703.07047) shows that downsampling these images can significantly hurt performance of computer vision models, so it is not a viable option.
 
 The authors introduce the NYU Breast Cancer Screening Dataset (BCSD), consisting of ~230 000 screening mammography exams from ~150 patients, each exams consisting of four images (CC and MLO views of left and right breasts). 
 
