@@ -7,7 +7,7 @@ author: Carl Lemaire
 
 # Sign up
 
-1. Ask your supervisor his Calcul Canada group name (e.g. `def-pmjodoin`)
+1. Ask your supervisor his Calcul Canada group name (e.g. `def-pmjodoin`) and CCRI (e.g. `pje-224-01`)
 2. [Sign up on Calcul Canada](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/)
 3. Login through SSH on one of the clusters (you may be denied access while your account is being set up)
 
