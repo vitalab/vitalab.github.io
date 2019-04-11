@@ -5,7 +5,7 @@ tags:   deep-learning machine-learning
 author: Carl Lemaire
 ---
 
-## Sign up
+# Sign up
 
 1. Ask your supervisor his Calcul Canada group name (e.g. `def-pmjodoin`)
 2. [Sign up on Calcul Canada](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/)
@@ -19,14 +19,16 @@ ssh USER@cedar.computecanada.ca
 
 You will arrive on a _login node_. This is not where you run code, but you have internet access. Compute nodes don't have internet access.
 
-## Setup your environment
+[You can also use Calcul Québec resources.](https://wiki.calculquebec.ca/w/Accueil)
+
+# Setup your environment
 
 1. Get your code. Use `scp` or git.
 2. Create a virtualenv and install your requirements.
 3. Read the docs about your deep learning framework of choice ([PyTorch](https://docs.computecanada.ca/wiki/PyTorch), [TensorFlow](https://docs.computecanada.ca/wiki/TensorFlow))
 4. Run your code to make sure you have all dependencies (stop when training begins; note that you won't have GPUs).
 
-## Transfer your dataset
+# Transfer your dataset
 
 The simplest option to send your data is to "pipe tar into ssh". You should put your data into the shared storage of the project, in `~/projects/def-pmjodoin`.
 
@@ -43,13 +45,13 @@ tar -cf mydataset.tar my/dataset/  # aggregate without compressing; add z to com
 tar -xf mydataset.tar .  # untar later
 ```
 
-## Use the right storage at the right time
+# Use the right storage at the right time
 
 [Read the Compute Canada documentation about this.](https://docs.computecanada.ca/wiki/Storage_and_file_management)
 
-## Request an interactive task
+# Request an interactive task
 
-Before writing script for submitting a task, you should try your stuff in an [**interactive job**](https://docs.computecanada.ca/wiki/Running_jobs#Interactive_jobs).
+Before writing a script for submitting a task, you should try your stuff in an [**interactive job**](https://docs.computecanada.ca/wiki/Running_jobs#Interactive_jobs).
 
 Example:
 ```bash
@@ -68,7 +70,7 @@ python train.py
 
 Take note the correct sequence of commands.
 
-## Submit a task using a script
+# Submit a task using a script
 
 [How to submit job scripts.](https://docs.computecanada.ca/wiki/Running_jobs#Use_sbatch_to_submit_jobs)
 
@@ -100,6 +102,6 @@ sbatch pouding.sh
 
 You will wait in line for longer if you request more time, more resources, or if your script is not named "pouding". Your priority will also decrease if you don't use all the resources you ask. The Standard output and Standard error will be written to files, in the directory where you submitted the task (but you can configure it).
 
-## More info
+# More info
 
-https://docs.computecanada.ca/wiki/Getting_started
+<https://docs.computecanada.ca/wiki/Getting_started>
