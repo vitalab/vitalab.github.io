@@ -49,9 +49,9 @@ tar -xf mydataset.tar .  # untar later
 
 [Read the Compute Canada documentation about this.](https://docs.computecanada.ca/wiki/Storage_and_file_management)
 
-# Request an interactive task
+# Try with an interactive task
 
-Before writing a script for submitting a task, you should try your stuff in an [**interactive job**](https://docs.computecanada.ca/wiki/Running_jobs#Interactive_jobs).
+Before writing a script for submitting a task, you should try your stuff in an [**interactive job**](https://docs.computecanada.ca/wiki/Running_jobs#Interactive_jobs). **THIS IS ONLY FOR TESTING AND DEBUGGING.** As soon as it works, transition to a job script (next section).
 
 Example:
 ```bash
