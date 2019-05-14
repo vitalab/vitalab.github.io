@@ -12,7 +12,7 @@ cite:
 
 The authors aim to reduce the number of free parameters in neural networks. In the best cases, they can **predict 95% of the parameters** of a network, instead of learning them. Even then, no drop in accuracy is observed. This work is motivated by the Gabor-like smoothness of large filters learned in the first layer of a CNN.
 
-![](/pruning-acceleration/images/pred-params/fig1.png)
+![](/deep-learning/images/pred-params/fig1.png)
 
 # Regression of the filter values
 
@@ -32,7 +32,7 @@ In this view, the columns of $$U$$ are a dictionnary of basis functions, and the
 
 We can predict the whole filter $$\mathbf{w}$$ using a subset $$\mathbf{w}_{\alpha}$$ of the weights (the subset is chosen with a random uniform distribution over the spatial dimensions of the image patch):
 
-![](/pruning-acceleration/images/pred-params/ridgereg.png)
+![](/deep-learning/images/pred-params/ridgereg.png)
 
 The subset of seen weights $$\mathbf{w}_{\alpha}$$ is obtained by pre-training a single-layer autoencoder for each layer. The network is then trained end-to-end.
 
@@ -40,11 +40,11 @@ The subset of seen weights $$\mathbf{w}_{\alpha}$$ is obtained by pre-training a
 
 They experiment on MNIST with a 784–500–500–10 MLP and on CIFAR-10 with a LeNet. They do not predict the parameters of the classification layer.
 
-![](/pruning-acceleration/images/pred-params/fig4.png)
+![](/deep-learning/images/pred-params/fig4.png)
 
 SE stands for "squared exponential" kernel.
 
-![](/pruning-acceleration/images/pred-params/fig5.png)
+![](/deep-learning/images/pred-params/fig5.png)
 
 # Discussion
 

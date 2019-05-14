@@ -18,7 +18,7 @@ In addition to the standard protocol, a state-of-the-art protocol was used with 
 
 ## Dataset
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure1.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure1.png)
 
 - 14 subjects split into trainset (9), validset (1) and testset (4)
 
@@ -35,36 +35,36 @@ The predicted signal is fitted with DTI to extract FA and MD maps.
 RISH features for order 0 and 2 are also computed.
 
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure2.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure2.png)
 
 
 ## Benchmarked methods
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/table3.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/table3.png)
 
 SHNet:
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/table4.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/table4.png)
 
 SHResNet:
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure3.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure3.png)
 
 SphericalNet:
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/table5.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/table5.png)
 
 FCSNet:
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure4.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure4.png)
 
 SDL:
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure5.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure5.png)
 
 Reference method : simple trilinear interpolation in the spatial domain, and spherical harmonics interpolation (order 6 for ST and 8 for SA) in the angular domain.
 
 ## Results
 
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure6.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure6.png)
 
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure7.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure7.png)
 
-> ![](/medical-imaging/images/cross-scanner-protocol-harmonization/figure8.png)
+> ![](/deep-learning/images/cross-scanner-protocol-harmonization/figure8.png)

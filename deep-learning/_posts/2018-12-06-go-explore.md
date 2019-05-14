@@ -18,13 +18,13 @@ The authors hypothesize that the problem of "detachment" is a major weakness tha
 
 <br>
 
-![](/reinforcement-learning/images/go-explore/detachment.png)
+![](/deep-learning/images/go-explore/detachment.png)
 
 <br>
 
 # Go-Explore
 
-![](/reinforcement-learning/images/go-explore/go-explore.jpg)
+![](/deep-learning/images/go-explore/go-explore.jpg)
 
 <br>
 
@@ -46,14 +46,14 @@ Using trajectories to solve environments only work for deterministic environment
 
 To allow trajectories to have cells in common, a good state representation must be used. The authors show that using a downscaled (8x11) and quantized (8 grayscale intensities) version of the current game frame works well.
 
-![](/reinforcement-learning/images/go-explore/downscale.gif)
+![](/deep-learning/images/go-explore/downscale.gif)
 
 However, by using a hand-crafted cell representation, results are improved dramatically. (Note: The method is SotA even without this domain knowledge.) The hand-crafted representation contains the $$(x,y)$$ position of the agent, the current room, the current level, and the current number of keys held. This information is extracted from pixels.
 
-![](/reinforcement-learning/images/go-explore/domainknowl.png)
+![](/deep-learning/images/go-explore/domainknowl.png)
 
 # Results that say "BAMF"
 
 Notice that Go-Explore _w/o domain knowledge_ equals expert human performance.
 
-![](/reinforcement-learning/images/go-explore/results.png)
+![](/deep-learning/images/go-explore/results.png)

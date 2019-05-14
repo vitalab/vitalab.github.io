@@ -16,27 +16,27 @@ The authors propose an ADMM approach for performing unstructured pruning with a 
 
 They combine ADMM regularization and masked retraining into a 3-step iterative process:
 
-![](/pruning-acceleration/images/pruning-admm/fig1.png)
+![](/deep-learning/images/pruning-admm/fig1.png)
 
 # ADMM formulation
 
 In the following, f() is the loss function, W and b are the weights and biases respectively.
 
-![](/pruning-acceleration/images/pruning-admm/eq_a.png)
+![](/deep-learning/images/pruning-admm/eq_a.png)
 
 **Here are the 2 sub problems:**
 
 The first is simply the DNN training, but with a special regularizer:
 
-![](/pruning-acceleration/images/pruning-admm/eq4.png)
+![](/deep-learning/images/pruning-admm/eq4.png)
 
 The second has the goal of projecting the current network structure into the set of correct structures (the set of neural networks which have the required sparsity factor):
 
-![](/pruning-acceleration/images/pruning-admm/eq_subp2.png)
+![](/deep-learning/images/pruning-admm/eq_subp2.png)
 
 This last optimization problem can be solved with following operation: _leave intact the top-k weights (by magnitude), and zero-out the others_, where k is the number of weights corresponding to the required sparsity. This operation is conducted in a layer-wise fashion.
 
-![](/pruning-acceleration/images/pruning-admm/dual_update.png)
+![](/deep-learning/images/pruning-admm/dual_update.png)
 
 # Masked Retraining
 
@@ -46,11 +46,11 @@ At high compression rates, the ADMM method alone is not sufficient, as it leaves
 
 They use a rather weird progressive approach. To target a pruning ratio, they work in increments of 3x. They keep the three best architecture in terms of accuracy (they could have 15x, 18x, and 21x sparsity). From these, they try to prune further (say 24x). Of the three, the network that resulted in the next pruned network with the best accuracy is replaced by the new network (for example, the 15x gave the best 24x; and the 15x is replaced by this 24x). See the figure below for an example.
 
-![](/pruning-acceleration/images/pruning-admm/progressive.png)
+![](/deep-learning/images/pruning-admm/progressive.png)
 
 # Results
 
 Results are good. But since this is unstructured pruning, it will not result in acceleration (unless sparse matrix storage and operations are used).
 
-![](/pruning-acceleration/images/pruning-admm/tab3-4.png)
-![](/pruning-acceleration/images/pruning-admm/tab5.png)
+![](/deep-learning/images/pruning-admm/tab3-4.png)
+![](/deep-learning/images/pruning-admm/tab5.png)

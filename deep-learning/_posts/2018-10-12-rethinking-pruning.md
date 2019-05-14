@@ -20,22 +20,22 @@ They have two main conclusions:
 # Experiments
 
 #### L1 norm based pruning
-![](/pruning-acceleration/images/rethinking/tab1.png)
+![](/deep-learning/images/rethinking/tab1.png)
 
 #### ThiNet
-![](/pruning-acceleration/images/rethinking/tab2.png)
+![](/deep-learning/images/rethinking/tab2.png)
 
 #### Regression based Feature Reconstruction
-![](/pruning-acceleration/images/rethinking/tab3.png)
+![](/deep-learning/images/rethinking/tab3.png)
 
 #### Network Slimming
-![](/pruning-acceleration/images/rethinking/tab4.png)
+![](/deep-learning/images/rethinking/tab4.png)
 
 #### Non-structured pruning
-![](/pruning-acceleration/images/rethinking/tab6.png)
+![](/deep-learning/images/rethinking/tab6.png)
 
 #### Pruning for detection task
-![](/pruning-acceleration/images/rethinking/tab7.png)
+![](/deep-learning/images/rethinking/tab7.png)
 
 #### Pruning is good for architecture search
-![](/pruning-acceleration/images/rethinking/fig3.png)
+![](/deep-learning/images/rethinking/fig3.png)

@@ -36,7 +36,7 @@ Standard methods to address this problem :
 
 
 **Figure 1** Outline of the proposed method for inter-site dMRI data harmonization
-> ![](/medical-imaging/images/dmri-harmonization/figure1.png)
+> ![](/deep-learning/images/dmri-harmonization/figure1.png)
 
 
 #### Rotation-Invariant Spherical Harmonics (RISH) features
@@ -71,7 +71,7 @@ In each region, the sample average RISH features $$\mathbb{E}_k (\cdot)$$ are co
 
 
 **Figure 2** RISH features in the white matter for different SH orders and sites
-> ![](/medical-imaging/images/dmri-harmonization/figure2.png)
+> ![](/deep-learning/images/dmri-harmonization/figure2.png)
 
 The goal is then to find a mapping $$\Pi (\cdot)$$ such that all scanner related differences are removed :
 
@@ -91,23 +91,23 @@ Then, all there is left to do is to change the SH coefficients in each voxel to 
 There are 2 possibilities, shifting the coefficients (adding a delta) or scaling (multiplying by a delta).
 
 1. Shift: $$ \pi(C_{ij}) = C_{ij} + \delta $$
-2. Scale: ![](/medical-imaging/images/dmri-harmonization/equation6.png)
+2. Scale: ![](/deep-learning/images/dmri-harmonization/equation6.png)
 
 Shifting can cause coefficients to change sign, which is ill-posed for SH, as seen in figure 3.
 
-> ![](/medical-imaging/images/dmri-harmonization/figure3.png)
+> ![](/deep-learning/images/dmri-harmonization/figure3.png)
 
 
 ## Experiments
 
-> ![](/medical-imaging/images/dmri-harmonization/table1.png)
+> ![](/deep-learning/images/dmri-harmonization/table1.png)
 
 **Tract-based spatial statistics**:
 
-> ![](/medical-imaging/images/dmri-harmonization/figure4.png)
+> ![](/deep-learning/images/dmri-harmonization/figure4.png)
 
 **Statistical test for group differences**:
 
-> ![](/medical-imaging/images/dmri-harmonization/table2.png)
+> ![](/deep-learning/images/dmri-harmonization/table2.png)
 
 The tests show there is "no statistical difference" after harmonization.

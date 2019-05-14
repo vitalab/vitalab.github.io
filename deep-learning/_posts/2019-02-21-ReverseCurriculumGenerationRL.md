@@ -73,7 +73,7 @@ The method is tested on four environments:
 
 Their baseline is the unfiltered start space.
 
-![](/reinforcement-learning/images/ReverseCurriculumGenerationRL/Results.png)
+![](/deep-learning/images/ReverseCurriculumGenerationRL/Results.png)
 
 
 # Conclusions
