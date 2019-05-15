@@ -7,7 +7,7 @@ cite:
     authors: "Raia Hadsell, Sumit Chopra, Yann LeCun"
     title:   "Dimensionality Reduction by Learning an Invariant Mapping"
     venue:   "CVPR 2006"
-pdf: "https://arxiv.org/pdf/1708.02383v1.pdf"
+pdf: "http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf"
 ---
 
 
