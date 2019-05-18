@@ -18,7 +18,7 @@ to well-annotated classes. The goal of this paper is to propose a **new partiall
 training **instance segmentation models** on a large set of categories
 all of which have box annotations, but **only a small
 fraction of which have mask annotations**. These contributions
-allow to train [Mask R-CNN](https://vitalab.github.io/deep-learning/2017/09/14/MaskRcnn.html) to detect and segment visual concepts using box annotations  and mask annotations.
+allow to train [Mask R-CNN](https://vitalab.github.io/article/2017/09/14/MaskRcnn.html) to detect and segment visual concepts using box annotations  and mask annotations.
 
 
 <center><img src="/article/images/segEverything/sc01.png" width="400"></center>

@@ -37,7 +37,7 @@ does not perform an end-to-end training, relies on computing mesh
 correspondences and focuses on a single structure.
 
 Authors introduce a method for medical shape data modelling based on
-[PointNet](https://vitalab.github.io/deep-learning/2018/12/20/pointnet.html),
+[PointNet](https://vitalab.github.io/article/2018/12/20/pointnet.html),
 a deep neural network architecture which operates directly on a point cloud and
 predicts a label in an end-to-end fashion. Their method, named Multi-
 Structure PointNet (MSPNet), is able to simultaneously predict a label given the

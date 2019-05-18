@@ -70,6 +70,26 @@ for folder in "${src_categories[@]}"; do
   replacement="<img src=\"/${target}"
   find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
 
+
+  # Fix the cross-references to other review articles
+  # Print occurrences for visual control
+  pattern=".*https://vitalab.github.io/${folder}.*"
+  find ${target}/_posts/ -name '*.md' -exec grep -e $pattern {} \; -print
+
+  # Do the replacement
+  pattern="https://vitalab.github.io/${folder}"
+  replacement="https://vitalab.github.io/${target}"
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+
+  # Print occurrences for visual control
+  pattern=".*{%[[:space:]]post_url[[:space:]]/${folder}/.*}"
+  find ${target}/_posts/ -name '*.md' -exec grep -e $pattern {} \; -print
+
+  # Do the replacement
+  pattern="\{% post_url /${folder}"
+  replacement="\{% post_url /${target}"
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+
   rm -r $folder
 
 done

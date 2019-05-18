@@ -23,7 +23,7 @@ The main idea of this paper is to help the network preserve the spatial resoluti
 
 ## Models
 
-The model is a regular [ResNet]({{ site.baseurl }}{% post_url /deep-learning/2017-03-16-resnet %})
+The model is a regular [ResNet]({{ site.baseurl }}{% post_url /article/2017-03-16-resnet %})
 to produce baseline results for the different tasks.
 
 The first model called **DRN-A** removes the last maxpooling layer and uses only dilated convolutions with different

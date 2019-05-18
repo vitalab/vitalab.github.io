@@ -16,7 +16,7 @@ Paper :
 
 This paper shows a way to train an adversarial network to generate occlusion/deformation changes to help an object detector network to generalize better.
 
-As an object detector network they use [Faster-RCNN]({% post_url /deep-learning/2017-05-14-fastrcnn %}).
+As an object detector network they use [Faster-RCNN]({% post_url /article/2017-05-14-fastrcnn %}).
 
 ## Model
 
