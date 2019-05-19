@@ -36,7 +36,7 @@ Since **YOLO** is predicting multiple boxes per cell, the output is a **dense** 
 
 The loss function is quite simple although there is a lot of parameters that you need to tune.
 
-![YOLO](/deep-learning/images/yolo-loss.png)
+![YOLO](/article/images/yolo-loss.png)
 
 The values of the predicted boxes are penalized with a MSE if there is an object in this cell.
 

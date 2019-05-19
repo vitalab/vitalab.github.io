@@ -26,29 +26,29 @@ The goal of the paper is to study which family of tractography algorithms is bes
 
 > Probabilistic tractography samples from the fODF restrained to an aperture cone aligned to the previous direction
 
-> ![](/deep-learning/images/dmri-connectivity/odfs.png)
+> ![](/article/images/dmri-connectivity/odfs.png)
 
 
 ## Experiments
 
 The authors used simulated phantoms (artificial "white matter" configurations) to compare deterministic and probabilistic tractography.
 
-> ![](/deep-learning/images/dmri-connectivity/figure1.png)
+> ![](/article/images/dmri-connectivity/figure1.png)
 
 ## Results
 
 Deterministic is better because it produces fewer false positives. Probabilistic algorithms would be better suited for tractometry or other single-bundle analysis.
 Thresholding streamlines to remove the "bundles" with the lowest number of connections helps, but the threshold needs to be tuned, and the ideal value varies a lot depending on the algorithm used or the connectivity of the phantom...
 
-> ![](/deep-learning/images/dmri-connectivity/figure4.png)
+> ![](/article/images/dmri-connectivity/figure4.png)
 
 
-> ![](/deep-learning/images/dmri-connectivity/figure5.png)
-> ![](/deep-learning/images/dmri-connectivity/figure5-6-legend.png)
+> ![](/article/images/dmri-connectivity/figure5.png)
+> ![](/article/images/dmri-connectivity/figure5-6-legend.png)
 
-> ![](/deep-learning/images/dmri-connectivity/figure6.png)
+> ![](/article/images/dmri-connectivity/figure6.png)
 
 
-> ![](/deep-learning/images/dmri-connectivity/table2.png)
+> ![](/article/images/dmri-connectivity/table2.png)
 
-> ![](/deep-learning/images/dmri-connectivity/figure8.png)
+> ![](/article/images/dmri-connectivity/figure8.png)

@@ -33,7 +33,7 @@ The model is using the **VGG-16** model for its base. It then uses several featu
 
 It's a more complex model than **YOLO** but it's faster because the input size is smaller.
 
-![ssd_model](/deep-learning/images/ssd_model.png)
+![ssd_model](/article/images/ssd_model.png)
 
 
 

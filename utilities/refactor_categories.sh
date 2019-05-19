@@ -53,13 +53,14 @@ for folder in "${src_categories[@]}"; do
 
   # Fix the image references
   # Print occurrences for visual control
-  pattern=".*\!\[\](/${folder}/.*)"
+  pattern=".*\!\[.*\](/${folder}/.*)"
   find ${target}/_posts/ -name '*.md' -exec grep -e $pattern {} \; -print
 
   # Do the replacement
-  pattern="\!\[\]\(/${folder}"
-  replacement="\!\[\]\(/${target}"
-  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+  pattern="\(.*\!\[.*\].*\)\(${folder}\)\(.*\).*"
+  replacement="\1${target}\3"
+  find ${target}/_posts/ -name '*.md' -exec sed -i "s/$pattern/$replacement/g" {} +
+
 
   # Print occurrences for visual control
   pattern=".*<img[[:space:]]src=\"/${folder}/.*"

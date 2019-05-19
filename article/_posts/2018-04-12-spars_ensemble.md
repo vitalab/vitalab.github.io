@@ -17,9 +17,9 @@ The authors, in the first phase, run an SG-MCMC to draw an ensemble of samples f
 of network parameters. In the second phase, weight-pruning is applied to each sampled networks and then retraining over the remained connections.
 For each test point $hat{x}$, predictive distribution is:
 
-<img src="/deep-learning/images/mcmc/1.png" width="400">
+<img src="/article/images/mcmc/1.png" width="400">
 
-<img src="/deep-learning/images/mcmc/7.png" width="800">
+<img src="/article/images/mcmc/7.png" width="800">
 
 
 The parameters are approximated by Mont Carlo which will be sampled from posterior distribution of network parameters.
@@ -30,23 +30,23 @@ MCMC is a common sampling but is not good for large datasets. Stochastic Gradien
 
 
 
-<img src="/deep-learning/images/mcmc/2.png" width="600">
+<img src="/article/images/mcmc/2.png" width="600">
 
 
 
 After all the models are collected, authors use a simple pruning rule to reduce the model size as well as the computation cost with finding the network connections whose weights are below a certain threshold and removing them away. Now coming to next phase, with multiple sparse models, there is zero positions in weight matrics is an issue, so authors use Sparse Structure Ensemble (SSE) which employe group lasso regularization, proposes to do feature selection in group level, which means keeping or removing all the parameters in a group simultaneously to achieve structured sparsity corresponding to grouping strategy and penalize unimportant filter and channels. So, group lasso regularization can be formulated as :
 
-<img src="/deep-learning/images/mcmc/3.png" width="300">
+<img src="/article/images/mcmc/3.png" width="300">
 
 where $\theta$ is a group of weights, G is the number of groups, dim($\theta$) is number of weights.
 
 
-<img src="/deep-learning/images/mcmc/4.png" width="600">
+<img src="/article/images/mcmc/4.png" width="600">
 
 The SSE is learned on both Fully Neural Network and LSTM. So, the group for FNN is all the outgoing connections from a single neuron (input or hidden) together, it means if neuron’s outputs are all zeros, it makes no contribution to the next layer and can be removed which reduces the rows and columns of weight matrices between layers. In Lstm, Since the input and hidden units are used four times, keeping two index lists during pruning to record the remained rows and columns for each weight matrix. When doing computations, just using partial units to update partial dimensions of the gates according to the index lists. The first grouping strategy is to group each row and each column for the four weight matrices separately (is named untied) and the second is getting a W matrix which concatenated horizontally of four weight and group each row and column of W as a second grouping (tied) strategy and uses two indexes instead four indexes. The other strategy would be Intrinsic Sparse Structures (ISS), is proposed to reduce the hidden size by grouping all the weights associated with a certain hidden unit together and removing them simultaneously.
 
-<img src="/deep-learning/images/mcmc/5.png" width="700">
-<img src="/deep-learning/images/mcmc/6.png" width="700">
+<img src="/article/images/mcmc/5.png" width="700">
+<img src="/article/images/mcmc/6.png" width="700">
 
 
 ### Experiments
@@ -54,12 +54,12 @@ The result is shown in two parts: SSE of FNNs for image classification task on M
 LSTM models, language modeling task on Penn TreeBank corpus.
 
 
-<img src="/deep-learning/images/mcmc/8.png" width="800">
+<img src="/article/images/mcmc/8.png" width="800">
 
-<img src="/deep-learning/images/mcmc/9.png" width="800">
+<img src="/article/images/mcmc/9.png" width="800">
 
 
-<img src="/deep-learning/images/mcmc/10.png" width="800">
+<img src="/article/images/mcmc/10.png" width="800">
 
 
 
