@@ -75,7 +75,7 @@ for folder in "${src_categories[@]}"; do
   # Do the replacement
   pattern="<img src=\"/${folder}"
   replacement="<img src=\"/${target}"
-  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@g" {} +
 
 
   # Fix the cross-references to other review articles
@@ -86,7 +86,7 @@ for folder in "${src_categories[@]}"; do
   # Do the replacement
   pattern="https://vitalab.github.io/${folder}"
   replacement="https://vitalab.github.io/${target}"
-  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@g" {} +
 
   # Print occurrences for visual control
   pattern=".*{%[[:space:]]post_url[[:space:]]/${folder}/.*}"
@@ -95,7 +95,7 @@ for folder in "${src_categories[@]}"; do
   # Do the replacement
   pattern="\{% post_url /${folder}"
   replacement="\{% post_url /${target}"
-  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@g" {} +
 
   # Print occurrences for visual control
   pattern=".*{%[[:space:]]link[[:space:]]${folder}/.*}"
@@ -104,7 +104,7 @@ for folder in "${src_categories[@]}"; do
   # Do the replacement
   pattern="\{% link ${folder}"
   replacement="\{% link ${target}"
-  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@g" {} +
 
   rm -r $folder
 
