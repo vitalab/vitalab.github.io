@@ -1,8 +1,8 @@
 ---
 layout: review
 title:  "Faster R-CNN"
-tags:   deep-learning CNN localization essentials 
-author: Pierre-Marc Jodoin 
+tags:   deep-learning CNN localization essentials
+author: Pierre-Marc Jodoin
 pdf:   "https://arxiv.org/pdf/1506.01497.pdf"
 cite:
   authors: "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun"
@@ -10,8 +10,8 @@ cite:
   venue:   "NIPS 2015"
 ---
 
-This is an effort to improve [R-CNN]({{ site.baseurl }}{% link deep-learning/_posts/2017-04-18-rcnn.md %}) and [Fast-CNN]({{ site.baseurl }}{% link deep-learning/_posts/2017-05-14-fastrcnn.md %}). 
-The main improvements are : 
+This is an effort to improve [R-CNN]({{ site.baseurl }}{% link article/_posts/2017-04-18-rcnn.md %}) and [Fast-CNN]({{ site.baseurl }}{% link article/_posts/2017-05-14-fastrcnn.md %}).
+The main improvements are :
 
 * The author uses a Region Proposal Network (RPN) that proposes boxes out of a given feature map which allows end-to-end training (previous methods used a third party proposal method).
 
@@ -37,7 +37,7 @@ The loss function is the sum of a cross-entropy for the labels and a regression 
 
 ## Results
 FasterRNN gets respectively a mean AveragePrecision (mAP) of 78.8 and 75.9 on PASCAL VOC 2007 and 2012.
- 
+
 <div align="middle">
   <img src="/article/images/fasterrcnn/sc04.png" width="600">
 </div>

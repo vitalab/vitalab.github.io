@@ -11,7 +11,7 @@ cite:
   venue:   "Not yet published : arXiv:1611.05552 "
 ---
 
-DelugeNet is some sort of [DenseNet]({{ site.baseurl }}{% link deep-learning/_posts/2017-03-31-densenet.md %}) but with a series of `blocks` and ``composite layers``.   The layers operating on the same feature map dimensions can be grouped to form a `block`.  The layers inside the block are fully connected as for DenseNet.
+DelugeNet is some sort of [DenseNet]({{ site.baseurl }}{% link article/_posts/2017-03-31-densenet.md %}) but with a series of `blocks` and ``composite layers``.   The layers operating on the same feature map dimensions can be grouped to form a `block`.  The layers inside the block are fully connected as for DenseNet.
 
 <div align="middle">
   <img src="/article/images/delugeNet/sc01.jpg" width="700">
@@ -19,7 +19,7 @@ DelugeNet is some sort of [DenseNet]({{ site.baseurl }}{% link deep-learning/_po
 
 <br>
 
-The layers inside a block are `bottleneck` layers similar to that used in [ResNet]({{ site.baseurl }}{% link deep-learning/_posts/2017-03-16-resnet.md %}) (c.f Fig.1(a)).  The configuration of a `block` is shown in Fig.1(c).  
+The layers inside a block are `bottleneck` layers similar to that used in [ResNet]({{ site.baseurl }}{% link article/_posts/2017-03-16-resnet.md %}) (c.f Fig.1(a)).  The configuration of a `block` is shown in Fig.1(c).
 
 <div align="middle">
   <img src="/article/images/delugeNet/sc02.jpg" width="800">
@@ -42,4 +42,3 @@ Deluge net is slighly more accurate than Densenet on CIFAR100 (not really on CIF
 <div align="middle">
   <img src="/article/images/delugeNet/sc03.jpg" width="800">
 </div>
-

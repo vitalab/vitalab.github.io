@@ -97,6 +97,15 @@ for folder in "${src_categories[@]}"; do
   replacement="\{% post_url /${target}"
   find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
 
+  # Print occurrences for visual control
+  pattern=".*{%[[:space:]]link[[:space:]]${folder}/.*}"
+  find ${target}/_posts/ -name '*.md' -exec grep -e $pattern {} \; -print
+
+  # Do the replacement
+  pattern="\{% link ${folder}"
+  replacement="\{% link ${target}"
+  find ${target}/_posts/ -name '*.md' -exec sed -r -i "s@$pattern@$replacement@" {} +
+
   rm -r $folder
 
 done
