@@ -24,8 +24,14 @@ prunning_acceleration_tag_file_elem="${dash} ${prunning_acceleration_tag}"
 video_analysis_tag_file_elem="${dash} ${video_analysis_tag}"
 
 tags_file='./_data/tags.yml'
-echo $prunning_acceleration_tag_file_elem >> $tags_file
-echo $video_analysis_tag_file_elem >> $tags_file
+tag_exists=$(grep -- $prunning_acceleration_tag $tags_file)
+if [ -z "$tag_exists" ]; then
+  echo $prunning_acceleration_tag_file_elem >> $tags_file
+fi
+tag_exists=$(grep -- $video_analysis_tag $tags_file)
+if [ -z "$tag_exists" ]; then
+  echo $video_analysis_tag_file_elem >> $tags_file
+fi
 
 # Skip first line when sorting the list of tags
 ( head -n1 $tags_file; tail -n+2 $tags_file | sort -ft$ -k2n,2 ) >file.tmp && mv file.tmp $tags_file
