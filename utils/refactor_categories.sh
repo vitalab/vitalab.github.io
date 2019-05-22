@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Make sure we are inside the repository
-cd vitalab.github.io
+cd "${BASH_SOURCE%/*}" &&
+cd ..
 
 src_categories=('deep-learning' 'machine-learning' 'medical-imaging' 'pruning-acceleration' 'reinforcement-learning' 'video-analysis')
 
