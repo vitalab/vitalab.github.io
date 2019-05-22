@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"
-tags: unsupervised autoencoder VAE
+tags: deep-learning unsupervised autoencoder VAE
 author: "Carl Lemaire"
 cite:
     authors: "Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Rätsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem"
@@ -18,11 +18,11 @@ In this large scale study, the authors evaluate six state-of-the-art models and 
 
 [3dshapes](https://github.com/deepmind/3d-shapes) is a dataset of images containing one 3D shape in a simple environment. The goal of this dataset is to be a benchmark for disentanglement. Below is an animation describing all six latent factors:
 
-![](/deep-learning/images/unsupervised-disentanglement/ground-truth-imagemagick+coalesce.gif)
+![](/article/images/unsupervised-disentanglement/ground-truth-imagemagick+coalesce.gif)
 
 We would like to have a representation learning method that could produce results similar to the figure above. However, current methods have not solved this problem, and can produce results like below. Notice the entangled factors on the left (e.g. size and color):
 
-![](/deep-learning/images/unsupervised-disentanglement/disentanglement-out.gif)
+![](/article/images/unsupervised-disentanglement/disentanglement-out.gif)
 
 # Key Findings
 
@@ -33,7 +33,7 @@ Following this large scale study, the authors...
 * ...could not validate the assumption that disentanglement is useful for downstream tasks.
 * ...found that hyperparameters do not transfer across tasks, and are less important than random seeds (see figure below).
 
-![](/deep-learning/images/unsupervised-disentanglement/image3.png)
+![](/article/images/unsupervised-disentanglement/image3.png)
 
 # Observations relevant to future research
 
