@@ -14,7 +14,7 @@ pdf: "http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf"
 
 ## Summary
 
-The contrastive loss is a **distance-based loss** as opposed to more convential **error-prediction losses**.  This loss is used to learn embeddings in which two similar points have a low Euclidean distance and two dissimilar points have a large Euclidean distance. 
+The contrastive loss is a **distance-based loss** as opposed to more conventional **error-prediction losses**.  This loss is used to learn embeddings in which two similar points have a low Euclidean distance and two dissimilar points have a large Euclidean distance. 
 
 
 ## Proposed method
