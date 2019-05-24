@@ -15,9 +15,9 @@ cite:
 
 ![](/article/images/sketchRNN/sc101.png)
 
-In this paper, the authors we present a conditional VAE capable of encoding and decoding manual sketched. The goal is to teach a machine to draw a sketch like a human would do. 
+In this paper, the authors present a conditional VAE capable of encoding and decoding manual sketches. The goal is to teach a machine to draw a sketch like a human would do. 
 
- A sketch is a list of points, and each point is a vector consisting of 5 elements: $$S_i=(\Delta x, \Delta y, p_1, p_2, p_3)$$ where $$(\Delta x, \Delta y)$$ is the ofset wrt the previous point and $$(p_1, p_2, p_3)$$ are binary variables encoding the pen status (down, up, EndOfSketch).
+ A sketch is a list of points, and each point is a vector consisting of 5 elements: $$S_i=(\Delta x, \Delta y, p_1, p_2, p_3)$$ where $$(\Delta x, \Delta y)$$ is the offset wrt the previous point and $$(p_1, p_2, p_3)$$ are binary variables encoding the pen status (down, up, EndOfSketch).
 
 
 ## Proposed method
@@ -27,7 +27,7 @@ The method is illustrated in the top figure.  The encoder is a bidirectional RNN
 
 ![](/article/images/sketchRNN/sc102.png)
 
-and a Softmax categorical distribution for $$(p_1, p_2, p_3)$$.  The loss has the usual VAE shape, i.e. a Reconstruction Loss, LR, plus a Kullback-Leibler Divergence
+and a Softmax categorical distribution for $$(p_1, p_2, p_3)$$.  The loss has the usual VAE shape, i.e. a reconstruction Loss plus a Kullback-Leibler Divergence
 Loss.  The reconstruction loss has two terms namely
 
 
