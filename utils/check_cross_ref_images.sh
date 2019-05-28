@@ -1,8 +1,11 @@
 #!/bin/bash
 
+files=("$@")
+
 images_list=()
 
 check_files_exist() {
+  local file
   for file in "${images_list[@]}"; do
     abs_filename="$(pwd)$file"
     if [ ! -f "$abs_filename" ]; then
@@ -15,14 +18,20 @@ check_files_exist() {
 cd "${BASH_SOURCE%/*}" &&
 cd ..
 
-# Look for the cross-referenced images in the Markdown file of the commit
-post_added=$(git diff-index --diff-filter=A --cached HEAD -- '*.md')
-pattern=".*\!\[.*\](\(.*\))"
-IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $post_added))
 
-check_files_exist
+for file in "${files[@]}"; do
 
-pattern="<img src=[^\"]*\"\([^\"]*\)\".*"
-IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $post_added))
+  echo $file
 
-check_files_exist
+  # Look for the cross-referenced images in the files
+  pattern=".*\!\[.*\](\(.*\))"
+  IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $file))
+
+  check_files_exist
+
+  pattern="<img src=[^\"]*\"\([^\"]*\)\".*"
+  IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $file))
+
+  check_files_exist
+
+done
