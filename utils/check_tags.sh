@@ -1,6 +1,41 @@
 #!/bin/bash
 
+# Utility functions
+usage() {
+cat << EOF
+Usage: $0 <file_list>
+Use this script to check that the tags contained exist in the './_data/tags.yml'
+file.
+EOF
+}
+
+die() {
+  echo "$@" 1>&2; exit 1
+}
+
+# Parse arguments
+help=false
+folder_id=""
+while test $# -gt 0;
+do
+  opt="$1";
+  case "$opt" in
+    "-h"|"--help")
+      shift;
+      help=true
+      break;;
+    *)
+      break;;
+  esac
+done
+
 files=("$@")
+
+if test "${files}" = "" || $help; then
+  usage
+  exit 1
+fi
+
 
 not_in_tag_list=()
 
