@@ -15,10 +15,14 @@ check_files_exist() {
 cd "${BASH_SOURCE%/*}" &&
 cd ..
 
-# Look for the tags in the Markdown file of the commit
+# Look for the cross-referenced images in the Markdown file of the commit
 post_added=$(git diff-index --diff-filter=A --cached HEAD -- '*.md')
-
 pattern=".*\!\[.*\](\(.*\))"
+IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $post_added))
+
+check_files_exist
+
+pattern="<img src=[^\"]*\"\([^\"]*\)\".*"
 IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $post_added))
 
 check_files_exist
