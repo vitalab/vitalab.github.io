@@ -1,7 +1,11 @@
 #!/bin/bash
 
+# Look for the Markdown files added to the commit
+files_added=$(git diff-index --diff-filter=A --cached HEAD -- '*.md')
+
+# Loop over the scripts
 for hook in "check_tags.sh" "check_cross_ref_images.sh"; do
-  sh "$(pwd)/../$hook"
+  sh "$(pwd)/../$hook ${files_added[@]}"
   if [ $? -ne 0 ]; then
     exit 1
   fi

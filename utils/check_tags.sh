@@ -1,5 +1,7 @@
 #!/bin/bash
 
+files=("$@")
+
 not_in_tag_list=()
 
 find_non_existing_tags() {
@@ -17,19 +19,26 @@ find_non_existing_tags() {
 cd "${BASH_SOURCE%/*}" &&
 cd ..
 
+
 tags_file='./_data/tags.yml'
 
 # Read the tags
 pattern='\(-[[:blank:]]\)\(.*\)'
 IFS=$'\n' tag_list=($(sed -n -e "s/$pattern/\2/p" $tags_file))
 
-# Look for the tags in the Markdown file of the commit
-post_added=$(git diff-index --diff-filter=A --cached HEAD -- '*.md')
-pattern='(tags:\s*)\"?([^\"]*)\"?/'
-IFS=$', ' article_tags=($(sed -n -E "s/$pattern \2/p" $post_added))
 
-find_non_existing_tags
+for file in "${files[@]}"; do
 
-echo "The following tags are not contained in the $tags_file file:"
-echo ${not_in_tag_list[@]}
-echo "Please, add them before committing."
+  echo $file
+
+  # Look for the tags in the files
+  pattern='(tags:\s*)\"?([^\"]*)\"?/'
+  IFS=$', ' article_tags=($(sed -n -E "s/$pattern \2/p" $file))
+
+  find_non_existing_tags
+
+  echo "The following tags are not contained in the $tags_file file:"
+  echo ${not_in_tag_list[@]}
+  echo "Please, add them before committing."
+
+done
