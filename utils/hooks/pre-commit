@@ -8,12 +8,12 @@ scripts_folder=$(pwd)'/utils/'
 hook_scripts=("check_tags.sh" "check_cross_ref_images.sh")
 
 # Look for the added or modified Markdown files
-files_added=($(git diff-index --diff-filter=AM --cached HEAD --name-only -- '*.md'))
+files=($(git diff-index --diff-filter=AM --cached HEAD --name-only -- '*.md'))
 
 # Loop over the scripts if the array is not empty
-if [ ${files_added[@]} ]; then
+if [[ ${files[@]} ]]; then
   for hook in "${hook_scripts[@]}"; do
-    bash $scripts_folder$hook ${files_added[@]}
+    bash $scripts_folder$hook ${files[@]}
     if [ $? -ne 0 ]; then
       exit 1
     fi

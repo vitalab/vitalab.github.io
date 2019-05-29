@@ -6,7 +6,7 @@ cd "${BASH_SOURCE%/*}" &&
 
 echo "Configuring git hooks..."
 
-hooks_folder=$(pwd)'/hooks/'
+hooks_folder=$(pwd)'/hooks'
 
 mayor=$(git --version | grep -o '[0-9.]*' | awk -F \. {'print $1'})
 minor=$(git --version | grep -o '[0-9.]*' | awk -F \. {'print $2'})
