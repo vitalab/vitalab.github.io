@@ -40,7 +40,6 @@ fi
 status=0
 non_existing_tags=0
 
-not_in_tag_list=()
 
 find_non_existing_tags() {
   for item1 in "${article_tags[@]}"; do
@@ -53,11 +52,6 @@ find_non_existing_tags() {
     ((non_existing_tags++))
   done
 
-  if [[ $non_existing_tags -ne 0 ]]; then
-    echo "The following tags are not contained in the $tags_file file:"
-    echo ${not_in_tag_list[@]}
-    echo "Please, add them before committing."
-  fi
 }
 
 # Make sure we are inside the repository
@@ -74,13 +68,20 @@ IFS=$'\n' tag_list=($(sed -n -e "s/$pattern/\2/p" $tags_file))
 
 for file in "${files[@]}"; do
 
-  echo $file
+  not_in_tag_list=()
 
   # Look for the tags in the files
   pattern='(tags:\s*)\"?([^\"]*)\"?/'
   IFS=$', ' article_tags=($(sed -n -E "s/$pattern \2/p" $file))
 
   find_non_existing_tags
+
+  if [[ ${#not_in_tag_list[@]} -ne 0 ]]; then
+    echo $file
+    echo "The following tags are not contained in the $tags_file file:"
+    echo ${not_in_tag_list[@]}
+    echo "Please, add them before committing."
+  fi
 
 done
 
