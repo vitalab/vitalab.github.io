@@ -36,7 +36,8 @@ if test "${files}" = "" || $help; then
 fi
 
 
-images_list=()
+status=0
+non_existing_files=0
 
 check_files_exist() {
   local file
@@ -44,6 +45,7 @@ check_files_exist() {
     abs_filename="$(pwd)$file"
     if [ ! -f "$abs_filename" ]; then
       echo "'$file' does not exist as a file."
+      ((non_existing_files++))
     fi
   done
 }
@@ -52,6 +54,8 @@ check_files_exist() {
 cd "${BASH_SOURCE%/*}" &&
 cd ..
 
+
+images_list=()
 
 for file in "${files[@]}"; do
 
@@ -69,3 +73,9 @@ for file in "${files[@]}"; do
   check_files_exist
 
 done
+
+if [[ $non_existing_files -ne 0 ]]; then
+  status=1
+fi
+
+exit $status

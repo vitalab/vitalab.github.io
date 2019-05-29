@@ -37,6 +37,9 @@ if test "${files}" = "" || $help; then
 fi
 
 
+status=0
+non_existing_tags=0
+
 not_in_tag_list=()
 
 find_non_existing_tags() {
@@ -46,8 +49,15 @@ find_non_existing_tags() {
     done
 
     # If we reached here, nothing matched
-    not_in_tag_list+=( "$item1" )
+    not_in_tag_list+=("$item1")
+    ((non_existing_tags++))
   done
+
+  if [[ $non_existing_tags -ne 0 ]]; then
+    echo "The following tags are not contained in the $tags_file file:"
+    echo ${not_in_tag_list[@]}
+    echo "Please, add them before committing."
+  fi
 }
 
 # Make sure we are inside the repository
@@ -72,8 +82,11 @@ for file in "${files[@]}"; do
 
   find_non_existing_tags
 
-  echo "The following tags are not contained in the $tags_file file:"
-  echo ${not_in_tag_list[@]}
-  echo "Please, add them before committing."
-
 done
+
+
+if [[ $non_existing_tags -ne 0 ]]; then
+  status=1
+fi
+
+exit $status
