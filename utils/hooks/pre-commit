@@ -1,12 +1,21 @@
 #!/bin/bash
 
-# Look for the Markdown files added to the commit
-files_added=$(git diff-index --diff-filter=A --cached HEAD -- '*.md')
+# Make sure we are inside the repository.
+cd "${BASH_SOURCE%/*}" &&
+cd ../..
 
-# Loop over the scripts
-for hook in "check_tags.sh" "check_cross_ref_images.sh"; do
-  sh "$(pwd)/../$hook ${files_added[@]}"
-  if [ $? -ne 0 ]; then
-    exit 1
-  fi
-done
+scripts_folder=$(pwd)'/utils/'
+hook_scripts=("check_tags.sh" "check_cross_ref_images.sh")
+
+# Look for the added or modified Markdown files
+files_added=($(git diff-index --diff-filter=AM --cached HEAD --name-only -- '*.md'))
+
+# Loop over the scripts if the array is not empty
+if [ ${files_added[@]} ]; then
+  for hook in "${hook_scripts[@]}"; do
+    bash $scripts_folder$hook ${files_added[@]}
+    if [ $? -ne 0 ]; then
+      exit 1
+    fi
+  done
+fi
