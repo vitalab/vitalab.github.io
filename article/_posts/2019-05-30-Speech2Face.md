@@ -33,7 +33,7 @@ where $$f_{dec}$$ is the first layer of the face decoder and $$f_{VGG}$$ the las
 
 ## Data
 
-The authors used the AVSpeech dataset and extracted 1 frame and a 6 seconds audio clip from each video clip. If the video clip was shorter than six seconds, they looped it. The audio clip was then turned into a spectrogram and fed to the face encoder.
+The authors used the AVSpeech dataset and extracted 1 frame and a 6 seconds audio clip from each video clip. If the video clip was shorter than six seconds, they looped it. The audio clip was then turned into a spectrogram and fed to the speech encoder.
 
 # Results
 
