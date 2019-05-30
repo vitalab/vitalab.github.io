@@ -67,7 +67,7 @@ for file in "${files[@]}"; do
 
   check_files_exist
 
-  pattern="<img src=[^\"]*\"\([^\"]*\)\".*"
+  pattern=".*<img src=[^\"]*\"\([^\"]*\)\".*"
   IFS=$'\n' images_list=($(sed -n -e "s/$pattern/\1/p" $file))
 
   check_files_exist
