@@ -60,7 +60,7 @@ An expert then checks the results, the model is retrained, and the classificatio
 ![](/article/images/volcano/method.png)
 
 * **2-class model**: The model is trained with 2 classes: deformation and non deformation.
-We generated the training data by combining signals D+S+T for the deformation class and only S+T for the non deformation class.
+They generated the training data by combining signals D+S+T for the deformation class and only S+T for the non deformation class.
 For eachcombined signal, the components D, S and T are randomly selected.
 * **3-class model**: Initially they trained the CNN with completely separate D, S and T signals, but this is a poor representation of real datasets, so we also trained the classifier with several more realistic combinations (e.g. D+S, D+T, D+S+T).
 * **91-class model**: They generated weighted interferograms (I) by combining three components as $$I=(\alpha D+\beta S+\gamma T)/(\alpha+\beta+\gamma)$$, where $$(\alpha,\beta,\gamma)\in[0,0.25,0.5,0.75,1]$$.
