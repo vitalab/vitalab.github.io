@@ -22,9 +22,12 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
     ~~~
 3.  Create a file `YYYY-MM-DD-title-of-your-review.markdown` and put it in right folder (see above).  
 It is **important that you respect this format : date at the beginning and no spaces.** Else the page won't build properly. Here is an example of a valid name : `2017-01-31-going-deeper-with-convolutions.markdown`.
-4.  Copy this example in your new file and change it accordingly :  
+4.  Use the `review` template file in the [`templates`](https://github.com/vitalab/vitalab.github.io/tree/master/templates/review_template.md )
+as a starting point and do your review.
 
-    ``` markdown
+    A minimal working review example may look like:
+
+    ```markdown
     ---
     layout: review
     title: U-Net Convolutional Networks for Biomedical Image Segmentation
@@ -35,11 +38,31 @@ It is **important that you respect this format : date at the beginning and no sp
         venue:   "Proceedings of MICCAI 2015, p.234-241"
     pdf: "https://arxiv.org/pdf/1505.04597.pdf"
     ---
-   Famous 2D image segmentation CNN made of a series of convolutions and deconvolutions.  The convolution feature maps are connected to the deconv maps of the same size.  The network was tested on the 2 class 2D ISBI cell segmentation [dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).  Used the crossentropy loss and a lot of data augmentation.
 
+    # Introduction
+
+    Famous 2D image segmentation CNN made of a series of convolutions and
+    deconvolutions. The convolution feature maps are connected to the deconv maps of
+    the same size. The network was tested on the 2 class 2D ISBI cell segmentation
+    [dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).
+    Used the crossentropy loss and a lot of data augmentation.
+
+    The network architecture:
+    ![](/deep-learning/images/MyReview/UNetArchitecture.png)
+
+    A U-Net is based on Fully Convolutional Networks (FCNNs)[^1].
+
+    The loss used is a cross-entropy:
+    $$ E = \sum_{x \in \Omega} w(\bold{x}) \log (p_{l(\bold{x})}(\bold{x})) $$
+
+    # References
+
+    [^1]: Jonathan Long, Evan Shelhamer, and Trevor Darrell. Fully convolutional
+          networks for semantic segmentation (2014). arXiv:1411.4038.
     ```
-    You can [preview your post while you write it](#how-to-preview-your-post-locally) ; see the next section about this.\\
-**NOTE:** please use only the followings tags (*essentials* is for any paper considered as being a "must-read"):
+
+    The list of [available tags](https://github.com/vitalab/vitalab.github.io/blob/master/_data/tags.yml)
+    can be modified to include new tags. The current ones are:
 
 <br>
 <table style="width:100%">
@@ -58,6 +81,11 @@ It is **important that you respect this format : date at the beginning and no sp
   </tr>
 </table>
 <br>
+
+**NOTE:** the *essentials* tags is used for any paper considered as being a
+"must-read".
+
+You can [preview your post while you write it](#how-to-preview-your-post-locally) ; see the next section about this.\\
 
 5.  **Make a new branch**, commit your file and push your branch.
 6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
