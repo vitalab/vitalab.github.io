@@ -19,7 +19,7 @@ More specifically, it provides an overview of many important contributions dedic
 The remote sensors onboard the multiples platforms may vary greatly in multiple dimensions.
 For example, the types of properties sensed and the spatial and spectral resolutions of the data.
 
-![](/article/images/mmdfrs/fig1.jpg)
+![](/article/images/mmdfrs/fig1.png)
 
 ## Spatio-spectral fusion
 *  Component Substitution
@@ -32,28 +32,28 @@ For example, the types of properties sensed and the spatial and spectral resolut
 * The spatial and temporal adaptive reflectance fusion model(STARFM).
 * For heterogeneous landscapes, an enhanced STARFM (ESTARFM).
 
-![](/article/images/mmdfrs/fig2.jpg)
+![](/article/images/mmdfrs/fig2.png)
 
 ## Point Cloud
 * Point cloud level: Enrich the initial point cloud P with new point features.
 * Image/Voxel level: Derive new image layers representing 3D point cloud information.
 * Feature level: Fusion of point cloud information on the segment/object level.
 
-![](/article/images/mmdfrs/fig6.jpg)
+![](/article/images/mmdfrs/fig6.png)
 
 ## Hyperspectral and LiDAR
 
-![](/article/images/mmdfrs/fig78.jpg)
+![](/article/images/mmdfrs/fig78.png)
 
 ## Deep Learning
 
-![](/article/images/mmdfrs/fig10.jpg)
+![](/article/images/mmdfrs/fig10.png)
 
 ## Fusion
 
-![](/article/images/mmdfrs/fig14.jpg)
+![](/article/images/mmdfrs/fig14.png)
 
-![](/article/images/mmdfrs/table3.jpg)
+![](/article/images/mmdfrs/table3.png)
 
 ## Conclusion
 The field of multisensor and multitemporal data fusion for remotely sensed imagery is enormous.
