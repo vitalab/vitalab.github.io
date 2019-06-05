@@ -45,7 +45,7 @@ heterogeneous datasets (i.e. each dataset is annotated for a single task).
 Related work includes [^1] and [^2]. In [^1] semantic full scene
 labeling in outdoor images coming from different datasets with heterogeneous
 labels is done. Their loss function is data-selective. In [^2], reviewed in
-[here](https://github.com/vitalab/vitalab.github.io/blob/master/deep-learning/_posts/2018-11-30-NeuroNet.md),
+[here](https://vitalab.github.io/article/2019/03/21/JointLearningBrainSegmentationHeterogeneousData.html),
 multiple labels may be assigned to a single voxel.
 
 
