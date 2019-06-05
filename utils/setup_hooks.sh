@@ -8,10 +8,10 @@ echo "Configuring git hooks..."
 
 hooks_folder=$(pwd)'/hooks'
 
-mayor=$(git --version | grep -o '[0-9.]*' | awk -F \. {'print $1'})
+major=$(git --version | grep -o '[0-9.]*' | awk -F \. {'print $1'})
 minor=$(git --version | grep -o '[0-9.]*' | awk -F \. {'print $2'})
 
-if [ $mayor -eq "2" ] && [ $minor -lt "9" ]; then
+if [ $major -eq "2" ] && [ $minor -lt "9" ]; then
   find $hooks_folder -type f -exec ln -sf ../../{} .git/hooks/ \;
 else
   git config core.hooksPath $hooks_folder
