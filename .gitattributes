@@ -1,0 +1,2 @@
+# Convert line endings to `LF` when committing
+*.md crlf=input
