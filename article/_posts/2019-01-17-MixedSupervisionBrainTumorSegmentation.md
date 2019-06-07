@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Deep Learning with Mixed Supervision for Brain Tumor Segmentation"
-tags: deep-learning multi-task-learning segmentation medical
+tags: deep-learning multi-task-learning segmentation medical CNN
 author: "Jon Haitz Legarreta Gorroño"
 cite:
     authors: "Pawel Mlynarski and Hervé Delingette and Antonio Criminisi and
@@ -16,7 +16,7 @@ pdf: "https://arxiv.org/pdf/1812.04571.pdf"
 # Highlights
 
 Authors propose a model to perform brain tumor segmentation and classification
-jointly on Magnetic Resonance Images by training a deep learning network on
+jointly on Magnetic Resonance Images by training a deep learning network on  
 fully-annotated and weakly-annotated data.
 
 The method is evaluated under the Multimodal Brain Tumor Segmentation
