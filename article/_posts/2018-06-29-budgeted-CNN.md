@@ -17,7 +17,7 @@ The authors propose to use a Reinforcement Learning scheme to find the most effi
 
 First, the authors present two "Super Network" architectures, that represent the space in which the optimal solution is sought.
 
-![](/deep-learning/images/budgeted-CNN/supernets.png)
+![](/article/images/budgeted-CNN/supernets.png)
 
 Any architecture of their scope can be seen as the result of an Hadamard product between the direct acyclic graph (DAG) of the Super Network and a binary matrix H that encodes which connections are kept and which are deactivated.
 
@@ -44,6 +44,6 @@ The authors propose to either optimize the number of operations, the number of p
 
 Here are some architectures found as optimal :
 
-![](/deep-learning/images/budgeted-CNN/archi.png)
+![](/article/images/budgeted-CNN/archi.png)
 
 On all applications, they show that they can either obtain the same performance as the State-of-the-Art with a lower cost architecture (ex: a network that contains 4 times less parameters) or outperform it with a slightly bigger budget.
