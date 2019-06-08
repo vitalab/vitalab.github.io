@@ -1,8 +1,8 @@
 ---
 layout: review
 title: "Pretraining Deep Actor-Critic Reinforcement Learning Algorithms With Expert Demonstrations"
-tags: deep-learning reinforcement supervised
-author: ""
+tags: deep-learning reinforcement
+author: "Antoine Théberge"
 cite:
     authors: "Xiaoqin Zhang, Huimin Ma"
     title:   "Pretraining Deep Actor-Critic Reinforcement Learning Algorithms With Expert Demonstrations"
@@ -29,7 +29,7 @@ The authors then introduce the following theorem and "prove it":
 
 ![](/article/images/pretrainac/theorem1.jpeg)
 
-which gives us constraint $$(3)$$
+which gives the constraint $$(3)$$
 
 $$E_{s_0^*,a_0^*,..~\pi} [\sum_{t=0}^{\infty}\gamma^t A^\pi (s_t^*,a_t^*)] \geq 0$$
 
@@ -49,7 +49,7 @@ TLDR: Calculate the advantage of the expert policy. Multiply the advantage to th
 
 ## Data
 
-The tests we made on the HalfCheetah, Hopper, and Walker2d OpenAI Gym environments.
+The authors tested their method on the HalfCheetah, Hopper, and Walker2d OpenAI Gym environments.
 
 # Results
 
