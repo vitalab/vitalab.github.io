@@ -10,7 +10,8 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
 
 0.  Send an e-mail to Pierre-Marc Jodoin asking him to include you as a member of the [github.com/vitalab](https://github.com/vitalab) organization.
 1.  Clone the [`vitalab.github.io`](https://github.com/vitalab/vitalab.github.io) repo on your computer.
-2.  Determine the category in which you will add your post. Categories are managed using folders :  
+2.  Set up the `pre-commit` hooks by executing the `utils/setup_hooks.sh` script.
+3.  Determine the category in which you will add your post. Categories are managed using folders :  
 
     ~~~
     _posts/           # A post added here will have no category
@@ -20,9 +21,9 @@ The process for adding reviews is _git-centric_. Basically, **you just need to a
         _posts/       # Same thing for the "machine-learning" category
     ...               # There are other categories, you can add one too.
     ~~~
-3.  Create a file `YYYY-MM-DD-title-of-your-review.markdown` and put it in right folder (see above).  
+4.  Create a file `YYYY-MM-DD-title-of-your-review.markdown` and put it in right folder (see above).  
 It is **important that you respect this format : date at the beginning and no spaces.** Else the page won't build properly. Here is an example of a valid name : `2017-01-31-going-deeper-with-convolutions.markdown`.
-4.  Use the `review` template file in the [`templates`](https://github.com/vitalab/vitalab.github.io/tree/master/templates/review_template.md )
+5.  Use the `review` template file in the [`templates`](https://github.com/vitalab/vitalab.github.io/tree/master/templates/review_template.md )
 as a starting point and do your review.
 
     A minimal working review example may look like:
@@ -87,10 +88,10 @@ as a starting point and do your review.
 
 You can [preview your post while you write it](#how-to-preview-your-post-locally) ; see the next section about this.\\
 
-5.  **Make a new branch**, commit your file and push your branch.
-6.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
-7.  **Add reviewers**: everyone that you think are knowledgeable about the subject or simply would be interested in your review.
-8.  When every reviewer approved your branch, **merge your branch and delete it**.
+6.  **Make a new branch**, commit your file and push your branch.
+7.  [**Create a pull request**](https://github.com/vitalab/vitalab.github.io/compare) on the repo's github page.
+8.  **Add reviewers**: everyone that you think are knowledgeable about the subject or simply would be interested in your review.
+9.  When every reviewer approved your branch, **merge your branch and delete it**.
 
 ## How to preview your post locally
 
