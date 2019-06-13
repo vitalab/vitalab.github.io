@@ -81,9 +81,9 @@ for file in "${files[@]}"; do
     echo "The following tags are not contained in the $tags_file file:"
     echo ${not_in_tag_list[@]}
     echo "Please, check for potential typos. If there are no typos, the"\
-    " missing tags would need to be added to the $tags_file file before"\
-    " committing. If you are unsure that this addition would be justified,"\
-    " please ask on the team's Slack channel."
+    "missing tags would need to be added to the $tags_file file before"\
+    "committing. If you are unsure that this addition would be justified,"\
+    "please ask on the team's Slack channel."
   fi
 
 done
