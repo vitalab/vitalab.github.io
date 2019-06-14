@@ -49,12 +49,15 @@ as a starting point and do your review.
     Used the crossentropy loss and a lot of data augmentation.
 
     The network architecture:
-    ![](/deep-learning/images/MyReview/UNetArchitecture.png)
+    ![](/article/images/MyReview/UNetArchitecture.png)
 
     A U-Net is based on Fully Convolutional Networks (FCNNs)[^1].
 
     The loss used is a cross-entropy:
     $$ E = \sum_{x \in \Omega} w(\bold{x}) \log (p_{l(\bold{x})}(\bold{x})) $$
+
+    The U-Net architecture is used by many authors, and has been re-visited in
+    many reviews, such as in [this one](https://vitalab.github.io/article/2019/05/02/MRIPulseSeqGANSynthesis.html).
 
     # References
 
@@ -85,6 +88,12 @@ as a starting point and do your review.
 
 **NOTE:** the *essentials* tags is used for any paper considered as being a
 "must-read".
+
+For further information about Jekyll's syntax, visit the [documentation page](https://jekyllrb.com/docs/).
+However, note that Jekyll's syntax may change in newer versions, and the site's
+version is freezed. Hence, although [Liquid tags](https://jekyllrb.com/docs/liquid/tags/)
+could be used for links, for example, plain old links are used to avoid issues
+building the site.
 
 You can [preview your post while you write it](#how-to-preview-your-post-locally) ; see the next section about this.\\
 
