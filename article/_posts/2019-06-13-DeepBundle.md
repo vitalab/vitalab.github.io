@@ -2,7 +2,7 @@
 layout: review
 title: "DeepBundle: Fiber Bundle Parcellation with Graph Convolution Neural
 Networks"
-tags: br deep-learning medical MRI segmentation tractography
+tags: brain deep-learning medical MRI segmentation tractography
 author: "Jon Haitz Legarreta Gorroño"
 cite:
     authors: "Feihong Liu et al."
