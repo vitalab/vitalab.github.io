@@ -65,5 +65,3 @@ The proposed method seems to improve on current sampling strategies.
 # Remarks
 
 Although not by much.
-
-# References
