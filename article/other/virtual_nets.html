@@ -1,0 +1,78 @@
+<style>
+	.selected {
+		background-color: yellow;
+		font-weight: bold;
+	}
+	.unit {
+		margin: 1em;
+		padding: 1em;
+		border: 1px solid black;
+		display: inline-block;
+	}
+</style>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+<script>
+k = 3;
+
+function select_units(level, task) {
+	if (level == 1) {
+		return [task];
+	} else if (level == 2) {
+		if (task == 1) {
+			return [1, 2];
+		} else {
+			return [task, task-1];
+		}
+	} else if (level == 3) {
+		if (task == 1) {
+			return [1, 2, 3];
+		} else if (task == k) {
+			return [task, task-1, task-2];
+		} else {
+			return [task, task-1, task+1];
+		}
+	}
+}
+
+function update() {
+	task = parseInt($('#task').children("option:selected").val());
+	level = parseInt($('#budget').children("option:selected").val());
+	selected_units = select_units(level, task);
+	console.log(selected_units);
+
+	$('.unit').removeClass('selected');
+	for (var i = 0; i < selected_units.length; i++) {
+		$('#' + selected_units[i]).addClass('selected');
+	}
+}
+
+$(document).ready(function(){
+	$('select').change(update);
+	update();
+});
+
+</script>
+
+Task:
+<select id="task">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+
+Budget:
+<select id="budget">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+
+Units:
+<div id="1" class="unit">W1</div>
+<div id="2" class="unit">W2</div>
+<div id="3" class="unit">W3</div>
