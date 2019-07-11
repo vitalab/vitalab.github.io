@@ -25,7 +25,7 @@ The authors propose a method to enforce a uniform confidence for any point far a
 
 ![](/article/images/overconfidence/sc03.jpg)
 
-where the first term is the usual cross-entropy and the second term is a penalty term based on random images adversarial images $$Z$$ drawn from a noise distribution.  Illustration of these images for the training of CIFAR10 is as follows:
+where the first term is the usual cross-entropy and the second term is a penalty term based on random adversarial images $$Z$$ drawn from a noise distribution.  Illustration of these images for the training of CIFAR10 is as follows:
 
 
 ![](/article/images/overconfidence/sc04.jpg)
