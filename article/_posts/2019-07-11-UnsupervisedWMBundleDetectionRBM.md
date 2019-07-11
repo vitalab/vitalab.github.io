@@ -35,8 +35,7 @@ Most unsupervised approaches require explicit choice of a distance metric.
 
 # Methods
 
-
-### The model
+#### The model
 
 The authors use a mean-covariance restricted boltzmann machine (mcRBM) to
 learn '*a complex distribution*' '*where differerent bundles are represented
@@ -55,7 +54,7 @@ Input dimensions for K streamlines with N samples each: K x 3N.
 
 ![](/article/images/UnsupervisedWMBundleDetectionRBM/rbm.png)
 
-### Ordering of sampling points
+#### Ordering of sampling points
 
 They propose a new way to define a unified ordering of the sampling points
 of a streamline (needed, since there is no natural direction of a streamline).
@@ -63,7 +62,7 @@ In order to determine if a streamline should be flipped or not they compute
 the minimal distance of each of the two options with each coordinate axis.
 This results in an efficient implementation (see paper).
 
-### Clustering
+#### Clustering
 
 Training is stopped they obtain '$$100 +/- 10$$ *clusters having at least
 100 streamlines each*'.
@@ -71,7 +70,7 @@ Training is stopped they obtain '$$100 +/- 10$$ *clusters having at least
 '*Once training is finished, bundles were created by grouping together all
 fibers having the same latent representation.*' 
 
-### Data
+#### Data
 
 '*Whole brain white matter bundles tend to be subject-specific so a single
 (random) healthy subject was considered in this work.*'
@@ -130,6 +129,10 @@ However, this is only a proof of concept with limitations:
 
 # References
 
-[^1]: V. Siless, K. Chang, B. Fischl, and A. Yendiki. Hierarchical Clustering
+ 1. E. Garyfallidis, M. Brett, M. Correia, G. Williams, and I. Nimmo-Smith.
+      Quickbundles, a method for tractography simplification,
+      Frontiers in Neuroscience, vol. 6, pp. 175, 2012.
+      
+ 2. V. Siless, K. Chang, B. Fischl, and A. Yendiki. Hierarchical Clustering
       of Tractography Streamlines Based on Anatomical Similarity, pp. 184–191,
       Springer International Publishing, Cham, 2016.
