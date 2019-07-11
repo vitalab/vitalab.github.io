@@ -12,7 +12,7 @@ pdf: "https://arxiv.org/abs/1812.05720"
 
 
 # Introduction
-ReLU Neural networks are known for being overconfident when predicting unrelated data.  As shown in the paper, this is due to the fact that the output of the network is piece-wise linear. 
+ReLU neural networks are known for being overconfident when predicting unrelated data.  As shown in the paper, this is due to the fact that the output of the network is piece-wise linear. 
 
 ![](/article/images/overconfidence/sc01.jpg)
 ![](/article/images/overconfidence/sc02.jpg)
@@ -21,11 +21,11 @@ While this problem cannot be solved per se, it can nonetheless be mitigated.
 
 # Methods
 
-The authors propose a method to enforce a uniform confidence far away from the training data.  They do this is a so-called *Adversarial confidence enhanced training* (ACET)
+The authors propose a method to enforce a uniform confidence for any point far away from the training data.  They do this with a so-called *Adversarial confidence enhanced training* (ACET)
 
 ![](/article/images/overconfidence/sc03.jpg)
 
-where the first term is the usual cross-entropy and the second term is a penalty term based on random images drawn from a noise distribution.  Illustration of these images for the training of CIFAR10 is as follows:
+where the first term is the usual cross-entropy and the second term is a penalty term based on random images adversarial images $$Z$$ drawn from a noise distribution.  Illustration of these images for the training of CIFAR10 is as follows:
 
 
 ![](/article/images/overconfidence/sc04.jpg)
