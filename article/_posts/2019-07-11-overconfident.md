@@ -17,7 +17,7 @@ ReLU Neural networks are known for being overconfident when predicting unrelated
 ![](/article/images/overconfidence/sc01.jpg)
 ![](/article/images/overconfidence/sc02.jpg)
 
-While this problem cannot be solved per se, it can nonetheless be metigated.
+While this problem cannot be solved per se, it can nonetheless be mitigated.
 
 # Methods
 
@@ -41,7 +41,7 @@ as well as on the synthetic 2D example
 
 # Limitations
 
-The method is not void of limitationis as the network is still overconfident *very far* away from the training data 
+The method is not void of limitations as the network is still overconfident *very far* away from the training data 
 
 ![](/article/images/overconfidence/sc07.jpg)
 
