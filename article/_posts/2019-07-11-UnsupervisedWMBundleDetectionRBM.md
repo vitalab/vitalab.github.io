@@ -52,7 +52,7 @@ Since it is a proof of concept they do not perform parameter optimization.
 
 Input dimensions for K streamlines with N samples each: K x 3N.
 
-![](/article/images/UnsupervisedWMBundleDetectionRBM/rbm.png)
+**Figure**: *Check Fig. 1 in the paper. (Not included due to Copyright issues.)*
 
 #### Ordering of sampling points
 
@@ -111,7 +111,7 @@ common QB match.*' The authors acknowledge that since there is no unique
 way to define clusters the chosen way of assessing their algorithm
 is limited in terms of performance evaluation.
 
-![](/article/images/UnsupervisedWMBundleDetectionRBM/results.png)
+**Figure**: Check Fig. 3 in the paper. (Not included due to Copyright issues.)*
 
 
 # Conclusions
