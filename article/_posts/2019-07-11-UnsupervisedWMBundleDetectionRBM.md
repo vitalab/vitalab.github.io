@@ -64,7 +64,7 @@ This results in an efficient implementation (see paper).
 
 #### Clustering
 
-Training is stopped they obtain '$$100 +/- 10$$ *clusters having at least
+Training is stopped once they obtain '$$100 +/- 10$$ *clusters having at least
 100 streamlines each*'.
 
 '*Once training is finished, bundles were created by grouping together all
