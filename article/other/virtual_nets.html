@@ -1,0 +1,92 @@
+<style>
+	.selected1 {
+		background-color: #ffff00 !important;
+	}
+	.selected2 {
+		background-color: #bbbb00 !important;
+	}
+	.selected3 {
+		background-color: #777700 !important;
+	}
+	.unit {
+		background-color: black;
+		margin: 0.5em;
+		padding: 1em 1.5em;
+		border: 1px solid black;
+		display: inline-block;
+	}
+	span {
+		margin-left: 2em;
+	}
+	span:first-child {
+		margin-left: 0em;
+	}
+</style>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+<script>
+k = 4;
+
+function select_units(level, task) {
+	if (level == 1) {
+		return [task];
+	} else if (level == 2) {
+		if (task == 1) {
+			return [1, 2];
+		} else {
+			return [task, task-1];
+		}
+	} else if (level == 3) {
+		if (task == 1) {
+			return [1, 2, 3];
+		} else if (task == k) {
+			return [task, task-1, task-2];
+		} else {
+			return [task, task-1, task+1];
+		}
+	}
+}
+
+function update() {
+	task = parseInt($('#task').children("option:selected").val());
+	level = parseInt($('#budget').children("option:selected").val());
+	selected_units = select_units(level, task);
+	console.log(selected_units);
+
+	$('.unit').removeClass('selected selected1 selected2 selected3');
+	for (var i = 0; i < selected_units.length; i++) {
+		$('#' + selected_units[i]).addClass('selected' + (i + 1));
+	}
+}
+
+$(document).ready(function(){
+	$('select').change(update);
+	update();
+});
+
+</script>
+
+<span>Task:</span>
+<select id="task">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+<span>Budget:</span>
+<select id="budget">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+
+<span>Units:</span>
+<div id="1" class="unit">1</div>
+<div id="2" class="unit">2</div>
+<div id="3" class="unit">3</div>
+<div id="4" class="unit">4</div>
