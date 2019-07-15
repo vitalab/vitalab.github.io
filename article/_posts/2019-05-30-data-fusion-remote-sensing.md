@@ -1,23 +1,21 @@
 ---
 layout: review
-title:  "Multisource and Multitemporal Data Fusion in Remote Sensing"
-tags:   deep-learning segmentation remote-sensing CNN hyperspectral multi-task-learning point-cloud
-author: Charles Authier
-pdf:  https://arxiv.org/pdf/1812.08287.pdf
+title:  Multisource and Multitemporal Data Fusion in Remote Sensing
+tags:   deep-learning segmentation remote-sensing CNN hyperspectral multi-task-learning point-cloudr
 cite:
-    authors: "Pedram Ghamisi, Behnood Rasti, Naoto Yokoya, Qunming Wang, Bernhard Hofle, Lorenzo Bruzzone, Francesca Bovolo, Mingmin Chi, Katharina Anders, Richard Gloaguen, Peter M. Atkinson, Jon Atli Benediktsson"
+    authors: "Pedram Ghamisi, et al."
     title:   "Multisource and Multitemporal Data Fusion in Remote Sensing"
     venue:   "arXiv preprint arXiv:1812.08287. 2018 Dec 19."
+pdf:  https://arxiv.org/pdf/1812.08287.pdf
 ---
 
-*KEYS WORDS: light detection and ranging (LiDAR), terrestrial laser scanning (TLS), synthetic aperture radar (SAR), Gravity Recovery And Climate Experiment (GRACE), Medium Resolution Imaging Spectrometer (MERIS), electromagnetic spectrum (EMS) *
+**KEYS WORDS: light detection and ranging (LiDAR), terrestrial laser scanning (TLS), synthetic aperture radar (SAR), Gravity Recovery And Climate Experiment (GRACE), Medium Resolution Imaging Spectrometer (MERIS), electromagnetic spectrum (EMS)**
 
 
 This paper brings together the advances of multisource and multitemporal data fusion approaches with different research communities and provides a thorough and discipline-specific starting point for researchers at different levels.
 More specifically, it provides an overview of many important contributions dedicated to the topics of pansharpening and resolution enhancement, point cloud data fusion, hyperspectral and LiDAR data fusion, multitemporal data fusion, as well as big data and social media.
 
-The remote sensors onboard the multiples platforms may vary greatly in multiple dimensions.
-For example, the types of properties sensed and the spatial and spectral resolutions of the data.
+The remote sensors onboard the above platforms may vary in multiples dimensions (e.g. types of properties sensed, spatial and spectral resolutions of the data, etc.).
 
 ![](/article/images/mmdfrs/fig1.png)
 
@@ -56,7 +54,8 @@ For example, the types of properties sensed and the spatial and spectral resolut
 ![](/article/images/mmdfrs/table3.png)
 
 ## Conclusion
+
 The field of multisensor and multitemporal data fusion for remotely sensed imagery is enormous.
-This article focuses particularly on advances in multisource and multitemporal data fusion approaches with respect to different research communities since the methods for the fusion of different modalities have expand.
-In fusion topics, including pansharpening and resolution enhancement, point cloud data fusion, hyperspectral and LiDAR data fusion, multitemporal data fusion, as well as big data and social media.
+This article focuses on advances in multisource and multitemporal data fusion approaches with respect to different research communities.
+As they demonstrated through the challenges and possible future research of each section, although the field of remote sensing data fusion is mature, there are still doors left open for investigation.
 
