@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  Multisource and Multitemporal Data Fusion in Remote Sensing
-tags:   deep-learning segmentation remote-sensing CNN hyperspectral multi-task-learning point-cloudr
+tags:   deep-learning segmentation remote-sensing CNN hyperspectral multi-task-learning point-cloud
 cite:
     authors: "Pedram Ghamisi, et al."
     title:   "Multisource and Multitemporal Data Fusion in Remote Sensing"
@@ -9,13 +9,17 @@ cite:
 pdf:  https://arxiv.org/pdf/1812.08287.pdf
 ---
 
-**KEYS WORDS: light detection and ranging (LiDAR), terrestrial laser scanning (TLS), synthetic aperture radar (SAR), Gravity Recovery And Climate Experiment (GRACE), Medium Resolution Imaging Spectrometer (MERIS), electromagnetic spectrum (EMS)**
+**KEYSWORDS: light detection and ranging (LiDAR), terrestrial laser scanning (TLS), synthetic aperture radar (SAR), Gravity Recovery And Climate Experiment (GRACE), Medium Resolution Imaging Spectrometer (MERIS), electromagnetic spectrum (EMS)**
 
+## Introduction
+
+A recents increase in remote sensing and ancillary datasets, opens up the possibility of utilizing multimodal datasets in a joint manner to further improve the performance of the processing approaches with respect to the application at hand.
+The integration of the temporal information with the spatial and/or spectral/backscattering information of the remotely sensed data is possible and helps to move from a representation of 2D/3D data to 4D data structures, where the time variable adds new information as well as challenges for the information extraction algorithms.
 
 This paper brings together the advances of multisource and multitemporal data fusion approaches with different research communities and provides a thorough and discipline-specific starting point for researchers at different levels.
 More specifically, it provides an overview of many important contributions dedicated to the topics of pansharpening and resolution enhancement, point cloud data fusion, hyperspectral and LiDAR data fusion, multitemporal data fusion, as well as big data and social media.
 
-The remote sensors onboard the above platforms may vary in multiples dimensions (e.g. types of properties sensed, spatial and spectral resolutions of the data, etc.).
+The remote sensors onboard the above platforms may vary in multiple dimensions (e.g. types of properties sensed, spatial and spectral resolutions of the data, etc.).
 
 ![](/article/images/mmdfrs/fig1.png)
 
