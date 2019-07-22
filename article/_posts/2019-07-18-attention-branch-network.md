@@ -10,7 +10,7 @@ cite:
 pdf: "https://arxiv.org/abs/1812.10025"
 ---
 
-The authors propose a modification applicable to most CNN architectures: adding an "Attention Branch". This modification allows to outputs a visual explanation while improving accuracy.
+The authors propose a modification applicable to most CNN architectures: adding an "Attention Branch". This modification allows to output a visual explanation while improving accuracy.
 
 # Attention Branch
 
