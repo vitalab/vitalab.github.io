@@ -27,17 +27,17 @@ Altogether, UODB(Universal Object Detection Benchmark) covers a wide range of va
 The detectors of the adaptive multi-domain detector require prior knowledge of the domain of interest.
 This is undesirable for autonomous systems, like robots or self-driving cars, where determining the domain is part of the problem to solve.
 
-The design of universal detectors (show at the previous figure c) is the simplest solution to share a single detector by all tasks.
+The design of universal detectors (show in the previous figure c) is the simplest solution to share a single detector by all tasks.
 But even for this detector, the output layer has to be task specific, by definition of the detection problem.
-They had found that there is also a benefit in using task-specific RPN layers.
-Beyond the detector, the fully shared detector is the most efficient of the other detectors considered in this work, as it has no domain-specific parameters.
+They had found that there is also a benefit in using task-specific region proposal network (RPN) layers.
+Beyond the universal detector, the fully shared detector is the most efficient of the other detectors considered in this work, as it has no domain-specific parameters.
 
 # Domain-attentive Universal Detector
 
 ![](/article/images/UODB/module5.png)
 
-They propose a domain adaptation (DA) module of the figure above.
-This has two components, a universal SE adapter bank, and a domain attention mechanism.
+They propose a domain adaptation (DA) module illustrated in the figure above.
+This has two components, a universal e squeeze-and-excitation (SE) adapter bank, and a domain attention mechanism.
 The attention component produces a domain-sensitive set of weights that are used to combine the SE bank projections.
 Motivated by the SE module, the domain attention component first applies a global pooling to the input feature map, to remove spatial dimensions, and then a softmax layer (linear layer plus softmax function).
 
