@@ -34,7 +34,9 @@ In this game, there are infinite ways the equilibrium can be reached. However, i
 
 A successful poker-playing AI must reason about the game's information and pick the optimal strategy. However, Poker involves bluffing, where the optimal strategy might not only depend on your cards. It is, therefore, necessary to balance the probability of your opponent having a strong hand versus them bluffing. Perfect information games can use tree search algorithms such as [Alpha-Beta Pruining](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) to estimate future action outcomes. In imperfect information games, the value of an action is dependant on the probability it would be taken. 
 
-Pluribus was trained via self-play, where the agent plays against copies of itself, with a modified version of [Monte-Carlo Counterfactual Regret Minimization](https://papers.nips.cc/paper/4569-efficient-monte-carlo-counterfactual-regret-minimization-in-games-with-many-player-actions.pdf) to update its policy. 
+Pluribus was trained via self-play, where the agent plays against copies of itself, with a modified version of [Monte-Carlo Counterfactual Regret Minimization](https://papers.nips.cc/paper/4569-efficient-monte-carlo-counterfactual-regret-minimization-in-games-with-many-player-actions.pdf)(MCCFRM) to update its policy. 
+
+MCCFRM explores the decision tree up to a certain depth and then backtracks and explores what would have happened if other actions would have been selected. A "regret" is then calculated based on how high the value of other paths are. The regret then influences the probability of selecting actions in the future. The video below shows how Pluribus updates its policy.
 
 [![](/article/images/pluribus/thumbnail.jpeg)](https://www.facebook.com/FacebookAI/videos/459177014638910/)
 
