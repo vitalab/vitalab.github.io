@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Graph-Based Global Reasoning Networks"
-tags: deep-learning segmentation
+tags: deep-learning segmentation classification
 author: "Daniel Jörgens"
 cite:
     authors: "Chen, Y and Rohrbach, M and Yan, Z and Yan, S and Feng, J and Kalantidis, Y"
@@ -13,7 +13,7 @@ pdf: "https://arxiv.org/pdf/1811.12814.pdf"
 
 # Highlights
 
-The authors propose a so-called *Global Reasoning unit* (GloRe unit) that can be plugged in to existing
+The authors propose a so-called *Global Reasoning unit* (GloRe unit) that can be plugged into existing
 CNNs in order to help leveraging relationships between distant image regions.
 
 Performance boost is shown in image classification (ImageNet), image segmentation (Cityscapes) and
@@ -23,7 +23,7 @@ video action recognition (Kinetics-400).
 
 '*Relational reasoning between distant regions of arbitrary shape is crucial for many computer vision tasks* [...]'.
 
-In CNN architectures this demands for a large number of layers in order to reach a sufficient receptive field
+In classical CNN architectures this requires a large number of layers in order to reach a sufficient receptive field
 (e.g. full coverage of input data in ResNet-50 at 11th unit, '*near-end of Res4*').
 
 *GloRe* enables interaction between distant parts of the input data '*in early stages of a CNN model*'.
@@ -36,6 +36,12 @@ In CNN architectures this demands for a large number of layers in order to reach
 #### The GloRe unit
 
 ![](/article/images/graphbasedglobalreasoning/glore.png)
+
+**Figure caption**: '*Architecture of the proposed Global Reasoning unit. It consists of five convolutions, two for
+dimension reduction and expansion (the left and right most ones) over input features $$X$$ and output $$Y,$$ one
+for generating the bi-projection $$B$$ between the coordinate and latent interaction spaces (the top one),
+and two for global reasoning based on the graph $$A_g$$ in the interaction space (the middle ones).
+Here $$V$$ encodes the regional features as graph nodes and $$W_g$$ denotes parameters for the graph convolution.*'
 
 Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as follows:
  - Project $$X$$ to interaction space $$\mathcal{H}$$ by $$V = f(X) \in \mathbb{R}^{N \times C}$$ with
@@ -71,7 +77,7 @@ Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as fol
 **Findings**:
  - Adding one unit on Res3 is less effective than on Res4.
  - GloRe achieves better accuracy than Non-local Neural Nets (NL-NN).
- - Adding GloRe is more computationally efficient than increasing number of layers while maintaining performance.
+ - Adding GloRe is more computationally efficient than increasing the number of layers while maintaining performance.
 
 ![](/article/images/graphbasedglobalreasoning/res_ablation.png)
 
@@ -81,14 +87,15 @@ Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as fol
 
 ### Video action recognition on Kinetics-400
 
-As opposed to the previous experiments in this one 3D CNNs are employed.
+As opposed to the previous experiments, 3D CNNs are employed in this one.
 
 ![](/article/images/graphbasedglobalreasoning/res_kinetics.png)
 
 ### Visualisation of GloRe weights
 
-To increase resolution features to plot, a shallow ResNet-18 with one GloRe '*inserted in the middle of Res4*' is trained
-on ImageNet with 512x512 input crops and $$N = 128$$ nodes in interaction space.
+To increase resolution of the features to plot, a shallow ResNet-18 with one GloRe
+'*inserted in the middle of Res4*' is trained
+on ImageNet with 512x512 input crops and $$N = 128$$ nodes in the interaction space.
 The figure below shows weights for four projection maps (i.e. $$\mathbf{b}_i$$).
 
 ![](/article/images/graphbasedglobalreasoning/vis_glore.png)
@@ -99,7 +106,7 @@ The figure below shows weights for four projection maps (i.e. $$\mathbf{b}_i$$).
 It seems that GloRe provides a computationally efficient way to boost performance of CNN approaches
 in different kinds of tasks.
 
-By single examples of visualised weight maps support the intuition that GloRe enables for a global interaction of
+The few examples of visualised weight maps support the intuition that GloRe enables for a global interaction of
 distant image features.
 
 **Open Questions**:
