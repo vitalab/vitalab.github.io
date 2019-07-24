@@ -70,3 +70,7 @@ And here it is in action
 - On the opposite, it confirmed that limping is not a good strategy.
 
 - A lot of feedback coming from human pros seems to be that Pluribus plays in very differently from humans.
+
+[Supplmentary materials](https://science.sciencemag.org/content/sci/suppl/2019/07/10/science.aay2400.DC1/aay2400-Brown-SM.pdf) (includes pseudo code and a most of the technical stuff)
+[Blog post](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/)
+[HN discussion](https://news.ycombinator.com/item?id=20414905)
