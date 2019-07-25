@@ -18,7 +18,7 @@ The assignment between a task and a unit, and whether a unit is assigned to a ta
 
 Below is an explorable explanation of the algorithm for task $$\in \{1,2,3,4\}$$ and budget $$\in \{1,2,3\}$$. The brightness of the unit's color corresponds to the affinity between the unit and the current task. Black units are not computed.
 
-<iframe style="width: 100%; height: 5.5em" src="{{ site.baseurl }}/article/other/virtual_nets.html"></iframe>
+<iframe style="width: 100%; height: 5.5em" src="{{ site.baseurl }}/assets/virtual_nets.html"></iframe>
 
 # Results and discussion
 
