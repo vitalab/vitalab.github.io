@@ -55,7 +55,8 @@ The central problem is formulated as
 
 $$\arg\min_{|\mathbb{T}| = K} \|\mathbf{A} - \pi_\mathbb{T}(\mathbf{A})\|_F^2,$$
 
-where $$\|\cdot\|_F$$ denotes the Frobenius norm.
+where $$\mathbb{T} \subset \{1, \ldots, M\}$$, $$\pi_\mathbb{T}(\mathbf{A})$$ is the matrix of rows of $$\mathbf{A}$$
+projected onto the span of selected rows indexed by $$\mathbb{T}$$, and $$\|\cdot\|_F$$ denotes the Frobenius norm.
 
 ### IPM
 
