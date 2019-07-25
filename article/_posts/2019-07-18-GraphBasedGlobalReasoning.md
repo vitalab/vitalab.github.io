@@ -72,7 +72,7 @@ Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as fol
 
 ### Ablation study on ImageNet
 
-**Notation**: 'R50+Our (n, m)' means inserting *n* GloRe units 'on Res3' and *m* GloRe units 'on Res4'.
+**Notation**: 'R50+Our (n, m)' means inserting *n* GloRe units on ResBlock 3 and *m* GloRe units on ResBlock 4.
 
 **Findings**:
  - Adding one unit on Res3 is less effective than on Res4.
