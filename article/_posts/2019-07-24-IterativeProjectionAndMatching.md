@@ -100,7 +100,7 @@ robust spectral component against changes in the data.*' (See paper for details.
 
 #### Active learning
 
-Fine-tuning a 3D *ResNet18* (pretrained on *Kinetrics-400*) on *UCF-101* (human action dataset) the authors compare
+Fine-tuning a 3D *ResNet18* (pretrained on *Kinetics-400*) on *UCF-101* (human action dataset) the authors compare
 different data selection methods in a classification experiment.
 
 At the first active learning cylce, the training set consists of **one sample per class** in the dataset.
