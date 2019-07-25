@@ -45,7 +45,7 @@ Their particular contributions are:
 # Methods
 
 '*Let $$\mathbf{a}_1, \ldots, \mathbf{a}_M \in \mathbb{R}^N$$ be $$M$$ given data points of dimension $$N$$.
-We define an $$M \times N$$ matrix, $$\mathbf{A}$$, sucht that $$\mathbf{a}_m^T$$ is the $$m^th$$ row of $$\mathbf{A}$$,
+We define an $$M \times N$$ matrix, $$\mathbf{A}$$, such that $$\mathbf{a}_m^T$$ is the $$m^th$$ row of $$\mathbf{A}$$,
 for $$m = 1, \ldots M.$$ The goal is to reduce this matrix into a $$K \times N$$ matrix, $$\mathbf{A}_R,$$ based
 on an optimal metric.*'
 
