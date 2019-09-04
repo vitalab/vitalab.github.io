@@ -1,6 +1,6 @@
 ---
 layout: review
-title: Don't Worry About the Weather: Unsupervised Condition-Dependent Domain Adaptation
+title: Don't Worry About the Weather Unsupervised Condition-Dependent Domain Adaptation
 tags: deep-learning CNN segmentation domain-adaptation GAN unsupervised traffic
 cite:
     authors: "Horia Porav, Tom Bruls, Paul Newman"
@@ -11,89 +11,91 @@ pdf: "https://arxiv.org/pdf/1907.11004"
 
 # Introduction
 
-This paper underligne the fact that perfermence degrades quickly when the input conditions change event a little. 
-The authors present a domain adaptation system that uses light-weight input adapters to pre-processes input images, irrespective of their apparence, in a way that makes them compatible with *off-the-shelf* cumputer vision tasks that are trained only on inputs with ideal conditions. 
+This paper underlines the fact that performance degrades quickly when the input conditions change event a little.
+The authors present a domain adaptation system that uses light-weight input adapters to preprocesses input images, irrespective of their appearance, in a way that makes them compatible with *off-the-shelf* computer vision tasks that are trained only on inputs with ideal conditions.
 
 
-The paper show a hybrid method, where multi-modal data is generated in an unsupervised fashion with approximated ground truth, followed by supervised training of domain-adapters, for multiples computer vision tasks, using this generated data and approximated ground truth.
+The paper shows a hybrid method, where multi-modal data generated in an unsupervised fashion with approximated ground truth. The method is followed by supervised training of domain-adapters, for multiples computer vision tasks, using this generated data and approximated ground truth.
 
 
-This approach as for goal to incrementally adapt to new, unseen domain.
-So if the condition of the input images does not match one that the system has ben previosly trained on.
+This approach has for goal to incrementally adapt to a new, unseen domain.
+If the condition of the input images does not match one that the system has been previously trained on.
 The unsupervised style transfer pipeline will select a model that is the closest to the current condition, clone it, and fine-tune this cloned model to be able to change the style of the reference sequence so that it matches the style of the current input images.
-Thoses images will by used to train, in a supervised fashion, an additional condition-specific image adapter that will allow upstream computer vision tasks to perform well on the new input image condition.
+Those images will be used to train, in a supervised fashion, an additional condition-specific image adapter that will allow upstream computer vision tasks to perform well on the new input image condition.
 
 
 The main contributions:
 
-- Using cycle-consistency GANs to generate multicondition training data with approximated ground truth for a battery of *off-the-shelf* computer vision tasks.
+- Using cycle-consistency GANs to generate multi-condition training data with approximated ground truth for a battery of *off-the-shelf* computer vision tasks.
 
 - Training input image adaptors by using the *off-the-shelf* computer vision models to generate a supervisory signal.
 
 - Enabling online learning of new, unseen domains by leveraging the unsupervised data generation pipeline along with domains on which the data generation models have already been trained.
 
-- Showing that training multiple lightweight adapter modules is better than training monolithic computer vision models that are invariant to input distributions.
+- Showing that training multiple light-weight adapter modules is better than training monolithic computer vision models that are invariant to input distributions.
 
 
 # Learning Condition-Dependent Representations
 
+![](/article/images/Weather/Gan.png)
+
+![](/article/images/Weather/archi.png)
+
 ## Synthetic Multi-Condition Data
 
 They select a reference sequence of images: daytime, clear, and overcast.
-In addition, they join a number of traversals with difficult conditions: night, rain, snow, etc. 
-Along with a cycle-consistency architecture GAN to train generative models that can apply style transfer to the reference condition in order to create a number of synthetic sequences that maintain the structure and geometry of the reference condition.
+Besides, they join some traversals with severe conditions: night, rain, snow, etc.
+Along with a cycle-consistency architecture, GAN to train generative models that can apply style transfer to the reference condition in order to create a number of synthetic sequences that maintain the structure and geometry of the reference condition.
 
-add loss ...
+Loss adversarial:
+
+![](/article/images/Weather/loss_adv_1.png)
+![](/article/images/Weather/loss_adv_2.png)
+
+Loss for discriminators:
+
+![](/article/images/Weather/loss_disc_1.png)
+![](/article/images/Weather/loss_disc_2.png)
+
+Reconstruction and Generator Loss:
+
+![](/article/images/Weather/loss_rec.png)
+![](/article/images/Weather/loss_gen.png)
 
 ## Input Adapters
 
-The second step in this approach is to use the data generated in the previous step to train a bank of adapters that preprocess the input images such that they follow a distribution similar to that of the training sets used to train the bank of tasks.
+The second step, in this approach, is to use the data generated in the previous step to train a bank of adapters that preprocess the input images. Like they follow a distribution similar to that of the training sets used to train the bank of tasks.
 
-put image og the network
 
-The adaptors input is a 3-channel RGB image, while the output is a 3-channel image compatible with the inputs of many well-known models (semantic segmentation, object detection, depth estimation etc).
-This configuration provides a light-weight solution that is easy to train using labelled data, with reduced storage requirements and use a small amount of memory .
+The adaptors input is a 3-channel RGB image, while the output is a 3-channel image compatible with the inputs of many well-known models (semantic segmentation, object detection, depth estimation, etc.).
+This configuration provides a light-weight solution that is easy to train using labeled data, with reduced storage requirements and use a small amount of memory.
 
-put loss for adapters
+![](/article/images/Weather/loss_adapters.png)
 
 ## Domain Classifier
 
-put image of the classifier 
+![](/article/images/Weather/classifier.png)
 
 They employ a domain classifier $$D$$ to select the most suitable input adapter $$F_k$$ that enables optimal performance on the input images with the $$k^{th}$$ condition.
 Given an input image $$I_A$$ and a domain label $$t$$, the goal is to find the parameters of the classifier $$D$$ that minimizes the cross-entropy between the output of the classifier and the target label $$t$$.
 
-## Online Learning 
+## Online Learning
 
-put image 5 
+![](/article/images/Weather/onlinelearning.png)
 
-...
+The previous subsections can extend to incremental unsupervised, online learning of new unseen domains without requiring any significant modifications to the existing system.
+This processed used to:
+* Given a continuous sequence of incoming images, storing the current frame and $$T−1$$ past frames in a buffer of length $$T$$ that gets updated using a First-In-First-Out scheme.
+* For each frame in the buffer, a length-128 condition descriptor is compute using the penultimate layer of the classifier and average all the descriptors, yielding one single length-128 average descriptor.
+* If this average descriptor condition differs(in Euclidean space) by more than a threshold from the descriptors of any conditions previously trained on.
+the following training pipeline is triggered:
+    * The cycle-consistency GAN models closest to the current condition is selected (using the condition descriptor).
+    * The newly trained generators from above is used to apply the new style to the reference condition to create a new training sequence.
+    * The input adapter that is closest to the new condition(again using the descriptor) is selected, cloned and train it using the newly created training sequence from above.
+    * This new adapter is used until the input condition changes significantly again.
 
 # Results
 
-image + table II et III
+![](/article/images/Weather/result_matrix.png)
 
-
-
-
-Famous 2D image segmentation CNN made of a series of convolutions and
-deconvolutions. The convolution feature maps are connected to the deconv maps of
-the same size. The network was tested on the 2 class 2D ISBI cell segmentation
-[dataset](http://www.codesolorzano.com/Challenges/CTC/Welcome.html).
-Used the crossentropy loss and a lot of data augmentation.
-
-The network architecture:
-![](/article/images/MyReview/UNetArchitecture.png)
-
-A U-Net is based on Fully Convolutional Networks (FCNNs)[^1].
-
-The loss used is a cross-entropy:
-$$ E = \sum_{x \in \Omega} w(\bold{x}) \log (p_{l(\bold{x})}(\bold{x})) $$
-
-The U-Net architecture is used by many authors, and has been re-visited in
-many reviews, such as in [this one](https://vitalab.github.io/article/2019/05/02/MRIPulseSeqGANSynthesis.html).
-
-# References
-
-[^1]: Jonathan Long, Evan Shelhamer, and Trevor Darrell. Fully convolutional
-      networks for semantic segmentation (2014). arXiv:1411.4038.
+![](/article/images/Weather/resultats_table.png)
