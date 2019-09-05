@@ -1,30 +1,36 @@
 ---
 layout: review
 title: "A Generalized Framework for Population Based Training"
-tags:
-author: ""
+tags: auto-ml
+author: "Carl Lemaire"
 cite:
     authors: "Ang Li et al."
     title:   "A Generalized Framework for Population Based Training"
     venue:   "KDD 2019 (and short paper at a NeurIPS 2019 workshop)"
-pdf: "https://arxiv.org/abs/1902.01894"
+pdf: "https://arxiv.org/pdf/1902.01894.pdf"
 ---
 
-The authors present a method for **optimizing hyperparameters while training the parameters** of the model. The method is based on evolution, and uses "trials". A trial is a small chunk of training that has a warm-start using parameters from a previous trial.
+# Overview
+
+The authors present a population based training (PBT) method for **optimizing hyperparameters while training the parameters** of the model. The method is based on evolution, and uses "trials". A trial is a small chunk of training that has a warm-start using parameters from a previous trial.
 
 This is considered "**black box hyperparameter optimisation**", because the method does not need to know about the network architecture. The **only requirement is that the network can be warm-started by loading weights**, and that performance of the network can be measured.
 
-# Overview of the components
+# Method
+
+1. Run $$ N $$ trials in parallel, where a trial is $$ S $$ steps of training; each trial has different hyperparameters
+2. Evaluate the networks produced
+3. Select the $$ M \lt N $$ networks that will reproduce
+4. Mutate the hyperparameters of the parents to produce a total of $$ N $$ children (children = trial)
+5. Return to 1, until the allowed compute time is elapsed
+
+Here, there is one worker per child (number of workers = population size), but the paper describes a "budget mode" where a larger population can be used. See sections 3.7 and 3.10 for practical details.
 
 ![](/article/images/pbt/fig1.png)
 ![](/article/images/pbt/fig2.png)
 ![](/article/images/pbt/fig3.png)
 
-# Evolution
-
-The evolution process consists basically in selecting the best performing trials in the pool and mutating them to produce new trials, keeping the population size constant. There are multiple tricks used to make the process efficient and work in lower-resource situations; see sections 3.7 and 3.8 of the paper for details.
-
-# Results
+# Experiments
 
 The authors claim to have trained a state-of-the-art WaveNet for voice synthesis using their proposed method (PBT). **They only optimize the learning rate!** This means that their method can be seen as optimising the learning rate schedule.
 
