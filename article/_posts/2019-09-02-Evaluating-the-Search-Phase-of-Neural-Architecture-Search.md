@@ -40,8 +40,6 @@ The authors compare three state-of-the-art NAS algorithms to a random architectu
 
 The authors tested on the Penn Tree Bank (PTB) dataset and the models selected were recurrent networks. The goal was then to correctly find a recurrent cell that can predict the next word given an incomplete sentence, and the reported metric is the _perplexity_.
 
-
-
 # NAS Comparison in a Standard Search Space
 
 The authors first tested in a search space of 8 nodes and 4 possible operations (more info on how nodes and the search space are defined in Appendix A). For each of the search policies, 10 different seeds were used, and the models were trained for 1000 epochs.
@@ -83,8 +81,3 @@ The authors then tried to see the impact of weight sharing:
 # Conclusions
 
 > We have observed that, surprisingly, the search policies of state-of-the-art NAS techniques are no better than random, and have traced the reason for this to the use of (i) a constrained search space and (ii) weight sharing, which shuffles the architecture ranking during the search, thus negatively impacting it.
-
-# Remarks
-
-
-# References
