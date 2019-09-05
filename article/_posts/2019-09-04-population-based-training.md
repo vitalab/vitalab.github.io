@@ -24,6 +24,8 @@ This is considered "**black box hyperparameter optimisation**", because the meth
 4. Mutate the hyperparameters of the parents to produce a total of $$ N $$ children (children = trial)
 5. Return to 1, until the allowed compute time is elapsed
 
+Note that child trials start with the checkpoint from their parent.
+
 Here, there is one worker per child (number of workers = population size), but the paper describes a "budget mode" where a larger population can be used. See sections 3.7 and 3.10 for practical details.
 
 ![](/article/images/pbt/fig1.png)
