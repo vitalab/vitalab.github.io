@@ -75,3 +75,8 @@ pdf: "https://arxiv.org/abs/1905.11382"
 
 - No clear experiments for RNN generation, but overall looks easy to implement
 - Seems to improve generalisation to new or noisy sequences, but needs more pratical experiments
+
+
+# References
+
+[Useful slides](https://icml.cc/media/Slides/icml/2019/halla(13-09-00)-13-09-00-4796-state-reificati.pdf)
