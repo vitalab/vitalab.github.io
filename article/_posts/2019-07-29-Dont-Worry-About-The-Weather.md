@@ -44,8 +44,7 @@ The main contributions:
 ## Synthetic Multi-Condition Data
 
 They select a reference sequence of images: daytime, clear, and overcast.
-Besides, they join some traversals with severe conditions: night, rain, snow, etc.
-Along with a cycle-consistency GAN, that can apply style transfer to the reference condition creating synthetic sequences that maintain the structure and geometry of the reference condition.
+Besides, they add some traversals with conditions (night, rain, snow, etc.), along with a cycle-consistency GAN, that can apply style transfer to the reference condition creating synthetic sequences that maintain the structure and geometry of the reference condition.
 
 Adversarial loss:
 
@@ -88,7 +87,7 @@ The previous subsections can extend to incremental unsupervised, online learning
 This process is used to:
 * Give a continuous sequence of incoming images, storing the current frame and $$T−1$$ past frames in a buffer of length $$T$$ that gets updated using a First-In-First-Out scheme.
 * Compute each frame in the buffer using the penultimate layer of the classifier and average all the descriptors, yielding one single length-128 average descriptor.
-* Average descriptor condition differs(in Euclidean space) by more than a threshold from the descriptors of any conditions previously trained on.
+* Average descriptor condition if they differ(in Euclidean space) by more than a threshold from the descriptors of any conditions previously trained on.
 If the following training pipeline is triggered:
     * The cycle-consistency GAN models closest to the current condition is selected (using the condition descriptor).
     * The newly trained generators from above is used to apply the new style to the reference condition to create a new training sequence.
