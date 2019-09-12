@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "State-Regularized Recurrent Neural Networks"
-tags: rnn layers 
+tags: RNN layers 
 author: "Philippe Poulin"
 cite:
     authors: "Cheng Wang and Mathias Niepert"
