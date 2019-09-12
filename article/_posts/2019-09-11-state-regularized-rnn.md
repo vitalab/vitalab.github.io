@@ -19,7 +19,7 @@ pdf: "https://arxiv.org/abs/1901.08817"
 
 # Method
 
-## Model figure:
+## Model figure
 
 ![](/article/images/state-regularized-rnn/figure2.png)
 
