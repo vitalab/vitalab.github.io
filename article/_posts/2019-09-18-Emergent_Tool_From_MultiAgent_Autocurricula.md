@@ -1,13 +1,13 @@
 ---
 layout: review
 title: "Emergent Tool Use from Multi-Agent Interaction"
-tags:
+tags: reinforcement multi-agent
 author: "Antoine Théberge"
 cite:
     authors: "Bowen Baker, Ingmar Kanitscheider, Todor Markov, Yi Wu, Glenn Powell, Bob McGrew, Igor Mordatch"
     title:   "Emergent Tool Use from Multi-Agent Interaction"
     venue:   "OpenAI Blog"
-pdf: "http://127.0.0.1:4000/article/2019/09/18/Emergent_Tool_From_MultiAgent_Autocurricula.html"
+pdf: "https://d4mucfpksywv.cloudfront.net/emergent-tool-use/paper/Multi_Agent_Emergence_2019.pdf"
 ---
 
 
