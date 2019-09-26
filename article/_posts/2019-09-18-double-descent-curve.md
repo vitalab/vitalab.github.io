@@ -10,11 +10,13 @@ cite:
 pdf: "https://arxiv.org/pdf/1812.11118.pdf"
 ---
 
-Common machine learning wisdom informs that the curve of the test risk (think "test loss at convergence") as a function of the capacity of a model should follow a U-shape (going from underfitting to overfitting). However, in modern practice, adding capacity seems to always yield lower test risk. The authors propose an explanation for this observation.
+Common machine learning wisdom informs that the curve of the test risk (think "test loss at convergence") as a function of the capacity of a model should follow a U-shape (going from underfitting to overfitting). However, in modern practice, using a very large capacity can yield a lower test risk. The authors propose an explanation for this observation.
 
 In summary, **test risk does follow a U-shaped curve before the capacity hits the _interpolation threshold_; however, after this threshold, risk decreases, eventually lower than before. At this point, a capacity increase, combined with a weight norm regularizer such as L2, makes the model smoother, while it still perfectly interpolates training data.**
 
 ![](/article/images/double-descent-curve/fig1.png)
+
+**Important caveat**: the authors did not study deep neural networks.
 
 # Experiments
 
