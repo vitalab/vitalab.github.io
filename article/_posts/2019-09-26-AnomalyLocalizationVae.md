@@ -6,7 +6,7 @@ author: "Nathan Painchaud"
 cite:
     authors: "David Zimmerer, Simon A. A. Kohl, Jens Petersen, Fabian Isensee, Klaus H. Maier-Hein"
     title:   "Context-encoding Variational Autoencoder for Unsupervised Anomaly Detection"
-    venue:   ""
+    venue:   "arXiv 2018"
 pdf: "https://arxiv.org/pdf/1812.05941.pdf"
 ---
 
