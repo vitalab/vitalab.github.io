@@ -20,9 +20,15 @@ pdf: "https://arxiv.org/pdf/1812.05941.pdf"
 
 
 # Introduction
+
+## Autoencoder Models
+Context Encoders (CEs) are a special class of DAEs where instead of the commonly used additive Gaussian noise local
+patches of the input are masked out.
+
+## Anomaly Detection
 There are 3 main groups of methods for unsupervised anomaly detection/localization:
 - Classification-based (OC-SVM)
-- Reconstruction-based (AE, DAE, VAE)
+- Reconstruction-based (AE, DAE, CE, VAE)
 - Density-based (neighborhood, clustering, VAE)
 
 Classification-based methods can only detect sample-wise anomaly, and cannot be used for localization.
