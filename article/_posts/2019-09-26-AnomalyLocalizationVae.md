@@ -1,13 +1,13 @@
 ---
 layout: review
-title: "Unsupervised Anomaly Localization using Variational Auto-Encoders"
-tags: deep-learning detection VAE
+title: "Context-encoding Variational Autoencoder for Unsupervised Anomaly Detection"
+tags: deep-learning unsupervised detection segmentation VAE
 author: "Nathan Painchaud"
 cite:
-    authors: "David Zimmerer, Fabian Isensee, Jens Petersen, Simon Kohl, Klaus Maier-Hein"
-    title:   "Unsupervised Anomaly Localization using Variational Auto-Encoders"
+    authors: "David Zimmerer, Simon A. A. Kohl, Jens Petersen, Fabian Isensee, Klaus H. Maier-Hein"
+    title:   "Context-encoding Variational Autoencoder for Unsupervised Anomaly Detection"
     venue:   ""
-pdf: "https://arxiv.org/pdf/1907.02796.pdf"
+pdf: "https://arxiv.org/pdf/1812.05941.pdf"
 ---
 
 
