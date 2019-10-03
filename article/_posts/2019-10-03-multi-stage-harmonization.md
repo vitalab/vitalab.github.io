@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Multi-stage prediction networks for data harmonization"
-tags: 
+tags: CNN medical multi-task-learning
 author: "Philippe Poulin"
 cite:
     authors: "Stefano B Blumberg, Marco Palombo, Can Son Khoo, Chantal MW Tax, Ryutaro Tanno, Daniel C Alexander"
