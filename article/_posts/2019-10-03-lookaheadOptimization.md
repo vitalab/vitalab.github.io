@@ -33,9 +33,10 @@ which they use to prove that their method has a better stability and a lower var
 # Results
 
 
+While some results show a spectacular lower variance and a faster convergence (c.f. Fig.5, 8 and 9) the true benefit of that method  is more or less  obvious when only considering accuracy / training loss after several epochs (Fig.7, 5, 6).
+
 ![](/article/images/lookahead/sc03.jpg)
 ![](/article/images/lookahead/sc04.jpg)
 ![](/article/images/lookahead/sc05.jpg)
 
-While some results show a spectacular lower variance and a faster convergence (c.f. Fig.5, 8 and 9) the true benefit of that method  is more or less  obvious when only considering accuracy / training loss after several epochs (Fig.7, 5, 6).
 
