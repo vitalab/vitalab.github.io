@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "On the Utility of Learning about Humans for Human-AI Coordination"
-tags:
+tags: reinforcement deep-learning
 author: "Antoine Théberge"
 cite:
     authors: "Micah Carroll, Rohin Shah, Mark K. Ho, Thomas L. Griffiths, Sanjit A. Seshia, Pieter Abbeel, Anca Dragan"
