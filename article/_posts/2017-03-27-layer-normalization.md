@@ -42,7 +42,7 @@ $$ \mu^l = \frac{1}{H} \sum\limits_{i=1}^H a_i^l  \qquad  \sigma^l = \sqrt{\frac
 where $$H$$ is the number of hidden units in the layer.
 
 Here are the results of a unidirectional attentive reader model trained on the CNN corpus question-answering task: 
-![](/article/images/layer-normalization/layer_norm_fig2.png)
+![](/article/images/layer-normalization/layer_norm_fig2.jpg)
 
 
 # Limitations

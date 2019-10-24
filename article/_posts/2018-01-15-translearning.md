@@ -21,7 +21,7 @@ Given an input $$x \in \Re^d$$ we want a matrix $$A^{d \times d} such that, tAx 
 
 We want to minimize the following equation :
 
-![](/article/images/translearning/toopti.png)
+![](/article/images/translearning/toopti.jpg)
 ## Learning transformations
 
 The authors use Lie groups to define every transformation. A Lie group is a group for which the multiplication ($$\Re^d \rightarrow \Re^d$$) and the inversion are differentiable.
@@ -31,7 +31,7 @@ We want to minimize a weighted sum of vectors which would approximate the real t
 We find for  $$r >= d , A = \sum^{r}_{i=1}\alpha_{i}(\bar x_{i} - x_{i})x_{i}^{T}$$
 
 For $$K$$ transformation, we get for $$r > K^2 , A_k = \sum^{r}_{i=1}\alpha_{ik}(\bar x_{i} - x_{i})x_{i}^{T}$$
-![](/article/images/translearning/eq6.png)
+![](/article/images/translearning/eq6.jpg)
 
 ## Disentangling Transformations
 From a set of transformations $$A_{1..K}$$ we want to extract uncorrelated transformations. We can find those by computing the SVD of those transformations. *(See Theorem 3.4)*
@@ -40,10 +40,10 @@ From a set of transformations $$A_{1..K}$$ we want to extract uncorrelated trans
 
 It took 10 minutes to find the most important transformations on MNIST. The authors also tried on another dataset (Kannada handwriting) without retraining. They also tested their method on CelebA (not shown here).
 
-![](/article/images/translearning/qualitative.png)
+![](/article/images/translearning/qualitative.jpg)
 
 Here are some quantitative results.
 
 *Note* : The **Convex** method is where they do not add a trace regularization and they do not use gradient descent.
 
-![](/article/images/translearning/quantitative.png)
+![](/article/images/translearning/quantitative.jpg)

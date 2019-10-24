@@ -21,7 +21,7 @@ The ORN is built on top of Active Rotating Filters (ARF).
 An ARF $$ \mathcal{F} $$ is a filter of size $$ W \times W \times N $$ where $$ N $$ is the number of rotations during the convolution. These produce a feature map of $$N-1$$ orientations.
 The rotated variant of $$\mathcal{F}$$ called $$\mathcal{F}_\theta$$ are constructed in two steps: coordinate rotation, and orientation spin.
 
-![](/article/images/orn/arf.png)
+![](/article/images/orn/arf.jpg)
 
 To be efficient, the coordinate rotation and orientation spin are calculated by the circular shift operator in the fourier domain.
 
@@ -32,8 +32,8 @@ This combination is denoted as $$ \hat\mathcal{M} = \mathbf{ORConv}(\mathcal{F},
 where $$ \hat\mathcal{M} $$ are the output feature maps with $$ \mathcal{N} $$ orientations.
 
 <div align="middle">
-     <img src="/article/images/orn/orconv.png" />
-     <img src="/article/images/orn/filter.png" />
+     <img src="/article/images/orn/orconv.jpg" />
+     <img src="/article/images/orn/filter.jpg" />
 </div>
 
 ### Rotation invariant Feature encoding
@@ -53,15 +53,15 @@ This pooling consists of simply extracting the maximum orientation of a given fe
 
 They built an MNIST dataset with rotation from $$ [-\frac{\pi}{2}, \frac{\pi}{2}] $$. They report results and show the feature encoding using tSNE for numbers that are similar, like $$ 6 $$ and $$ 9 $$.
 
-![](/article/images/orn/mnist_rot.png)
+![](/article/images/orn/mnist_rot.jpg)
 
 <div align="middle">
-     <img src="/article/images/orn/mnist_rot_feat.png">
+     <img src="/article/images/orn/mnist_rot_feat.jpg">
 </div>
 
 
 They also report results on CIFAR10 dataset and produce better results with less parameters.
 
 <div align="middle">
-     <img src="/article/images/orn/cifar10.png">
+     <img src="/article/images/orn/cifar10.jpg">
 </div>

@@ -36,9 +36,9 @@ cortical, subcortical and cerebellar labels.
 
 They propose an 8-layer CNN, and uses 3D convolutions to do the task.
 
-![](/article/images/InstantBrainAtlasSegmentation/Layers.png)
+![](/article/images/InstantBrainAtlasSegmentation/Layers.jpg)
 
-![](/article/images/InstantBrainAtlasSegmentation/Architecture.png)
+![](/article/images/InstantBrainAtlasSegmentation/Architecture.jpg)
 
 The use T1-weighed and T2-weighed data Human Connectome Project
 (HCP)[^2], and T1-weighed data from the multi-site Functional
@@ -68,9 +68,9 @@ The results are hard to generalize and vary a lot across brain regions.
 They found among the network variants they tested, those that do not use
 dropout show a better overall performance.
 
-![](/article/images/InstantBrainAtlasSegmentation/Results.png)
+![](/article/images/InstantBrainAtlasSegmentation/Results.jpg)
 
-![](/article/images/InstantBrainAtlasSegmentation/Results_scores.png)
+![](/article/images/InstantBrainAtlasSegmentation/Results_scores.jpg)
 
 
 

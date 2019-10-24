@@ -21,7 +21,7 @@ pdf: "https://arxiv.org/abs/1705.10142"
 
 #### Reminder: **Vanilla RNN**
 
-> ![](/article/images/kronecker-recurrent-units/equation1-2.png)
+> ![](/article/images/kronecker-recurrent-units/equation1-2.jpg)
 
 
 ### Core idea
@@ -55,7 +55,7 @@ The vanishing and exploding gradient problem is tackled through a soft unitary c
 
 ### Factorization
 
-![](/article/images/kronecker-recurrent-units/equation4.png)
+![](/article/images/kronecker-recurrent-units/equation4.jpg)
 
 If factors are 2 x 2, then there are $$\log_2 N$$ factors, the number of parameters is $$8 \log_2 N$$ (when using complex factors), and the time complexity of the hidden state computation is $$O(N \log_2 N)$$.
 
@@ -68,7 +68,7 @@ Thus, there is flexibility between computational budget and statistical performa
 
 A regularization term is simply added to the loss : 
 
-![](/article/images/kronecker-recurrent-units/equation7.png)
+![](/article/images/kronecker-recurrent-units/equation7.jpg)
 
 If all the factors are unitary, then the full matrix W is unitary, and if all factors are approximately unitary, then W is also approximately unitary. 
 This new loss term introduces the usual strength hyperparameter like any other regularization term.
@@ -92,7 +92,7 @@ Target : $$ [\text{blank} \times T+10, x_0, x_1, ..., x_9] $$
 
 > NOTE: Expected cross-entropy for a memory-less strategy is 0.03 for T=1000 and 0.015 for T=2000
 
-![](/article/images/kronecker-recurrent-units/figure1.png)
+![](/article/images/kronecker-recurrent-units/figure1.jpg)
 
 
 ### Adding problem
@@ -101,22 +101,22 @@ Input : Two sequences (first a sequence of random numbers, then a sequence of eq
 
 Target : Predict the sum of the numbers in the 1st sequence at the positions defined the ones in the 2nd sequence.
 
-![](/article/images/kronecker-recurrent-units/figure2.png)
+![](/article/images/kronecker-recurrent-units/figure2.jpg)
 
 
 ### Pixel-by-pixel MNIST classification
 
-![](/article/images/kronecker-recurrent-units/figure3.png)
+![](/article/images/kronecker-recurrent-units/figure3.jpg)
 
-![](/article/images/kronecker-recurrent-units/table2.png)
+![](/article/images/kronecker-recurrent-units/table2.jpg)
 
 
 ### Penn-Treebank character-level modeling
 
-![](/article/images/kronecker-recurrent-units/table3.png)
+![](/article/images/kronecker-recurrent-units/table3.jpg)
 
 
 ### Music modeling
 
-![](/article/images/kronecker-recurrent-units/table4.png)
-![](/article/images/kronecker-recurrent-units/figure4.png)
+![](/article/images/kronecker-recurrent-units/table4.jpg)
+![](/article/images/kronecker-recurrent-units/figure4.jpg)

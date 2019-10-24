@@ -14,14 +14,14 @@ This paper presents a new way of using convolutions. They test their models for 
 Rather than using a convolution on only one scale, they use multiple convolutions at each scale of the input. Each of these scales also contains information from the scales close to it.
 
 <div align='middle'>
-     <img src="/article/images/multigrid/layer.png" />
+     <img src="/article/images/multigrid/layer.jpg" />
 </div>
 
 
 ## Architectures
 
 <div align='middle'>
-     <img src="/article/images/multigrid/architectures.png" />
+     <img src="/article/images/multigrid/architectures.jpg" />
 </div>
 
 ## Results
@@ -30,6 +30,6 @@ For the classification, they use CIFAR-100 dataset, for semantic segmentation th
 
 
 <div align='middle'>
-     <img src="/article/images/multigrid/cifar100.png" />
-     <img src="/article/images/multigrid/mnist-imagenet.png" />
+     <img src="/article/images/multigrid/cifar100.jpg" />
+     <img src="/article/images/multigrid/mnist-imagenet.jpg" />
 </div>

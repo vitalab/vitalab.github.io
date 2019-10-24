@@ -70,7 +70,7 @@ in which the originally missing sequences are synthesized by the network.
 A variant of Pix2Pix architecture[^1] is used. The generator is a UNet and
 the discriminator has a PatchGAN architecture[^2].
 
-![](/article/images/MRIPulseSeqGANSynthesis/Architecture.png)
+![](/article/images/MRIPulseSeqGANSynthesis/Architecture.jpg)
 
 
 ## Data
@@ -100,9 +100,9 @@ a lower overall score than MM-Synthesis.
 - The synthesis of the tumor in the final images depend heavily on the available
 sequences.
 
-![](/article/images/MRIPulseSeqGANSynthesis/Results_scores.png)
+![](/article/images/MRIPulseSeqGANSynthesis/Results_scores.jpg)
 
-![](/article/images/MRIPulseSeqGANSynthesis/Results_images.png)
+![](/article/images/MRIPulseSeqGANSynthesis/Results_images.jpg)
 
 
 # Conclusions

@@ -50,7 +50,7 @@ FA and MD computed from the diffusion data, voxel-wise coordinates on the MNI
 - Loss function: whether using a weighed inner product loss function or a
 weighed cross-entropy function provided better results:
 
-![](/article/images/ReproducibleWMTractSegmentation/Loss_functions.png)
+![](/article/images/ReproducibleWMTractSegmentation/Loss_functions.jpg)
 
 - Class imbalance compensation: which was the tract weight that provided the
 best results.
@@ -82,7 +82,7 @@ performance.
 The visual results (Figure 3) show a good agreement between the proposed method
 and the reference, as well as between the scan and rescan data.
 
-![](/article/images/ReproducibleWMTractSegmentation/Results_images.png)
+![](/article/images/ReproducibleWMTractSegmentation/Results_images.jpg)
 
 No significant differences in the longitudinal-measures (FA, MD, volume) were
 found in their paired t-test, $$p > .1$$).
@@ -90,13 +90,13 @@ found in their paired t-test, $$p > .1$$).
 No consistent bias in longitudinal-measures: differences are within the $$95\%$$
 limits of agreement and the mean is close to zero.
 
-![](/article/images/ReproducibleWMTractSegmentation/Results_plots.png)
+![](/article/images/ReproducibleWMTractSegmentation/Results_plots.jpg)
 
 The $$R^2$$ (value of ordinary least squares regression) and Cohen's Kappa (K)
 (inter-rater agreement) values show that their method has better reproducibility
 than reference.
 
-![](/article/images/ReproducibleWMTractSegmentation/Results_table.png)
+![](/article/images/ReproducibleWMTractSegmentation/Results_table.jpg)
 
 
 # Conclusions

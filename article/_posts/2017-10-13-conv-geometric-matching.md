@@ -14,21 +14,21 @@ pdf: "https://arxiv.org/pdf/1703.05593.pdf"
 
 The authors propose a convolutional neural network architecture for geometric matching, trainable end-to-end. They also show that the model is trainable using synthetically warped images without needing any manual annotation.
 
-![](/article/images/conv-geometric-matching/figure1.png)
+![](/article/images/conv-geometric-matching/figure1.jpg)
 
 
 ### Model
 
-![](/article/images/conv-geometric-matching/figure2.png)
+![](/article/images/conv-geometric-matching/figure2.jpg)
 
 The proposed model is divided into three steps:
 1. Extracting features from the two input images using siamese networks (CNN)
 2. Matching features by computing all pairwise similarities
 3. Predicting the geometric transformation parameters using a regression network (CNN)
 
-![](/article/images/conv-geometric-matching/figure3.png)
+![](/article/images/conv-geometric-matching/figure3.jpg)
 
-![](/article/images/conv-geometric-matching/equation1.png)
+![](/article/images/conv-geometric-matching/equation1.jpg)
 
 
 ### Model stacking
@@ -38,7 +38,7 @@ Instead of trying to directly predict a complex transformation, the authors prop
 1. Affine transformation (6 dof linear transformation = translation/rotation/non-isotropic scaling and shear)
 2. Thin-plate spline transformation with 18 parameters
 
-![](/article/images/conv-geometric-matching/figure5.png)
+![](/article/images/conv-geometric-matching/figure5.jpg)
 
 
 ### Training
@@ -52,7 +52,7 @@ Note that the affine transformation network and the TPS transformation network a
 
 The training dataset is automatically created from a public image dataset, by performing random transformations.
 
-![](/article/images/conv-geometric-matching/figure6.png)
+![](/article/images/conv-geometric-matching/figure6.jpg)
 
 
 ## Experiments and Results
@@ -63,10 +63,10 @@ The training dataset is automatically created from a public image dataset, by pe
 **Evaluation dataset:** 
 - Proposal Flow (900 image pairs with large intra-class variations, e.g. ducks of different species, cars of different make, etc.)
 
-![](/article/images/conv-geometric-matching/figure9.png)
+![](/article/images/conv-geometric-matching/figure9.jpg)
 
 The Proposal Flow task is to predict matching keypoint locations from an input image to a target image. The predictions are evaluated using average probability of correct keypoint (PCK). PCK is the proportion of keypoints that are correctly matched (i.e. within a certain distance of the target location).
 
-![](/article/images/conv-geometric-matching/table1.png)
+![](/article/images/conv-geometric-matching/table1.jpg)
 
-![](/article/images/conv-geometric-matching/figure8.png)
+![](/article/images/conv-geometric-matching/figure8.jpg)

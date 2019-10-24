@@ -21,18 +21,18 @@ This part is first trained independantly from the rest of the system.  The goal 
 Once stage 1 is trained, the output feature maps and then used to train 2 branches, one for **geolocalization** and one for **building segmentation** (which they call localization map). 
 
 
-![](/article/images/interpPLUSgeo/sc01.png)
+![](/article/images/interpPLUSgeo/sc01.jpg)
 
 The segmentation loss is a combination of a cross-entropy and a dice
 
-![](/article/images/interpPLUSgeo/sc03.png)
+![](/article/images/interpPLUSgeo/sc03.jpg)
 
 
-![](/article/images/interpPLUSgeo/sc02.png)
+![](/article/images/interpPLUSgeo/sc02.jpg)
 
 while the geolocalization loss is a simple l2 regression:
 
-![](/article/images/interpPLUSgeo/sc04.png)
+![](/article/images/interpPLUSgeo/sc04.jpg)
 
 
 
@@ -40,12 +40,12 @@ while the geolocalization loss is a simple l2 regression:
 
 Results show that their method is more accurate and faster than previous methods.  Here is an illustration of their Arial image localization dataset.
 
-![](/article/images/interpPLUSgeo/sc05.png)
+![](/article/images/interpPLUSgeo/sc05.jpg)
 
 
-![](/article/images/interpPLUSgeo/sc06.png)
+![](/article/images/interpPLUSgeo/sc06.jpg)
 
-![](/article/images/interpPLUSgeo/sc07.png)
+![](/article/images/interpPLUSgeo/sc07.jpg)
 
-![](/article/images/interpPLUSgeo/sc08.png)
+![](/article/images/interpPLUSgeo/sc08.jpg)
 

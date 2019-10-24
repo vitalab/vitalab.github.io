@@ -18,7 +18,7 @@ In addition to the standard protocol, a state-of-the-art protocol was used with 
 
 ## Dataset
 
-> ![](/article/images/cross-scanner-protocol-harmonization/figure1.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure1.jpg)
 
 - 14 subjects split into trainset (9), validset (1) and testset (4)
 
@@ -35,36 +35,36 @@ The predicted signal is fitted with DTI to extract FA and MD maps.
 RISH features for order 0 and 2 are also computed.
 
 
-> ![](/article/images/cross-scanner-protocol-harmonization/figure2.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure2.jpg)
 
 
 ## Benchmarked methods
 
-> ![](/article/images/cross-scanner-protocol-harmonization/table3.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/table3.jpg)
 
 SHNet:
-> ![](/article/images/cross-scanner-protocol-harmonization/table4.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/table4.jpg)
 
 SHResNet:
-> ![](/article/images/cross-scanner-protocol-harmonization/figure3.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure3.jpg)
 
 SphericalNet:
-> ![](/article/images/cross-scanner-protocol-harmonization/table5.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/table5.jpg)
 
 FCSNet:
-> ![](/article/images/cross-scanner-protocol-harmonization/figure4.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure4.jpg)
 
 SDL:
-> ![](/article/images/cross-scanner-protocol-harmonization/figure5.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure5.jpg)
 
 Reference method : simple trilinear interpolation in the spatial domain, and spherical harmonics interpolation (order 6 for ST and 8 for SA) in the angular domain.
 
 ## Results
 
 
-> ![](/article/images/cross-scanner-protocol-harmonization/figure6.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure6.jpg)
 
 
-> ![](/article/images/cross-scanner-protocol-harmonization/figure7.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure7.jpg)
 
-> ![](/article/images/cross-scanner-protocol-harmonization/figure8.png)
+> ![](/article/images/cross-scanner-protocol-harmonization/figure8.jpg)

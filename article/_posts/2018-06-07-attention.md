@@ -19,9 +19,9 @@ One of the most highly cited attention paper.  The goal is to generate a caption
 As shown in the following 2 figures
 
 
-![](/article/images/attention/sc01.png)
+![](/article/images/attention/sc01.jpg)
 
-![](/article/images/attention/sc04.png)
+![](/article/images/attention/sc04.jpg)
 
 
 
@@ -31,9 +31,9 @@ As shown in the following 2 figures
 
 Results are cool!
 
-![](/article/images/attention/sc02.png)
+![](/article/images/attention/sc02.jpg)
 
-![](/article/images/attention/sc03.png)
+![](/article/images/attention/sc03.jpg)
 
 
 # Code

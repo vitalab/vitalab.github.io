@@ -13,7 +13,7 @@ cite:
 ## Introduction
  Starting from weak supervision in the form of bounding box detection annotations, they proposed a new approach that does not require modification of the segmentation training procedure.  The method consist in recursive training of convnets for weakly supervised semantic labelling where the GT at each round of training is the segmentation results of the method obtained at the previous round.
 
-![](/article/images/simpleDoesIt/sc02.png)
+![](/article/images/simpleDoesIt/sc02.jpg)
 
 ## Methods
 
@@ -27,7 +27,7 @@ They proposed 4 variants :
 3. a **box-i** method identical to **box**  but with ignored pixels between the boundary and the middle of the bounding boxes (c.f. Fig.3).
 4. a **grab-cut/MCG** method that gives a better initialization (c.f. Fig.3)
 
-![](/article/images/simpleDoesIt/sc03.png)
+![](/article/images/simpleDoesIt/sc03.jpg)
 
 
 ## Results
@@ -36,12 +36,12 @@ They used the DeepLab network for segmentation.
 
 Results on PascalVOC and COCO datasets are surprisingly good
 
-![](/article/images/simpleDoesIt/sc05.png)
+![](/article/images/simpleDoesIt/sc05.jpg)
 
-![](/article/images/simpleDoesIt/sc06.png)
+![](/article/images/simpleDoesIt/sc06.jpg)
 
 
-![](/article/images/simpleDoesIt/sc07.png)
+![](/article/images/simpleDoesIt/sc07.jpg)
 
 
 

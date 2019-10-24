@@ -22,25 +22,25 @@ The contrastive loss is a **distance-based loss** as opposed to more conventiona
 Formally, if we consider $$\vec X$$ as the input data and $$G_W(\vec X)$$ the output of a neural network, the inter-point distance is given by
 
 
-<center><img src="/article/images/contrastiveLoss/sc01.png" width="300"></center>
+<center><img src="/article/images/contrastiveLoss/sc01.jpg" width="300"></center>
 
 The contrastive loss is simply
-<center><img src="/article/images/contrastiveLoss/sc02.png" width="400"></center>
+<center><img src="/article/images/contrastiveLoss/sc02.jpg" width="400"></center>
 
 where $$Y=0$$ when $$X_1$$ and $$X_2$$ are similar and $$Y=1$$ otherwise, and $$L_S$$ is a loss for similar points and $$L_D$$ is a loss for dissimilar points.  More formally, the contrastive loss is given by
 
-<center><img src="/article/images/contrastiveLoss/sc03.png" width="400"></center>
+<center><img src="/article/images/contrastiveLoss/sc03.jpg" width="400"></center>
 
 where $m$ is a predefined margin.  The gradient is given by the simple equations:
 
-<center><img src="/article/images/contrastiveLoss/sc04.png" width="150"></center>
-<center><img src="/article/images/contrastiveLoss/sc07.png" width="200"></center>
+<center><img src="/article/images/contrastiveLoss/sc04.jpg" width="150"></center>
+<center><img src="/article/images/contrastiveLoss/sc07.jpg" width="200"></center>
 
 ## Results
 
 Results are quite convincing.
 
-<center><img src="/article/images/contrastiveLoss/sc05.png" width="400"></center>
+<center><img src="/article/images/contrastiveLoss/sc05.jpg" width="400"></center>
 
 ## Blog
 

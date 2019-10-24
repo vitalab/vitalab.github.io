@@ -32,11 +32,11 @@ tested the impact of using various number of box proposals (between 10 and 300),
 
 ## Experimental results
 
-![](/article/images/objDetector17/sc01.png)
+![](/article/images/objDetector17/sc01.jpg)
 <div style="text-align:center">
-<img src="/article/images/objDetector17/sc03.png" width="500">
+<img src="/article/images/objDetector17/sc03.jpg" width="500">
 </div>
-![](/article/images/objDetector17/sc04.png)
+![](/article/images/objDetector17/sc04.jpg)
 
 
 ## Conclusion

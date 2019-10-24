@@ -16,13 +16,13 @@ This paper investigates the use of knowledge graphs and shows that using this kn
 on image classification.  The propose a Graph Search Neural Network (GSNN) that reasons
 about different types of relationships and concepts that are used for image classification.
 
-![](/article/images/GSNN/sc01.png)
+![](/article/images/GSNN/sc01.jpg)
 
 ## Proposed network
 
 The goal of the system is to learn an adjacency matrix as well as the state of every node.  The adjacency matrix defines which visual nodes are connected and the state if the node is present in the image.  This is learned via a **propagation network**.  
 
-![](/article/images/GSNN/sc02.png)
+![](/article/images/GSNN/sc02.jpg)
 
 However, since learning the entire graph all at once is time expensive, they start by propagating information from visual nodes detected by Faster R-CNN.
 They then add the nodes adjacent to the initial nodes to the active set and propagate the beliefs about the initial
@@ -34,14 +34,14 @@ outputs into the final **classification net**.
 In summary, the system involves 3 networks namely the **propagation net**, the **importance
 net**, and the **output net**.
 
-![](/article/images/GSNN/sc05.png)
+![](/article/images/GSNN/sc05.jpg)
 
 
 ## Results
 
 The method gets state of the art results on the COCO and the visual genome datasets.
 
-![](/article/images/GSNN/sc03.png)
+![](/article/images/GSNN/sc03.jpg)
 
-![](/article/images/GSNN/sc04.png)
+![](/article/images/GSNN/sc04.jpg)
 

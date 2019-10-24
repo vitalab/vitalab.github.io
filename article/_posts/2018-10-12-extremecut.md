@@ -14,7 +14,7 @@ cite:
 
 
 
-<center><img src="/article/images/extremecut/sc01.png" width="700"></center>
+<center><img src="/article/images/extremecut/sc01.jpg" width="700"></center>
 
 This paper presents a semi-automatic deep learning segmentation method.  The idea is quite simple but the results beat state-of-the-art solutions.  
 
@@ -27,7 +27,7 @@ The proposed network is a modified ResNet101 without the last layers, without ma
 ### Results
 They report a series of ablation results, but at the end of the day, they report state-of-the-art results.
 
-<center><img src="/article/images/extremecut/sc02.png" width="400"></center>
-<center><img src="/article/images/extremecut/sc03.png" width="800"></center>
+<center><img src="/article/images/extremecut/sc02.jpg" width="400"></center>
+<center><img src="/article/images/extremecut/sc03.jpg" width="800"></center>
 
 

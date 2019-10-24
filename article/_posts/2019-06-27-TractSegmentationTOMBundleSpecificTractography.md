@@ -64,9 +64,9 @@ The network input is composed of the fODFs peaks computed at each voxel. The
 three principal fiber directions are kept for each voxel using the multi-tissue
 multi-shell constrained spherical deconvolution (CSD) method.
 
-![](/article/images/TractSegmentationTOMBundleSpecificTractography/General_architecture.png)
+![](/article/images/TractSegmentationTOMBundleSpecificTractography/General_architecture.jpg)
 
-![](/article/images/TractSegmentationTOMBundleSpecificTractography/Detailed_architecture.png)
+![](/article/images/TractSegmentationTOMBundleSpecificTractography/Detailed_architecture.jpg)
 
 Authors used bundle-specific thresholds to improve results (especially on
 bundles that are harder to track) to convert the computed probability maps to
@@ -108,11 +108,11 @@ Metrics:
 
 Their method is faster and produces more accurate bundle-specific tractograms.
 
-![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_Dice.png)
+![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_Dice.jpg)
 
-![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_angular_error.png)
+![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_angular_error.jpg)
 
-![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_image.png)
+![](/article/images/TractSegmentationTOMBundleSpecificTractography/Results_image.jpg)
 
 
 # Conclusions

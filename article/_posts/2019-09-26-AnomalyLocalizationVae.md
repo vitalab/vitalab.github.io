@@ -51,20 +51,20 @@ reconstruction error for anomaly detection on a sample as well as pixel level." 
 is expected to gear the reconstruction error towards the approximation of the derivative of the log-density with respect
 to the input."
 
-![](/article/images/AnomalyLocalizationVae/figure1.png)
+![](/article/images/AnomalyLocalizationVae/figure1.jpg)
 
 The weights are shared between the CE and VAE, and the CE directly uses the mean of the predicted latent space
 distribution. Otherwise, the pipeline seems to be standard for autoencoders.
 
 The global loss of the model is a sum of the loss of the CE and VAE, as shown in the equation below:
 
-![](/article/images/AnomalyLocalizationVae/equation6.png)
+![](/article/images/AnomalyLocalizationVae/equation6.jpg)
 
 For the anomaly detection in itself, the density-based score is given by a pixel-wise back-tracing of the latent
 variable deviations from the prior, which is calculated by back propagating the approximated ELBO onto the input. An
 element-wise function is used to combine the reconstruction and density scores, as shown in the equation below:
 
-![](/article/images/AnomalyLocalizationVae/equation8.png)
+![](/article/images/AnomalyLocalizationVae/equation8.jpg)
 
 Their claim is that this combination outlines the “direction towards normality” for each pixel.
 
@@ -78,14 +78,14 @@ and validated and tested on
 # Results
 The the slice/sample-wise performance and the pixel-wise performance were evaluated separately.
 
-![](/article/images/AnomalyLocalizationVae/figure2.png)
+![](/article/images/AnomalyLocalizationVae/figure2.jpg)
 
 To explain the low absolute pixel-wise performance seen in Fig. 3, the authors point to "the difference in dataset
 quality and thus the data distribution to start with."
 
-![](/article/images/AnomalyLocalizationVae/figure3.png)
+![](/article/images/AnomalyLocalizationVae/figure3.jpg)
 
-![](/article/images/AnomalyLocalizationVae/figure4.png)
+![](/article/images/AnomalyLocalizationVae/figure4.jpg)
 
 
 # Conclusions

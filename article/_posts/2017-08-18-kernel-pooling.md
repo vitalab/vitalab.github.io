@@ -31,12 +31,12 @@ With VGG, 2nd and 3rd order feature interactions were weighted a lot more than w
 Approximating gaussian kernels :
 
 
-![](/article/images/kernelpooling/gaussian-kernel-approx.png)
+![](/article/images/kernelpooling/gaussian-kernel-approx.jpg)
 
 Architecture to learn kernels :
 
 
-![](/article/images/kernelpooling/architecture.png)
+![](/article/images/kernelpooling/architecture.jpg)
 # TensorSketch
 [TensorSketch paper](http://www.itu.dk/people/pagh/papers/tensorsketch.pdf)
 

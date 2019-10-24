@@ -78,9 +78,9 @@ achieve maximal DC value.
 
 # Results
 
-![](/article/images/ContinuousDiceCoefficient/Results_images.png)
+![](/article/images/ContinuousDiceCoefficient/Results_images.jpg)
 
-![](/article/images/ContinuousDiceCoefficient/Results_graph.png)
+![](/article/images/ContinuousDiceCoefficient/Results_graph.jpg)
 
 
 # Conclusions

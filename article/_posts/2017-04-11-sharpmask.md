@@ -16,7 +16,7 @@ SharpMask, using a double pyramid layout, is faster and more accurate than DeepM
 
 SharpMask is able to output more precise masks because of the fusion of low-level features and high-level features.
 <div align="middle">
-  <img src="/article/images/sharpmask/architecture.png" width="400">
+  <img src="/article/images/sharpmask/architecture.jpg" width="400">
 </div>
 
 ## Changes between SharpMask and DeepMask
@@ -24,5 +24,5 @@ The major change between SharpMask and DeepMask is the refinement module. This e
 ### Heads
 The authors modified the head of DeepMask to be faster. Instead of branching early, they branch just before prediction to have a smaller network. Head **C** is faster while keeping a good accuracy.
 <div align="middle">
-  <img src="/article/images/sharpmask/heads.png" width="500">
+  <img src="/article/images/sharpmask/heads.jpg" width="500">
 </div>

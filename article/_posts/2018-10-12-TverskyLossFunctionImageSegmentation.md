@@ -46,11 +46,11 @@ $$F_{\beta} scores.
 # Methods
 - Architecture: U-Net
 
-![](/article/images/TverskyLossFunctionImageSegmentation/Architecture.png)
+![](/article/images/TverskyLossFunctionImageSegmentation/Architecture.jpg)
 
 - Tversky index
 
-![](/article/images/TverskyLossFunctionImageSegmentation/Tversky_index.png)
+![](/article/images/TverskyLossFunctionImageSegmentation/Tversky_index.jpg)
 
 where $$P$$ and $$G$$ are the set of predicted and ground truth binary labels,
 respectively, and $$\alpha$$ and $$\beta$$ control the magnitude of penalties
@@ -58,7 +58,7 @@ for FPs and FNs, respectively.
 
 - Loss function
 
-![](/article/images/TverskyLossFunctionImageSegmentation/Loss_function.png)
+![](/article/images/TverskyLossFunctionImageSegmentation/Loss_function.jpg)
 
 where in the output of the softmax layer, the $$p_{0i}$$ is the probability of
 voxel $$i$$ be a lesion and $$p_{1i}$$ is the probability of voxel $$i$$ be a
@@ -87,6 +87,6 @@ highly imbalanced data
 - Outperforms Dice index-based loss results
 - Training: 4 hours (NVIDIA GeForce GTX1080 GPU)
 
-![](/article/images/TverskyLossFunctionImageSegmentation/ResultsTable.png)
+![](/article/images/TverskyLossFunctionImageSegmentation/ResultsTable.jpg)
 
-![](/article/images/TverskyLossFunctionImageSegmentation/SegmentationResults.png)
+![](/article/images/TverskyLossFunctionImageSegmentation/SegmentationResults.jpg)

@@ -21,7 +21,7 @@ The unsupervised part learns depth prediction, directly from the stereo images t
 An **important** note is that the author use BerHu-norm(https://arxiv.org/pdf/1207.6868.pdf) instead of L2-norm in supervised loss that performs better on test set and reduce the noise. 
 
 <div align="middle">
-  <img src="/article/images/pred_depth/1.png" width="400">
+  <img src="/article/images/pred_depth/1.jpg" width="400">
 </div>
 
 
@@ -29,12 +29,12 @@ An **important** note is that the author use BerHu-norm(https://arxiv.org/pdf/12
 
 
 <div align="middle">
-  <img src="/article/images/pred_depth/2.png" width="600">
+  <img src="/article/images/pred_depth/2.jpg" width="600">
 </div>
 
 
 <div align="middle">
-  <img src="/article/images/pred_depth/3.png" width="600">
+  <img src="/article/images/pred_depth/3.jpg" width="600">
 </div>
 
 

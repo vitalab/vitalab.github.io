@@ -23,11 +23,11 @@ pdf: "https://arxiv.org/abs/1808.01595"
 
 ## Model
 
-> ![](/article/images/sh-harmonization-resnet/figure1.png)
+> ![](/article/images/sh-harmonization-resnet/figure1.jpg)
 
 - RISH projection: At test time, RISH features are used to project the harmonized signal and correct for changes in fiber orientation
 
-> ![](/article/images/sh-harmonization-resnet/equation1.png)
+> ![](/article/images/sh-harmonization-resnet/equation1.jpg)
 
 where $$S_i'$$ are the hamonized SH coefficients and $$S_i$$ the non-harmonized SH coefficients of order $$i$$.
 
@@ -58,13 +58,13 @@ The only reported baseline is the Golkov method[^1], a 3-layer, 150 units neural
 
 **There is no classical method baseline...**
 
-> ![](/article/images/sh-harmonization-resnet/table1.png)
+> ![](/article/images/sh-harmonization-resnet/table1.jpg)
 
-> ![](/article/images/sh-harmonization-resnet/figure2.png)
+> ![](/article/images/sh-harmonization-resnet/figure2.jpg)
 
-> ![](/article/images/sh-harmonization-resnet/figure3.png)
+> ![](/article/images/sh-harmonization-resnet/figure3.jpg)
 
-> ![](/article/images/sh-harmonization-resnet/figure4.png)
+> ![](/article/images/sh-harmonization-resnet/figure4.jpg)
 
 
 [^1]: Golkov, V., Dosovitskiy, A., Sperl, J.I., Menzel, M.I., Czisch, M., Sämann, P., Brox, T. and Cremers, D., 2016. Q-space deep learning: twelve-fold shorter and model-free diffusion MRI scans. IEEE transactions on medical imaging, 35(5), pp.1344-1351.

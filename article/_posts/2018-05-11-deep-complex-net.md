@@ -38,34 +38,34 @@ The main **drawbacks** of complex nets are:
 
 The convolution is made like this 
 
-![](/article/images/complexnet/sc07.png)
+![](/article/images/complexnet/sc07.jpg)
 
 where the first feature maps are the **real** values and the last are the **complex** values.  They also propose two complex **relu** functions i.e.
 
-![](/article/images/complexnet/sc05.png)
+![](/article/images/complexnet/sc05.jpg)
 
 .
-![](/article/images/complexnet/sc06.png)
+![](/article/images/complexnet/sc06.jpg)
  
 And finally, they propose a new batch normalization 
 
-![](/article/images/complexnet/sc08.png)
+![](/article/images/complexnet/sc08.jpg)
 .
-![](/article/images/complexnet/sc09.png)
+![](/article/images/complexnet/sc09.jpg)
 .
-![](/article/images/complexnet/sc10.png)
+![](/article/images/complexnet/sc10.jpg)
 
 All of this is summarized here :
 
 
-![](/article/images/complexnet/sc01.png)
+![](/article/images/complexnet/sc01.jpg)
 
 # Results
 In short : it doesn't work for image classification but does work for music and speech analysis.
 
-![](/article/images/complexnet/sc02.png)
-![](/article/images/complexnet/sc03.png)
-![](/article/images/complexnet/sc04.png)
+![](/article/images/complexnet/sc02.jpg)
+![](/article/images/complexnet/sc03.jpg)
+![](/article/images/complexnet/sc04.jpg)
 
 
 # Code

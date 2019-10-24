@@ -28,8 +28,8 @@ $$ x_{s} =K_{1} R_{1} T_{1} \acute{T_{2}}^{-1} \acute{R_{2}}^{-1} \acute{K_{1}}^
 
 ***Forward/Backward Warping*** : There are two ways to wrap an image. The first method is forward warping. In this method, every point in the original image is transformed and sent to its new location. However, this mode of warping can result in holes and splattering. The better approach is to perform inverse warping. This algorithm goes through every pixel in the new, transformed image, undoes the transformation, and figures out which original pixel to grab. If the original pixel happens to fall between two pixels, simply interpolate the source image.
 
-![](/article/images/icstn/img0.png =200x200)
-<img src="/article/images/icstn/img0.png"  width="400" height='200' />
+![](/article/images/icstn/img0.jpg =200x200)
+<img src="/article/images/icstn/img0.jpg"  width="400" height='200' />
 
 **Note:**
 Some factors corrupt the process such as: The scene is dynamic or there is  occlusion between target and source images or surface is Lambertian.
@@ -40,14 +40,14 @@ Some factors corrupt the process such as: The scene is dynamic or there is  occl
 
 The authors present an unsupervised and end to end method for novel view synthesis image by CNN and also it does not need the pose information, that it would be a part of learning framework. The proposed network contains two parts: **depth prediction** network and **pose** network. The depth network input is just target image and its output is depth prediction, also the pose network input is source images and target images and depth predictions as shown below. 
 
-<img src="/article/images/icstn/img1.png"  width="300" height='200' />
+<img src="/article/images/icstn/img1.jpg"  width="300" height='200' />
 
 
  **Depth prediction** network is based on DispNet that is mainly an encoder-decoder with skip connections and multi-scale side prediction. The Multi-scale helps dealing with low-texture regions, so smoothness and multi-scale reduce this problem. The author improves the robustness into the factors (mention in the note), by adding a **explainability mask** network to indicate for each pixel in the source image, network successfully can find the corresponding pixel in the target image. The **pose** and **explainability mask** network share five first convolution layers then branch out to pose output and explainability mask, that followed by five deconvolution layer with multi scale predection as shown below. 
 
 
 
-<img src="/article/images/icstn/img2.png"  width="300" height='200' />
+<img src="/article/images/icstn/img2.jpg"  width="300" height='200' />
 
 
 
@@ -68,19 +68,19 @@ Where $$l$$ indexes over different image scale, $$s$$ indexes over source images
 
 ## Depth Result 
 
-<img src="/article/images/icstn/img3.png"  width="350" height='250' />
-<img src="/article/images/icstn/img7.png"  width="350" height='250' />
+<img src="/article/images/icstn/img3.jpg"  width="350" height='250' />
+<img src="/article/images/icstn/img7.jpg"  width="350" height='250' />
 
-<img src="/article/images/icstn/img4.png"  width="600" height='300' />
+<img src="/article/images/icstn/img4.jpg"  width="600" height='300' />
 
 ## Pose Estimation
 
-<img src="/article/images/icstn/img5.png"  width="400" height='300' />
+<img src="/article/images/icstn/img5.jpg"  width="400" height='300' />
 
 
 ## Explainability mask Result 
 
-<img src="/article/images/icstn/img6.png"  width="600" height='400' />
+<img src="/article/images/icstn/img6.jpg"  width="600" height='400' />
 
 ## Code
 

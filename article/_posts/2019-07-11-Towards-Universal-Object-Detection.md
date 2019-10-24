@@ -13,12 +13,12 @@ Code available [here](https://github.com/rbgirshick/py-faster-rcnn)
 
 # Introduction
 
-![](/article/images/UODB/benchmark.png)
+![](/article/images/UODB/benchmark.jpg)
 
 In this paper, they develop a universal object detection system that is capable of working on various image domains, from human faces and traffic signs to medical CT images.
 
 The proposed domain attention modules:
-![](/article/images/UODB/propose_module.png)
+![](/article/images/UODB/propose_module.jpg)
 
 Altogether, UODB(Universal Object Detection Benchmark) covers a wide range of variations in a category, camera view, image style, etc, and thus establishes a good suite for the evaluation of universal/multi-domain object detection.
 
@@ -34,7 +34,7 @@ Beyond the universal detector, the fully shared detector is the most efficient o
 
 # Domain-attentive Universal Detector
 
-![](/article/images/UODB/module5.png)
+![](/article/images/UODB/module5.jpg)
 
 They propose a domain adaptation (DA) module illustrated in the figure above.
 This has two components, a universal e squeeze-and-excitation (SE) adapter bank, and a domain attention mechanism.
@@ -43,7 +43,7 @@ Motivated by the SE module, the domain attention component first applies a globa
 
 # Results
 
-![](/article/images/UODB/results.png)
+![](/article/images/UODB/results.jpg)
 
 # Conclusion
 

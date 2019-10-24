@@ -25,11 +25,11 @@ The skip connections output will be a unique feature map which reduces the memor
 1. Select: re-weighting the channels of the input, using a learned weight vector with sparsity constraints, only those channels with non-zero weights are selected.
 2. Attend: discovering the most salient spatial locations within the final feature map.
 
-![](/article/images/LLSC/SAT_attention.png)
+![](/article/images/LLSC/SAT_attention.jpg)
 
 3. Transfer: transferring the output into layers via a skip connection.
 
-![](/article/images/LLSC/SAT.png)
+![](/article/images/LLSC/SAT.jpg)
 
 ## Experiments
 * original skip connections (ORG)
@@ -39,7 +39,7 @@ The skip connections output will be a unique feature map which reduces the memor
 
 *N is the total number of channels C before skip connection*
 
-![](/article/images/LLSC/RSAT.png)
+![](/article/images/LLSC/RSAT.jpg)
 
 On the Tiramisu, they reach an improvement of 2% of Dice score for MRI and 3% for the Skin, compare to the original skip connections.
 

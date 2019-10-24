@@ -17,8 +17,8 @@ cite:
 #### Tools
 - OpenStreetMap (OSM)
 
-<img src="/article/images/FCN_OSm/osm.png" width="600">
-<img src="/article/images/FCN_OSm/osm_example.png" width="600">
+<img src="/article/images/FCN_OSm/osm.jpg" width="600">
+<img src="/article/images/FCN_OSm/osm_example.jpg" width="600">
 
 ### Description
 
@@ -33,7 +33,7 @@ They use OSM like weakly labeled training data for three classes, buildings, roa
 #### Model
 FCN (Fully convolutional network) with modifications and as input, an 500x500pixel patch (mini batch 1 image).
 
-<img src="/article/images/FCN_OSm/fcn.png" width="900">
+<img src="/article/images/FCN_OSm/fcn.jpg" width="900">
 
 They make some pre-training before the real training to get better results.
 One by the Pascal VOC 2010[^fn] and the other with the OSM data.
@@ -44,26 +44,26 @@ One by the Pascal VOC 2010[^fn] and the other with the OSM data.
 - Partial substitution (pre-training with OSM labeling in the training).
 
 #### Datasets
-<img src="/article/images/FCN_OSm/dataset.png" width="500">
+<img src="/article/images/FCN_OSm/dataset.jpg" width="500">
 > ###### ground sampling distance (GSD).
 > ###### Potsdam - 1 image (6000x6000 pixel) = 144 images (500x500 pixel), only 21 have been manually labeled.
 
 ### Results
 For Chicago with only the OSM training.
 
-<img src="/article/images/FCN_OSm/chicago.png" width="600">
+<img src="/article/images/FCN_OSm/chicago.jpg" width="600">
 
-<img src="/article/images/FCN_OSm/result_1.png" width="600">
+<img src="/article/images/FCN_OSm/result_1.jpg" width="600">
 
 The methode 5[^fn2] is:
 
-<img src="/article/images/FCN_OSm/other_5.png" width="300">
+<img src="/article/images/FCN_OSm/other_5.jpg" width="300">
 
 The finals results are:
 
-<img src="/article/images/FCN_OSm/result_2.png" width="600">
+<img src="/article/images/FCN_OSm/result_2.jpg" width="600">
 
-<img src="/article/images/FCN_OSm/result_3.png" width="600">
+<img src="/article/images/FCN_OSm/result_3.jpg" width="600">
 
 ### Conclusions
 - Large scale, nevertheless significantly improves segmentation performance, and improves generalization ability of the models.

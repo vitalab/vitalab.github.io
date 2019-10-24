@@ -23,7 +23,7 @@ the dataset includes:
 3 types of images: 8/4/3 bands, 4 and 8 are RGB with multispectral images (MSI).
 All images are 256x256 with roughly 30cm resolution.
 
-![](/article/images/FunctionalMapoftheWorld/class_world.png)
+![](/article/images/FunctionalMapoftheWorld/class_world.jpg)
 
 ## Meaning of the paper
 The paper presents an analysis of the dataset along with baseline approaches to show relation about metadata and temporal views.
@@ -35,11 +35,11 @@ Approaches:
 - LSTM-I An LSTM architecture trained using features extracted from CNN-I.
 - LSTM-IM An LSTM architecture trained using features extracted from CNN-IM.
 
-![](/article/images/FunctionalMapoftheWorld/images_world.png)
+![](/article/images/FunctionalMapoftheWorld/images_world.jpg)
 
 ## Results
 
-![](/article/images/FunctionalMapoftheWorld/results_world.png)
+![](/article/images/FunctionalMapoftheWorld/results_world.jpg)
 
 That temporal changes may not be particularly important for several of the categories.
 CNN-I and CNN-IM are already reasoning about temporal information while making predictions by summing the softmax outputs over each temporal view.

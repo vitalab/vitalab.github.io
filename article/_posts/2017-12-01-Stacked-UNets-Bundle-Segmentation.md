@@ -23,7 +23,7 @@ Training data is obtained by 1) whole-brain tracking, 2) valid streamlines segme
 - Fourth U-Net takes the 3 predictions combined as a 3-channel input image (3D segmentation? Unclear...)
 - Binary classification target (bundle-specific model)
 
-![](/article/images/stacked-unets-bundle-segmentation/figure1.png)
+![](/article/images/stacked-unets-bundle-segmentation/figure1.jpg)
 
 ## Experiments and Results
 
@@ -44,6 +44,6 @@ Training data is obtained by 1) whole-brain tracking, 2) valid streamlines segme
 **Baselines**
 - Human performance: Automatic segmentation + one human segmentation
 
-![](/article/images/stacked-unets-bundle-segmentation/figure2.png)
-![](/article/images/stacked-unets-bundle-segmentation/figure3.png)
-![](/article/images/stacked-unets-bundle-segmentation/figure4.png)
+![](/article/images/stacked-unets-bundle-segmentation/figure2.jpg)
+![](/article/images/stacked-unets-bundle-segmentation/figure3.jpg)
+![](/article/images/stacked-unets-bundle-segmentation/figure4.jpg)

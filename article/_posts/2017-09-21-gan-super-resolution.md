@@ -18,13 +18,13 @@ The perceptual loss is defined using high-level feature maps of a VGG network fe
 
 The SRGAN is the new state of the art by a large margin for super-resolution with high upscaling factors (4x)
 
-![](/article/images/srgan-super-resolution/figure2.png)
+![](/article/images/srgan-super-resolution/figure2.jpg)
 
 ### Perceptual loss
 
 The perceptual loss is a combination of a content loss and an adversarial loss.
 
-![](/article/images/srgan-super-resolution/equation3.png)
+![](/article/images/srgan-super-resolution/equation3.jpg)
 
 #### Content loss
 
@@ -32,7 +32,7 @@ Instead of using a pixel-wise MSE as a content loss, the authors define a new VG
 
 The VGG loss is the L2 distance between the features of a reconstructed image and the reference image.
 
-![](/article/images/srgan-super-resolution/equation5.png)
+![](/article/images/srgan-super-resolution/equation5.jpg)
 
 
 ## Experiments and Results
@@ -52,11 +52,11 @@ Low resolution images are obtained using a bicubic kernel for downsampling.
 
 A Mean Opinion Score is used to compare methods. 26 raters assigned a score from 1 (bad quality) to 5 (excellent quality) to the super-resolved images. For each image, multiple versions from different methods were rated, for a total of 1128 instances per rater, presented randomly.
 
-![](/article/images/srgan-super-resolution/figure5.png)
+![](/article/images/srgan-super-resolution/figure5.jpg)
 
-![](/article/images/srgan-super-resolution/figure6.png)
+![](/article/images/srgan-super-resolution/figure6.jpg)
 
 
 Results show that while the SRGAN does not achieve better results than ResNet in terms of PSNR or SSIM, it is consistently better when evaluated by a human.
 
-![](/article/images/srgan-super-resolution/table2.png)
+![](/article/images/srgan-super-resolution/table2.jpg)

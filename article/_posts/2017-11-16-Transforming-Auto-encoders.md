@@ -16,7 +16,7 @@ A network is composed of capsules, each of which learns to recognize and spatial
 
 The network takes as input an image and translations $$\Delta x$$ and $$\Delta y$$. Each capsule is split in two layers; a recognition layer that outputs the $$x$$ and $$y$$ coordinates of its learned visual entity plus a gating value $$p$$ (probability that the entity is present in the image), and a generation layer, which takes (transformed) $$x$$ and $$y$$ coordinates as input, and outputs a "partial" image. The output partial image of each capsule is multiplied by its gating value $$p$$ before being combined with all the other images to produce the final transformed image.
 
-![](/article/images/transforming-auto-encoders/figure1.png)
+![](/article/images/transforming-auto-encoders/figure1.jpg)
 
 Instead of 2D translations, the network can also be used for more complex transformations, or be used in higher dimensions.
 For example, instead of predicting coordinates, each capsule could predict a $$3 x 3$$ matrix representing a full 2D affine transformation.
@@ -26,14 +26,14 @@ For example, instead of predicting coordinates, each capsule could predict a $$3
 
 Here is an example of how the predicted coordinates of a capsule change when a translation is applied to the input image:
 
-![](/article/images/transforming-auto-encoders/figure2.png)
+![](/article/images/transforming-auto-encoders/figure2.jpg)
 
 Other results:
 
 
-![](/article/images/transforming-auto-encoders/figure3.png)
+![](/article/images/transforming-auto-encoders/figure3.jpg)
 
-![](/article/images/transforming-auto-encoders/figure4.png)
+![](/article/images/transforming-auto-encoders/figure4.jpg)
 
 
 ## Issues

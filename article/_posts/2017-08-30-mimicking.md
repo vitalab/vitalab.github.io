@@ -18,4 +18,4 @@ The authors did not compute the loss on empty regions. They mask the feature map
 
 To further speed up the network, the small network has an input size reduced by half from the original. The final feature map is then upsampled by deconvolution.
 
-![](/article/images/mimicking/model.png)
+![](/article/images/mimicking/model.jpg)

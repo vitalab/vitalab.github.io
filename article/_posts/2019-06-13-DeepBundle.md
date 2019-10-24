@@ -61,7 +61,7 @@ geometric features of each fiber tract. The spectral graph convolution notion
 generalizes conventional convolution in Euclidean space using graph Fourier
 transformation.
 
-![](/article/images/DeepBundle/Spectral_convolution_equations.png)
+![](/article/images/DeepBundle/Spectral_convolution_equations.jpg)
 
 where (2) is the eigendecomposition of the graph Laplacian: $$\Phi$$ is the
 matrix of eigenvectors and $$\Lambda$$ is the diagonal matrix of eigenvalues;
@@ -79,7 +79,7 @@ convolutional filter.
 (4) summarizes the GCNN operation in a layer, being $$\xi$$ the non-linearity.
 
 
-![](/article/images/DeepBundle/Architecture.png)
+![](/article/images/DeepBundle/Architecture.jpg)
 
 Authors use separately trained networks for segmenting different fiber bundles
 from the whole-brain tracts.
@@ -105,9 +105,9 @@ similarities streamlines in the CST may have with neighboring bundles.
 streamlines, such as the fornix.
 - DeepBundle obtains better Dice scores than RecoBunbles.
 
-![](/article/images/DeepBundle/Results_image.png)
+![](/article/images/DeepBundle/Results_image.jpg)
 
-![](/article/images/DeepBundle/Results_table.png)
+![](/article/images/DeepBundle/Results_table.jpg)
 
 
 # Conclusions

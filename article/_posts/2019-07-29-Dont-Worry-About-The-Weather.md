@@ -37,9 +37,9 @@ The main contributions:
 
 # Learning Condition-Dependent Representations
 
-![](/article/images/Weather/Gan.png)
+![](/article/images/Weather/Gan.jpg)
 
-![](/article/images/Weather/archi.png)
+![](/article/images/Weather/archi.jpg)
 
 ## Synthetic Multi-Condition Data
 
@@ -48,18 +48,18 @@ Besides, they add some traversals with conditions (night, rain, snow, etc.), alo
 
 Adversarial loss:
 
-![](/article/images/Weather/loss_adv_1.png)
-![](/article/images/Weather/loss_adv_2.png)
+![](/article/images/Weather/loss_adv_1.jpg)
+![](/article/images/Weather/loss_adv_2.jpg)
 
 Loss for discriminators:
 
-![](/article/images/Weather/loss_disc_1.png)
-![](/article/images/Weather/loss_disc_2.png)
+![](/article/images/Weather/loss_disc_1.jpg)
+![](/article/images/Weather/loss_disc_2.jpg)
 
 Reconstruction and Generator Loss:
 
-![](/article/images/Weather/loss_rec.png)
-![](/article/images/Weather/loss_gen.png)
+![](/article/images/Weather/loss_rec.jpg)
+![](/article/images/Weather/loss_gen.jpg)
 
 ## Input Adapters
 
@@ -70,18 +70,18 @@ This way, they follow a distribution similar to that of the training sets used t
 The adaptors input is a 3-channel RGB image, while the output is a 3-channel image compatible with the inputs of many well-known models (semantic segmentation, object detection, depth estimation, etc.).
 This configuration provides a light-weight solution that is easy to train using labeled data, with reduced storage requirements and use a small amount of memory.
 
-![](/article/images/Weather/loss_adapters.png)
+![](/article/images/Weather/loss_adapters.jpg)
 
 ## Domain Classifier
 
-![](/article/images/Weather/classifier.png)
+![](/article/images/Weather/classifier.jpg)
 
 They employ a domain classifier $$D$$ to select the most suitable input adapter $$F_k$$ that enables optimal performance on the input images with the $$k^{th}$$ condition.
 Given an input image $$I_A$$ and a domain label $$t$$, the goal is to find the parameters of the classifier $$D$$ that minimizes the cross-entropy between the output of the classifier and the target label $$t$$.
 
 ## Online Learning
 
-![](/article/images/Weather/onlinelearning.png)
+![](/article/images/Weather/onlinelearning.jpg)
 
 The previous subsections can extend to incremental unsupervised, online learning of new unseen domains without requiring any significant modifications to the existing system.
 This process is used to:
@@ -96,6 +96,6 @@ If the following training pipeline is triggered:
 
 # Results
 
-![](/article/images/Weather/result_matrix.png)
+![](/article/images/Weather/result_matrix.jpg)
 
-![](/article/images/Weather/resultats_table.png)
+![](/article/images/Weather/resultats_table.jpg)

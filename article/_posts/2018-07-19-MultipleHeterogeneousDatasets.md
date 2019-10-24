@@ -19,7 +19,7 @@ The network is the first to be simultaneously trained on three different dataset
 The network is able to handle different class imbalances and different annotation types (per-pixel and bounding-box).
 Their implementation achieves inference rates of 17 fps at a resolution of 520x706 for 108 classes.
 
-![](/article/images/multipledataset/multipledataset_network.png)
+![](/article/images/multipledataset/multipledataset_network.jpg)
 
 To include the *GTSDB* during training, they propose a new hierarchical loss.
 
@@ -29,7 +29,7 @@ Where $$|\cdot|$$ is the cardinality of the pixel’s set, and $$y^{j,p}\;\epsil
 Pixels $$P_1^j$$ with per-pixel annotations are trained using the standard one-hot cross-entropy loss.
 Pixels $$P_1^j$$ with non-per-pixel annotations are trained with generated per-pixel ground truth using a modified cross-entropy loss.
 
-![](/article/images/multipledataset/multipledataset_bb.png)
+![](/article/images/multipledataset/multipledataset_bb.jpg)
 
 ## Initiative
 To increase the number of recognizable classes they use existing auxiliary datasets only for new (sub)classes. In that case, all classes of *GTSDB* are subclasses of the traffic sign class in *Cityscapes*. The straightforward approach of combining classes from both datasets in a conventional flat classifier is infeasible since a traffic sign pixel cannot have different labels depending on the dataset it comes from.
@@ -38,7 +38,7 @@ To summarize, the contributions of this work to per-pixel semantic segmentation 
 * A methodology for combined training on datasets with disjoint, but semantically connected, label spaces.
 * A modular architecture of hierarchical classifiers that can replace the classification stage in modern convolutional networks.
 
-![](/article/images/multipledataset/multipledataset_h.png)
+![](/article/images/multipledataset/multipledataset_h.jpg)
 
 ## Semantic hierarchy of label spaces
 
@@ -50,6 +50,6 @@ Each classifier (root, rider, drivable, t. sign, front) classifies the children 
 
 ## Results
 
-![](/article/images/multipledataset/multipledataset_ri.png)
+![](/article/images/multipledataset/multipledataset_ri.jpg)
 
-![](/article/images/multipledataset/multipledataset_rt.png)
+![](/article/images/multipledataset/multipledataset_rt.jpg)

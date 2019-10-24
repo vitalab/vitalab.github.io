@@ -13,14 +13,14 @@ cite:
 ## Main Idea
 A new network named category-level adversarial network (CLAN), aiming to address the problem of semantic inconsistency incurred by global feature alignment during unsupervised domain adaptation (UDA).
 
-![](/article/images/CLAN/clan_uda.png)
+![](/article/images/CLAN/clan_uda.jpg)
 
 CLAN adaptively weights the adversarial loss for each feature according to how well their category-level alignment is.
 This method effectively prevents the well-aligned features from being incorrectly mapped by the side effect of pure global distribution alignment.
 
 ## CLAN
 
-![](/article/images/CLAN/clan_network.png)
+![](/article/images/CLAN/clan_network.jpg)
 
 Feature Extractor: a DeepLab-v2 framework with ResNet-101 pre-trained on ImageNet or a VGG-16 based FCN8s, with an SGD optimizer.
 
@@ -30,25 +30,25 @@ Finally, an up-sampling layer to the last layer to rescale the output to the siz
 
 ## Loss
 
-![](/article/images/CLAN/clan_allloss.png)
+![](/article/images/CLAN/clan_allloss.jpg)
 
 ### Segmentation loss
 
-![](/article/images/CLAN/clan_segloss.png)
+![](/article/images/CLAN/clan_segloss.jpg)
 
 ### Weight discrepancy loss
 
-![](/article/images/CLAN/clan_weightloss.png)
+![](/article/images/CLAN/clan_weightloss.jpg)
 
 ### Category-level adversarial loss
 
-![](/article/images/CLAN/clan_adloss.png)
+![](/article/images/CLAN/clan_adloss.jpg)
 
 ## Results
 
-![](/article/images/CLAN/clan_table.png)
+![](/article/images/CLAN/clan_table.jpg)
 
-![](/article/images/CLAN/clan_fig.png)
+![](/article/images/CLAN/clan_fig.jpg)
 
 ## To Understand
 

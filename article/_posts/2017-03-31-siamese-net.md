@@ -19,4 +19,4 @@ The authors explain the loss as follow :
 The Loss L is designed in such a way that its minimization will decrease the energy of
 genuine pairs (true pairs) and increase the energy of impostor pairs (false pair).```
 
-<img src="/article/images/siameses/figure_1.png" width="400">
+<img src="/article/images/siameses/figure_1.jpg" width="400">

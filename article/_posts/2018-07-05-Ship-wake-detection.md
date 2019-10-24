@@ -32,7 +32,7 @@ A new conjugate gradient training method is applied to back-propagation learning
 
 They use concepts of plane-wave detection in the Fourier space to develop the algorithm.
 
-![](/article/images/Ship_wake_detection/1991_preprocesing.png)
+![](/article/images/Ship_wake_detection/1991_preprocesing.jpg)
 
 "Line detection" is the Fourier transform of a function $$f(x,y)$$ with the Fourier power spectrum by $$\|F\|^{2} = FF*$$.
 
@@ -40,11 +40,11 @@ They use concepts of plane-wave detection in the Fourier space to develop the al
 
 "Feature list" is a pair of numbers, one for each tile, consisting of the maximum probability and its angle.
 
-![](/article/images/Ship_wake_detection/1991_samples.png)
+![](/article/images/Ship_wake_detection/1991_samples.jpg)
 
 ## Network
 
-![](/article/images/Ship_wake_detection/1991_network.png)
+![](/article/images/Ship_wake_detection/1991_network.jpg)
 
 Summary:
 1. A starting $$\vec{x}_{\,0}$$ point is selected by initializing the weights randomly, uniformly distributed between -0.5 and +0.5. The gradient $$\vec{g}_{\,0}$$ is computed at this point and an initial search direction vector $$\vec{d}_{\,0}=-\vec{g}_{\,0}$$ is selected.
@@ -63,6 +63,6 @@ To augment the number of images, they created a simulator to generate synthetic 
 
 They use the following five methods in their neural network implementation: Fletcher-Reeves, Polak-Ribière, Hestenes-Stiefel, Shanno, and steepest descent. The learning parameters (convergence parameters), are 0.1, 0.3, 0.5, 0.7, and 0.9.
 
-![](/article/images/Ship_wake_detection/1991_table1.png)
+![](/article/images/Ship_wake_detection/1991_table1.jpg)
 
-![](/article/images/Ship_wake_detection/1991_table2.png)
+![](/article/images/Ship_wake_detection/1991_table2.jpg)

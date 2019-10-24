@@ -42,12 +42,12 @@ Even without entropy coding, this is the first architecture able to outperform J
 Architecture :
 
 
-![](/article/images/compressionrnn/arch.png)
+![](/article/images/compressionrnn/arch.jpg)
 
 Visual examples:
 
 
-![](/article/images/compressionrnn/ex.png)
+![](/article/images/compressionrnn/ex.jpg)
 # Code
 [code for the best residual GRU and entropy coder]("https://github.com/tensorflow/models/tree/master/compression").
 

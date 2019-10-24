@@ -19,7 +19,7 @@ pdf: "https://d4mucfpksywv.cloudfront.net/emergent-tool-use/paper/Multi_Agent_Em
 
 # Introduction
 
-[![](/article/images/autocurricula/video1.png)](https://www.youtube.com/watch?v=kopoLzvh5jY)
+[![](/article/images/autocurricula/video1.jpg)](https://www.youtube.com/watch?v=kopoLzvh5jY)
 
 > Creating intelligent artificial agents that can solve a wide variety of complex human-relevant tasks has been a long-standing challenge in the artificial intelligence community.
 
@@ -29,7 +29,7 @@ The authors present six strategies learned by agents playing team hide-and-seek.
 
 # Methods
 
-![](/article/images/autocurricula/env.png)
+![](/article/images/autocurricula/env.jpg)
 
 The agents play hide and seek in an environment composed of various-shaped boxes and ramps as well as unmovable walls.
 
@@ -37,7 +37,7 @@ The agents play hide and seek in an environment composed of various-shaped boxes
 
 The agents can move by setting a force on themselves in the x and y directions as well as rotate along the z-axis, see objects in their line of sight and within a frontal cone, sense distance to objects, walls, and other agents around them using a lidar-like sensor, grab and move objects in front of them and lock objects in place. 
 
-![](/article/images/autocurricula/policy.png)
+![](/article/images/autocurricula/policy.jpg)
 
 Each agent acts independently and passes it's observations through a masked residual self-attention block then through an LSTM. Agent policies are trained with self-play and [PPO](http://vitalab.github.io/article/2019/05/09/PPO.html). During optimization, agents can use privileged information about obscured objects and other agents in their value function. They found that their agents converge the fastest using mini-batches of _64 000_ 10-transitions per update.
 
@@ -45,7 +45,7 @@ Each agent acts independently and passes it's observations through a masked resi
 
 The authors found that the agents always came up with the same strategies throughout learning
 
-![](/article/images/autocurricula/strategies.png)
+![](/article/images/autocurricula/strategies.jpg)
 
 To see if autocurricula was the only way to learn these complex strategies, the authors also taught the agents through _intrinsic motivation_, where agents are rewarded for exploring the state space. However, as shown below, the learned behaviors were less meaningful.
 

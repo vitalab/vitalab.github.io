@@ -51,7 +51,7 @@ normalization regularization. Dropout ($$p=0.5$$) is applied before the
 first fully-connected layer. Adadelta optimizer used during training.
 - Method 3: combination of the two.
 
-![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/ConvNet_architectute.png)
+![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/ConvNet_architectute.jpg)
 
 ## Data
 All methods were trained on 32 patients (25 training set; 7 validation set),
@@ -73,13 +73,13 @@ bias correction using N4.
 - **Volume difference** (VD)
 
 # Results
-![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/Segmentation_results.png)
+![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/Segmentation_results.jpg)
 
 Low lesion-wise false positives (30%) for the deep learning architecture,
 whereas the shallow architecture yields the best Dice coefficient (63%) and
 volume difference (19%).
 
-![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/Results_table.png)
+![](/article/images/ShallowVsDeepLearningMSLesionSegmentation/Results_table.jpg)
 
 Dependence of LeMan-PV performance on the minimum lesion size considered,
 whereas the CNNs did not show this behavior.

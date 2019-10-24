@@ -15,7 +15,7 @@ In this paper, the authors use localization and semantic segmentation to perform
 Their end-to-end network, which outputs a variable number of instances per input image, begins with an initial semantic segmentation module. The following dynamic part of the network uses information from an object detector and a Conditional Random Field (CRF) model to distinguish different instances.
 
 <div align="middle">
-  <img src="/article/images/dynamic_crf/model.png" width="600">
+  <img src="/article/images/dynamic_crf/model.jpg" width="600">
 </div>
 
 An **important** note is that you need to guess $$ D $$ the number of instances in the image.
@@ -31,4 +31,4 @@ To train the network, they train the segmentation part first and then finetune w
 The proposed method is state of the art for a high IoU threshold (> 0.7) on PASCAL VOC and SBD.
 In the following figure, the *piecewise* version is that they froze the segmentation part to only fine-tune the instance segmentation subnetwork.
 
-![](/article/images/dynamic_crf/result.png)
+![](/article/images/dynamic_crf/result.jpg)

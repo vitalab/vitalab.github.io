@@ -12,7 +12,7 @@ cite:
 
 LCNN is a novel layer that can replace any convolutional layer. The main thing is that a filter is "decomposed" as a linear combination of parts from a dictionary. The ability to tune the dictionary size and the number of elements in the linear combination allows an **efficiency/accuracy trade-off** (see Figure 3). In addition, the authors argue that LCNN has an advantage in **few-shot learning** and **few-iteration learning** settings.
 
-![](/article/images/lookup-cnn/fig3.png)
+![](/article/images/lookup-cnn/fig3.jpg)
 
 # Filter Construction
 
@@ -27,7 +27,7 @@ Then, we can formulate the construction as follows:
 
 $$ \bold{W}_{[:,r,c]} = \sum_{t=1}^s \bold{C}_{[t,r,c]} \cdot \bold{D}_{[\bold{I}_{[t,r,c]},:]} $$
 
-![](/article/images/lookup-cnn/fig1.png)
+![](/article/images/lookup-cnn/fig1.jpg)
 
 # Fast Convolution using a Shared Dictionary
 
@@ -41,10 +41,10 @@ During training, we learn $$ \bold{D} $$ and $$ \bold{P} $$. To obtain a tensor 
 
 The authors argue that this layer architecture has a performance advantage in few-shot learning settings, as we can see in the following plot (extracted from Figure 4).
 
-![](/article/images/lookup-cnn/fig4.png)
+![](/article/images/lookup-cnn/fig4.jpg)
 
 # Few-iteration learning
 
 The authors also argue that LCNN can learn more in the first iterations of training than an ordinary CNN. In one experiment, they transferred the dictionary learned with a shallow network to a deeper network and only trained $$ \bold{I} $$ and $$ \bold{C} $$. See Figure 5 for the learning curves.
 
-![](/article/images/lookup-cnn/fig5.png)
+![](/article/images/lookup-cnn/fig5.jpg)

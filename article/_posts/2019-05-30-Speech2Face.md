@@ -43,7 +43,7 @@ Qualitative results are available [here](https://speech2face.github.io/supplemen
 
 For quantitative results, the authors used [Face++](https://www.faceplusplus.com/attributes/) to compare features from the original images and the reconstructed faces. The Face++ classifiers return either “male” or “female” for gender, a continuous number for age, and one of the four values, “Asian”, “black”, “India”, or “white”, for ethnicity. The corresponding confusion matrices are available below
 
-![](/article/images/Speech2Face/fig4.png)
+![](/article/images/Speech2Face/fig4.jpg)
 
 The authors also extracted craniofacial attributes from the reconstructed F2F and S2F images that resulted in a high correlation between the two.
 

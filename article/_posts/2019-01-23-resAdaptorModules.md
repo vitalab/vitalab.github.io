@@ -17,7 +17,7 @@ pdf: "https://arxiv.org/pdf/1705.08045.pdf"
 The goal of this paper is to develop neural network architectures that can work well in a multiple-domain setting.  The authors introduce a design for multivalent neural  network architectures for multiple-domain learning (c.f. fig. 2). The key idea is to reconfigure  a deep neural network to work on different domains as needed.  They show that the proposed models are equivalent to packing the adaptation  parameters in convolutional layers added to the network. The layers in the resulting parametric network are either *domain-agnostic*, hence shared between domains, or *domain-specific*, hence parametric.
 
 
-<center><img src="/article/images/resadm/sc01.png" width="600"></center>
+<center><img src="/article/images/resadm/sc01.jpg" width="600"></center>
 
 ## Proposed method
 
@@ -34,8 +34,8 @@ They also add **batch normalization** modules after convolutional layers in orde
 
 ## Results
 
-<center><img src="/article/images/resadm/sc02.png" width="450"></center> 
+<center><img src="/article/images/resadm/sc02.jpg" width="450"></center> 
 
 They tested their method on the Visual Decathlon challenge which combines ten well-known datasets from multiple visual domains.  The show that their method is smaller and as good (if no better) than using 1 model per domain.  It is also far better than a naive one model + fine tuning approach.
 
-<center><img src="/article/images/resadm/sc03.png" width="800"></center> 
+<center><img src="/article/images/resadm/sc03.jpg" width="800"></center> 

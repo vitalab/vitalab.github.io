@@ -30,7 +30,7 @@ Here, we will compare formulations in a regression setting, but we could also do
 
 We can write the usual nested training approach as follows:
 
-![](/article/images/mac/fig1.png)
+![](/article/images/mac/fig1.jpg)
 
 The way we solve this problem is using backpropagation.
 
@@ -38,11 +38,11 @@ The way we solve this problem is using backpropagation.
 
 An auxiliary variable **z** is introduced per data point and per hidden unit.
 
-![](/article/images/mac/fig2.png)
+![](/article/images/mac/fig2.jpg)
 
 We optimize the output of the system to match the target value **y**, subject to the constraint that each auxiliary variable match the output of the preceding layer. One way to solve this constrained optimization problem is using Quadratic-Penalty Optimization:
 
-![](/article/images/mac/fig3.png)
+![](/article/images/mac/fig3.jpg)
 
 The Alternating Direction Method of Multipliers (ADMM) can also be used and is expected to perform better by the authors.
 

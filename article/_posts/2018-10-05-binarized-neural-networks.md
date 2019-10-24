@@ -49,7 +49,7 @@ Instead, a straight-through estimator is used, which corresponds to computing th
 
 - For better efficiency, Shift-based BatchNorm is used, which is an approximation of BatchNorm that uses almost no multiplications.
 
-![](/article/images/binarized-neural-networks/algorithm3.png)
+![](/article/images/binarized-neural-networks/algorithm3.jpg)
 
 ## Experiments
 
@@ -57,14 +57,14 @@ Instead, a straight-through estimator is used, which corresponds to computing th
 - CIFAR-10
 - SVHN
 
-> ![](/article/images/binarized-neural-networks/table1.png)
+> ![](/article/images/binarized-neural-networks/table1.jpg)
 
 
 **BNNs take longer to train, but are nearly as accurate**:
 
-> ![](/article/images/binarized-neural-networks/figure1.png)
+> ![](/article/images/binarized-neural-networks/figure1.jpg)
 
 
 **New binary kernel is 7x faster on GPU**:
 
-> ![](/article/images/binarized-neural-networks/figure2.png)
+> ![](/article/images/binarized-neural-networks/figure2.jpg)

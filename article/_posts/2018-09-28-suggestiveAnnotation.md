@@ -15,9 +15,9 @@ cite:
 
 The authors address the following question: *With limited effort (e.g., time) for annotation, what instances should be annotated in order to attain the best performance?* For this, they present a deep active learning framework that combines fully convolutional network (FCN) and active learning to reduce annotation effort.  The method is summarized in Figure 1.
 
-<center><img src="/article/images/suggestiveAnnotation/sc01.png" width="700"></center>
+<center><img src="/article/images/suggestiveAnnotation/sc01.jpg" width="700"></center>
 
-<center><img src="/article/images/suggestiveAnnotation/sc02.png" width="700"></center>
+<center><img src="/article/images/suggestiveAnnotation/sc02.jpg" width="700"></center>
 
 
 
@@ -36,14 +36,14 @@ The method works as follows:
 
 NOTE: **an image is representative** when its 1024 descriptor is close to that of many other unannotated images. 
 
-<center><img src="/article/images/suggestiveAnnotation/sc03.png" width="600"></center>
+<center><img src="/article/images/suggestiveAnnotation/sc03.jpg" width="600"></center>
 
 
 ### Results
 
 Their method is better than random selection (c.f. figure 5) and beat other state-of-the-art methods (c.f. Table 2) 
 
-<center><img src="/article/images/suggestiveAnnotation/sc05.png" width="600"></center>
-<center><img src="/article/images/suggestiveAnnotation/sc04.png" width="400"></center>
+<center><img src="/article/images/suggestiveAnnotation/sc05.jpg" width="600"></center>
+<center><img src="/article/images/suggestiveAnnotation/sc04.jpg" width="400"></center>
 
 

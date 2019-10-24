@@ -20,20 +20,20 @@ This paper aims to approximate a block diagonal Fisher matrix by doing a reparam
 
 Using eq. 7, we can approximate the Fisher matrix from two components which are available : the inputs and the gradients.
 
-![](/article/images/rewc/eq7.png)
+![](/article/images/rewc/eq7.jpg)
 
 
 From those two components, we can find two new weights $$U_{1}, U_{2}$$.
 These weights will provide an approximate diagonalisation of $$W$$, thus preventing catastrophic forgetting. The learnable weight then become $$W' = U^{T}_{2}WU^{T}_{1}$$.
 
-![](/article/images/rewc/eq89.png)
-![](/article/images/rewc/fig3.png)
+![](/article/images/rewc/eq89.jpg)
+![](/article/images/rewc/fig3.jpg)
 
 ## Results
 On multiple datasets, the authors show that their method works better than standard EWC.
-![](/article/images/rewc/table3.png)
+![](/article/images/rewc/table3.jpg)
 
-![](/article/images/rewc/fig5.png)
+![](/article/images/rewc/fig5.jpg)
 
 
 

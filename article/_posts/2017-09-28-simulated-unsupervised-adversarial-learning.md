@@ -12,7 +12,7 @@ pdf: "https://arxiv.org/pdf/1612.07828.pdf"
 
 ## Summary
 
-![](/article/images/simulated-unsupervised-adversarial-learning/figure2.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/figure2.jpg)
 
 
 The refiner $$R_{\theta}$$ is a fully convolutional network without striding or pooling.
@@ -21,11 +21,11 @@ The refiner $$R_{\theta}$$ is a fully convolutional network without striding or 
 In addition to the usual adversarial loss ($$l_{real}$$), a regularization loss is used to preserve "annotation" information from the simulator ($$l_{reg}$$).
 
 
-![](/article/images/simulated-unsupervised-adversarial-learning/equation1.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/equation1.jpg)
 
 The function $$\psi$$ in the regularization term is a mapping to feature space. It is usually the identity function, but in some cases the authors use other features, like the mean of color channels or a convnet output for example.
 
-![](/article/images/simulated-unsupervised-adversarial-learning/equation4.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/equation4.jpg)
 
 
 ### Generated images history for discriminator training
@@ -39,8 +39,8 @@ The training set for the discriminator update is built using 50% real images, 25
 - Appearance-based gaze estimation on **MPIIGaze** dataset
 - Hand pose estimation on **NYU hand pose dataset of depth images**
 
-![](/article/images/simulated-unsupervised-adversarial-learning/figure5.png)
-![](/article/images/simulated-unsupervised-adversarial-learning/figure8.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/figure5.jpg)
+![](/article/images/simulated-unsupervised-adversarial-learning/figure8.jpg)
 
 
 **Visual Turing test**
@@ -48,8 +48,8 @@ A "Visual Turing test" for classifying real vs. refined images was done, and the
 
 Training on refined synthetic data outperforms training on purely synthetic data by 22.3%.
 
-![](/article/images/simulated-unsupervised-adversarial-learning/table2.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/table2.jpg)
 
 
 **Comparison to other methods**
-![](/article/images/simulated-unsupervised-adversarial-learning/table3.png)
+![](/article/images/simulated-unsupervised-adversarial-learning/table3.jpg)

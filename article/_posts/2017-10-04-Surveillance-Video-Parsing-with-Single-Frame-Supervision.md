@@ -15,13 +15,13 @@ pdf: "https://arxiv.org/pdf/1611.09587.pdf"
 The goal is to segment video frames into several labels, e.g., face, pants, left-leg. In this paper, they develop a method called ``Single frame Video Parsing (SVP)`` which
 requires only one labeled frame per video in training stage.  SVP (i) roughly parses the frames within the video segment, (ii) estimates the optical flow between frames and (iii) fuses the rough parsing results warped by optical flow to produce the refined parsing results.
 
-![](/article/images/SVP/sc01.png)
+![](/article/images/SVP/sc01.jpg)
 
 ### Architecture
 
 The architecture is described below
 
-![](/article/images/SVP/sc02.png)
+![](/article/images/SVP/sc02.jpg)
 
 $$I_{t}, I_{t-l}, I_{t-s} $$ are input frames and only $$I_{t}$$ has a ground truth
 
@@ -37,7 +37,7 @@ $$P_{t}$$ is the final segmentation map
 
 
 ## Experiments and Results
-![](/article/images/SVP/sc03.png)
+![](/article/images/SVP/sc03.jpg)
 
 
 The main limitation of this method is that **it only works on small videos**.

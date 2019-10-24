@@ -20,7 +20,7 @@ For a sequence classification task using an RNN, adding small reconstruction/pre
 - Use the RNN representation to either reconstruct previous events or predict next events in a sequence
 - Improves over full BPTT in performance and scalability: all gradients are truncated (auxiliary and supervised)
 
-![](/article/images/rnn-long-term/figure1.png)
+![](/article/images/rnn-long-term/figure1.jpg)
 
 ### Auxiliary loss
 
@@ -30,7 +30,7 @@ For a sequence classification task using an RNN, adding small reconstruction/pre
 
 2) Next sub-sequence prediction (p-LSTM)
 
-![](/article/images/rnn-long-term/figure2.png)
+![](/article/images/rnn-long-term/figure2.jpg)
 
 ### Procedure
 
@@ -58,26 +58,26 @@ For a sequence classification task using an RNN, adding small reconstruction/pre
 
 - In most experiments, only one anchor point is used, with a sub-sequence of 600 elements
 
-![](/article/images/rnn-long-term/table1.png)
+![](/article/images/rnn-long-term/table1.jpg)
 
 - MNIST/CIFAR-10:
 
-![](/article/images/rnn-long-term/table2.png)
+![](/article/images/rnn-long-term/table2.jpg)
 
 - StanfordDogs: All models have 100 epochs of training, + 20 pretraining epochs for r-LSTM and p-LSTM
 - Accuracy is not the main goal, only robustness to sequence length
 
-![](/article/images/rnn-long-term/figure3.png)
+![](/article/images/rnn-long-term/figure3.jpg)
 
 
 - Shrinking BPTT length on CIFAR-10:
 
-![](/article/images/rnn-long-term/figure4.png)
+![](/article/images/rnn-long-term/figure4.jpg)
 
 
 - Training/testing curves:
 
-![](/article/images/rnn-long-term/figure5.png)
+![](/article/images/rnn-long-term/figure5.jpg)
 
 ### Notes
 

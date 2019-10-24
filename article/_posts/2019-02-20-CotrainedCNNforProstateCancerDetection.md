@@ -17,7 +17,7 @@ This paper presents an automated Prostate cancer (mentionned as PCa) detection s
 
 ## Method
 
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig1_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig1_Yang2017.jpg)
 
 **1. Image registration**
 ADC and T2w images are aligned (ADC on the reference T2w). Method Free Form Model based on mutual information maximization
@@ -33,22 +33,22 @@ Concatenated 2048 feature vector of each slice is input into a RBF-SVM classifie
 Non-maximum suppression on _M_ADC_  to detect local maximum points as the candidates. Candidates with response values above a threshold (based on Otsu's algorithm) are kept.
 
 
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig4_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig4_Yang2017.jpg)
 
 
 
 **Loss**
 
 They define a error E which is a weighted sum of 3 losses :
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/eq5_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/eq5_Yang2017.jpg)
 
 _l(p,y)_ are cross entropy losses and _l(M_ADC, M_T2w)_ is defined as :
 
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/eq3_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/eq3_Yang2017.jpg)
 
 They chose w1 = w2 = 1 and w3 = 0.2 (selected empirically).
 
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig5_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig5_Yang2017.jpg)
 
 
 ## Contributions
@@ -65,13 +65,13 @@ They chose w1 = w2 = 1 and w3 = 0.2 (selected empirically).
 - evaluation metrics : FROC curve for overall performance, ROC for binary task PCa vs lesion-free images, LLF and NL for localization performance
 
 **Pre-trained CNN vs training from scratch**
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig8_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig8_Yang2017.jpg)
 
 **6 variants of the method to distinguish PCa vs lesion-free images**
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig9_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig9_Yang2017.jpg)
 
 **PCa localization**
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Table2_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Table2_Yang2017.jpg)
 
 LLF = Lesion Localization Fraction : total nb of detected point within a real lesion / total nb of true lesions (true positive)\\
 NL = Non-Lesion Localization (false positive)
@@ -79,14 +79,14 @@ NL = Non-Lesion Localization (false positive)
 Dice DSC = 0.66, which is not the best but they argue that their method requires less manual annotation effort.
 
 **Overall performance**
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig11_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Fig11_Yang2017.jpg)
 
 AUC 0.97, 0.96, 0.96, 0.96, 0.95 for 1, 2, 4, 8 and all images per normal patient data.
 
 **Confusion matrix for GS grading**\\
 Preliminary evaluation based on 25 training samples. 5 lesions per category for training and 5 lesions for testing. 5 slices 2D per lesions.
 
-> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Table3_Yang2017.png)
+> ![](/article/images/Co-trainedCNNforProstateCancerDetection/Table3_Yang2017.jpg)
 
 ## Conclusion
 - Feasible to learn lesion localization with weakly-supervised CNN

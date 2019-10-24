@@ -60,12 +60,12 @@ Models:
 Evaluation: Train on synthetic data, then score on a real test set.
 
 
-> ![](/article/images/privacy-preserving-gan/figure1.png)
+> ![](/article/images/privacy-preserving-gan/figure1.jpg)
 
-> ![](/article/images/privacy-preserving-gan/figure1-de.png)
+> ![](/article/images/privacy-preserving-gan/figure1-de.jpg)
 
-> ![](/article/images/privacy-preserving-gan/figure2.png)
+> ![](/article/images/privacy-preserving-gan/figure2.jpg)
 
-> ![](/article/images/privacy-preserving-gan/figure3.png)
+> ![](/article/images/privacy-preserving-gan/figure3.jpg)
 
-> ![](/article/images/privacy-preserving-gan/figure4.png)
+> ![](/article/images/privacy-preserving-gan/figure4.jpg)

@@ -27,7 +27,7 @@ The idea is take the best of the two.
 
 ### ANTs
 
-![](/article/images/neural-trees/ants.png)
+![](/article/images/neural-trees/ants.jpg)
 
 In an ANT, computational paths and routing decisions are represented by (small) NNs with predetermined architecture.
 Exemple :
@@ -37,11 +37,11 @@ Exemple :
 
 The local optimization algorithm that determines the nature of a node uses back propagation and a classification loss (Negative log-likelihood).
 
-![](/article/images/neural-trees/training.png)
+![](/article/images/neural-trees/training.jpg)
 
 Once every path ends by a leaf, the tree is fully grown and a refinement step is applied to globally optimize the model and correct to some extend sub-optimal choices :
 
-![](/article/images/neural-trees/refinement.png)
+![](/article/images/neural-trees/refinement.jpg)
 
 The whole process takes less than 2 hours on a single GPU since only one tree is built.
 
@@ -51,12 +51,12 @@ The whole process takes less than 2 hours on a single GPU since only one tree is
 
 They conduct several experiments to show the consistency of their model. For instance, here is how their model reacts to the addition of training data according to the number of parameters in the primitive module (A > B > C) and compared to all-CNN :
 
-![](/article/images/neural-trees/exp.png)
+![](/article/images/neural-trees/exp.jpg)
 
 They apply this on MNIST and CIFAR-10, and mainly compare to similar hybrid methods, along with classical RF and CNN (LeNet5 and all-CNN). They beat them with a lot less parameters involved overall and at test time.
 
 Here are the results :
 
-![](/article/images/neural-trees/resSOTA.png)
+![](/article/images/neural-trees/resSOTA.jpg)
 
 They note that using transfer-learning helped boost their performance significantly, which suggests that their optimisation method could (should) be further improved.

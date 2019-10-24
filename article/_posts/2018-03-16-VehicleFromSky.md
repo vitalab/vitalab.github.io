@@ -28,38 +28,38 @@ Classification: LeNet-5, AlexNet and VGG16.
 - ISPRS Potsdam (Segmentation) [^fn3]
 - NZAM/ONERA Christchurch (Box/detection) [^fn4]
 
-<img src="/article/images/vfs/vfs_ds.png" width="600">
+<img src="/article/images/vfs/vfs_ds.jpg" width="600">
 
-<img src="/article/images/vfs/vfs_ds_table.png" width="600">
+<img src="/article/images/vfs/vfs_ds_table.jpg" width="600">
 
 ### Experiments/Results
 Segmentaiton: Potsdam(cars) = 95.1% and Christchurch(Vehicle) = 61.9%
 
-<img src="/article/images/vfs/vfs_seg.png" width="600">
+<img src="/article/images/vfs/vfs_seg.jpg" width="600">
 
 Detection:
 
-<img src="/article/images/vfs/vfs_det_meth.png" width="600">
+<img src="/article/images/vfs/vfs_det_meth.jpg" width="600">
 
-<img src="/article/images/vfs/vfs_det_table.png" width="600">
+<img src="/article/images/vfs/vfs_det_table.jpg" width="600">
 
-<img src="/article/images/vfs/vfs_det.png" width="600">
+<img src="/article/images/vfs/vfs_det.jpg" width="600">
 
 Classification:
 
-<img src="/article/images/vfs/vfs_class.png" width="600">
+<img src="/article/images/vfs/vfs_class.jpg" width="600">
 
  Transfer Learning for Vehicle Classification:
 
-<img src="/article/images/vfs/vfs_trans.png" width="600">
+<img src="/article/images/vfs/vfs_trans.jpg" width="600">
 
-<img src="/article/images/vfs/vfs_trans_table.png" width="600">
+<img src="/article/images/vfs/vfs_trans_table.jpg" width="600">
 
 Traffic Density Estimation:
 
-<img src="/article/images/vfs/vfs_dens.png" width="600">
+<img src="/article/images/vfs/vfs_dens.jpg" width="600">
 
-<img src="/article/images/vfs/vfs_dens_error.png" width="600">
+<img src="/article/images/vfs/vfs_dens_error.jpg" width="600">
 
 ***
 

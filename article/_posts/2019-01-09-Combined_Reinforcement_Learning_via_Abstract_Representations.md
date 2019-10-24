@@ -18,7 +18,7 @@ In this paper, the authors try to leverage both methods in a single architecture
 
 ## CRAR
 
-![](/article/images/combinedrlabstract/architecture.png)
+![](/article/images/combinedrlabstract/architecture.jpg)
 
 At each time step, an encoder tries to build a good simple representation of the actual state (or observation) of the environment. The model-based approach then tries to model the transition dynamics and rewards of the abstract model, and the model-free method tries to estimate the Q function associated with it.
 
@@ -28,15 +28,15 @@ Learning through an abstract representation instead of the actual environment ha
 
 Let's define the abstract state as
 
-![](/article/images/combinedrlabstract/abstractstate.png)
+![](/article/images/combinedrlabstract/abstractstate.jpg)
 
 where $$ e $$ is the encoder, $$\tau$$ the transition dynamics and $$ t $$ the timesteps. Planning is then done recursively as 
 
-![](/article/images/combinedrlabstract/qd.png)
+![](/article/images/combinedrlabstract/qd.jpg)
 
 with $$\rho$$ the learned reward, $$g$$ the learned discount factor and $$d$$ the "depth" of the planning (future time steps). The plan is then defined as
 
-![](/article/images/combinedrlabstract/plan.png).
+![](/article/images/combinedrlabstract/plan.jpg).
 
 ## Results
 
@@ -44,12 +44,12 @@ with $$\rho$$ the learned reward, $$g$$ the learned discount factor and $$d$$ th
 
 The first task considered was a labyrinth with no reward and terminal state.
 
-![](/article/images/combinedrlabstract/labyrinth.png)
+![](/article/images/combinedrlabstract/labyrinth.jpg)
 
 The authors wanted to test the interpretability of their abstract representation
 
-![](/article/images/combinedrlabstract/tsne.png)
-![](/article/images/combinedrlabstract/repr.png)
+![](/article/images/combinedrlabstract/tsne.jpg)
+![](/article/images/combinedrlabstract/repr.jpg)
 
 We can see above that the abstract representation provides a much more interpretable representation of its environment than T-SNE.
 
@@ -57,14 +57,14 @@ We can see above that the abstract representation provides a much more interpret
 
 The second task considered was a distribution of labyrinth, with one example below
 
-![](/article/images/combinedrlabstract/lab2.png)
+![](/article/images/combinedrlabstract/lab2.jpg)
 
 We can then see that the architecture generalizes well on the family of a labyrinth, contrary to a simple DDQN component (the architecture without the model-based part) or the architecture without the model-free part (dotted-lines)
 
-![](/article/images/combinedrlabstract/generalization.png)
+![](/article/images/combinedrlabstract/generalization.jpg)
 
 ### Transfer learning
 
 Still on the same problem of labyrinths, the authors then wanted to verify if the architecture can support component swapping for transfer learning problems. To test this, they trained the algorithm on the labyrinth-distribution problem, and after some epochs, inverted the value of pixels in the images, both in the environment and states in memory. We can see with the graph below that the architecture performs as well as before the transfer procedure, while it has to re-learn without it.
 
-![](/article/images/combinedrlabstract/transfer.png)
+![](/article/images/combinedrlabstract/transfer.jpg)

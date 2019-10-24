@@ -21,11 +21,11 @@ The idea is to penalize predictions that wouldn't amount to a star shaped object
 
 "Assuming c is the center of object O, object O is a star shape object if, for any point p interior to the object, all the pixels q lying on the straight line segment connecting p to the object center c are inside the object".
 
-![](/article/images/star-prior/prior.png)
+![](/article/images/star-prior/prior.jpg)
 
 Here is the expression of the new loss term that they combine to a binary cross entropy loss :
 
-![](/article/images/star-prior/loss.png)
+![](/article/images/star-prior/loss.jpg)
 
 Basically, it enforces that with p and q any incident pixel on line l_pc, c being the groundtruth center, q should have the same label as p if they have the same grountruth labels and if p is assigned to the wrong class. Discontinuities of pixel labels on l_pc are only allowed on lesion boundaries and if the givel label is true.
 
@@ -41,10 +41,10 @@ They add the second term loss after 5 epochs. In practice, they only consider th
 
 Here are the Jaccard index results :
 
-![](/article/images/star-prior/res.png)
+![](/article/images/star-prior/res.jpg)
 
 For each experiment, they also computed a non-parametric Wilcoxon test that showed that the networks with and without the prior are statistically different at p < 0.05.
 
 Here is a visualization of the results : 
 
-![](/article/images/star-prior/visuals.png)
+![](/article/images/star-prior/visuals.jpg)

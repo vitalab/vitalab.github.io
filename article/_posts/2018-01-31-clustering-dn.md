@@ -32,13 +32,13 @@ $$p_{ij} = \frac{\frac{q^2_{ij}}{\sum_{i'}q_{i'j}}}{\sum_{j'}(\frac{q^2_{ij'}}{\
 
 The added loss is the KL divergence between P and Q. This loss forces the network to compute assignments with confidence. The authors also argue that this loss prevent large clusters from distorting the hidden feature space.
 
-![](/article/images/clustering_dn/fig1.png)
+![](/article/images/clustering_dn/fig1.jpg)
 
 The authors use a two-step training regime. They first train the autoencoder without the clustering loss and then add it.
 
 The authors show a t-sne plot of their embedding which seems superior to the autoencoder alone.
 
-![](/article/images/clustering_dn/fig2.png)
+![](/article/images/clustering_dn/fig2.jpg)
 
 They also test with COIL20 which is a dataset similar to CIFAR10 but with less samples and 20 classes.
 

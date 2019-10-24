@@ -49,11 +49,11 @@ and a **useful, non-robust feature** is a useful feature, but not a robust one.
 
 Useful features:
 
-![](/article/images/AdversarialExamplesAreFeatures/Useful_features.png)
+![](/article/images/AdversarialExamplesAreFeatures/Useful_features.jpg)
 
 Robust features:
 
-![](/article/images/AdversarialExamplesAreFeatures/Robust_features.png)
+![](/article/images/AdversarialExamplesAreFeatures/Robust_features.jpg)
 
 These useful, non-robust features help with classification in the standard
 setting, but may hinder accuracy in the adversarial setting.
@@ -73,7 +73,7 @@ the classifier from learning useful but non-robust features.
 
 # Experiments
 
-![](/article/images/AdversarialExamplesAreFeatures/Experiments.png)
+![](/article/images/AdversarialExamplesAreFeatures/Experiments.jpg)
 
 ## Disentangling robust and non-robust features
 
@@ -85,7 +85,7 @@ They use the set of activations in the penultimate layer to build a mapping for
 each input image to the set of robust images. They enforce the features maps to
 be similar for the original images and their robust versions.
 
-![](/article/images/AdversarialExamplesAreFeatures/Robust_dataset_generation.png)
+![](/article/images/AdversarialExamplesAreFeatures/Robust_dataset_generation.jpg)
 
 Given the new, robust training data set, they train a standard classifier using
 standard (non-robust) training, and test it on the original test set.
@@ -113,12 +113,12 @@ And since every $$x_{adv}$$ is strongly classified as $$t$$ by a standard
 classifier, it must be that some of the non-robust features are now strongly
 correlated with $$t$$ (in expectation).
 
-![](/article/images/AdversarialExamplesAreFeatures/Non_robust_dataset_generation.png)
+![](/article/images/AdversarialExamplesAreFeatures/Non_robust_dataset_generation.jpg)
 
 
 # Results
 
-![](/article/images/AdversarialExamplesAreFeatures/Results.png)
+![](/article/images/AdversarialExamplesAreFeatures/Results.jpg)
 
 - By restricting the dataset to only contain features that are used by a robust
 model, standard training results in classifiers that are robust.

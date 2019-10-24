@@ -47,7 +47,7 @@ from scratch with this updated set of images.
 This framework also allows to output additional information: uncertainty maps
 for each unlabeled samples.
 
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Pipeline.png)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Pipeline.jpg)
 
 The uncertainty measure used by the authors is based on taking **Monte Carlo
 samples** while using a **dropout regularization scheme**. This approach is
@@ -65,7 +65,7 @@ The **uncertainty is then defined as the posterior probabilities' standard
 deviation of the predictions**. The overall uncertainty is then computed by
 summing uncertainty maps' pixels values.
 
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Uncertainty_measure.png)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Uncertainty_measure.jpg)
 
 As expected, the model seems more uncertain near class borders. To overcome this
 issue, authors propose to multiply the uncertainty map image with the Euclidean
@@ -109,11 +109,11 @@ randomly-selected samples.
 
 Additionally, the gap between the two Dice curves is progressively decreasing.
 
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Active_learning_SBEM.png)
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Active_learning_TEM.png)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Active_learning_SBEM.jpg)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Active_learning_TEM.jpg)
 
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Results_figure_Dice.png)
-![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Results_figure_cross_entropy.png)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Results_figure_Dice.jpg)
+![](/article/images/DeepActiveLearningAxonMyelinSegmentation/Results_figure_cross_entropy.jpg)
 
 
 # Conclusions

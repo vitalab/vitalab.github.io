@@ -67,7 +67,7 @@ These distributions differ from standard fODFs, since they are conditioned by
 the DWI "history" along a specific streamline path. They refer to them as
 conditional fiber orientation distribution functions (CfODFs).
 
-![](/article/images/DeepTract/CfODFs.png)
+![](/article/images/DeepTract/CfODFs.jpg)
 
 
 ## Streamline Tractography
@@ -82,7 +82,7 @@ Deterministic tracking is performed by stepping in the most likely fiber
 orientation, i.e. $$\hat{d}_0 = arg {max}_{d} CfODF (p_0)$$. Probabilistic
 tracking can be performed by sampling a random direction from the CfODF.
 
-![](/article/images/DeepTract/Training-tracking.png)
+![](/article/images/DeepTract/Training-tracking.jpg)
 
 ### Tracking termination
 
@@ -126,15 +126,15 @@ in the training set.
 - Better generalization than ISMRM 2015 Challenge contestants when training on
 MITK output.
 
-![](/article/images/DeepTract/Results_ISMRM_Challenge.png)
+![](/article/images/DeepTract/Results_ISMRM_Challenge.jpg)
 
 - Qualitative (visual) demonstration of bundle-specific probabilistic
 tractography performed shows results "are in-line with the ground truth
 tractograms."
 
-![](/article/images/DeepTract/Whole_brain_tractography.png)
+![](/article/images/DeepTract/Whole_brain_tractography.jpg)
 
-![](/article/images/DeepTract/Bundle_probabilistic_tracking.png)
+![](/article/images/DeepTract/Bundle_probabilistic_tracking.jpg)
 
 
 # Discussion

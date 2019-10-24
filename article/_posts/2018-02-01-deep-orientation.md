@@ -26,7 +26,7 @@ Same as Method 1 but with a cosine loss $$L(\vec v_{gt},\vec v)=1-cos(\theta)$$ 
 The third method uses a finite number of discreet $$N=4$$ orientations.  In order to reduce the discretization error, they train 3 different networks with different starting orientation angle as shown in fig.2.  The softmax prediction of the 3 models are then combined with a mean-shift method and the orientation with the maximum probability is retained.
 
 <div style="text-align:center">
-<img src="/article/images/deepOrientation2017/sc01.png">
+<img src="/article/images/deepOrientation2017/sc01.jpg">
 </div>
 
 # Results 
@@ -35,15 +35,15 @@ They tested their method on 2 datasets : **EPFL-Car** and **TUD-Pedestrian**.  I
 
 
 <div style="text-align:center">
-<img src="/article/images/deepOrientation2017/sc02.png">
-<img src="/article/images/deepOrientation2017/sc03.png">
+<img src="/article/images/deepOrientation2017/sc02.jpg">
+<img src="/article/images/deepOrientation2017/sc03.jpg">
 </div>
 
 
 Example of results
 
-![](/article/images/deepOrientation2017/sc04.png)
-![](/article/images/deepOrientation2017/sc05.png)
+![](/article/images/deepOrientation2017/sc04.jpg)
+![](/article/images/deepOrientation2017/sc05.jpg)
 
 # Code
 Code is available [here](http://www.kotahara.com/uploads/1/8/2/0/18208959/public_code.zip)

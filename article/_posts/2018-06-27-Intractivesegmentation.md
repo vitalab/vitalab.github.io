@@ -23,7 +23,7 @@ First, a network synthesizes M segmentations f(x) = y, which y is a collection o
 plausible segments for another network(g) to select from. So, g takes a representation of the
 input and the synthesized segmentation masks, and produces a probability distribution over {1, . . . , M}.
 
-<img src="/article/images/IIS/1.png" width="1000">
+<img src="/article/images/IIS/1.jpg" width="1000">
 
 The input to the segmentation network f consists of the image X, clicks Sp(positive) and Sn(negative), distance transform where uses a Euclidean distance transformation and calculates the minimum Euclidean distance between a click point pixel and other pixels. In addition, they applied a VGG-19 network
 pre-trained on ImageNet dataset to the
@@ -32,9 +32,9 @@ image x and extract the feature maps.
 To produce a diversity segmentations, they applied Jaccard distance to measure the distance between the ground truth segmentation mask A(p) and predicted mask B(p)at pixel p. In addition, the input clicks are soft constraints where the Hadamard elementwise product is applied to Sp and predicted masks.
 Finally, The selection network, takes an input and is trained
 with the cross-entropy loss. 
-<img src="/article/images/IIS/2.png" width="300">
-<img src="/article/images/IIS/3.png" width="400">
-<img src="/article/images/IIS/4.png" width="400">
+<img src="/article/images/IIS/2.jpg" width="300">
+<img src="/article/images/IIS/3.jpg" width="400">
+<img src="/article/images/IIS/4.jpg" width="400">
 
 
 ### Experiments
@@ -42,9 +42,9 @@ with the cross-entropy loss.
 
 
 
-<img src="/article/images/IIS/7.png" width="800">
-<img src="/article/images/IIS/6.png" width="800">
-<img src="/article/images/IIS/5.png" width="800">
+<img src="/article/images/IIS/7.jpg" width="800">
+<img src="/article/images/IIS/6.jpg" width="800">
+<img src="/article/images/IIS/5.jpg" width="800">
 
 
 

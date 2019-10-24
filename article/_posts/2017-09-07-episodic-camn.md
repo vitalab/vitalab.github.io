@@ -12,13 +12,13 @@ pdf: "http://vintage.winklerbros.net/Publications/cvpr2017.pdf"
 
 ## Summary
 
-![](/article/images/episodic-camn/figure1.png)
+![](/article/images/episodic-camn/figure1.jpg)
 
 The proposed model is a Fully Convolutional Network (FCN) with soft attention on the patch representations (Contextual Attention-based Memory Network, or CAMN). The attention network iteratively refines its output using an RNN, which makes it an Episodic-CAMN.
 
 Basically, the model is VGG + Recurrent soft attention inserted between FC6 and FC7.
 
-![](/article/images/episodic-camn/figure2.png)
+![](/article/images/episodic-camn/figure2.jpg)
 
 
 ## Experiments and Results
@@ -31,15 +31,15 @@ Basically, the model is VGG + Recurrent soft attention inserted between FC6 and 
 They only compare with VGG-based networks with similar settings.
 
 
-![](/article/images/episodic-camn/figure3.png)
+![](/article/images/episodic-camn/figure3.jpg)
 
-![](/article/images/episodic-camn/figure4.png)
+![](/article/images/episodic-camn/figure4.jpg)
 
-![](/article/images/episodic-camn/figure5.png)
+![](/article/images/episodic-camn/figure5.jpg)
 
-![](/article/images/episodic-camn/figure6.png)
+![](/article/images/episodic-camn/figure6.jpg)
 
-![](/article/images/episodic-camn/table1.png)
+![](/article/images/episodic-camn/table1.jpg)
 
-![](/article/images/episodic-camn/table2.png)
+![](/article/images/episodic-camn/table2.jpg)
 

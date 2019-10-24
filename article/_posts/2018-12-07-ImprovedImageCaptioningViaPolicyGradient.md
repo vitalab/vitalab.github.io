@@ -45,7 +45,7 @@ This represents the score given by sequence $$g_{1:t}$$ given image $$x^n$$ and 
 
 To ensure the agent gets a reward at each timestep K Monte-Carlo rollouts are performed at each step.
 
-![](/article/images/PolicyGradientImageCaptioning/fig1.png)
+![](/article/images/PolicyGradientImageCaptioning/fig1.jpg)
 
 The value function for a specific state(sequence) is defined by:
 
@@ -123,12 +123,12 @@ The baseline's gradient is not back-propagated through the RNN to avoid a feedba
 The algorithm to train the network is as follows. In order to prevent the agent from being "too" random, the network is initially trained with MLE before switching to policy gradient.
 
 
-![](/article/images/PolicyGradientImageCaptioning/algo1.png)
+![](/article/images/PolicyGradientImageCaptioning/algo1.jpg)
 
 
 # Architecture
 
-![](/article/images/PolicyGradientImageCaptioning/fig2.png)
+![](/article/images/PolicyGradientImageCaptioning/fig2.jpg)
 
 
 The architecture used is an encoder-decoder. The encoder is an Inception-V3 pretrained on ImageNet and the decoder is a one-layer LSTM with a state size of 512.
@@ -142,6 +142,6 @@ CIDEr), SPICE and their new metric SPIDEr.
 SPICE uses a graph to compare the ground truth and generated sentences. However, it often syntactically wrong.
 Therefore, the best results were obtained using a linear combination of CIDEr and SPICE, known as SPIDEr.
 
-![](/article/images/PolicyGradientImageCaptioning/table1.png)
-![](/article/images/PolicyGradientImageCaptioning/fig3.png)
-![](/article/images/PolicyGradientImageCaptioning/table2.png)
+![](/article/images/PolicyGradientImageCaptioning/table1.jpg)
+![](/article/images/PolicyGradientImageCaptioning/fig3.jpg)
+![](/article/images/PolicyGradientImageCaptioning/table2.jpg)

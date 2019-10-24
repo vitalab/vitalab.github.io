@@ -49,7 +49,7 @@ The phase shift is a combination of
 
 They generate the 10 000 synthetic images for each of the 3 components, deformation **D**, stratified atmosphere **S**, and turbulent atmosphere **T**.
 
-![](/article/images/volcano/synthetic.png)
+![](/article/images/volcano/synthetic.jpg)
 
 ## Method
 Initially, they train the network using just the synthetic images.
@@ -57,7 +57,7 @@ They are labeled as 1 or positive, where deformation included, and 0 or negative
 Then, the initial model employed in the prediction process, where the new interferogram divided into overlapping patches and those containing phase jumps are tested with the trained CNN model.
 An expert then checks the results, the model is retrained, and the classification is repeated.
 
-![](/article/images/volcano/method.png)
+![](/article/images/volcano/method.jpg)
 
 * **2-class model**: The model is trained with 2 classes: deformation and non deformation.
 They generated the training data by combining signals D+S+T for the deformation class and only S+T for the non deformation class.
@@ -69,8 +69,8 @@ They applied a weight estimation approach using a multinomial classification.
 
 ## Results
 
-![](/article/images/volcano/table1.png)
+![](/article/images/volcano/table1.jpg)
 
-![](/article/images/volcano/fig4.png)
+![](/article/images/volcano/fig4.jpg)
 
 *Sentinel-1 takes data from the same place between 6 to 12 days, and an eruption have a time activity around 7 weeks*

@@ -16,7 +16,7 @@ The authors propose a method for obtaining resource-efficient neural networks. T
 
 The authors study 3 pruning costs: `C(w) = ||w||_p where p ∈ [0, 1, 2]`. These costs are used with 2 different approaches: the constraint form and the penalty form.
 
-![](/article/images/learning-compression/eq1.png)
+![](/article/images/learning-compression/eq1.jpg)
 
 ## Constraint form
 
@@ -26,7 +26,7 @@ $$ w $$ are the trainable weights of the network, and $$ \theta $$ is a set of t
 * $$ \theta $$ is optimized to respect the pruning constraint
 * $$ w, \theta $$ are optimized to be equal
 
-![](/article/images/learning-compression/eq2.png)
+![](/article/images/learning-compression/eq2.jpg)
 
 Alterning optimization is used. There is a Learning step and a Compression step. In the learning step, we minimize the following:
 
@@ -50,7 +50,7 @@ With this method, it is possible to find networks respecting a budget with diffe
 
 Results are pretty good
 
-![](/article/images/learning-compression/fig4.png)
+![](/article/images/learning-compression/fig4.jpg)
 
 # Reproducing the results
 

@@ -16,7 +16,7 @@ pdf: "http://proceedings.mlr.press/v80/chen18h/chen18h.pdf"
 
 PixelSNAIL is an autoregressive generative model:
 
-> ![](/article/images/pixel-snail/autoregressive.png)
+> ![](/article/images/pixel-snail/autoregressive.jpg)
 
 In this case, $$ (x_1, ..., x_n) $$ are the pixels of an image.
 
@@ -34,30 +34,30 @@ In this case, $$ (x_1, ..., x_n) $$ are the pixels of an image.
 
 Choosing an ordering for the pixels is an arbitrary choice. Usually, a raster scan is chosen :
 
-> ![](/article/images/pixel-snail/figure1.png)
+> ![](/article/images/pixel-snail/figure1.jpg)
 
 For example, causal convolutions (PixelCNN) are designed using a raster scan ordering : 
 
-> ![](/article/images/pixel-snail/figure2.png)
+> ![](/article/images/pixel-snail/figure2.jpg)
 
 The idea of PixelSNAIL is to combine a residual block and  a self-attention block.
 
-> ![](/article/images/pixel-snail/figure4.png)
+> ![](/article/images/pixel-snail/figure4.jpg)
 
-> ![](/article/images/pixel-snail/figure5.png)
+> ![](/article/images/pixel-snail/figure5.jpg)
 
 Receptive field for a randomly initialized model (Derivative of the predicted yellow pixel w.r.t the input):
 
-> ![](/article/images/pixel-snail/figure6.png)
-> ![](/article/images/pixel-snail/figure7.png)
-> ![](/article/images/pixel-snail/figure8.png)
+> ![](/article/images/pixel-snail/figure6.jpg)
+> ![](/article/images/pixel-snail/figure7.jpg)
+> ![](/article/images/pixel-snail/figure8.jpg)
 
 ## Results
 
 They compare results with other tractable likelihood methods on CIFAR-10, ImageNet 32x32 and ImageNet 64x64.
 
-> ![](/article/images/pixel-snail/table1.png)
+> ![](/article/images/pixel-snail/table1.jpg)
 
-> ![](/article/images/pixel-snail/figure10.png)
+> ![](/article/images/pixel-snail/figure10.jpg)
 
-> ![](/article/images/pixel-snail/figure11.png)
+> ![](/article/images/pixel-snail/figure11.jpg)

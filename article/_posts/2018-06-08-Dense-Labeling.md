@@ -12,7 +12,7 @@ cite:
 
 The *normal* way to cut the images is to cut it in *"tiles"*, but this approach suffers from computational inefficiency and can result in discontinuities at output boundaries to overcome this problem, and substantially reduce the negative impacts of label stitching, by **artificially increasing the input-patch size of CNNs only during label inferenc**.
 
-![](/article/images/dense-labeling/other_paper.png)
+![](/article/images/dense-labeling/other_paper.jpg)
 
 They propose an approach in which the input size of the CNN is dramatically increased only during label inference. They evaluate the performance in comparaison of a conventional stitching approach using two segmentation models and two large-scale remote sensing imagery datasets.
 
@@ -32,13 +32,13 @@ The results suggest that the proposed approach substantially reduces label infer
 
 Giving a 321x321 patches but resized the output of the networks to give 736x736.
 
-![](/article/images/dense-labeling/Dense_labeling_graph.png)
+![](/article/images/dense-labeling/Dense_labeling_graph.jpg)
 
-![](/article/images/dense-labeling/Dense_labeling_img.png)
+![](/article/images/dense-labeling/Dense_labeling_img.jpg)
 
-![](/article/images/dense-labeling/Dense_labeling_time.png)
+![](/article/images/dense-labeling/Dense_labeling_time.jpg)
 
-![](/article/images/dense-labeling/Dense_labeling_iou.png)
+![](/article/images/dense-labeling/Dense_labeling_iou.jpg)
 
 
 ### Acknoledgements

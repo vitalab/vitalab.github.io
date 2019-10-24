@@ -18,7 +18,7 @@ The authors hypothesize that the problem of "detachment" is a major weakness tha
 
 <br>
 
-![](/article/images/go-explore/detachment.png)
+![](/article/images/go-explore/detachment.jpg)
 
 <br>
 
@@ -50,10 +50,10 @@ To allow trajectories to have cells in common, a good state representation must 
 
 However, by using a hand-crafted cell representation, results are improved dramatically. (Note: The method is SotA even without this domain knowledge.) The hand-crafted representation contains the $$(x,y)$$ position of the agent, the current room, the current level, and the current number of keys held. This information is extracted from pixels.
 
-![](/article/images/go-explore/domainknowl.png)
+![](/article/images/go-explore/domainknowl.jpg)
 
 # Results that say "BAMF"
 
 Notice that Go-Explore _w/o domain knowledge_ equals expert human performance.
 
-![](/article/images/go-explore/results.png)
+![](/article/images/go-explore/results.jpg)

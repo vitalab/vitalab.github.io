@@ -23,7 +23,7 @@ This enables the use of attention for real-time applications, but the performanc
 ### Monotonic chunkwise attention
 The authors propose a simple solution to improve the monotonic attention. They compute a soft attention on a chunk at each timestep. They still use monotonic attention, but the feature vector is the weighted average of the chunk instead of the value of the node to attend.
 
-![](/article/images/monotonic/fig1.png)
+![](/article/images/monotonic/fig1.jpg)
 
 ## Experiments
 
@@ -36,7 +36,7 @@ Notes :
 1. Almost as good as offline methods
 2. Huge performance improvement compared to CTC methods
 
-![](/article/images/monotonic/table12.png)
+![](/article/images/monotonic/table12.jpg)
 
 
 ### Talk

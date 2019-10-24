@@ -66,7 +66,7 @@ the training set after their registration to the template using the three
 geometric features. They then register the normalized distance map to the
 template distance map to produce the deformation fields.
 
-![](/article/images/SphericalCNNCortexParcellation/Architecture.png)
+![](/article/images/SphericalCNNCortexParcellation/Architecture.jpg)
 
 The authors used a spherical U-net architecture designed for segmentation tasks.
 They provide the described geometric features to the input channels and the
@@ -102,8 +102,8 @@ The authors' approach outperforms multi-atlas (46 regions) and spherical U-Net
 
 No regions were found with significantly reduced Dice overlap.
 
-![](/article/images/SphericalCNNCortexParcellation/Results_images.png)
-![](/article/images/SphericalCNNCortexParcellation/Results_tables.png)
+![](/article/images/SphericalCNNCortexParcellation/Results_images.jpg)
+![](/article/images/SphericalCNNCortexParcellation/Results_tables.jpg)
 
 
 # Conclusions

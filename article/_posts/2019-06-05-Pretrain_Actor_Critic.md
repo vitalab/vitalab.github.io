@@ -37,9 +37,9 @@ which basically says that the expert always acts better or as good as expected.
 
 The authors then give the following gradients
 
-![](/article/images/pretrainac/critic.png)
+![](/article/images/pretrainac/critic.jpg)
 
-![](/article/images/pretrainac/pol.png)
+![](/article/images/pretrainac/pol.jpg)
 
 where $$w, \theta$$ are the parameters for the critic and actor networks. We can then combine them to the standard DDPG gradients 
 

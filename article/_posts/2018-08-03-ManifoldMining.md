@@ -21,7 +21,7 @@ Given a *meaningful initial representation* (in the following denoted by $$g$$),
 well as difficult negative samples (w.r.t. a fixed *anchor sample*). Then, during training they try to minimise
 the distance between anchor and positive sample and to maximise the distance between anchor and negative sample.
 
-<p style="text-align:center"><img src="/article/images/manifold_mining/manifold_examples.png" width="400"></p>
+<p style="text-align:center"><img src="/article/images/manifold_mining/manifold_examples.jpg" width="400"></p>
 
 #### Nearest neighbour graph
 
@@ -74,14 +74,14 @@ For this experiment, the CUB200-2011 data set with 200 classes is used (100 for 
 The initial representation space is given by the *R-MAC* features on the last convolutional layer
 of the pre-trained GoogLeNet (on ImageNet). Triplet loss is employed.
 
-<p style="text-align:center"><img src="/article/images/manifold_mining/image_examples.png" width="700"></p>
+<p style="text-align:center"><img src="/article/images/manifold_mining/image_examples.jpg" width="700"></p>
 
 Comparing the impact of their different samplings of training data, the authors found that employing
 $$P^+$$ and $$P^-$$ gave best results (even better when weighing the loss with the respective manifold distances).
 
-<p style="text-align:center"><img src="/article/images/manifold_mining/results_settings.png" width="400"></p>
+<p style="text-align:center"><img src="/article/images/manifold_mining/results_settings.jpg" width="400"></p>
 
 Comparing with fine-tuned approaches on the given data set, the proposed method achieves comparable performance.
 Note, that most methods to compare to are not unsupervised.
 
-<p style="text-align:center"><img src="/article/images/manifold_mining/results_comparison.png" width="400"></p> 
+<p style="text-align:center"><img src="/article/images/manifold_mining/results_comparison.jpg" width="400"></p> 

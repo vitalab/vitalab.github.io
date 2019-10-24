@@ -64,7 +64,7 @@ dataset, the meaning assigned to the background label is a virtual class "any
 label that is not lesion") and modify the loss function accordingly. The
 proposed adaptive cross-entropy is show in Figure 2.
 
-![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Loss.png)
+![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Loss.jpg)
 
 - When the label is not in conflict, minimizing the entropy is equivalent to
 maximizing the score for the correct class.
@@ -110,9 +110,9 @@ The proposed ACE makes it possible to train a single model for joint learning of
 brain lesion and anatomy from heterogeneous datasets, achieving equivalent
 performance to that of Multi-UNet.
 
-![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Results_images.png)
+![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Results_images.jpg)
 
-![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Results_table.png)
+![](/article/images/JointLearningBrainSegmentationHeterogeneousData/Results_table.jpg)
 
 
 # Conclusions

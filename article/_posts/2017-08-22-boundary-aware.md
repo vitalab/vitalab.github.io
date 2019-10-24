@@ -14,7 +14,7 @@ In this paper, the authors propose a **boundary-aware** method which is resilien
 To resolve this problem, the authors propose a new representation which is based on the distance between the pixel and the nearest boundary.
 
 <div align="middle">
-  <img src="/article/images/boundary-aware/annotation.png" width="200">
+  <img src="/article/images/boundary-aware/annotation.jpg" width="200">
 </div>
 
 ## Pipeline
@@ -24,7 +24,7 @@ First, they predict the boxes using an RPN. After ROI Warping, they predict a ma
 Using the mask and the box, they predict the class before computing the loss.
 
  <div align="middle">
-   <img src="/article/images/boundary-aware/model.png" width="600">
+   <img src="/article/images/boundary-aware/model.jpg" width="600">
  </div>
 
 
@@ -38,7 +38,7 @@ The network is quite big and slow compared to the previous SotA (78ms versus 42 
 While the idea is interesting, the results are quite the same as MNC on PASCAL VOC 2012.
 
 <div align="middle">
-  <img src="/article/images/boundary-aware/pascal_res.png" width="300">
+  <img src="/article/images/boundary-aware/pascal_res.jpg" width="300">
 </div>
 
 They did try the model on the Cityscapes dataset, but they did not get good result. (17.4% AP versus 32% for Mask R-CNN)

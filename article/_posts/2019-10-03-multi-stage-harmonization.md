@@ -37,7 +37,7 @@ Traveling heads datasets (one subject scanned on multiple scanners) are very lim
 
 ## Model figure
 
-![](/article/images/multi-stage-harmonization/figure1.png)
+![](/article/images/multi-stage-harmonization/figure1.jpg)
 
 
 
@@ -54,14 +54,14 @@ Traveling heads datasets (one subject scanned on multiple scanners) are very lim
 
 
 
-![](/article/images/multi-stage-harmonization/figure2.png)
+![](/article/images/multi-stage-harmonization/figure2.jpg)
 
 ## Results
 
 
-![](/article/images/multi-stage-harmonization/table1.png)
+![](/article/images/multi-stage-harmonization/table1.jpg)
 
-![](/article/images/multi-stage-harmonization/figure3.png)
+![](/article/images/multi-stage-harmonization/figure3.jpg)
 
 
 # Comments

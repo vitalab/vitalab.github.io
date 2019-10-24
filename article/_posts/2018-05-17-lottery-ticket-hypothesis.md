@@ -28,8 +28,8 @@ The hypothesis is empirically supported as follows:
 
 # Pics or it didn't happen
 
-![](/article/images/lottery/fig11.png)
-![](/article/images/lottery/fig14.png)
+![](/article/images/lottery/fig11.jpg)
+![](/article/images/lottery/fig14.jpg)
 
 # Caveats
 

@@ -31,12 +31,12 @@ Where $$g$$ is the scaling of the object or pattern and $$T^{\chi}(g)$$ to a lin
 
 ## Scale-Equivariant convolution with vector fields
 
-![](/article/images/ScaleEquivariance/scalee_network.png)
+![](/article/images/ScaleEquivariance/scalee_network.jpg)
 
-![](/article/images/ScaleEquivariance/scalee_methode.png)
+![](/article/images/ScaleEquivariance/scalee_methode.jpg)
 
 ## Results
 
-![](/article/images/ScaleEquivariance/scalee_results.png)
+![](/article/images/ScaleEquivariance/scalee_results.jpg)
 
-![](/article/images/ScaleEquivariance/scalee_rmse.png)
+![](/article/images/ScaleEquivariance/scalee_rmse.jpg)

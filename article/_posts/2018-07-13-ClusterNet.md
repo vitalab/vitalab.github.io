@@ -29,11 +29,11 @@ In Faster R-CNN, each 3 × 3 region of the output map of the RPN proposes nine p
 
 Following the focus on the second stage of the network on each proposed ROOBI to predict the location of all object(s) simultaneously, again combining spatial and temporal information.
 
-![](/article/images/ClusterNet/clusternet_network.png)
+![](/article/images/ClusterNet/clusternet_network.jpg)
 
 The effect is ClusterNet allows ignoring large regions of the search space while focusing a small high-resolution fovea centralis over regions which contain at least one to several hundred vehicles, illustrated below.
 
-![](/article/images/ClusterNet/clusternet_feova.png)
+![](/article/images/ClusterNet/clusternet_feova.jpg)
 
 FoveaNet then predicts the location all of the vehicles within that region to a high degree of accuracy for the given time frame of interest.
 
@@ -49,4 +49,4 @@ AOI 41 is 3207 × 2892.
 
 And AOI 42 is simply a sub-region of AOI 41 but was included to test the method against the one proposed by Prokaj et al. on persistent detections where slowing and stopped vehicles were not removed from the ground truth, even though Prokaj et al. uses tracking methods to maintain detections.
 
-![](/article/images/ClusterNet/clusternet_table.png)
+![](/article/images/ClusterNet/clusternet_table.jpg)

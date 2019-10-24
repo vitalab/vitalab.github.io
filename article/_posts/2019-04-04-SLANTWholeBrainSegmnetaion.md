@@ -58,9 +58,9 @@ the training data together: a test scan is segmented using the 15 atlases with
 the least distance with respect to the scan in the projected PCA space.
 
 
-![](/article/images/SLANTWholeBrainSegmentation/NetworkTiles.png)
+![](/article/images/SLANTWholeBrainSegmentation/NetworkTiles.jpg)
 
-![](/article/images/SLANTWholeBrainSegmentation/SLANTSubspaces.png)
+![](/article/images/SLANTWholeBrainSegmentation/SLANTSubspaces.jpg)
 
 ## Data
 
@@ -89,7 +89,7 @@ Testing is relatively fast (~15 minutes for a single volume).
 The SLANT-27 using 5111 auxiliary labels for pre-training and fine-tuned by 45
 manual labels achieved highest median DSC value.
 
-![](/article/images/SLANTWholeBrainSegmentation/Results.png)
+![](/article/images/SLANTWholeBrainSegmentation/Results.jpg)
 
 
 # Conclusions

@@ -20,7 +20,7 @@ pdf: "https://arxiv.org/pdf/1811.09655.pdf"
 **Solution**: use a convolutional autoencoder which incorporate a "segmentation layer" before the output. (c.f.Fig.1)
 
 
-![](/article/images/CAE_brainLesionSegmentation/sc01.png)
+![](/article/images/CAE_brainLesionSegmentation/sc01.jpg)
 
 
 ## Specific details 
@@ -45,5 +45,5 @@ not considered.  Furthermore, Gaussian noise with zero mean and a standard devia
 - 4811 brain MRI, all with T1, T2 and FLAIR. 
 
 
-![](/article/images/CAE_brainLesionSegmentation/sc02.png)
-![](/article/images/CAE_brainLesionSegmentation/sc03.png)
+![](/article/images/CAE_brainLesionSegmentation/sc02.jpg)
+![](/article/images/CAE_brainLesionSegmentation/sc03.jpg)

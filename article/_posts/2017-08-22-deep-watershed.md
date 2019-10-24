@@ -21,4 +21,4 @@ Using connected component analysis, the authors can then retrieve the instances.
 
 In this paper, the authors used PSPNet for the semantic segmentation.
 
-![](/article/images/deep-watershed/model.png)
+![](/article/images/deep-watershed/model.jpg)

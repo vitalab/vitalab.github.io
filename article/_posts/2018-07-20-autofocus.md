@@ -17,7 +17,7 @@ The authors present a new kind of layer called autofocus that learns the best ef
 
 The idea is to learn the appropriate scales for identifying the different objects of interest in an image because anatomical objects can either have variable size (bones, tumors, organs...) or be characterized by their size.
 
-![](/article/images/autofocus/attention.png)
+![](/article/images/autofocus/attention.jpg)
 
 The attention network in a) produces normalized K activations for each voxel, K being the number of scales considered. The attention weights are shared across all channels of a same scale. 
 
@@ -35,11 +35,11 @@ They apply this on multi-organ and brain segmentations:
 
 Here are the results :
 
-![](/article/images/autofocus/result.png)
+![](/article/images/autofocus/result.jpg)
 
 Performances are already improved with only one autofocus layer and it surpasses ASSP which corresponds to the concatenation of all the dilated convolutions. Converting more layers in autofocus tends to improve performances.
 
-![](/article/images/autofocus/result2.png)
+![](/article/images/autofocus/result2.jpg)
 
 Performances are on par with the top challengers. The pipelines of 10 and 7 used ensemble models and data augmentation so the authors defend the capacity of their model to be both competitive and simple. 
 

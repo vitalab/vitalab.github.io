@@ -18,14 +18,14 @@ One of their main contributions is the **Gradient Scale Coefficient (GSC)**, a m
 
 In figure 1A below, we see that many architectures have a linear progression of the GSC (in log-space), which denotes gradient explosion. Fig 1B and 1C are explained later.
 
-![](/article/images/resnet-explained/fig1.png)
+![](/article/images/resnet-explained/fig1.jpg)
 
 Another contribution is a method for computing the **effective depth of a network**. The authors explain that the effective depth is (almost) always lesser than the _compositional depth_ (they define the compositional depth as the number of parametrized layers) of a network. This can be caused by gradient explosion. To check their estimation of effective depth, they do the following experiment. They progressively replace the last layers of a network with a single layer, which is a Taylor expansion of the replaced layers.
 
 In the figure below, (D) is the progression of effective depth with training epochs; (F) is the effect of the experiments with the Taylor expansion on the training error. As you can see, an architecture with a greater effective depth will suffer sooner from a compositional depth reduction. Observe the other subplots at your own risk.
 
 
-![](/article/images/resnet-explained/fig2.png)
+![](/article/images/resnet-explained/fig2.jpg)
 
 # Collapsing domain
 
@@ -40,9 +40,9 @@ You have now unlocked the figure 1B and 1C! Hurray!!!
 
 The authors demonstrate that ResNets have lower GSC, and they argue that these architectures are mathematically simpler than _vanilla networks_. They explain that residual connections introduce what they call _dilution_, which prevents some of the gradient explosion, and help attain a higher effective depth.
 
-![](/article/images/resnet-explained/fig3.png)
+![](/article/images/resnet-explained/fig3.jpg)
 
-![](/article/images/resnet-explained/fig5.png)
+![](/article/images/resnet-explained/fig5.jpg)
 
 # Practical recommendations
 

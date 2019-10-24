@@ -15,21 +15,21 @@ The best object detectors are based on a two-stage approach popularized by R-CNN
 
 Authors argue that one stage methods suffer from class imbalance.  They propose a solution by using a new loss call the **Focal Loss** as in Fig.1.
 
-![](/article/images/retinanet/sc01.png)
+![](/article/images/retinanet/sc01.jpg)
 
 The main advantage of the focal loss is to give a near zero loss to the well classified samples whose probability are not close to one.  
 
 
 The proposed architecture is a pyramid net, somehow similar to a unet but with skipconnections and with an output at each level of the pyramid. 
 
-![](/article/images/retinanet/sc03.png)
+![](/article/images/retinanet/sc03.jpg)
 
 ### Results
 
 Results show that their method is more accurate and faster than previous methods.
 
-![](/article/images/retinanet/sc02.png)
+![](/article/images/retinanet/sc02.jpg)
 
-![](/article/images/retinanet/sc04.png)
+![](/article/images/retinanet/sc04.jpg)
 
 

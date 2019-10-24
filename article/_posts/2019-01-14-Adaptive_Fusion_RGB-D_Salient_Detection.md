@@ -19,12 +19,12 @@ They design a two-streamed convolutional neural network (CNN), each of which ext
 
 To have full supervision of the network, they added three losses: saliency supervision, switch map supervision, and edge-preserving constraints.
 
-![](/article/images/RGB_D/images.png)
+![](/article/images/RGB_D/images.jpg)
 
 ## Method
 They say they have two significant concerns existing in RGB-D saliency detection for achieving better performance: how to model the depth-induced saliency, and how to fuse RGB and depth modalities.
 
-![](/article/images/RGB_D/network.png)
+![](/article/images/RGB_D/network.jpg)
 
 # **Saliency Fusion Module**
 The switch map is a 1-channel image whose pixel values are assigned in [0, 1].
@@ -51,6 +51,6 @@ Where $$\partial_{x}$$ and $$\partial_{y}$$ are gradients in horizontal and vert
 
 ## Results
 
-![](/article/images/RGB_D/table.png)
+![](/article/images/RGB_D/table.jpg)
 
-![](/article/images/RGB_D/results.png)
+![](/article/images/RGB_D/results.jpg)

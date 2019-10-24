@@ -24,7 +24,7 @@ First, a tensor atlas is computed from all input subjects using the FA maps.
 The atlas-based diffusion tensors are used to generate all the streamlines on the atlas (using an unknown tracking method). 
 The streamlines are then segmented into bundles by experts to get the ground truth (GT).
 
-![](/article/images/trafic-tract-classification/figure1.png)
+![](/article/images/trafic-tract-classification/figure1.jpg)
 
 For each GT bundle, five landmark points are computed (probably by computing a bundle centroid).
 The GT bundles and their landmarks are then transferred back to subject space for training and testing.
@@ -53,9 +53,9 @@ After training, the model is tested on 50 unseen brains of 1-2 years old.
 The authors themselves _classified_ the resuls as "good", "acceptable", "empty" or "fail".
 A "good" or "acceptable" resulting bundle means a _success_.
 
-![](/article/images/trafic-tract-classification/figure6.png)
+![](/article/images/trafic-tract-classification/figure6.jpg)
 
-![](/article/images/trafic-tract-classification/figure8.png)
+![](/article/images/trafic-tract-classification/figure8.jpg)
 
 The high amount of "empty" results for ArcRFT is justified by the fact that it is actually biologically absent in 40% of females and 85% of males.
 
@@ -67,4 +67,4 @@ For this experiment, the whole arcuate fasciculus is studied instead of the fron
 
 The model is evaluated by a visual comparison to manually traced fibers.
 
-![](/article/images/trafic-tract-classification/figure10.png)
+![](/article/images/trafic-tract-classification/figure10.jpg)

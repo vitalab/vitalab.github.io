@@ -41,7 +41,7 @@ Authors propose a variety of novelty scores based on different criteria, such as
 distances between data points or distributions involved in the VAE formulation,
 the distance in different spaces, etc.
 
-![](/article/images/qSpaceNoveltyDetectionVAE/NoveltyDetectionScores.png)
+![](/article/images/qSpaceNoveltyDetectionVAE/NoveltyDetectionScores.jpg)
 
 A summary of the scores they propose:
 - Novelty in latent space
@@ -84,15 +84,15 @@ latent space outperform those based in distances in the original space.
 Reconstruction-based methods perform well provided that the dimensionality of
 the latent space has enough capacity.
 
-![](/article/images/qSpaceNoveltyDetectionVAE/Results_qSpace.png)
+![](/article/images/qSpaceNoveltyDetectionVAE/Results_qSpace.jpg)
 
-![](/article/images/qSpaceNoveltyDetectionVAE/Results_MS_segmentation.png)
+![](/article/images/qSpaceNoveltyDetectionVAE/Results_MS_segmentation.jpg)
 
 For the MNIST dataset, results show greater variance. Scores for digit "1" are
 considerably worse than for the rest, probably because the novelty presented by
 that digit is implied in other digits used for training.
 
-![](/article/images/qSpaceNoveltyDetectionVAE/Results_MNIST.png)
+![](/article/images/qSpaceNoveltyDetectionVAE/Results_MNIST.jpg)
 
 
 # Conclusions

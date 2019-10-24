@@ -45,7 +45,7 @@ Notes on the naming convention in the legends:
 * "Single" is an "ensemble" of size 1.
 * "Coreset" is a density-based method.
 
-![](/article/images/ensembles-active-learning/fig1.png)
+![](/article/images/ensembles-active-learning/fig1.jpg)
 
 Other results are provided, including a study on the size of the ensembles, and ways to make ensembling less computationally expensive.
 

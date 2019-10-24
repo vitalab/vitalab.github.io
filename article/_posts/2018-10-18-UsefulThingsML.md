@@ -30,7 +30,7 @@ Basic components of a ML task
 - **Evaluation**: An evaluation function (also called objective function or scoring function) is needed to distinguish good classifiers from bad ones.
 - **Optimization**: A method to maximize the score/minimize the loss.
 
-![](/article/images/UsefulThingsToKnowML/MLMethodComponents.png)
+![](/article/images/UsefulThingsToKnowML/MLMethodComponents.jpg)
 
 
 2. **IT'S GENERALIZATION THAT COUNTS**

@@ -72,7 +72,7 @@ Binary and multi-class segmentation experiments are performed in the framework
 of the BraTS challenge. BraTS considers 4 classes ("non-tumor",
 "contrast-enhancing core", "edema", and "non-enhancing core").
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Architecture.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Architecture.jpg)
 
 ## Binary segmentation
 
@@ -154,20 +154,20 @@ number of available ground truth segmentations.
 
 Dice scores tables:
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Binary_class_segmentation_results_table.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Binary_class_segmentation_results_table.jpg)
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Multiclass_segmentation_results_table.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Multiclass_segmentation_results_table.jpg)
 
 Dice score improvement with increasing number of weakly annotated images used
 with respect to bare fully annotated image score:
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Dice_score_plot.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Dice_score_plot.jpg)
 
 Segmentation results:
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Tumor_core_case_segmentation_result.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Tumor_core_case_segmentation_result.jpg)
 
-![](/article/images/MixedSupervisionBrainTumorSegmentation/Whole_tumor_case_segmentation_result.png)
+![](/article/images/MixedSupervisionBrainTumorSegmentation/Whole_tumor_case_segmentation_result.jpg)
 
 
 # Conclusions

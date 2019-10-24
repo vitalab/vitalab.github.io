@@ -22,12 +22,12 @@ Their model is separated in three parts, the policy network, the value network a
 #### Policy network
 The policy is a combination of the VGG16 and an LSTM. It is used to predict the next action given the current state, as shown in figure 2.
 
-![](/article/images/deep-rl-caption/fig2.png)
+![](/article/images/deep-rl-caption/fig2.jpg)
 
 #### Value network
 The value network has the same combination as the policy network but they add an MLP used for the regression task. It is used to evaluate the next word given the image features and the previous words sentence generated in the sentence.
 
-![](/article/images/deep-rl-caption/fig3.png)
+![](/article/images/deep-rl-caption/fig3.jpg)
 
 #### Training
 These two networks are first pretrained before using the reinforcement learning algorithm to make them work together.
@@ -41,7 +41,7 @@ The visual-semantic embedding is a model composed in three parts, a VGG16, a GRU
 
 They use a bidirectional ranking loss to train it, where $$v$$ is the image features vector, $$f_e(.)$$ is the mapping into the embedding space, and $$h'_T(.)$$ is the features of the last RNN state.
 
-![](/article/images/deep-rl-caption/eq6.png){: style="width: 450px"}
+![](/article/images/deep-rl-caption/eq6.jpg){: style="width: 450px"}
 
 
 ## Inference
@@ -49,17 +49,17 @@ For the prediction they use the policy network as a local guidance and the value
 The score for each word is given by,
 
 
-![](/article/images/deep-rl-caption/eq10.png){: style="width: 450px"}
+![](/article/images/deep-rl-caption/eq10.jpg){: style="width: 450px"}
 
 The global picture of the inference is shown in figure 1.
 
 
-![](/article/images/deep-rl-caption/fig1.png){: style="width: 450px"}
+![](/article/images/deep-rl-caption/fig1.jpg){: style="width: 450px"}
 
 ## Results
 They report results on MSCOCO caption dataset, using the [BLEU](https://en.wikipedia.org/wiki/BLEU) metric.
 
 
-![](/article/images/deep-rl-caption/tab1.png)
+![](/article/images/deep-rl-caption/tab1.jpg)
 
-![](/article/images/deep-rl-caption/fig4.png)
+![](/article/images/deep-rl-caption/fig4.jpg)

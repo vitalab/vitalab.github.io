@@ -31,7 +31,7 @@ dilation rates to have the same receptive field as the maxpooling network but wi
 The figure below presents these changes.
 
 <div align="middle">
-<img src="/article/images/drn/drn_changes.png"/>
+<img src="/article/images/drn/drn_changes.jpg"/>
 </div>
 
 We can see that they use different dilation rates to mimic the maxpooling operation.
@@ -45,7 +45,7 @@ this problem, they derive this model in two version, **DRN-B** and **DRN-C**.
 **DRN-C** based on (DRN-B) remove the residual connection in the latter layers to filter these artifacts.
 
 <div align="middle">
-<img src="/article/images/drn/drn_networks.png"/>
+<img src="/article/images/drn/drn_networks.jpg"/>
 </div>
 
 ## Results
@@ -54,13 +54,13 @@ Here is a summary of the results obtained by the different networks for the thre
 For the classification task, they improve the accuracy of the network with the same number of parameters and layers.
 They achieve almost the same accuracy than a much deeper network (ResNet101) with only half of its parameters.
 <div align="middle">
-<img src="/article/images/drn/classification.png"/>
+<img src="/article/images/drn/classification.jpg"/>
 </div>
 <br/><br/>
 For the weakly-supervised localization, the results show the same improvement than for the classification task.
 Larger feature maps improves the classification accuracy over a much deeper resnet.
 <div align="middle">
-<img src="/article/images/drn/localization.png"/>
+<img src="/article/images/drn/localization.jpg"/>
 </div>
 <br/><br/>
 They didn't report the ResNet101 detailed results, only its overall mean IoU for the segmentation task.
@@ -68,5 +68,5 @@ Their model on average produces better IoU than the ResNet.
 The segmentation produced by the DRN-C is better that their DRN-A architecture. We don't know for DRN-B, it may be better or worst...
 
 <div align="middle">
-<img src="/article/images/drn/segmentation.png"/>
+<img src="/article/images/drn/segmentation.jpg"/>
 </div>

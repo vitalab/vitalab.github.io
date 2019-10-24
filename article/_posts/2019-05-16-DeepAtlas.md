@@ -45,7 +45,7 @@ resulting segmentation and registration networks at test time.
 
 Architecture:
 
-![](/article/images/DeepAtlas/Architecture.png)
+![](/article/images/DeepAtlas/Architecture.jpg)
 
 They use the [Balakrishnan et al. design](https://vitalab.github.io/article/2018/03/02/unsupervised-registration.html)
 for the registration network and a customized U-Net for segmentation.
@@ -53,7 +53,7 @@ for the registration network and a customized U-Net for segmentation.
 Their approach is based on 2 parts:
 - Weakly-supervised registration learning
 
-![](/article/images/DeepAtlas/Registration_optimization.png)
+![](/article/images/DeepAtlas/Registration_optimization.jpg)
 
 where $$\Phi$$ is the spatial transformation applied to the moving image; $$I$$
 are the raw image data; and $$S$$ are the label maps.
@@ -66,7 +66,7 @@ anatomy similarity loss.
 segmentation loss (i.e. given a manual segmentation) $$\mathcal{L}_{sp}$$,
 the anatomy similarity loss term also drives the segmentation.
 
-![](/article/images/DeepAtlas/Segmentation_losses.png)
+![](/article/images/DeepAtlas/Segmentation_losses.jpg)
 
 where $$\mathcal{F}_{\mathcal{S}}$$ is the segmentation network.
 
@@ -77,7 +77,7 @@ segmentation of a labeled image via $$\mathcal{F}_{\mathcal{R}}$$.
 - $$\mathcal{L}_{a}$$ does not train the segmentation network when both images
 are labeled.
 
-![](/article/images/DeepAtlas/Segmentation_optimization.png)
+![](/article/images/DeepAtlas/Segmentation_optimization.jpg)
 
 The total loss is the weighted sum of the
 - The registration regularity loss $$\mathcal{L}_{r}$$ (smoothness)
@@ -122,11 +122,11 @@ Two variants:
 - Semi-DeepAtlas (Semi-DA): a network is trained with the other network held
 fixed.
 
-![](/article/images/DeepAtlas/Results_images.png)
+![](/article/images/DeepAtlas/Results_images.jpg)
 
-![](/article/images/DeepAtlas/Results_scores_knee.png)
+![](/article/images/DeepAtlas/Results_scores_knee.jpg)
 
-![](/article/images/DeepAtlas/Results_scores_brain.png)
+![](/article/images/DeepAtlas/Results_scores_brain.jpg)
 
 
 # Conclusions

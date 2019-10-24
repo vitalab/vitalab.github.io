@@ -50,4 +50,4 @@ The patch classifier is a DenseNet-121 trained on 256x-256-sized patches and sup
 
 Since the above diagrams are way too cluttered, here is some clearer results from the blog post:
 
-![](/article/images/BreastCancerScreening/results_blog.png)
+![](/article/images/BreastCancerScreening/results_blog.jpg)

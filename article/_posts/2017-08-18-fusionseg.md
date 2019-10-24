@@ -14,7 +14,7 @@ pdf: "https://arxiv.org/pdf/1701.05384.pdf"
 
 Two-stream fully convolutional network for generic object segmentation in videos. One stream processes a single RGB image (appearance stream) and the other uses an optical flow RGB image (motion stream). The two streams are then combined in a single model (fusion model)
 
-![](/article/images/fusionseg/twostream_model.png)
+![](/article/images/fusionseg/twostream_model.jpg)
 
 Each stream is based off a ResNet-101 pre-trained on image classification (ImageNet), where the last two groups of convolutions are replaced with dilated convolutions, and the classification layer is replaced with four parallel dilated convolutional layers (with different dilation parameters to handle objects of different scale).
 
@@ -25,7 +25,7 @@ The two streams are fused together using an ensemble model setup. The final pred
 
 Each stream is initialized using pre-trained weights from ImageNet classification, then trained on its own before training the fusion model with few examples. Since annotated video data for the motion stream is very limited, a bootstrapping procedure is used to generate weakly-annotated images. This is done by combining a dataset of videos with bounding boxes and the appearance stream's predictions (the appearance stream prediction is pruned using the bounding boxes, and the image is added to the motion stream's training dataset if it passes both a bounding box and a meaningful optical flow test).
 
-![](/article/images/fusionseg/bootstrap_procedure.png)
+![](/article/images/fusionseg/bootstrap_procedure.jpg)
 
 
 ## Results
@@ -35,7 +35,7 @@ Baselines are chosen from automatic methods (FST, KEY, NLC, COSEG) and semi-supe
 
 Results show that the fusion model generally outperforms other methods, both automatic and semi-supervised (needing human interaction). Note, however, that no deep learning methods were included in the baselines.
 
-![](/article/images/fusionseg/results.png)
+![](/article/images/fusionseg/results.jpg)
 
 
 ## Notes

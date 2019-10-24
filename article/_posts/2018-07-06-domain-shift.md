@@ -17,11 +17,11 @@ The authors propose an approach based on GANs to close the performance gap due t
 
 More specifically, they address Unsupervised Domain Adaptation, when the data is composed of two sets : the source domain - for which we possess segmentation maps - and the target domain - that we would like to segment. This could eventually be used to create ground truth for unlabeled datasets.
 
-![](/article/images/domain-shift/scheme.png)
+![](/article/images/domain-shift/scheme.jpg)
 
 The idea is to bring the embeddings closer in the learned space to align source and target domains and even generalize to unseen domains. The features become more and more domain invariant as the generation quality gradually improves :
 
-![](/article/images/domain-shift/iter.png)
+![](/article/images/domain-shift/iter.jpg)
 
 ---
 
@@ -35,6 +35,6 @@ real data : CITYSCAPES (5000 urban street images from a moving vehicle - 2975 fo
 
 Here are the results on the 16 / 19 shared classes :
 
-![](/article/images/domain-shift/res.png)
+![](/article/images/domain-shift/res.jpg)
 
 For each experiment, the supervision by a generative network improved results. They also show that each component of their final loss is beneficial and that the improvement is consistent with image size.

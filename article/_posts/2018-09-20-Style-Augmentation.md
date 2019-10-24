@@ -17,7 +17,7 @@ This is accomplished by adopting an arbitrary style transfer network to perform 
 
 They validate the efficacy of this technique with classification and monocular depth estimation, illustrating consistent improvements in generalization.
 
-![](/article/images/StyleAug/styles.png)
+![](/article/images/StyleAug/styles.jpg)
 
 #### Some definitions
 
@@ -31,23 +31,23 @@ They validate the efficacy of this technique with classification and monocular d
 
 They chose the approach of Ghiasi et al. [^footnote], for its speed, flexibility, and visually compelling results.
 
-![](/article/images/StyleAug/style-aug.png)
+![](/article/images/StyleAug/style-aug.jpg)
 
 These style images are sampled from the Painter By Numbers (PBN) dataset.
 
-![](/article/images/StyleAug/style-interpolation.png)
+![](/article/images/StyleAug/style-interpolation.jpg)
 
 They perform a hyperparameter search to determine the best ratio of unaugmented to augmented training images and the best augmentation strength $$\alpha$$.
 
 ## Results
 
-![](/article/images/StyleAug/style-results.png)
+![](/article/images/StyleAug/style-results.jpg)
 
-![](/article/images/StyleAug/style-table.png)
+![](/article/images/StyleAug/style-table.jpg)
 
-![](/article/images/StyleAug/style-mono.png)
+![](/article/images/StyleAug/style-mono.jpg)
 
-![](/article/images/StyleAug/style-mono-table.png)
+![](/article/images/StyleAug/style-mono-table.jpg)
 
 ---
 

@@ -15,11 +15,11 @@ pdf: "https://arxiv.org/pdf/1901.09462.pdf"
 
 This paper presents a simple but apparently effective method for segmenting prostate MRI images.  As illustrated in fig.1, they use 2 CNNs.  The first **global** one roughly segments the prostate.  Based on that segmentation, they crop the image and feed it to a second **local** CNN.  The resulting segmentation map is then post-processed with basic morphological operations.
 
-> ![](/article/images/proSeg/sc02.png)
+> ![](/article/images/proSeg/sc02.jpg)
 
 **NOTE** that their CNNs are UNet are some sort of denseNets with residual modules.
 
-> ![](/article/images/proSeg/sc01.png)
+> ![](/article/images/proSeg/sc01.jpg)
 
 
 
@@ -29,4 +29,4 @@ This paper presents a simple but apparently effective method for segmenting pros
 
 Results on the PROMISE12 challenge dataset seem good. 
 
-> ![](/article/images/proSeg/sc03.png)
+> ![](/article/images/proSeg/sc03.jpg)

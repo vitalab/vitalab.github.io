@@ -21,7 +21,7 @@ This paper shows a super-resolution method to put the hyperspectral band with a 
 
 The data used for creating the method came from the constelation of Sentinel-2 (S2), two identical satellites with the same sensors at 180 degrees of each other. The sensor gives 13 bands with different information and resolution.
 
-![](/article/images/superpixS2/bands.png)
+![](/article/images/superpixS2/bands.jpg)
 
 
 The big avantage from S2 is than they cover the entire earth and all the data are accesible for every one.
@@ -31,7 +31,7 @@ The big avantage from S2 is than they cover the entire earth and all the data ar
 Since the resolutions are 10, 20, and 60m, and they want to generalise every band at 10m GSD, they use 2 CNNs: one to upgrade 20m images to 10m images and the other to upgrade the resolution from 60m to 10m.
 In that case, they do not need annotated images, but they use the real value for a 20m and 60m resolution for ground truth and they downsample the training images to 40 and 360m as follow.
 
-![](/article/images/superpixS2/downsampling.png)
+![](/article/images/superpixS2/downsampling.jpg)
 
 In this way, they can train the two networks, to be able to learn 2x and 6x super resolutions. At the end they will use those networks to predict on 10m GSD with no way to quantify the results' accuracy.
 
@@ -44,16 +44,16 @@ This super-resolution algorithm optimised for (but conceptually not limited to) 
 by running additional training iterations
 * free, publicly available source code and pre-trained network weights, enabling out-of-the-box super-resolution of S2 data.
 
-![](/article/images/superpixS2/train.png)
+![](/article/images/superpixS2/train.jpg)
 
 They obtain 2 networks, DSen2 and VDSen2, the difference is the $$d$$ and $$f$$ that will be 6, 128 for the DSen2 and 32, 256 for VDSen2.
 
 ## Results
 
-![](/article/images/superpixS2/2xtable.png)
+![](/article/images/superpixS2/2xtable.jpg)
 
-![](/article/images/superpixS2/2ximage.png)
+![](/article/images/superpixS2/2ximage.jpg)
 
-![](/article/images/superpixS2/6xtable.png)
+![](/article/images/superpixS2/6xtable.jpg)
 
-![](/article/images/superpixS2/6ximage.png)
+![](/article/images/superpixS2/6ximage.jpg)

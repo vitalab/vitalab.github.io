@@ -21,16 +21,16 @@ The enhanced version of ACOG via sketch method is designed to accelerate computa
 
 ## Algorithms
 
-![](/article/images/acog/algo1.png){:height="300" width="450px"}
+![](/article/images/acog/algo1.jpg){:height="300" width="450px"}
 
-![](/article/images/acog/algo2.png){:height="400" width="450px"}
+![](/article/images/acog/algo2.jpg){:height="400" width="450px"}
 
-![](/article/images/acog/algo3.png){:height="400" width="450px"}
+![](/article/images/acog/algo3.jpg){:height="400" width="450px"}
 
-![](/article/images/acog/algo4.png){:height="400" width="450px"}
+![](/article/images/acog/algo4.jpg){:height="400" width="450px"}
 
 ## Results
 
-![](/article/images/acog/results_bi.png)
+![](/article/images/acog/results_bi.jpg)
 
-![](/article/images/acog/results_.png)
+![](/article/images/acog/results_.jpg)

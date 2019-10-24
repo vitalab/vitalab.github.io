@@ -18,23 +18,23 @@ All the experiments used images from COCO 2017's validation set. Models are from
 
 The first test was to extract an object (a elephant, wink) from another image and transplant it at various locations in another image (a living room, wink) on which the detector was trained (Faster-RCNN with NASNet backbone). Results:
 
-![](/article/images/the_elephant_in_the_room/litteral-elephant.png)
-![](/article/images/the_elephant_in_the_room/sandwich.png)
+![](/article/images/the_elephant_in_the_room/litteral-elephant.jpg)
+![](/article/images/the_elephant_in_the_room/sandwich.jpg)
 
 ---
 
 The second test was to duplicate an object in the same image:
 
-![](/article/images/the_elephant_in_the_room/duplicates.png)
+![](/article/images/the_elephant_in_the_room/duplicates.jpg)
 
 ---
 
 Anectodically, they also tested Google OCR and it also broke:
 
-![](/article/images/the_elephant_in_the_room/google.png)
+![](/article/images/the_elephant_in_the_room/google.jpg)
 
 ## The results
-![](/article/images/the_elephant_in_the_room/table.png)
+![](/article/images/the_elephant_in_the_room/table.jpg)
 
 where 'tau' is the threshold of accepted difference between bounding boxes
 
@@ -55,7 +55,7 @@ It is possible that network end up doing some contextual reasoning even if it is
 Assume an object A that is no longer being detected because it is now (partially) occluded by an object T. An object B, which was partially occluded by A and not detected, might now be detected. This chain-reaction could cause non-local effects.
 
 ### Feature inference:
-![](/article/images/the_elephant_in_the_room/cat.png)
+![](/article/images/the_elephant_in_the_room/cat.jpg)
 
 It is possible that features outside the object's ROI might influence the object's detection. This could help object detection in cases where the object is partially occluded, but also hinder object detection. Pixels in the ROI which are not the object (like background) could also influence detection. The authors suggest that this is the main cause of problems.
 

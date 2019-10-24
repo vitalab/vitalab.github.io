@@ -19,19 +19,19 @@ Problems that exhibit high initial station variation produce high variance polic
 
 Initial states are sampled and then clustered using k-means into contexts $$ \omega_i $$, each associated with a policy $$ \pi_i(s,a) = \pi((\omega_i,s),a) $$. A central policy is defined as $$ \pi_c(s,a)=\sum _{\omega\in\Omega} p({\omega}{\mid}s) \pi_{\omega} (s,a) $$ Each policy should stay as close to the central policy as possible by maximizing $$ \eta(\pi_i) - \alpha \mathbb{E}[D_{KL}(\pi_i{\mid}{\mid}\pi_c)] {\forall i} $$. They also want to keep the divergence between policies w.r.t 
 
-![](/article/images/divide_and_conquer/eq1.png)
+![](/article/images/divide_and_conquer/eq1.jpg)
 
 To update the policies, the authors use the following loss, devired from TRPO<sup>[1](https://arxiv.org/pdf/1502.05477.pdf)</sup>:
 
-![](/article/images/divide_and_conquer/loss.png)
+![](/article/images/divide_and_conquer/loss.jpg)
 
 Then, the central policy is updated (the authors call this the "distillation step"):
 
-![](/article/images/divide_and_conquer/central.png)
+![](/article/images/divide_and_conquer/central.jpg)
 
 Finally, here is the full algorithm:
 
-![](/article/images/divide_and_conquer/algorithm.png)
+![](/article/images/divide_and_conquer/algorithm.jpg)
 
 
 ## The results
@@ -46,8 +46,8 @@ Distral is another RL algorithm that splits the context, but uses a central poli
 - Ant requires controlling an ant to walk to a random flagged position
 - Stairs requires a bipedal robot to climb a set of stairs of varying heights and lengths
 
-![](/article/images/divide_and_conquer/results.png)
+![](/article/images/divide_and_conquer/results.jpg)
 
-![](/article/images/divide_and_conquer/table.png)
+![](/article/images/divide_and_conquer/table.jpg)
 
 Finally, here's a video of [DnC versus TRPO](https://sites.google.com/view/dnc-rl/)

@@ -80,11 +80,11 @@ As seen above, larger weights even lead to _smaller_ gradients.
 
 The following are the results of the experiments shown in the paper.
 
-![](/article/images/batch-norm-fig1.png)
+![](/article/images/batch-norm-fig1.jpg)
 
 **Figure 1** : Results on MNIST using 3 fully-connected hidden layers with 100 neurons each and sigmoid nonlinearity. (a) The test accuracy with and without BN (the x axis is the number of training steps). (b, c) The evolution of input distributions to a typical sigmoid over the course of training. The 15th, 50th and 85th percentiles are shown.
 
-![](/article/images/batch-norm-fig2.png)
+![](/article/images/batch-norm-fig2.jpg)
 
 **Figure 2** : Results on ImageNet using a variant of Inception (see paper for architecture details -- referred to as _**Inception**_ in the figure). Below are the other architecture variants tested :
 

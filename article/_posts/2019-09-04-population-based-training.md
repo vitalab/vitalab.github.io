@@ -28,9 +28,9 @@ Note that child trials start with the checkpoint from their parent.
 
 Here, there is one worker per child (number of workers = population size), but the paper describes a "budget mode" where a larger population can be used. See sections 3.7 and 3.10 for practical details.
 
-![](/article/images/pbt/fig1.png)
-![](/article/images/pbt/fig2.png)
-![](/article/images/pbt/fig3.png)
+![](/article/images/pbt/fig1.jpg)
+![](/article/images/pbt/fig2.jpg)
+![](/article/images/pbt/fig3.jpg)
 
 # Experiments
 
@@ -42,5 +42,5 @@ In the figures below, PBT-5x5 means that there are 5 parallel workers and a popu
 
 The following figure shows that PBT-5x5 is the most efficient in terms of compute. The next figure shows that PBT-5x20 produces better results at a given iteration.
 
-![](/article/images/pbt/fig4.png)
-![](/article/images/pbt/fig6.png)
+![](/article/images/pbt/fig4.jpg)
+![](/article/images/pbt/fig6.jpg)

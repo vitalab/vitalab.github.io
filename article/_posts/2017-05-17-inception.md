@@ -17,7 +17,7 @@ The main contribution of this paper is the **factorized convolutions**. In [*Inc
 In *Inception-v2*, the authors propose to factorize all kernels bigger than 3 to multiple *3x3* kernels. So a *5x5* kernel would become two *3x3*. Here's a figure showing the inception module from *Inception-v2*.
 
 <div align="middle">
-  <img src="/article/images/inception/fig_5.png" width="400">
+  <img src="/article/images/inception/fig_5.jpg" width="400">
 </div>
 
 The authors also changed *Inception-v1* to do max-pooling **before** the *inception* module. This saves memory and is 2 times faster.

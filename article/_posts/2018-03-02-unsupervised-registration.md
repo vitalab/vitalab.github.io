@@ -22,7 +22,7 @@ The goal is to train a CNN for deformable, pairwise 3D medical image registratio
 
 **Typical images with ground truth segmentation**:
 
-![](/article/images/unsupervised-registration/figure1.png)
+![](/article/images/unsupervised-registration/figure1.jpg)
 
 
 ## Summary
@@ -32,21 +32,21 @@ The goal is to train a CNN for deformable, pairwise 3D medical image registratio
 - U-Net model
 - Input is 2 volumes concatenated as a 2-channel 3D image
 
-![](/article/images/unsupervised-registration/figure2.png)
+![](/article/images/unsupervised-registration/figure2.jpg)
 
 **2 models**
 - VoxelMorph-1: One less layer at the final resolution and fewer channels in the last 3 layers
 - VoxelMorph-2: Full network
 
-![](/article/images/unsupervised-registration/figure3.png)
+![](/article/images/unsupervised-registration/figure3.jpg)
 
 The deformed image is computed using a differentiable operation based on spatial transformer networks (subpixel locations + interpolation)
 
-![](/article/images/unsupervised-registration/figure4.png)
+![](/article/images/unsupervised-registration/figure4.jpg)
 
 ### Loss function
 
-![](/article/images/unsupervised-registration/equation6.png)
+![](/article/images/unsupervised-registration/equation6.jpg)
 
 CC: Local cross-correlation (cross-correlation between images with local mean intensities subtracted out).
 
@@ -73,6 +73,6 @@ subjects, resulting in 29 structures.
 
 **Implementation**: Tensorflow using Keras.
 
-![](/article/images/unsupervised-registration/figure5.png)
+![](/article/images/unsupervised-registration/figure5.jpg)
 
-![](/article/images/unsupervised-registration/table1.png)
+![](/article/images/unsupervised-registration/table1.jpg)

@@ -21,7 +21,7 @@ In an active-learning context, only a small subset of the dataset is labeled. Th
 
 ![](/article/images/learing-loss-active/fig1.jpeg)
 ![](/article/images/learing-loss-active/fig2.jpeg)
-![](/article/images/learing-loss-active/fig3.png)
+![](/article/images/learing-loss-active/fig3.jpg)
 
 Figure 1,2,3 describe most of the method. 
 
@@ -54,7 +54,7 @@ Different models have been used for different tasks.
 # Results
 
 ![](/article/images/learing-loss-active/fig4.jpeg)
-![](/article/images/learing-loss-active/fig6.png)
+![](/article/images/learing-loss-active/fig6.jpg)
 ![](/article/images/learing-loss-active/fig7.jpeg)
 ![](/article/images/learing-loss-active/fig5.jpeg)
 

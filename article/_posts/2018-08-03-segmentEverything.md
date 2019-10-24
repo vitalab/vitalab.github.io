@@ -21,7 +21,7 @@ fraction of which have mask annotations**. These contributions
 allow to train [Mask R-CNN](https://vitalab.github.io/article/2017/09/14/MaskRcnn.html) to detect and segment visual concepts using box annotations  and mask annotations.
 
 
-<center><img src="/article/images/segEverything/sc01.png" width="400"></center>
+<center><img src="/article/images/segEverything/sc01.jpg" width="400"></center>
 
 ### Proposed method
 
@@ -36,13 +36,13 @@ $$ w^c_{seg} = T(w^c_{det},\theta)$$
 
 where $$w^c_{det}$$ are the bounding box head weights.  In their implementation, $$T(.)$$ is a fully connected neural net.  C.f. Fig.2 for more details.
 
-<center><img src="/article/images/segEverything/sc02.png" width="900"></center>
+<center><img src="/article/images/segEverything/sc02.jpg" width="900"></center>
 
 
 ### Results
 
 They get good results, at least better than by training Mask R-CNN with GrabCut.
 
-<center><img src="/article/images/segEverything/sc03.png" width="800"></center>
+<center><img src="/article/images/segEverything/sc03.jpg" width="800"></center>
 
 

@@ -28,14 +28,14 @@ In classical CNN architectures this requires a large number of layers in order t
 
 *GloRe* enables interaction between distant parts of the input data '*in early stages of a CNN model*'.
 
-![](/article/images/graphbasedglobalreasoning/overview.png) 
+![](/article/images/graphbasedglobalreasoning/overview.jpg) 
 
 
 # Methods
 
 #### The GloRe unit
 
-![](/article/images/graphbasedglobalreasoning/glore.png)
+![](/article/images/graphbasedglobalreasoning/glore.jpg)
 
 **Figure caption**: '*Architecture of the proposed Global Reasoning unit. It consists of five convolutions, two for
 dimension reduction and expansion (the left and right most ones) over input features $$X$$ and output $$Y,$$ one
@@ -58,7 +58,7 @@ Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as fol
    where $$G$$ and $$A_g$$ are the '$$N \times N$$ *adjacency matrix for diffusing information across nodes,
    and $$W_g$$ the state update function*'.
 
-   ![](/article/images/graphbasedglobalreasoning/graphconv.png)
+   ![](/article/images/graphbasedglobalreasoning/graphconv.jpg)
 
  - Project back from interaction space to coordinate space by $$Y = g(Z)$$ where $$Z \in \mathbb{R}^{N \times C}$$,
    $$Y \in \mathbb{R}^{L \times C}$$ and
@@ -79,17 +79,17 @@ Given the input $$X \in \mathbb{R}^{L \times C}$$ the general strategy is as fol
  - GloRe achieves better accuracy than Non-local Neural Nets (NL-NN).
  - Adding GloRe is more computationally efficient than increasing the number of layers while maintaining performance.
 
-![](/article/images/graphbasedglobalreasoning/res_ablation.png)
+![](/article/images/graphbasedglobalreasoning/res_ablation.jpg)
 
 ### Image segmentation on Cityscapes
 
-![](/article/images/graphbasedglobalreasoning/res_cityscapes.png)
+![](/article/images/graphbasedglobalreasoning/res_cityscapes.jpg)
 
 ### Video action recognition on Kinetics-400
 
 As opposed to the previous experiments, 3D CNNs are employed in this one.
 
-![](/article/images/graphbasedglobalreasoning/res_kinetics.png)
+![](/article/images/graphbasedglobalreasoning/res_kinetics.jpg)
 
 ### Visualisation of GloRe weights
 
@@ -98,7 +98,7 @@ To increase resolution of the features to plot, a shallow ResNet-18 with one Glo
 on ImageNet with 512x512 input crops and $$N = 128$$ nodes in the interaction space.
 The figure below shows weights for four projection maps (i.e. $$\mathbf{b}_i$$).
 
-![](/article/images/graphbasedglobalreasoning/vis_glore.png)
+![](/article/images/graphbasedglobalreasoning/vis_glore.jpg)
 
 
 # Conclusions

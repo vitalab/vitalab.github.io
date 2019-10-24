@@ -11,7 +11,7 @@ pdf: "http://papers.nips.cc/paper/6996-prototypical-networks-for-few-shot-learni
 ---
 
 
-<center><img src="/article/images/prototype-net/sc01.png" width="500"></center>
+<center><img src="/article/images/prototype-net/sc01.jpg" width="500"></center>
 
 ## Summary
 
@@ -23,24 +23,24 @@ This paper proposes *Prototypical Networks* for the problem of few-shot (and zer
 In few-shot classification we are given a small support set of $$N$$ labeled examples $$ S = {(x_1,y_1), ... ,(x_N, y_N)}$$ where each $$x_i \in R^D$$ is the D-dimensional feature vector of an example and $$y_i$$ is the corresponding label.  $$S_k$$ denotes the set of examples labeled with class $$k$$.
 
 
-<center><img src="/article/images/prototype-net/sc02.png" width="750"></center> 
+<center><img src="/article/images/prototype-net/sc02.jpg" width="750"></center> 
 
 <br>Note that in their implementation, $$f_\phi$$ is a four-layer CNN.
 
 Interestingly, when the system uses an Euclidean distance $$d(.)$$ the system becomes a linear model as illustrated in Figure 1.
 
 
-<center><img src="/article/images/prototype-net/sc04.png" width="650"></center> 
+<center><img src="/article/images/prototype-net/sc04.jpg" width="650"></center> 
 
 <br><br> The training algorithm is as follows:
 
-<center><img src="/article/images/prototype-net/sc03.png" width="650"></center> 
+<center><img src="/article/images/prototype-net/sc03.jpg" width="650"></center> 
 
 
 <br><br>A real illustration of the resulting embedding of a propotype network is shown in Fig.2. 
 
 
-<center><img src="/article/images/prototype-net/sc05.png" width="350"></center> 
+<center><img src="/article/images/prototype-net/sc05.jpg" width="350"></center> 
 
 
 
@@ -48,4 +48,4 @@ Interestingly, when the system uses an Euclidean distance $$d(.)$$ the system be
 
 The method was state of the art on several datasets back in 2017.
 
-<center><img src="/article/images/prototype-net/sc06.png" width="650"></center> 
+<center><img src="/article/images/prototype-net/sc06.jpg" width="650"></center> 

@@ -26,7 +26,7 @@ where $$ P $$ is a $$ D \times d $$ projection matrix, and $$ \theta^{(D)}_0 $$ 
 
 Please take a moment to notice that we typically don't have $$ \theta^{(d)} $$ and $$ P $$, and we take steps on $$ \theta^{(D)} $$. However, here, we take steps on $$ \theta^{(d)} $$. Also note that $$ P $$ is not trainable; it is determined at the beginning of training.
 
-![](/article/images/intrinsic-dimension/fig1.png)
+![](/article/images/intrinsic-dimension/fig1.jpg)
 
 # Measuring the Intrinsic Dimension
 

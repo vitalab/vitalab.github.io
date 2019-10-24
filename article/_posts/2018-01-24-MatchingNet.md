@@ -30,30 +30,30 @@ A small support set contains of $$k$$ label example with input $$x$$ and lable $
 
 First a set $$L$$ from task $$T$$ is sampled, Then from these sample labels, the support set $$S$$ and a batch $$B$$ are sampled. The Maching network has to minimize the prediction of lables in batch $$B$$ conditioned on support set $$(S)$$.
 
-<img src="/article/images/MNet/1.png" width="500">
+<img src="/article/images/MNet/1.jpg" width="500">
 
 
 For a similarity metric, two embeding functions $$f$$ and $$g$$ need to take similarity on feature space X. function $$g$$ has embeded $$x_{i}$$ independently from other elements but $$S$$ could be able to effect how be embeded $$\bar{x}$$ through function $$f$$. Then an attention kernel calculate cosin distance on these functions (similar to nearest neighbor).
 
 
 
-<img src="/article/images/MNet/2.png" width="600">
+<img src="/article/images/MNet/2.jpg" width="600">
 
 
 
 The embeding of $$x_{i}$$ is a neural network (VGG) follow by a Bi-LSTM. The function f is a neural network (VGG) and then the embeding function g applied to each element $$ x_{i}$$ to process the kernel for each set of S.
 Note that $$\bar{y}$$ is a linear combination of the lables in support set.
 
-<img src="/article/images/MNet/3.png" width="400">
+<img src="/article/images/MNet/3.jpg" width="400">
 
 
-<img src="/article/images/MNet/4.png" width="500">
+<img src="/article/images/MNet/4.jpg" width="500">
 
 
 
 ### Results
 
-<img src="/article/images/MNet/5.png" width="500">
-<img src="/article/images/MNet/6.png" width="500">
+<img src="/article/images/MNet/5.jpg" width="500">
+<img src="/article/images/MNet/6.jpg" width="500">
 
 

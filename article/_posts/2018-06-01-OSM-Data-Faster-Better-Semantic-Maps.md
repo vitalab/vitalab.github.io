@@ -19,18 +19,18 @@ In the end, they show that OpenStreetMap data can efficiently be integrated into
 
 ### Segmentation Network
 
-![](/article/images/osm_faster/model_osm.png)
+![](/article/images/osm_faster/model_osm.jpg)
 
 ### Binary Vs. Signed Distance Transform (SDT)
 
-![](/article/images/osm_faster/sdt_osm.png)
+![](/article/images/osm_faster/sdt_osm.jpg)
 
 * Binary: For each raster, they have an associated channel in the tensor which is a binary map denoting the presence of the raster class in the specified pixel.
 * SDT: For each raster associated channel corresponding to the distance transform d, with d > 0 if the pixel is inside the class and d < 0 if not.
 
 ## Experiments
 
-![](/article/images/osm_faster/res_osm.png)
+![](/article/images/osm_faster/res_osm.jpg)
 
 ## Problems
 * For segmentation, we can only use roads, buildings and vegetation landuse OSM class.

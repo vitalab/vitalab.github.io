@@ -21,32 +21,32 @@ The proposed approach adapts the network to learn new as well as old classes on 
 For adaptation, they keep a frozen copy of the previously trained network, which is used as a memory for the updated network in absence of annotations for the former classes.
 The updated network minimizes a loss function, which balances the discrepancy between outputs for the previous classes from the memory and updated networks, and the mis-classification rate between outputs for the new classes from the updated network and the new ground-truth.
 
-![](/article/images/incrementallearning/intro.png)
+![](/article/images/incrementallearning/intro.jpg)
 
 ## Loss
 
 For a total of three losses:
 - $$L_{class}$$ (sigmoid cross entropy loss)
 
-![](/article/images/incrementallearning/loss1.png)
+![](/article/images/incrementallearning/loss1.jpg)
 
 - $$L_{distill}$$, measures the disparity between $$y_{mem}$$ samples from the memory network, and $$y_{up_prev}$$ from the updated network.
 
-![](/article/images/incrementallearning/loss2.png)
+![](/article/images/incrementallearning/loss2.jpg)
 
 - $$L_{adapt}$$  is the loss used during the adaptation
 
-![](/article/images/incrementallearning/loss12.png)
+![](/article/images/incrementallearning/loss12.jpg)
 
 - $$L_{rem}$$ is the costOm loss for the incremental learning
 
-![](/article/images/incrementallearning/loss3.png)
+![](/article/images/incrementallearning/loss3.jpg)
 
 ## Network
 
 This network is a variant of U-net.
 
-![](/article/images/incrementallearning/network.png)
+![](/article/images/incrementallearning/network.jpg)
 
 - Static learning: This is the traditional learning approach which assumes that 100% of the training images and annotations for the same classes are available at the time of training.
 
@@ -58,17 +58,17 @@ This network is a variant of U-net.
 
 - Incremental learning: This strategy requires for the memory network to generate probability maps from the training patches to optimize $$L_distil$$.
 
-![](/article/images/incrementallearning/compare.png)
+![](/article/images/incrementallearning/compare.jpg)
 
 ## Results
 
 The results are competitive with the state-of-the-art single-dataset methods, while allowing the network to learn new classes.
 
-![](/article/images/incrementallearning/luxcarta.png)
+![](/article/images/incrementallearning/luxcarta.jpg)
 
-![](/article/images/incrementallearning/image.png)
+![](/article/images/incrementallearning/image.jpg)
 
-![](/article/images/incrementallearning/potsdam.png)
+![](/article/images/incrementallearning/potsdam.jpg)
 
 
 ---

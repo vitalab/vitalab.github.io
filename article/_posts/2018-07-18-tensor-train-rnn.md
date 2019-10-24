@@ -48,14 +48,14 @@ To reduce the input dimensionality, the input-to-hidden matrix is factorized wit
 
 Each entry in the target tensor is represented as a sequence of matrix multiplications using elements selected from **core-tensors**.
 
-![](/article/images/tensor-train-rnn/equation1-2.png)
+![](/article/images/tensor-train-rnn/equation1-2.jpg)
 
 Each index $$ l_k $$ is used to select an element from the core-tensors along the first dimension $$ p_k $$.
 Note that since $$ r_0 = r_d = 1 $$, the result is always a scalar.
 
 Visually : 
 
-![](/article/images/tensor-train-rnn/figure1.png)
+![](/article/images/tensor-train-rnn/figure1.jpg)
 
 
 #### Step 2: Preliminary steps for Feed-Forward layer factorization
@@ -64,7 +64,7 @@ We add the constraint that each integer $$ p_k $$ can be factorized as $$ p_k = 
 Then, we reshape $$ \mathcal{G}_k $$ into $$ \mathcal{G}_k^* \in \mathbb{R}^{m_k \times n_k \times r_{k-1} \times r_k} $$.
 Each index $$ l_k $$ can be uniquely represented with two indices $$ (i_k, j_k) $$:
 
-![](/article/images/tensor-train-rnn/equation3-5.png)
+![](/article/images/tensor-train-rnn/equation3-5.jpg)
 
 
 #### Step 3: Feed-Forward Layer Factorization
@@ -72,7 +72,7 @@ Each index $$ l_k $$ can be uniquely represented with two indices $$ (i_k, j_k) 
 The usual notation for a feed-forward layer is: $$ \hat{\mathbf{y}} = \mathbf{Wx} + \mathbf{b} $$
 The equation is rewritten in an equivalent way using scalars: 
 
-![](/article/images/tensor-train-rnn/equation6.png)
+![](/article/images/tensor-train-rnn/equation6.jpg)
 
 If both $$M$$ and $$N$$ can be factorized into integer arrays of length $$d$$, i.e. 
 $$ M = \prod_{k=1}^d m_k, N = \prod_{k=1}^d n_k $$,
@@ -80,12 +80,12 @@ then $$ \mathbf{x} $$ and $$ \hat{\mathbf{y}} $$ can be reshaped to have the sam
 $$ \mathcal{X} \in \mathbb{R}^{m_1 \times ... \times m_d} $$, $$ \mathcal{Y} \in \mathbb{R}^{n_1 \times ... \times n_d} $$.
 The mapping function $$ \mathbb{R}^{m_1 \times ... \times m_d} \rightarrow \mathbb{R}^{n_1 \times ... \times n_d} $$ is rewritten as:
 
-![](/article/images/tensor-train-rnn/equation7.png)
+![](/article/images/tensor-train-rnn/equation7.jpg)
 
 Thus, Eq.6 is a special case of Eq.7 with $$ d = 1 $$.
 Finally, the weight tensor $$ \mathcal{W} $$ can be replaced by the TTF representation:
 
-![](/article/images/tensor-train-rnn/equation8.png)
+![](/article/images/tensor-train-rnn/equation8.jpg)
 
 
 #### Step 4: Tensor-Train RNN
@@ -95,9 +95,9 @@ Each of those matrices can have a TTF representation.
 However, a concatenation trick can be used like most LSTM implementations.
 Thus, all gates are concatenated as one big output tensor which can be compressed even more.
 
-![](/article/images/tensor-train-rnn/table1.png)
+![](/article/images/tensor-train-rnn/table1.jpg)
 
-![](/article/images/tensor-train-rnn/figure2.png)
+![](/article/images/tensor-train-rnn/figure2.jpg)
 
 
 ## Experiments
@@ -108,9 +108,9 @@ Thus, all gates are concatenated as one big output tensor which can be compresse
 - $$ 320 \times 240 $$ downsampled to $$ 160 \times 120 $$, at 24 fps
 - Sequence length varies between 204 and 1492
 
-![](/article/images/tensor-train-rnn/table2.png) 
+![](/article/images/tensor-train-rnn/table2.jpg) 
 
-![](/article/images/tensor-train-rnn/table3.png)
+![](/article/images/tensor-train-rnn/table3.jpg)
 
 - (Liu et al., 2013): SIFT/STIP + Harris3D Corner Detector + Optical Flow + GMM w/ EM
 - (Hasan & Roy-Chowdhury, 2014): Ensemble of multi-class SVMs
@@ -118,7 +118,7 @@ Thus, all gates are concatenated as one big output tensor which can be compresse
 
 Training times: 8-10 days for GRU/LSTM vs. 2 days fro TT versions.
 
-![](/article/images/tensor-train-rnn/figure3.png)
+![](/article/images/tensor-train-rnn/figure3.jpg)
 
 
 ### Hollywood2 Data
@@ -127,9 +127,9 @@ Training times: 8-10 days for GRU/LSTM vs. 2 days fro TT versions.
 - $$ 234 \times 100 $$, at 12 fps
 - Sequence length varies between 29 and 1079
 
-![](/article/images/tensor-train-rnn/figure4.png)
+![](/article/images/tensor-train-rnn/figure4.jpg)
 
-![](/article/images/tensor-train-rnn/table5.png)
+![](/article/images/tensor-train-rnn/table5.jpg)
 
 - (Sharma et al., 2015): Pre-trained GoogLeNet CNN + 3-fold stacked LSTM + Attention
 - (Fernando et al., 2015): Frame features + Frame ordering -> Learned representation -> SVM classifier

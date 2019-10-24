@@ -19,7 +19,7 @@ They further improve it by adding :
 
 ### CliqueNet
 
-![](/article/images/cliqueCNN/pipeline.png)
+![](/article/images/cliqueCNN/pipeline.jpg)
 
 The multi-scale approach is nothing fancy : the final prediction is performed from feature maps from three cliques which operate at different scales.
 
@@ -29,7 +29,7 @@ The optimization of a clique is more tricky as it requires a two-step approach :
 
 Though it is never explicitly said, the first stage seems to go farther than initialization and that layers are first optimized in the first stage and then refined in the second.
 
-![](/article/images/cliqueCNN/opt.png)
+![](/article/images/cliqueCNN/opt.jpg)
 
 The idea is that residual connections can be extrapolated as a RNN as they give "later" layers access  to "earlier" (unprocessed) information. 
 DenseNet, which consists in aggregating outputs of all previous layers as inputs, shows a rapid growth of parameters. To alleviate this, a clique structure recycles its weights.
@@ -41,7 +41,7 @@ DenseNet, which consists in aggregating outputs of all previous layers as inputs
 
 The transition can be used to provide an attention feedback from higher levels to refine lower level activations by applying binary weights to filters:
 
-![](/article/images/cliqueCNN/attention.png)
+![](/article/images/cliqueCNN/attention.jpg)
 - 
 
 They also use 1*1 convolutions to compress the input of a given clique and reduce the number of parameters (bottleneck effect).
@@ -55,7 +55,7 @@ Note : They strongly benefit from decaying the learning rate.
 
 They apply their approach to classification problems : CIFAR 10/100, SVHN (Street View House Number) and ImageNet.
 
-![](/article/images/cliqueCNN/res1.png)
+![](/article/images/cliqueCNN/res1.jpg)
 
 Without extra-techniques, they always outperform by a small margin DenseNet with fewer parameters and without data augmentation.
 
@@ -63,13 +63,13 @@ Observation : Attention and Compression always add a little something but the Bo
 
 With extra-techniques, and CliqueNet with the highest capacity, the best scores can be obtained on all three datasets (but the comparison without extra-tech is not provided).
 
-![](/article/images/cliqueCNN/res2.png)
+![](/article/images/cliqueCNN/res2.jpg)
 
 The same can be said when compared to ResNet on ImageNet.
 
 ### Bonus : visualization
 
-![](/article/images/cliqueCNN/visu.png)
+![](/article/images/cliqueCNN/visu.jpg)
 
 The second stage helps denoising the feature maps by extracting features focused on object of interests.
 

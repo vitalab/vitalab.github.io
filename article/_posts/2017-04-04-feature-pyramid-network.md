@@ -12,7 +12,7 @@ cite:
 
 The Feature Pyramid Network (FPN) looks a lot like the [U-net]({{ site.baseurl }}{% link article/_posts/2017-02-27-unet.md %}). The main difference is that there is multiple prediction layers: one for each upsampling layer. Like the U-Net, the FPN has laterals connection between the bottom-up pyramid (left) and the top-down pyramid (right). But, where U-net only copy the features and append them, FPN apply a 1x1 convolution layer before adding them. This allows the bottom-up pyramid called "backbone" to be pretty much whatever you want. In their experiments, the authors use Resnet-50 as their backbone.
 <div align="middle">
-  <img src="/article/images/fpn/architecture.png" width="400">
+  <img src="/article/images/fpn/architecture.jpg" width="400">
 </div>
 
 

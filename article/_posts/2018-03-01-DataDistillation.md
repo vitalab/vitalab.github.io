@@ -16,7 +16,7 @@ The goal of this work is to predict on unlabeled data and using them to update t
 
 There is a single model which run on different transformations (flipping and scaling) of an unlabeled image and then ensemble the result. In comparison with distilling knowledge, which predictions of multiple models are considered, there is a single model runs on multiple transformed unlabeled images.
 
-<img src="/article/images/DataDistilling/1.png" width="600">
+<img src="/article/images/DataDistilling/1.jpg" width="600">
 
 
 There is four steps for data distillation:
@@ -25,7 +25,7 @@ There is four steps for data distillation:
 3. converting the predictions on the unlabeled data into labeles by ensembling the predictions.
 4. retraining the model on the union of the manually and automatically labeled data.
 
-<img src="/article/images/DataDistilling/2.png" width="800">
+<img src="/article/images/DataDistilling/2.jpg" width="800">
 
 
 They trained a Mask R-CNN model to test data distillation on COCO dataset and Sport-1M.
@@ -39,7 +39,7 @@ There is tree type of scales:
 ### Results:
 
 
-<img src="/article/images/DataDistilling/3.png" width="800">
+<img src="/article/images/DataDistilling/3.jpg" width="800">
 
-<img src="/article/images/DataDistilling/4.png" width="600">
+<img src="/article/images/DataDistilling/4.jpg" width="600">
 

@@ -15,7 +15,7 @@ pdf: "https://arxiv.org/abs/1803.11544"
 
 A "guiding block" is added inside a CNN (at the "smallest" encoding layer) that uses text hints to modify feature maps in order to refine the CNN's prediction.
 
-![](/article/images/guide-me-interacting-with-deep-networks/figure1.png)
+![](/article/images/guide-me-interacting-with-deep-networks/figure1.jpg)
 
 ### Guiding block
 
@@ -37,14 +37,14 @@ Using the ground truth and the predicted segmentation, a "query" is created base
 To do so, the image is divided in a coarse grid, and each cell is evaluated for missing or mistaken classes.
 Then, a class is selected from the possible choices and a query is generated based on the position in the grid.
 
-![](/article/images/guide-me-interacting-with-deep-networks/figure2.png)
+![](/article/images/guide-me-interacting-with-deep-networks/figure2.jpg)
 
 
 ## Experiments
 
 Various experiments were done on PascalVOC (2012) and MSCOCO-Stuff (2014), that evaluate where the guiding block should be placed, how many hints are needed, how complex should the hints be, etc.
 
-![](/article/images/guide-me-interacting-with-deep-networks/figure3.png)
-![](/article/images/guide-me-interacting-with-deep-networks/figure4.png)
-![](/article/images/guide-me-interacting-with-deep-networks/figure5.png)
+![](/article/images/guide-me-interacting-with-deep-networks/figure3.jpg)
+![](/article/images/guide-me-interacting-with-deep-networks/figure4.jpg)
+![](/article/images/guide-me-interacting-with-deep-networks/figure5.jpg)
 

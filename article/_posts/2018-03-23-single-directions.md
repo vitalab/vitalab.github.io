@@ -29,29 +29,29 @@ In a layer that has high _class selectivity_, a neuron will fire up for a class 
 * Networks that rely more on single directions tend to have lower generalization capability
 * Introducing noise in labels forces the network to memorize
 
-![](/article/images/directions/fig1.png)
+![](/article/images/directions/fig1.jpg)
 
-![](/article/images/directions/fig2-3.png)
+![](/article/images/directions/fig2-3.jpg)
 
 # Single directions for model selection
 
 * Single direction reliance is a good indicator of generalization
 * Could be used instead of a validation/test set
 
-![](/article/images/directions/fig4.png)
+![](/article/images/directions/fig4.jpg)
 
 # Dropout and BatchNorm
 
 * BatchNorm discourages reliance on single directions
 * Dropout does not help beyond the dropout proportion used while training
 
-![](/article/images/directions/fig5.png)
+![](/article/images/directions/fig5.jpg)
 
-![](/article/images/directions/fig6.png)
+![](/article/images/directions/fig6.jpg)
 
 # Does class selectivity make a good neuron?
 
 * Class selectivity of single directions is uncorrelated to their importance to the network's output
 * We should not analyse DNNs by looking for _cat neurons_ or other class selective neurons
 
-![](/article/images/directions/fig7.png)
+![](/article/images/directions/fig7.jpg)

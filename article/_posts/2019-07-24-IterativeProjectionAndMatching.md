@@ -77,10 +77,10 @@ $$m^{(1)} = \arg\max_m |\mathbf{v}^T\tilde{\mathbf{a}}_m|,$$
 
 where $$\tilde{\mathbf{a}}_m$$ is the normalised $$m$$-th row of $$\mathbf{A}$$.
 
-![](/article/images/ipm/overview.png) 
+![](/article/images/ipm/overview.jpg) 
 
 
-![](/article/images/ipm/algo.png)
+![](/article/images/ipm/algo.jpg)
 
 ### Properties of IPM
 
@@ -115,7 +115,7 @@ The authors draw the following conclusions:
  - adding uncertainty by $$m^\ast = \arg\max_m \alpha |\mathbf{v}^T\tilde{\mathbf{a}}_m| + (1 - \alpha) q(\mathbf{a}_m)$$
    letting alpha decay with rate 0.95 (from $$\alpha = 1$$ in the first cycle) is allowing for best performance.
 
-![](/article/images/ipm/active_learning_tab.png)
+![](/article/images/ipm/active_learning_tab.jpg)
 
 #### Learning using representatives
 
@@ -127,13 +127,13 @@ per subject using different selection methods.
 
 IPM slects the best representatives in terms of different view angles.
 
-![](/article/images/ipm/representatives_angles.png)
-![](/article/images/ipm/representatives_efficiency.png)
+![](/article/images/ipm/representatives_angles.jpg)
+![](/article/images/ipm/representatives_efficiency.jpg)
 
 Also, the results of a GAN for multi-view generation from single-view input images are best using IPM compared to
 other methods.
 
-![](/article/images/ipm/gan_tab.png)
+![](/article/images/ipm/gan_tab.jpg)
 
 #### Visualising efficiency of sampled representatives
 
@@ -142,7 +142,7 @@ are being used to select representatives from UCF-101. Using t-SNE visualization
 enables the fine-tuned classifier to learn the separation between two random classes better compared to other
 selection methods.
 
-![](/article/images/ipm/tsne_vis.png)
+![](/article/images/ipm/tsne_vis.jpg)
 
 #### Other experiments
 

@@ -12,7 +12,7 @@ pdf: "https://arxiv.org/pdf/1903.03215.pdf"
 ---
 
 
-<center><img src="/article/images/fwhitening/sc01.png" width="700"></center>
+<center><img src="/article/images/fwhitening/sc01.jpg" width="700"></center>
 
 # Summary
 
@@ -24,11 +24,11 @@ In this paper, the authors propose a domain adaptation method to train a deep ne
 
 For the DWT, they replace the usual Batch Norm 
 
-<center><img src="/article/images/fwhitening/sc02.png" width="250"></center> 
+<center><img src="/article/images/fwhitening/sc02.jpg" width="250"></center> 
 
 by a new *Batch Whitening* operation:
 
-<center><img src="/article/images/fwhitening/sc03.png" width="350"></center> 
+<center><img src="/article/images/fwhitening/sc03.jpg" width="350"></center> 
 
 The goal of the BW is to project the feature space of both target and source distributions onto a common zero-centered hypersphere.
 
@@ -37,15 +37,15 @@ The goal of the BW is to project the feature space of both target and source dis
 
 The second contribution of this paper is the Loss which they minimize :
 
-<center><img src="/article/images/fwhitening/sc06.png" width="250"></center> 
+<center><img src="/article/images/fwhitening/sc06.jpg" width="250"></center> 
 
 Where the first term is the usual cross-entropy over the **labeled source** training data
 
-<center><img src="/article/images/fwhitening/sc04.png" width="250"></center> 
+<center><img src="/article/images/fwhitening/sc04.jpg" width="250"></center> 
 
 whereas the second term is the Min-Entropy Consensus (MEC) Loss which is intended for the **target** data
 
-<center><img src="/article/images/fwhitening/sc05.png" width="350"></center> 
+<center><img src="/article/images/fwhitening/sc05.jpg" width="350"></center> 
 
 Since the target data are unlabeled, the goal of that loss is to make sure that the prediction of two identical batches $$ B_1^t $$ and $$ B_2^t $$ more or less some noise are identical.
 
@@ -53,4 +53,4 @@ Since the target data are unlabeled, the goal of that loss is to make sure that 
 
 The method is state-of-the-art on several source-tardet dataset pairs:
 
-<center><img src="/article/images/fwhitening/sc07.png" width="650"></center> 
+<center><img src="/article/images/fwhitening/sc07.jpg" width="650"></center> 

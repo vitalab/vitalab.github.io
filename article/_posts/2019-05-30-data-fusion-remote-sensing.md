@@ -21,7 +21,7 @@ More specifically, it provides an overview of many important contributions dedic
 
 The remote sensors onboard the above platforms may vary in multiple dimensions (e.g. types of properties sensed, spatial and spectral resolutions of the data, etc.).
 
-![](/article/images/mmdfrs/fig1.png)
+![](/article/images/mmdfrs/fig1.jpg)
 
 ## Spatio-spectral fusion
 *  Component Substitution
@@ -34,28 +34,28 @@ The remote sensors onboard the above platforms may vary in multiple dimensions (
 * The spatial and temporal adaptive reflectance fusion model(STARFM).
 * For heterogeneous landscapes, an enhanced STARFM (ESTARFM).
 
-![](/article/images/mmdfrs/fig2.png)
+![](/article/images/mmdfrs/fig2.jpg)
 
 ## Point Cloud
 * Point cloud level: Enrich the initial point cloud P with new point features.
 * Image/Voxel level: Derive new image layers representing 3D point cloud information.
 * Feature level: Fusion of point cloud information on the segment/object level.
 
-![](/article/images/mmdfrs/fig6.png)
+![](/article/images/mmdfrs/fig6.jpg)
 
 ## Hyperspectral and LiDAR
 
-![](/article/images/mmdfrs/fig78.png)
+![](/article/images/mmdfrs/fig78.jpg)
 
 ## Deep Learning
 
-![](/article/images/mmdfrs/fig10.png)
+![](/article/images/mmdfrs/fig10.jpg)
 
 ## Fusion
 
-![](/article/images/mmdfrs/fig14.png)
+![](/article/images/mmdfrs/fig14.jpg)
 
-![](/article/images/mmdfrs/table3.png)
+![](/article/images/mmdfrs/table3.jpg)
 
 ## Conclusion
 

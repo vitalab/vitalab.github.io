@@ -11,7 +11,7 @@ pdf: "https://arxiv.org/pdf/1708.02383v1.pdf"
 ---
 
 
-<center><img src="/article/images/RLactiveLearning/sc01.png" width="300"></center>
+<center><img src="/article/images/RLactiveLearning/sc01.jpg" width="300"></center>
 
 ## Summary
 
@@ -33,11 +33,11 @@ where $$s_i$$ is the state and $$a$$ is an action (label or do not label).  The 
 
 The method is illustrated in Fig.1 and described in more details in Algo 2.
 
-<center><img src="/article/images/RLactiveLearning/sc02.png" width="300"></center>
+<center><img src="/article/images/RLactiveLearning/sc02.jpg" width="300"></center>
 
 
 ## Results
 
 Results on translation tasks are quite convincing.
 
-<center><img src="/article/images/RLactiveLearning/sc03.png" width="700"></center>
+<center><img src="/article/images/RLactiveLearning/sc03.jpg" width="700"></center>

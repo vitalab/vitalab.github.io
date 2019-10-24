@@ -56,12 +56,12 @@ shape of multiple structures.
   extraction; 3) feature alignment with a second transformation net; 4) dropout;
   5) prediction.
 
-![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Architecture.png)
+![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Architecture.jpg)
 
 The transformation network (T-Net) is a multilayer perceptron (MLP) estimating a
 rigid transformation into a canonical space.
 
-![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Transformation_network.png)
+![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Transformation_network.jpg)
 
 Weights are shared among points in the feature extraction network.
 
@@ -86,12 +86,12 @@ Disease, and 4,625 mild cognitive impairment) are used.
 Results are compared to the standard PointNet architecture and spectral shape
 descriptors in BrainPrint[^2].
 
-![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Classification_accuracy_results.png)
+![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Classification_accuracy_results.jpg)
 
 Additionally, a point importance experiment is performed using the occlusion
 method.
 
-![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Anatomy_point_importance_classification_result.png)
+![](/article/images/NeuroanatomyDeepMultiStructuralShapeAnalysis/Anatomy_point_importance_classification_result.jpg)
 
 
 # Discussion

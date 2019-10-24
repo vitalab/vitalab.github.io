@@ -25,20 +25,20 @@ The main ideas of SqueezeNet are:
 The building brick of SqueezeNet is called fire module, which contains two layers: a squeeze layer and an expand layer. 
 
 
-![](/article/images/squeezeNet/sc02.png)
+![](/article/images/squeezeNet/sc02.jpg)
 
 
 
 
 A SqueezeNet stackes a bunch of fire modules and a few pooling layers. The squeeze layer and expand layer keep the same feature map size, while the former reduce the depth to a smaller number, the later increase it. Another common pattern is increasing depth while reducing feature map size to get high level of abstraction.
 
-![](/article/images/squeezeNet/sc03.png)
+![](/article/images/squeezeNet/sc03.jpg)
 
 
 # Results
 
 
-![](/article/images/squeezeNet/sc01.png)
+![](/article/images/squeezeNet/sc01.jpg)
 
 
 

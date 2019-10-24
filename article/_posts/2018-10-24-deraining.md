@@ -14,7 +14,7 @@ The authors propose a convolutional recurrent model for deraining.
 
 Their recurrent cell, similar to GRU, is a ResBlock with Squeeze-and-Excite. Each cell predicts the rain to be removed and the next iteration works on the image minus the rain predicted.
 
-![](/article/images/deraining/fig1.png)
+![](/article/images/deraining/fig1.jpg)
 
 Their loss uses the standard squared error between the groundtruth rain streaks and the prediction while also including a coherence loss between predictions at each layer.
 
@@ -24,6 +24,6 @@ Where $$O_S$$ are all the outputs at different stages and $$\overline{O}$$ is th
 
 In the end they get a 10% boost on SSIM on Rain100H.
 
-![](/article/images/deraining/fig3.png)
+![](/article/images/deraining/fig3.jpg)
 
 [Code](https://github.com/XiaLiPKU/RESCAN/)

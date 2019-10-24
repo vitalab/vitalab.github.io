@@ -29,7 +29,7 @@ The bilinear features used are defined by a 6 dimensional feature vector $$ F^i 
 The bilateral network performs video-adaptive spatiotemporal dense filtering that is given to the spatial network (regular CNN) used to produce the new segmentation from the previous frame segmentation as shown in Fig.3.
 
 <div align="middle">
-<img src="/article/images/vpn/architecture.png"/>
+<img src="/article/images/vpn/architecture.jpg"/>
 </div>
 
 This model is used in a staged flavor by first generating a segmentation and refining it recursively.
@@ -42,20 +42,20 @@ They use the [DAVIS](http://davischallenge.org/) dataset to evaluate their model
 
 - The results on Video Object Segmention of DAVIS:
 <div align="middle">
-<img src="/article/images/vpn/results_davis.png"/>
+<img src="/article/images/vpn/results_davis.jpg"/>
 </div>
 
 Their model with pretraining achieves an improvement of 5% on all the metrics while being 10 times faster than the best reported method (OFL).
 
 - The results on Semantic segmentation on [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/){:target="_blank"} dataset:
 <div align="middle">
-<img src="/article/images/vpn/results_camvid.png"/>
+<img src="/article/images/vpn/results_camvid.jpg"/>
 </div>
 
 - The results on DAVIS for color propagation:
 <div align="middle">
-<img src="/article/images/vpn/results_davis_color.png"/>
-<img src="/article/images/vpn/visual_davis_color.png"/>
+<img src="/article/images/vpn/results_davis_color.jpg"/>
+<img src="/article/images/vpn/visual_davis_color.jpg"/>
 </div>
 They manage to improve the result in term of PSNR values and again being 20 time faster than the reported model.
 

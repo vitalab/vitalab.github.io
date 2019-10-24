@@ -30,7 +30,7 @@ similarity loss function parameters that are balanced based on class prevalence.
 months of age show similar T1 and T2 relaxation times: have similar intensity
 values on both T1- and T2-weighted MRI scans (iso-intensity).
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/T1-Intensity_distribution.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/T1-Intensity_distribution.jpg)
 
 - Most widely adopted architecture to date: DenseNets using conventional training
 strategies based on cross-entropy loss function.
@@ -38,7 +38,7 @@ strategies based on cross-entropy loss function.
 # Methods
 - Architecture
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Architecture.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Architecture.jpg)
 
 ## Network
 - Two-channel (T1 and T2) fully convolutional (FC) DenseNet.
@@ -57,16 +57,16 @@ $3 × 3 × 3$ conv layers of each dense block.
 balanced for each class using $$F_{\beta}$$ loss functions with$ $$\beta$$
 values adjusted based on class prevalence in the training set.
 
-| ![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Softmax.png)
-| ![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Sigmoid.png) |
+| ![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Softmax.jpg)
+| ![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/Sigmoid.jpg) |
 
 - Similarity loss function:
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/LossFunction.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/LossFunction.jpg)
 
 - Score:
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/ScoreFunction.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/ScoreFunction.jpg)
 
 ## Settings
 - No pre-processing (already skull-stripped and registered)
@@ -93,6 +93,6 @@ values adjusted based on class prevalence in the training set.
 - Training: 14 hours
 - Testing: 90 seconds
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/ResultsTable.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/ResultsTable.jpg)
 
-![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/SegmentationResults.png)
+![](/article/images/DenseNetsIsoIntenseInfantMRIBrainSegmentation/SegmentationResults.jpg)

@@ -16,7 +16,7 @@ pdf: "https://ieeexplore.ieee.org/abstract/document/8363747/"
 The main idea is to use a standard feed-forward neural network to predict tracting directions using a context _window_.
 
 
-![](/article/images/data-driven-tractography/figure1.png)
+![](/article/images/data-driven-tractography/figure1.jpg)
 
 
 ### Input
@@ -40,6 +40,6 @@ Seeding points are placed in the white/grey matter interface, and a step size of
 
 ## Experiments and Results
 
-![](/article/images/data-driven-tractography/table2.png)
+![](/article/images/data-driven-tractography/table2.jpg)
 
-![](/article/images/data-driven-tractography/table3.png)
+![](/article/images/data-driven-tractography/table3.jpg)

@@ -19,22 +19,22 @@ To understand this paper, you might want to read this paper first : [feature-vis
 Using GoogLeNet.  They show that instead of visualizing individual neurons, we can instead visualize the combination of neurons that fire at a given spatial location. 
 
 
-![](/article/images/interpretability/sc01.png)
+![](/article/images/interpretability/sc01.jpg)
 
 Applying this technique to all the activation vectors allows us to not only see what the network detects at each position, but also what the network understands of the input image as a whole
 
-![](/article/images/interpretability/sc02.png)
+![](/article/images/interpretability/sc02.jpg)
 
 different layers
 
-![](/article/images/interpretability/sc03.png)
+![](/article/images/interpretability/sc03.jpg)
 
 with the magnitude of the activation 
 
-![](/article/images/interpretability/sc04.png)
+![](/article/images/interpretability/sc04.jpg)
 
 ## How are concepts assembled?
 
 Authors also give an alternate way to visualize saliency maps by considering channels instead of spatial locations. Doing so allows to perform channel attribution: how much did each detector contribute to the ﬁnal output?
 
-![](/article/images/interpretability/sc05.png)
+![](/article/images/interpretability/sc05.jpg)

@@ -21,15 +21,15 @@ A Riemannian manifold is a smooth space equipped with inner products (Riemannian
 
 ### Riemannian Geometry loss
 
-![](/article/images/riemannian-loss/pipeline.png)
+![](/article/images/riemannian-loss/pipeline.jpg)
 
 The idea is to use a CNN to predict the best transformation parameters by searching through a solution space that link their optimization, chosen as the tangent space around the identity element of : 
 
-![](/article/images/riemannian-loss/eq.png)
+![](/article/images/riemannian-loss/eq.jpg)
 
 Here is the expression of the Riemannian loss :
 
-![](/article/images/riemannian-loss/loss.png)
+![](/article/images/riemannian-loss/loss.jpg)
 
 Z being the Riemannian inner product, Log the Riemannian logarithm and L the left translation by $$\hat{p}$$ (aka translation in the manifold space). 
 
@@ -52,15 +52,15 @@ They compare to weighted regression on parameters (PoseNet) and anchor points, w
 
 Here are the results, with GD the geodesic distance on the manifold :
 
-![](/article/images/riemannian-loss/res1.png)
+![](/article/images/riemannian-loss/res1.jpg)
 
 The parameter weights are set to be inversely proportional to the parameters variance on the validation set so that error-prone parameters would be closer to the mean. This gives more accurate prediction results but implies that the parameters no longer follow the manifold, as can be seen on the geodesic distance.
 
-![](/article/images/riemannian-loss/res2.png)
+![](/article/images/riemannian-loss/res2.jpg)
 
 From experiments 1 and 2, it can be observed that without parameters weighting, the new loss allows to obtain a smaller geodesic distance to ground truth values. The authors argue that the grid search is a computationally expensive process when their loss is built automatically from the data.
 
-![](/article/images/riemannian-loss/res3.png)
+![](/article/images/riemannian-loss/res3.jpg)
 
 On this dataset, the SE(3) loss function shows drastic improvement in all image similarity metrics, which suggests that a small geodesic distance is linked to a good pose estimation.
 

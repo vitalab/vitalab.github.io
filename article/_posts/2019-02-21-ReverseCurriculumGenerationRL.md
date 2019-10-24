@@ -73,7 +73,7 @@ The method is tested on four environments:
 
 Their baseline is the unfiltered start space.
 
-![](/article/images/ReverseCurriculumGenerationRL/Results.png)
+![](/article/images/ReverseCurriculumGenerationRL/Results.jpg)
 
 
 # Conclusions

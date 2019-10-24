@@ -18,7 +18,7 @@ The main improvements are :
 * They use multi-resolution anchor boxes
 
 <div align="middle">
-  <img src="/article/images/fasterrcnn/sc01.png" width="300">
+  <img src="/article/images/fasterrcnn/sc01.jpg" width="300">
 </div>
 
 
@@ -29,7 +29,7 @@ They use **VGG-16** and the feature maps fed to the RPN are those in **layer 5**
 The RPN shares the same features maps than the Faster RCNN network to allow end-to-end training.  To generate region proposals, they slide a small network over the convolutional feature map returned by the last shared convolutional layer (in their implementation, layer 5 of VGG-16). This small network takes as input an $$n\times n$$ spatial window of the input convolutional feature map and output a **box-regression layer** (reg) and a **box-classification layer** (cls) (c.f.Figure 3).  This architecture is implemented with an $$n\times n$$ convolutional layer followed by two sibling $1 \times 1$ convolutional layers
 
 <div align="middle">
-  <img src="/article/images/fasterrcnn/sc02.png" width="570">
+  <img src="/article/images/fasterrcnn/sc02.jpg" width="570">
 </div>
 
 ## Loss function
@@ -39,11 +39,11 @@ The loss function is the sum of a cross-entropy for the labels and a regression 
 FasterRNN gets respectively a mean AveragePrecision (mAP) of 78.8 and 75.9 on PASCAL VOC 2007 and 2012.
  
 <div align="middle">
-  <img src="/article/images/fasterrcnn/sc04.png" width="600">
+  <img src="/article/images/fasterrcnn/sc04.jpg" width="600">
 </div>
 
 <div align="middle">
-  <img src="/article/images/fasterrcnn/sc03.png" width="600">
+  <img src="/article/images/fasterrcnn/sc03.jpg" width="600">
 </div>
 
 

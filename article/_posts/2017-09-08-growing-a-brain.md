@@ -13,7 +13,7 @@ cite:
 
 In this paper, a **developmental transfer learning** methodology is introduced. The authors distinguish two types of developmental transfer, as you can see in the following figure. The violet boxes are newly-initialized conv layers, and the others have been pre-trained.
 
-![](/article/images/growing-a-brain/figue1.png)
+![](/article/images/growing-a-brain/figue1.jpg)
 
 # New neurons are slow learners
 
@@ -33,21 +33,21 @@ To reconcile the learning pace of the new and pre-existing units, the authors in
 
 # Experimental results
 
-![](/article/images/growing-a-brain/fig3.png){: style="height: 400px"}
+![](/article/images/growing-a-brain/fig3.jpg){: style="height: 400px"}
 {: style="float: right"}
 
 As you can see in the figure on the right, developmental transfer can **help separate classes** in the representational space.
 
 The authors also state that their method help features capture more discriminative patterns. In the bottom figure, you can see the 5 maximally activating images for two selected features. The top row is a feature from the pretrained units, and the bottom row is an added feature. On the left, there is no normalization and scaling; on the right, the operations have been included.
 
-![](/article/images/growing-a-brain/fig7.png)
+![](/article/images/growing-a-brain/fig7.jpg)
 {: style="clear: right"}
 
 Next, the **cooperative behavior** of old and new units is studied.
 
 Without the normalization and scaling (WA-CNN-ori), the new units are less useful for classification than the old. By adding the operations (WA-CNN-grow), we can see that the new units are more useful than the old!
 
-![](/article/images/growing-a-brain/fig6-2.png)
+![](/article/images/growing-a-brain/fig6-2.jpg)
 
 # Conclusion
 

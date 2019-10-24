@@ -12,9 +12,9 @@ cite:
 
 This paper introduces **DGN-AM**: Deep Generator Network for Activation Maximization.
 
-![](/article/images/preferred-inputs/fig1.png)
+![](/article/images/preferred-inputs/fig1.jpg)
 
-![](/article/images/preferred-inputs/fig2.png)
+![](/article/images/preferred-inputs/fig2.jpg)
 
 # Training process
 
@@ -42,13 +42,13 @@ $$ G $$ is trained to invert a feature representation extracted by $$ E $$, and 
 
 The best layer was determined empirically to be `fc6`.
 
-![](/article/images/preferred-inputs/fig-s13.png)
+![](/article/images/preferred-inputs/fig-s13.jpg)
 
 ---
 
 # Comparison with previous work
 
-![](/article/images/preferred-inputs/fig-s17.png)
+![](/article/images/preferred-inputs/fig-s17.jpg)
 
 ---
 

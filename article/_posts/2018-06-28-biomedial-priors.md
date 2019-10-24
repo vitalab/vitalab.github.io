@@ -15,7 +15,7 @@ The authors propose to use autoencoders to capture shape priors of the brain on 
 
 ### Segmentation pipeline
 
-![](/article/images/biomedical-priors/pipeline.png)
+![](/article/images/biomedical-priors/pipeline.jpg)
 
 
 
@@ -28,7 +28,7 @@ The authors propose to use autoencoders to capture shape priors of the brain on 
 
 Shapes are represented as possible deformations of an atlas and their encoders learn to predict both mean latent representations (highest probability) and the variance (uncertainty). The groundtruth distributions characteristics were obtained with a generator that makes the approximation that shapes follow a gaussian distribution to make it tractable:
 
-![](/article/images/biomedical-priors/generator.png)
+![](/article/images/biomedical-priors/generator.jpg)
 
 
 
@@ -45,5 +45,5 @@ Though the Dice metric can be used for the supervised segmentation, only visual 
 
 
 
-![](/article/images/biomedical-priors/T1segs.png)
-![](/article/images/biomedical-priors/Tflairsegs.png)
+![](/article/images/biomedical-priors/T1segs.jpg)
+![](/article/images/biomedical-priors/Tflairsegs.jpg)

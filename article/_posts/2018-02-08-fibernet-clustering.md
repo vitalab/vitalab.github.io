@@ -21,7 +21,7 @@ All the streamlines are then converted to the spherical coordinate system.
 
 (See the paper for the definition and computation of the potential equations).
 
-![](/article/images/fibernet-clustering/figure1.png)
+![](/article/images/fibernet-clustering/figure1.jpg)
 
 
 ### Streamlines
@@ -32,7 +32,7 @@ The authors tried resampling streamlines to 25, 50, 75 and 100 points, but noted
 
 ### Network
 
-![](/article/images/fibernet-clustering/figure2.png)
+![](/article/images/fibernet-clustering/figure2.jpg)
 
 Streamlines must be classified as one of 17 anatomically relevant fiber bundles. Manual segmentation was done on 4 subjects to create a training set, and leave-one-out cross-validation was used during training. The authors also used bootstarpping to create 20 differents datasets, each with 600 000 streamlines. They trained 20 models to form an ensemble with majority voting at test time.
 
@@ -41,7 +41,7 @@ Streamlines must be classified as one of 17 anatomically relevant fiber bundles.
 
 The proposed method is compared to autoMATE, an existing automatic streamline clustering method (atlas-based method with ROI, length and distance criteria).
 
-![](/article/images/fibernet-clustering/figure4.png)
+![](/article/images/fibernet-clustering/figure4.jpg)
 
 FiberNET doesn't seem to perform as good as autoMATE, but the authors argue that using a CNN architecture is more flexible, and provides an opportunity to fix the misclassification problem (which isn't possible with the atlas-based autoMATE).
 

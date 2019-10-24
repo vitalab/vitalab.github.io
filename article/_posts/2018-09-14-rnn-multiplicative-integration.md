@@ -19,16 +19,16 @@ Replace the RNN core _additive_ block with a _multiplicative_ block using the Ha
 
 Core block of Vanilla RNN vs Proposed Multiplicative-Integration RNN (MI-RNN):
 
-![](/article/images/rnn-multiplicative-integration/equation1.png) $$\rightarrow$$
-![](/article/images/rnn-multiplicative-integration/equation2.png)
+![](/article/images/rnn-multiplicative-integration/equation1.jpg) $$\rightarrow$$
+![](/article/images/rnn-multiplicative-integration/equation2.jpg)
 
 In a more general form, where each matrix has its own bias term:
 
-![](/article/images/rnn-multiplicative-integration/equation3.png)
+![](/article/images/rnn-multiplicative-integration/equation3.jpg)
 
 Finally, with an added "gate" on the second order term:
 
-![](/article/images/rnn-multiplicative-integration/equation4.png)
+![](/article/images/rnn-multiplicative-integration/equation4.jpg)
 
 (If $$\alpha = 0$$, we get back to the original _additive_ block)
 
@@ -43,11 +43,11 @@ Finally, with an added "gate" on the second order term:
 
 Gradient for vanilla-RNN:
 
-![](/article/images/rnn-multiplicative-integration/equation5.png)
+![](/article/images/rnn-multiplicative-integration/equation5.jpg)
 
 Gradient for MI-RNN:
 
-![](/article/images/rnn-multiplicative-integration/equation6.png)
+![](/article/images/rnn-multiplicative-integration/equation6.jpg)
 
 (For the simple case. In the general case, we have: diag$$(\alpha \odot W x_k + \beta_1)$$)
 
@@ -61,7 +61,7 @@ Gradient for MI-RNN:
 
 **Activations over the validation set, using tanh as the nonlinearity**
 
-![](/article/images/rnn-multiplicative-integration/figure1.png)
+![](/article/images/rnn-multiplicative-integration/figure1.jpg)
 
 **[Reminder]** Tanh derivative: $$ \nabla \tanh(x) = 1 - \tanh^2(x) $$
 
@@ -76,4 +76,4 @@ Gradient for MI-RNN:
 
 ## Comparative experiments
 
-![](/article/images/rnn-multiplicative-integration/table1.png)
+![](/article/images/rnn-multiplicative-integration/table1.jpg)

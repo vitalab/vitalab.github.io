@@ -28,7 +28,7 @@ The paper proposes feature selective networks, which introduce dimension
 reduction and region-wise feature attention. RoI features are extracted with
 respect to the sub-region variation and aspect ratio preference.
 
-![](/article/images/FeatureSelectiveNetworks/AttentionMapGeneration.png)
+![](/article/images/FeatureSelectiveNetworks/AttentionMapGeneration.jpg)
 
 # Introduction
 Most of state-of-the-art object detectors adopt two-stage framework composed of
@@ -60,10 +60,10 @@ the aspect ratio attention map also produces distinct feature attentions.
 - Selective RoI pooling.
 - Detection subnetwork.
 
-![](/article/images/FeatureSelectiveNetworks/Architecture.png)
+![](/article/images/FeatureSelectiveNetworks/Architecture.jpg)
 
-| ![](/article/images/FeatureSelectiveNetworks/SubregionAttentionBanks.png)
-| ![](/article/images/FeatureSelectiveNetworks/AspectRatioAttentionBanks.png) |
+| ![](/article/images/FeatureSelectiveNetworks/SubregionAttentionBanks.jpg)
+| ![](/article/images/FeatureSelectiveNetworks/AspectRatioAttentionBanks.jpg) |
 
 
 
@@ -77,4 +77,4 @@ the aspect ratio attention map also produces distinct feature attentions.
 
 # Results
 
-![](/article/images/FeatureSelectiveNetworks/Results.png)
+![](/article/images/FeatureSelectiveNetworks/Results.jpg)

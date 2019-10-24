@@ -22,18 +22,18 @@ $$f(I)$$ can be used to produce a segmentation map $$s(I)$$ of spatial dimension
 The costom decoder network progressively refines the segmentation map $$s(I)$$.
 This model enforces the channel dimension of $$s_k (I)$$ to be the same as the number of class labels, so $$s_k (I)$$ can be considered as a (soft) label map.
 
-![](/article/images/LRN/network.png)
+![](/article/images/LRN/network.jpg)
 
-![](/article/images/LRN/RE.png)
+![](/article/images/LRN/RE.jpg)
 
-![](/article/images/LRN/viz.png)
+![](/article/images/LRN/viz.jpg)
 
 ## Results
 
-![](/article/images/LRN/pascal.png)
+![](/article/images/LRN/pascal.jpg)
 
-![](/article/images/LRN/camvid.png)
+![](/article/images/LRN/camvid.jpg)
 
-![](/article/images/LRN/camvid2.png)
+![](/article/images/LRN/camvid2.jpg)
 
 The model produces segmentation labels in a coarse-to-fine manner. The segmentation labels at coarse levels are used to refine the labeling produced at finer levels progressively.

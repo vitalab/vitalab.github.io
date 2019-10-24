@@ -49,7 +49,7 @@ as a starting point and do your review.
     Used the crossentropy loss and a lot of data augmentation.
 
     The network architecture:
-    ![](/article/images/MyReview/UNetArchitecture.png)
+    ![](/article/images/MyReview/UNetArchitecture.jpg)
 
     A U-Net is based on Fully Convolutional Networks (FCNNs)[^1].
 

@@ -28,21 +28,21 @@ $$ \forall i, j,  T_{ij} = p(\hat y = e^j |y = e^i). $$
 
 In order to compensate for the noise, they propose 2 solutions : **a forward correction procedure** and a **backward correction procedure**.  The forward correction amounts to multiply the output of the network with T
 
-![](/article/images/noisyLabels/sc02.png)
+![](/article/images/noisyLabels/sc02.jpg)
 
 The backward correction amounts to multiply the loss by the inverse of T 
 
-![](/article/images/noisyLabels/sc01.png)
+![](/article/images/noisyLabels/sc01.jpg)
 
 
 The algorithm to compute T is very simple and amounts to 
 
-![](/article/images/noisyLabels/sc03.png)
+![](/article/images/noisyLabels/sc03.jpg)
 
 
 ## Summary
 
 You know what, it works!
 
-![](/article/images/noisyLabels/sc04.png)
+![](/article/images/noisyLabels/sc04.jpg)
 

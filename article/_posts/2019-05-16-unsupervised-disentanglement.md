@@ -33,7 +33,7 @@ Following this large scale study, the authors...
 * ...could not validate the assumption that disentanglement is useful for downstream tasks.
 * ...found that hyperparameters do not transfer across tasks, and are less important than random seeds (see figure below).
 
-![](/article/images/unsupervised-disentanglement/image3.png)
+![](/article/images/unsupervised-disentanglement/image3.jpg)
 
 # Observations relevant to future research
 

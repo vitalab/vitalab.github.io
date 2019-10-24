@@ -26,7 +26,7 @@ To select which pixel to mask, they use importance sampling on the mask and keep
 The second part is a spatial transformer network (ASTN), it generates deformation on the object features. The deformation is mostly focused on the rotation. They found that limiting the rotation is a key factor in their experiment to not have upside down rotations and fool the prediction network. The rotation limit is in between $$ -10^\circ $$ to $$ 10^\circ $$. The feature maps are divided into 4 blocks along the channel axis and different rotations are applied on these blocks.
 
 <div align="middle">
-     <img src="/article/images/afrcnn/network.png"/>
+     <img src="/article/images/afrcnn/network.jpg"/>
 </div>
 
 ## Training
@@ -37,7 +37,7 @@ They use a pre-trained Fast-RCNN network on ImageNet. The training is done in a 
 
 They report results on three dataset: [PASCAL VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/), [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/), and [MSCOCO](http://cocodataset.org).
 
-![](/article/images/afrcnn/voc2007.png)
+![](/article/images/afrcnn/voc2007.jpg)
 
-![](/article/images/afrcnn/voc2012.png)
+![](/article/images/afrcnn/voc2012.jpg)
 

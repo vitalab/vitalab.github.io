@@ -26,7 +26,7 @@ All of these findings seem to contradict Stanford's CS231n course material. In t
 
 In the figure below, "HB" stands for _Polyak’s heavy-ball_ method, which is considered to be part of the stochastic momentum methods. 
 
-![](/article/images/adaptive-methods-comparison.png)
+![](/article/images/adaptive-methods-comparison.jpg)
 
 Lastly, the authors suggest a method for tuning the initial step size $$ \alpha_0 $$ that worked well in all of their experiments. To find $$ \alpha_0 $$, the authors conduct a grid search with $$ \alpha_0 = 2^k $$ over five consecutive values of $$ k \in \mathbb{Z} $$. If the best performance is achieved at one extreme of the grid, they try new grid points so that the best performance is contained in the middle of the grid.
 

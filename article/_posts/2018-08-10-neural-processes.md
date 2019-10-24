@@ -30,7 +30,7 @@ Here the idea is to construct a model that :
 
 ### Neural Processes
 
-![](/article/images/neural-processes/np.png)
+![](/article/images/neural-processes/np.jpg)
 
 The gist of their intuition (supported by a lot of equations in the paper) is that in order to represent a stochastic process with a NN, one can use the idea of variational auto-encoder (VAE) where a latent representation $$r$$ extracted from an encoder $$h$$ can contain noise (ex : be a multivariate standard normal). 
 
@@ -49,14 +49,14 @@ In meta-learning, this can be seen as a few-shot function estimation.
 
 Learning to approximate a 1-D function generated with GPs from a variable number of randomly picked context points:
 
-![](/article/images/neural-processes/1dreg.png)
+![](/article/images/neural-processes/1dreg.jpg)
 
 Learning to approximate a image from a given dataset (MNIST, CelebA) from variable number of randomly picked context points:
 
-![](/article/images/neural-processes/2dreg.png)
+![](/article/images/neural-processes/2dreg.jpg)
 
 Comparing to related methods (Meta-learning, Bayesian methods, Conditional latent variable models...) on a reinforcement learning optimisation task :
 
-![](/article/images/neural-processes/bandits.png)
+![](/article/images/neural-processes/bandits.jpg)
 
 They basically show that their model can be used for various tasks (but mostly show so on low-dimensional regression tasks), is rather competitive compared to SOTA, is fast at test time compared to GPs.

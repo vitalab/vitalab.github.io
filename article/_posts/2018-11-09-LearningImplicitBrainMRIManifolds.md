@@ -46,7 +46,7 @@ the authors of this paper.
 Adversarial Network ([DCGAN](https://arxiv.org/pdf/1511.06434.pdf))
 architecture.
 
-![](/article/images/LearningImplicitBrainMRIManifolds/Architecture.png)
+![](/article/images/LearningImplicitBrainMRIManifolds/Architecture.jpg)
 
  ## Image denoising
 - Features "symmetric skip connections": adds the feature output from 2 conv
@@ -59,7 +59,7 @@ mask of the brain and skull to the 2D slices of the dataset.
 trained for each level of noise.
 - Minimize the MSE.
 
-![](/article/images/LearningImplicitBrainMRIManifolds/DenoisingAutoencoderNetwork.png)
+![](/article/images/LearningImplicitBrainMRIManifolds/DenoisingAutoencoderNetwork.jpg)
 
 ## Data
 - 528 T1-weighted brain MPRAGE MRI images (single mid-line axial slice) of
@@ -80,12 +80,12 @@ that this network is not simply reconstructing examples from the training set.
 - "Average quality" score by two separate raters: intra-rater overlap in the
 distribution score histogram.
 
-![](/article/images/LearningImplicitBrainMRIManifolds/SynthesisResults.png)
+![](/article/images/LearningImplicitBrainMRIManifolds/SynthesisResults.jpg)
 
 ## Image Denoising
 - Performs better than the [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki) [SUSAN](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/SUSAN) method.
 
-![](/article/images/LearningImplicitBrainMRIManifolds/DenoisingResults.png)
+![](/article/images/LearningImplicitBrainMRIManifolds/DenoisingResults.jpg)
 
 
 # Discussion
