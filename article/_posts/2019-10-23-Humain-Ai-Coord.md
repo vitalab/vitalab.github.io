@@ -52,6 +52,8 @@ The authors considered two DRL algorithms, PPO and PBT<sup>[4](#4)</sup>, to be 
 ![](/article/images/human-ai-coord/fig4c.jpeg)
 ![](/article/images/human-ai-coord/fig6.jpeg)
 
+**H1** is clearly supported: self-play agents perform worse with humans than with themselves. **H2** is also supported: $$PPO_{BC}$$ is statistically significantly better than $$SP$$ or $$PBT$$, though the effect is much less pronounced than before. Since their method only beats teams of humans in 5/10 configurations, the data is inconclusive about **H3**.
+
 # Conclusions
 
 > While agents trained via general DRL algorithms in collaborative environments are very good at coordinating with themselves, they are not able to handle human partners well, since they have never seen humans during training.
