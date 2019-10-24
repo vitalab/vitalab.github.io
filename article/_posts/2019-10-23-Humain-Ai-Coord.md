@@ -7,7 +7,7 @@ cite:
     authors: "Micah Carroll, Rohin Shah, Mark K. Ho, Thomas L. Griffiths, Sanjit A. Seshia, Pieter Abbeel, Anca Dragan"
     title:   "On the Utility of Learning about Humans for Human-AI Coordination"
     venue:   "NeurIPS 2019"
-pdf: ""
+pdf: "https://arxiv.org/pdf/1910.05789.pdf"
 ---
 
 
@@ -20,13 +20,13 @@ pdf: ""
 
 > An increasingly effective way to tackle two-player games is to train an agent to play with a set of other AI agents, often past versions of itself. This powerful approach has resulted in impressive performance against human experts in games like Go, Quake, Dota, and Starcraft.
 
-However, the agents never encounter humans during training and therefore undergo serious distributional shift. How do they not fail catastrophically when put against human players ? The authors hypothesize that it is because of the _competitive_ nature of these games. Indeed, even with a simple _Minimax_<sup>[1](#1)</sup> policy, if a human makes a suboptimal move, the AI agent can only beat them even more soundly.
+However, these agents were all trained via self-play and never encounter humans during training and therefore undergo serious distributional shift. How do they not fail catastrophically when put against human players ? The authors hypothesize that it is because of the _competitive_ nature of these games. Indeed, even with a simple _Minimax_<sup>[1](#1)</sup> policy, if a human makes a suboptimal move, the AI agent can only beat them even more soundly.
 
 However, one could argue that the ultimate goal of AI is to produce _collaborative_ agents rather than competitive ones. Recent results in games like Dota<sup>[2](#2)</sup> and Capture the Flag<sup>[2](#3)</sup>. While the results of these experiments seems to point towards self-play extending nicely to cooperation, the authors argue that the nice results come from the agents' own abilities and not coordination with humans.
 
 # Methods
 
-The authors propsed three testable hypotheses and devised a new environment to test them. The hypotheses go as follows:
+The authors proposed three testable hypotheses and devised a new environment to test them. The hypotheses go as follows:
 
 **H1. A self-play agent will perform much more poorly when partnered with a human (relative to being partnered with itself).**
 
@@ -41,7 +41,7 @@ They also created the _Overcooked_ environment, based on the video game of the s
 
 > Agents should learn how to navigate the map, interact with objects, drop the objects off in the right locations, and finally serve completed dishes to the serving area. All the while, agents should be aware of what their partner is doing and coordinate with them effectively.
 
-To train the agents, the authors gathered 16 human-human trajectories for each layout. They then used behavior cloning to create the $$BC$$ model (training time) and $$H_{proxy}$$ model (test time).
+To train the agents, the authors gathered 16 human-human trajectories for each layout. They then used behavior cloning (BC) to create the $$BC$$ model (training time) and $$H_{proxy}$$ model (test time) to remove the need for human interactions  because involving humans in the training loop would be infeasible.
 
 The authors considered two DRL algorithms, PPO and PBT<sup>[4](#4)</sup>, to be trained via self-play(SP) and one planning algorithm. The planning algorithm pre-computes the (near) optimal motion plan by searching every possible starting and goal states for agents, bundles actions into high-level actions such as "get an onion" and use the motion plan to compute costs for each action. At runtime, A* is used to search the next best action to do according to the agent's current state.
 
