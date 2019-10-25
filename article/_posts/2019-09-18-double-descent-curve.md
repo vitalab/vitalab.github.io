@@ -35,9 +35,9 @@ Here are the curves for the random Fourier features model and the fully connecte
 ![](/article/images/double-descent-curve/fig2.png)
 ![](/article/images/double-descent-curve/fig9.png)
 
-In those curves, the peak corresponds to the _interpolation threshold_. For a regression task, this threshold is where the number of parameters $$ N $$ equals the number of data points $$ n $$. For a classfication task with $$ C $$ classes, the threshold is expected at $$ N = C \cdot n $$. 
+In those curves, the peak corresponds to the _interpolation threshold_. For a regression task, this threshold is where the number of parameters $$ N $$ equals the number of data points $$ n $$. For a classification task with $$ C $$ classes, the threshold is expected at $$ N = C \cdot n $$. 
 
-Below is an illustration of an univariate regression task. While the 40-feature model in blue interpolates the data perfectly, the 4000-feature model also does it, but with a smoother model (and lower norm).
+Below is an illustration of a univariate regression task. While the 40-feature model in blue interpolates the data perfectly, the 4000-feature model also does it, but with a smoother model (and lower norm).
 
 ![](/article/images/double-descent-curve/fig3.png)
 
@@ -45,4 +45,4 @@ Below is an illustration of an univariate regression task. While the 40-feature 
 
 * It is not clear how these results transfer to deep learning. It would be interesting to try to produce these curves for deep models.
 * Small datasets, like medical datasets: the _double descent curve_ might make sense.
-* Heavy datasets, like Imagenet: $$ N = C \cdot n = 10^3 \cdot 10^6 = 10^9 $$, which is larger than the size of most ImageNet models. For these models, the interpolation threshold seems very high compared to successful model sizes. Maybe there is some power in deep-learning to decrease this threshold? Maybe these models are in the _classical regime_?
+* Heavy datasets, like ImageNet: $$ N = C \cdot n = 10^3 \cdot 10^6 = 10^9 $$, which is larger than the size of most ImageNet models. For these models, the interpolation threshold seems very high compared to successful model sizes. Maybe there is some power in deep-learning to decrease this threshold? Maybe these models are in the _classical regime_?
