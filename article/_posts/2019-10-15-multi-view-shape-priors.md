@@ -12,8 +12,8 @@ pdf: "https://arxiv.org/pdf/1907.09983.pdf"
 
 
 # Highlights
-- Novel autoencoder architecture (Shape MAE) which learns latent representation of cardiac shapes from multiple
-  standard views
+- Novel multi-view autoencoder architecture (Shape MAE) which learns latent representation of cardiac shapes from
+  multiple standard views
 - Multi-view UNet that can incorporate anatomical shape priors to guide the segmentation of short-axis images
 - More robust than 2D or 3D segmentation baselines when using less training data (10%)
 
@@ -30,8 +30,9 @@ A number of methods already improve the robustness of cardiac segmentations, but
 Given a source view $$X_i$$, the network learns the low-dimensional representation $$z_i$$ of $$X_i$$ that best
 reconstructs all the $$j$$ target views segmentations $$Y_j$$.
 
-The authors use four source views $$X_i$$ ($$i = 1, ..., 4$$) which are three LA images - the two-chamber view
-(LA1), three-chamber view (LA2), the four-chamber view (LA3) - and one mid-ventricular slice (Mid-V) from the SA view.
+The authors use four source views $$X_i$$ ($$i = 1, ..., 4$$) which are three long axis (LA) images - the two-chamber
+view (LA1), three-chamber view (LA2), the four-chamber view (LA3) - and one mid-ventricular slice (Mid-V) from the
+short axis (SA) view.
 
 The target segmentations views $$Y_j$$ ($$j = 1, ..., 6$$) correspond to the four previous views plus two SA slices:
 the apical one and the basal one.
@@ -46,14 +47,15 @@ The global loss for training the Shape MAE is shown in equation 1.
 
 where:
 - $$L_intra$$ denotes the segmentation loss when the source view $$X_i$$ and the target view $$Y_j$$
-- $$L_inter$$ denotes the loss when two views are differentthe number of filters at each level by four times to account
+- $$L_inter$$ denotes the loss when two views differ in the number of filters at each level by four times to account
   for the fact that cardiac segmentation is simpler than the lesion segmentation
 - $$\alpha$$ and $$\beta$$ are not both set to 1! $$\alpha$$ was empirically set to 0.5 and $$\beta$$ to 0.001.
 
 As for the proposed multi-view U-Net (MV U-Net), it is based on the original U-Net. The number of filters was reduced
 at each level by four times to account for the fact that cardiac segmentation is simpler than the original U-Net task
 (lesion segmentation with multiple candidates). A module called ‘Fuse Block’ is also introduced in the bottleneck of
-the network. The detailed architecture is shown in Figure 2.
+the U-Net to merge the latent spaces with the feature maps from the U-Net. The detailed architecture is shown in
+Figure 2.
 
 ![](/article/images/MultiViewShapePriors/figure2.png)
 
