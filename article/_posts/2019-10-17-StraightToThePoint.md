@@ -20,8 +20,13 @@ pdf: "https://arxiv.org/pdf/1903.00586.pdf"
 
 
 # Introduction
-The authors propose a method for guiding inexperienced users in the acquisition through the parasternal long axis (PLAx)
-sonic window on the heart. The degrees of freedom covered by the guidance are detailed in Figure 2.
+The authors propose a method for guiding inexperienced users in the acquisition of clinically relevant images of the
+heart in ultrasound through the parasternal long axis (PLAx) sonic window on the heart. Up until now, an experienced
+user must provide, in real time, accurate instruction for fine manipulation of the ultrasound probe in order for the
+probe to gather clinically relevant images. The goal of this paper is thus to train a RL policy to predict accurate
+guidance information to be displayed to the probe's user, based on the image produced by the probe.
+
+The degrees of freedom covered by the automatic guidance system proposed in the paper are detailed in Figure 2.
 
 ![](/article/images/StraightToThePoint/figure2.png)
 
@@ -31,6 +36,10 @@ sonic window on the heart. The degrees of freedom covered by the guidance are de
 ## Environment
 It would be impossible to collect data according to the RL agent's policy since it would require to scan a patient
 during training, so a large number of spatially tracked video frames was acquired to navigate the chest area offline.
+To limit the near infinite range of possible image acquisition points on the chest, the authors divided a large portion
+of the chest into 7 x 7 spatial bins, and acquired images only at these positions. In the bins characterized as
+"correct" for the acquisition of images, more images were acquired along at various positions along the other degrees
+of freedom.
 
 Table 1 shows how the acquisition's degrees of freedom where represented in possible actions, while Table 2 describes
 the reward strategy.
@@ -52,7 +61,7 @@ The objective function used to update the parameters is the following equation:
 
 ## Supervised policy learning
 Each image acquired in each bin was labelled with one action, which would be the optimal action to perform in that
-state if we relied only on the Manhattan distance $$abs(x − x_goal)$$.
+state if we relied only on the Manhattan distance $$\mid x - x_goal \mid$$.
 
 The authors train a classifier with the same architecture shown in Figure 4, with the only exception that the last
 layer is followed by a soft-max activation function.
