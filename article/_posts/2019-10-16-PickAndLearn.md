@@ -35,8 +35,8 @@ loss and U-Net as their segmentation network.
 The QAM runs parallel with the segmentation module to calculate weight values to apply to the loss from each sample.
 During training, the re-weighted loss is used for both the segmentation module and the QAM.
 
-The network used for the QAM is a VGG network, where the number of input channel is change to $$n + 1$$, where $$n$$ is
-the number of segmentation classes, to take both image and labels as input. The final layer is also replaced by a
+The network used for the QAM is a VGG network, where the number of input channels is changed to $$n + 1$$, where $$n$$
+is the number of segmentation classes, to take both image and labels as input. The final layer is also replaced by a
 one-channel average pooling layer to assess the weight for each sample in the mini-batch.
 
 The resulting loss used by the segmentation model then becomes:
@@ -48,13 +48,14 @@ weights between 0 and 1.
 
 
 ## Overfitting Control Module (OCM)
-The motivation behind the ÒCM is that overfitting problems can arise from the use of the QAM, if the QAM has a larger
+The motivation behind the OCM is that overfitting problems can arise from the use of the QAM, if the QAM has a larger
 weight on a small subset with clear-labeled samples. The authors also state that if the QAM makes mistakes during the
 training process, the relative weight of this sample can be too small or too big for the network to correct.
 
 To counter this, the authors add an extra restriction between the quality awareness module and the softmax layer. They
 simply use a weighted hyperbolic tangent (as shown in the equation below), to limit the relative ratio of the output
-quality score from (−∞,∞) to (−λ,λ). The authors state they empirically set λ to be 2.
+quality score from ($$-\infty$$, $$\infty$$) to ($$-\lambda $$, $$\lambda$$). The authors state they empirically
+set $$\lambda$$to be 2.
 
 ![](/article/images/PickAndLearn/equation2.png)
 
@@ -64,8 +65,8 @@ The authors tested their method on the public JSRT dataset, which contains 247 X
 structures are the heart, clavicles, and lungs.
 
 To generate noisy-labeled images, the authors used different types and levels of noises. They randomly selected
-0%, 25%, 50% and 75% samples from the training set and eroded or dilated them with 1 ≤ n i ≤ 8 and 5 ≤ n i ≤ 13 pixels.
-Examples of the resulting noisy-labeled segmentations are shown in Figure 1.
+0%, 25%, 50% and 75% samples from the training set and eroded or dilated them with $$1 \leq n_i \leq 8$$
+and $$5 \leq n_i \leq 13$$pixels. Examples of the resulting noisy-labeled segmentations are shown in Figure 1.
 
 ![](/article/images/PickAndLearn/figure1.png)
 
@@ -84,7 +85,7 @@ Figure 4 gives some insight into how the QAM affects the final loss during the t
 
 
 # Remarks
-- Approximative English and figure make it unclear whether the QAM uses the original segmentation loss or the
-  re-weighted loss
+- The unclear wording in the paper, along with the lack of details in the network architecture figure, make it unclear
+  whether the QAM uses the original segmentation loss or the re-weighted loss
 - No clear explanation (e.g. ablation study) as to why they apply both a softmax and a tanh to the output of the QAM,
   and whether only one of them would have the same effect (which intuitively would seem to be the case)
