@@ -17,7 +17,7 @@ pdf: "https://arxiv.org/abs/1806.05236"
 - Smoother decision boundaries
 - Learned representations with less directions of variance
 - Better generalization than other competitive regularizers (e.g. dropout)
-- Improved robstness to adversarial attacks
+- Improved robustness to adversarial attacks
 
 # Method
 
