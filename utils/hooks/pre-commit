@@ -5,7 +5,7 @@ cd "${BASH_SOURCE%/*}" &&
 cd ../..
 
 scripts_folder=$(pwd)'/utils/'
-hook_scripts=("check_tags.sh" "check_cross_ref_images.sh")
+hook_scripts=("check_tags.sh" "check_cross_ref_images.sh" "check_png_images.sh")
 
 repo_root_path=$(git rev-parse --show-toplevel)
 
