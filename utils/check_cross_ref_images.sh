@@ -37,15 +37,15 @@ fi
 
 
 status=0
-non_existing_files=0
+non_existing_file_count=0
 
 check_files_exist() {
   local cross_ref_file
   for cross_ref_file in "${images_list[@]}"; do
     abs_filename="$(pwd)$cross_ref_file"
     if [ ! -f "$abs_filename" ]; then
-      non_existing_cross_ref_files+=("$cross_ref_file")
-      ((non_existing_files++))
+      non_existing_cross_ref_fnames+=("$cross_ref_file")
+      ((non_existing_file_count++))
     fi
   done
 }
@@ -59,7 +59,7 @@ images_list=()
 
 for file in "${files[@]}"; do
 
-  non_existing_cross_ref_files=()
+  non_existing_cross_ref_fnames=()
 
   # Look for the cross-referenced images in the files
   pattern=".*\!(\[.?\])(\(?)([^]]*)(\))(.*)"
@@ -72,11 +72,11 @@ for file in "${files[@]}"; do
 
   check_files_exist
 
-  if [[ ${#non_existing_cross_ref_files} -ne 0 ]]; then
+  if [[ ${non_existing_file_count} -ne 0 ]]; then
     echo $file
-    IFS=$'\n' echo "${non_existing_cross_ref_files[*]}"
+    IFS=$'\n' echo "${non_existing_cross_ref_fnames[*]}"
 
-    if (( $non_existing_files == 1 )); then
+    if (( $non_existing_file_count == 1 )); then
       echo "does not exist as a file."
       echo "Please, add it or remove its references."
     else
@@ -87,7 +87,7 @@ for file in "${files[@]}"; do
 
 done
 
-if [[ $non_existing_files -ne 0 ]]; then
+if [[ $non_existing_file_count -ne 0 ]]; then
   status=1
 fi
 
