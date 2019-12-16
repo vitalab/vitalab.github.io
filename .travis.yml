@@ -1,5 +1,5 @@
 language: bash
 
 script:
-    - git fetch origin
+    - git fetch
     - bash utils/hooks/pre-commit
