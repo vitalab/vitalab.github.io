@@ -13,6 +13,7 @@ pdf: ""
 
 # Highlights
 
+Something[^1]
 
 # Introduction
 
@@ -33,3 +34,5 @@ pdf: ""
 
 
 # References
+
+[^1]: Reference about something
