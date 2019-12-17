@@ -10,7 +10,7 @@ hook_scripts=("check_tags.sh" "check_cross_ref_images.sh" "check_png_images.sh")
 repo_root_path=$(git rev-parse --show-toplevel)
 
 # Look for the added or modified Markdown files
-files=($(git diff-index --diff-filter=AM --cached HEAD --name-only -- '*/*.md' ':(exclude)$repo_root_path/*.md'))
+files=($(git diff --name-only HEAD origin/master '*/*.md' ':(exclude)$repo_root_path/*.md'))
 
 # Loop over the scripts if the array is not empty
 if [[ ${files[@]} ]]; then
