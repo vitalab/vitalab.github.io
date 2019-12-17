@@ -62,7 +62,7 @@ for file in "${files[@]}"; do
   non_existing_cross_ref_fnames=()
 
   # Look for the cross-referenced images in the files
-  pattern=".*\!(\[.?\])(\(?)([^]]*)(\))(.*)"
+  pattern=".*\!(\[.*\])(\(?)([^]]*)(\))(.*)"
   IFS=$'\n' images_list=($(sed -n -r "s/$pattern/\3/p" $file))
 
   check_files_exist
