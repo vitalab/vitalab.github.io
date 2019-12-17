@@ -1,5 +1,6 @@
 language: bash
 
 script:
-    - git fetch
-    - bash utils/hooks/pre-commit
+  - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+  - git fetch origin master
+  - bash utils/hooks/pre-commit
