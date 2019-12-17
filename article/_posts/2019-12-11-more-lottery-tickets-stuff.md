@@ -27,4 +27,4 @@ The following papers are referenced in a blog post on the Facebook AI Research b
 
 [Student Specialization in Deep ReLU Networks With Finite Width and Input Dimension](https://arxiv.org/abs/1909.13458); Yuandong Tian; Arxiv 2019.
 
-![](yolo-quatre-cent-vingt.png)
+![](/article/images/more-lottery/salut.png)
