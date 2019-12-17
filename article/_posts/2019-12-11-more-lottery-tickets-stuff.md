@@ -26,5 +26,3 @@ The following papers are referenced in a blog post on the Facebook AI Research b
 [Playing the lottery with rewards and multiple languages: lottery tickets in RL and NLP](https://arxiv.org/abs/1906.02768); Haonan Yu, Sergey Edunov, Yuandong Tian, Ari S. Morcos; Arxiv 2019.
 
 [Student Specialization in Deep ReLU Networks With Finite Width and Input Dimension](https://arxiv.org/abs/1909.13458); Yuandong Tian; Arxiv 2019.
-
-![](/article/images/more-lottery/salut.png)
