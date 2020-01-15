@@ -5,7 +5,7 @@ tags: reinforcement deep-learning
 author: "Antoine Théberge"
 cite:
     authors: "Rupesh Kumar Srivastava, Pranav Shyam, Filipe Mutz, Wojciech Jaśkowski, Jürgen Schmidhuber"
-    title:   "raining Agents using Upside-Down Reinforcement Learning"
+    title:   "Training Agents using Upside-Down Reinforcement Learning"
     venue:   "Arxiv 2019"
 pdf: "https://arxiv.org/abs/1912.02877"
 ---
@@ -25,7 +25,7 @@ Upside-Down RL (UDRL) diverges from other attempts to formulate RL as a SL probl
 
 # Methods
 
-Formally, as usual, $$s \in S$$ denotes the current states, $$a \in A$$ denotes actions, $$r$$ denotes rewards  and $$\tau$$ denotes a set of trajectories where each trajectory is defined by a list of $$(s_0, a_0, r_0, s_{1}) .. (s_t, a_0, r_t, s_{t+1})$$. Trajectories are sampled by a policy $$\pi$$ (or behavior function $$B$$). $$c$$ will denote a _command_, where $$c_t = (d^{r}_{t}, d^{h}_{t})$$ is the command at time $$t$$, $$d^r$$ is the _desired reward_ and $$d^h$$ the _desired horizon_ . According to the technical report[^1], commands can also include more information as part of an $$extra_t$$ vector like $$morethan_t$$ where you want the behavior function to acquire more than the reward specified. The base command can be interpreted as "accumulate as much as reward in that amount of steps".
+Formally, as usual, $$s \in S$$ denotes the current states, $$a \in A$$ denotes actions, $$r$$ denotes rewards  and $$\tau$$ denotes a set of trajectories where each trajectory is defined by a list of $$(s_0, a_0, r_0, s_{1}) .. (s_t, a_t, r_t, s_{t+1})$$. Trajectories are sampled by a policy $$\pi$$ (or behavior function $$B$$). $$c$$ will denote a _command_, where $$c_t = (d^{r}_{t}, d^{h}_{t})$$ is the command at time $$t$$, $$d^r$$ is the _desired reward_ and $$d^h$$ the _desired horizon_ . According to the technical report[^1], commands can also include more information as part of an $$extra_t$$ vector like $$morethan_t$$ where you want the behavior function to acquire more than the reward specified. The base command can be interpreted as "accumulate as much as reward in that amount of steps".
 
 The training can be split into two phases (that can also run simultaneously and update each other once in a while): Training (alg.1) and Gathering (alg.2)
 
