@@ -22,7 +22,7 @@ pdf: "https://openreview.net/pdf?id=r1etN1rtPB"
 > Deep reinforcement learning (RL) algorithms have fueled many of the most publicized achievements in modern machine learning. However, despite these accomplishments, deep RL methods still are not nearly as reliable as their (deep) supervised counterparts. Indeed, recent research found the existing deep RL methods to be brittle, hard to reproduce, unreliable across runs and sometimes outperformed by simple baselines.
 > The prevalence of these issues points to a broader problem: we do not understand how the parts comprising deep RL algorithms impact agent training, either separately or as a whole. This unsatisfactory understanding suggests that we should re-evaluate the inner workings of our algorithms. Indeed, the overall question motivating our work is: how do the multitude of mechanisms used in deep RL training algorithms impact agent behavior ?
 
-The authors focused their work on PPO, the currently state of the art (SotA) in Deep RL, atleast in continuous problems. PPO is based on Trust Region Policy Optimization (TRPO), an algorithm that constrains the KL divergence between successive policies on the optimization trajectory by using the following update rule:
+The authors focused their work on PPO, the current state of the art (SotA) algorithm in Deep RL (at least in continuous problems). PPO is based on Trust Region Policy Optimization (TRPO), an algorithm that constrains the KL divergence between successive policies on the optimization trajectory by using the following update rule:
 
 ![](/article/images/implementation-matters/alg1.jpeg)
 
