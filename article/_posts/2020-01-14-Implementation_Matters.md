@@ -13,7 +13,7 @@ pdf: "https://openreview.net/pdf?id=r1etN1rtPB"
 
 # Highlights
 
-- Much of the performance of the TRPO and PPO algorithms come from code-level optimization and not the original paper's main selling points
+- Much of the performance of PPO over TRPO algorithms come from code-level optimization and not the original paper's main selling points
 - PPO code-optimizations are significantly more important in terms of final reward achieved than the choice of general training algorithm (TRPO vs. PPO)
 
 
