@@ -81,3 +81,4 @@ Then, subgradient descent is used to optimize the parameters, which is a convex 
 
 - They claim to be the first "complete data driven approach for extracting brain connectomes"
 - Unclear how they choose the number of streamlines
+- Unclear how they choose to focus on a single bundle
