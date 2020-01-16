@@ -1,7 +1,7 @@
 ---
 layout: review
 title: "Learning Macroscopic Brain Connectomes via Group-Sparse Factorization"
-tags: 
+tags: brain tractography unsupervised white-matter
 author: "Philippe Poulin"
 cite:
     authors: "Aminmansour, F., Patterson, A., Le, L., Peng, Y., Mitchell, D., Pestilli, F., Caiafa, C.F., Greiner, R. and White, M."
