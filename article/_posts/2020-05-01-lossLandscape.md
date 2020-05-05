@@ -13,7 +13,7 @@ pdf: "https://arxiv.org/pdf/1712.09913.pdf"
 
 # Highlights
 
-This paper shows how meaningful loss function visualizations can illustrate how  loss landscape geometry affects generalization error and trainability.  This allowed the authors to explain some known facts about deep neural nets and provide key suggestions for network design and optimization.
+This paper shows how meaningful loss function visualizations can illustrate the way loss landscape geometry affects generalization error and trainability.  This allowed the authors to explain some known facts about deep neural nets and provide key suggestions for network design and optimization.
 
 ![](/article/images/lossLandscape/sc01.jpg)
 
@@ -25,7 +25,7 @@ The authors first describe two well-known methods to visualize a loss function $
 
 One simple way of visualizaing a loss function is to take two sets of weights $$\theta$$ and $$\theta'$$, interpolate it
 
-$$\theta(\alpha)=(1-\alpha)\theta+\alpha\theta$$
+$$\theta(\alpha)=(1-\alpha)\theta+\alpha\theta'$$
 
 and then plot $$L(\theta(\alpha))$$ for various values of $$\alpha$$ between 0 and 1.  This is useful to visualize the '''flatness''' of a loss function.
 
@@ -62,11 +62,11 @@ They also show in Fig.1, 5 and 6 that the absence of residual connexion leads to
 
 # Conclusion
 
-With this visualization method, the authors came to validate the following statements
+With this visualization method, the authors came to validate the following statements:
 
 * as networks become **very deep**, neural loss landscapes go from almost convex to very chaotic.  Also, chaotic landscape = poor trainability and large generalization error
 * **residual connections** (ResNet, wideResNet, etc) and **skip connections** (DenseNet) enforces smooth landscapes
 * **Sharp loss landscape** = large generalization error.
 * **Flat loss landscape** = low generalization error.
-* the widht of the global minima is **inversely proportional to batch size**.
+* the width of the global minima is **inversely proportional to batch size**.
 
