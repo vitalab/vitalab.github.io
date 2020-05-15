@@ -31,7 +31,7 @@ and then plot $$L(\theta(\alpha))$$ for various values of $$\alpha$$ between 0 a
 
 ## Contour plots (2D visualization)
 
-One can also shoose of center point $$\theta^*$$ as well as two direction vectors $$\delta$$ and $$\eta$$ and plot a 2D surface by choosing various positive and negative values of $$\alpha,\beta \in R$$:
+One can also choose a center point $$\theta^*$$ as well as two direction vectors $$\delta$$ and $$\eta$$ and plot a 2D surface by choosing various positive and negative values of $$\alpha,\beta \in R$$:
 
 $$L(\theta^*+\alpha\delta+\beta\eta)$$
 
@@ -42,7 +42,7 @@ This typically results into plots such as the ones in Fig.1
 Authors mention that one has to take into account  the filter weights before to visualize a loss landscape otherwise comparision between different network configurations is impossible.  The reasons being that a neural net with large weights may appear to have a smooth and slowly
 varying loss function.  This is problematic considering that with batch norm and relu, one can multiply the weights by a non zero factor and still have the same function.
 
-To remove this scaling effect, they plot the loss using filter-wise normalized directions.  Given a random direction $$d$$, the elements of $$d$$ are normalized as follows:
+To remove this scaling effect, they plot the loss using filter-wise normalized directions.  Given a random direction $$d$$ (which is like $$\delta$$ and $$\eta$$ above), the elements of $$d$$ are normalized as follows:
 
 $$d_{ij} \leftarrow \frac{d_{ij}}{||d_{ij}||} ||\theta_{ij}||$$
 
