@@ -10,8 +10,9 @@ cite:
 pdf: "https://arxiv.org/pdf/1703.04933.pdf"
 ---
 
+# Introduction
 
-# Highlights
+Generalization of neural networks has been linked to the flatness of the loss landscape around the found minimum. Therefore, it is reasonable to look for measures of flatness so that we can impose those measures into the learning so that we can ensure we get a minimum that generalizes better.
 
 In this paper the authors prove that three notions of flatness for minima of deep networks do not actually measure flatness. They do this by using positive scale invariance of ReLU networks.
 
@@ -65,4 +66,5 @@ for sharpness can also be modified with the maps $$T_\alpha$$.
 
 * Previously used definitions of flatness fail to account for the complex geometry of some commonly used deep architectures.
 * Positive scale invariance allows one to alter the flatness of a minimum without affecting the network function.
+* A measure of flatness of a minimum of a ReLU network has to take into account its positive scale invariance.
 
