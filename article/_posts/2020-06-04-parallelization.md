@@ -26,7 +26,7 @@ This form of parallelism is very common because of its simplicity. It consists i
 
 ## Model parallelism
 
-Some claim that model parallelism consists in partitioning the network across multiple devices; this is incorrect. Model parallelism consists in executing multiple **parallel branches** of a network on multiple devices. Not all network or layer types can benefit from this form of parallelism: notably, a typical CNN architecture are considered incompatible.
+Some claim that model parallelism consists in partitioning the network across multiple devices; this is incorrect. Model parallelism consists in executing multiple **parallel branches** of a network on multiple devices. Not all network or layer types can benefit from this form of parallelism: notably, most CNN architectures are considered incompatible.
 
 However, there exist examples of CNNs containing multiple "towers", where convolutional layers are executed in parallel, with reduced communication between the towers. AlexNet is a well known example:
 
@@ -56,4 +56,4 @@ Cons:
 * Data input rate should match the pipeline execution rate
 * Latency is proportional to the number of devices
 
-Pipelining can involve the overlapping of some operations, like computing the forward pass of the current batch and the backward pass of the last batch at the same time. This is why is can be sometimes considered as a form of parallelism. This can be implemented at the framework level, so we probably shouldn't care about this. This is described in the famous paper "[One weird trick for parallelizing convolutional neural networks](https://arxiv.org/pdf/1404.5997.pdf)" (as well as the suggestion to use data parallelism for convolutions and network parallelism for FC layers).
+Pipelining can involve the overlapping of some operations, like computing the forward pass of the current batch and the backward pass of the last batch at the same time. This is why it can sometimes be considered as a form of parallelism. This can be implemented at the framework level, so we probably shouldn't care about this. This is described in the famous paper "[One weird trick for parallelizing convolutional neural networks](https://arxiv.org/pdf/1404.5997.pdf)" (as well as the suggestion to use data parallelism for convolutions and network parallelism for FC layers).
