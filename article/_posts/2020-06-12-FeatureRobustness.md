@@ -18,7 +18,7 @@ In this paper, the authors focus on the following open question:
 
 ![](/article/images/feature_robustness/sc1.jpg)   
 
-They propose to look at feature robustness of the network function, which measures the robustness of a function $$f= \psi \circ \phi : X \to Y$$, where the function $$\phi : X \to \mathbb{R}^m $$ is considered as a feature extraction that maps a input to the feature space $$\mathbb{R}^m$$, and the map $$\phi$$ is a classifier.
+They propose to look at feature robustness of the network function, which measures the robustness of a function $$f= \psi \circ \phi : X \to Y$$, where the function $$\phi : X \to \mathbb{R}^m $$ is considered as a feature extraction that maps an input to the feature space $$\mathbb{R}^m$$, and the map $$\phi$$ is a classifier.
 
 ![](/article/images/feature_robustness/sc2.jpg)   
 
@@ -50,7 +50,7 @@ Let $$**w^l**$$ denote the weight matrix of the l-th hidden layer of a neural ne
 
 ![](/article/images/feature_robustness/sc9.jpg)   
 
-* Empirical work suggests that the trace of the Hessian is a good average of the spectrum. With respecto to the trace of the Hessian, they prove the following:
+* Empirical work suggests that the trace of the Hessian is a good average of the spectrum. With respect to the trace of the Hessian, they prove the following:
 
 ![](/article/images/feature_robustness/sc10.jpg)   
 
@@ -79,14 +79,14 @@ For measuring the generalization error, they employ a Monte Carlo approximation 
 
 ![](/article/images/feature_robustness/sc16.jpg)   
 
-They compute the generalization error as the difference between summed error values on test samples multiplied by 5 and summed error values on the training set, since the size of the training set is 5 times larger.
+They compute the generalization error as the difference between summed error values on test samples multiplied by 5 and summed error values on the training set since the size of the training set is 5 times larger.
 
 ![](/article/images/feature_robustness/sc17.jpg)   
 ![](/article/images/feature_robustness/sc18.jpg)   
 
 # Conclusion
 
-In this paper, the authors provide a new mesures of flatness by using mathematical results concerning feature robustness. 
+In this paper, the authors provide a new measure of flatness by using mathematical results concerning feature robustness. 
 
 * These measures are invariant under reparametrization of ReLU neural networks. 
 * These measures are empirically correlated to generalization.
