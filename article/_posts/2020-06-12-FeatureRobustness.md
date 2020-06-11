@@ -82,6 +82,7 @@ For measuring the generalization error, they employ a Monte Carlo approximation 
 They compute the generalization error as the difference between summed error values on test samples multiplied by 5 and summed error values on the training set, since the size of the training set is 5 times larger.
 
 ![](/article/images/feature_robustness/sc17.jpg)   
+![](/article/images/feature_robustness/sc18.jpg)   
 
 # Conclusion
 
