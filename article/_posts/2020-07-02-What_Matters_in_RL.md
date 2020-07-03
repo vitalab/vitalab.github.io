@@ -20,11 +20,11 @@ pdf: "https://arxiv.org/pdf/2006.05990.pdf"
 
 > Deep reinforcement learning (RL) has seen increased interest in recent years due to its ability to have neural-network-based agents learn to act in environments through interactions. For continuous control tasks, on-policy algorithms such as REINFORCE, TRPO, A3C, PPO and off-policy algorithms such as DDPG and SAC have enabled successful applications such as quadrupedal locomotion, self-driving or dexterous in-hand manipulation.
 
-However, many of these algorithms employ high and low-level choices that may not be mentioned in their respective papers. Engstrom et al.[^1] showed that the original PPO paper failed to mention several key design choices that actually make up most of the improvements PPO had over prior methods. Code-level and algorithmic level hidden implementation details severly hinder reproducibility and slow down research in a field where reproducibility is already hard to achieve.[^2] 
+However, many of these algorithms employ high and low-level choices that may not be mentioned in their respective papers. Engstrom et al.[^1] showed that the original PPO paper failed to mention several key design choices that actually make up most of the improvements PPO had over prior methods. Code-level and algorithmic level hidden implementation details severely hinder reproducibility and slow down research in a field where reproducibility is already hard to achieve.[^2] 
 
 # Methods
 
-The authors ran 250 000 experiments to investigate 68 implementation details separated in 8 different groups of choices: Policy Losses, Networks architecture, Normalization and clipping, Advantage Estimation, Training setup, Timesteps handling, Optimizers, and Regularization. The authors selected. For each group, the authors selected which choices might interact the most with each other, and left the remaining choices with default parameters that give competitive results.
+The authors ran 250 000 experiments to investigate 68 implementation details separated in 8 different groups of choices: Policy Losses, Networks architecture, Normalization and clipping, Advantage Estimation, Training setup, Timesteps handling, Optimizers, and Regularization. For each group, the authors selected which choices might interact the most with each other, and left the remaining choices with default parameters that give competitive results.
 
 Performance was then computed by training models with randomly selected values over three different random seeds and periodically evaluating the models over 100 runs, then averaging the returns over the random seeds.
 
@@ -134,4 +134,5 @@ Many implementation details are available for a user wanting to implement their 
 # References
 
 [^1]: See [https://vitalab.github.io/article/2020/01/14/Implementation_Matters.html](https://vitalab.github.io/article/2020/01/14/Implementation_Matters.html) for more info
+
 [^2]: Joelle Pineau: Reproducibility, Reusability, and Robustness in Deep Reinforcement Learning ICLR 2018, https://www.youtube.com/watch?v=Vh4H0gOwdIg
