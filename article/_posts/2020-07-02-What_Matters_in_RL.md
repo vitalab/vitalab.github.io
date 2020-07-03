@@ -130,6 +130,7 @@ Many implementation details are available for a user wanting to implement their 
 - The paper is only 8 pages long but comes with 40 pages of appendix detailing the implementation details and experiment design
 - See also: [The 32 Implementation Details of Proximal Policy Optimization (PPO) Algorithm](https://costa.sh/blog-the-32-implementation-details-of-ppo.html)
 - This is only for on-policy algorithms, but off-policy algorithms also suffer from similar problems. Recurrent RL is also very much obscure to this day.
+- TRPO was not included in the Policy Losses search, but I think it would have been interesting to include as according to [^1], it doesn't depend on code-level optimizations as much
 
 # References
 
