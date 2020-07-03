@@ -24,7 +24,7 @@ However, many of these algorithms employ high and low-level choices that may not
 
 # Methods
 
-The authors ran 250 000 experiments to investigate 68 implementation details separated in 8 different groups of choices: Policy Losses, Networks architecture, Normalization and clipping, Advantage Estimation, Training setup, Timesteps handling, Optimizers, and Regularization. For each group, the authors selected which choices might interact the most with each other, and left the remaining choices with default parameters that give competitive results.
+The authors ran 250 000 experiments to investigate 68 implementation details found across popular RL codebases, separated in 8 different groups of choices: Policy Losses, Networks architecture, Normalization and clipping, Advantage Estimation, Training setup, Timesteps handling, Optimizers, and Regularization. For each group, the authors intuitively selected which choices might interact the most with each other, and left the remaining choices with default parameters that give competitive results so as to guarantee good base performance and reduce as much as possible the number of "moving parts".
 
 Performance was then computed by training models with randomly selected values over three different random seeds and periodically evaluating the models over 100 runs, then averaging the returns over the random seeds.
 
