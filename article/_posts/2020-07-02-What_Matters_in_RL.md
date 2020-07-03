@@ -20,7 +20,7 @@ pdf: "https://arxiv.org/pdf/2006.05990.pdf"
 
 > Deep reinforcement learning (RL) has seen increased interest in recent years due to its ability to have neural-network-based agents learn to act in environments through interactions. For continuous control tasks, on-policy algorithms such as REINFORCE, TRPO, A3C, PPO and off-policy algorithms such as DDPG and SAC have enabled successful applications such as quadrupedal locomotion, self-driving or dexterous in-hand manipulation.
 
-However, many of these algorithms employ high and low-level choices that may not be mentioned in their respective papers. Engstrom et al.[^1] showed that the original PPO paper failed to mention several key design choices that actually make up most of the improvements PPO had over prior methods. Reproducibility is almost impossible to achieve.[^2] 
+However, many of these algorithms employ high and low-level choices that may not be mentioned in their respective papers. Engstrom et al.[^1] showed that the original PPO paper failed to mention several key design choices that actually make up most of the improvements PPO had over prior methods. Code-level and algorithmic level hidden implementation details severly hinder reproducibility and slow down research in a field where reproducibility is already hard to achieve.[^2] 
 
 # Methods
 
