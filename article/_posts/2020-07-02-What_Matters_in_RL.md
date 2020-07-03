@@ -129,6 +129,7 @@ Many implementation details are available for a user wanting to implement their 
 - A reader of this review wanting to follow these recommendations is STRONGLY encouraged to go read the actual paper before making decisions based on this review.
 - The paper is only 8 pages long but comes with 40 pages of appendix detailing the implementation details and experiment design
 - RL algorithm design is still 
+- See also: [The 32 Implementation Details of Proximal Policy Optimization (PPO) Algorithm](https://costa.sh/blog-the-32-implementation-details-of-ppo.html)
 
 # References
 
