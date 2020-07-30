@@ -18,10 +18,10 @@ Using GANs to segment tumors from whole body MRI.
 ![](/article/images/pediatricGAN/sc1.jpg)
 # Introduction
 
-This is a very simple paper with cute idea.  Not clear how well it works in reality but at least it is worth mentioning.  Segmentation is done as follows
+This is a very simple paper with a cute idea.  Not clear however how well it works in reality but at least it is worth mentioning.  Segmentation is done as follows:
 
 * First a GAN is trained on a wbMRI of *healthy subjects* (c.f. fig 1 for results of 4 different GANs)
-* Second a real wbMRI with a tumor is considered.  With it, they reproduce the latent vector which produces the synthetic image which is the most similar to that of the real image
+* Second a real wbMRI with a tumor is considered.  With it, they recover the latent vector which produces the synthetic image which is the most similar to that of the real image
 * They subtract the synthetic from the real image.  This results into a black image everywhere except where the tumor is.
 
 # Results
