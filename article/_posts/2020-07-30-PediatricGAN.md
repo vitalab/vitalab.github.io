@@ -15,7 +15,7 @@ pdf: "https://openreview.net/pdf?id=BXC_fpbLe"
 
 Using GANs to segment tumors from whole body MRI.
 
-![](/article/images/pediatricGAN/sc1.jpg)
+![](/article/images/pediatricGAN/sc01.jpg)
 # Introduction
 
 This is a very simple paper with a cute idea.  Not clear however how well it works in reality but at least it is worth mentioning.  Segmentation is done as follows:
@@ -28,7 +28,9 @@ This is a very simple paper with a cute idea.  Not clear however how well it wor
 
 Results are illustrated in fig.2.  They get better results than an [old] watershed method.
 
-![](/article/images/pediatricGAN/sc2.jpeg)
+![](/article/images/pediatricGAN/sc02.jpg)
 
 Also, StyleGAN2 gets very nice results as reported by the expert score in Table 1.
+
+![](/article/images/pediatricGAN/sc03.jpg)
 
