@@ -24,4 +24,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: bash utils/hooks/pre-commit
+      run: bash utils/check_tags.sh $(git diff --name-only origin/master '*/*.md' ':(exclude)$repo_root_path/*.md')
