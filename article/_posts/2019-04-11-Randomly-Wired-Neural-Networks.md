@@ -12,17 +12,17 @@ cite:
 
 ## Introduction
 
-Conventional neural architecture search (NAS)  emerged as a promising  direction for jointly searching  wiring  patterns and which operations to perform relieing generally on "Network Generators".
+Conventional neural architecture search (NAS)  emerged as a promising  direction for jointly searching  wiring  patterns and which operations to perform relying generally on "Network Generators".
 
 The authors propose a probabilistic approch to the "network generators" which they call "Stochastic Network Generators".
 
 ![](/article/images/randwire/teaser.jpg)
 
 ## Methodology
-They define a stochastic network generator as a mapping from parameter space θ to a space of neural network architectures,
-the parameters can contain diverse information, for example in a  ResNet  generator, θ can  specify  the  number  of  stages, number of residual blocks for each stage, depth/width/filtersizes, activation types, etc.
+They define a stochastic network generator as a mapping from parameter space θ to a space of neural network architectures.
+The parameters can contain diverse information, for example in a  ResNet  generator, θ can  specify  the  number  of  stages, number of residual blocks for each stage, depth/width/filtersizes, activation types, etc.
 They also introduce a seed parameter which can be used to contstruct a random family of networks for the same parameter θ.
-The authors use an LSTM to smaple a graph construction action (e.g., insert an operator, connect two nodes...) with hand-designed rules defined to map the sampled actions to a computational DAG.
+The authors use an LSTM to sample a graph construction action (e.g., insert an operator, connect two nodes...) with hand-designed rules defined to map the sampled actions to a computational DAG.
 ![](/article/images/randwire/node.jpg)
 
 ## Random Graph Models
