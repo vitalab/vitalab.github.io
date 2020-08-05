@@ -16,7 +16,7 @@ This paper focuses on the, yet not answered satisfactorily, why question in deep
 
 * **Why do CNNs work so good?**
 
-A why question and its answer (the explanation) in science should satisfy the following:
+Before going into the review of the paper, I will outline some specifics from philosophy of science required to really understand the paper. A why question and its answer (the explanation) in science should satisfy the following:
 
 * The why question should be recognized by some good (accepted) members of the scientific community.
 * The explanation should be satisfying to those same members of the scientific community so that they do not immediately feel the need to ask a further why question (the explanation has come to an end, for now).
@@ -33,15 +33,11 @@ The following are three popular explanations for CNNs distinctive successes. Tho
 
 * **Number of linear regions**: Another intuition pretending to explain the success of CNNs is the number of linear regions they can map in a problem's input space, relative to networks that do not possess their characteristic features. The ability to draw more distinct linear regions is advantageous because it allows neural networks to impose more complex boundaries between categories which are difficult to discriminate from one another because of many low-level perceptual similarities. This **is not a complete answer** to our why question because it still leaves room for further why questions, like why do CNNs learn these linear regions?
 
-![](/article/images/Philosophy_DL/feature_space.jpg)
-
-![](/article/images/Philosophy_DL/folding_ex.jpg)
-
 # Open Problems
 
 Most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so.
 
-* **CNNs and nativism/empiricism**: Nativism is a concept in psychology and philosophy which asserts certain concepts are "native" or in the brain at birth (given a priori). Empiricism is a theory that states that knowledge comes only or primarily from sensory experience. Philosophers think of cognition as ranging over four variables: algorithms, representational formats, innate knowledge and experience. A truly empiricist system should begin with nothing for representational format and innate knowledge, and only a very minimal amount of algorithms, deriving everything else from experience. Therefore, AlphaGo, AlphaStar etc. provide philosophical insight into empiricism.
+* **CNNs and nativism/empiricism**: Nativism is a concept in psychology and philosophy which asserts certain concepts are "native" in the brain at birth (given a priori). Empiricism is a theory that states that knowledge comes only or primarily from sensory experience. Philosophers think of cognition as ranging over four variables: algorithms, representational formats, innate knowledge and experience. A truly empiricist system should begin with nothing for representational format and innate knowledge, and only a very minimal amount of algorithms, deriving everything else from experience. Therefore, AlphaGo, AlphaStar etc. provide philosophical insight into empiricism.
 
 * **Do CNNs learn the way that humans do?**: First, CNNs require far more data to learn than humans. Second, the phenomenon of adversarial examples demonstrates that what is learned by CNNs differs substantially from what is learned by humans (however, https://www.youtube.com/watch?v=y2004Xaz2HU). Even more, two factors are often neglected in counting the number of examples that humans should be scored as having been exposed to in learning: (a) that many different vantage points of the same object could provide additional training exemplars for cortical learning and (b) that offline memory consolidation during sleep and daydreaming can replay the same training session many thousands of times in nonconscious repetitions. As it stands, adversarial examples and their implications remain mysterious.
 
