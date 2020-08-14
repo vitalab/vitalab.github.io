@@ -23,15 +23,15 @@ The authors analyze the disentanglement and reconstruction aspects of $$\beta$$-
 the KL divergence term in the classic VAE loss. The $$\beta$$-VAE objective can be formulated like follows, where $$\beta \geq 1$$:
 
 $$
-\frac{1}{N} \sum_{i=1}^{N} [\mathbb{E}_{q(z \mid x^{(i)})}[\log p(x^{(i)} \mid z)] - \beta KL(q(z \mid x^{(i)}) \mid \mid p(z))]
+\frac{1}{N} \sum_{i=1}^{N} [\mathbb{E}_{q(z|x^{(i)})}[\log p(x^{(i)}|z)] - \beta KL(q(z|x^{(i)})~\|~p(z))]
 $$
 
 The first term is the reconstruction error, and the second term is the complexity penalty. This second term can be
 reformulated like below, given $$q(z)$$ the distribution of representations for the entire data set and $$I(x;z)$$ the
-mutual information between an input $$x$$ and its encoding $$z$$ under the joint distribution $$p_{data}(x)q(z \mid x)$$.
+mutual information between an input $$x$$ and its encoding $$z$$ under the joint distribution $$p_{data}(x)q(z|x)$$.
 
 $$
-\mathbb{E}_{p_{data}(x)}[KL(q(z \mid x) \mid \mid p(z))] = I(x;z) + KL(q(z) \mid \mid p(z))
+\mathbb{E}_{p_{data}(x)}[KL(q(z|x)~\|~p(z))] = I(x;z) + KL(q(z)~\|~p(z))
 $$
 
 What this equivalent formulation highlights is that while penalizing the original KL divergence with $$\beta \geq 1$$
@@ -47,11 +47,11 @@ Given the claim about the mutual information term, the authors propose to motiva
 directly encourages the independence in the code distribution:
 
 $$
-\frac{1}{N} \sum_{i=1}^{N} [\mathbb{E}_{q(z \mid x^{(i)})}[\log p(x^{(i)} \mid z)] - KL(q(z \mid x^{(i)}) \mid \mid p(z))] 
-- \gamma KL(q(z) \mid \mid \bar{q}(z))
+\frac{1}{N} \sum_{i=1}^{N} [\mathbb{E}_{q(z|x^{(i)})}[\log p(x^{(i)}|z)] - KL(q(z|x^{(i)})~\|~p(z))] 
+- \gamma KL(q(z)~\|~\bar{q}(z))
 $$
 
-where $$\bar{q}(z) = \prod_{j=1}^{d} q(z_{j})$$. This is also a lower bound on the marginal log likelihood. $$KL(q(z) \mid \mid \bar{q}(z))$$
+where $$\bar{q}(z) = \prod_{j=1}^{d} q(z_{j})$$. This is also a lower bound on the marginal log likelihood. $$KL(q(z)~\|~\bar{q}(z))$$
 is also known as *Total Correlation* (TC), and is intractable in this case, since it would require passing through the
 entire dataset for each evaluation.
 
@@ -61,7 +61,7 @@ the KL divergence. The *density-ratio trick* consists of training a discriminato
 estimate wether a sample comes from $$q(z)$$ or $$\bar{q}(z)$$. This allows them to rephrase the TC as:
 
 $$
-TC(z) = KL(q(z) \mid \mid \bar{q}(z)) = \mathbb{E}_{q(z)}[\log \frac{q(Z)}{\bar{q}(z)}] \approx \mathbb{E}_{q(z)}[\log \frac{D(z)}{1 - D(z)}]
+TC(z) = KL(q(z)~\|~\bar{q}(z)) = \mathbb{E}_{q(z)}[\log \frac{q(Z)}{\bar{q}(z)}] \approx \mathbb{E}_{q(z)}[\log \frac{D(z)}{1 - D(z)}]
 $$
 
 The discriminator and VAE are trained jointly, and the training algorithm for FactorVAE is given below:
