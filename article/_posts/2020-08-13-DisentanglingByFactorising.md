@@ -91,7 +91,7 @@ generative factors (notably CelebA).
 Comparison of the reconstruction vs disentanglement trade-off in $$\beta$$-VAE and FactorVAE.
 ![](/article/images/DisentanglingByFactorising/figure4.jpg)
 
-![](/article/images/DisentanglingByFactorising/figure13.jpg)
+![](/article/images/DisentanglingByFactorising/figure15.jpg)
 
 More results (on disentanglement metrics, TC and subjectively on other data sets) are available in the paper.
 
