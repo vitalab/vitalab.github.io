@@ -58,7 +58,7 @@ entire dataset for each evaluation.
 To circumvent this issue, the authors explain that it is possible to sample from both $$q(z)$$ and $$\bar{q}(z)$$
 (details on how to this are discussed in the paper), which then allows them to use the *density-ratio trick* to minimize
 the KL divergence. The *density-ratio trick* consists of training a discriminator $$D$$ (in their case an MLP) to
-estimate wether a sample comes from $$q(z)$$ or $$\bar{q}(z)$$. This allows them to rephrase the TC as:
+estimate whether a sample comes from $$q(z)$$ or $$\bar{q}(z)$$. This allows them to rephrase the TC as:
 
 $$
 TC(z) = KL(q(z)~\|~\bar{q}(z)) = \mathbb{E}_{q(z)}[\log \frac{q(Z)}{\bar{q}(z)}] \approx \mathbb{E}_{q(z)}[\log \frac{D(z)}{1 - D(z)}]
@@ -68,9 +68,9 @@ The discriminator and VAE are trained jointly, and the training algorithm for Fa
 ![](/article/images/DisentanglingByFactorising/algorithm2.jpg)
 
 As for the InfoWGAN-GP, it builds on top of InfoGAN, which is an alternative to $$\beta$$-VAE that learns disentangled
-representations. Little empirical comparisons exist between VAE-based methods and InfoGAN (due to GAN training stability).
-Therefore, the author implemented SOTA techniques for stabilizing GANs (namely, using the Wasserstein distance and
-gradient penalty) to derive InfoWGAN-GP from InfoGAN and fairly compare it to VAE-based methods.
+representations. Little empirical comparisons exist between VAE-based methods and InfoGAN (due to GAN training stability
+issues). Therefore, the author implemented SOTA techniques for stabilizing GANs (namely, using the Wasserstein distance
+and gradient penalty) to derive InfoWGAN-GP from InfoGAN and fairly compare it to VAE-based methods.
 
 ## Disentanglement Metric
 The authors propose a new metric meant to overcome a major shortcoming of the currently accepted metric
