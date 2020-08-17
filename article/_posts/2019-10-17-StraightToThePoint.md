@@ -61,7 +61,7 @@ The objective function used to update the parameters is the following equation:
 
 ## Supervised policy learning
 Each image acquired in each bin was labelled with one action, which would be the optimal action to perform in that
-state if we relied only on the Manhattan distance $$\mid x - x_goal \mid$$.
+state if we relied only on the Manhattan distance $$\mid x - x_{goal} \mid$$.
 
 The authors train a classifier with the same architecture shown in Figure 4, with the only exception that the last
 layer is followed by a soft-max activation function.
@@ -76,7 +76,7 @@ layer is followed by a soft-max activation function.
 The authors explain the intuition behind the better results for the DQN approach compared to the supervised policy.
 They state that RL is able to avoid and go around areas that are highly ambiguous as the Q-Values in correspondence of
 the actions leading to those states should not be very high. They also hypothesize that RL implicitly learns the
-spatial arrangement of the different pictures on the chest, since it must be able to differientate between them to
+spatial arrangement of the different pictures on the chest, since it must be able to differentiate between them to
 produce different ranges of Q-values (low when far away, and higher near the goal).
 
 
