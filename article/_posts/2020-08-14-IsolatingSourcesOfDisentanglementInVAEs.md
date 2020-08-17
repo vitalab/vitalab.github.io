@@ -26,7 +26,7 @@ The paper was written independently from a similar paper by Kim et Mnih[^1], and
 the $$\beta$$-VAE[^2] to further disentangle the learned representation without sacrificing the reconstruction,
 although the modifications proposed by both papers differ.
 
-Lets recall the objective of the $$\beta$$-VAE:
+Let's recall the objective of the $$\beta$$-VAE:
 
 $$
 \tag{1} \mathcal{L}_{\beta} = \frac{1}{N} \sum_{n=1}^{N} (\mathbb{E}_{q} [\log p(x_{n}|z)] - \beta KL(q(z|x_{n})~\|~p(z)))
