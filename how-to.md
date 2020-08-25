@@ -107,9 +107,21 @@ You can [preview your post while you write it](#how-to-preview-your-post-locally
 This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all the markdown files and generates a static html website.
 
 1.  [Install Ruby using rbenv](/how-to-install-ruby). Don't use `apt-get` since its version of Ruby is too old.
-2.  Install Jekyll by running : `gem install bundler jekyll`.
+2.  Install `bundler` by running : `gem install bundler`.
 3.  Go where you cloned the VITAL literature review repository and run : `bundle install`. This will install the dependencies for our Jekyll site.
 4.  Run a local webserver using : `bundle exec jekyll serve`.
 5.  Access the site locally at : <http://127.0.0.1:4000/>
 
 Note that the site is automatically rebuilt when a file has been modified.
+
+## Running `bundle install` or `bundle exec jekyll serve` does not work
+
+If you previously installed a version of this repo and it now does not work, you may have a version mismatch. To clean and reinstall, try to comment all gems specification in `Gemfile` and then run
+
+``$ bundle clean --force``
+
+then uncomment your changes in `Gemfile` and run
+
+``$ bundle install``
+
+If that does not resolve your problem, you may have a tooling version mismatch. The error messages following `bundle install` should provide some information. Otherwise, do not hesitate to create an issue on Github or leave a message of the VITAL slack to get some help.
