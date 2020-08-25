@@ -107,7 +107,7 @@ You can [preview your post while you write it](#how-to-preview-your-post-locally
 This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all the markdown files and generates a static html website.
 
 1.  [Install Ruby using rbenv](/how-to-install-ruby). Don't use `apt-get` since its version of Ruby is too old.
-2.  Install `bundler` by running : `gem install bundler`.
+2.  Install `bundler` by running : `gem install bundler:2.1.4`.
 3.  Go where you cloned the VITAL literature review repository and run : `bundle install`. This will install the dependencies for our Jekyll site.
 4.  Run a local webserver using : `bundle exec jekyll serve`.
 5.  Access the site locally at : <http://127.0.0.1:4000/>
