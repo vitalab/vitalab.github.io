@@ -22,6 +22,8 @@ url: "https://vitalab.github.io" # the base hostname & protocol for your site, e
 
 # Build settings
 markdown: kramdown
+kramdown:
+   math_engine: mathjax
 theme: minima
 gems:
   - jekyll-feed
