@@ -134,15 +134,16 @@ This is likely happening because you don't have Ruby 2.6.2. Confirm by running `
 
 ```
  RUBY VERSION
--   ruby 2.6.2p47
+-   ruby 2.7.1
 +   ruby 2.4.0p0
 ```
 
 it confirms that you need to upgrade ruby. To do so, run the following commands:
 
 ```bash
-rbenv install 2.6.2
-rbenv global 2.6.2
+rbenv install 2.7.1
+rbenv global 2.7.1
+rbenv uninstall 2.4.0  # you can uninstall the old version
 gem install bundler:2.1.4  # need to install bundler after upgrading ruby
 bundle install
 ```
