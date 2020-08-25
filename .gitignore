@@ -2,6 +2,5 @@ _site
 _previews
 .sass-cache
 .jekyll-metadata
-.jekyll-cache
 .Rhistory
 *.swp
