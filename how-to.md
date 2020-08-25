@@ -114,7 +114,9 @@ This site is built around [**Jekyll**](https://jekyllrb.com/). Jekyll takes all 
 
 Note that the site is automatically rebuilt when a file has been modified.
 
-## Running `bundle install` or `bundle exec jekyll serve` does not work
+## Troubleshooting
+
+### Running `bundle install` or `bundle exec jekyll serve` does not work
 
 If you previously installed a version of this repo and it now does not work, you may have a version mismatch. To clean and reinstall, try to comment all gems specification in `Gemfile` and then run
 
@@ -125,3 +127,24 @@ then uncomment your changes in `Gemfile` and run
 ``$ bundle install``
 
 If that does not resolve your problem, you may have a tooling version mismatch. The error messages following `bundle install` should provide some information. Otherwise, do not hesitate to create an issue on Github or leave a message of the VITAL slack to get some help.
+
+### Running `bundle install` has modified `Gemfile.lock`
+
+This is likely happening because you don't have Ruby 2.6.2. Confirm by running `git diff`. If you see something like this:
+
+```
+ RUBY VERSION
+-   ruby 2.6.2p47
++   ruby 2.4.0p0
+```
+
+it confirms that you need to upgrade ruby. To do so, run the following commands:
+
+```bash
+rbenv install 2.6.2
+rbenv global 2.6.2
+gem install bundler:2.1.4  # need to install bundler after upgrading ruby
+bundle install
+```
+
+After this, there shouldn't be changes on `Gemfile.lock`.
