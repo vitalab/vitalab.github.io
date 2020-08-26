@@ -14,7 +14,7 @@ pdf: "https://openreview.net/pdf?id=rJxFpp4Fvr"
 
 In this paper, the authors focus on the following open question:
 
-* Why minimizing the empirical error during deep neural network training leads to good generalization?
+* Why does minimizing the empirical error during deep neural network training leads to good generalization?
 
 ![](/article/images/feature_robustness/sc1.jpg)   
 
