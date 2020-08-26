@@ -55,7 +55,7 @@ training process, the relative weight of this sample can be too small or too big
 To counter this, the authors add an extra restriction between the quality awareness module and the softmax layer. They
 simply use a weighted hyperbolic tangent (as shown in the equation below), to limit the relative ratio of the output
 quality score from ($$-\infty$$, $$\infty$$) to ($$-\lambda $$, $$\lambda$$). The authors state they empirically
-set $$\lambda$$to be 2.
+set $$\lambda$$ to be 2.
 
 ![](/article/images/PickAndLearn/equation2.png)
 
