@@ -130,7 +130,7 @@ If that does not resolve your problem, you may have a tooling version mismatch. 
 
 ### Running `bundle install` has modified `Gemfile.lock`
 
-This is likely happening because you don't have Ruby 2.6.2. Confirm by running `git diff`. If you see something like this:
+This is likely happening because you don't have Ruby 2.7.1. Confirm by running `git diff`. If you see something like this:
 
 ```
  RUBY VERSION

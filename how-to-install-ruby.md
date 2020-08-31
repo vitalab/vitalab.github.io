@@ -33,8 +33,8 @@ source ~/.bashrc
 
 ## Install Ruby
 ~~~
-rbenv install -v 2.4.0
-rbenv global 2.4.0
+rbenv install -v 2.7.1
+rbenv global 2.7.1
 ~~~
 Make sure you have the right version installed and selected :
 
