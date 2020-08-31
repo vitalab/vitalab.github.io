@@ -61,7 +61,7 @@ the KL divergence. The *density-ratio trick* consists of training a discriminato
 estimate whether a sample comes from $$q(z)$$ or $$\bar{q}(z)$$. This allows them to rephrase the TC as:
 
 $$
-TC(z) = KL(q(z)~\|~\bar{q}(z)) = \mathbb{E}_{q(z)}\Bigg[\log \frac{q(Z)}{\bar{q}(z)}\Bigg] 
+TC(z) = KL(q(z)~\|~\bar{q}(z)) = \mathbb{E}_{q(z)}\Bigg[\log \frac{q(z)}{\bar{q}(z)}\Bigg] 
 \approx \mathbb{E}_{q(z)}\Bigg[\log \frac{D(z)}{1 - D(z)}\Bigg]
 $$
 
