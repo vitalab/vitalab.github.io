@@ -76,4 +76,4 @@ transformations, the authors split the sequences in two halves:
 temporal coherence, either quantitative or simply qualitative, is provided.
 
 # References
-[^1]: SDNet paper (published in MedIA): [https://arxiv.org/abs/1903.09467](https://arxiv.org/abs/1903.09467)
+[^1]: Review of SDNet: [https://vitalab.github.io/article/2020/09/08/DisentangledRepresentationInCardiacImageAnalysis.html](https://vitalab.github.io/article/2020/09/08/DisentangledRepresentationInCardiacImageAnalysis.html)
