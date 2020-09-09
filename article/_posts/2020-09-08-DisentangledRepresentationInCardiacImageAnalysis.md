@@ -91,7 +91,7 @@ and 20 cardiac MRI volumes
 
 ![](/article/images/DisentangledRepresentationInCardiacImageAnalysis/figure4.jpg)
 
-## Multi-model learning
+## Multimodal learning
 ![](/article/images/DisentangledRepresentationInCardiacImageAnalysis/table3.jpg)
 
 ## Latent space arithmetic
