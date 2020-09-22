@@ -23,7 +23,7 @@ pdf: ""
 
 # Introduction
 
-Reinforcement learning (RL) often uses _bootstrapping_ when training agents: bootstrapping occurs when the target for computing a loss function leverages the network's own estimates, like with Deep Q-Network (DQN)'s Temporal-Difference (TD) updates: 
+Reinforcement learning (RL) often uses _bootstrapping_ when training agents: bootstrapping occurs when the target for computing a loss function leverages the network's own estimates, like with Deep Q-Network (DQN)'s Temporal-Difference (TD) update: 
 
 $$\tag{1} L(\phi) = \mathbb{E}_{s,a,s',r \sim D}\big(\underbrace{r + \gamma \max_{a'}Q_{\phi'}(s', a')}_{\text{target}} - Q_\phi(s,a)\big)^2$$
 
@@ -45,7 +45,8 @@ Therefore, M-RL is as simple as replacing $$ r_t $$ with $$ r_t + \alpha \log \p
 
 First, the policy is formulated as a softmax instead of a simple argmax so that the score (and its log) can be computed. This does not change the original DQN objective in any way. Second, they propose to turn the original DQN update into a _Soft-DQN_ (as a reference to the Soft Actor-Critic[^2] (SAC) algorithm) update:
 
-$$L(\phi) = \mathbb{E}_{s,a,s',r \sim D}\big(r + \gamma \sum_{a' \in A} \pi_{\phi'}(a'|s')(Q_{\phi'}(s', a') - \tau \log \pi_{\phi'}(a'|s')) - Q_\phi(s,a)\big)^2, \pi_{\phi'} = softmax(\frac{q_{\phi'}}{\tau})$$
+$$L(\phi) = \mathbb{E}_{s,a,s',r \sim D}\big(r + \gamma \sum_{a' \in A} \pi_{\phi'}(a'|s')(Q_{\phi'}(s', a') - \tau \log \pi_{\phi'}(a'|s')) - Q_\phi(s,a)\big)^2, \\
+\pi_{\phi'} = softmax(\frac{q_{\phi'}}{\tau})$$
 
 which, the authors argue, is the same as a discrete action-space version of SAC. Now that the policy is properly stochastic (but maintaining that $$\tau \to 0$$ would make the update equivalent to DQN), the scaled log-probability of the policy can be added to the reward to obtain the Munchausen-DQN (M-DQN) update:
 
