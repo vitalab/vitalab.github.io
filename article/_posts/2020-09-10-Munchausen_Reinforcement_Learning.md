@@ -6,8 +6,8 @@ author: "Antoine Théberge"
 cite:
     authors: "Nino Vieillard, Olivier Pietquin, Matthieu Geist"
     title:   "Munchausen Reinforcement Learning"
-    venue:   "https://arxiv.org/abs/2007.14430"
-pdf: ""
+    venue:   "Arxiv"
+pdf: "https://arxiv.org/abs/2007.14430"
 ---
 
 
@@ -27,7 +27,7 @@ Reinforcement learning (RL) often uses _bootstrapping_ when training agents: boo
 
 $$\tag{1} L(\phi) = \mathbb{E}_{s,a,s',r \sim D}\big(\underbrace{r + \gamma \max_{a'}Q_{\phi'}(s', a')}_{\text{target}} - Q_\phi(s,a)\big)^2$$
 
-The authors propose to leverage another estimate from the agent: it's own policy. It is similar to maximum-entropy RL, which attempts to maximize both the expected return and the policy's entropy s.t. the RL problem becomes:
+The authors propose to leverage another estimate from the agent: its own policy. It is similar to maximum-entropy RL, which attempts to maximize both the expected return and the policy's entropy by formulating the RL problem as:
 
 $$\pi^* = \argmax_\pi \mathbb{E}\Big[\sum_{t=0}^\infty r_t + \alpha \mathbb{H}(\pi(\cdot||s_t))\Big],$$
 
@@ -35,9 +35,9 @@ leading to the (approximate)[^1] following loss function for the Q-network:
 
 $$L(\phi) = \mathbb{E}_{s,a,s',r \sim D}\big(\underbrace{r + \gamma \max_{a'}Q_{\phi'}(s', \hat{a}') - \tau \log \pi_\theta(\hat{a}'|s')}_{\text{target}} - Q_\phi(s,a)\big)^2, \hat{a}' \sim \pi_\theta(\cdot||s')$$
 
-**However**, the authors propose not to subtract the log-policy to all rewards, but instead to "optimize for the immediate reward _augmented_ by the log-policy". Their motivations are as follow:
+**However**, the authors propose not to subtract the log-policy to all rewards, but instead to "optimize for the immediate reward _augmented_ by the log-policy". Their motivations are as follows:
 
-If the optimal Q-function $$Q^*(s,a)$$ was known, the agent would use it as a target in equation $$(1)$$. However, it is unknown and the agent instead uses it's own Q-function as an estimate. This is bootstrapping. If the optimal policy $$\pi^*$$ was known, its log-probability for the optimal action would be $$0$$, and $$-\infty$$ otherwise. Because we don't have the optimal policy, we can instead use the log-probabilities from our own policy to add to the reward signal.
+If the optimal Q-function $$Q^*(s,a)$$ was known, the agent would use it as a target in equation $$(1)$$. However, it is unknown and the agent instead uses its own Q-function as an estimate. This is bootstrapping. If the optimal policy $$\pi^*$$ was known, its log-probability for the optimal action would be $$0$$, and $$-\infty$$ otherwise. Because we don't have the optimal policy, we can instead use the log-probabilities from our own policy to add to the reward signal.
 
 # Method:
 
