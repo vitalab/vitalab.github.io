@@ -17,7 +17,7 @@ pdf: "https://arxiv.org/abs/2009.04416"
 
 # Introduction
 
-Most policy gradient (PG) reinforcement learning (RL) algorithms use the Actor-Critic (AC) framework. In this context, two neural networks are trained in parallel: one being the Actor, aka the policy, which will output actions that are applied to the environment, the second network being the Critic, which will infer the value of the actions output by the actor. By using the training signal provided by the critic, the actor can learn more efficiently.
+Most policy gradient (PG) reinforcement learning (RL) algorithms use the Actor-Critic (AC) framework. In this context, two neural networks are trained in parallel: one being the Actor, aka the policy, which outputs actions that are applied to the environment and the second network being the Critic, which infers the value of the actions output by the actor. By using the training signal provided by the critic, the actor can learn more efficiently.
 
 Whether or not the actor and the critic share parameters is usually a pretty big choice to make: If parameters are shared, features learned by one of the networks can be reused by the other. However, it also means that both networks' objectives might interfere with each other. The authors also argue that this forces the networks to be trained on the same data, and therefore impose the same level of sample reuse, which might be undesirable. On the other, having two separate networks means that they cannot share learned features.
 
