@@ -29,7 +29,7 @@ To try and have the best of both worlds, the authors propose the _Phasic Policy 
 
 To decouple training while also enabling feature sharing, a novel actor-critic architecture is proposed where the actor and critic use separate networks, while also adding a critic head to the actor network. Figure 1 highlights the proposed architecture. 
 
-To train the networks, the learning process is split into two phases: The policy phase and the auxiliary phase. During the policy phase, the actor is trained using the standard PPO[^1] clipped lost:
+To train the networks, the learning process is split into two phases: The policy phase and the auxiliary phase. During the policy phase, the actor is trained using the standard PPO[^1] clipped loss:
 
 ![](/article/images/phasic-pg/eq1.jpeg)
 
@@ -81,7 +81,11 @@ Reusing the same samples for multiple training epochs for the policy does not se
 
 ## Single network vs. multiple networks
 
+Having multiple networks instead of a single one means a higher memory requirement and more computing power is needed. The authors therefore try to merge the architecture in Fig. 1 and report results:
+
 ![](/article/images/phasic-pg/res5.jpeg)
+
+To make sure that the loss for the critic does not influence the actor, the value function gradient is detached at the last layer shared between the actor and the critic during the policy phase.
 
 > As we can see, using PPG with this single shared network performs almost as well as PPG with a dual network architecture. We were initially concerned that the value function might be unable to train well during the policy phase with the detached gradient, but in practice this does not appear to be a major problem. We believe this is because the value function can still train from the full gradient during the auxiliary phase.
 
