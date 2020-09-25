@@ -19,7 +19,7 @@ pdf: "https://arxiv.org/abs/2009.04416"
 
 Most policy gradient (PG) reinforcement learning (RL) algorithms use the Actor-Critic (AC) framework. In this context, two neural networks are trained in parallel: one being the Actor, aka the policy, which will output actions that are applied to the environment, the second network being the Critic, which will infer the value of the actions output by the actor. By using the training signal provided by the critic, the actor can learn more efficiently.
 
-Whether or not the actor and the critic share parameters is usually a pretty big choice to make: If parameters are shared, features learned by one of the network can be reused by the other. However, it also means that both networks' objectives might interfere with eachother. The authors also argue that this forces the networks to be trained on the same data, and therefore impose the same level of sample reuse, which might be undesirable. On the other, having two seperate networks means that they cannot share learned features.
+Whether or not the actor and the critic share parameters is usually a pretty big choice to make: If parameters are shared, features learned by one of the networks can be reused by the other. However, it also means that both networks' objectives might interfere with each other. The authors also argue that this forces the networks to be trained on the same data, and therefore impose the same level of sample reuse, which might be undesirable. On the other, having two separate networks means that they cannot share learned features.
 
 To try and have the best of both worlds, the authors propose the _Phasic Policy Gradient_ algorithm, where feature sharing is kept but the two networks training are decoupled.
 
@@ -77,7 +77,7 @@ Reusing the same samples for multiple training epochs for the policy does not se
 
 ![](/article/images/phasic-pg/res4.jpeg)
 
-> It is clear that performance suffers when we perform auxiliary phases too frequently. We conjecture that each auxiliary phase interferes with policy optimization, and that performing frequent auxiliary phases exacerbates this effect.
+> It is clear that performance suffers when we perform auxiliary phases too frequently. We conjecture that each auxiliary phase interferes with policy optimization and that performing frequent auxiliary phases exacerbates this effect.
 
 ## Single network vs. multiple networks
 
@@ -100,3 +100,4 @@ Reusing the same samples for multiple training epochs for the policy does not se
 [^3]: [Procgen Benchmark](https://openai.com/blog/procgen-benchmark/)
 
 Code: [https://github.com/openai/phasic-policy-gradient](https://github.com/openai/phasic-policy-gradient)
+
