@@ -11,7 +11,7 @@ pdf: "https://arxiv.org/abs/1912.07559"
 ---
 
 # Highlights
-They prove two theorems, independently of the data sets, stating that:
+They prove two theorems stating that, independently of the data sets:
 - 1.- Every finite-dimensional pattern can be found as the loss landscape of a sufficiently deep and wide neural network.
 - 2.- This can be done such that the minimum of the found pattern is arbitrarily close to a global minimum of the network.
 These theorems predict that these two properties transfer from training data to test data.
@@ -26,7 +26,7 @@ Let $$\mathcal{T}$$ be a $$z$$-dimensional function. The goal is to find paramet
 
 ![](/article/images/Patterns-loss-landscape/sc02.jpg)
 
-* Ideas of the proof:
+Ideas of the proof:
 - Let $$\epsilon >0$$.
 - Set all weights of the first hidden layer equal to zero.
 - The non-zero weights still form a universal function approximator (using the biases as the inputs).
@@ -34,10 +34,11 @@ Let $$\mathcal{T}$$ be a $$z$$-dimensional function. The goal is to find paramet
 - Use $$\sigma(p) := \frac{1}{N} \sum_i \ell(p,\mathbf{y}_i)$$ for the Lemma.
 - The loss surface pattern is $$ \theta_\epsilon^*(h_1,...,h_z) := \{ \mathbf{0}, [h_1,...,h_z,0,...,0], \theta_\epsilon (\mathcal{T}) \} $$
 
-* Other things to notice:
+Other things to notice:
 - The initial position is $$\theta_0 = \{ \mathbf{0}, [0,...,0], \theta_\epsilon (\mathcal{T}) \} $$.
-- The directions are $$\theta_i = \{ \mathbf{0}, [0,...,0], \mathbf{0} \} $$.
+- The directions are $$\theta_i = \{ \mathbf{0}, [0,...,0,1,0,...,0], \mathbf{0} \} $$.
 - This is why $$L(\theta_0 + \sum_i \alpha_i \theta_i)$$ approximates $$\mathcal{T}(\alpha_1,...,\alpha_z)$$.
+- The pattern is axis aligned.
 
 ![](/article/images/Patterns-loss-landscape/sc03.jpg)
 
@@ -51,14 +52,14 @@ Let $$\mathcal{T}$$ be a $$z$$-dimensional function. The goal is to find paramet
 
 ![](/article/images/Patterns-loss-landscape/thm2.jpg)
 
-* Ideas of the proof:
+Ideas of the proof:
 - Set to zero all weights in the first layer pointing to the first $$z$$ neurons of the first hidden layer.
 - This is again a universal approximator.
 - The approximate minimum will be at $$ \mathbf{h}^* := argmin_{\mathbf{h} \in [0,1]^z} \mathcal{T}(\mathbf{h})$$.
 
 * It has to be noticed, that in this case, the result will not transfer to the test data.
 
-![](/article/images/Patterns-loss-landscape/sc02.jpg)
+![](/article/images/Patterns-loss-landscape/sc04.jpg)
 
 # Conclusions
 
