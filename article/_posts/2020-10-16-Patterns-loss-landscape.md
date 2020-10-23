@@ -12,9 +12,8 @@ pdf: "https://arxiv.org/abs/1912.07559"
 
 # Highlights
 They prove two theorems stating that, independently of the data sets:
-- 1.- Every finite-dimensional pattern can be found as the loss landscape of a sufficiently deep and wide neural network.
+- 1.- Every finite-dimensional pattern can be found as the loss landscape of a sufficiently deep and wide neural network. This property transfers to the test data.
 - 2.- This can be done such that the minimum of the found pattern is arbitrarily close to a global minimum of the network.
-These theorems predict that these two properties transfer from training data to test data.
 
 # Introduction
 
@@ -63,8 +62,8 @@ Ideas of the proof:
 
 # Conclusions
 
-* The loss surfaces of neural networks contain every low-dimensional pattern
-* This holds for any dataset
+* The loss surfaces of neural networks contain every low-dimensional pattern.
+* This holds for any dataset.
 * This transfers from training data to test data.
 * This can be found as easily as supervised learning.
 * The patterns can be guaranteed to be axis aligned.
@@ -72,5 +71,5 @@ Ideas of the proof:
 
 And one very important thing to keep in mind.
 
-* Be cautious if you consider adding regularisation in the form of local loss surface geometry preferences on low-dimensional sections since networks might be able to \textit{cheat} and satisfy these constraints independently from their operation over input space.
+* Be cautious if you consider adding regularisation in the form of local loss surface geometry preferences on low-dimensional sections since networks might be able to $$\textbf{cheat}$$ and satisfy these constraints independently from their operation over input space.
 
