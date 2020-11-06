@@ -23,7 +23,6 @@ They show that such balance balance can be achieved by  scaling each of them wit
 
 
 
-![](/article/images/efficientnet/sc02.jpg)
 # Methods
 
 The authors consider the following three elements of a neural network (c.f.Fig.2):
@@ -37,11 +36,21 @@ they propose the following compound coefficient $$ \phi $$
 
 ![](/article/images/efficientnet/sc03.jpg)
 
-# Results
+This leads to their simple neural architecture search algorithm namely: 
 
 ![](/article/images/efficientnet/sc04.jpg)
+
+where the baseline network is this
+
+![](/article/images/efficientnet/sc06.jpg)
+
+# Results
+
+Results are pretty convincing! 
+
+![](/article/images/efficientnet/sc01.jpg)
 ![](/article/images/efficientnet/sc05.jpg)
 
 
-Code is available here: []()
+Code is available here: [https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet](github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
 
