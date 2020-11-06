@@ -19,7 +19,7 @@ pdf: "https://arxiv.org/pdf/1905.11946.pdf"
 
 In this paper, the authors study model scaling and identify that carefully balancing network **depth**, **width**, and **resolution** can lead to better performance. 
 
-They show that such balance balance can be achieved by  scaling each of them with **constant ratio**. Based on this observation, they propose a simple **compound scaling method** which amounts to a simple neural architecture search.
+They show that such balance can be achieved by  scaling each of them with **constant ratio**. Based on this observation, they propose a simple **compound scaling method** which amounts to a simple neural architecture search.
 
 
 
