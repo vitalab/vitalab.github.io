@@ -6,7 +6,7 @@ author: "Pierre-Marc Jodoin"
 cite:
     authors: "Mingxing Tan, Quoc V. Le"
     title:   "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks"
-    venue:   "Proceedings of Machine Learning Research, 2019"
+    venue:   "Proceedings of ICML, 2019"
 pdf: "https://arxiv.org/pdf/1905.11946.pdf"
 ---
 
@@ -51,6 +51,7 @@ Results are pretty convincing!
 ![](/article/images/efficientnet/sc01.jpg)
 ![](/article/images/efficientnet/sc05.jpg)
 
+# References
 
-Code is available here: [https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet](github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
+- Code is available here: [https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet](github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
 
