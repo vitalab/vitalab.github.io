@@ -7,7 +7,7 @@ cite:
     authors: "Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan, Laurent Sifre, Simon Schmitt, Arthur Guez, Edward Lockhart, Demis Hassabis, Thore Graepel, Timothy Lillicrap, David Silver"
     title:   "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
     venue:   "arXiv"
-pdf: ""
+pdf: "https://arxiv.org/abs/1911.08265"
 ---
 
 
@@ -27,7 +27,7 @@ In 2016, Deepmind famously put AlphaGo against Go world-champion Lee Sedol and w
 
 Monte Carlo tree search (MCTS) was actually first introduced in 2006 to play the game of Go[^1] and won the 10th computer-Go tournament. It has since then been applied to many problems including chess, shogi, bridge, poker, and video games such as Starcraft.
 
-As the name implies, MCTS is a tree search algorithm that uses Monte Carlo sampling of the search space to iteratively refine the evaluation of nodes. From a root node, child nodes are traversed until a leaf node (a node that has one or more children that has not been evaluated or until a maximum depth is reached) is reached. Then, a child is selected and a rollout (selecting actions according to a possibly random policy until the end of the game) is performed, assigning the result to the node. Finally, the node's value is "backpropagated" to parent nodes. Finally, the optimal action can be inferred from the node's values. This process is repeated for each move.
+As the name implies, MCTS is a tree search algorithm that uses Monte Carlo sampling of the search space to iteratively refine the evaluation of nodes. From a root node, child nodes are traversed until a leaf node is reached. A leaf node is a node that has one or more children that has not been evaluated, or a node that has no children because it is a terminal node, or a node that is "deeper" than a maximum depth constraint. Then, a child is selected and a rollout (selecting actions according to a possibly random policy until the end of the game) is performed, assigning the result to the node. Finally, the node's value is "backpropagated" to parent nodes. Finally, the optimal action can be inferred from the node's values. This process is repeated for each move.
 
 Several strategies exist to select the next node $$s'$$ to explore, but the most popular is to model the children nodes $$s'_{j}$$ as independent multi-armed bandits and use the Upper Confidence bound for Trees (UCT) heuristic defined as
 
@@ -104,20 +104,21 @@ $$U(s,a) = Q(s,a) + c \cdot p(s,a) \cdot \frac{\sqrt{\sum_b N(s,b)}}{1+N(s,a)}$$
 
 $$Q(s,a) = \frac{1}{N(s,a)}\sum_{s'|s,a\rightarrow s'}v(s')\; \text{(an average of the values of the nodes from s' to s)}$$ 
 
-and $$c$$ a parameter promoting exploration. However, instead of performing rollouts, the network uses $$v(s_L)$$ to predict the outcome. MCTS' execution gives the tuple $$(s, \pi, p, \_)$$ where $$s$$ is the game's state, $$\pi$$ corresponds to the normalized state/actions visitations
+and $$c$$ a parameter promoting exploration. However, instead of performing rollouts, the network uses $$v(s_L)$$ to predict the outcome. MCTS' execution gives the tuple $$(s, \pi, p, \_)$$ where $$s$$ is the game's state, $$\pi$$ is a vector that corresponds to the normalized state/actions number of evaluations
 
-$$\pi = \frac{N(s, \cdot)^{1/\tau}}{\sum_b N(s,b)^{1/\tau}}$$
+$$\pi(s, \cdot) = \frac{N(s, \cdot)^{1/\tau}}{\sum_b N(s,b)^{1/\tau}}$$
 
 with $$\tau$$ a temperature parameter controlling exploration. $$p$$ is the action probabilities for state $$s$$, and $$\_$$ is later filled with $$z \in \pm 1$$ depending on the game's outcome. Then, the loss function
 
 $$l = (z - v)^2 - \pi^T \log p + c \|\theta\|^2$$
 
-where $$c$$ in this case is a regularization term, is used to train the network. We can interpret the loss as cross-entropy forcing the policy to match MCTS' behavior.
+is used to train the network with $$c$$ in this case being a regularization term. We can interpret the loss as cross-entropy forcing the policy to match MCTS' behavior.
 
 ![](/article/images/alpha/fig5.jpg)
 > Silver, D., Schrittwieser, J., Simonyan, K. et al. Mastering the game of Go without human knowledge. Nature 550, 354–359 (2017). https://doi.org/10.1038/nature24270
 
-From the above figure, we can see that the algorithm can surpass AlphaGo after only ~40h of training. Interestingly enough, we can see that AlphaGo Zero is not really good at prediction moves, but quite good at predicting game outcome. A supervised learning version of the algorithm is shown for comparison. Because it manages to outperform AlphaGo (and therefore the best human player is ELO is transitive), the results seem to imply that AlphaGo Zero learns to play differently than human players (which could explain moves 37 and 78). 
+From the above figure, we can see that the algorithm can surpass AlphaGo after only ~40h of training. Interestingly enough, we can see that AlphaGo Zero is not really good at predicting moves, but quite good at predicting game outcome. A supervised learning version of the algorithm is shown for comparison. Because it manages to outperform AlphaGo (and therefore the best human player, assuming ELO is transitive), the results seem to imply that AlphaGo Zero learns to play differently than human players (which could explain moves [37 and 78](https://www.wired.com/2016/03/two-moves-alphago-lee-sedol-redefined-future/)).
+
 ## AlphaZero
 
 Still on a quest to remove priors, Deepmind then released AlphaZero. AlphaZero keeps the same model and overall training process as AlphaGo Zero but removes some components that do not translate well to other games. Notable changes include:
@@ -140,7 +141,7 @@ Above are shown results from the training process. We can observe that AlphaZero
 
 ## MuZero
 
-Chess, Shogi and Go are games that can easily offer a perfect simulator as their rules are simple and well defined. However, this is not the case for most real-world scenarios such as robotics. Model-based reinforcement learning tries to tackle this problem by learning a simulator and then allowing planning using this learned simulator.
+Chess, Shogi and Go are games that can easily offer a perfect simulator as their rules are simple and well defined. However, this is not the case for most real-world scenarios such as robotics or video games. Model-based reinforcement learning tries to tackle this problem by learning a simulator and then allowing planning using this learned simulator.
 
 MuZero improves upon AlphaZero by learning a simulator and extending the tree-search algorithm to the general reinforcement learning setting of a single agent learning from discounted non-sparse rewards, allowing the algorithm to master the Atari Learning Environment suite while maintaining superhuman performance on previous games. In the following slides, subscript $$k$$ defines simulated timesteps, and $$t$$ defined real timesteps.
 
