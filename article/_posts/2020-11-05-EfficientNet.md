@@ -53,5 +53,5 @@ Results are pretty convincing!
 
 # References
 
-- Code is available here: [https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet](github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
+- Code is available here: [https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet](https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
 
