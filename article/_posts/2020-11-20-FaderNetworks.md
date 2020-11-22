@@ -12,17 +12,17 @@ pdf: "https://arxiv.org/pdf/1706.00409.pdf"
 
 
 # Highlights
-- New encoder-decoder architecture that disentangle salient information in images and attributes directly in the latent
+- New encoder-decoder architecture that disentangles salient information in images and attributes directly in the latent
 space;
 - At test-time, using continuous attribute values allows to adjust how much of an attribute is perceivable in the
 generated image.
 
 
 # Introduction
-The authors' goal is to control some attributes of interest images, for which transformations are ill-defined and
-training is unsupervised, i.e. no examples of images before and after the transformations are available. They achieve
-this by learning a latent space that is invariant to the attributes of interest, which can then simply be concatenated
-to any latent vector during the generative process.
+The authors' goal is to control some attributes of interest in images, for which transformations are ill-defined and
+training is unsupervised, i.e. where no images with the same content but different values of attributes are available.
+They achieve this by learning a latent space that is invariant to the attributes of interest, which can then simply be
+concatenated to any latent vector during the generative process.
 
 
 # Methods
@@ -41,8 +41,8 @@ $$
 $$
 
 ## Adversarial objective
-The encoder tries to learn that optimizes the two objectives mentioned above: namely a good reconstruction but a bad
-accuracy from the discriminator:
+The encoder tries to learn a latent space that optimizes the two objectives mentioned above: namely a good
+reconstruction but a bad accuracy from the discriminator:
 
 $$
 \mathcal{L}(\theta_{\text{enc}},\theta_{\text{dec}}|\theta_{\text{dis}}) = 
@@ -84,11 +84,11 @@ Of note, Mechanical Turk were employed for the quantitative evaluation of the re
 
 # Remarks
 - In theory, Fader networks should be able to handle continuous data attributes by switching the target of the
-adversarial component, and adapting it's loss from cross-entropy to some kind of regression loss (e.g. MAE, MSE, etc.).
+adversarial component, and adapting its loss from cross-entropy to some kind of regression loss (e.g. MAE, MSE, etc.).
 However, in practice, the method is known to perform poorly on non-categorical data attribute[^1].
 
 - In practice, the addition of an adversarial network makes the training much less stable, as could be expected. Thus,
-the author describe (common) implementation details that they required for their method to work, e.g. dropout,
+the authors describe (common) implementation details that they required for their method to work, e.g. dropout,
 discriminator cost scheduling, etc.
 
 
