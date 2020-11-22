@@ -28,7 +28,7 @@ The authors argue that their approach fits a specific type of problem, namely ma
 which current methods are not adapted and/or perform poorly:
 - Unsupervised disentanglement learning (e.g. $$\beta$$-VAE, FactorVAE[^1], $$\beta$$-TCVAE[^2], etc.) requires
 post-training analysis to identify how attributes are encoded, and consequently how to manipulate them;
-- Supervised regularization methods (e.g. Conditional VAEs, Fader networks, etc.) generally don't work well for
+- Supervised regularization methods (e.g. Conditional VAEs, Fader networks[^3], etc.) generally don't work well for
 continuous data attributes, like Fader networks that work with binary attributes.
 
 
@@ -96,3 +96,4 @@ encoding attribute-related information outside of their designated dimensions.
 # References
 [^1]: Review of FactorVAE: [https://vitalab.github.io/article/2020/08/13/DisentanglingByFactorising.html](https://vitalab.github.io/article/2020/08/13/DisentanglingByFactorising.html)
 [^2]: Review of $$\beta$$-TCVAE: [https://vitalab.github.io/article/2020/08/14/IsolatingSourcesOfDisentanglementInVAEs.html](https://vitalab.github.io/article/2020/08/14/IsolatingSourcesOfDisentanglementInVAEs.html)
+[^3]: Review of Fader networks: [https://vitalab.github.io/article/2020/08/14/FaderNetworks.html](https://vitalab.github.io/article/2020/08/14/FaderNetworks.html)
