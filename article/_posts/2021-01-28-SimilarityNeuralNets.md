@@ -14,6 +14,7 @@ pdf: "http://proceedings.mlr.press/v97/kornblith19a.html"
 - A similarity measure is introduced to measure the difference between representations created by trained neural networks.
 - They compare to other similarity measures and show theirs is better at measuring similarity.
 - They stress out that an effective similarity method could answer important questions such as (1) Do deep neural networks with the same architecture trained from different random initializations learn similar representations? (2) Can we establish correspondences between layers of different network architectures? and (3) How similar are the representations learned using the same network architecture from different datasets?
+- [Here is a video presentation of the paper by one of the authors.](https://www.youtube.com/watch?v=TBjdvjdS2KM&ab_channel=MLExplained-AggregateIntellect-AI.SCIENCE) 
 
 # Introduction
 
