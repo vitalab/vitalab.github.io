@@ -94,16 +94,16 @@ For given representations $$X$$ and $$Y$$ we let $$Q_X = X(X^TX)^{-1/2}$$ and $$
 
 ![](/article/images/similarity-nn-reps/03.jpg)
 
-> Linear Regression. One can fit every feature in $$Y$$ as a linear combination of features from $$X$$. The total fraction of variance is given by the fit:
+* Linear Regression. One can fit every feature in $$Y$$ as a linear combination of features from $$X$$. The total fraction of variance is given by the fit:
 $$
 	R^2_{LR} = \dfrac{\| Q_Y^T X \|_F^2}{\| X \|_F^2}.
 $$
 
-> Canonical Correlation Analysis (CCA). Canonical correlation changes the bases in which $$X$$ and $$Y$$ are expressed to maximize the correlation. For $$1 \leq i \leq p_1$$, the $$i^{\text{th}}$$ canonical correlation coefficient is defined as:
+* Canonical Correlation Analysis (CCA). Canonical correlation changes the bases in which $$X$$ and $$Y$$ are expressed to maximize the correlation. For $$1 \leq i \leq p_1$$, the $$i^{\text{th}}$$ canonical correlation coefficient is defined as:
 $$
 	\rho_i = max_{w_X^i,w_Y^i} corr(Xw_X^i, Yw_Y^i)
 $$
-where we restrict to the perpendicularity conditions: $Xw_X^i \perp X w_X^j$ and $Yw_Y^i \perp Yw_Y^j$ for all $j>i$. The canonical variables are $Xw_X^i$ and $Yw_Y^i$.
+where we restrict to the perpendicularity conditions: $$Xw_X^i \perp X w_X^j$$ and $$Yw_Y^i \perp Yw_Y^j$$ for all $$j>i$$. The canonical variables are $$Xw_X^i$$ and $$Yw_Y^i$$.
 
 The authors consider the following statistics of the goodness of fit of CCA:
 $$
@@ -114,17 +114,19 @@ $$
 $$
 Here $$\| - \|_*$$ denotes the nuclear norm which is the sum of the singular values.
 
-> SVCCA. One extra thing that can be built on top of CCA is to perform CCA on the truncated singular value decompositions of the representations $$X$$ and $$Y$$. It has been demonstrated that SVCCA keeps enough principal components of the input matrices to explain a fixed proportion of the variance, and drops the remaining components.
+* SVCCA. One extra thing that can be built on top of CCA is to perform CCA on the truncated singular value decompositions of the representations $$X$$ and $$Y$$. It has been demonstrated that SVCCA keeps enough principal components of the input matrices to explain a fixed proportion of the variance, and drops the remaining components.
 
-> Projection-Weighted CCA. Let $$x_j$$ be the $$j$$-th column of $$X$$ and $$h_i=X w_X^i$$, and also $$\alpha_i= \sum_j |<h_i,x_j>|. Projection-weighted canonical correlation (PWCCA) is given by
+* Projection-Weighted CCA.  Let $$x_j$$ be the $$j$$-th column of $$X$$ and $$h_i=X w_X^i$$, and also $$\alpha_i = \sum_j \mid <h_i,x_j> \mid$$.  Projection-weighted canonical correlation (PWCCA) is given by
+
 $$
 	\rho_{PW} = \dfrac{\sum_i^c \alpha_i \rho_i}{ \sum_i \alpha_i}.
 $$
+
 The authors derive a relation of PWCCA to linear regression (Appendix C.3).
 
-> Neuron Alignment Procedures. The authors mention other works where alignment between individual neurons is analyzed. Other works have found that the maximum matching subsets are very small for intermediate layers.
+* Neuron Alignment Procedures. The authors mention other works where alignment between individual neurons is analyzed. Other works have found that the maximum matching subsets are very small for intermediate layers.
 
-> Mutual Information. This measure is invariant under any invertible map, not only linear. The authors argue that this is not a good measurement for similarity between representations.
+* Mutual Information. This measure is invariant under any invertible map, not only linear. The authors argue that this is not a good measurement for similarity between representations.
 
 # Linear CKA versus CCA and Regression
 
