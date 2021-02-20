@@ -26,10 +26,12 @@ tags:
 - denoising
 - detection
 - dimensionality-reduction
+- dMRI
 - domain-adaptation
 - essentials
 - face-detection
 - few-shot-learning
+- fODF
 - GAN
 - GNN  # Graph Neural Networks
 - GOFAI
@@ -71,8 +73,10 @@ tags:
 - segmentation
 - semi-supervised
 - sequence
+- SH   # Spherical Harmonics
 - shape-analysis
 - siamese
+- spherical-CNN
 - surveillance
 - survey
 - synthesis
@@ -81,6 +85,7 @@ tags:
 - traffic
 - transfer-learning
 - transformer
+- U-Net
 - unsupervised
 - VAE
 - video-analysis
