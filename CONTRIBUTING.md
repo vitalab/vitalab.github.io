@@ -1,4 +1,4 @@
-# Contributing to the VITAL Literature Review
+# Contributing to the VITALab website
 
 In order to contribute to with your reviews to the VITAL Literature Review,
 please read the
