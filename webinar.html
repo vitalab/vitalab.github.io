@@ -23,8 +23,19 @@ permalink: /webinar/
 						<p>Every week, we get to watch 30 to 45 minute webinars on various
  machine learning topics.  These are the webinars that we
  watched over the last couple of years.</p>
- 
- <ul>
+
+  <ul>
+       {% for item in site.data.webinars.webinars %}
+       <li>
+         <strong>{{ item.date }} </strong>:  <a href="https://www.youtube.com/watch?v={{ item.url }}">{{ item.title }}</a>
+         <iframe width="215" height="120" src="https://www.youtube.com/embed/{{ item.url }}" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+       </li>
+       {% endfor %}
+  </ul>
+
+
+
+<!-- <ul>
  
 <li><strong>2021/03/12-5</strong>:  <a href="https://www.youtube.com/watch?v=DhHyshhc1lY">Quantization of Neural Networks – High Accuracy at Low Precision</a> </li>
   <iframe width="215" height="120" src="https://www.youtube.com/embed/DhHyshhc1lY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -429,5 +440,6 @@ Parameter Sharing (1:25:00)</a></li>
 <li><strong>2014/09/17</strong>: <a href="http://techtalks.tv/talks/compositional-morphology-for-word-representations-and-language-modelling/60990/">Morphology for Word Representations and Language Modelling</a></li>
 <li><strong>2014/09/03</strong>: <a href="http://videolectures.net/nipsworkshops2012_smola_parameter_server/">Scaling with the Parameters Server Variations on a Theme</a></li>
 </ul>
+//-->
  
  </div>

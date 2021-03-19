@@ -1,0 +1,14 @@
+webinar_list_title: Webinars
+webinars:
+
+  - title: 'Quantization of Neural Networks – High Accuracy at Low Precision'
+    date: 2021/03/12
+    url: DhHyshhc1lY
+
+  - title: 'Nicholas Carlini: Making and Measuring Progress in Adversarial Machine Learning'
+    date: 2021/02/26
+    url: jD3L6HiH4ls
+
+  - title: '[NeurIPS 2020] On the Importance of Deconstruction in Machine Learning Research'
+    date: 2021/02/12
+    url: rv5cw2bWx7Q
