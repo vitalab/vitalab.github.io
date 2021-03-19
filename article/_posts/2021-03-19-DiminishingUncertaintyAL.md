@@ -53,12 +53,17 @@ Authors also add a second term to the score of a sample based on mutual informat
 
 ![](/article/images/DiminishingUncertaintyAL/eq3.jpg)
 
+where $$P(x^{\mathcal{T}}_i, x^{\mathcal{U}}_j)$$ is the joint probability and $$P(x^{\mathcal{T}}_i)$$, 
+$$P(x^{\mathcal{U}}_j)$$ are marginal probabilities with respect to the histograms of the two images. 
 
 
-The final score for each sample is 
+
+
+The epistemic uncertainty and mutual information are normalized and the final score is calculated according to: 
 
 ![](/article/images/DiminishingUncertaintyAL/eq4.jpg)
 
+The mutual information term is subtracted because a lower score for mutual information indicates more diversity. 
 
 
 ## Deleting samples 
@@ -66,7 +71,11 @@ Contrary to other active learning methods, the authors propose leaving samples i
 labeled. Therefore, if the model is still uncertain about this sample in subsequent steps, it can be sampled once again 
 but will not require more labeling. 
 
-## Data
+# Data
+
+Authors test their method on 2 datasets:
+* Pancreas and tumor segmentation based on 3D computed tomography (CT) volume
+*  Hippocampus segmentation of two different regions of interest based on T1-weighted magnetic resonance imaging (MRI)
 
 
 # Results
