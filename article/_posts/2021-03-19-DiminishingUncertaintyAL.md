@@ -83,6 +83,10 @@ Authors test their method on 2 datasets:
 ![](/article/images/DiminishingUncertaintyAL/tab1.jpg)
 ![](/article/images/DiminishingUncertaintyAL/tab2.jpg)
 
+![](/article/images/DiminishingUncertaintyAL/fig3.jpg)
+![](/article/images/DiminishingUncertaintyAL/fig8.jpg)
+
+
 
 # Conclusions
  
