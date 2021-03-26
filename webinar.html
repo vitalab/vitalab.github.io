@@ -13,8 +13,13 @@ permalink: /webinar/
   <ul>
        {% for item in site.data.webinars.webinars %}
        <li>
-         <strong>{{ item.date }} </strong>:  <a href="https://www.youtube.com/watch?v={{ item.url }}">{{ item.title }}</a>
-         <iframe width="215" height="120" src="https://www.youtube.com/embed/{{ item.url }}" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+         {% if item.url contains "youtube" %}
+          {% assign youtube_id = item.url | split: 'watch?v=' | last %}
+          <strong>{{ item.date }} </strong>:  <a href="{{ item.url }}">{{ item.title }}</a>
+          <iframe width="215" height="120" src="https://www.youtube.com/embed/{{ youtube_id }}" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+         {% else %}
+          <strong>{{ item.date }}</strong>: <a href="{{ item.url }}">{{ item.title }}</a>
+         {% endif %}
        </li>
        {% endfor %}
   </ul>
