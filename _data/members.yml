@@ -1,5 +1,5 @@
 member_list_title: Members
-members:
+current_members:
 
   - firstname: 'Antoine'
     lastname: 'Théberge'
@@ -12,6 +12,7 @@ members:
         name: PhD
         startyear: 2020
         endyear:  ''
+
   - firstname: 'Thierry'
     lastname: 'Judge'
     grades:
@@ -19,3 +20,125 @@ members:
         name: MsC
         startyear: 2021
         endyear:  ''
+
+past_members:
+
+  - name: 'Charles Authier'
+    grade: MsC
+    startyear:
+    endyear:
+
+  - name: 'Daniel Jörgens'
+    grade: PhD intern
+    startyear:
+    endyear:
+
+  - name: 'Sarah Leclerc'
+    grade: PhD intern
+    startyear:
+    endyear:
+
+  - name: 'Frédéric Branchaud-Charron'
+    grade: undergrad. intern; MsC
+    startyear:
+    endyear:
+
+  - name: 'Carl Lemaire'
+    grade: MsC
+    startyear:
+    endyear:
+
+  - name: 'Yi Wang'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Clement Zotti'
+    grade: MsC
+    startyear:
+    endyear:
+
+  - name: 'Zhiming Luo'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Jorge Zavala-Bojorquez'
+    grade: PhD intern
+    startyear:
+    endyear:
+
+  - name: 'Martin Cousineau'
+    grade: MsC
+    startyear:
+    endyear:
+
+  - name: 'Mohammad Havaei'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Karl-Étienne Perron'
+    grade: undergrad. intern
+    startyear:
+    endyear:
+
+  - name: 'Michael Bernier'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Francis Dutil'
+    grade: undergrad. intern
+    startyear:
+    endyear:
+
+  - name: 'Sébastien Piérard'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Nil Goyette'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Jean-Christophe Houde'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Julien Prémont'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Caroline Presseau'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Yannick Bénézeth'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Cai Guo-Rong'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Anthony Adam-Duquette'
+    grade: MSc
+    startyear:
+    endyear:
+
+  - name: 'Erhan Ermis'
+    grade: PhD
+    startyear:
+    endyear:
+
+  - name: 'Pierre Clarot'
+    grade: MSc
+    startyear:
+    endyear:
