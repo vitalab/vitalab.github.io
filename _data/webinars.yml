@@ -1,19 +1,809 @@
 webinar_list_title: Webinars
 webinars:
-
-  - title: 'Quantization of Neural Networks – High Accuracy at Low Precision'
-    date: 2021/03/12
+- date: 2021/03/12-5
+  links:
+  - title: "Quantization of Neural Networks \u2013 High Accuracy at Low Precision"
     url: https://www.youtube.com/watch?v=DhHyshhc1lY
-
-  - title: 'Nicholas Carlini: Making and Measuring Progress in Adversarial Machine Learning'
-    date: 2021/02/26
+- date: 2021/02/26
+  links:
+  - title: 'Nicholas Carlini: Making and Measuring Progress in Adversarial Machine
+      Learning'
     url: https://www.youtube.com/watch?v=jD3L6HiH4ls
-
-  - title: '[NeurIPS 2020] On the Importance of Deconstruction in Machine Learning Research'
-    date: 2021/02/12
-    url: https://www.youtube.com/watch?v=rv5cw2bWx7Q
-
-  - title: 'Domain Adaptation and Representation Transfer'
-    date: 2020/10/23
+- date: 2021/02/12
+  links:
+  - title: '[NeurIPS 2020] On the Importance of Deconstruction in Machine Learning
+      Research'
+    url: https://www.youtube.com/watch?v=rv5cw2bWx7Q&list=PLuv1FSpHurUcwP9CFLT8efinNGFD7KTVH&index=100
+- date: 2021/02/5
+  links:
+  - title: '[NeurIPS 2020] Leveraging Kinematic for Deep Representation Learning   NewinML'
+    url: https://www.youtube.com/watch?v=t835Cp9hS5k&list=PLuv1FSpHurUcwP9CFLT8efinNGFD7KTVH&index=113&ab_channel=ArtificialIntelligence
+- date: 2021/01/22
+  links:
+  - title: '[NeurIPS 2020] Layer wise Learning of Kernel Dependence Network Workshop
+      Beyond Backpropagation'
+    url: https://www.youtube.com/watch?v=KWRvE5kFN5I&list=PLuv1FSpHurUcwP9CFLT8efinNGFD7KTVH&index=12&ab_channel=ArtificialIntelligence
+- date: 2021/01/15
+  links:
+  - title: Chundi Liu - Guided Similarity Separation for Image Retrieval
+    url: https://www.youtube.com/watch?v=oEgfBILbXEk
+- date: 2020/12/4
+  links:
+  - title: Montreal AI and Neuroscience (MAIN)
+    url: https://www.youtube.com/channel/UCddp3o-ctW8rmYtfdDfVUkA/videos
+- date: 2020/11/27
+  links:
+  - title: Recent Progress in Adversarial Robustness of AI Models  Attacks, Defenses,
+      and Certification
+    url: https://www.youtube.com/watch?v=SkEY36f_peA
+- date: 2020/11/13
+  links:
+  - title: The Large Learning Rate Phase of Deep Learning with Yasaman Bahri
+    url: https://www.youtube.com/watch?v=gBFmS8qyuFQ
+- date: 2020/11/6
+  links:
+  - title: 'Deep Reinforcement Learning: CS 285 Fall 2020'
+    url: https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc
+- date: 2020/10/30
+  links:
+  - title: 'MIUA 2020:  Unlearning Scanner Bias for MRI Harmonisation in Medical Image
+      Segmentation'
+    url: https://www.youtube.com/watch?v=CI59VLCwDVA&feature=youtu.be
+- date: 2020/10/23
+  links:
+  - title: Domain Adaptation and Representation Transfer
     url: https://wp.doc.ic.ac.uk/bglocker/talks/
-
+- date: 2020/10/16
+  links:
+  - title: 'Michael Mahoney: "Why Deep Learning Works: Implicit Self-Regularization
+      in Deep Neural Networks"'
+    url: https://www.youtube.com/watch?v=fmVuNRKsQa8&list=PLpqTCw5MzPU38pe8p6OfpVg8U14iot4mh&index=17&ab_channel=InstituteforPure%26AppliedMathematics%28IPAM%29
+- date: 2020/10/9
+  links:
+  - title: Are All Features Created Equal? - Aleksander Madry
+    url: https://www.youtube.com/watch?v=BwAVyB6z4ok&list=WL&index=70&ab_channel=InstituteforAdvancedStudy
+- date: 2020/9/25
+  links:
+  - title: "St\xE9phane Mallat: \"Deep Generative Networks as Inverse Problems\""
+    url: https://www.youtube.com/watch?v=98KiH44yvok&t=1238s&ab_channel=InstituteforPure%26AppliedMathematics%28IPAM%29
+- date: 2020/9/18
+  links:
+  - title: Representational Power of Graph Neural Networks - Stefanie Jegelka
+    url: https://www.youtube.com/watch?v=USfNJNePDKQ&t=539s
+- date: 2020/9/11
+  links:
+  - title: Is Optimization the Right Language to Understand Deep Learning? - Sanjeev
+      Arora
+    url: https://www.youtube.com/watch?v=IXotICNx2qk&list=PLpqTCw5MzPU38pe8p6OfpVg8U14iot4mh&index=20&t=0s&ab_channel=InstituteforAdvancedStudy
+- date: 2020/9/4
+  links:
+  - title: LSTM is dead. Long Live Transformers!
+    url: https://www.youtube.com/watch?v=S27pHKBEp30&ab_channel=SeattleAppliedDeepLearning
+- date: 2019/10/03
+  links:
+  - title: 3D deep learning (CVPR 2017)
+    url: https://www.youtube.com/watch?v=8CenT_4HWyY
+- date: 2019/09/19
+  links:
+  - title: Interview with Francois Cholet.
+    url: https://www.youtube.com/watch?v=Bo8MY4JpiXE
+- date: 2019/09/12
+  links:
+  - title: Capsule Networks for computer vision CVPR 2019
+    url: https://www.youtube.com/watch?v=_-RU9Yoca84
+- date: 2019/09/05
+  links:
+  - title: Introduction on deep Bayesian methods
+    url: https://www.youtube.com/playlist?list=PLe5rNUydzV9QHe8VDStpU0o8Yp63OecdW
+- date: 2019/08/01
+  links:
+  - title: A new perspective on adversarial-perturbations
+    url: https://www.youtube.com/watch?v=mUt7w4UoYqM
+- date: 2019/07/11-18
+  links:
+  - title: 'ICML 2018: Tutorial Session: Toward the Theoretical Understanding of Deep
+      Learning'
+    url: https://www.youtube.com/watch?v=KDRN-FyyqK0
+- date: 2019/07/04
+  links:
+  - title: Attention is all you need
+    url: https://www.youtube.com/watch?v=z1xs9jdZnuY
+- date: 2019/06/27
+  links:
+  - title: Principles and applications of relational inductive biases in deep learning
+    url: https://cbmm.mit.edu/video/principles-and-applications-relational-inductive-biases-deep-learning
+- date: 2019/06/13
+  links:
+  - title: Active learning
+    url: https://www.youtube.com/watch?v=CrkGMnh7KiA
+- date: 2019/05/23-30 - 06/06
+  links:
+  - title: 'Adversarial robustness : theory and practice'
+    url: https://www.youtube.com/watch?v=TwP-gKBQyic
+- date: 2019/05/16
+  links:
+  - title: Deep learning determinism
+    url: https://www.youtube.com/watch?v=TB07_mUMt0U
+- date: 2019/05/09
+  links:
+  - title: Guarding user Privacy with Federated Learning and Differential Privacy
+    url: https://www.youtube.com/watch?v=e5othcNmync
+- date: 2019/05/02
+  links:
+  - title: Automatic Machine Learning
+    url: https://www.youtube.com/watch?v=0eBR8a4MQ30
+- date: 2019/05/02
+  links:
+  - title: Automatic Machine Learning
+    url: https://www.youtube.com/watch?v=0eBR8a4MQ30
+- date: 2019/04/04
+  title: '2019/04/04: Introduction to the new Beluga GPU server'
+- date: 2019/03/28
+  links:
+  - title: Integrating Domain-Knowledge into deep learning
+    url: https://livestream.com/newyorkacademyofsciences/ml2019-3/videos/188158627
+- date: 2019/03/21
+  title: '2019/03/21: Variational inference, lower bound and VAE'
+- date: 2019/03/14
+  links:
+  - title: Bayesian NN from Andrew Gordon Wilson
+    url: http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets/
+- date: 2019/02/28
+  links:
+  - title: Bayesian NN from Andrew Gordon Wilson
+    url: http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets/
+- date: 2019/02/21
+  links:
+  - title: Bayesian NN from Andrew Gordon Wilson
+    url: http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets/
+- date: 2019/02/07
+  links:
+  - title: Designing Computer Systems for Software 2.0
+    url: https://www.facebook.com/nipsfoundation/videos/539369239863523/
+- date: 2019/01/31
+  links:
+  - title: Reproducible, Reusable, and Robust Reinforcement Learning
+    url: https://www.facebook.com/nipsfoundation/videos/2120856364798049/
+- date: 2019/01/24
+  links:
+  - title: 'SecML18: Been Kim on Interpretability for when NOT to use machine learning'
+    url: https://www.youtube.com/watch?v=t1rJ9gIrYKM&index=7&t=0s&list=PLFG9vaKTeJq4IpOje38YWA9UQu_COeNve
+- date: 2018/01/17
+  links:
+  - title: UMAP Uniform Manifold Approximation and Projection for Dimension Reduction
+      | SciPy 2018 |
+    url: https://www.youtube.com/watch?v=nq6iPZVUxZU
+- date: 2018/12/20
+  links:
+  - title: Making algorithm trustworthy
+    url: https://www.facebook.com/nipsfoundation/videos/482957018893956/
+- date: 2018/12/06-13
+  links:
+  - title: The trouble with bias by Kate Crawford
+    url: https://www.facebook.com/nipsfoundation/videos/1553500344741199/
+- date: 2018/11/29
+  links:
+  - title: SceneGraph for Recognition and Generation  - CVPR 2018  - J.Johnson (24:50)
+    url: https://www.youtube.com/watch?v=3YNNyeXI7dk&list=PL_bDvITUYucD54Ym5XKGqTv9xNsrOX0aS&index=31
+- date: 2018/11/22
+  links:
+  - title: Coco Update + Panoptic segmentation  - CVPR 2018  - P.Dollar (33:23)
+    url: https://www.youtube.com/watch?v=m60uJVIE4Ys&index=29&list=PL_bDvITUYucD54Ym5XKGqTv9xNsrOX0aS
+- date: 2018/11/14
+  links:
+  - title: StackGAN++, Realistic Image Synthesis with Stacked Generative Adversarial
+      Networks
+    url: https://www.youtube.com/watch?v=PXWIaLE7_NU
+- date: 2018/11/07
+  links:
+  - title: Best Paper CVPR2018  - Taxonomy  - Disentangling Task Transfer Learning
+    url: https://www.youtube.com/watch?v=9mdCWMVAMLg
+- date: 2018/10/31
+  links:
+  - title: Connecting GANs, Actor Critic Methods and Multilevel Optimization, DALI
+      2017
+    url: https://www.youtube.com/watch?v=3s4UyoMilQo&feature=youtu.be
+- date: 2018/10/17
+  title: '2018/10/17: ADMM by Christian Desrosiers'
+- date: 2018/10/10
+  links:
+  - title: Software Engineering for Software 2.0
+    url: https://www.youtube.com/watch?v=KJAnSyB6mME
+  - title: Fast and accurate white matter bundle segmentation
+    url: https://cds.ismrm.org/protected/18MPresentations/videos/18/N02/0851/
+- date: 2018/09/26-03
+  links:
+  - title: 'Interpretability Beyond Feature Attribution: Quantitative Testing with
+      Concept Activation Vectors (TCAV)'
+    url: https://www.facebook.com/icml.imls/videos/432151720632682/
+  - title: transformation Autoregressive networks
+    url: https://www.facebook.com/icml.imls/videos/432151720632682/
+- date: 2018/09/12-19
+  title: '2018/09/12-19: Vitalab_ai librairy design!'
+- date: 2018/08/08
+  links:
+  - title: 'ICML2018 : Bayesian inference tutorial (part 2)'
+    url: https://www.facebook.com/icml.imls/videos/428756450972209/?__xts__[0]=33.%7B%22logging_data%22%3A%7B%22page_id%22%3A118896271958230%2C%22event_type%22%3A%22clicked_all_page_posts%22%2C%22impression_info%22%3A%22eyJmIjp7InBhZ2VfaWQiOiIxMTg4OTYyNzE5NTgyMzAiLCJpdGVtX2NvdW50IjoiMCJ9fQ%22%2C%22surface%22%3A%22www_pages_home%22%2C%22interacted_story_type%22%3A%22565413710334575%22%2C%22session_id%22%3A%222e9b1e23c8f3f6499de0cb820c739108%22%7D%7D
+- date: 2018/08/01
+  links:
+  - title: 'ICML2018 : Bayesian inference tutorial (part 1)'
+    url: https://www.facebook.com/icml.imls/videos/428756450972209/?__xts__[0]=33.%7B%22logging_data%22%3A%7B%22page_id%22%3A118896271958230%2C%22event_type%22%3A%22clicked_all_page_posts%22%2C%22impression_info%22%3A%22eyJmIjp7InBhZ2VfaWQiOiIxMTg4OTYyNzE5NTgyMzAiLCJpdGVtX2NvdW50IjoiMCJ9fQ%22%2C%22surface%22%3A%22www_pages_home%22%2C%22interacted_story_type%22%3A%22565413710334575%22%2C%22session_id%22%3A%222e9b1e23c8f3f6499de0cb820c739108%22%7D%7D
+- date: 2018/07/25
+  links:
+  - title: "ICML2018 : Adafactor and Kronecker Recurrent Units seem interesting\n\
+      +  ICML2018 : Efficient Neural Architecture Search via \nParameter Sharing (1:25:00)"
+    url: https://www.facebook.com/icml.imls/videos/429964030851451/
+- date: 2018/07/18
+  title: '2018/07/18: Graph cut'
+- date: 2018/07/11
+  links:
+  - title: "CVPR2018  - MapNet: An Allocentric Spatial Memory for Mapping Environments,\
+      \ Jo\xC3\xA3o F. Henriques"
+    url: https://www.youtube.com/watch?v=HAOCaqvcf8w&feature=youtu.be&t=279
+- date: 2018/07/04
+  links:
+  - title: CVPR2018  - High-Resolution Image Synthesis and Semantic Manipulation With
+      Conditional GANs (20:00)
+    url: https://www.facebook.com/CVPR2018/
+- date: 2018/06/27
+  links:
+  - title: CVPR2018  - Taxonomy  - Disentangling Task Transfer Learning
+    url: https://www.youtube.com/watch?v=9mdCWMVAMLg
+  - title: 'CVPR 2018: What do Deep Networks Like to See?'
+    url: https://www.youtube.com/watch?v=WHe2SJsQ1_8
+- date: 2018/06/06-2018/06/13
+  links:
+  - title: A Neural Network Model That Can Reason
+    url: https://www.youtube.com/watch?v=jpNLp9SnTF8
+- date: 2018/05/30
+  links:
+  - title: From Generative Models to Generative Agents
+    url: https://youtu.be/v7V2udi5nCo?t=113
+- date: 2018/05/23
+  links:
+  - title: Multi-Scale Dense Networks for Resource Efficient Image Classification
+    url: https://www.youtube.com/watch?v=CXLiEe83EQs
+- date: 2018/05/07-2018/05/14
+  links:
+  - title: K.Grauman - ICLR keynote - Visual Learning with Unlabeled Video and Look
+      Around Policies
+    url: https://www.youtube.com/watch?v=CXLiEe83EQs
+  - title: Boosting Dilated Convolutional Networks with Mixed Tensor Decompositions
+    url: https://www.youtube.com/watch?v=CXLiEe83EQs
+- date: 2018/05/02
+  links:
+  - title: 'Train longer, generalize better: closing the generalization gap in large
+      batch training of neural networks'
+    url: https://www.facebook.com/nipsfoundation/videos/1554402331317667/
+  - title: Unsupervised learning of object frames by dense equivariant image labelling
+    url: https://www.facebook.com/nipsfoundation/videos/1553634558061111/
+- date: 2018/04/25
+  links:
+  - title: From bayesian Sparsity to Gated Recurrent Nets. + D
+    url: https://www.facebook.com/nipsfoundation/videos/1554402331317667/
+- date: 2018/04/18
+  title: '2018/04/18: Spectral Clustering. '
+- date: 2018/02/14  - 2018/04/11
+  links:
+  - title: Bayesian methods for Machine learning
+    url: https://www.coursera.org/learn/bayesian-methods-in-machine-learning
+- date: 2018/02/07
+  links:
+  - title: Differentiable Programs with Neural Libraries
+    url: https://vimeo.com/238227833
+  - title: Sharp Minima
+    url: https://vimeo.com/237275513
+- date: 2018/01/31
+  links:
+  - title: The loss surface of deep and wide NN
+    url: https://vimeo.com/237275412
+  - title: Seq2Seq Modeling
+    url: https://vimeo.com/240428387
+- date: 2018/01/24
+  links:
+  - title: Variation
+    url: https://vimeo.com/238221185
+  - title: al Dropout Specifies Deep NN
+    url: https://vimeo.com/238221185
+  - title: 'ProtoNN: Compressed and Accurate kNN for Resource-scarce Devices'
+    url: https://vimeo.com/238229350
+- date: 2018/01/17
+  links:
+  - title: Counterfactual Fairness
+    url: https://www.facebook.com/nipsfoundation/videos/1554741734617060/
+- date: 2018/01/11
+  links:
+  - title: 'Yee Whye keynote: On Bayesian Deep Learning and Deep Bayesian Learning,
+      at NIPS 2017'
+    url: https://www.facebook.com/nipsfoundation/videos/1555493854541848/
+- date: 2017/12/30
+  links:
+  - title: 'Jacob Walker: Data-Driven Visual Forecasting'
+    url: https://www.youtube.com/watch?v=wwbwyPIY8kw
+- date: 2017/12/13
+  links:
+  - title: Semantic Video CNNs through Representation Warping
+    url: https://www.youtube.com/watch?v=RvhXFfBeY8c&index=2&list=PL_bDvITUYucCaqUurRr4Cgt0PCITtIeYa
+  - title: Detail-revealing Deep Video Super-resolution
+    url: https://www.youtube.com/watch?v=0WnwS1EOx3M&index=4&list=PL_bDvITUYucCaqUurRr4Cgt0PCITtIeYa
+- date: 2017/11/01
+  links:
+  - title: 'Arvind Neelakantan: Knowledge Representation And Reasoning With Deep Neural
+      Networks'
+    url: https://www.youtube.com/watch?v=lc68_d_DnYs
+- date: 2017/10/18
+  links:
+  - title: ADMM
+    url: http://videolectures.net/nipsworkshops2011_boyd_multipliers/
+- date: 2017/10/11
+  links:
+  - title: 'RNN Symposium: Nando de Freitas  - Learning to Learn, to Program, to Explore
+      and to Seek Knowledge'
+    url: https://www.youtube.com/watch?v=SAcHyzMdbXc
+- date: 2017/10/04
+  links:
+  - title: Differentiable Neural Computer (Alex Graves)
+    url: https://www.youtube.com/watch?v=steioHoiEms
+- date: 2017/09/27
+  links:
+  - title: Generative Modelling as Sequence Learning
+    url: https://www.youtube.com/watch?v=leu286ciQcE&index=12
+  - title: Skin Cancer Image Classification
+    url: https://www.youtube.com/watch?v=toK1OSLep3s
+- date: 2017/09/20
+  links:
+  - title: Combining online and offline knowledge in UCT
+    url: https://www.youtube.com/watch?v=Bm7zah_LrmE&feature=youtu.be
+- date: 2017/08/30-6
+  links:
+  - title: Deep reinforcement learning
+    url: http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement
+- date: 2017/08/16-23
+  links:
+  - title: Reinforcement Learning by J.Pineau
+    url: http://videolectures.net/deeplearning2016_pineau_reinforcement_learning/
+- date: 2017/07/12
+  links:
+  - title: Zero-shot learning
+    url: https://www.youtube.com/watch?v=jBnCcr-3bXc&t=649s
+- date: 2017/07/05
+  links:
+  - title: Predictive Learning
+    url: https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Predictive-Learning
+- date: 2017/06/28
+  links:
+  - title: Amortised MAP inference Image Super-resolution
+    url: https://www.facebook.com/iclr.cc/videos/1710445912317801/
+  - title: Towards Principled Methods for Training GAN
+    url: https://www.facebook.com/iclr.cc/videos/1710657292296663/
+- date: 2017/06/21
+  links:
+  - title: Deep learning in medical imaging
+    url: https://www.youtube.com/watch?v=2_Jv11VpOF4
+- date: 2017/06/14
+  links:
+  - title: Detecting Events and Key Actors in Multi-Person Videos
+    url: https://www.youtube.com/watch?v=74c9QgJKfXg
+  - title: Recurrent Face Aging.
+    url: https://www.youtube.com/watch?v=ZDRZL_jRaFk&t=532s
+- date: 2017/06/07
+  links:
+  - title: Dynamic Image Networks for Action Recognition
+    url: https://www.youtube.com/watch?v=bYIt8T-f98I
+  - title: 3D Action Recognition From Novel Viewpoints
+    url: https://www.youtube.com/watch?v=Vs1jcoBbKrk
+- date: 2017/05/31
+  links:
+  - title: Generalization and Equilibrium in Generative Adversarial Nets (GANs)
+    url: https://www.youtube.com/watch?v=V7TliSCqOwI
+- date: 2017/05/24
+  links:
+  - title: Learning Graphical State Transitions
+    url: https://www.facebook.com/iclr.cc/videos/1711893862173006/
+  - title: Neural Architecture Search with Reinforcement Learning
+    url: https://www.facebook.com/iclr.cc/videos/1713144705381255/
+- date: 2017/05/17
+  links:
+  - title: 'Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima'
+    url: https://www.facebook.com/iclr.cc/videos/1710657292296663/
+  - title: Semi-supervised Knowledge Transfer for Deep Learning from Private Training
+      Data
+    url: https://www.facebook.com/iclr.cc/videos/1711893862173006/
+- date: 2017/05/10
+  links:
+  - title: End-to-end Optimized Image Compression
+    url: https://www.facebook.com/iclr.cc/videos/1710792945616431/
+  - title: Making neural programming generalize via recursions
+    url: https://www.facebook.com/iclr.cc/videos/1713144705381255/
+- date: 2017/05/03
+  links:
+  - title: 'Toward Efficient Deep Neural Network Deployment: Deep Compression and
+      EIE, Song Han'
+    url: https://www.youtube.com/watch?v=CrDRr2fxbsg
+- date: 2017/04/26
+  links:
+  - title: What can deep learning learn from linear regression? (ICLR 2017, from 30:30
+      to 1:10:00)
+    url: https://www.facebook.com/iclr.cc/videos/1710657292296663/
+- date: 2017/04/19
+  links:
+  - title: Learning What and Where to Draw
+    url: https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Learning-What-and-Where-to-Draw
+  - title: Without-Replacement Sampling for Stochastic Gradient Methods
+    url: https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Without-Replacement-Sampling-for-Stochastic-Gradient-Methods
+- date: 2017/04/12
+  links:
+  - title: 'MIT 6.S191 Lecture 6: Deep Reinforcement Learning'
+    url: https://www.youtube.com/watch?v=xWe58WGWmlk
+- date: 2017/04/05
+  links:
+  - title: Visualizing Data Using t-SNE
+    url: https://www.youtube.com/watch?v=RJVL80Gg3lA
+- date: 2017/03/29
+  links:
+  - title: 'Integrating Keras & TensorFlow: The Keras Workflow, Expanded'
+    url: https://www.youtube.com/watch?v=UeheTiBJ0Io
+- date: 2017/03/15
+  links:
+  - title: Deep learning with stochastic depth
+    url: https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-2
+- date: 2017/03/01
+  links:
+  - title: NIPS 2016 Workshop on Adversarial Training  - Ian Goodfellow  - Introduction
+      to GANs
+    url: https://www.youtube.com/watch?v=RvgYvHyT15E&t=561s
+- date: 2017/01/25
+  links:
+  - title: Reasoning, Attention and Memory
+    url: http://videolectures.net/deeplearning2016_chopra_attention_memory/
+  - title: Sumit Chopra
+    url: http://videolectures.net/sumit_chopra/
+- date: 2017/01/11
+  links:
+  - title: Learning to learn and compositionality with deep recurrent neural networks
+    url: https://www.youtube.com/watch?v=x1kf4Zojtb0
+- date: 2016/12/14
+  links:
+  - title: Fast Algorithms for Convolutional Neural Networks [CVPR2016]
+    url: https://www.youtube.com/watch?v=j4CIomZfsdM
+- date: 2016/11/30
+  links:
+  - title: Learning feed-forward one-shot learners [NIPS 2016]
+    url: https://www.youtube.com/watch?v=BnLN3uoXMRY&t=1059s
+- date: 2016/11/23
+  links:
+  - title: Deep Visual Analogy-Making
+    url: https://www.youtube.com/watch?v=PB7b-a0kC4c&list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q&index=3
+- date: 2016/11/02-09
+  links:
+  - title: ''
+    url: https://www.youtube.com/watch?v=TBHAV2GEFA8
+  - title: Deep RNN by Y. Bengio
+    url: http://videolectures.net/deeplearning2016_bengio_neural_networks/
+- date: 2016/10/26
+  links:
+  - title: Multi-Scale Patch Aggregation (MPA) for Simultaneous Detection and Segmentation
+    url: https://www.youtube.com/watch?v=TBHAV2GEFA8
+  - title: synthetic data for augmenting training data
+    url: https://www.youtube.com/watch?v=BrOL1Z-uKY4&list=PL_bDvITUYucA0BYtDl9HwWnckwwgckmiS&index=8
+  - title: 'WIDER FACE: A Face Detection Benchmark'
+    url: https://www.youtube.com/watch?v=kruBAk-NstI
+- date: 2016/10/19
+  links:
+  - title: End-To-End People Detection in Crowded Scenes
+    url: https://www.youtube.com/watch?v=Nl2fBKxwusQ
+  - title: 'G-CNN: An Iterative Grid Based Object Detector'
+    url: https://www.youtube.com/watch?v=XISpGRJSF0Y
+  - title: Accurate Image Super-Resolution Using Very Deep Convolutional Networks
+    url: https://www.youtube.com/watch?v=OR1aBLL0EvQ
+- date: 2016/10/12
+  links:
+  - title: Instance-Aware Semantic Segmentation via Multi-Task Network Cascades
+    url: https://www.youtube.com/watch?v=bUjyXASy_Jo&index=2&list=PL_bDvITUYucCGlBM0mMqRFk-7Ob5WFHEi
+  - title: 'ScribbleSup: Scribble-Supervised Convolutional Networks for Semantic Segmentation'
+    url: https://www.youtube.com/watch?v=ZMnw_v2FYb0&index=1&list=PL_bDvITUYucCGlBM0mMqRFk-7Ob5WFHEi
+- date: 2016/10/05
+  links:
+  - title: VQA Divide and Conquer
+    url: https://www.youtube.com/watch?v=TcfkWtg6V3M
+- date: 2016/09/28
+  links:
+  - title: 'Large-Scale Semantic 3D Reconstruction: An Adaptive Multi-Resolution Model'
+    url: https://www.youtube.com/watch?v=Hlbcv0nU-N4
+  - title: Structured Prediction of Unobserved Voxels From a Single Depth Image
+    url: https://www.youtube.com/watch?v=OxkZum2CEwc
+  - title: "DeepStereo: Learning to Predict New Views From the World\xE2\x80\x99s\
+      \ Imagery"
+    url: https://www.youtube.com/watch?v=2hmogpbXDMY
+- date: 2016/09/21
+  links:
+  - title: 'NetVLAD: CNN Architecture for Weakly Supervised Place Recognition'
+    url: https://www.youtube.com/watch?v=P-e_0EvelIA
+  - title: 'Structural-RNN: Deep Learning on Spatio-Temporal Graphs'
+    url: https://www.youtube.com/watch?v=hK0mr0BrBAw&list=PL_bDvITUYucCvpIUFMYmthlP3VMxfXpVw&index=2
+- date: 2016/09/14
+  links:
+  - title: 'VideoLSTM: Convolves, attends, and flows for action recognitio'
+    url: https://www.youtube.com/watch?v=oluw16wExDY
+  - title: 'LocNet: Improving Localization Accuracy for Object Detection'
+    url: https://www.youtube.com/watch?v=UGqo8oeQZtw
+- date: 2016/09/07
+  links:
+  - title: 'Deep Learning Lecture 14: Variational Autoencoders'
+    url: https://www.youtube.com/watch?v=P78QYjWh5sM
+- date: 2016/07/06
+  links:
+  - title: Adaptive Deep Learning
+    url: https://www.youtube.com/watch?v=K0dZ6ohQYbA
+  - title: Spatial Transformer Networks
+    url: https://www.youtube.com/watch?v=T5k0GnBmZVI&feature=youtu.be
+- date: 2016/05/25
+  links:
+  - title: 'Semantic Segmentation: Deep Parsing Network'
+    url: http://videolectures.net/iccv2015_liu_li_image_segmentation/
+  - title: Decision Forests
+    url: http://videolectures.net/iccv2015_kontschieder_decision_forests/
+- date: 2016/05/18
+  links:
+  - title: Minimum Barrier Salient Object Detection at 80 FPS
+    url: http://videolectures.net/iccv2015_sclaroff_object_detection/
+  - title: Fast R-CNN
+    url: http://videolectures.net/iccv2015_girshick_fast_r_cnn/
+- date: 2016/05/11
+  links:
+  - title: Weakly Supervised Multiclass Video Segmentation (CVPR2014)
+    url: http://techtalks.tv/talks/weakly-supervised-multiclass-video-segmentation/60244/
+  - title: Large-scale Video Classification with Convolutional Neural Networks
+    url: http://techtalks.tv/talks/large-scale-video-classification-with-convolutional-neural-networks-2/60272/
+- date: 2016/04/27
+  links:
+  - title: Batch Normalization
+    url: http://research.microsoft.com/apps/video/?id=260019
+  - title: Seeing People with Deep Learning
+    url: http://videolectures.net/deeplearning2015_taylor_deep_learning/
+- date: 2016/04/13
+  links:
+  - title: High Confidence Predictions for Unrecognizable Images
+    url: http://techtalks.tv/talks/deep-neural-networks-are-easily-fooled-high-confidence-predictions-for-unrecognizable-images/61573/
+  - title: Determining Parent-Offspring Resemblance via Gated-Autoencoders
+    url: https://www.youtube.com/watch?v=MHSP-VoiMr8&list=PLd3hlSJsX_InWZEJNJG_yoGs-zy-9D-J7&index=3
+- date: 2016/04/06
+  links:
+  - title: Do Statistical Models Understand the World?
+    url: https://www.youtube.com/watch?v=Pq4A2mPCB0Y
+  - title: Deep Generative Models Using A Pyramid Of Adversarial Networks
+    url: https://www.microsoft.com/en-us/research/video/symposium-deep-learning-emily-denton/
+- date: 2016/03/30
+  links:
+  - title: Hypercolumns for Object Segmentation and Fine-Grained Localization
+    url: http://techtalks.tv/talks/hypercolumns-for-object-segmentation-and-fine-grained-localization/61568/
+  - title: Improving Object Detection With Bayesian Optimization and Structured Prediction
+    url: http://techtalks.tv/talks/improving-object-detection-with-deep-convolutional-networks-via-bayesian-optimization-and-structured-prediction/61570/
+- date: 2016/03/09
+  links:
+  - title: Undirected Graphical Models
+    url: http://videolectures.net/deeplearning2015_courville_graphical_models/
+- date: 2016/02/24 - 2016/03/02
+  links:
+  - title: 'Deep Learning: Theoretical Motivations'
+    url: http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/
+- date: 2016/02/17
+  links:
+  - title: Fully Convolutional Networks for Semantic Segmentation
+    url: http://techtalks.tv/talks/fully-convolutional-networks-for-semantic-segmentation/61606/
+- date: 2016/02/10
+  links:
+  - title: Training Deep Convolutional Neural Networks to Play Go
+    url: http://videolectures.net/icml2015_clark_deep_convolutional_neural_networks/?q=Christopher%20Clark
+- date: 2016/02/03
+  links:
+  - title: Deep Edge-Aware Filters
+    url: http://videolectures.net/icml2015_ren_deep_filters/
+- date: 2016/01/27
+  links:
+  - title: Geodesic Object Proposals
+    url: http://videolectures.net/eccv2014_kraehenbuehl_object_proposals/http://videolectures.net/eccv2014_kraehenbuehl_object_proposals/
+- date: 2016/01/20
+  links:
+  - title: Visualizing Data Using t-SNE
+    url: https://www.youtube.com/watch?v=RJVL80Gg3lA
+- date: 2015/11/25
+  links:
+  - title: Unsupervised Object Discovery With Bottom-Up Region Proposals
+    url: http://techtalks.tv/talks/unsupervised-object-discovery-and-localization-in-the-wild-part-based-matching-with-bottom-up-region-proposals/61581/
+  - title: Geo-semantic Segmentation
+    url: https://www.youtube.com/watch?v=jf5U3gdF5yE
+- date: 2015/11/05
+  links:
+  - title: Introduction to Markov Chains
+    url: https://www.youtube.com/watch?v=tYaW-1kzTZI
+- date: 2015/10/28
+  links:
+  - title: 'PANDA: Pose Aligned Networks for Deep Attribute Modeling'
+    url: http://techtalks.tv/talks/panda-pose-aligned-networks-for-deep-attribute-modeling/60280/
+- date: 2015/10/28
+  links:
+  - title: Learning Mid-Level Image Representations using CNNs
+    url: http://techtalks.tv/talks/learning-and-transferring-mid-level-image-representations-using-convolutional-neural-networks/60271/
+- date: 2015/10/20
+  links:
+  - title: Deeply Learned Attributes for Crowded Scene Understanding
+    url: http://techtalks.tv/talks/deeply-learned-attributes-for-crowded-scene-understanding/61617/
+- date: 2015/10/20
+  links:
+  - title: Relative Attributes
+    url: https://www.youtube.com/watch?v=br2Im3tpBc8
+- date: 2015/10/13
+  links:
+  - title: Understanding Deep Image Representations by Inverting Them
+    url: http://techtalks.tv/talks/understanding-deep-image-representations-by-inverting-them/61629/
+- date: 2015/09/01
+  links:
+  - title: Automated Image Captioning with ConvNets and Recurrent Nets
+    url: https://www.youtube.com/watch?v=xKt21ucdBY0
+- date: 2015/08/25
+  links:
+  - title: 'Statistics 101: ANOVA, A Visual Introduction part 3'
+    url: https://www.youtube.com/watch?v=UrRYITjDOww
+- date: 2015/08/18
+  links:
+  - title: 'Statistics 101: ANOVA, A Visual Introduction part 2'
+    url: https://www.youtube.com/watch?v=JgMFhKi6f6Y&t=4m24s
+- date: 2015/08/11
+  links:
+  - title: 'Statistics 101: ANOVA, A Visual Introduction part 1'
+    url: https://www.youtube.com/watch?v=0Vj2V2qRU10
+- date: 2015/08/04
+  links:
+  - title: Taking Humans out of the Deep Learning Loop
+    url: https://www.youtube.com/watch?v=VG2uCpKJkSg
+- date: 2015/07/28
+  links:
+  - title: Context-Aware Saliency Detection
+    url: http://videolectures.net/cvpr2010_zelnik_manor_casd/?q=saliency
+- date: 2015/07/14
+  links:
+  - title: Whats wrong with deep learning?
+    url: http://techtalks.tv/talks/whats-wrong-with-deep-learning/61639/
+- date: 2015/06/02
+  links:
+  - title: How transferable are features in deep neural networks?
+    url: http://research.microsoft.com/apps/video/?id=239087
+- date: 2015/05/26
+  links:
+  - title: The Unreasonable Effectiveness Of Deep Learning
+    url: http://videolectures.net/sahd2014_lecun_deep_learning/
+- date: 2015/05/21
+  links:
+  - title: Towards On-the-fly Large Scale Video Search
+    url: http://videolectures.net/bmvc2013_zisserman_video_search/
+- date: 2015/05/13
+  links:
+  - title: High-dimensional learning with deep network contractions
+    url: http://videolectures.net/sahd2014_mallat_dimensional_learning/
+- date: 2015/05/06
+  links:
+  - title: Myths of Representation Learning
+    url: https://www.youtube.com/watch?v=qcdNaVAyeQ4&list=WL&index=1
+- date: 2015/04/22
+  links:
+  - title: Segmentation Propagation in ImageNet
+    url: http://videolectures.net/eccv2012_guillaumin_segmentation/?q=image%20segmentation
+- date: 2015/04/15
+  links:
+  - title: Hadoop, spark et big data 2.0
+    url: https://www.youtube.com/watch?v=apSQmLqGfxE
+- date: 2015/04/08
+  links:
+  - title: Learned vs Hand Feature Representations for 3D Agglomeration
+    url: https://www.youtube.com/watch?v=LWlQrmySUuQ
+- date: 2015/04/01
+  links:
+  - title: Minsu Cho, Karteek Alahari, ENS-Willow and Jean Ponce
+    url: http://techtalks.tv/talks/learning-graphs-to-match/59389/
+- date: 2015/03/18
+  links:
+  - title: 'Designing effective scientific presentations: Using PowerPoint'
+    url: https://www.youtube.com/watch?v=Hp7Id3Yb9XQ
+- date: 2015/03/11
+  links:
+  - title: How to Write a Great Research Paper
+    url: https://www.youtube.com/watch?v=g3dkRsTqdDA
+- date: 2015/02/25
+  links:
+  - title: Backpropagation and Inference in Deep Generative Models
+    url: http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/
+- date: 2015/02/18
+  links:
+  - title: Hough Forest Introduction
+    url: https://www.youtube.com/watch?v=hYcugbbf9ug
+- date: 2015/02/18
+  links:
+  - title: On Detection of Multiple Object Instances using Hough Transforms
+    url: http://videolectures.net/cvpr2010_barinova_odmo/?q=hough
+- date: 2015/02/11
+  links:
+  - title: Optimization with stochastic gradient and quasi-Newton methods
+    url: http://techtalks.tv/talks/fast-large-scale-optimization-by-unifying-stochastic-gradient-and-quasi-newton-methods/60948/
+- date: 2015/02/04
+  links:
+  - title: Statistical Computing on Manifolds for Computational Anatomy
+    url: http://videolectures.net/etvc08_pennec_scomf/
+- date: 2015/01/28
+  links:
+  - title: Machine Learning Problems Computer Vision Would Like to See Solved
+    url: http://videolectures.net/nipsworkshops09_freeman_smlptwcvcwlss/
+- date: 2015/01/21
+  links:
+  - title: 'Markov Logic: A Unifying Language for Knowledge Management part 2'
+    url: http://videolectures.net/cikm08_domingos_mlmaul/
+- date: 2015/01/14
+  links:
+  - title: 'Markov Logic: A Unifying Language for Knowledge Management part 1'
+    url: http://videolectures.net/cikm08_domingos_mlmaul/
+- date: 2014/12/10
+  links:
+  - title: Encoding vs Training with Sparse Coding and Vector Quantization
+    url: http://techtalks.tv/talks/on-the-integration-of-topic-modeling-and-dictionary-learning/54304/
+- date: 2014/12/10
+  links:
+  - title: Online Dictionary Learning for Sparse Coding
+    url: http://videolectures.net/icml09_mairal_odlsc/?q=sparse%20coding
+- date: 2014/12/03
+  links:
+  - title: Recurrent Convolutional Neural Networks for Scene Labeling
+    url: http://techtalks.tv/beta/talks/recurrent-convolutional-neural-networks-for-scene-labeling/60916/
+- date: 2014/11/26
+  links:
+  - title: 'HOGgles: Visualizing Object Detection Features and Visualizing'
+    url: http://techtalks.tv/talks/hoggles-visualizing-object-detection-features/59386/%E2%80%8D
+- date: 2014/11/26
+  links:
+  - title: Understanding Convolutional Networks
+    url: http://videolectures.net/eccv2014_zeiler_convolutional_networks/%E2%80%8D
+- date: 2014/11/19
+  links:
+  - title: Dark Knowledge
+    url: https://www.youtube.com/watch?v=EK61htlw8hY
+- date: 2014/11/12
+  title: "2014/11/12: Domain Adaptation presentation by S\xE9bastien Pi\xE9rard"
+- date: 2014/11/05
+  links:
+  - title: Fast, Accurate Detection of 100,000 Object Classes on a Single Machine
+    url: http://techtalks.tv/talks/fast-accurate-detection-of-100000-object-classes-on-a-single-machine/58646/
+- date: 2014/10/29
+  links:
+  - title: Random Forests
+    url: https://www.youtube.com/watch?v=3kYujfDgmNk
+- date: 2014/10/22
+  links:
+  - title: 'BING: Binarized Normed Gradients for Objectness Estimation at 300fps'
+    url: http://techtalks.tv/talks/bing-binarized-normed-gradients-for-objectness-estimation-at-300fps-2/60333/
+- date: 2014/10/22
+  links:
+  - title: 'Patch to the Future: Unsupervised Visual Prediction'
+    url: http://techtalks.tv/talks/patch-to-the-future-unsupervised-visual-prediction/60335/
+- date: 2014/10/15
+  links:
+  - title: Structured Generative Models of Natural Source Code
+    url: http://techtalks.tv/talks/structured-generative-models-of-natural-source-code/61057/
+- date: 2014/10/08
+  links:
+  - title: Rich Feature Hierarchies for Object Detection and Segmentation
+    url: http://techtalks.tv/talks/rich-feature-hierarchies-for-accurate-object-detection-and-semantic-segmentation/60254/
+- date: 2014/10/08
+  links:
+  - title: Large-scale Video Classification with Convolutional Neural Networks
+    url: http://techtalks.tv/talks/large-scale-video-classification-with-convolutional-neural-networks-2/60272/
+- date: 2014/10/01
+  links:
+  - title: Machine Learning Approach to Computer Perception of Virtualization
+    url: http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=yann&searchItems=&sessionTopic=&sessionEvent=&sessionYear=2014&sessionFormat=&submit=&select=+
+- date: 2014/09/17
+  links:
+  - title: Morphology for Word Representations and Language Modelling
+    url: http://techtalks.tv/talks/compositional-morphology-for-word-representations-and-language-modelling/60990/
+- date: 2014/09/03
+  links:
+  - title: Scaling with the Parameters Server Variations on a Theme
+    url: http://videolectures.net/nipsworkshops2012_smola_parameter_server/
