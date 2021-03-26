@@ -3,6 +3,7 @@ current_members:
 
   - firstname: 'Antoine'
     lastname: 'Théberge'
+    picture: 'atheberge.jpeg'
     grades:
       - grade:
         name: MsC
@@ -15,11 +16,30 @@ current_members:
 
   - firstname: 'Thierry'
     lastname: 'Judge'
+    picture: 'tjudge.jpeg'
     grades:
       - grade:
         name: MsC
         startyear: 2021
         endyear:  ''
+
+  - firstname: 'Thierry'
+    lastname: 'Judge'
+    picture: 'tjudge.jpeg'
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2021
+        endyear: ''
+
+  - firstname: 'Thierry'
+    lastname: 'Judge'
+    picture: 'tjudge.jpeg'
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2021
+        endyear: ''
 
 past_members:
 

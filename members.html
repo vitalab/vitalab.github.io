@@ -22,7 +22,7 @@ permalink: /members/
             </li>
            {% endfor %}
            </ul>
-           <a href="https://vitalab.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a>
+           <a href="https://vitalab.github.io/search/?query={{ item.firstname}}+{{ item.lastname }}">Posts</a>
 
        </li>
        {% endfor %}
@@ -32,7 +32,7 @@ permalink: /members/
   <ul>
        {% for item in site.data.members.current_members %}
        <li>
-         <strong>{{ item.firstname }} {{ item.lasttname }}  </strong> </br>
+         <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
            <ul>
            {% for grade in item.grades %}
             <li>
@@ -41,7 +41,8 @@ permalink: /members/
            {% endfor %}
            </ul>
            <a href="https://vitalab.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a>
-
+           </br>
+           <img src={{ item.picture }} width=200" height="100%">
        </li>
        {% endfor %}
   </ul>
