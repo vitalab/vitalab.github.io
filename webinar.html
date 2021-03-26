@@ -1,0 +1,38 @@
+---
+layout: page
+title: Webinar
+permalink: /webinar/
+---
+<style>
+    /* TODO: Add styling to list with li */
+</style>
+
+<div class="entry-content">
+    <p>Every week, we get to watch 30 to 45 minute webinars on various machine learning topics. These are the webinars
+        that we watched over the last couple of years.</p>
+
+    <ul>
+        {% for session in site.data.webinars.webinars %}
+        <li>
+            <strong>{{ session.date }} </strong>
+            <ul>
+                {% if session.links %}
+                    {% for vid in session.links %}
+                    <li>
+                        <p><a href="{{ vid.url }}">{{ vid.title }}</a></p>
+                        <!-- Disabled since it makes the page pretty heavy
+                        {% if vid.url contains "youtube" %}
+                         {% assign youtube_id = vid.url | split: 'watch?v=' | last %}
+                         <p><iframe width="215" height="120" src="https://www.youtube.com/embed/{{ youtube_id }}" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe></p>
+                        {% endif %}-->
+                    </li>
+                    {% endfor %}
+                {% else %}
+                    <li><p>{{ session.title }}</p></li>
+                {% endif %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+
+ </div>
