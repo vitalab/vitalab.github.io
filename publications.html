@@ -1,0 +1,39 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+<style>
+    /* TODO: Add styling to list with li */
+</style>
+
+
+<h2>{{site.data.publications.journal_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.journal%}
+       <li>
+         {{item.authors}} ({{item.year}}) </br>
+         <strong>{{item.title}}</strong> </br>
+         {% if item.journal %} {%unless item.pages %} Submitted to {% endunless %}{{item.journal}}{%if item.pages %}, p.{{item.pages}}{% endif %}; {% endif %} {%if item.arxiv %} {{item.arxiv}}; {% endif %} {%if item.doi %} <a href="{{item.doi}}">{{item.doi}}</a> {% endif %}
+       </li>
+       {% endfor %}
+  </ul>
+
+</div>
+
+
+<h2>{{site.data.publications.conference_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.conference %}
+       <li>
+         {{item.authors}} ({{item.year}}) </br>
+         <strong>{{item.title}}</strong> </br>
+         In proceedings of {{item.conference}}
+       </li>
+       {% endfor %}
+  </ul>
+
+</div>
+
