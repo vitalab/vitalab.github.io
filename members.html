@@ -1,0 +1,24 @@
+---
+layout: page
+title: Members
+permalink: /members/
+---
+<style>
+    /* TODO: Add styling to list with li */
+</style>
+
+<div class="entry-content">
+  <p></p>
+
+  <ul>
+       {% for item in site.data.members.members %}
+       <li>
+         <strong>{{ item.name }} </strong>: {{item.grade}} </br>
+         {{ item.startyear }} - {{ item.endyear }}
+       </li>
+       {% endfor %}
+  </ul>
+
+ </div>
+
+
