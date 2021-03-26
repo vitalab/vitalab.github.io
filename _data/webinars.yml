@@ -301,9 +301,7 @@ webinars:
     url: https://vimeo.com/240428387
 - date: 2018/01/24
   links:
-  - title: Variation
-    url: https://vimeo.com/238221185
-  - title: al Dropout Specifies Deep NN
+  - title: Variational Dropout Specifies Deep NN
     url: https://vimeo.com/238221185
   - title: 'ProtoNN: Compressed and Accurate kNN for Resource-scarce Devices'
     url: https://vimeo.com/238229350
@@ -476,7 +474,7 @@ webinars:
     url: https://www.youtube.com/watch?v=PB7b-a0kC4c&list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q&index=3
 - date: 2016/11/02-09
   links:
-  - title: ''
+  - title: 'Multi-Scale Patch Aggregation (MPA) for Simultaneous Detection and Segmentation'
     url: https://www.youtube.com/watch?v=TBHAV2GEFA8
   - title: Deep RNN by Y. Bengio
     url: http://videolectures.net/deeplearning2016_bengio_neural_networks/
