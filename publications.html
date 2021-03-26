@@ -37,3 +37,31 @@ permalink: /publications/
 
 </div>
 
+
+<h2>{{site.data.publications.chapter_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.chapters %}
+       <li>
+         {{item.authors}} ({{item.year}}) </br>
+         <strong>{{item.title}}</strong> </br>
+         {%if item.book %}{{item.book}};{% endif %}{%if item.publisher%}{{item.publisher}};{% endif %}{%if item.other %}{{item.other}};{% endif %}
+       </li>
+       {% endfor %}
+  </ul>
+
+</div>
+
+<h2>{{site.data.publications.other_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.others %}
+       <li>
+         {{item.authors}} ({{item.year}}) </br>
+         <strong>{{item.title}}</strong> </br>
+         {%if item.other %}{{item.other}};{% endif %}
+       </li>
+       {% endfor %}
+  </ul>
+
+</div>
