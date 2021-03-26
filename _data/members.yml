@@ -1,3 +1,16 @@
+
+####Template#####
+#- firstname: 'First Name'
+#  lastname: 'Last Name'
+#  picture: 'name of picture file in members/'
+#  interests: "Short text indicating current interests."
+#  grades: % List of grades
+#    - grade:
+#      name: PhD
+#      startyear: 2020
+#      endyear:  '' % Empty string to indicate ongoing (will add '-' to page)
+
+
 member_list_title: Members
 current_members:
 
@@ -17,29 +30,91 @@ current_members:
   - firstname: 'Thierry'
     lastname: 'Judge'
     picture: 'tjudge.jpeg'
+    interests: "Medical image segmentation, active learning"
     grades:
+      - grade:
+        name: undergrad. intern
+        startyear: 2018
       - grade:
         name: MsC
         startyear: 2021
         endyear:  ''
 
-  - firstname: 'Thierry'
-    lastname: 'Judge'
-    picture: 'tjudge.jpeg'
-    grades:
-      - grade:
-        name: MsC
-        startyear: 2021
-        endyear: ''
 
-  - firstname: 'Thierry'
-    lastname: 'Judge'
-    picture: 'tjudge.jpeg'
+  - firstname: 'Nathan'
+    lastname: 'Painchaud'
+    picture: 'npainchaud.jpeg'
     grades:
       - grade:
         name: MsC
-        startyear: 2021
-        endyear: ''
+        startyear:
+        endyear:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Marco'
+    lastname: 'Armenta'
+    picture: 'marmenta.jpeg'
+    grades:
+      - grade:
+        name: PostDoc
+        startyear:
+        endyear:
+
+  - firstname: 'Carl'
+    lastname: 'Lemaire'
+    picture: 'clemaire.jpeg'
+    grades:
+      - grade:
+        name: Research professional
+        startyear:
+        endyear:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Jon'
+    lastname: 'Haitz'
+    picture: 'jhaitz.jpeg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Philippe'
+    lastname: 'Poulin'
+    picture: 'ppoulin.jpeg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Audrey'
+    lastname: 'Durant'
+    picture: 'aduran.jpg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Youssef'
+    lastname: 'Skandarani'
+    picture: 'yskandarani.jpg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
 
 past_members:
 
