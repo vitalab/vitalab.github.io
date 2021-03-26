@@ -21,10 +21,10 @@ current_members:
       - grade:
         name: MsC
         startyear: 2018
-        endyear: 2020
+        endyear: 2021
       - grade:
         name: PhD
-        startyear: 2020
+        startyear: 2021
         endyear:  ''
 
   - firstname: 'Thierry'
