@@ -1,7 +1,21 @@
 member_list_title: Members
 members:
 
-  - name: 'Antoine Théberge'
-    grade: PhD
-    startyear: 2018
-    endyear: 2024
+  - firstname: 'Antoine'
+    lastname: 'Théberge'
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2018
+        endyear: 2020
+      - grade:
+        name: PhD
+        startyear: 2020
+        endyear:  ''
+  - firstname: 'Thierry'
+    lastname: 'Judge'
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2021
+        endyear:  ''
