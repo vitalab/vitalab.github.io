@@ -76,14 +76,15 @@ current_members:
         startyear:
         endyear:
 
-  - firstname: 'Jon'
-    lastname: 'Haitz'
-    picture: 'jhaitz.jpeg'
+  - firstname: 'Jon Haitz'
+    lastname: 'Legarreta Gorroño'
+    picture: 'jhlegarreta.jpeg'
+    interests: "deep learning, computational neuroanatomy, reproducible scientific research"
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2018
+        endyear: ''
 
   - firstname: 'Philippe'
     lastname: 'Poulin'
