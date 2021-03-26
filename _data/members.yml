@@ -100,7 +100,7 @@ current_members:
         endyear:
 
   - firstname: 'Audrey'
-    lastname: 'Durant'
+    lastname: 'Duran'
     picture: 'aduran.jpg'
     grades:
       - grade:
