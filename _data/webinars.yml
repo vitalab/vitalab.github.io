@@ -137,13 +137,13 @@ webinars:
   - title: Automatic Machine Learning
     url: https://www.youtube.com/watch?v=0eBR8a4MQ30
 - date: 2019/04/04
-  title: '2019/04/04: Introduction to the new Beluga GPU server'
+  title: Introduction to the new Beluga GPU server
 - date: 2019/03/28
   links:
   - title: Integrating Domain-Knowledge into deep learning
     url: https://livestream.com/newyorkacademyofsciences/ml2019-3/videos/188158627
 - date: 2019/03/21
-  title: '2019/03/21: Variational inference, lower bound and VAE'
+  title: Variational inference, lower bound and VAE
 - date: 2019/03/14
   links:
   - title: Bayesian NN from Andrew Gordon Wilson
@@ -204,7 +204,7 @@ webinars:
       2017
     url: https://www.youtube.com/watch?v=3s4UyoMilQo&feature=youtu.be
 - date: 2018/10/17
-  title: '2018/10/17: ADMM by Christian Desrosiers'
+  title: ADMM by Christian Desrosiers
 - date: 2018/10/10
   links:
   - title: Software Engineering for Software 2.0
@@ -219,7 +219,7 @@ webinars:
   - title: transformation Autoregressive networks
     url: https://www.facebook.com/icml.imls/videos/432151720632682/
 - date: 2018/09/12-19
-  title: '2018/09/12-19: Vitalab_ai librairy design!'
+  title: Vitalab_ai librairy design!
 - date: 2018/08/08
   links:
   - title: 'ICML2018 : Bayesian inference tutorial (part 2)'
@@ -234,7 +234,7 @@ webinars:
       +  ICML2018 : Efficient Neural Architecture Search via \nParameter Sharing (1:25:00)"
     url: https://www.facebook.com/icml.imls/videos/429964030851451/
 - date: 2018/07/18
-  title: '2018/07/18: Graph cut'
+  title: Graph cut
 - date: 2018/07/11
   links:
   - title: "CVPR2018  - MapNet: An Allocentric Spatial Memory for Mapping Environments,\
@@ -282,7 +282,7 @@ webinars:
   - title: From bayesian Sparsity to Gated Recurrent Nets. + D
     url: https://www.facebook.com/nipsfoundation/videos/1554402331317667/
 - date: 2018/04/18
-  title: '2018/04/18: Spectral Clustering. '
+  title: Spectral Clustering.
 - date: 2018/02/14  - 2018/04/11
   links:
   - title: Bayesian methods for Machine learning
@@ -766,7 +766,7 @@ webinars:
   - title: Dark Knowledge
     url: https://www.youtube.com/watch?v=EK61htlw8hY
 - date: 2014/11/12
-  title: "2014/11/12: Domain Adaptation presentation by S\xE9bastien Pi\xE9rard"
+  title: "Domain Adaptation presentation by S\xE9bastien Pi\xE9rard"
 - date: 2014/11/05
   links:
   - title: Fast, Accurate Detection of 100,000 Object Classes on a Single Machine
