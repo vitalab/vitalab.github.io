@@ -47,12 +47,20 @@ permalink: /members/
        {% endfor %}
   </ul>
 
-  <h1>Past members</h1>
+  <h1>Alumni</h1>
   <ul>
        {% for item in site.data.members.past_members %}
        <li>
-         <strong>{{ item.name }} </strong>: {{item.grade}} </br>
-         {{ item.startyear }} - {{ item.endyear }}
+         <strong>{{ item.firstname }} {{ item.lasttname }}  </strong> </br>
+           <ul>
+           {% for grade in item.grades %}
+            <li>
+            <strong>{{ grade.name }} </strong>: {{ grade.startyear }} - {{ grade.endyear }}</br>
+            </li>
+           {% endfor %}
+           </ul>
+           <a href="https://vitalab.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a>
+
        </li>
        {% endfor %}
   </ul>
