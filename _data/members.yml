@@ -117,6 +117,16 @@ current_members:
         startyear:
         endyear:
 
+  - firstname: 'Bach'
+    lastname: 'Kim'
+    picture:
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+        comment: Co-supervised with C.Desrosiers and J.Dolz (ETS)
+
 past_members:
 
   - firstname: 'Charles'

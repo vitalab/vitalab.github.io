@@ -50,6 +50,9 @@ permalink: /members/
                         {%if grade.endyear %}
                             - {{ grade.endyear }}
                         {% endif %}
+                        {%if grade.comment %}}
+                          ({{ grade.comment }})
+                       {% endif %}
                         </br>
                     </li>
                    {% endfor %}
@@ -83,6 +86,9 @@ permalink: /members/
                 {%if grade.startyear %}
                     : {{ grade.startyear }} - {{ grade.endyear }}
                 {% endif %}
+                {%if grade.comment %}}
+                  ({{ grade.comment }})
+               {% endif %}
             </li>
            {% endfor %}
            </ul>
