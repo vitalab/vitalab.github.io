@@ -1,0 +1,324 @@
+
+####Template#####
+#- firstname: 'First Name'
+#  lastname: 'Last Name'
+#  picture: 'name of picture file in members/'
+#  interests: "Short text indicating current interests."
+#  grades: % List of grades
+#    - grade:
+#      name: PhD
+#      startyear: 2020
+#      endyear:  '' % Empty string to indicate ongoing (will add '-' to page)
+
+
+member_list_title: Members
+current_members:
+
+  - firstname: 'Antoine'
+    lastname: 'Théberge'
+    picture: 'atheberge.jpeg'
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2018
+        endyear: 2021
+      - grade:
+        name: PhD
+        startyear: 2021
+        endyear:  ''
+
+  - firstname: 'Thierry'
+    lastname: 'Judge'
+    picture: 'tjudge.jpeg'
+    interests: "Medical image segmentation, active learning"
+    grades:
+      - grade:
+        name: undergrad. intern
+        startyear: 2018
+      - grade:
+        name: MsC
+        startyear: 2021
+        endyear:  ''
+
+
+  - firstname: 'Nathan'
+    lastname: 'Painchaud'
+    picture: 'npainchaud.jpeg'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Marco'
+    lastname: 'Armenta'
+    picture: 'marmenta.jpeg'
+    grades:
+      - grade:
+        name: PostDoc
+        startyear:
+        endyear:
+
+  - firstname: 'Carl'
+    lastname: 'Lemaire'
+    picture: 'clemaire.jpeg'
+    grades:
+      - grade:
+        name: Research professional
+        startyear:
+        endyear:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Jon Haitz'
+    lastname: 'Legarreta Gorroño'
+    picture: 'jhlegarreta.jpeg'
+    interests: "deep learning, computational neuroanatomy, reproducible scientific research"
+    grades:
+      - grade:
+        name: PhD
+        startyear: 2018
+        endyear: ''
+
+  - firstname: 'Philippe'
+    lastname: 'Poulin'
+    picture: 'ppoulin.jpeg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Audrey'
+    lastname: 'Duran'
+    picture: 'aduran.jpg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Youssef'
+    lastname: 'Skandarani'
+    picture: 'yskandarani.jpg'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+past_members:
+
+  - firstname: 'Charles'
+    lastname: 'Authier'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Daniel'
+    lastname: 'Jörgens'
+    grades:
+      - grade:
+        name: PhD intern
+        startyear:
+        endyear:
+
+  - firstname: 'Sarah'
+    lastname: 'Leclerc'
+    grades:
+      - grade:
+        name: PhD intern
+        startyear:
+        endyear:
+
+  - firstname: 'Frédéric'
+    lastname: 'Branchaud-Charron'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+      - grade:
+        name: undergrad. intern
+        startyear:
+        endyear:
+
+  - firstname: 'Carl'
+    lastname: 'Lemaire'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Sarah'
+    lastname: 'Leclerc'
+    grades:
+      - grade:
+        name: PhD intern
+        startyear:
+        endyear:
+
+  - firstname: 'Yi'
+    lastname: 'Wang'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Clement'
+    lastname: 'Zotti'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Zhiming'
+    lastname: 'Luo'
+    grades:
+      - grade: PhD
+        name:
+        startyear:
+        endyear:
+
+  - firstname: 'Jorge'
+    lastname: 'Zavala-Bojorquez'
+    grades:
+      - grade:
+        name: PhD intern
+        startyear:
+        endyear:
+
+  - firstname: 'Martin'
+    lastname: 'Cousineau'
+    grades:
+      - grade:
+        name: MsC
+        startyear:
+        endyear:
+
+  - firstname: 'Mohammad'
+    lastname: 'Havaei'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Karl-Étienne'
+    lastname: 'Perron'
+    grades:
+      - grade:
+        name: undergrad. intern
+        startyear:
+        endyear:
+
+  - firstname: 'Michael'
+    lastname: 'Bernier'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Francis'
+    lastname: 'Dutil'
+    grades:
+      - grade:
+        name: undergrad. intern
+        startyear:
+        endyear:
+
+  - firstname: 'Sébastien'
+    lastname: 'Piérard'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Nil'
+    lastname: 'Goyette'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Jean-Christophe'
+    lastname: 'Houde'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Julien'
+    lastname: 'Prémont'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Caroline'
+    lastname: 'Presseau'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Yannick'
+    lastname: 'Bénézeth'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Cai'
+    lastname: 'Guo-Rong'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Anthony'
+    lastname: 'Adam-Duquette'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:
+
+  - firstname: 'Erhan'
+    lastname: 'Ermis'
+    grades:
+      - grade:
+        name: PhD
+        startyear:
+        endyear:
+
+  - firstname: 'Pierre'
+    lastname: 'Clarot'
+    grades:
+      - grade:
+        name: MSc
+        startyear:
+        endyear:

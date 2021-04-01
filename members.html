@@ -1,0 +1,95 @@
+---
+layout: page
+title: Members
+permalink: /members/
+---
+<style>
+    /* TODO: Add styling to list with li */
+    img {
+        height:200px;
+    }
+    span.weak {
+    font-weight: lighter;
+}
+</style>
+
+<div class="entry-content">
+  <p></p>
+
+  <h1>Professors</h1>
+  <ul>
+       {% for item in site.data.members.professors %}
+       <li>
+         <strong>{{ item.firstname }} {{ item.lasttname }}  </strong> </br>
+           <ul>
+           {% for grade in item.grades %}
+            <li>
+            <strong>{{ grade.name }} </strong>: {{ grade.startyear }} - {{ grade.endyear }}</br>
+            </li>
+           {% endfor %}
+           </ul>
+           <a href="https://vitalab.github.io/search/?query={{ item.firstname}}+{{ item.lastname }}">Posts</a>
+
+       </li>
+       {% endfor %}
+  </ul>
+
+  <h1>Current members</h1>
+    <table>
+        {% for item in site.data.members.current_members %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                   <ul>
+                   {% for grade in item.grades %}
+                    <li>
+                        <strong>{{ grade.name }} </strong>
+                        {%if grade.startyear %}
+                           : {{ grade.startyear }}
+                        {% endif %}
+                        {%if grade.endyear %}
+                            - {{ grade.endyear }}
+                        {% endif %}
+                        </br>
+                    </li>
+                   {% endfor %}
+                   </ul>
+                   <a href="https://vitalab.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a>
+                   </br>
+                    {%if item.interests %}
+                        Interests: {{ item.interests }}
+                    {% endif %}
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+
+
+  <h1>Alumni</h1>
+  <ul>
+       {% for item in site.data.members.past_members %}
+       <li>
+         <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+           <ul>
+           {% for grade in item.grades %}
+            <li>
+                <strong>{{ grade.name }} </strong>
+                {%if grade.startyear %}
+                    : {{ grade.startyear }} - {{ grade.endyear }}
+                {% endif %}
+            </li>
+           {% endfor %}
+           </ul>
+           <a href="https://vitalab.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a>
+
+       </li>
+       {% endfor %}
+  </ul>
+
+ </div>
