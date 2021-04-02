@@ -1,4 +1,3 @@
-
 ####Template#####
 #- firstname: 'First Name'
 #  lastname: 'Last Name'
@@ -10,13 +9,23 @@
 #      startyear: 2020
 #      endyear:  '' % Empty string to indicate ongoing (will add '-' to page)
 
-
 member_list_title: Members
+
+professors:
+
+  - firstname: 'Pierre-Marc'
+    lastname: 'Jodoin'
+    picture: 'pmJodoin.jpg'
+    interests: "Brain imaging, cardiac imaging, machine learning, deep learning, surveillance"
+    url: "http://info.usherbrooke.ca/pmjodoin/"
+
+
 current_members:
 
   - firstname: 'Antoine'
     lastname: 'Théberge'
     picture: 'atheberge.jpeg'
+    interests: "Brain imaging, machine learning, reinforcement learning"
     grades:
       - grade:
         name: MsC
@@ -34,7 +43,7 @@ current_members:
     grades:
       - grade:
         name: undergrad. intern
-        startyear: 2018
+        startyear: 2015
       - grade:
         name: MsC
         startyear: 2021
@@ -44,37 +53,40 @@ current_members:
   - firstname: 'Nathan'
     lastname: 'Painchaud'
     picture: 'npainchaud.jpeg'
+    interests: "Cardiac imaging, machine learning, auto-encoders"
     grades:
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2019
+        endyear: ''
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2020
+        endyear: ''
 
   - firstname: 'Marco'
     lastname: 'Armenta'
     picture: 'marmenta.jpeg'
+    interests: "Algebra, Quivers, machine learning"
     grades:
       - grade:
         name: PostDoc
-        startyear:
-        endyear:
+        startyear: 2019
+        endyear: 2021
 
   - firstname: 'Carl'
     lastname: 'Lemaire'
     picture: 'clemaire.jpeg'
+    interests: "Machine learning, massive parallel computing"
     grades:
       - grade:
         name: Research professional
-        startyear:
-        endyear:
+        startyear: 2019
+        endyear: ''
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2017
+        endyear: 2018
 
   - firstname: 'Jon Haitz'
     lastname: 'Legarreta Gorroño'
@@ -89,246 +101,265 @@ current_members:
   - firstname: 'Philippe'
     lastname: 'Poulin'
     picture: 'ppoulin.jpeg'
+    interests: "Neuroimaging, domain adaptation, recurrent neural networks, massive parallel computing"
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2017
+        endyear: 2021
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2015
+        endyear: 2017
 
   - firstname: 'Audrey'
     lastname: 'Duran'
     picture: 'aduran.jpg'
+    interests: "Oncology, segmentation, deep neural networks"
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2019
+        endyear: 2021
+        comment: 'Co-supervised with C.Lartizien (Lyon)'
+
 
   - firstname: 'Youssef'
     lastname: 'Skandarani'
     picture: 'yskandarani.jpg'
+    interests: "Open source, deep neural networks, GANs, reproductive science"
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2018
+        endyear: 2021
+        comment: 'Co-supervised with A.Lalande (Dijon)'
 
   - firstname: 'Bach'
     lastname: 'Kim'
-    picture:
+    picture: 'bkim.jpg'
+    interests: "Deep neural networks, adversarial method, privacy protection, continuous learning"
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
-        comment: Co-supervised with C.Desrosiers and J.Dolz (ETS)
+        startyear: 2018
+        endyear: ''
+        comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
 
 past_members:
 
   - firstname: 'Charles'
     lastname: 'Authier'
+    picture: 'cAuthier.jpg'
+    interests: "Deep neural networks, satellite imaging, physics, body building!"
     grades:
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2018
+        endyear: 2020
 
   - firstname: 'Daniel'
     lastname: 'Jörgens'
+    picture: 'dJorgens.jpg'
     grades:
       - grade:
         name: PhD intern
-        startyear:
-        endyear:
+        startyear: 2019
+        endyear: 2019
 
   - firstname: 'Sarah'
     lastname: 'Leclerc'
+    picture: 'sLeclerc.jpg'
     grades:
       - grade:
-        name: PhD intern
-        startyear:
-        endyear:
+        name: PhD
+        startyear: 2017
+        endyear: 2019
+        comment: 'Co-supervised with O.Bernard (Lyon)'
 
   - firstname: 'Frédéric'
     lastname: 'Branchaud-Charron'
+    picture: 'FBCharron.jpg'
     grades:
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2017
+        endyear: 2018
       - grade:
         name: undergrad. intern
-        startyear:
-        endyear:
-
-  - firstname: 'Carl'
-    lastname: 'Lemaire'
-    grades:
-      - grade:
-        name: MsC
-        startyear:
-        endyear:
-
-  - firstname: 'Sarah'
-    lastname: 'Leclerc'
-    grades:
-      - grade:
-        name: PhD intern
-        startyear:
-        endyear:
+        startyear: 2016
+        endyear: 2016
 
   - firstname: 'Yi'
     lastname: 'Wang'
+    picture: 'yWang.jpg'
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2012
+        endyear: 2017
 
   - firstname: 'Clement'
     lastname: 'Zotti'
+    picture: 'cZotti.jpg'
     grades:
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2016
+        endyear: 2017
 
   - firstname: 'Zhiming'
     lastname: 'Luo'
+    picture: 'zLuo.jpg'
     grades:
       - grade: PhD
         name:
-        startyear:
-        endyear:
+        startyear: 2014
+        endyear: 2018
 
   - firstname: 'Jorge'
     lastname: 'Zavala-Bojorquez'
+    picture: 'JBojorquez.jpg'
     grades:
       - grade:
         name: PhD intern
-        startyear:
-        endyear:
+        startyear: 2014
+        endyear: 2017
+        comment: 'Co-supervised with A.Lalande (Dijon)'
 
   - firstname: 'Martin'
     lastname: 'Cousineau'
+    picture: 'mCousineau.jpg'
     grades:
       - grade:
         name: MsC
-        startyear:
-        endyear:
+        startyear: 2014
+        endyear: 2017
 
   - firstname: 'Mohammad'
     lastname: 'Havaei'
+    picture: 'mHavaei.jpg'
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2012
+        endyear: 2016
 
   - firstname: 'Karl-Étienne'
     lastname: 'Perron'
+    picture: 'KEPerron.jpg'
     grades:
       - grade:
         name: undergrad. intern
-        startyear:
-        endyear:
+        startyear: 2016
+        endyear: 2016
 
   - firstname: 'Michael'
     lastname: 'Bernier'
+    picture: 'mBernier.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2014
+        endyear: 2016
 
   - firstname: 'Francis'
     lastname: 'Dutil'
+    picture: 'fDutil.jpg'
     grades:
       - grade:
         name: undergrad. intern
-        startyear:
-        endyear:
+        startyear: 2015
+        endyear: 2015
 
   - firstname: 'Sébastien'
     lastname: 'Piérard'
+    picture: 'sPierard.jpg'
     grades:
       - grade:
-        name: PhD
-        startyear:
-        endyear:
+        name: PhD intern
+        startyear: 2016
+        endyear: 2017
 
   - firstname: 'Nil'
     lastname: 'Goyette'
+    picture: 'nGoyette.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2011
+        endyear: 2012
 
   - firstname: 'Jean-Christophe'
     lastname: 'Houde'
+    picture: 'jcHoude.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2009
+        endyear: 2012
 
   - firstname: 'Julien'
     lastname: 'Prémont'
+    picture: 'jPremont.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2009
+        endyear: 2011
 
   - firstname: 'Caroline'
     lastname: 'Presseau'
+    picture: 'cPresseau.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2012
+        endyear: 2014
 
   - firstname: 'Yannick'
     lastname: 'Bénézeth'
+    picture: 'yBenezeth.jpg'
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2007
+        endyear: 2009
+        comment: 'Co-supervised with C.Rosenberger (CAEN)'
 
   - firstname: 'Cai'
     lastname: 'Guo-Rong'
+    picture: 'gCai.jpg'
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2010
+        endyear: 2013
+        comment: 'Co-supervised with S.Li (Xiamen)'
 
   - firstname: 'Anthony'
     lastname: 'Adam-Duquette'
+    picture: 'aaDuquette.jpg'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2009
+        endyear: 2011
 
   - firstname: 'Erhan'
     lastname: 'Ermis'
+    picture: 'eErmis.jpg'
     grades:
       - grade:
         name: PhD
-        startyear:
-        endyear:
+        startyear: 2005
+        endyear: 2009
+        comment: 'Co-supervised with V.Saligrama (Boston)'
 
   - firstname: 'Pierre'
     lastname: 'Clarot'
     grades:
       - grade:
         name: MSc
-        startyear:
-        endyear:
+        startyear: 2008
+        endyear: 2009
