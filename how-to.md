@@ -1,6 +1,5 @@
 ---
 layout: page
-title: How-to
 permalink: /howto/
 ---
 
