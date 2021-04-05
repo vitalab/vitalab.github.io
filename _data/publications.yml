@@ -1,0 +1,52 @@
+journal_list_title: Journal papers
+journal:
+
+  - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
+    year: 2021
+    title: 'GANs for Medical Image Synthesis: An Empirical Study'
+    journal: IEEE Journal of Biomedical and Health Informatics 
+
+  - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
+    year: 2020
+    title: 'Neural Teleportation'
+    arxiv: arXiv:2012.01118
+
+  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
+    year: 2020
+    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
+    journal: Medical Image Analysis
+    arxiv: bioRxiv:2020.11.16.385229
+    doi: https://doi.org/10.1101/2020.11.16.385229
+
+  - authors: 'N.Painchaud, Y.Skandarani, T.Judge, O.Bernard, A.Lalande, P-M. Jodoin'
+    year: 2020
+    title: 'Cardiac Segmentation with Strong Anatomical Guarantees'
+    pages: 3703-3713
+    journal: IEEE Trans. on Medical Imaging, 39(11)
+    arxiv: arXiv:2006.08825
+
+conference_list_title: Conference papers
+conference:
+
+  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
+    year: 2021
+    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
+    conference: International Society for Magnetic Resonance in Medicine
+
+chapter_list_title: Book chapters
+chapters:
+
+  - authors: 'P-M Jodoin, C.Desrosiers'
+    year: 2020
+    title: 'From machine learning to deep learning: the basics'
+    book: 
+    publisher:
+    other: Submitted for printing
+
+other_list_title: Others
+others:
+
+  - authors: 'Jodoin P-M, Saligrama V. Konrad J.'
+    year: 2009
+    title: 'Behavior subtraction, a new tool for video analytics'
+    other: SPIE Newsroom, Electronic Imaging & Signal Processing (http://spie.org/x2432.xml)
