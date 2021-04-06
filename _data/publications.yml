@@ -4,8 +4,8 @@ journal:
   - authors: 'M-A. Armenta, P-M Jodoin'
     year: 2021
     title: 'The Representation Theory of Neural Networks'
-    journal: submitted to Journal of neural networks
-    arxiv: 2007.12213
+    journal: Journal of Algebra
+    arxiv: arXiv:2007.12213
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
     year: 2021
@@ -13,22 +13,24 @@ journal:
     journal: IEEE Journal of Biomedical and Health Informatics 
 
   - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
-    year: 2020
+    year: 2021
     title: 'Neural Teleportation'
+    journal: Journal of Neural Networks
     arxiv: arXiv:2012.01118
+
+  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
+    year: 2021
+    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
+    journal: in press at Medical Image Analysis
+    pages: 1-22
+    arxiv: bioRxiv:2020.11.16.385229
+    doi: https://doi.org/10.1101/2020.11.16.385229
 
   - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
     year: 2020
     title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
     arxiv: arXiv:2011.12835v1
-
-  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
-    year: 2020
-    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
-    journal: Medical Image Analysis
-    arxiv: bioRxiv:2020.11.16.385229
-    doi: https://doi.org/10.1101/2020.11.16.385229
-
+  
   - authors: 'J.H. Lagaretta, L.Petit, F. Rheault, G.Theaud, C.Lemaire, M.Descoteaux*, P-M.Jodoin*'
     year: 2020
     title: 'Tractography filtering using autoencoders'
