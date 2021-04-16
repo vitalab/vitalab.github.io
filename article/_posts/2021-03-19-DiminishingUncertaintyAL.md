@@ -95,7 +95,7 @@ The following table shows the hyper-parameters used for the active learning expe
 | Number of models (SGVD)                        |        5        |      5          |
 | Training steps per active step                 | 1500            | 10000           |
 | Set size (subjects) (init train/U/val/test)    | 10/153/50/50    | 20/201/30/30    |
-| Queries per active set                         |       1         |        5        |
+| Queries per active step                        |       1         |        5        |
 
 
 Authors compare different combinations of their methods with standard ensemble methods. 
@@ -107,7 +107,7 @@ All experiments were performed with 5 different random seeds.
 ![](/article/images/DiminishingUncertaintyAL/fig3.jpg)
 ![](/article/images/DiminishingUncertaintyAL/fig8.jpg)
 
-Authors also compare their method to *maximum cover* and *Jenson-Shannon divergence* acquisitions functions. 
+Authors also compare their method to *maximum cover*[^1] and *Jenson-Shannon divergence*[^2] acquisitions functions. 
 
 ![](/article/images/DiminishingUncertaintyAL/fig7.jpg)
 ![](/article/images/DiminishingUncertaintyAL/fig11.jpg)
@@ -127,4 +127,8 @@ data augmentation to only evaluate the active learning methods.
 
 Training time was 160 and 60 GPU hours for pancreas and hippocampus datasets respectively.
 
+# References
 
+[^1]: Lin Yang, Yizhe Zhang, Jianxu Chen, Siyuan Zhang, and Danny Z Chen. Suggestive annotation: A deep active learning framework for biomedical image segmentation. In International conference on medical image computing and computer-assisted intervention, pages 399–407. Springer, 2017.
+
+[^2]: W. Kuo, C. Hane, E. Yuh, P. Mukherjee, and J. Malik, “Cost-sensitive active learning for intracranial hemorrhage detection,” in International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, 2018, pp. 715–723.
