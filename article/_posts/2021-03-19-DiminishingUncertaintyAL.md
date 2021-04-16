@@ -31,15 +31,15 @@ training set (This regulates contribution 2.)
 
 Authors use a **query by committee** framework which uses multiple models to estimate uncertainty. 
 This requires a committee of models which is implemented with a Stein variational gradient descent (SVGD). SVGD is a 
-joint optimization technique for ensemble models. M copies of model parameters, $$Θ = \Theta = \{\theta^q\}^M_{q=1}$$, 
-referred to as particles are jointly optimized. Each particle is trained to reach a unique local minima by repulsive 
-forces between each particle. 
+joint optimization technique for ensemble models. M copies of model parameters, $$\Theta = \{\theta^q\}^M_{q=1}$$, 
+referred to as particles are jointly optimized. 
 
 Each particle is updated by $$\theta_{k+1} \leftarrow \theta_k + \epsilon_k \phi(\theta_k)$$ where $$\phi(\theta_k)$$ is
 
 ![](/article/images/DiminishingUncertaintyAL/eq1.jpg)
 
-$$r(\theta, \theta')$$ is a positive definite radial basis function (RBF).  
+$$r(\theta, \theta')$$ is a positive definite radial basis function (RBF). Each particle is trained to reach a unique 
+local minima by repulsive forces between each particle (last term in (1)). 
 
 Authors adapt SVGD to Dice log-likelihood loss which is defined as $$log(\mathcal{L}_{dice})$$ (standard fomulation of 
 SVGD uses entropy loss). 
@@ -49,14 +49,15 @@ Authors use an entropy based epistemic (model) uncertainty for every 3D voxel de
 
 ![](/article/images/DiminishingUncertaintyAL/eq2.jpg)
 
-this is computed for every particle $$q$$ and every sample in the unlabeled set. 
+this is computed for every particle $$q$$ and every sample $$x_i$$ in the unlabeled set. 
 
 Authors also add a second term to the score of a sample based on mutual information with samples from the labeled set.
 
 ![](/article/images/DiminishingUncertaintyAL/eq3.jpg)
 
 where $$P(x^{\mathcal{T}}_i, x^{\mathcal{U}}_j)$$ is the joint probability and $$P(x^{\mathcal{T}}_i)$$, 
-$$P(x^{\mathcal{U}}_j)$$ are marginal probabilities with respect to the histograms of the two images. 
+$$P(x^{\mathcal{U}}_j)$$ are marginal probabilities with respect to the histograms of the two images for training 
+samples $$x^{\mathcal{T}}_i$$ and un-labeled samples $$x^{\mathcal{U}}_j$$
 
 
 
@@ -115,7 +116,7 @@ Authors also compare their method to *maximum cover*[^1] and *Jenson-Shannon div
 
 # Conclusions
 Authors conclude that their methods work well for the hippocampus dataset but not for the pancreas dataset. 
-Authors argue that this shows that active learning methods are very dataset dependant and that the discrepancy between 
+Authors argue that this shows that active learning methods are very dataset dependent and that the discrepancy between 
 the results of the two datasets could be explained by the fact that hippocampus samples were processed by the entire 
 volume while the pancreas samples were split into patches.  
 
