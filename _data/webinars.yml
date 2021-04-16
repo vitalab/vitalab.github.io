@@ -1,5 +1,14 @@
 webinar_list_title: Webinars
 webinars:
+
+- date: 2021/04/19-23
+  links:
+  - title: "Spring school on deep learning and medical imaging 2021"
+    url: https://deepimaging2021.sciencesconf.org
+- date: 2021/04/16
+  links:
+  - title: "The Energy-Based view of Self-Supervised Learning (Y.Lecun)"
+    url: https://gtc21.event.nvidia.com/media/The%20Energy-Based%20view%20of%20Self-Supervised%20Learning%20%5BS33268%5D/1_809kjdxq
 - date: 2021/03/12-5
   links:
   - title: "Quantization of Neural Networks \u2013 High Accuracy at Low Precision"
