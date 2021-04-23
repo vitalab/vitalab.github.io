@@ -1,6 +1,11 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
+    year: 2021
+    title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
+    journal: submitted to Medical Image Analysis 
+
   - authors: 'M-A. Armenta, P-M Jodoin'
     year: 2021
     title: 'The Representation Theory of Neural Networks'
