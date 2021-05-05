@@ -1,6 +1,11 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'Y. Skandarani, P-M Jodoin, A. Lalande'
+    year: 2021
+    title : 'Deep Learning based Cardiac MRI segmentation: Do we need experts?'
+    journal : submitted to Journal of Cardiovascular Magnetic Resonance
+    
   - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
     year: 2021
     title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
