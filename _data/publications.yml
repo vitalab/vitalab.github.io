@@ -4,17 +4,17 @@ journal:
   - authors: 'Y. Skandarani, P-M Jodoin, A. Lalande'
     year: 2021
     title : 'Deep Learning based Cardiac MRI segmentation: Do we need experts?'
-    journal : submitted to Journal of Cardiovascular Magnetic Resonance
+    journal : Journal of Cardiovascular Magnetic Resonance
     
   - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
     year: 2021
     title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
-    journal: submitted to Medical Image Analysis 
+    journal: Medical Image Analysis 
 
   - authors: 'M-A. Armenta, P-M Jodoin'
     year: 2021
     title: 'The Representation Theory of Neural Networks'
-    journal: Journal of Algebra
+    journal: Journal de mathematiques pures et appliquees 
     arxiv: arXiv:2007.12213
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
@@ -36,9 +36,17 @@ journal:
     arxiv: bioRxiv:2020.11.16.385229
     doi: https://doi.org/10.1101/2020.11.16.385229
 
+  - authors: 'B. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
+    year: 2021
+    title: 'Privacy-Net: An Adversarial Approach for Identity-Obfuscated Segmentation of Medical Images'
+    pages: 1-13
+    journal : in press at IEEE Transactions on medical imaging 
+    arxiv: arXiv:1909.04087
+
   - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
     year: 2020
     title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
+    journal : Medical Image Analysis
     arxiv: arXiv:2011.12835v1
   
   - authors: 'J.H. Lagaretta, L.Petit, F. Rheault, G.Theaud, C.Lemaire, M.Descoteaux*, P-M.Jodoin*'
