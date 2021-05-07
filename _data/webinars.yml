@@ -3,11 +3,11 @@ webinars:
 
 - date: 2021/05/07
   links:
-  - title: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)
+  - title: "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)"
     url: https://www.youtube.com/watch?v=YPfUiOMYOEE
 - date: 2021/04/30
   links:
-  - title: Lets stop talking about diversity and start working towards equity | Paloma Medina | TEDxPortland
+  - title: "Lets stop talking about diversity and start working towards equity | Paloma Medina | TEDxPortland"
     url: https://www.youtube.com/watch?v=deYUUfak08Y&t=36s
 - date: 2021/04/19-23
   links:
