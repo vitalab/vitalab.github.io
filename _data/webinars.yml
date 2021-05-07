@@ -1,6 +1,10 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2021/05/07
+  links:
+  - title : BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)
+    url: https://www.youtube.com/watch?v=YPfUiOMYOEE
 - date: 2021/04/19-23
   links:
   - title: "Spring school on deep learning and medical imaging 2021"
