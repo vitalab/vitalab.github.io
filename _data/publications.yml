@@ -31,7 +31,7 @@ journal:
   - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
     year: 2021
     title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
-    journal: in press at Medical Image Analysis
+    journal: Medical Image Analysis, 72
     pages: 1-22
     arxiv: bioRxiv:2020.11.16.385229
     doi: https://doi.org/10.1101/2020.11.16.385229
