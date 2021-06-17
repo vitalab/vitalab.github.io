@@ -1,0 +1,68 @@
+---
+layout: page
+title: Publications
+order: 0
+permalink: /publications/
+---
+<style>
+    /* TODO: Add styling to list with li */
+</style>
+
+
+<h2>{{site.data.publications.journal_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.journal%}
+       <li>
+	  {{item.authors}} ({{item.year}})
+         <b>{{item.title}}, </b> 
+         {% if item.journal %} {%unless item.pages %} Submitted to {% endunless %}{{item.journal}}{%if item.pages %}, p.{{item.pages}}{% endif %}; {% endif %} {%if item.arxiv %} {{item.arxiv}}; {% endif %} {%if item.doi %} <a href="{{item.doi}}">{{item.doi}}</a> {% endif %}
+       </li><br>
+       {% endfor %}
+  </ul>
+
+</div>
+
+
+<h2>{{site.data.publications.conference_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.conference %}
+       <li>
+         {{item.authors}} ({{item.year}}) 
+         <strong>{{item.title}}</strong>, 
+         In proceedings of {{item.conference}}
+       </li><br>
+       {% endfor %}
+  </ul>
+
+</div>
+
+
+<h2>{{site.data.publications.chapter_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.chapters %}
+       <li>
+         {{item.authors}} ({{item.year}})
+         <strong>{{item.title}}</strong>, 
+         {%if item.book %}{{item.book}};{% endif %}{%if item.publisher%}{{item.publisher}};{% endif %}{%if item.other %}{{item.other}};{% endif %}
+       </li><br>
+       {% endfor %}
+  </ul>
+
+</div>
+
+<h2>{{site.data.publications.other_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.others %}
+       <li>
+         {{item.authors}} ({{item.year}}) 
+         <strong>{{item.title}}</strong>, 
+         {%if item.other %}{{item.other}};{% endif %}
+       </li><br>
+       {% endfor %}
+  </ul>
+
+</div>

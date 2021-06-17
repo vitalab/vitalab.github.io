@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How-to
+hidden: true  # Excluded from the menu
 permalink: /howto/
 ---
 

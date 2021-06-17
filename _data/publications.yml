@@ -1,0 +1,649 @@
+journal_list_title: Journal papers
+journal:
+  
+  - authors: 'J.H. Lagaretta, L.Petit, F. Rheault, G.Theaud, C.Lemaire, M.Descoteaux*, P-M.Jodoin*'
+    year: 2021
+    title: 'Tractography filtering using autoencoders'
+    pages: 1-17
+    journal: accepted at Medical Image Analysis
+    arxiv: arXiv:2010.04007
+
+  - authors: 'Y. Skandarani, P-M Jodoin, A. Lalande'
+    year: 2021
+    title : 'Deep Learning based Cardiac MRI segmentation: Do we need experts?'
+    journal : Journal of Cardiovascular Magnetic Resonance
+    
+  - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
+    year: 2021
+    title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
+    journal: Medical Image Analysis 
+
+  - authors: 'M-A. Armenta, P-M Jodoin'
+    year: 2021
+    title: 'The Representation Theory of Neural Networks'
+    journal: Journal de mathematiques pures et appliquees 
+    arxiv: arXiv:2007.12213
+
+  - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
+    year: 2021
+    title: 'GANs for Medical Image Synthesis: An Empirical Study'
+    journal: Computerized Medical Imaging and Graphics 
+
+  - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
+    year: 2021
+    title: 'Neural Teleportation'
+    journal: Journal of Neural Networks
+    arxiv: arXiv:2012.01118
+
+  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
+    year: 2021
+    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
+    journal: Medical Image Analysis, 72
+    pages: 1-22
+    arxiv: bioRxiv:2020.11.16.385229
+    doi: https://doi.org/10.1101/2020.11.16.385229
+
+  - authors: 'B. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
+    year: 2021
+    title: 'Privacy-Net: An Adversarial Approach for Identity-Obfuscated Segmentation of Medical Images'
+    pages: 1-13
+    journal : in press at IEEE Transactions on medical imaging 
+    arxiv: arXiv:1909.04087
+
+  - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
+    year: 2020
+    title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
+    journal : Medical Image Analysis
+    arxiv: arXiv:2011.12835v1
+
+  - authors: 'N.Painchaud, Y.Skandarani, T.Judge, O.Bernard, A.Lalande, P-M. Jodoin'
+    year: 2020
+    title: 'Cardiac Segmentation with Strong Anatomical Guarantees'
+    pages: 3703-3713
+    journal: IEEE Trans. on Medical Imaging, 39(11)
+    arxiv: arXiv:2006.08825
+
+  - authors: 'S. Leclerc, E. Smistad, A. Østvik, F. Cervenansky, F. Espinosa, T. Espeland, E. A. R. Berg, T. Grenier, C. Lartizien, P.-M. Jodoin, L. Lovstakken, and O. Bernard'
+    year: 2020
+    title: 'Lu-net: A multi-task network to improve the robustness of deep learning segmentation in 2d echocardiography'
+    pages: 2519-2530
+    journal: IEEE trans. on Ultrasonics, Ferroelectrics, and Frequency Control (UFFC) 67(12)
+    arxiv: arXiv:2004.02043
+
+  - authors: 'M. Dumont, M. Roy, P-M Jodoin, F.C. Morency, J-C Houde, Z. Xie, C. Bauer, T.A. Samad, K.R.A. Van Dijk, J.A. Goodman, M.Descoteaux'
+    year: 2019
+    title: 'Free water in white matter differentiates MCI and AD from control subjects'
+    pages: 1-9
+    journal: Front Aging Neuroscience, 11(270)
+    arxiv: biorxiv.org/content/10.1101/537092v2
+
+  - authors: 'P. Poulin, D. Jörgens, P-M Jodoin*, M Descoteaux*'
+    year: 2019
+    title: 'Tractography and machine learning: Current state and open challenges'
+    pages: 37-48
+    journal: Magnetic Resonance Imaging (24)
+    arxiv: arXiv:1902.05568
+
+  - authors: 'J Z Bojorquez, P-M Jodoin, S Bricq, P. M. Walker, F Brunotte, A Lalande'
+    year: 2019
+    title: 'Automatic classification of tissues on prostate MRI based on relaxation times and support vector machine'
+    pages: 1-17
+    journal: PLOS ONE 14(2)
+
+  - authors: 'S. Leclerc, E Smistad, J Pedrosa, A Ostvik, F Espinosa, T. Espeland, E.A. Rye Berg, P-M. Jodoin, T. Grenier, C. Lartizien, J. Dhooge, L. Lovstakken, O. Bernard'
+    year: 2019
+    title: 'Deep convolutional network for 2-D echocardiographic segmentation based on an open large-scale patient database'
+    pages: p.2198-2210
+    journal: IEEE transactions on Medical Imaging, 38(9)
+    arxiv: arXiv:1908.06948v2
+
+  - authors: 'C. Zotti, Z. Luo, A. Lalande, P-M Jodoin'
+    year: 2019
+    title: 'Convolutional Neural Network with Shape Prior Applied to Cardiac MRI Segmentation'
+    pages: 1119-1128
+    journal: IEEE Journal of Biomedical and Health Informatics, 23(3)
+
+  - authors: 'Z. Luo, F.B.Charron, C.Lemaire, J.Konrad, S.Li, A.Mishra, A. Achkar, J. Eichel, P-M Jodoin '
+    year: 2018
+    title: 'MIO-TCD: A new benchmark dataset for vehicle classification and localization'
+    pages: 5129-5141
+    journal: IEEE Transactions on Image Processing, 27(10)
+
+  - authors: 'O. Bernard, A. Lalande, C. Zotti, F. Cervenansky, X. Yang, P.-A. Heng, I. Cetin, K. Lekadir, O. Camara, M.A. Gonzalez-Ballester, G. Sanroma, S. Napel, S. Petersen, G. Tziritas, E. Grinias, M. Khened, V.A. Kollerathu, G. Krishnamurthi, M.-M. Rohé, X. Pennec, M. Sermesant, F. Isensee, P. Jager, K.H. Maier-Hein, C.F. Baumgartner, L.M. Koch, J.M. Wolterink, I. Isgum, Y. Jang, Y. Hong, J. Patravali, S. Jain, O. Humbert, P-M Jodoin'
+    year: 2018
+    title: 'Deep Learning Techniques for Automatic MRI Cardiac Multi-structures Segmentation and Diagnosis: Is the Problem Solved?'
+    pages: p.2514-2525
+    journal: IEEE transactions on Medical Imaging, 37(11)
+
+  - authors: 'S. Obaid, A. Tucholka, J. Ghaziri, P-M Jodoin, F Morency, M Descoteaux, A Bouthillier, D. K. Nguyen'
+    year: 2018
+    title: 'Cortical thickness analysis in operculo-insular epilepsy'
+    pages: 727-733
+    journal: Neuroimage Clinical, 19
+
+  - authors: 'Luo Z, Jodoin P-M, Su S-Z, Li S, Larochelle H'
+    year: 2018
+    title: 'Traffic Analytics with Low Frame Rate Videos'
+    pages: 878-891
+    journal: IEEE Transactions on Circuits and Systems for Video Technology, 28(4)
+
+  - authors: 'Cousineau M., Jodoin P-M, Morency F., Rozanski V., GrandMaison M., Bedell B.J., Descoteaux M.'
+    year: 2017
+    title: 'A Test-Retest Study on Parkinsons PPMI Dataset Yields Statistically Significant White Matter Fascicles'
+    pages: 222-233
+    journal: NeuroImage Clinical, 16
+
+  - authors: 'Jodoin P-M, Maddaelena L., Petrosino A., Wang Y.'
+    year: 2017
+    title: 'Extensive Benchmark and Survey of Background Modeling Methods'
+    pages: 5244-5256
+    journal: IEEE Transactions on Image Processing, 26(11)
+
+  - authors: 'Bernier M., Jodoin P-M, Humbert O., Lalande A.'
+    year: 2017
+    title: 'Graph Cut-Based Method for Segmenting the Left Ventricle from MRI or Echocardiographic Images'
+    pages: 1-12
+    journal: Computerized medical imaging and graphics, 58
+
+  - authors: 'Havaei M., Davy A., Warde-Farley D., Biard A., Courville A., Bengio Y., Pal C., Jodoin P-M, Larochelle H.'
+    year: 2017
+    title: 'Brain Tumor Segmentation with Deep Neural Networks'
+    pages: 18-31
+    journal: Medical Image Analysis, Vol 35
+
+  - authors: 'Maier O. et al.'
+    year: 2017
+    title: 'SLES 2015 - A public evaluation benchmark for ischemic stroke lesion segmentation from multispectral MRI'
+    pages: 250-269
+    journal: Medical Image Analysis, Vol 35
+
+  - authors: 'Wang Y., Piérard S., Su S-Z., Jodoin P-M '
+    year: 2017
+    title: 'Improving pedestrian detection using motion-guided filtering'
+    pages: 106-112
+    journal: Pattern Recognition Letters, 96
+
+  - authors: 'Wang Y, Luo Z., Jodoin P-M'
+    year: 2017
+    title: 'Interactive Deep Learning Method for Segmenting Moving Objects'
+    pages: 66-75
+    journal: Pattern Recognition Letters, 96
+
+  - authors: 'Castanon G, Elgharib M-A, Saligrama V, Jodoin P-M.'
+    year: 2016
+    title: 'Retrieval in Long Surveillance Videos using User-Described Motion & Object Attributes'
+    pages: 2313 - 2327
+    journal: IEEE Transactions on Circuits and Systems for Video Technology, 26(12)
+
+  - authors: 'Havaei M., Larochelle H., Poulin P., Jodoin P-M.'
+    year: 2016
+    title: 'Within-Brain Classification for Brain Tumor Segmentation'
+    pages: 777-788
+    journal: International Journal of Computer Assisted Radiology and Surgery, 11(5)
+
+  - authors: 'Bernard O. et al.'
+    year: 2016
+    title: 'Standardized Evaluation System for Left Ventricular Segmentation Algorithms in 3D Echocardiography.'
+    pages: 967-977
+    journal: IEEE Transactions on Medical Imaging, 35(4)
+
+  - authors: 'Geng L-C, Jodoin P-M, Su S-Z., Li S.Z'
+    year: 2016
+    title: 'CBDF: Compressed Binary Discriminative Feature'
+    pages: 43-54
+    journal: Neurocomputing, 184(5)
+
+  - authors: 'Zhang D., Jodoin P-M, Li C., Cai G, Wu Y. '
+    year: 2015
+    title: 'Novel Graph cuts Method for Multi-Frame Super Resolution '
+    pages: 2279-2283
+    journal: IEEE Signal Processing Letters. 22(12)
+
+  - authors: 'Jodoin P-M, Pinheiro F., Oudot F., Lalande A.'
+    year: 2015
+    title: 'Left-Ventricle Segmentation of SPECT Images of Rats'
+    pages: 2260 - 2268
+    journal: IEEE Transactions on Biomedical Engineering, 62(9)
+
+  - authors: 'Presseau C., Jodoin P-M, Descoteaux M. '
+    year: 2015
+    title: 'A New Compression Format for Fiber Tracking Datasets'
+    pages: 73-83
+    journal: NeuroImage, 109(1)
+
+  - authors: 'Boisvert J, Drouin M-A., Jodoin P-M.'
+    year: 2015
+    title: 'High-speed Transition Patterns for Video Projection, 3D Reconstruction, and Copyright Protection'
+    pages: 720-731
+    journal: Pattern Recognition, 48(3)
+
+  - authors: 'Goyette N, Jodoin P-M, Porikli F, Konrad J, Ishwar P.'
+    year: 2014
+    title: 'Novel Dataset for Change Detection Benchmarking'
+    pages: 4663-4679
+    journal: IEEE Transactions on Image Processing, 23(11)
+
+  - authors: 'Cai G, Jodoin P-M, Li S., Wu Y-D, Su S-Z, Huang Z-K'
+    year: 2013
+    title: 'Perspective SIFT: an efficient tool for low altitude remote sensing image registration'
+    pages: 3088-3110
+    journal: Signal Processing,93(11)
+
+  - authors: 'Jodoin P-M., Saligrama V., Konrad J.'
+    year: 2012
+    title: 'Behavior Subtraction'
+    pages: 4244-4255
+    journal: IEEE Transactions on Image Processing, 21(9)
+
+  - authors: 'Adam-Duquette A., Jodoin P-M, Bouchot O., and Lalande A.'
+    year: 2012
+    title: '3D segmentation of abdominal aorta from CT-scan and MR images. '
+    pages: 294-303
+    journal: Computerized Medical Imaging and Graphics, 36(4)
+
+  - authors: 'Drouin M-A., Jodoin P-M., and Prémont J.'
+    year: 2012
+    title: 'Camera-Projector Matching using Unstructured Video'
+    pages: 887-902
+    journal: Machine Vision and Applications, 23(5)
+
+  - authors: 'Caron A., Jodoin P-M.'
+    year: 2011
+    title: 'Image Multi-Distortion Estimation'
+    pages: 3442 - 3454
+    journal: IEEE Transactions on Image Processing,20(12)
+
+  - authors: 'Benezeth Y., Jodoin P-M, and Saligrama V.'
+    year: 2011
+    title: 'Abnormality Detection Using Low-Level Co-occurring Events'
+    pages: 423-431
+    journal: Pattern Recognition Letters, 32(3)
+
+  - authors: 'Ermis E. B., Clarot P., Jodoin P-M, and Saligrama V.'
+    year: 2010
+    title: 'Activity Matching in Distributed Camera Networks '
+    pages: 2595 - 2613
+    journal: IEEE Transactions on Image Processing,19(10)
+
+  - authors: 'Saligrama V., Konrad J., and Jodoin P-M.'
+    year: 2010
+    title: 'A Statistical Approach to Video Anomaly Identification'
+    pages: 18-33
+    journal: IEEE Signal Processing Magazine, 27(5)
+
+  - authors: 'Benezeth Y., Jodoin P.M., Emile B., Laurent H. and Rosenberger C.'
+    year: 2010
+    title: 'Comparative Study of Background Subtraction Algorithms'
+    pages: 1-12
+    journal: Journal of Electronic Imaging 19(3)
+
+  - authors: 'McHugh M., Konrad J., Saligrama V., and Jodoin P-M.'
+    year: 2009
+    title: 'Foreground-Adaptive Background Subtraction'
+    pages: 390-393
+    journal: IEEE Signal Process. Lett., vol. 16
+
+  - authors: 'Jodoin P-M, Mignotte M.'
+    year: 2009
+    title: 'Optical-Flow Based on an Edge-Avoidance Procedure'
+    pages: 511-53
+    journal: Computer Vision and Image Understanding, 113 (4)
+
+  - authors: 'Jodoin P-M, Mignotte M and Rosenberger C.'
+    year: 2007
+    title: 'Segmentation Framework Based on a Label Field Fusion'
+    pages: 2535-2550
+    journal: IEEE Transactions on Image Processing, 16(10)
+
+  - authors: 'Jodoin P-M, Mignotte M and Konrad J.'
+    year: 2007
+    title: 'Statistical Background Subtraction Methods Using Spatial Cues'
+    pages: 1758-1763
+    journal: IEEE Transactions on Circuits and Systems for Video Technology, 17(12)
+
+  - authors: 'Jodoin P-M, Mignotte M'
+    year: 2006
+    title: 'Markovian Segmentation et Parameter Estimation on Graphics Hardware'
+    pages: 330-345
+    journal: Journal of Electrical Imaging, 15(3)
+
+  - authors: 'Ostromoukhov V., Donohue C. and Jodoin P-M.'
+    year: 2004
+    title: 'Fast Hierarchical Importance Sampling with Blue Noise Properties'
+    pages: 488-495
+    journal: SIGGRAPH, 23(3)
+
+conference_list_title: Conference papers
+conference:
+
+  - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
+    year: 2021
+    title: 'Track-To-Learn: A general framework for tractography with deep reinforcement learning'
+    conference: International Society for Magnetic Resonance in Medicine
+
+  - authors: 'A. Essemlali, E. St-Onge, J-C. Houde, M. Descoteaux, P-M. Jodoin'
+    year: 2020
+    title: 'Alzheimers disease classification using CNN over structural connectomes '
+    conference: Medical Imaging with Deep Learning (MIDL)
+
+  - authors: 'A. Duran, P-M. Jodoin, C. Lartizien'
+    year: 2020
+    title: 'Prostate Cancer Semantic Segmentation by Gleason Score Group in mp-MRI with Self Attention Model on the Peripheral Zone'
+    conference: Medical Imaging with Deep Learning (MIDL)
+
+  - authors: 'Y. Skandarani, N. Painchaud, P-M. Jodoin, A. Lalande'
+    year: 2020
+    title: 'On the effectiveness of GAN generated cardiac MRIs for segmentation'
+    conference: Medical Imaging with Deep Learning (MIDL)
+
+  - authors: 'S. Leclerc, E. Smistad, T. Grenier, C. Lartizien, A. Østvik, F. Cervenansky, F. Espinosa, T. Espeland, E. A. R. Berg, P. Jodoin, L. Lovstakken, and O. Bernard'
+    year: 2019
+    title: 'Ru-net: A refining segmentation network for 2d echocardiography'
+    conference: IEEE International Ultrasonics Symposium (IUS)
+
+  - authors: 'S. Leclerc, E. Smistad, A. Ostvik, F. Cervenansky, F. Espinosa, T. Espeland, E. A. R. Berg, P.-M. Jodoin, T. Grenier, C. Lartizien, L. Lovstakken, and O. Bernard'
+    year: 2019
+    title: 'Deep learning segmentation in 2d echocardiography using the camus dataset : Automatic assessment of the anatomical shape validity'
+    conference: Medical Imaging with Deep Learning (MIDL)
+
+  - authors: 'N Painchaud, Y Skandarani, T. Judge, O. Bernard, A. Lalande, P-M Jodoin'
+    year: 2019
+    title: 'Cardiac MRI Segmentation with Strong Anatomical Guarantees'
+    conference: MICCAI
+
+  - authors: 'Branchaud-Charron F., Aachkar A., Jodoin P-M'
+    year: 2019
+    title: 'Spectral Metric for Dataset Complexity Assessment'
+    conference: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+  - authors: 'Lemaire C., Aachkar A., Jodoin P-M'
+    year: 2019
+    title: 'Spectral Metric for Dataset Complexity Assessment'
+    conference: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+  - authors: 'Leclerc S, Smistad E, Grenier T, Lartizien C, Ostvik A, Espinosa F, Jodoin P-M, Lovstakken L, Bernard O.'
+    year: 2018
+    title: 'Deep Learning Applied to Multi-Structure Segmentation in 2D Echocardiography: A preliminary investigation of the required database size'
+    conference: IEEE International Ultrasonics Symposium (IUS)
+
+  - authors: 'Dumont M., Van Dijk K., Morency F., Houde J-C, Jodoin P-M, Zie Z, Bauer C., Samad T., Descoteaux M. and Goodman J.'
+    year: 2018
+    title: 'White matter free water content analysis in different stages of Alzheimers disease '
+    conference: ISMRM
+
+  - authors: 'Poulin P., Rheault F., St-Onge E, Jodoin P-M, Descoteaux M. '
+    year: 2018
+    title: 'Bundle-Wise Deep Tracker: Learning to track bundle-specific streamline paths'
+    conference: ISMRM
+
+  - authors: 'Zotti C., Luo Z., Humbert O., Lalande A., Jodoin P-M'
+    year: 2017
+    title: 'GridNet with automatic shape prior registration for automatic MRI cardiac segmentation'
+    conference: MICCAI - ACDC Challenge
+
+  - authors: 'Luo Z, Mishra A, Achkar A, Eichel J, Li S-Z, Jodoin P-M'
+    year: 2017
+    title: 'Non-Local Deep Features for Salient Object Detection'
+    conference: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+  - authors: 'Dutil F., Havaei M., Pal C., Larochelle H., Jodoin P-M.'
+    year: 2015
+    title: 'A Convolutional Neural Network Approach to Brain Lesion Segmentation'
+    conference: MICCAI - ISLES Challenge
+
+  - authors: 'Havaei M., Dutil F., Pal C., Larochelle H., Jodoin P-M.'
+    year: 2015
+    title: 'A Convolutional Neural Network Approach to Brain Tumor Segmentation'
+    conference: MICCAI - BRATS Challenge
+
+  - authors: 'Wang Y, Pierard S, Su S-Z, Jodoin P-M'
+    year: 2015
+    title: 'Nonlinear Background Filter to Improve Pedestrian Detection'
+    conference: Scene Background Modeling and Initialization (ICIP)
+
+  - authors: 'Croteau E, Sarrhini O, Gascon S, Rousseau J., Lecomte R, Jodoin P-M'
+    year: 2015
+    title: 'Comparison of semi-automatic cardiac analysis software for the evaluation of the left ventricular ejection fraction in small animal PET'
+    conference: Society of Nuclear Medicine and Molecular Imaging (SNMMI)
+
+  - authors: 'Luo Z., Jodoin P-M, Li S-Z, Su S-Z. '
+    year: 2015
+    title: 'Traffic Analysis without Motion Features'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Bernier M., Jodoin P-M, Lalande A.'
+    year: 2014
+    title: 'Automatized Evaluation of the Left Ventricular Ejection Fraction from Echocardiographic Images Using Graph Cut'
+    conference: MIDAS Journal - Challenge on Endocardial Three-dimensional Ultrasound Segmentation (MICCAI)
+
+  - authors: 'Davy A., Havaei M., Warde-Farley D., Biard A., Tran L., Jodoin P-M, Courville A, Larochelle H, Pal C, Bengio Y'
+    year: 2014
+    title: 'Brain Tumor Segmentation with Deep Neural Networks'
+    conference: MICCAI - BRATS Challenge
+
+  - authors: 'Wang Y., Jodoin P-M, Porikli F., Konrad J., Benezeth Y, Ishwar P'
+    year: 2014
+    title: 'CDnet 2014: An Expanded Change Detection Benchmark Dataset'
+    conference: IEEE CVPR change detection workshop
+
+  - authors: 'Xia D-X, Su S-Z, Li S., Jodoin P-M'
+    year: 2014
+    title: 'Lying-Pose Detection with Training Dataset Expansion'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Havaei M., Jodoin P-M, Larochelle H.'
+    year: 2014
+    title: 'Efficient Interactive Brain Tumor Segmentation as Within-Brain kNN Classification'
+    conference: International Conference on Pattern Recognition (ICPR)
+
+  - authors: 'Jodoin P-M, Benezeth Y, Wang Y.'
+    year: 2013
+    title: 'Meta-Tracking for Video Scene Understanding '
+    conference: IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS)
+
+  - authors: 'Castanon G, Jodoin P-M, Saligrama V.'
+    year: 2012
+    title: 'Exploratory Search of Long Surveillance Video'
+    conference: ACM-Multimedia
+
+  - authors: 'Castanon G, Jodoin P-M, Saligrama V.'
+    year: 2012
+    title: 'Exploratory Search of Long Surveillance Video'
+    conference: Demo session
+
+  - authors: 'Castanon G, Caron A., Jodoin P-M, Saligrama V.'
+    year: 2012
+    title: 'Real-Time Activity Search of Surveillance Video'
+    conference: IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS)
+
+  - authors: 'Goyette N., Jodoin P-M, Porikli F., Konrad J. and Ishwar P.'
+    year: 2012
+    title: 'changedetection.net: A New Change Detection Benchmark Dataset'
+    conference: IEEE CVPR change detection workshop
+
+  - authors: 'Houde J-C, Jodoin P-M, Deschênes F.'
+    year: 2012
+    title: 'Stereoscopic reconfiguration for 3D displays'
+    conference: SPIE, Stereoscopic Displays and Applications XXIII
+
+  - authors: 'Drouin M-A., Jodoin P-M., and Prémont J.'
+    year: 2010
+    title: 'Camera-Projector Matching Using an Unstructured Video Stream'
+    conference: IEEE PROCAMS
+
+  - authors: 'Benezeth Y., Jodoin P-M. , Emile B., Laurent H., and Rosenberger C.'
+    year: 2010
+    title: 'Human detection with a multi-sensors stereovision system'
+    conference: International Conference on Image and Signal Processing (ICISP)
+
+  - authors: 'Caron A., Jodoin P-M, and Charrier C.'
+    year: 2010
+    title: 'Search Strategies for Image Multi-Distortion Estimation'
+    conference: International Conference on Pattern Recognition (ICPR)
+
+  - authors: 'Jodoin P-M, Saligrama V. Konrad J.'
+    year: 2009
+    title: 'Implicit Active-Contouring with MRF'
+    conference: International Conference on Image Analysis and Recognition (ICIAR)
+
+  - authors: 'Benezeth Y., Jodoin P.M., Saligrama V. and Rosenberger C '
+    year: 2009
+    title: 'Abnormal Events Detection Based on Spatio-Temporal Co-occurences'
+    conference: IEEE Computer Vision and Pattern Recognition (CVPR)
+
+  - authors: 'Clarot P, Baki E., Jodoin P-M., Saligrama V. '
+    year: 2009
+    title: 'Unsupervised Camera Network Structure Estimation Based on Activity'
+    conference: IEEE International Conference on Distributed Smart Cameras (ICDSC)
+
+  - authors: 'Jodoin P-M, Konrad J. and Saligrama V.'
+    year: 2008
+    title: 'Modeling Background Activity for Surveillance Applications'
+    conference: IEEE International Conference on Distributed Smart Cameras (ICDSC)
+
+  - authors: 'Baki E., Saligrama S., Jodoin P-M, Konrad J.'
+    year: 2008
+    title: 'Abnormal Behavior Detection and Behavior Matching for Networked Cameras'
+    conference: IEEE International Conference on Distributed Smart Cameras (ICDSC)
+
+  - authors: 'Benezeth Y., Jodoin P.M., Emile B., Laurent H. and Rosenberger C. '
+    year: 2008
+    title: 'Review and Evaluation of Commonly-Implemented Background Subtraction Algorithm'
+    conference: International Conference on Pattern Recognition (ICPR)
+
+  - authors: 'Baki E., Saligrama S., Jodoin P-M, Konrad J.'
+    year: 2008
+    title: 'Motion Segmentation and Abnormal Behavior Detection via Behavior Clustering'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Konrad J., Saligrama V. and Gaboury V.'
+    year: 2008
+    title: 'Motion Detection with an Unstable Camera'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'McHugh M., Konrad J., Saligrama V., Jodoin P-M, and Castanon D.'
+    year: 2008
+    title: 'Motion Detection with False Discovery Rate Control'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Voisin Y., Lalande A. and Bouchot O. Steinmetz E'
+    year: 2008
+    title: 'A new technique for reconstructing 3D data from IRM images'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Saligrama V. and Konrad J.'
+    year: 2008
+    title: 'Behavior Subtraction'
+    conference: Visual Communications and Image Processing (VCIP)
+
+  - authors: 'Jodoin P-M, Rosenberger C. and Mignotte M.'
+    year: 2006
+    title: 'Detecting Half-Occlusion with a Fast Region-Based Fusion Procedure'
+    conference: British Machine Vision Conference (BMVC)
+
+  - authors: 'Jodoin P-M, Mignotte M. and Konrad J'
+    year: 2006
+    title: 'Background Subtraction Framework Based on a Local Spatial Distribution'
+    conference: International Conference on Image Analysis and Recognition (ICIAR)
+
+  - authors: 'Jodoin P-M, Mignotte M.'
+    year: 2006
+    title: 'Optical-Flow Based on an Edge-Avoidance Procedure'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Mignotte M. and Konrad J.'
+    year: 2006
+    title: 'Light et Fast Statistical Motion Detection Method Based on Ergodic Model'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Mignotte M and St-Amour J-F'
+    year: 2015
+    title: 'Markovian Energy-Based Computer Vision Algorithms on Graphics Hardware'
+    conference: International Conference on Image Analysis and Processing (ICIAP)
+
+  - authors: 'Jodoin P-M, St-Amour J-F and Mignotte M'
+    year: 2005
+    title: 'Unsupervised Markovian Segmentation on Graphics Hardware'
+    conference: International Conference on Advances in Pattern Recognition (ICAPR)
+
+  - authors: 'Jodoin P-M, Mignotte M'
+    year: 2005
+    title: 'Motion Segmentation Using a K-nearest-Neighbor-Based Fusion Procedure of Spatial and Temporal Label Cues'
+    conference: International Conference on Image Analysis et Recognition (ICIAR)
+
+  - authors: 'Jodoin P-M, Mignotte M'
+    year: 2004
+    title: 'Unsupervised Motion Detection Using a Markovian Temporal Model with Global Spatial Constraints'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Jodoin P-M, Mignotte M'
+    year: 2004
+    title: 'An Energy-Based Framework Using Global Spatial Constraints for the Stereo Correspondence Problem'
+    conference: IEEE International Conference on Image Processing (ICIP)
+
+  - authors: 'Côté M, Jodoin P-M, Donohue C and Ostromoukhov V'
+    year: 2004
+    title: 'Non-Photorealistic Rendering of Hair for Animated Cartoons'
+    conference: GRAPHICON
+
+  - authors: 'Jodoin P-M, Ostromoukhov V'
+    year: 2003
+    title: 'Halftoning Over a Hexagonal Grid'
+    conference: SPIE International Society for Optical Engineering
+
+  - authors: 'Jodoin P-M, Epstein E, Granger-Piché M and Ostromoukhov V'
+    year: 2002
+    title: 'Hatching by Example: a Statistical Approach'
+    conference: Non-Photorealistic Animation and Rendering (NPAR)
+
+  - authors: 'Jodoin P-M and Ostromoukhov V'
+    year: 2002
+    title: 'Error-Diffusion with Blue-Noise Properties for Midtones'
+    conference: SPIE International Society for Optical Engineering
+
+
+chapter_list_title: Book chapters
+chapters:
+
+  - authors: 'P-M Jodoin, C.Desrosiers'
+    year: 2020
+    title: 'From machine learning to deep learning: the basics'
+    book: 
+    publisher:
+    other: Submitted for printing
+
+  - authors: 'M Havaei, N. Guizard, H. Larochelle, P-M Jodoin'
+    year: 2016
+    title: 'Deep learning trends for focal brain pathology segmentation in MRI'
+    book: Machine Learning for Health Informatics, State-of-the-art and future challenges
+    publisher: Springer International Publishing
+    other: LNAI 960
+
+  - authors: 'Jodoin P-M, Van Droogenbroeck, Pierard S. Wang Y'
+    year: 2014
+    title: 'Overview and benchmarking of motion detection methods'
+    book: Background Modeling and Foreground Detection for Video Surveillance, chapter 24
+    publisher: Chapman and Hall/CRC
+    other:
+
+  - authors: 'Ermis E, Saligrama V, and Jodoin P-M'
+    year: 2012
+    title: 'Information Fusion and Anomaly Detection with Uncalibrated Cameras in Video Surveillance'
+    book: Multimedia Information Extraction; Advances in Video, Audio, and Imagery Analysis for Search, Data Mining, Surveillance, and Authoring
+    publisher: Wiley
+    other: ISBN:9781118118917
+
+  - authors: 'Benezeth Y., Jodoin P-M, and Saligrama V.'
+    year: 2011
+    title: 'Modeling Patterns of Activity and Detecting Abnormal Events with Low-Level co-Occurences'
+    book: Distributed Video Sensor Networks
+    publisher: Springer
+    other:
+
+other_list_title: Others
+others:
+
+  - authors: 'Jodoin P-M, Saligrama V. Konrad J.'
+    year: 2009
+    title: 'Behavior subtraction, a new tool for video analytics'
+    other: SPIE Newsroom, Electronic Imaging & Signal Processing (http://spie.org/x2432.xml)
