@@ -1,11 +1,11 @@
 webinar_list_title: Webinars
 webinars:
 
-- date: 2021/06/18:
+- date: 2021/06/18
   links:
   - title: "nnU-Net: Automated Design of Deep Learning Methods for Biomedical Image Segmentation"
     url: https://www.youtube.com/watch?v=3po8qVzz5Tc
-- date: 2021/06/04:
+- date: 2021/06/04
   links:
   - title: "Towards Causal Representation Learning"
     url: https://www.youtube.com/watch?v=0Zq1PbPpLug 
