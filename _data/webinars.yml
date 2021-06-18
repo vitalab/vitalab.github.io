@@ -8,7 +8,7 @@ webinars:
 - data: 2021/06/04:
   links:
   - title: "Towards Causal Representation Learning"
-    url: Towards Causal Representation Learning
+    url: https://www.youtube.com/watch?v=0Zq1PbPpLug 
 - date: 2021/05/21
   links:
   - title: "Deep Learning with Differential Privacy (DP-SGD explained)"
