@@ -1,12 +1,11 @@
 journal_list_title: Journal papers
 journal:
   
-  - authors: 'J.H. Lagaretta, L.Petit, F. Rheault, G.Theaud, C.Lemaire, M.Descoteaux*, P-M.Jodoin*'
+  - authors: 'J.H. Legaretta, L. Petit, F. Rheault, G. Theaud, C. Lemaire, M. Descoteaux*, P.-M.Jodoin*'
     year: 2021
     title: 'Tractography filtering using autoencoders'
-    pages: 1-17
-    journal: accepted at Medical Image Analysis
-    arxiv: arXiv:2010.04007
+    journal: Published in Elsevier Medical Image Analysis
+    doi: https://doi.org/10.1016/j.media.2021.102126
 
   - authors: 'Y. Skandarani, P-M Jodoin, A. Lalande'
     year: 2021
