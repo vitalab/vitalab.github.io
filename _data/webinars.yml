@@ -1,6 +1,10 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2021/07/02
+  links:
+  - title: "AdaMatch Explained!"
+    url: https://www.youtube.com/watch?v=ORufPOY8H14
 - date: 2021/06/18
   links:
   - title: "nnU-Net: Automated Design of Deep Learning Methods for Biomedical Image Segmentation"
