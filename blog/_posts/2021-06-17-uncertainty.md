@@ -23,13 +23,13 @@ $$
 
 where $$\hat{Y}$$ is the predicted class and $$\hat{P}$$ is the predicted probability.
 
-Calibration is often shown with reliability diagrams [^5] (see figures in following sections). These diagrams are built by 
+Calibration is often shown with reliability diagrams [^5] (see figures in the following sections). These diagrams are built by 
 splitting the samples into bins according to their confidence. The accuracy for each bin each calculated and should 
 correspond to the average confidence. The difference between the accuracy and confidence is known as the gab. Averaging
-the gab for all bins give the expected calibration error (ECE) [^6]. 
+the gab for all bins gives the expected calibration error (ECE) [^6]. 
 
 ## Uncertainty-error overlap
-In the case of segmentation, the uncertainty of a prediction can be predicted via an uncertainty map. An uncertainty map is 
+In the case of segmentation, the uncertainty of a prediction can be predicted via an uncertainty map. An uncertainty map is an
 uncertainty prediction for each pixel. Uncertainty map quality can be evaluated by computing the uncertainty-error 
 overlap. Uncertainty-error overlap is computed by obtaining the dice score of the uncertainty map and a pixel-wise error
 map between the prediction and the groundtruth segmentation map. 
@@ -63,7 +63,7 @@ error rate stays constant.
 
 ![](/blog/images/uncertainty/calibration2.jpg)
 
-They propose temperature scaling is a post-processing step to solve the issue. This operation adds a learned parameter 
+They propose temperature scaling as a post-processing step to solve the issue. This operation adds a learned parameter 
 $$T$$ that is trained to minimize the negative log-likelihood on the validation data once the full training is done. 
 This parameter acts on the softmax in the following way: 
 
@@ -78,7 +78,7 @@ the predicted class and therefore can increase calibration as shown in the follo
 
 ## Ensembles
 
-Ensemble of neural networks can be an straight forward way of estimating uncertainty by quantifying the disagreement 
+Ensemble of neural networks can be a straightforward way of estimating uncertainty by quantifying the disagreement 
 between each model in the ensemble. Lakshminarayanan et al. propose adding adversarial examples to this training 
 procedure [^8]. 
 
@@ -128,13 +128,13 @@ $$
 #### MC Dropout
 Training Bayesian neural networks is not trivial and requires substantial changes to the training procedure. Gal et al. 
 show that neural networks with dropout can be used as an approximation for Bayesian nets [^2]. By using dropout at test time, one can
-generate a monte carlo distribution of predictions which can be used estimate the uncertainty of the prediction.   
+generate a Monte Carlo distribution of predictions which can be used to estimate the uncertainty of the prediction.   
 
 #### What uncertainties are needed?
 Kendall et al. describe two types of uncertainty in *What Uncertainties Do We Need in Bayesian Deep
 Learning for Computer Vision?* [^7]. Firstly, epistemic uncertainty is the uncertainty in the model weights. This can be
 represented with Bayesian nets or MC dropout. This type of uncertainty can be decreased with more data. The second type 
-of uncertainty is aleatoric uncertainty; the uncertainty in to the data. This type of uncertainty cannot be 
+of uncertainty is aleatoric uncertainty; the uncertainty in the data. This type of uncertainty cannot be 
 reduced by more data as it is inherent to the data. Aleatoric uncertainty can be homoscedastic (constant for all 
 inputs) or heteroscedastic (dependant on the input sample). 
 
