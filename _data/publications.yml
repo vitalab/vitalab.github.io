@@ -45,8 +45,8 @@ journal:
   - authors: 'B. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
     year: 2021
     title: 'Privacy-Net: An Adversarial Approach for Identity-Obfuscated Segmentation of Medical Images'
-    pages: 1-13
-    journal : in press at IEEE Transactions on medical imaging 
+    pages: 1737-1749
+    journal : IEEE Transactions on medical imaging, 40(7) 
     arxiv: arXiv:1909.04087
 
   - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
