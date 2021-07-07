@@ -18,21 +18,24 @@ it being correct. For example, given 100 predictions with an average confidence 
 This can be expressed :
 
 $$
-\mathbb{P} ( \hat{Y} = Y | \hat{P} = P ) = p  \text{   } \forall p \in [0, 1]
+\mathbb{P} ( \hat{Y} = Y | \hat{P} = P ) = p  \quad \forall p \in [0, 1]
 $$
 
 where $$\hat{Y}$$ is the predicted class and $$\hat{P}$$ is the predicted probability.
 
 Calibration is often shown with reliability diagrams [^5] (see figures in the following sections). These diagrams are built by 
 splitting the samples into bins according to their confidence. The accuracy for each bin each calculated and should 
-correspond to the average confidence. The difference between the accuracy and confidence is known as the gab. Averaging
-the gab for all bins gives the expected calibration error (ECE) [^6]. 
+correspond to the average confidence. The difference between the accuracy and confidence is known as the gap. Averaging
+the gap for all bins gives the expected calibration error (ECE) [^6]. 
 
 ## Uncertainty-error overlap
 In the case of segmentation, the uncertainty of a prediction can be predicted via an uncertainty map. An uncertainty map is an
 uncertainty prediction for each pixel. Uncertainty map quality can be evaluated by computing the uncertainty-error 
 overlap. Uncertainty-error overlap is computed by obtaining the dice score of the uncertainty map and a pixel-wise error
-map between the prediction and the groundtruth segmentation map. 
+map between the prediction and the groundtruth segmentation map. The following figure illustrates the uncertainty map 
+and error map for a given sample from the Camus dataset [^10].
+
+![](/blog/images/uncertainty/uncertainty.jpg)
 
 # Uncertainty Estimation Methods 
    
@@ -53,7 +56,7 @@ pixel.
 
 ### Temperature Scaling
 
-Guo et al. show that neural networks, especially deep networks, tend to be miscalibrated as can be seen in the following 
+Guo et al. [^4] show that neural networks, especially deep networks, tend to be miscalibrated as can be seen in the following 
 reliability diagrams.
 
 ![](/blog/images/uncertainty/calibration1.jpg)
@@ -168,7 +171,7 @@ $$
 
 
 In the case of classification, the formulation is slightly more complicated. Given a model logits $$f^w(x_i)$$ and 
-variance prediction $$\sigma^w(x_i)$$, the logits can be corrupted by Gaussian nose with variance $$\sigma^w(x_i)^2$$. 
+variance prediction $$\sigma^w(x_i)$$, the logits can be corrupted by Gaussian noise with variance $$\sigma^w(x_i)^2$$. 
 
 $$
 \hat{x}_i | w \sim \mathcal{N}(f^w(x_i), \sigma^w(x_i)^2)
@@ -240,5 +243,6 @@ The following articles offer reviews of many different methods.
 
 [^8]: Balaji Lakshminarayanan, Alexander Pritzel, and Charles Blundell. 2017. Simple and scalable predictive uncertainty estimation using deep ensembles. In Proceedings of the 31st International Conference on Neural Information Processing Systems (NIPS'17). Curran Associates Inc., Red Hook, NY, USA, 6405–6416.
 
-[^9]: Corbière, C., THOME, N., Bar-Hen, A., Cord, M., & Pérez, P. (2019). Addressing Failure Prediction by Learning Model Confidence. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d\textquotesingleAlché-Buc, E. Fox, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 32). Curran Associates, Inc. https://proceedings.neurips.cc/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf
+[^9]: Corbière, C., THOME, N., Bar-Hen, A., Cord, M., & Pérez, P. (2019). Addressing Failure Prediction by Learning Model Confidence. In H. Wallach, H. Larochelle, A. Beygelzimer, F. Alché-Buc, E. Fox, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 32). Curran Associates, Inc. https://proceedings.neurips.cc/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf
 
+[^10]: S. Leclerc, E. Smistad, J. Pedrosa, A. Ostvik, et al. "Deep Learning for Segmentation using an Open Large-Scale Dataset in 2D Echocardiography" in IEEE Transactions on Medical Imaging, early acces, 2019
