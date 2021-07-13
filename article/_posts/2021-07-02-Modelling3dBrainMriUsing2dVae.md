@@ -57,8 +57,8 @@ consistent size of 256x256x256 at 0.7x0.7x.07 mm<sup>3</sup> resolution.
 
 
 # Remarks
-- The authors often mention the "slice dimension", but their VAE has not explicit notion of a "slice dimension". So I
-consider this reliance on a there being a "slice dimension" to be optimist;
+- The authors often mention the "slice dimension", but their VAE has not explicit notion of a "slice dimension". Thus,
+the reliance on there being an interpretable "slice dimension" is optimist;
 - The sampling procedure doesn't seem to generate slices for a given volume that are more correlated with one another
 than with slices from a distinct volume. Each slice seems to be drawn from the prior distribution of latents for that
 slice, and then slices sampled independently are stacked together to form a volume.
