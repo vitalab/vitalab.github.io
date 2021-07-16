@@ -70,7 +70,7 @@ $$
 
 # Data
 To test their method, the authors based themselves on the ACDC[^2] and M&Ms[^3] dataset. The method was trained on 10
-patient randomly sampled from ACDC's training set, and the multi-site M&Ms dataset only served for cross-domain test.
+patients randomly sampled from ACDC's training set, and the multi-site M&Ms dataset only served for cross-domain test.
 The authors also used another 20 patients from the ACDC dataset, which they augmented with different types of MR
 artifacts to generate challenging intra-domain subsets.
 
@@ -78,11 +78,19 @@ artifacts to generate challenging intra-domain subsets.
 # Results
 
 ![](/article/images/CoopTrainingAndLatentSpaceDA/table1.jpg)
+
+In Table 1, the authors compare their own method with varying degrees of corrupted data (last 2 rows) to SOTA image
+space DA (middle 4 rows) and a baseline method trained only on the data (1st row). The columns present the performances
+of each method on different domains, from intra-domain data (*ACDC*), to cross-domain (*M&Ms*) and artificially
+generated challenging domains (*Rand\**). The last 2 columns compile the average performance of each method on all
+domains, with or without a refining STN. Note that detailed results shown seem to be for training without a STN only;
+only average results are available in the case of training with a STN.
+
 ![](/article/images/CoopTrainingAndLatentSpaceDA/table2.jpg)
 
 
 # References
-- Code is available on GitHub: [https://github.com/cherise215/Cooperative_Training_and_Latent_Space_Data_Augmentation](https://github.com/cherise215/Cooperative_Training_and_Latent_Space_Data_Augmentation)
+- Project code repository: [https://github.com/cherise215/Cooperative_Training_and_Latent_Space_Data_Augmentation](https://github.com/cherise215/Cooperative_Training_and_Latent_Space_Data_Augmentation)
 
 [^1]: Review of Anatomical Priors via DAE: [https://vitalab.github.io/article/2019/09/05/Post-DAE.html](https://vitalab.github.io/article/2019/09/05/Post-DAE.html)
 [^2]: ACDC dataset: [https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
