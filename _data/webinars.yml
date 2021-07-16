@@ -1,6 +1,10 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2021/07/16
+  links:
+  - title: "Understanding and Visualizing Generalization UNets"
+    url: https://2021.midl.io/videos/full_163_video.mp4
 - date: 2021/07/02
   links:
   - title: "AdaMatch Explained!"
