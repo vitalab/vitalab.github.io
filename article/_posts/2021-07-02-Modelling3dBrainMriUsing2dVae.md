@@ -28,10 +28,18 @@ and computational resources. Thus, volumetric VAEs mainly showed results on down
 # Methods
 
 ## Modeling distribution of 3D images with 2D VAE
-The authors' proposed method is quite simple. They train a 2D VAE to generate MRI slices, and use Gaussian distributions
-to model the prior's mean and covariance on each slice.
+The authors' proposed method is quite simple. They train a 2D VAE to generate MRI slices, and use a Gaussian model to
+represent the distribution of each latent variable across the slices. Latent variables are assumed to be independent.
 
 ![](/article/images/Modelling3dBrainMriUsing2dVae/figure1.jpg)
+
+Thus, the Gaussian model for the latent vectors is:
+
+$$
+p(\mathbf{y}_l) = \mathcal{N}(\mathbf{y}_l | \mathbf{\mu}_l,\mathbf{\Sigma}_l), \mathbf{y}_l = [y_l(1),\dots,y_l(t),\dots,y_l(T)]
+$$
+
+where $$y_l(t)$$ is the $$l$$-th component of the latent vector at slice $$t$$.
 
 
 ## Evaluating quality of the generated samples with RAS
@@ -59,9 +67,6 @@ consistent size of 256x256x256 at 0.7x0.7x.07 mm<sup>3</sup> resolution.
 # Remarks
 - The authors often mention the "slice dimension", but their VAE has not explicit notion of a "slice dimension". Thus,
 the reliance on there being an interpretable "slice dimension" is optimist;
-- The sampling procedure doesn't seem to generate slices for a given volume that are more correlated with one another
-than with slices from a distinct volume. Each slice seems to be drawn from the prior distribution of latents for that
-slice, and then slices sampled independently are stacked together to form a volume.
 
 
 # References
