@@ -2,7 +2,7 @@
 layout: review
 title: "Perceiver: General Perception with Iterative Attention"
 tags: deep-learning attention transformer
-author: ""
+author: "Antoine Théberge"
 cite:
     authors: "Andrew Jaegle, Felix Gimeno, Andrew Brock, Andrew Zisserman, Oriol Vinyals, Joao Carreira"
     title:   "Perceiver: General Perception with Iterative Attention"
