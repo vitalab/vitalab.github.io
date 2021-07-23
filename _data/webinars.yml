@@ -1,6 +1,10 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2021/07/23
+  links:
+  - title: "BANANAS: Bayesian Optimization with Neural Architectures for Neural Architecture search"
+    url: https://www.youtube.com/watch?v=6kVmCMkOiqE&list=PL6liSIqFR4BVLUkbTvWbP3L2JwJ2hco2m
 - date: 2021/07/16
   links:
   - title: "Understanding and Visualizing Generalization UNets"
