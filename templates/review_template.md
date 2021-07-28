@@ -15,6 +15,8 @@ pdf: ""
 
 Something[^1]
 
+![](/article/images/NGU/ngu.jpeg)
+
 # Introduction
 
 
