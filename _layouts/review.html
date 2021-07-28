@@ -50,7 +50,7 @@ layout: default
     </p>
     {% if page.cite %}
       <p class="post-meta">
-        <strong>Reference</strong> : {{ page.cite.authors }}. <em>{{ page.cite.title }}.</em> {{ page.cite.venue }}.
+        <strong>Reference</strong> : {{ page.cite.authors }}. <em>{{ page.cite.title | default: page.title }}.</em> {{ page.cite.venue }}.
       </p>
     {% endif %}
   </header>
