@@ -28,7 +28,7 @@ In this work, the authors introduce the _Perceiver_ architecture, able to levera
 
 ![](/article/images/perceiver/fig1.jpeg)
 
-Figure 1. sums the method. "Byte array" represents arbitrary inputs unrolled as an array. The method iteratively uses two components to tame the input complexity and variety: cross-attention modules and transformers. Each modality is input one after the other. As such, the Perceiver architecture can be seen as an RNN where each input is not a timepoint but a new modality.
+Figure 1. sums up the method. "Byte array" represents arbitrary inputs unrolled as an array. The method iteratively uses two components to tame the input complexity and variety: cross-attention modules and transformers. Each modality is input one after the other. As such, the Perceiver architecture can be seen as an RNN where each input is not a timepoint but a new modality.
 
 *Cross-attention* is related to self-attention, but the Query (Q) network receives a different input than the Key (K) and Value (V) networks. In this case, Q maps from a latent space and K,V map from the input. This allows the attention mechanism to map an arbitrarily-large input to a much smaller latent space.
 
@@ -38,7 +38,7 @@ Because attention mechanisms are positionally-invariant, but "spatial relationsh
 
 $$[\sin(f_{k}{\pi}x_d), \cos(f_{k}{\pi}x_d)],$$
 
-where $$f_k$$ is the $$k^{\text{th}}$$ frequency from a bank of predetermined frequencies and "$$x_d$$ is the input position along the $$d^\text{th}$$ dimension[sic]" $$\in [-1, 1]$$. 
+where $$f_k$$ is the $$k^{\text{th}}$$ frequency from a bank of predetermined frequencies and "$$x_d$$ is the input position along the $$d^\text{th}$$ dimension" $$\in [-1, 1]$$. 
 
 
 ## Data
