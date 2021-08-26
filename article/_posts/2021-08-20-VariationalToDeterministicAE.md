@@ -52,7 +52,7 @@ discriminator, bounds the gradient norm: $$\mathcal{L}_{GP} = \|\nabla D_{\theta
 - **Spectral normalization**: Still taken from GAN literature, spectral normalization normalizes weight matrices by an
 estimate of their largest singular values: $$\theta^{SN}_{\ell} = \frac{\theta_{\ell}}{s(\theta_{\ell})}$$.
 
-The also consider a model without an explicit regularization on the decoder (referred to as RAE in the results), since
+They also consider a model without an explicit regularization on the decoder (referred to as RAE in the results), since
 they were curious to investigate if training techniques like dropout, batch normalization, etc., would implicitly
 regularize the network enough.
 
