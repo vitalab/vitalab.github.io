@@ -63,7 +63,8 @@ datasets were used.
 
 # Results
 The full paper (and even more so with the supplementary materials) provides a lot of results on different downstream
-tasks. They also provide a comprehensive ablation study regarding DINO's components, as well as
+tasks. They also provide a comprehensive ablation study regarding DINO's components, as well as an analysis of how and
+why training fails when the framework lacks some essential tricks.
 
 The figures/tables below were selected because they detail results on common image tasks/datasets.
 
