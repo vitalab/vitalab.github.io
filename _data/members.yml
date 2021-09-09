@@ -77,7 +77,7 @@ current_members:
   - firstname: 'Carl'
     lastname: 'Lemaire'
     picture: 'clemaire.jpeg'
-    interests: "Machine learning, massive parallel computing"
+    interests: "Deep learning, computer vision, DL for bioinformatics, high performance computing, ethics"
     grades:
       - grade:
         name: Research professional
