@@ -12,8 +12,8 @@ pdf: "https://arxiv.org/pdf/1904.02107.pdf"
 
 # Introduction
 
-Finding governing equation for dynamical systems is an essential task in many scientific fields. However, these equations 
-are often unknown. With the increase in availability of large datasets for time series data, many data-driven model 
+Finding governing equations for dynamical systems is an essential task in many scientific fields. However, these equations 
+are often unknown. With the increased availability of large datasets for time series data, many data-driven model 
 discovery approaches have been proposed. However, to find interesting models many of these methods required the data to 
 be in specific coordinate systems which is often not the case. 
 
@@ -90,7 +90,7 @@ The method is trained with 4 loss terms.
 The latent variable time derivatives can be computed by $$\dot{z}(t) = \nabla_x\varphi(x(t))\dot{x}(t)$$. (Essentially 
 forward propagation of the derivates of $$x$$). 
 
-To acheive a truly sparse model, coefficients in $$\Xi$$ under $$0.1$$ are set to zero for the remainder of training at 
+To achieve a truly sparse model, coefficients in $$\Xi$$ under $$0.1$$ are set to zero for the remainder of training at 
 every 500 epochs. 
 
 
@@ -119,8 +119,9 @@ Their model discovers a correct model and given a affine transformation the auth
 
 ## Reaction-diffusion
 
-![](/article/images/sindyautoencoder/figs2.jpg)
+Authors test their method on the lambda-omega reaction-di~~~~ffusion system and obtain the following results:
 
+![](/article/images/sindyautoencoder/figs2.jpg)
 
 
 ## Nonlinear pendulum
@@ -131,11 +132,13 @@ $$
 \ddot{z} = - \sin z
 $$
 
-Authors generate snapshot images with a two dimensional gaussian centered at the center of mass of the pendulum given 
+Authors generate snapshot images with a two dimensional Gaussian centered at the center of mass of the pendulum given 
 by the angle z.  
 
-In theory a linear autoencoder (PCA) could represent this data, but in practice a non-linear autoencoder is required. The 
-autoencoder has a latent dimension of 1. The sencond order derivates must be computed for $$x$$ and propagated to $$z$$. 
+In theory, a linear autoencoder (PCA) could represent this data, but in practice a non-linear autoencoder is required. The 
+autoencoder has a latent dimension of 1. The second order derivatives must be computed for $$x$$ and propagated to the latent space. 
+
+They obtain the following models: 
 
 ![](/article/images/sindyautoencoder/figs3.jpg)
 
@@ -148,4 +151,4 @@ Code is available here: https://github.com/kpchamp/SindyAutoencoders
 
 
 # References
-[^1] Steven L. Brunton, Joshua L. Proctor, and J. Nathan Kutz. Discovering governing equations from data by sparse identification of nonlinear dynamical systems. Proceedings of the National Academy of Sciences, 113(15):3932–3937, April 2016
+[^1]: Steven L. Brunton, Joshua L. Proctor, and J. Nathan Kutz. Discovering governing equations from data by sparse identification of nonlinear dynamical systems. Proceedings of the National Academy of Sciences, 113(15):3932–3937, April 2016
