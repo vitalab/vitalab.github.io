@@ -1,6 +1,22 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2021/09/17
+  links:
+  - title: "Geometric Deep Learning : The Erlangen Programme of ML"
+    url:  https://www.youtube.com/watch?v=w6Pw4MOzMuo
+- date: 2021/09/10
+  links:
+  - title: "Deep Learning to Discover Coordinates for Dynamics: Autoencoders & Physics Informed Machine Learning"
+    url: https://www.youtube.com/watch?v=KmQkDgu-Qp0
+- date: 2021/09/03
+  links:
+  - title: "Tesla AI day"
+    url: https://youtu.be/j0z4FweCy4M?t=2924
+- date: 2021/08/27
+  links: 
+  - title: "Keynote A.Karpathy, Tesla"
+    url: https://www.youtube.com/watch?v=g6bOwQdCJrc&list=PLvXze1V52Yy2OY67mz2Jy-JcnEw8GUZEl&index=11
 - date: 2021/07/23
   links:
   - title: "BANANAS: Bayesian Optimization with Neural Architectures for Neural Architecture search"
