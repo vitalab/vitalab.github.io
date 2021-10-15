@@ -4,7 +4,7 @@ title: "Data-driven discovery of coordinates and governing equations"
 tags: dimensionality-reduction autoencoder
 author: "Thierry Judge"
 cite:
-    authors: "Kathleen Champion, Bethany Lusch, J. Nathan Kutz1, Steven L. Brunton"
+    authors: "Kathleen Champion, Bethany Lusch, J. Nathan Kutz, Steven L. Brunton"
     title: "Data-driven discovery of coordinates and governing equations"
     venue: "Proceedings of the National Academy of Sciences of the United States of America"
 pdf: "https://arxiv.org/pdf/1904.02107.pdf"
@@ -46,7 +46,7 @@ $$
 \dot{X} = \Theta(X)\Xi
 $$
 
-where $$\Xi = (\xi_1, \xi_2, ...\xi_n) \in \mathcal{R}^{p \times n}$$ is the set coefficients for each candidate function. 
+where $$\Xi = (\xi_1, \xi_2, ...\xi_n) \in \mathcal{R}^{p \times n}$$ is the set of coefficients for each candidate function. 
 
 The goal of this method is to find a parsimonious model by using a sparse regression to find $$\Xi$$: 
 
@@ -56,7 +56,7 @@ $$
 
 ## SINDy Autoencoders
 
-SINDy works best with low dimensional data. To work with high dimensional data, such as videos, authors present, SINDy 
+SINDy works best with low dimensional data. To work with high dimensional data, such as videos, authors present SINDy 
 Autoencoders, a new method that combines SINDy and autoencoders. Their method leverages the representative learning of 
 autoencoders to discover the coordinate system and SINDy to find the sparse dynamical model in the autoencoder's 
 latent space.
@@ -108,25 +108,25 @@ The authors construct a high dimensional example base on the chaotic Lorenz syst
 
 ![](/article/images/sindyautoencoder/lorenzeq8.jpg)
 
-The high dimensional data is created with 6 fixes spatial modes $$u_1,..., u_6 \in \mathcal{R}^{128}$$ given by 
+The high dimensional data is created with 6 fixed spatial modes $$u_1,..., u_6 \in \mathcal{R}^{128}$$ given by 
 Legendre polynomial: 
 
 ![](/article/images/sindyautoencoder/lorenzeq9.jpg)
 
-Their model discovers a correct model and given a affine transformation the authors recover the original model. 
+Their model discovers a correct model and given an affine transformation the authors recover the original model. 
 
 ![](/article/images/sindyautoencoder/fig3a.jpg)
 
 ## Reaction-diffusion
 
-Authors test their method on the lambda-omega reaction-di~~~~ffusion system and obtain the following results:
+Authors test their method on the lambda-omega reaction-diffusion system and obtain the following results:
 
 ![](/article/images/sindyautoencoder/figs2.jpg)
 
 
 ## Nonlinear pendulum
 
-The non-linear pendulum is governed by a second order equation: 
+The non-linear pendulum is governed by a second order differential equation: 
 
 $$
 \ddot{z} = - \sin z
@@ -135,8 +135,10 @@ $$
 Authors generate snapshot images with a two dimensional Gaussian centered at the center of mass of the pendulum given 
 by the angle z.  
 
-In theory, a linear autoencoder (PCA) could represent this data, but in practice a non-linear autoencoder is required. The 
-autoencoder has a latent dimension of 1. The second order derivatives must be computed for $$x$$ and propagated to the latent space. 
+The position of the pendulum can be represented by one variable and therefore the latent dimension is 1. Authors point 
+out that linear autoencoders (such as PCA) could not learn the representation of this data and a non-linear autoencoder 
+was required.  
+The second order derivatives must be computed for $$x$$ and propagated to the latent space. 
 
 They obtain the following models: 
 
@@ -144,10 +146,10 @@ They obtain the following models:
 
 
 # Conclusions
-Authors point out the this method requires approximately noise-free data because their method requires good estimates 
+Authors point out that this method requires approximately noise-free data because their method requires good estimates 
 of the derivatives.
 
-Code is available here: https://github.com/kpchamp/SindyAutoencoders
+Code is available here: [https://github.com/kpchamp/SindyAutoencoders](https://github.com/kpchamp/SindyAutoencoders)
 
 
 # References
