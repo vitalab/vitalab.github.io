@@ -56,12 +56,6 @@ journal:
     journal : IEEE Transactions on medical imaging, 40(7) 
     arxiv: arXiv:1909.04087
 
-  - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
-    year: 2020
-    title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
-    journal : Medical Image Analysis
-    arxiv: arXiv:2011.12835v1
-
   - authors: 'N.Painchaud, Y.Skandarani, T.Judge, O.Bernard, A.Lalande, P-M. Jodoin'
     year: 2020
     title: 'Cardiac Segmentation with Strong Anatomical Guarantees'
@@ -321,6 +315,11 @@ journal:
 
 conference_list_title: Conference papers
 conference:
+
+  - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
+    year: 2021
+    title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
+    conference : British Machine Vision Conference (BMVC)
 
   - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
     year: 2021
