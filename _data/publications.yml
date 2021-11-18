@@ -4,8 +4,9 @@ journal:
   - authors: 'Y. Skandarani, A.Lalande, J. Afilalo*, P-M Jodoin*'
     year: 2021
     title: 'GANs in Cardiology'
-    journal: Canadian Journal of Cardiology 
- 
+    journal: in press at Canadian Journal of Cardiology 
+    pages : 1-10
+
   - authors: 'J.H. Legaretta, L. Petit, F. Rheault, G. Theaud, C. Lemaire, M. Descoteaux*, P.-M.Jodoin*'
     year: 2021
     title: 'Tractography filtering using autoencoders'
