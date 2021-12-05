@@ -6,6 +6,7 @@ journal:
     title: 'TractoInferno: A large-scale, open-source, multi-site
 database for machine learning dMRI tractography'
     journal: Scientific Reports - Nature
+    arxiv: bioRxiv 2021.11.29.470422
 
   - authors: 'N.Painchaud, N.Duchateau, O.Bernard, P-M Jodoin'
     year: 2021
@@ -24,13 +25,15 @@ database for machine learning dMRI tractography'
     journal: Elsevier Medical Image Analysis, 72
     pages: 1-23
     doi: https://doi.org/10.1016/j.media.2021.102126
+    arxiv: arXiv:2010.04007
 
   - authors: 'Y. Skandarani, P-M Jodoin, A. Lalande'
     year: 2021
     title : 'Deep Learning based Cardiac MRI segmentation: Do we need experts?'
     journal : Algorithms, 14, 212
     pages : 1-10
-    
+    arxiv : arXiv:2107.11447
+
   - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
     year: 2021
     title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
@@ -46,6 +49,7 @@ database for machine learning dMRI tractography'
     year: 2021
     title: 'GANs for Medical Image Synthesis: An Empirical Study'
     journal: Computerized Medical Imaging and Graphics 
+    arxiv: arXiv:2105.05318
 
   - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
     year: 2021
@@ -375,7 +379,7 @@ conference:
 
   - authors: 'Lemaire C., Aachkar A., Jodoin P-M'
     year: 2019
-    title: 'Spectral Metric for Dataset Complexity Assessment'
+    title: 'Structured pruning of neural networks with budget-aware regularization'
     conference: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
 
   - authors: 'Leclerc S, Smistad E, Grenier T, Lartizien C, Ostvik A, Espinosa F, Jodoin P-M, Lovstakken L, Bernard O.'
