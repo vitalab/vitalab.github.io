@@ -1,6 +1,17 @@
 webinar_list_title: Webinars
 webinars:
 
+
+- date: 2021/12/10
+  links:
+  - title: "Supervised Contrastive Learning"
+    url: https://www.youtube.com/watch?v=MpdbFLXOOIw
+- date: 2021/11/26
+  links:
+  - title: "Selected MICCAI presentations part 2"
+- date: 2021/11/19
+  links:
+  - title: "Selected MICCAI presentations part 1"
 - date: 2021/09/17
   links:
   - title: "Geometric Deep Learning : The Erlangen Programme of ML"
