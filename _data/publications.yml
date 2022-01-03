@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
+    year: 2022
+    title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
+    journal: in press at Medical Image Analysis
+    pages : 1-10 
+
   - authors: 'P. Poulin, G. Theaud, F. Rheault, E. St-Onge, A. Bore, E. Renauld, L. de Beaumont, S. Guay. P-M Jodoin, M. Descoteaux'
     year: 2021
     title: 'TractoInferno: A large-scale, open-source, multi-site
@@ -33,11 +39,6 @@ database for machine learning dMRI tractography'
     journal : Algorithms, 14, 212
     pages : 1-10
     arxiv : arXiv:2107.11447
-
-  - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
-    year: 2021
-    title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
-    journal: Medical Image Analysis 
 
   - authors: 'M-A. Armenta, P-M Jodoin'
     year: 2021
