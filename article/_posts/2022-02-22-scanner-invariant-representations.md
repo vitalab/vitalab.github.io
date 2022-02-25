@@ -12,9 +12,9 @@ pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/mrm.28243"
 
 # Introduction
 
-dMRI acquisitions from different hospitals can be different for a same patient, because of e.g. the brand of the scanner and the scanning protocol. We would like to harmonize acquisitions from different sites. In this approach, a VAE is trained, such that the decoding is conditionned on a site; this allows to convert images from one site to another. This method allows to harmonize data by choosing a reference site and converting all images to it.
+Given a patient and dMRI acquisitions taken at two hospitals on the same day, we would expect these two images to be almost identical. However, the model of the scanner and the scanning protocol influence the images. The goal of dMRI harmonization is to remove site information from the images, such that it is not possible to tell from which site it comes, while still keeping the rest of the information. In this approach, a VAE is trained such that the decoding is conditioned on a site; this allows to convert images from one site to another. This method allows to harmonize data by choosing a reference site and converting all images to it.
 
-The authors claim that their method enable working with an unpaired dataset, while LinearRISH (Mirazaalian) is not appropriate for this. However, it has been shown that LinearRISH can be used with unpaired data[^1]. The advantage of this new method seems to lie in its lower error metrics.
+The authors claim that their method does not require a paired dataset for training, while LinearRISH (Mirazaalian et al. [^2]) requires it. (A paired dataset contains images from multiple sites for each subject; e.g. if there are 2 sites, each subject has a pair of acquisitions, one per site.) However, it has been shown that LinearRISH can be used with unpaired data[^1]. The advantage of this new method seems to lie in its lower error metrics.
 
 # Method
 
@@ -22,46 +22,33 @@ The authors claim that their method enable working with an unpaired dataset, whi
 
 ## Trainable modules
 
-- Encoder that maps x to z
-    + x is a patch of SH (center voxel + 6 neighbors)
-    + z has minimal site (s) information
-- Decoder that maps (z, s) to x_hat
-    + x_hat is constructed such as it seems to come from site s.
-- Adversarial predictor to predict true/fake **from x_hat**
+- Encoder that maps $$x$$ to $$z$$
+    + $$x$$ is a patch of SH (center voxel + 6 neighbors)
+    + $$z$$ has minimal site ($$s$$) information
+- Decoder that maps $$(z, s)$$ to $$\hat{x}$$
+    + $$\hat{x}$$ is constructed such as it seems to come from site $$s$$.
+- Adversarial predictor to predict true/fake from $$\hat{x}$$. The real images come from the dataset.
 - Dense layer (transformation matrix) to project SH back to DWI
 
 ## Losses
 
-- Reconstruction loss (MSE) on x_hat
-- Gaussian prior loss on z
-- Marginal prior loss on z (minimizes the mutual information of z and s)
+- Reconstruction loss (MSE) on $$\hat{x}$$
+- Gaussian prior loss on $$z$$
+- Marginal prior loss on $$z$$ (minimizes the mutual information of $$z$$ and $$s$$)
 - Adversarial loss (the typical approach from GAN training)
 - Loss for the SH-to-DWI projection (no mention of which kind in the paper!)
 
 # Data
 
-* CDMRI Challenge Harmonization dataset
+The CDMRI Challenge Harmonization dataset was used.
+
 * 15 subjects (10 for training-validation, 5 for testing)
 * 2 scanners (Prisma, Connectom)
-* 2 protocols (One with resolution of 30, other with 60; there are other differences)
+* 2 protocols (One with 30 diffusion directions, one with 60; there are other differences, but the number of directions in the main difference)
 * 2 x 2 = 4 sites (Prisma 30, Prisma 60, Connectom 30, Connectom 60)
 * 10 x 4 = 40 acquisitions in the training set
 
-## Preprocessing
-
-(Copy-pasted from the paper)
-
-- These volumes were then corrected for 
-	- EPI distortions, 
-	- subject motion, and
-	- eddy current distortions using FSL’s TOPUP/eddy.37, 38
-- Subjects from the “Connectom” scanner were then registered to the “Prisma” scanner using a affine transformation, 
-- fit to a co-temporally acquired T1-weighted image volume (previously registered to each corresponding FA volume).
-- The b-vectors were then appropriately rotated.
-- In the case of the “Connectom” scanner, geometric distortions due to gradient non-linearities were corrected for using in-house software
-- (For multi-task method) We downsample the spatial resolution of the high resolution scans to 2.4 mm isotropic to test the multi-task method, but keep the angular resolution differences.
-- Mask for white matter tissue
-- 8th order SH (L2 weighted solution instead of SVD solution for under-determined projections)
+See paper for preprocessing details.
 
 # Tasks
 
@@ -75,11 +62,11 @@ The authors claim that their method enable working with an unpaired dataset, whi
 
 They perform extensive evaluation:
 
-- Metrics: computed on FA, MD (mean diffusivity), MK (mean kurtosis) and RTOP (return to origin probability): APE (absolute percent error) and CV (coefficient of variation)
+- Metrics: computed on FA (fractional anisotropy), MD (mean diffusivity), MK (mean kurtosis) and RTOP (return to origin probability): APE (absolute percent error) and CV (coefficient of variation)
 - Ablation tests
-- Post-hoc adversary: train a site predictor on the latent vector z; and make sure we can't predict the site from it
+- Post-hoc adversary: train a site predictor on the latent vector $$z$$; and make sure we can't predict the site from it
 - Baselines:
-    + LinearRISH (Mirzaalian)
+    + LinearRISH (Mirzaalian et al. [^2])
     + Single-site variant of their own method, where one VAE is trained for each site transition (??? confirm this)
 
 ## Reconstruction results
@@ -88,10 +75,15 @@ The following plot shows the error between the reconstructed signal and the true
 
 ![](/article/images/scanner-invariant-representations/fig2.jpg)
 
-## Site prediction from z
+## Site prediction from $$z$$
 
-The post-hoc adversary is able to tell the correct site using the latent vector z **41%** of the time (random chance is 25%). It's hard to tell how good this value is. It's clear that z does contain some site information. Still, the reconstruction results suggest that the method is better at harmonizing than the baseline.
+The post-hoc adversary is able to tell the correct site using the latent vector $$z$$ **41%** of the time (random chance is 25%). It's hard to tell how good this value is. It's clear that $$z$$ does contain some site information. Still, the reconstruction results suggest that the method is better at harmonizing than the baseline.
 
-# Notes
+# Conclusion
 
-[^1]: Even in the LinearRISH paper, the data is not paired. They create paired groups of subjects, on which they apply a mean. There is also a challenge paper where LinearRISH is used with even less constraints: Ning et al. 2020.
+This methods significantly beats the LinearRISH baseline as evaluated here (RMSE on the true images, small and balanced dataset). The amount to which this new method can generalize and can be trusted remains to be discovered. For instance, it may not tolerate site imbalance as well as LinearRISH.
+
+# References and notes
+
+[^1]: Even in the LinearRISH paper, the data is not paired. They create paired groups of subjects, on which they apply a mean. There is also a challenge paper where LinearRISH is used with even less constraints: Ning et al. _Cross-scanner and cross-protocol multi-shell diffusion MRI data harmonization: Algorithms and results_. NeuroImage. 2020
+[^2]: Mirzaalian H, Ning L, Savadjiev P. _Multi-site harmonization of diffusion MRI data in a registration framework._ Brain Imaging Behavior. 2018;12:284–295. 
