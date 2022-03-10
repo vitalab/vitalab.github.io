@@ -20,7 +20,7 @@ The contrastive loss is a **distance-based loss** as opposed to more conventiona
 
 Two samples are either similar or dissimilar. This binary similarity can be determined using several approaches:
 
-* The N closests neighbors of a sample in input space (e.g. pixel space) are considered similar; all others are considered dissimilar. (This approch yields a smooth latent space; e.g. the latent vectors for two similar views of an object are close)
+* The N closest neighbors of a sample in input space (e.g. pixel space) are considered similar; all others are considered dissimilar. (This approach yields a smooth latent space; e.g. the latent vectors for two similar views of an object are close)
 * To the group of similar samples to a sample, we can add transformed versions of the sample (e.g. using data augmentation). This allows the latent space to be invariant to one or more transformations.
 * We can use a manually obtained label determining if two samples are similar. (For example, we could use the class label. However, there can be cases where two samples from the same class are relatively dissimilar, or where two samples from different classes are relatively similar. Using classes alone does not encourage a smooth latent space.)
 
