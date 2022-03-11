@@ -14,13 +14,15 @@ pdf: "http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf"
 
 ## Summary
 
-The contrastive loss is a **distance-based loss** as opposed to more conventional **error-prediction losses**.  This loss is used to learn embeddings in which two "similar" points have a low Euclidean distance and two "dissimilar" points have a large Euclidean distance.
+The contrastive loss proposed in this work is a **distance-based loss** as opposed to more conventional **error-prediction losses**.  This loss is used to learn embeddings in which two "similar" points have a low Euclidean distance and two "dissimilar" points have a large Euclidean distance.
+
+**While this is one of the earliest of the contrastive losses, this is not the only one.**[^1] For instance, the contrastive loss used in SimCLR is quite different.
 
 ## Proposed method
 
 Two samples are either similar or dissimilar. This binary similarity can be determined using several approaches:
 
-* The N closest neighbors of a sample in input space (e.g. pixel space) are considered similar; all others are considered dissimilar. (This approach yields a smooth latent space; e.g. the latent vectors for two similar views of an object are close)
+* In this work, the N closest neighbors of a sample in input space (e.g. pixel space) are considered similar; all others are considered dissimilar. (This approach yields a smooth latent space; e.g. the latent vectors for two similar views of an object are close)
 * To the group of similar samples to a sample, we can add transformed versions of the sample (e.g. using data augmentation). This allows the latent space to be invariant to one or more transformations.
 * We can use a manually obtained label determining if two samples are similar. (For example, we could use the class label. However, there can be cases where two samples from the same class are relatively dissimilar, or where two samples from different classes are relatively similar. Using classes alone does not encourage a smooth latent space.)
 
@@ -51,3 +53,8 @@ Results are quite convincing.
 
 A [nice blog](https://jdhao.github.io/2017/03/13/some_loss_and_explanations/) on the contrastive loss (and other losses).
 
+## References
+
+[^1]: See Equation 1 and the Related Work section of the SimCLR paper: <https://arxiv.org/pdf/2002.05709.pdf>  
+      see also:  
+      <https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Understanding_the_Behaviour_of_Contrastive_Loss_CVPR_2021_paper.pdf>
