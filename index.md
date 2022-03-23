@@ -4,6 +4,8 @@ title:      The VITALab website
 hidden:     true  # Excluded from the menu
 ---
 
+<!-- -->
+
 <style>
     li {
         margin-bottom: 0.7rem; /* This will make the lists easier to read. */
