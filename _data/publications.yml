@@ -15,15 +15,15 @@ database for machine learning dMRI tractography'
     arxiv: bioRxiv 2021.11.29.470422
 
   - authors: 'N.Painchaud, N.Duchateau, O.Bernard, P-M Jodoin'
-    year: 2021
+    year: 2022
     title: 'Echocardiography Segmentation with Enforced Temporal Consistency'
     journal: IEEE trans. on Medical Imaging
 
   - authors: 'Y. Skandarani, A.Lalande, J. Afilalo*, P-M Jodoin*'
     year: 2021
     title: 'GANs in Cardiology'
-    journal: in press at Canadian Journal of Cardiology 
-    pages : 1-10
+    journal: Canadian Journal of Cardiology 38(2) 
+    pages : 196–203
 
   - authors: 'J.H. Legaretta, L. Petit, F. Rheault, G. Theaud, C. Lemaire, M. Descoteaux*, P.-M.Jodoin*'
     year: 2021
@@ -49,7 +49,6 @@ database for machine learning dMRI tractography'
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
     year: 2021
     title: 'GANs for Medical Image Synthesis: An Empirical Study'
-    journal: Computerized Medical Imaging and Graphics 
     arxiv: arXiv:2105.05318
 
   - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
