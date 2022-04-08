@@ -39,8 +39,8 @@ heterogeneous data.
 ## Multi-Channel Variational Autoencoder
 The authors generalize the VAE by assuming that in a multi-channel scenario the latent representation associated to each
 channel must match a common target distribution. They impose a constraint on the latent representations in an
-information theoretical sense, where each latent representation is enforced to match a common target prior. They specify
-this constraint as:
+information theoretical sense, where each latent representation is enforced to match a common target posterior. They
+specify this constraint as:
 
 $$
 \argmin_{q \in Q} \mathbb{E}_c [ \mathcal{D}_{KL}( q(\mathbf{z}|\mathbf{x}_c,\phi_c) \| p(\mathbf{z}|\mathbf{x}_1,\dots,\mathbf{x}_C,\theta) ) ]
@@ -48,9 +48,11 @@ $$
 
 where $$Q$$ represents a family of distributions parametrized by $$\{\phi_i,\dots,\phi_C\}$$.
 
-By projecting all the channels to a shared latent representation, the channels are assumed to be independent from each
-other conditioned on the latent representation, which allows the authors to factorize the data likelihood
-$$p(\mathbf{x}|\mathbf{z})$$ and formulate sthe objective as:
+The authors use Bayes theorem on the intractable posterior $$p(\mathbf{z}|\mathbf{x})$$ to arrive at a lower bound
+formulation that optimizes the same objective as their constraint. Finally, since all the channels are projected to a
+shared latent representation, they can be assumed independent from each other conditioned on the latent representation,
+which allows the factorization of the data likelihood term $$p(\mathbf{x}|\mathbf{z})$$ so that the final lower bound
+formulation is:
 
 $$
 \mathcal{L} = \mathbb{E}_c [L_c - \mathcal{D}_{KL}( q(\mathbf{z}|\mathbf{x}_c) \| p(\mathbf{z}) )] \\
@@ -86,11 +88,6 @@ examination, adas-cog, cdr, faq tests, and scholarity level) represented by cont
 
 
 # Remarks
-- Given the formulation of the posterior in eqs. (2) and (3), it seems that they try to predict the whole latent
-presentation from each channel: $$q(\mathbf{z}|\mathbf{x}_c,\phi_c)$$. However, it is not clear to me how they aggregate
-the latent representations predicted for each channel into a single posterior w.r.t. an input $$\mathbf{x}$$.
-- I do not understand where the term $$\ln p(\mathbf{x})$$ in the left-hand side of eq. (4) comes from, and how the
-whole left-hand side is the expectation they are seeking to maximize.
 - The theoretical justification for their use of dropout is not well explained in the paper, and I did not understand
 much regarding dropout posterior and Gaussian dropout. I assume one must be familiar with the literature on the subject
 in order to understand those aspects.
