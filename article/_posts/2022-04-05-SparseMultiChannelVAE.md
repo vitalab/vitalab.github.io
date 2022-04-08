@@ -87,12 +87,6 @@ examination, adas-cog, cdr, faq tests, and scholarity level) represented by cont
 ![](/article/images/SparseMultiChannelVAE/figure4.jpg)
 
 
-# Remarks
-- The theoretical justification for their use of dropout is not well explained in the paper, and I did not understand
-much regarding dropout posterior and Gaussian dropout. I assume one must be familiar with the literature on the subject
-in order to understand those aspects.
-
-
 # References
 - Code is available on GitHub: [https://github.com/ggbioing/mcvae](https://github.com/ggbioing/mcvae)
 
