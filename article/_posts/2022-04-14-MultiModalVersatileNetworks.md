@@ -21,7 +21,8 @@ representations useful for downstream tasks in multiple modalities;
 # Introduction
 The authors' motivation is to propose a network for joint video-audio-text representation that respects four properties:
 1. Able to take as input any of the three modalities;
-2. Respect the specificity, i.e. dimensionality, of the modalities: audio and video are much finer than text;
+2. Respect the specificity of the modalities: audio and video are much finer than text, i.e. their dimensionality is
+higher and they contain a lot of details, by contrast to the high-level, coarse information provided by text data;
 3. Enable the different modalities to be easily compared even when they are never seen together during training;
 4. Efficiently applicable to visual data coming in the form of dynamic videos or static images.
 
