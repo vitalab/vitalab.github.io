@@ -1,7 +1,46 @@
 webinar_list_title: Webinars
 webinars:
 
-
+- date: 2022/04/15
+  links:
+  - title: "Lecture 13: Attention networks"
+    url: https://www.youtube.com/watch?v=YAgjfMR9R_M
+- date: 2022/04/08
+  links:
+  - title: "Lecture 13: Attention networks"
+    url: https://www.youtube.com/watch?v=YAgjfMR9R_M
+- date: 2022/03/25
+  links:
+  - title: "Transformers for Multimodal Self Supervised Learning from Raw Video, Audio and Text"
+    url: https://www.youtube.com/watch?v=V3gY_hyATU8
+- date: 2022/03/18
+  links:
+  - title: "ConvNeXt: Convolutions return"
+    url:  https://www.youtube.com/watch?v=yVKiMh2vEWQ&amp;t=268s
+- date: 2022/03/11
+  links:
+  - title: "Negative Data Augmentation"
+    url: https://www.youtube.com/watch?v=K-1mN2mz66k
+- date: 2022/03/04
+  links:
+  - title: "Divide and contrast"
+    url: https://www.youtube.com/watch?v=_DzACV7gu2U
+- date: 2022/02/18
+  links:
+  - title: "TMLR - A New Open Journal For Machine Learning"
+    url: https://www.youtube.com/watch?v=Uc1r1LfJtds
+- date: 2022/02/11
+  links:
+  - title: "GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models"
+    url: https://www.youtube.com/watch?v=gwI6g1pBD84
+- date: 2022/02/04
+  links:
+  - title: "MIDL 2021, A3, Kervadec et. al., Full Paper"
+    url: https://www.youtube.com/watch?v=ApKsoowlEGQ
+- date: 2022/01/28
+  links:
+  - title: "Interpretable Neural Networks for Computer Vision: Clinical Decisions that are Aided, not Automated"
+    url: https://www.youtube.com/watch?v=x7U5qC6eMnE
 - date: 2021/12/10
   links:
   - title: "Supervised Contrastive Learning"
