@@ -13,8 +13,9 @@ pdf: "https://proceedings.neurips.cc/paper/2020/file/0060ef47b12160b9198302ebdb1
 
 # Highlights
 - Introduce the notion of a MultiModal Versatile (MMV) network, that can ingest multiple modalities and outputs
-representations useful for downstream tasks in multiple modalities;
-    - The papers especially studies how best to combine the modalities, so that representations respect four properties
+common representations useful for downstream tasks;
+    - The paper especially studies how best to combine the modalities, so that the common representations respect
+      properties deemed useful by the authors.
 - Introduce the process of deflation, to efficiently apply networks on video data to static images.
 
 
@@ -33,7 +34,8 @@ audio $$x_a$$ and text $$x_t$$. For each modality $$x_m$$, the authors propose t
 network* $$f_m$$ that outputs a *representation vector* of dimension $$d_m$$, such that
 $$f_m: \mathcal{X}_m \rightarrow \mathbb{R}^{d_m}$$. Finally, modality specific *projection heads*
 $$g_{m \rightarrow s}$$ map these representation vectors to vectors $$z_{m,s}$$ in a space $$S_s$$ shared between
-modalities. Thus, the final representation of an input modalities is:
+a set of modalities $$s$$ (e.g. $$s = va$$ for a joint visual-audio space). Thus, the final representation of an input
+modality is:
 
 $$
 z_{m,s} = g_{m \rightarrow s}( f_m(x_m) )
@@ -41,7 +43,7 @@ $$
 
 The authors' goal is to find the best way to combine the modality specific representation vectors into a shared space,
 a process which they represent by what they call *embedding graphs*. The figure below represents different embedding
-graphs discussed in the paper":
+graphs discussed in the paper:
 
 ![](/article/images/MultiModalVersatileNetworks/figure1.jpg)
 
@@ -49,7 +51,7 @@ graphs discussed in the paper":
 ## MMV: MultiModal Versatile Networks
 Between the different embedding graphs proposed in Fig. 1, the authors settle on the Fine And Coarse spaces (FAC). They
 argue that a higher-dimensional video-audio shared space ($$S_{va}$$) is necessary, since these modalities contain finer
-details than the high-level, coarse audio modality. However, since another projection maps $$S_{va}$$ to the shared
+details than the high-level, coarse text modality. However, since another projection head maps $$S_{va}$$ to the shared
 video-audio-text space ($$S_{vat}$$), then ultimately all modalities can still be compared to one another easily.
 
 To train their network in a self-supervised manner, the authors use a contrastive loss in the shared embeddings (e.g.
@@ -97,10 +99,10 @@ specific representation vectors $$f_m(x_m)$$, with the feature model $$f_m$$ eit
 
 
 # Remarks
-- The authors insist that they do not learn construct the shared space between audio-text explicitly, but rather learn
-it with the video as intermediary. However, they have two different audio tracks: the narration and the video audio
-itself. So it seems to me that they could learn explicitly to associate audio and text if they used the video audio. Or
-are both the video audio and the narration merged into a single audio track?
+- The authors insist that they do not learn construct the audio-text shared space explicitly, but rather learn it with
+the video as intermediary. However, they have two different audio tracks: the narration and the video audio itself. So
+it seems to me that they could learn explicitly to associate audio and text if they used the video audio. Or are both
+the video audio and the narration merged into a single audio track?
 
 
 # References
