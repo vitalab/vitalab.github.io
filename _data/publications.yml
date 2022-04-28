@@ -1,11 +1,11 @@
 journal_list_title: Journal papers
 journal:
 
-  - authors: 'J.H. Legarreta, L. Petit, M. Descoteaux, P-M. Jodoin'
+  - authors: 'B. Anctil-Robitaille, A. Théberge, P-M Jodoin, M. Descoteaux, C. Desrosiers, H. Lombaert'
     year: 2022
-    title: 'Generative sampling in tractography using autoencoders (GESTA)'
-    journal: Medical Image Analysis
-
+    title: 'Manifold-aware Synthesis of High-resolution Diffusion from Structural Imaging'
+    journal: Frontiers in Neuroimaging
+ 
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2022
     title: 'The Dos and Donts of Reinforcement Learning for Tractography'
