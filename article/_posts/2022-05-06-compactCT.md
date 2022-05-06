@@ -21,7 +21,7 @@ In this paper, the authors propose a **Compact Vision Transformer** as well as a
 
 # Methods
 
-The main difference between the original ViT network and the proposed CVT and CCT networks are illustrated in the following figure in which the *Transformer Encoder* is the same as the one originally proposed by Dosovitskiy. 
+The main difference between the original ViT network and the proposed CVT and CCT networks are illustrated in the following figure.  Note that the *Transformer Encoder* is the same as the one originally proposed by Dosovitskiy et al. 
 <center><img src="/article/images/compactCT/sc02.jpg" width="600"> </center>
 
 <center><img src="/article/images/compactCT/sc04.jpg" width="100"> <br><font size="1">(Dosovitskiy et al’s Vision Transformer (ViT))</font></center>
@@ -29,7 +29,7 @@ The main difference between the original ViT network and the proposed CVT and CC
 ## Compact Vision Transformer (CVT)
 For this model, the patch embedding/tokenization module is the same as for the original ViT.  However, the CVT has no class token and instead use a **sequence pooling** block before the final linear+softmax layer. 
 
-When processing one input image, the output $$x_L$$ of the transformer encoder is an $$n\times d$$ matrix containing $$n$$ vectors of size $$R^d$$.  While average pooling for average these vectors together, sequence pooling (also called *attention pooling*) computes a **weighted average**. This is done by first computing
+When processing one input image, the output $$x_L$$ of the transformer encoder is an $$n\times d$$ matrix containing $$n$$ output vectors of size $$R^d$$.  While the well-known *average pooling* would average these vectors together, sequence pooling (also called *attention pooling*) computes a **weighted average**. This is done by first computing
 
 $$ 
 x'_L = softmax(W.x_L^{T})
@@ -57,7 +57,7 @@ Also, since convolutions are translation invariant, the positional embedding is 
 # Results
 In their notation, the use the number of encoder layers and the convolutional kernel to caracterize their model.  For instance, **CCT-12/7×2** means that the transformer encoder has 12 layers and the conv tokenization has 2 convolutional blocks with 7×7 convolutions.  They follow the same format for other models.
 
-While the authors report all kinds of interesting results, I think that the most explict ones are in Table 1 where CCT with less than 4M parameters get up to 98% accuracy on CIFAR10 and 82.7% accuracy on CIFAR100.   
+While the authors report all kinds of interesting results, I think that the most explict ones are in Table 1 where CCT with less than 4M parameters get up to 98% accuracy on CIFAR10 and 82.7% accuracy on CIFAR100.  Et voilà! 
 
 
 <center><img src="/article/images/compactCT/sc03.jpg" width="700"> </center>
@@ -67,6 +67,5 @@ While the authors report all kinds of interesting results, I think that the most
 
 
 # References
-- Code is available on GitHub: [https://github.com/ggbioing/mcvae](https://github.com/ggbioing/mcvae)
+- Nice blog with comprehensive code: [https://medium.com/pytorch/training-compact-transformers-from-scratch-in-30-minutes-with-pytorch-ff5c21668ed5](https://medium.com/pytorch/training-compact-transformers-from-scratch-in-30-minutes-with-pytorch-ff5c21668ed5)
 
-[^1]: ADNI database website: [http://adni.loni.usc.edu](http://adni.loni.usc.edu)
