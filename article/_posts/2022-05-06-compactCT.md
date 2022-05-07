@@ -32,7 +32,7 @@ For this model, the patch embedding/tokenization module is the same as for the o
 When processing one input image, the output $$x_L$$ of the transformer encoder is an $$n\times d$$ matrix containing $$n$$ output vectors of size $$R^d$$.  While the well-known *average pooling* would average these vectors together, sequence pooling (also called *attention pooling*) computes a **weighted average**. This is done by first computing
 
 $$ 
-x'_L = softmax(W.x_L^{T})
+x'_L = softmax(Wx_L^{T})
 
 $$
 
@@ -43,7 +43,7 @@ z = x'_L x_L \in R^{1\times d}.
 $$
 
 ## Compact Convolutional Transformer (CCT)
-Instead of dealing with patches, the CCT uses convolutions and pooling operations.  This is a fairly straight forward operation which may be summaraized as
+Instead of dealing with patches, the CCT uses convolutions and pooling operations.  This is a fairly straight forward operation which may be summarized as
 
 $$
 x_0 = MaxPool(ReLU(Conv2d(x)))
@@ -51,16 +51,19 @@ $$
 
 where Conv2d has $$d$$ filters to recover the same number of embedding dimensions as the CVT.  Boom! there you go.
 
-Also, since convolutions are translation invariant, the positional embedding is optinal.  The same sequence pooling is used at the end.
+Also, since convolutions are translation invariant, the positional embedding is optional.  The same sequence pooling is used at the end.
 
 
 # Results
-In their notation, the use the number of encoder layers and the convolutional kernel to caracterize their model.  For instance, **CCT-12/7×2** means that the transformer encoder has 12 layers and the conv tokenization has 2 convolutional blocks with 7×7 convolutions.  They follow the same format for other models.
+In their notation, they use the number of encoder layers and the convolutional kernel to characterize their model.  For instance, **CCT-12/7×2** means that the transformer encoder has 12 layers and the conv tokenization has 2 convolutional blocks with 7×7 convolutions.  They follow the same format for other models.
 
-While the authors report all kinds of interesting results, I think that the most explict ones are in Table 1 where CCT with less than 4M parameters get up to 98% accuracy on CIFAR10 and 82.7% accuracy on CIFAR100.  Et voilà! 
-
+While the authors report all kinds of interesting results, I think that the most explict ones are in Table 1 where CCT with less than 4M parameters get up to 98% accuracy on CIFAR10 and 82.7% accuracy on CIFAR100.  Another interesting result is the plot of Fig.4 showing the CIFAR10 accuracy VERSUS the number of parameters.  Here again, CCT win.  Et voilà! 
 
 <center><img src="/article/images/compactCT/sc03.jpg" width="700"> </center>
+
+<center><img src="/article/images/compactCT/sc05.jpg" width="500"> </center>
+
+
 
 
 
