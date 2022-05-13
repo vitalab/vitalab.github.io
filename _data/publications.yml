@@ -343,6 +343,16 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'T. Judge, A. Judge, P-M Jodoin'
+    year: 2022
+    title: 'Anatomically Constrained Semi-supervised Learning for Echocardiography Segmentation'
+    conference : Medical Imaging with Deep Learning (MIDL)
+
+  - authors: 'A. Theberge, P-M Jodoin*, M.Descoteaux*'
+    year: 2022
+    title: 'The dos and donts of reinforcement learning for tractography'
+    conference: Medical Imaging with Deep Learning (MIDL)
+
   - authors: 'B. Kim, J. Dolz, C. Desrosiers, P-M Jodoin '
     year: 2021
     title: 'Privacy Preserving for Medical Image Analysis via Non-Linear Deformation Proxy'
