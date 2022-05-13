@@ -1,5 +1,9 @@
 webinar_list_title: Webinars
 webinars:
+- date: 2022/05/27
+  links:
+  - title: "Equilibrium approaches to deep learning: One (implicit) layer is all you need"
+    url: https://www.youtube.com/watch?v=NbYxGLWKbVc
 - date: 2022/05/13
   links:
   - title: "Equilibrium approaches to deep learning: One (implicit) layer is all you need"
