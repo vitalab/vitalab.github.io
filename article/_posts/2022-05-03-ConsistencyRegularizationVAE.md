@@ -20,13 +20,13 @@ than the triplet loss in the specific case of image VAEs.
 
 # Introduction
 The authors aim to solve what they consider the *inconsistency* problem in VAEs, which consists of transformations of
-images that do not affect their semantic content (e.g. translation, rotation, scaling, etc.) being encoded far-away from
+images that do not affect their semantic content (e.g. translation, rotation, scaling, etc.) being encoded far away from
 the original images themselves in the latent space (see fig. 1).
 
 ![](/article/images/ConsistencyRegularizationVAE/figure1.jpg)
 
 The authors argue that while contrastive learning and consistency regularization have been applied to other networks
-on the logit output, and that their method is novel for applying that concept to the latent space of a VAE.
+on the logit output, their method is nonetheless novel for applying that concept to the latent space of a VAE.
 
 
 # Methods
