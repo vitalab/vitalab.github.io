@@ -343,6 +343,11 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'T. Judge, O. Bernard, M. Porumb, A. Chartsias, A. Beqiri,  P-M Jodoin'
+    year: 2022
+    title: 'CRISP - Reliable Uncertainty Estimation for Medical Image Segmentation'
+    conference : MICCAI
+
   - authors: 'T. Judge, A. Judge, P-M Jodoin'
     year: 2022
     title: 'Anatomically Constrained Semi-supervised Learning for Echocardiography Segmentation'
