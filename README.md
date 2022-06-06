@@ -8,5 +8,4 @@ Videos & Images Theory and Analytics Laboratory (VITAL)
 at the [Université de Sherbrooke](https://www.usherbrooke.ca/), headed by
 Professor [Pierre-Marc Jodoin](http://info.usherbrooke.ca/pmjodoin/).
 
-Please, read our [CONTRIBUTING](CONTRIBUTING.md) guidelines to contribute with
-your reviews.
+Please, read our [contributors' guide](how-to-contribute.md) to add your own reviews.

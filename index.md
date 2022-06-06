@@ -17,4 +17,4 @@ hidden:     true  # Excluded from the menu
 
 The goal of this website is to keep our members up to date with new advances in our ever changing research areas.  In that perspective, each time a member of the lab finds an interesting paper or an interesting webinar, he (or she) can share it via this repo.  Since the paper reviews contain tags, the other members of the lab associated with those tags will be notified and invited to comment.  In this way, a paper read and understood by a person gets shared with the rest of the people.  Furthermore, new members of the lab have an immediate access to a well structured literature review, which is great!  
 
-If you want to know how to participate to this repo, please click on the [how-to link](howto).  Enjoy!
+If you want to know how to participate to this repo, please read the [contributors' guide](contribute).  Enjoy!
