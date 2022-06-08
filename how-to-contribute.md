@@ -22,7 +22,7 @@ install Ruby and Jekyll. The instructions on how to setup a Ruby environment, an
 of the website, are provided below.
 
 For further information about Jekyll's syntax, visit the [documentation page](https://jekyllrb.com/docs/). However, note
-that Jekyll's syntax may change in newer versions, and the site's version is freezed. Hence, although
+that Jekyll's syntax may change in newer versions, and the site's version is frozen. Hence, although
 [Liquid tags](https://jekyllrb.com/docs/liquid/tags/) could be used for links, for example, plain old links are used to
 avoid issues building the site.
 
@@ -39,8 +39,8 @@ cd vitalab.github.io
 # Setup the pre-commit hooks, to ensure that the changes you commit will respect the rules enforced by the CI
 bash ./utils/setup_hooks.sh
 ```
-It is important to navigate to the folder where you cloned the repository, since **following commands in this guide will
-assume you are working from inside this repository**.
+It is important to navigate to the folder where you cloned the repository, since the **following commands in this guide
+will assume you are working from inside this repository**.
 
 &nbsp;
 
