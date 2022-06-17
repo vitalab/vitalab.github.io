@@ -16,7 +16,7 @@ In this post I examine the content of the article from a reinforcement learning-
 
 - Current offline reinforcement learning (RL) datasets were conceived from RL agents transitions
 - Learning from human demonstrations does not work with current state-of-the-art offline RL algorithms
-- Temporality helps when learning from human datasets
+- Temporality (i.e. recurrent or future-predicting models) helps when learning from human datasets
 
 # Introduction
 
@@ -155,6 +155,11 @@ The authors provide five lessons to be learned from the experiments.
 (L5) Learning from human data is promising
 
 (L6) Transferring to the real world from simulation can work.
+
+
+# Remarks
+
+- Exp.2 gives kind of strange results, as BC-RNN is able to learn an optimal policy from partly sub-optimal data. However, because it's only BC and not RL, it shouldn't distinguish better from worse transitions. The only explanation I can think of is that, in an appendix, we can see that better operators produced shorter episodes (i.e. they took less time to solve the task). I think this may have the effect of making better transitions "simpler" to learn that worse transitions, leading to BC-RNN learning an optimal policy despite being exposed to less-than-optimal data.
 
 
 # References
