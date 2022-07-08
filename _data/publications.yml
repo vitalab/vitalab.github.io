@@ -60,7 +60,8 @@ database for machine learning dMRI tractography'
   - authors: 'M-A. Armenta, P-M Jodoin'
     year: 2021
     title: 'The Representation Theory of Neural Networks'
-    journal: Mathematics, 9, 3214 
+    journal: Mathematics, 9(24), 3214
+    pages : 1-42
     arxiv: arXiv:2007.12213
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
