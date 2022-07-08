@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'G Theaud, M. Edde, M. Dumont, C.Zotti, M.Zucchelli, S. Deslauriers-Gauthier, R. Deriche, P-M Jodoin, M. Descoteaux'
+    year: 2022
+    title: 'DORIS: a diffusion MRI-based 10 tissue class deep learning segmentation algorithm tailored to improve anatomically-constrained tractography.'
+    journal: in press at Frontiers in Neuroimaging
+    pages : 1-22
+
   - authors: 'B. Anctil-Robitaille, A. Théberge, P-M Jodoin, M. Descoteaux, C. Desrosiers, H. Lombaert'
     year: 2022
     title: 'Manifold-aware Synthesis of High-resolution Diffusion from Structural Imaging'
