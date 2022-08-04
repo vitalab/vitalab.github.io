@@ -1,12 +1,24 @@
 webinar_list_title: Webinars
 webinars:
+- date: 2022/08/05
+  links:
+  - title: "(Part 2) A Path Towards Autonomous AI"
+    url: https://www.youtube.com/watch?v=DokLw1tILlw
+- date: 2022/07/15
+  links:
+  - title: "(Part 1) A Path Towards Autonomous AI"
+    url: https://www.youtube.com/watch?v=DokLw1tILlw
+- date: 2022/07/04-08
+  links:
+  - title: "Summer school on deep learning for medical imaging"
+    url: https://event.fourwaves.com/dlmi2022/
 - date: 2022/05/27
   links:
-  - title: "Equilibrium approaches to deep learning: One (implicit) layer is all you need"
+  - title: "(Part 2) Equilibrium approaches to deep learning: One (implicit) layer is all you need"
     url: https://www.youtube.com/watch?v=NbYxGLWKbVc
 - date: 2022/05/13
   links:
-  - title: "Equilibrium approaches to deep learning: One (implicit) layer is all you need"
+  - title: "(Part 1) Equilibrium approaches to deep learning: One (implicit) layer is all you need"
     url: https://www.youtube.com/watch?v=NbYxGLWKbVc
 - date: 2022/04/15
   links:
