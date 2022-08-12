@@ -1,5 +1,9 @@
 webinar_list_title: Webinars
 webinars:
+- date: 2022/08/12
+  links:
+  - title: "Diffusion Probabilistic Models"
+    url: https://www.youtube.com/watch?v=XCUlnHP1TNM
 - date: 2022/08/05
   links:
   - title: "(Part 2) A Path Towards Autonomous AI"
