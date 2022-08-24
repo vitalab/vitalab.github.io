@@ -1,7 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
-  - authors: 'G Theaud, M. Edde, M. Dumont, C.Zotti, M.Zucchelli, S. Deslauriers-Gauthier, R. Deriche, P-M Jodoin, M. Descoteaux'
+  - authors: 'J. H. Legarreta, L. Petit, P-M. Jodoin*, M. Descoteaux*'
+    year: 2022
+    title: 'Generative sampling in tractography using autoencoders (GESTA)'
+    journal: in revision at Medical Image Analysis
+      
+  - authors: 'G Theaud, M. Edde, M. Dumont, C.Zotti, M.Zucchelli, S. Deslauriers-Gauthier, R. Deriche, P-M Jodoin*, M. Descoteaux*'
     year: 2022
     title: 'DORIS: a diffusion MRI-based 10 tissue class deep learning segmentation algorithm tailored to improve anatomically-constrained tractography.'
     journal: in press at Frontiers in Neuroimaging
