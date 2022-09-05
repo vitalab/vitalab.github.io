@@ -351,6 +351,16 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'J. Haitz Legarreta, L. Petit, P-M. Jodoin*, and M. Descoteaux*'
+    year: 2022
+    title: 'You Only Autoencode Once'
+    conference : ISMRM Diffusion Workshop (abstract) [ORAL]
+
+  - authors: 'A. Théberge, C. Poirier, M. Descoteaux*, and P-M Jodoin*'
+    year: 2022
+    title: 'Incorporating Anatomical Priors into Track-to-Learn'
+    conference : ISMRM Diffusion Workshop (abstract) [ORAL]
+
   - authors: 'T. Judge, O. Bernard, M. Porumb, A. Chartsias, A. Beqiri,  P-M Jodoin'
     year: 2022
     title: 'CRISP - Reliable Uncertainty Estimation for Medical Image Segmentation'
