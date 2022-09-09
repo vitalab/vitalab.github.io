@@ -1,5 +1,9 @@
 webinar_list_title: Webinars
 webinars:
+- date: 2022/08/19
+  links:
+  - title: "Datamodels - Predicting Predictions from Training Data | Andrew Ilyas"
+    url: https://www.youtube.com/watch?v=dgo7nRQcw_E
 - date: 2022/08/12
   links:
   - title: "Diffusion Probabilistic Models"
