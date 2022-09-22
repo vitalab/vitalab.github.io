@@ -1,5 +1,9 @@
 webinar_list_title: Webinars
 webinars:
+- date: 2022/09/16
+  links:
+  - title: "Domain Adaptation with Invariant Representation Learning | Petar Stojanov"
+    url: https://www.youtube.com/watch?v=5A-OnX6pGus
 - date: 2022/08/19
   links:
   - title: "Datamodels - Predicting Predictions from Training Data | Andrew Ilyas"
