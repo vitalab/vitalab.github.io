@@ -22,6 +22,26 @@ professors:
 
 current_members:
 
+  - firstname: 'Félix'
+    lastname: 'Dumais'
+    picture: 'fDumais.jpg'
+    interests: "Brain imaging, harmonization, diffusion MRI, Deep learning"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2022
+        endyear: ''
+
+  - firstname: 'Arnaud'
+    lastname: 'Judge'
+    picture: 'aJudge.jpg'
+    interests: "Cardiac Imaging, Ultrasound, machine learning"
+    grades:
+      - grade:
+        name: MsC
+        startyear: 2023
+        endyear: ''
+
   - firstname: 'Antoine'
     lastname: 'Théberge'
     picture: 'atheberge.jpeg'
@@ -47,8 +67,11 @@ current_members:
       - grade:
         name: MsC
         startyear: 2021
-        endyear:  ''
-
+        endyear: 2022
+      - grade:
+        name: PhD
+        startyear: 2023
+        endyear: ''
 
   - firstname: 'Nathan'
     lastname: 'Painchaud'
@@ -63,16 +86,6 @@ current_members:
         name: PhD
         startyear: 2020
         endyear: ''
-
-  - firstname: 'Marco'
-    lastname: 'Armenta'
-    picture: 'marmenta.jpeg'
-    interests: "Algebra, Quivers, machine learning"
-    grades:
-      - grade:
-        name: PostDoc
-        startyear: 2019
-        endyear: 2021
 
   - firstname: 'Carl'
     lastname: 'Lemaire'
@@ -97,6 +110,19 @@ current_members:
         name: PhD
         startyear: 2018
         endyear: ''
+
+  - firstname: 'Bach'
+    lastname: 'Kim'
+    picture: 'bkim.jpg'
+    interests: "Deep neural networks, adversarial method, privacy protection, continuous learning"
+    grades:
+      - grade:
+        name: PhD
+        startyear: 2018
+        endyear: ''
+        comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
+
+past_members:
 
   - firstname: 'Philippe'
     lastname: 'Poulin'
@@ -123,7 +149,6 @@ current_members:
         endyear: 2021
         comment: 'Co-supervised with C.Lartizien (Lyon)'
 
-
   - firstname: 'Youssef'
     lastname: 'Skandarani'
     picture: 'yskandarani.jpg'
@@ -135,18 +160,15 @@ current_members:
         endyear: 2021
         comment: 'Co-supervised with A.Lalande (Dijon)'
 
-  - firstname: 'Bach'
-    lastname: 'Kim'
-    picture: 'bkim.jpg'
-    interests: "Deep neural networks, adversarial method, privacy protection, continuous learning"
+  - firstname: 'Marco'
+    lastname: 'Armenta'
+    picture: 'marmenta.jpeg'
+    interests: "Algebra, Quivers, machine learning"
     grades:
       - grade:
-        name: PhD
-        startyear: 2018
-        endyear: ''
-        comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
-
-past_members:
+        name: PostDoc
+        startyear: 2019
+        endyear: 2021
 
   - firstname: 'Charles'
     lastname: 'Authier'
