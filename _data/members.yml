@@ -96,6 +96,7 @@ current_members:
         name: Research professional
         startyear: 2019
         endyear: ''
+        comment: 'Part time'
       - grade:
         name: MsC
         startyear: 2017
