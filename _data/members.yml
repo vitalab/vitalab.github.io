@@ -235,8 +235,8 @@ past_members:
     lastname: 'Luo'
     picture: 'zLuo.jpg'
     grades:
-      - grade: PhD
-        name:
+      - grade: 
+        name: PhD
         startyear: 2014
         endyear: 2018
 
