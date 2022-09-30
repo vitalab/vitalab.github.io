@@ -32,6 +32,7 @@ tags:
 - face-detection
 - few-shot-learning
 - GAN
+- geometric-deep-learning
 - GNN  # Graph Neural Networks
 - GOFAI
 - genetic-algorithm
