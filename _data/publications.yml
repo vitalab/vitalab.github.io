@@ -39,8 +39,8 @@ database for machine learning dMRI tractography'
   - authors: 'N.Painchaud, N.Duchateau, O.Bernard, P-M Jodoin'
     year: 2022
     title: 'Echocardiography Segmentation with Enforced Temporal Consistency'
-    journal: IEEE trans. on Medical Imaging
-    pages : 1-12
+    journal: IEEE trans. on Medical Imaging 41(10)
+    pages : 2867-2878
 
   - authors: 'Y. Skandarani, A.Lalande, J. Afilalo*, P-M Jodoin*'
     year: 2022
@@ -355,6 +355,11 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
+
+  - authors: 'J. H. Legarreta, L. Petit, P-M Jodoin, and M. Descoteaux'
+    year: 2022
+    title: Clustering in Tractography Using Autoencoders (CINTA)
+    conference : MICCAI - CDMRI
 
   - authors: 'J. Haitz Legarreta, L. Petit, P-M. Jodoin*, and M. Descoteaux*'
     year: 2022
