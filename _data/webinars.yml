@@ -1,5 +1,14 @@
 webinar_list_title: Webinars
 webinars:
+        
+-date: 2022/10/21
+  links:
+  - title: "βVAE representation learning for real world psychopathology "
+    url: https://www.youtube.com/watch?v=NU6YZVv0q2Y        
+-date: 2022/10/14
+  links:
+  - title: "Fundamentals of Multimodal Representation Learning | Paul Pu Liang "
+    url: https://www.youtube.com/watch?v=ybJXOtJNpNw
 - date: 2022/09/16
   links:
   - title: "Domain Adaptation with Invariant Representation Learning | Petar Stojanov"
