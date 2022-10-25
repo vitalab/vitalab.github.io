@@ -5,3 +5,4 @@ _previews
 .jekyll-cache
 .Rhistory
 *.swp
+.ruby-version
