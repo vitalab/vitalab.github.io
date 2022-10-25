@@ -14,7 +14,7 @@ pdf: "https://openreview.net/pdf?id=3uQ2Z0MhnoE"
 # Highlights
 - Leverage existing SOTA disentangled representation method ($$\beta$$-TCVAE) to learn interpretable representation for
 downstream tasks;
-- Introduce a new multi-path attribution mapping to explain what guided of a downstream networks' prediction (the
+- Introduce a new multi-path attribution mapping to explain what guided a downstream networks' prediction (the
 attribution w.r.t. the input), but also why it had an impact (the attribution w.r.t. the interpretable representation);
 - Method helps to extract causal relations, as well as improve robustness to distribution shifts by detecting
 "shortcuts" learned by models.
@@ -77,7 +77,7 @@ Their results on the synthetic dataset help understand the various attribution p
 
 ![](/article/images/ExplainableDisentangledRepresentations/figure2.jpg)
 
-On the skin lesion dataset, the authors use their method to interpret that the skin brightness and size where most
+On the skin lesion dataset, the authors use their method to interpret that the skin brightness and size were most
 responsible for leading the model to mistakenly predict a mole as a melanoma.
 
 ![](/article/images/ExplainableDisentangledRepresentations/figure4.jpg)
