@@ -30,10 +30,11 @@ journal:
     pages : 1-18
 
   - authors: 'P. Poulin, G. Theaud, F. Rheault, E. St-Onge, A. Bore, E. Renauld, L. de Beaumont, S. Guay. P-M Jodoin, M. Descoteaux'
-    year: 2021
+    year: 2022
     title: 'TractoInferno: A large-scale, open-source, multi-site
 database for machine learning dMRI tractography'
-    journal: Scientific Reports - Nature
+    journal: in press at Scientific Reports - Nature
+    pages : 1-32
     arxiv: bioRxiv 2021.11.29.470422
 
   - authors: 'N.Painchaud, N.Duchateau, O.Bernard, P-M Jodoin'
