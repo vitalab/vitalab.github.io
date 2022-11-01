@@ -16,7 +16,7 @@ pdf: "https://openreview.net/pdf?id=3uQ2Z0MhnoE"
 downstream tasks;
 - Introduce a new multi-path attribution mapping to explain what guided a downstream networks' prediction (the
 attribution w.r.t. the input), but also why it had an impact (the attribution w.r.t. the interpretable representation);
-- Method helps to extract causal relations, as well as improve robustness to distribution shifts by detecting
+- The method helps to extract causal relations, as well as improves robustness to distribution shifts by detecting
 "shortcuts" learned by models.
 
 
@@ -38,8 +38,8 @@ The overall method is summarized in the figure below, and explained in more deta
 
 ## Autoencoder
 To learn human-interpretable factors of variation to be used later in the attribution mechanism, the authors use the
-$$\beta$$-TCVAE[^1]. Very briefly, $$\beta$$-TCVAE is a method that decomposes the KL divergence in VAEs into 3 terms,
-notably the total correlation of the aggregate posterior:
+$$\beta$$-TCVAE[^1]. Very briefly, $$\beta$$-TCVAE is a method that decomposes the KL divergence in VAEs into 3 terms.
+Amongst the 3 terms, the most notable is the total correlation of the aggregate posterior:
 
 $$
 KL(q(z)~\|~\prod_{j=1}^{d} q(z_{j})), \quad \text{with}~d~\text{the number of latent dimensions}
@@ -47,8 +47,8 @@ $$
 
 which can be penalized more heavily to promote a disentangled latent space, without any additional supervision.
 
-A posteriori, the authors visually inspected traversals of individual latent dimensions to manually label the effects
-each dimension captured.
+A posteriori, the authors visually inspected traversals of individual latent dimensions to manually associate
+interpretable generative factors to as many of the latent dimensions as possible.
 
 ## Attribution methods
 The authors mention multiple saliency methods for measuring the contribution of each $$x_i$$ dimension of the input to a
@@ -71,7 +71,7 @@ The authors evaluate their method on:
 
 # Results
 The authors present a huge amount of supplementary results, but here we'll focus on the synthetic dataset and one of the
-medical imaging dataset.
+medical imaging datasets.
 
 Their results on the synthetic dataset help understand the various attribution paths.
 
@@ -83,7 +83,7 @@ responsible for leading the model to mistakenly predict a mole as a melanoma.
 ![](/article/images/ExplainableDisentangledRepresentations/figure4.jpg)
 
 This is only mentioned in the supplementary materials, but their method's interpretability/performance trade-off is
-substantial. In the interpretable settings, the best accuracies they achieved was of 95% for the synthetic dataset and
+substantial. In the interpretable settings, the best accuracies they achieved were of 95% for the synthetic dataset and
 55-60% for the OCT dataset.
 
 Using the same architecture, but allowing to finetune the encoder along with the MLP classification head (abandoning the
