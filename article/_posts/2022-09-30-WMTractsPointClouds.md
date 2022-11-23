@@ -23,7 +23,7 @@ language comprehension and memory task using tractography data.
 # Methods
 
 For each individual, the FA along the tracks and the number of streamlines are
-computed. The points spatial coordinates are augmented with these data.
+computed. The point spatial coordinates are augmented with these data.
 
 Authors:
 - Frame the problem as a regression task.
@@ -36,9 +36,9 @@ Authors:
 ![](/article/images/WMTractsPointClouds/Architecture.jpg)
 
 Use two loss terms:
-- The $L_{pre}$: the MSE between the predicted score and the ground truth score.
+- The $$L_{pre}$$: the MSE between the predicted score and the ground truth score.
 It is computed as the mean between the mentioned losses of the 2 inputs.
-- The $L_{ps}$: Paired-Siamese Loss: the MSE between two differences: the
+- The $$L_{ps}$$: Paired-Siamese Loss: the MSE between two differences: the
 difference between the two groun-truth scores, and the difference between the
 predicted scores.
 
