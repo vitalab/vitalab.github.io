@@ -1,6 +1,22 @@
 webinar_list_title: Webinars
 webinars:
-        
+
+- date: 2023/01/20
+  links:
+  - title: "Sharon Li, Challenges and Opportunities in Out-of-distribution Detection (Part 2)"
+    url: https://www.youtube.com/watch?v=X8XTOiNin0I      
+- date: 2023/01/13
+  links:
+  - title: "Sharon Li, Challenges and Opportunities in Out-of-distribution Detection (Part 1)"
+    url: https://www.youtube.com/watch?v=X8XTOiNin0I
+- date: 2022/12/16
+  links:
+  - title: "Multimodal Machine Learning (part 2)"
+    url: https://www.youtube.com/watch?v=WUUS-34TZtI
+- date: 2022/12/9
+  links:
+  - title: "Multimodal Machine Learning (part 1) "
+    url: https://youtu.be/EwavzM_PoVo 
 - date: 2022/10/21
   links:
   - title: "βVAE representation learning for real world psychopathology "
