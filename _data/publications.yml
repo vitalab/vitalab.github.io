@@ -1,27 +1,36 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
+    year: 2023
+    title: 'Neural Teleportation'
+    journal: Mathematics, 11(2), 480
+    pages: 1-27
+    arxiv: arXiv:2012.01118
+
   - authors: 'J. H. Legarreta, L. Petit, P-M. Jodoin*, M. Descoteaux*'
     year: 2022
     title: 'Generative sampling in tractography using autoencoders (GESTA)'
-    journal: in revision at Medical Image Analysis
-      
+    journal: in press at Medical Image Analysis
+    pages: 1-25
+    arxiv: arxiv:2204.10891
+
   - authors: 'G Theaud, M. Edde, M. Dumont, C.Zotti, M.Zucchelli, S. Deslauriers-Gauthier, R. Deriche, P-M Jodoin*, M. Descoteaux*'
     year: 2022
     title: 'DORIS: a diffusion MRI-based 10 tissue class deep learning segmentation algorithm tailored to improve anatomically-constrained tractography.'
-    journal: in press at Frontiers in Neuroimaging
+    journal: Frontiers in Neuroimaging, (1)
     pages : 1-22
 
   - authors: 'B. Anctil-Robitaille, A. Théberge, P-M Jodoin, M. Descoteaux, C. Desrosiers, H. Lombaert'
     year: 2022
     title: 'Manifold-aware Synthesis of High-resolution Diffusion from Structural Imaging'
-    journal: in press at Frontiers in Neuroimaging
+    journal: Frontiers in Neuroimaging, (1)
     pages : 1-20
     
-  - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
-    year: 2022
-    title: 'The Dos and Donts of Reinforcement Learning for Tractography'
-    journal: Medical Image Analysis
+    #  - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
+    #year: 2022
+    #title: 'The Dos and Donts of Reinforcement Learning for Tractography'
+    #journal: Medical Image Analysis
 
   - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
     year: 2022
@@ -75,12 +84,6 @@ database for machine learning dMRI tractography'
     year: 2021
     title: 'GANs for Medical Image Synthesis: An Empirical Study'
     arxiv: Computer Methods and Programs in Biomedicine-Update (arXiv:2105.05318)
-
-  - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
-    year: 2021
-    title: 'Neural Teleportation'
-    journal: Journal of Neural Networks
-    arxiv: arXiv:2012.01118
 
   - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
     year: 2021
