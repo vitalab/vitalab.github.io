@@ -1,6 +1,12 @@
 webinar_list_title: Webinars
 webinars:
 
+https://www.youtube.com/watch?v=iKAnkb7zURo
+
+- date: 2023/02/03
+  links:
+  - title: "Fast Homomorphic Evaluation of Deep Discretized Neural Networks"
+    url: https://www.youtube.com/watch?v=iKAnkb7zURo
 - date: 2023/01/20
   links:
   - title: "Sharon Li, Challenges and Opportunities in Out-of-distribution Detection (Part 2)"
