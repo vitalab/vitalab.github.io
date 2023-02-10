@@ -10,10 +10,6 @@ cite:
 pdf: "https://www.jacc.org/doi/pdf/10.1016/j.jcmg.2019.05.030"
 ---
 
-<!-- 
-# Highlights
-
-- End to end quality control pipeline for analysis of cardiac magnetic resonance imaging -->
 
 # Introduction
 
@@ -80,8 +76,6 @@ Authors believe that including an uncertainty score in the segmentation networks
 
 Pipeline validation done with comparisons with expert review showed that the QC steps correctly detected erroneous cases.
 
-<!-- 
-The pipeline flagged 26% of healthy patients and 32% of cardiac patients whereas clinical review flagged only 15.2% of healthy patients and 11% of cardiac patients. -->
 
 **Rate of flagged CMRs**
 |  | Pipeline | Clinicial review  |
