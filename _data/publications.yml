@@ -360,6 +360,12 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'B.N. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
+    year: 2023
+    title: Mixup-Privacy: A simple yet effective approach for privacy-preserving segmentation 
+    conference : Information Processing In Medical Imaging (IPMI)
+
+
   - authors: 'J. H. Legarreta, L. Petit, P-M Jodoin, and M. Descoteaux'
     year: 2023
     title: Trading Streamlines in Tractography using Autoencoders (TINTA)
