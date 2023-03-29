@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
+    year: 2023
+    title: 'GANs for Medical Image Synthesis: An Empirical Study'
+    journal: Journal of Imaging, 9(3), 69
+    arxiv: arXiv:2105.05318
+
   - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
     year: 2023
     title: 'Neural Teleportation'
@@ -79,11 +85,6 @@ database for machine learning dMRI tractography'
     journal: Mathematics, 9(24), 3214
     pages : 1-42
     arxiv: arXiv:2007.12213
-
-  - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
-    year: 2021
-    title: 'GANs for Medical Image Synthesis: An Empirical Study'
-    arxiv: Computer Methods and Programs in Biomedicine-Update (arXiv:2105.05318)
 
   - authors: 'A. Théberge, C.Desrosiers, M.Descoteaux*, P-M Jodoin*'
     year: 2021
