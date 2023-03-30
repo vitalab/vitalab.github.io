@@ -363,18 +363,18 @@ conference:
 
   - authors: 'B.N. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
     year: 2023
-    title: Mixup-Privacy: A simple yet effective approach for privacy-preserving segmentation 
+    title: 'Mixup-Privacy: A simple yet effective approach for privacy-preserving segmentation'
     conference : Information Processing In Medical Imaging (IPMI)
 
 
   - authors: 'J. H. Legarreta, L. Petit, P-M Jodoin, and M. Descoteaux'
     year: 2023
-    title: Trading Streamlines in Tractography using Autoencoders (TINTA)
+    title: 'Trading Streamlines in Tractography using Autoencoders (TINTA)'
     conference : ISMRM & ISMRT 
 
   - authors: 'J. H. Legarreta, L. Petit, P-M Jodoin, and M. Descoteaux'
     year: 2022
-    title: Clustering in Tractography Using Autoencoders (CINTA)
+    title: 'Clustering in Tractography Using Autoencoders (CINTA)'
     conference : MICCAI - CDMRI
 
   - authors: 'J. Haitz Legarreta, L. Petit, P-M. Jodoin*, and M. Descoteaux*'
