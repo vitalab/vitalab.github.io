@@ -1,8 +1,6 @@
 webinar_list_title: Webinars
 webinars:
 
-https://www.youtube.com/watch?v=iKAnkb7zURo
-
 - date: 2023/02/03
   links:
   - title: "Fast Homomorphic Evaluation of Deep Discretized Neural Networks"
