@@ -17,6 +17,7 @@ tags:
 - clustering
 - CNN
 - codebook
+- contrastive-learning
 - course
 - ct-scan
 - data-augmentation
@@ -68,6 +69,7 @@ tags:
 - point-cloud
 - pruning-acceleration
 - RBM
+- regression
 - reinforcement
 - remote-sensing
 - representation-learning
