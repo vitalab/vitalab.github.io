@@ -69,7 +69,7 @@ Two tasks are considered to test the discriminative powers of TractoFormer using
 
 ![](/article/images/tractoformer/fig3.jpeg)
 
-TractoFormer was able to achieve 100% accuracy in the first task. Morever, the attention maps succesfully identified CST tracts. For the second task, results are a bit less conclusive:
+TractoFormer was able to achieve 100% accuracy in the first task. Moreover, the attention maps succesfully identified CST tracts. For the second task, results are a bit less conclusive:
 
 ![](/article/images/tractoformer/tab1.jpeg)
 ![](/article/images/tractoformer/fig5.jpeg)
