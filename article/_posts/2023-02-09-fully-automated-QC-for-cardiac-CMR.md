@@ -98,7 +98,6 @@ Quality control measures allow fully autonomous processing of CMR exams, while f
 The pipeline can facilitate the creation of a large set of reference values for characterization of cardiac function. The pipeline allows for much shorter computation time compared to commercial software for semi-automated segmentation and feature tracking. 
 
 # References
-[^1]: Oksuz, Ilkay, et al. "Deep learning using K-space based data augmentation for automated cardiac MR motion artefact detection." Medical Image Computing and Computer Assisted Intervention–MICCAI 2018: 21st International Conference, Granada, Spain, September 16-20, 2018, Proceedings, Part I. Springer International Publishing, 2018.
+[^1]: Oksuz I, Ruijsink B, Puyol-Anton E, et al. Deep learning using K-space based data augmentation for automated cardiac MR motion artefact detection. In: Medical Image Computing and Computer-Assisted Intervention - MICCAI 2018. Lecture Notes in Computer Science. Springer, 2018;11070:250–8.
 
-[^2]: I. Oksuz et al., "Automatic left ventricular outflow tract classification for accurate cardiac MR planning," 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018), Washington, DC, USA, 2018, pp. 462-465, doi: 10.1109/ISBI.2018.8363616.
-
+[^2]: Oksuz I, Ruijsink B, Puyol-Anton E, et al. Automatic left ventricular outflow tract classification for accurate cardiac MR planning. IEEE 15th Int Symp Biomed Imaging 2018:462–5
