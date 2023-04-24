@@ -15,7 +15,7 @@ pdf: "https://www.jacc.org/doi/pdf/10.1016/j.jcmg.2019.05.030"
 
 Clinical use of deep learning algorithms in cardiac image segmentation analysis is limited due to unavoidable issues with image quality, artifacts and anatomical variation.
 
-The objective was to develop robust quality control measures in order to facilitate translation of deep learning methods of CMR image analysis into clinical pratice.
+The objective was to develop robust quality control measures in order to facilitate translation of deep learning methods of cardiac magnetic resonance (CMR) image analysis into clinical pratice.
 
 # Methods
 
@@ -31,13 +31,13 @@ In both cases ROI extraction is used to deal with variable image size, in order 
 
 Motion artifact detection
 - 2D CNN with LSTM layer
-- k-space corruption for data augmentation to provide balanced classes. In the fourrier space, change some lines from one image slice with lines from other slices.
+- k-space corruption for data augmentation to provide balanced classes. In the fourrier space, change some lines from one image slice with lines from other slices [^1].
 ![](/article/images/cardiacQCpipeline/k-space-transformation.jpg)
 <!-- - https://arxiv.org/pdf/1808.05130.pdf -->
 
 Detection of erroneous planning of 4 chamber view
 - Classification of presence of left ventricular outflow tract (LVOT) in images (246 CMR images from UK Biobank).
-- 5 layer, 2D CNN (LeNet architecture) outperformed other classifiers such as K-Nearest Neigbours, SVM, Random Forest, etc.
+- 5 layer, 2D CNN (LeNet architecture) outperformed other classifiers such as K-Nearest Neigbours, SVM, Random Forest, etc. [^2]
 <!-- - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8363616 -->
 
 ## Step 2: Image segmentation
@@ -52,8 +52,8 @@ Steps used in parameter calculations:
 - Align short and long axis imaging stacks
 - Calculate LV and RV volume curves and LV mass (LVM)
 - Calculate metrics from volume curves (EDV, ESV, peak ejection rate, etc.)
-- Feature tracking with end-diastolic LV wall as ROI. Using Medical Image Registration ToolKit.
-- More metrics from feature tracking. Included Global circumferential strain, radial strain and longitudinal strain.
+- Feature tracking with end-diastolic LV wall as ROI. Using Medical Image Registration ToolKit (https://mirtk.github.io/).
+- More metrics from feature tracking. Included global circumferential strain, radial strain and longitudinal strain.
 
 ## Step 4: Post-analysis QC (QC2)
 
@@ -86,7 +86,7 @@ Pipeline validation done with comparisons with expert review showed that the QC 
 
 It seems however that the pipeline may systematically remove unhealthy subjects based on medical condition rather than image/metric quality.
 
-Sesitivity to errors in volume curves and strain was high. However, the specificity shows that it is very sensitive to false positive cases (flags valid sequences as erroneous)
+Sensitivity to errors in volume curves and strain was high. However, the specificity shows that it is very sensitive to false positive cases (flags valid sequences as erroneous)
 
 ![](/article/images/cardiacQCpipeline/validationResultsTable.jpg)
 
@@ -95,7 +95,10 @@ Sesitivity to errors in volume curves and strain was high. However, the specific
 
 Quality control measures allow fully autonomous processing of CMR exams, while flagging possible problematic cases for clinician review. 
 
-The pipeline can facilitates creation of a large set of reference values for characterization of cardiac function. The pipeline allows for much shorter computation time compared to semi-automated segmentation and FT commercial software. 
+The pipeline can facilitate the creation of a large set of reference values for characterization of cardiac function. The pipeline allows for much shorter computation time compared to commercial software for semi-automated segmentation and feature tracking. 
 
+# References
+[^1]: Oksuz, Ilkay, et al. "Deep learning using K-space based data augmentation for automated cardiac MR motion artefact detection." Medical Image Computing and Computer Assisted Intervention–MICCAI 2018: 21st International Conference, Granada, Spain, September 16-20, 2018, Proceedings, Part I. Springer International Publishing, 2018.
 
+[^2]: I. Oksuz et al., "Automatic left ventricular outflow tract classification for accurate cardiac MR planning," 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018), Washington, DC, USA, 2018, pp. 462-465, doi: 10.1109/ISBI.2018.8363616.
 
