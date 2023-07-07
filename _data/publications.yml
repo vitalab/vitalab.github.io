@@ -1,5 +1,15 @@
 journal_list_title: Journal papers
 journal:
+ 
+  - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
+    year: 2023
+    title: 'What Matters in Reinforcement Learning for Tractography'
+    journal: Medical Image Analysis
+ 
+  - authors: 'F. Dumais, J.H Legarreta, C. Lemaire, P. Poulin, F. Rheault, L. Petit, M. Barakovic, S. Magon, M. Descoteaux*, P-M Jodoin*'
+    year: 2023
+    title: 'FIESTA: Autoencoders for accurate fiber segmentation in tractography'
+    journal: Neuroimage 
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
     year: 2023
@@ -32,12 +42,7 @@ journal:
     title: 'Manifold-aware Synthesis of High-resolution Diffusion from Structural Imaging'
     journal: Frontiers in Neuroimaging, (1)
     pages : 1-20
-    
-    #  - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
-    #year: 2022
-    #title: 'The Dos and Donts of Reinforcement Learning for Tractography'
-    #journal: Medical Image Analysis
-
+   
   - authors: 'A. Duran, O. Rouvière, T. Jaouen, P-M. Jodoin, C. Lartizien'
     year: 2022
     title: 'ProstAttention-Net: a deep attention model for prostate cancer segmentation by aggressiveness in MRI scans'
@@ -361,11 +366,21 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'H. J Ling, N. Painchaud, P-Y Courand, P-M Jodoin, D. Garcia, and O. Bernard'
+    year: 2023
+    title: 'Extraction of volumetric indices from echocardiography: which deep learning solution
+for clinical use?'
+    conference : FIMH 
+
+  - authors: 'T. Judge, O. Bernard, W-J. Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
+    year: 2023
+    title: 'Asymmetric Contour Uncertainty Estimation for Medical Image Segmentation'
+    conference : MICCAI 
+
   - authors: 'B.N. Kim, J. Dolz, P-M Jodoin, C. Desrosiers'
     year: 2023
     title: 'Mixup-Privacy: A simple yet effective approach for privacy-preserving segmentation'
     conference : Information Processing In Medical Imaging (IPMI)
-
 
   - authors: 'J. H. Legarreta, L. Petit, P-M Jodoin, and M. Descoteaux'
     year: 2023
