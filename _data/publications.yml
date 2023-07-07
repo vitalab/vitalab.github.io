@@ -15,6 +15,7 @@ journal:
     year: 2023
     title: 'GANs for Medical Image Synthesis: An Empirical Study'
     journal: Journal of Imaging, 9(3), 69
+    pages: 1-16
     arxiv: arXiv:2105.05318
 
   - authors: 'M-A. Armenta, T. Judge, N. Painchaud, Y. Skandarani, C. Lemaire, G. G. Sanchez, P. Spino, P-M Jodoin '
