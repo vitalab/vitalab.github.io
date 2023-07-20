@@ -9,7 +9,8 @@ journal:
   - authors: 'F. Dumais, J.H Legarreta, C. Lemaire, P. Poulin, F. Rheault, L. Petit, M. Barakovic, S. Magon, M. Descoteaux*, P-M Jodoin*'
     year: 2023
     title: 'FIESTA: Autoencoders for accurate fiber segmentation in tractography'
-    journal: Neuroimage 
+    pages: 1-36
+    journal: in press at Neuroimage 
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
     year: 2023
