@@ -1,7 +1,10 @@
 webinar_list_title: Webinars
 webinars:
 
-
+- date: 2023/11/08
+  links:
+  - title: "Upper Bound 2023: 5 Years of GPTs with Finbarr Timbers"
+    url: https://www.youtube.com/watch?v=YA0pzBYAV2Q
 - date: 2023/21/07
   links:
   - title: "Petar Veličković  Graph Neural Networks: Geometric, Structural and Algorithmic Perspectives  Part 2"
