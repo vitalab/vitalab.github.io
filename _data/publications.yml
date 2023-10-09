@@ -4,8 +4,10 @@ journal:
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2023
     title: 'What Matters in Reinforcement Learning for Tractography'
-    journal: Medical Image Analysis
- 
+    journal: in press at Medical Image Analysis
+    pages: 1-52
+    arxiv: arxiv:2305.09041
+
   - authors: 'F. Dumais, J.H Legarreta, C. Lemaire, P. Poulin, F. Rheault, L. Petit, M. Barakovic, S. Magon, M. Descoteaux*, P-M Jodoin*'
     year: 2023
     title: 'FIESTA: Autoencoders for accurate fiber segmentation in tractography'
