@@ -102,6 +102,8 @@ current_members:
         startyear: 2017
         endyear: 2018
 
+past_members:
+
   - firstname: 'Jon Haitz'
     lastname: 'Legarreta Gorroño'
     picture: 'jhlegarreta.jpeg'
@@ -110,7 +112,7 @@ current_members:
       - grade:
         name: PhD
         startyear: 2018
-        endyear: ''
+        endyear: 2023
 
   - firstname: 'Bach'
     lastname: 'Kim'
@@ -120,10 +122,8 @@ current_members:
       - grade:
         name: PhD
         startyear: 2018
-        endyear: ''
+        endyear: 2023
         comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
-
-past_members:
 
   - firstname: 'Philippe'
     lastname: 'Poulin'
