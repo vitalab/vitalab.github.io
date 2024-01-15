@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
- 
+
+  - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
+    year: 2024
+    title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
+    journal: sumitted to IEEE Transactions on Medical Imaging
+    pages: 1-12
+
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2023
     title: 'What Matters in Reinforcement Learning for Tractography'
