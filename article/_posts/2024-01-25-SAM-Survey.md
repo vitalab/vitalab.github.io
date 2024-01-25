@@ -17,7 +17,7 @@ pdf: "https://arxiv.org/pdf/2305.03678.pdf"
 
 
 ## Introduction
-SAM (Segment Anything Model) is a foundation model for image segmentation (c.f. Fig 2).  It has shown promise in natural image processing and image generation due to its flexibility in prompting (c.f. Fig 1). However, its applicability in medical image segmentation, which differs significantly from natural images, remains uncertain (c.f. Fig 3). This paper reviews efforts to adapt SAM to medical image segmentation tasks, including empirical benchmarking and methodological adaptations, and discusses potential future directions.
+SAM (Segment Anything Model) is a foundation model for image segmentation (c.f. Fig 2).  It has shown promise in natural image processing and image generation due to its flexibility in prompting (c.f. Fig 1).  The main takeaway of this paper is that <ins>SAM's applicability in medical image segmentation, which differs significantly from natural images, remains uncertain</ins> (c.f. Fig 3). This paper reviews efforts to adapt SAM to medical image segmentation tasks, including empirical benchmarking and methodological adaptations, and discusses potential future directions.
 
 ![](/article/images/sam_medical/sc01.jpg)
 
@@ -30,20 +30,14 @@ The paper examines SAM's effectiveness in 12 medical image segmentation tasks, s
 	- Tumor segmentation.
 	- Non-tumor tissue segmentation.
 	- Cell nuclei segmentation on whole slide imaging (WSI).
-
 -   **Liver Tumor Segmentation from Contrast-Enhanced Computed Tomography (CECT) Volumes.**
-
 -    **Polyps Segmentation from Colonoscopy Images.**
-
 -    **Brain MRI Segmentation:**
 	- Comparing SAM with the Brain Extraction Tool (BET) for brain extraction and segmentation.
-
 -    **Abdominal CT Organ Segmentation:**
         - Evaluating zero-shot capabilities of SAM for abdominal organ segmentation.
-
 -    **Endoscopic Surgical Instrument Segmentation:**
         - Performance evaluation of SAM on datasets for endoscopic surgical instrument segmentation.
-
 -    **Multi-Dataset Evaluations:**
         - Comprehensive studies evaluating SAM's accuracy on various medical image segmentation datasets covering different organs (e.g., brain, breast, chest, lung, liver, bowel, pancreas, prostate), image modalities (e.g., 2D X-ray, histology, endoscopy, 3D MRI, CT), and health conditions (normal, lesioned).
 
