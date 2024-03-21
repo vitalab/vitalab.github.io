@@ -375,6 +375,11 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
+   
+  - authors: 'T. Judge, O. Bernard, W. Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
+    year: 2024
+    title: 'Propagating uncertainty from predictions to clinical parameters'
+    conference : ISBI 
 
   - authors: 'H. J Ling, N. Painchaud, P-Y Courand, P-M Jodoin, D. Garcia, and O. Bernard'
     year: 2023
