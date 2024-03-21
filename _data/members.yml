@@ -22,7 +22,6 @@ professors:
 
 current_members:
 
-
   - firstname: 'Lévesque'
     lastname: 'Jeremi'
     picture: 'jlevesque.jpg'
@@ -120,7 +119,6 @@ current_members:
 
 past_members:
 
-
   - firstname: 'Jon Haitz'
     lastname: 'Legarreta Gorroño'
     picture: 'jhlegarreta.jpeg'
@@ -142,8 +140,6 @@ past_members:
         endyear: 2024
         comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
 
-
-
   - firstname: 'Carl'
     lastname: 'Lemaire'
     picture: 'clemaire.jpeg'
@@ -159,7 +155,7 @@ past_members:
         startyear: 2017
         endyear: 2018
       
-    - firstname: 'Félix'
+  - firstname: 'Félix'
     lastname: 'Dumais'
     picture: 'fDumais.jpg'
     interests: "Brain imaging, harmonization, diffusion MRI, Deep learning"
@@ -168,7 +164,6 @@ past_members:
         name: Research professional
         startyear: 2022
         endyear: 2024
-
 
   - firstname: 'Philippe'
     lastname: 'Poulin'
