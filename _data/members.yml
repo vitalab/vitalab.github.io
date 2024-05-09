@@ -22,13 +22,29 @@ professors:
 
 current_members:
 
+  - firstname: 'David'
+    lastname: 'Yoan'
+    picture: 'ydavid.jpg'
+    interests: "Deep learning, graph neural network, harmonization, diffusion MRI"
+    grades:
+      - grade:
+        name: Intern
+        startyear: 2024
+        endyear: 2025
+
+      - grade:
+        name: PhD
+        startyear: 2025
+        endyear: ''
+
+
   - firstname: 'Lévesque'
     lastname: 'Jeremi'
     picture: 'jlevesque.jpg'
     interests: "Deep learning, reinforcement learning, white matter imageing, diffusion MRI"
     grades:
       - grade:
-        name: Ph.D.
+        name: MSc
         startyear: 2024
         endyear: ''
 
@@ -68,7 +84,7 @@ current_members:
     interests: "Cardiac Imaging, Ultrasound, machine learning"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2023
         endyear: ''
 
@@ -78,7 +94,7 @@ current_members:
     interests: "Brain imaging, machine learning, reinforcement learning"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2018
         endyear: 2021
       - grade:
@@ -95,7 +111,7 @@ current_members:
         name: undergrad. intern
         startyear: 2015
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2021
         endyear: 2022
       - grade:
@@ -109,7 +125,7 @@ current_members:
     interests: "Cardiac imaging, machine learning, auto-encoders"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2019
         endyear: ''
       - grade:
