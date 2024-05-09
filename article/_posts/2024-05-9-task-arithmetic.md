@@ -30,7 +30,7 @@ Such a task vector is illustrated in figure 1 (a).
 - **Purpose and Use**: Negating a task vector reduces the model's effectiveness on that task, which is useful for "unlearning" undesirable behaviors or biases.
 - **Applications**: Demonstrated for mitigating unwanted behaviors like toxic language generation, with minimal impact on other model functions.  Table 1 illustrates a CLIP model pre-trained on imageNet from which 8 target tasks have been negated.  Results show that negation reduces the performances on one specific task without diterring the performances on the other tasks (control dataset).
 
-![](/article/images/sam_medical/sc03.jpg)
+![](/article/images/task-arithmetic/ta03.jpg)
 
 ### Addition of Task Vectors
 - **Enhancing Multitasking**: Adding task vectors from different tasks improves the model's ability to handle multiple tasks simultaneously.  This is illustrated in figure 3.  As mentioned in the paper :
@@ -44,11 +44,11 @@ be produced."
 - **Improving Sparse Data Performance**: By using task analogies, vector addition can enhance performance on tasks with limited data by leveraging similarities between related tasks.
 As mentioned on the paper : "task analogies in the form “A is to B as C is to D”, and show that task arithmetic using vectors from the ﬁrst three tasks improves performance on task D even if little or no data for that task is available".  An example is illustrated in Table 4 between the Yelp and Amazon dataset, two sentiment analysis datasets.
 
-![](/article/images/sam_medical/sc04.jpg)
+![](/article/images/task-arithmetic/ta04.jpg)
 
 the experiment is further detailed in this screenshot
 
-![](/article/images/sam_medical/sc05.jpg)
+![](/article/images/task-arithmetic/ta05.jpg)
 
 ### Discussion 
 
