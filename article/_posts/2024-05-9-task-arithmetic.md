@@ -1,6 +1,6 @@
 ---
 layout: review
-title: ""
+title: "Editing Models with Task Arithmetic"
 tags: deep learning
 author: "Pierre-Marc Jodoin"
 cite:
