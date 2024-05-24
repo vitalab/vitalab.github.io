@@ -48,11 +48,11 @@ CrossConv layers are used in a higher level module called CrossBlock modules tha
 
 $\text{CrossBlock}(u, V; \theta_z, \theta_v) = (u', V')$ where
 
-$z_i = A(\text{CrossConv}(u, v_i; \theta_z)) \text{for} i = 1...n$, 
+$z_i = A(\text{CrossConv}(u, v_i; \theta_z)) \quad \text{for} \ i = 1...n$, 
 
 $u' = 1/n \sum^n_{i=1}z_i$
 
-$V' = A(\text{Conv}(z_i; \theta_v)) \text{for} i = 1...n$
+$V' = A(\text{Conv}(z_i; \theta_v))  \quad \text{for} \ i = 1...n$
 
 A is a non-linear activation function. In this paper A is a LeakyReLU.
 
