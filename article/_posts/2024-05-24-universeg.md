@@ -13,17 +13,18 @@ pdf: "https://openaccess.thecvf.com/content/ICCV2023/papers/Butoi_UniverSeg_Univ
 
 # Introduction
 
-There are many known issues related to clinical use of image segmentation models including domain shifts, 
+There are many known issues related to clinical use of image segmentation models including most notably, domain shifts. Retraining new models for each new domain or task is unfeasable for clinical researchers without in-depth knowledge of deep learning.
 
-What are tasks...
+Tasks are varied and can be differentiated by segmented class, modality, view, etc.
+![](/article/images/universeg/tasks.jpg)
 
-UniverSeg addresses these issues by providing a fully trained model capable of generalizing to unseen tasks using few labeled examples, without any further training.
+UniverSeg addresses these issues by providing a fully trained singular model capable of generalizing to unseen tasks using few labeled examples, without any further training.
 
-![](/article/images/universeg/global_method.png)
+![](/article/images/universeg/global_method.jpg)
 
 # Method
 
-The typical segmentation tasks $t$ a function $\hat{y} = f^t_\theta(x)$ is learned to estimate a segmenation map $\hat{y}$ from an image $x$.
+In the typical segmentation context for a tasks $t$, a function $\hat{y} = f^t_\theta(x)$ is learned to estimate a segmenation map $\hat{y}$ from an image $x$.
 
 UniverSeg learns a universal function $\hat{y} = f^t_\theta(x^t, S^t)$ to predict a label map for $x^t$ and a task specfic support set $S^t=\{(x^t_j, y^t_j)\}^N_{j=1}$. The support set is composed of labeled images for a given segmentation task.
 
@@ -31,7 +32,7 @@ UniverSeg learns a universal function $\hat{y} = f^t_\theta(x^t, S^t)$ to predic
 
 The structure of the model used in UniverSeg is the same encoder-decoder structure as a U-Net, built with new CrossBlock modules. The model used for experiments contains 5 CrossBlock stages in the encoder and 4 in the decoder.
 
-![](/article/images/universeg/model_architecture.png)
+![](/article/images/universeg/model_architecture.jpg)
 
 ### CrossConv Layer
 
@@ -78,11 +79,11 @@ Synthetic tasks are added to improve generalizability.
 
 Compared to other few-shot baselines, UniverSeg performs better, and in some cases reaches performance similar to task-specific nnUnet baselines (upper-bound). It also requires fewer parameters than most other methods.
 
-![](/article/images/universeg/results.png)
+![](/article/images/universeg/results.jpg)
 
 Support set size has a large impact on segmentation performance of unseen datasets, plateauing starting at around 16. The same trend is observed with support size at training time.
 
-![](/article/images/universeg/support_set_size.png)
+![](/article/images/universeg/support_set_size.jpg)
 
 # Conclusions
 
