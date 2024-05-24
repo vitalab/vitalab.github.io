@@ -89,7 +89,7 @@ Support set size has a large impact on segmentation performance of unseen datase
 
 - Model trained on synthetic data only performed well on medical images during testing.
 - When limiting the training domains, the most accurate model was trained with heart, eyes, abdomen and brain, while the least accurate was trained mostly on lesion tasks.
-- When testing different ensembling/support set sizes, they observed that support set size 64 and ensemble size 1 performed better than support size 2 (4 and 8 also) and ensemble size 64, even if less support examples were seen at inference.
+- When testing different ensembling/support set sizes, support set size 64 and ensemble size 1 performed better than support size 2 (4 and 8 also) and ensemble size 64, even if less total support examples were seen at inference.
 
 
 # Conclusions
