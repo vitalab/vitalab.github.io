@@ -24,9 +24,9 @@ UniverSeg addresses these issues by providing a fully trained singular model cap
 
 # Method
 
-In the typical segmentation context for a tasks $t$, a function $\hat{y} = f^t_\theta(x)$ is learned to estimate a segmenation map $\hat{y}$ from an image $x$.
+In the typical segmentation context for a tasks $$t$$, a function $$\hat{y} = f^t_\theta(x)$$ is learned to estimate a segmenation map $$\hat{y}$$ from an image $$x$$.
 
-UniverSeg learns a universal function $\hat{y} = f^t_\theta(x^t, S^t)$ to predict a label map for $x^t$ and a task specfic support set $S^t=\{(x^t_j, y^t_j)\}^N_{j=1}$. The support set is composed of labeled images for a given segmentation task.
+UniverSeg learns a universal function $$\hat{y} = f^t_\theta(x^t, S^t)$$ to predict a label map for $$x^t$$ and a task specfic support set $$S^t=\{(x^t_j, y^t_j)\}^N_{j=1}$$. The support set is composed of labeled images for a given segmentation task.
 
 ## Model
 
@@ -36,23 +36,23 @@ The structure of the model used in UniverSeg is the same encoder-decoder structu
 
 ### CrossConv Layer
 
-The cross-convolutional layer introduced allows a query feature map $u$ to interact with multiple support feature maps $V = \{v_i\}^n_{i=1}$.
+The cross-convolutional layer introduced allows a query feature map $$u$$ to interact with multiple support feature maps $$V = \{v_i\}^n_{i=1}$$.
 
-$\text{CrossConv}(u, V; \theta_z) = \{z_i\}^n_{i=1}$, where $z_i = \text{Conv}(u||v_i; \theta_z)$
+$$\text{CrossConv}(u, V; \theta_z) = \{z_i\}^n_{i=1}, \text{where} \ z_i = \text{Conv}(u||v_i; \theta_z)$$
 
-Weights $\theta_z$ are reused for each support feature map making the layer invariant to permutations within $V$.
+Weights $$\theta_z$$ are reused for each support feature map making the layer invariant to permutations within $$V$$.
 
 ### CrossBlock Modules
 
 CrossConv layers are used in a higher level module called CrossBlock modules that produce new versions of the query and support representations in at different steps of the network.
 
-$\text{CrossBlock}(u, V; \theta_z, \theta_v) = (u', V')$ where
+$$\text{CrossBlock}(u, V; \theta_z, \theta_v) = (u', V')$$ where
 
-$z_i = A(\text{CrossConv}(u, v_i; \theta_z)) \quad \text{for} \ i = 1...n$, 
+$$z_i = A(\text{CrossConv}(u, v_i; \theta_z)) \quad \text{for} \ i = 1...n$$, 
 
-$u' = 1/n \sum^n_{i=1}z_i$
+$$u' = 1/n \sum^n_{i=1}z_i$$
 
-$V' = A(\text{Conv}(z_i; \theta_v))  \quad \text{for} \ i = 1...n$
+$$V' = A(\text{Conv}(z_i; \theta_v))  \quad \text{for} \ i = 1...n$$
 
 A is a non-linear activation function. In this paper A is a LeakyReLU.
 
@@ -64,7 +64,7 @@ Standard image augmentations are applied independantly to the query and each ele
 
 ## Inference
 
-Inference of the UniverSeg model is done by averaging the output of predictions obtained with different support sets: $\hat{y} = 1/K \sum^K_{i=1}f_\theta(x, S^T_k)$. The size of the support sets is 64 in most experiments.
+Inference of the UniverSeg model is done by averaging the output of predictions obtained with different support sets: $$\hat{y} = 1/K \sum^K_{i=1}f_\theta(x, S^T_k)$$. The size of the support sets is 64 in most experiments.
 
 # Data
 The model is trained using a large dataset named MegaMedical containing many tasks. It contains 26 medical domains, 16 imaging modalities, using images from 53 datasets.
