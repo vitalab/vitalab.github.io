@@ -13,7 +13,7 @@ pdf: "https://openaccess.thecvf.com/content/ICCV2023/papers/Butoi_UniverSeg_Univ
 
 # Introduction
 
-There are many known issues related to clinical use of image segmentation models including most notably, domain shifts. Retraining new models for each new domain or task is unfeasable for clinical researchers without in-depth knowledge of deep learning.
+There are many known issues related to clinical use of image segmentation models including most notably, domain shifts. Retraining new models for each new domain or task is unfeasible for clinical researchers without in-depth knowledge of deep learning.
 
 Tasks are varied and can be differentiated by segmented class, modality, view, etc.
 ![](/article/images/universeg/tasks.jpg)
