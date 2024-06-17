@@ -375,7 +375,18 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
-   
+     
+  - authors: 'A. Judge, T. Judge, N. Duchateau, J. Sokol, R.A. Sandler, O. Bernard, P-M. Jodoin'
+    year: 2024
+    title: 'Domain Adaptation of Echocardiography Segmentation Via Reinforcement Learning'
+    conference : MICCAI 
+  
+  - authors: 'A. Théberge, M.Descoteaux, P-M Jodoin'
+    year: 2024
+    title: 'TractOracle: towards an anatomically-informed reward function for RL-based tractography'
+    conference : MICCAI 
+
+  
   - authors: 'T. Judge, O. Bernard, W. Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
     year: 2024
     title: 'Propagating uncertainty from predictions to clinical parameters'
