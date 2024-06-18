@@ -26,9 +26,9 @@ journal:
     arxiv: arXiv:2012.01118
 
   - authors: 'J. H. Legarreta, L. Petit, P-M. Jodoin*, M. Descoteaux*'
-    year: 2022
+    year: 2023
     title: 'Generative sampling in tractography using autoencoders (GESTA)'
-    journal: in press at Medical Image Analysis
+    journal: Medical Image Analysis, (85)
     pages: 1-25
     arxiv: arxiv:2204.10891
 
@@ -54,7 +54,7 @@ journal:
     year: 2022
     title: 'TractoInferno: A large-scale, open-source, multi-site
 database for machine learning dMRI tractography'
-    journal: in press at Scientific Reports - Nature
+    journal: Nature, Scientific Data, 9, 725
     pages : 1-32
     arxiv: bioRxiv 2021.11.29.470422
 
