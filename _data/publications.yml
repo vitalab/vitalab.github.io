@@ -1,15 +1,24 @@
 journal_list_title: Journal papers
 journal:
- 
+
+  - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
+    year: 2024
+    title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
+    journal: sumitted to IEEE Transactions on Medical Imaging
+    pages: 1-12
+
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2023
     title: 'What Matters in Reinforcement Learning for Tractography'
-    journal: Medical Image Analysis
- 
+    journal: in press at Medical Image Analysis
+    pages: 1-52
+    arxiv: arxiv:2305.09041
+
   - authors: 'F. Dumais, J.H Legarreta, C. Lemaire, P. Poulin, F. Rheault, L. Petit, M. Barakovic, S. Magon, M. Descoteaux*, P-M Jodoin*'
     year: 2023
     title: 'FIESTA: Autoencoders for accurate fiber segmentation in tractography'
-    journal: Neuroimage 
+    pages: 1-36
+    journal: in press at Neuroimage 
 
   - authors: 'Y. Skandarani, P-M Jodoin, A.Lalande'
     year: 2023
@@ -366,6 +375,22 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
+     
+  - authors: 'A. Judge, T. Judge, N. Duchateau, J. Sokol, R.A. Sandler, O. Bernard, P-M. Jodoin'
+    year: 2024
+    title: 'Domain Adaptation of Echocardiography Segmentation Via Reinforcement Learning'
+    conference : MICCAI 
+  
+  - authors: 'A. Théberge, M.Descoteaux, P-M Jodoin'
+    year: 2024
+    title: 'TractOracle: towards an anatomically-informed reward function for RL-based tractography'
+    conference : MICCAI 
+
+  
+  - authors: 'T. Judge, O. Bernard, W. Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
+    year: 2024
+    title: 'Propagating uncertainty from predictions to clinical parameters'
+    conference : ISBI 
 
   - authors: 'H. J Ling, N. Painchaud, P-Y Courand, P-M Jodoin, D. Garcia, and O. Bernard'
     year: 2023

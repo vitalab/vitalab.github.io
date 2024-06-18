@@ -22,14 +22,60 @@ professors:
 
 current_members:
 
-  - firstname: 'Félix'
-    lastname: 'Dumais'
-    picture: 'fDumais.jpg'
-    interests: "Brain imaging, harmonization, diffusion MRI, Deep learning"
+  - firstname: 'David'
+    lastname: 'Yoan'
+    picture: 'ydavid.jpg'
+    interests: "Deep learning, graph neural network, harmonization, diffusion MRI"
+    grades:
+      - grade:
+        name: Intern
+        startyear: 2024
+        endyear: 2025
+
+      - grade:
+        name: PhD
+        startyear: 2025
+        endyear: ''
+
+
+  - firstname: 'Lévesque'
+    lastname: 'Jeremi'
+    picture: 'jlevesque.jpg'
+    interests: "Deep learning, reinforcement learning, white matter imageing, diffusion MRI"
+    grades:
+      - grade:
+        name: MSc
+        startyear: 2024
+        endyear: ''
+
+  - firstname: 'Célia'
+    lastname: 'Goujat'
+    picture: 'cgoujat.jpg'
+    interests: "Deep learning, cardiac imaging, MRI"
+    grades:
+      - grade:
+        name: Ph.D. (co-direction O.Bernard, Lyon)
+        startyear: 2023
+        endyear: ''
+
+  - firstname: 'Manon'
+    lastname: 'Edde'
+    picture: 'medde.jpg'
+    interests: "Neuro biology, brain imaging, myelin, White matter imaging, diffusion MRI"
     grades:
       - grade:
         name: Research professional
-        startyear: 2022
+        startyear: 2023
+        endyear: ''
+
+  - firstname: 'Gabriel'
+    lastname: 'Gigard'
+    picture: 'ggirard.jpg'
+    interests: "Brain imaging, harmonization, diffusion MRI"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2023
         endyear: ''
 
   - firstname: 'Arnaud'
@@ -38,7 +84,7 @@ current_members:
     interests: "Cardiac Imaging, Ultrasound, machine learning"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2023
         endyear: ''
 
@@ -48,7 +94,7 @@ current_members:
     interests: "Brain imaging, machine learning, reinforcement learning"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2018
         endyear: 2021
       - grade:
@@ -65,7 +111,7 @@ current_members:
         name: undergrad. intern
         startyear: 2015
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2021
         endyear: 2022
       - grade:
@@ -79,7 +125,7 @@ current_members:
     interests: "Cardiac imaging, machine learning, auto-encoders"
     grades:
       - grade:
-        name: MsC
+        name: MSc
         startyear: 2019
         endyear: ''
       - grade:
@@ -87,20 +133,7 @@ current_members:
         startyear: 2020
         endyear: ''
 
-  - firstname: 'Carl'
-    lastname: 'Lemaire'
-    picture: 'clemaire.jpeg'
-    interests: "Deep learning, computer vision, DL for bioinformatics, high performance computing, ethics"
-    grades:
-      - grade:
-        name: Research professional
-        startyear: 2019
-        endyear: ''
-        comment: 'Part time'
-      - grade:
-        name: MsC
-        startyear: 2017
-        endyear: 2018
+past_members:
 
   - firstname: 'Jon Haitz'
     lastname: 'Legarreta Gorroño'
@@ -110,7 +143,7 @@ current_members:
       - grade:
         name: PhD
         startyear: 2018
-        endyear: ''
+        endyear: 2024
 
   - firstname: 'Bach'
     lastname: 'Kim'
@@ -120,10 +153,33 @@ current_members:
       - grade:
         name: PhD
         startyear: 2018
-        endyear: ''
+        endyear: 2024
         comment: 'Co-supervised with C.Desrosiers and J.Dolz (ETS)'
 
-past_members:
+  - firstname: 'Carl'
+    lastname: 'Lemaire'
+    picture: 'clemaire.jpeg'
+    interests: "Deep learning, computer vision, DL for bioinformatics, high performance computing, ethics"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2019-2022
+        endyear: ''
+        comment: 'Part time'
+      - grade:
+        name: MsC
+        startyear: 2017
+        endyear: 2018
+      
+  - firstname: 'Félix'
+    lastname: 'Dumais'
+    picture: 'fDumais.jpg'
+    interests: "Brain imaging, harmonization, diffusion MRI, Deep learning"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2022
+        endyear: 2024
 
   - firstname: 'Philippe'
     lastname: 'Poulin'

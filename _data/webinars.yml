@@ -1,6 +1,30 @@
 webinar_list_title: Webinars
 webinars:
 
+- date: 2023/11/08
+  links:
+  - title: "Upper Bound 2023: 5 Years of GPTs with Finbarr Timbers"
+    url: https://www.youtube.com/watch?v=YA0pzBYAV2Q
+- date: 2023/21/07
+  links:
+  - title: "Petar Veličković  Graph Neural Networks: Geometric, Structural and Algorithmic Perspectives  Part 2"
+    url: https://www.youtube.com/watch?v=KpzPH08pOO0
+- date: 2023/07/07
+  links:
+  - title: "Petar Veličković  Graph Neural Networks: Geometric, Structural and Algorithmic Perspectives  Part 1"
+    url: https://www.youtube.com/watch?v=pL5Nc8Axv5A
+- date: 2023/02/06
+  links:
+  - title: "How to write a first class paper"
+    url: https://www.youtube.com/watch?v=6c1AOlirYMs
+- date: 2023/19/05
+  links:
+  - title: "MedAI #78: Foundation Models for Medical AI | Vivek Natarajan"
+    url: https://www.youtube.com/watch?v=4l-_C3HVJI4
+- date: 2023/27/04
+  links:
+  - title: "Scaling Transformer to 1M tokens and beyond with RMT (Paper Explained)"
+    url: https://www.youtube.com/watch?v=4Cclp6yPDuw
 - date: 2023/02/03
   links:
   - title: "Fast Homomorphic Evaluation of Deep Discretized Neural Networks"
