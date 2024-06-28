@@ -24,7 +24,7 @@ Since its proposal in 2018, Soft Actor Critic (SAC) algorithms[^1][^2] have beco
 
 Through the years, some improvements over SAC have been suggested, mostly in the hope of improving the data efficiency of learning agents. 
 
-## SAC
+## Soft-Actor Critic
 
 SAC presumes that there is more than one optimal solution to a given problem and that therefore, we would like to prevent the optimal policy from converging to a single one. Moreover, a policy with a high entropy will explore more and may prevent it from converging to a bad policy early on.
 
@@ -51,6 +51,12 @@ and $$Q_\bar{\theta}$$ the target critics.
 
 
 ## REDQ
+
+After SAC, a few algorithms have brought forth the concept of Update to Data ratio (UTD). Essentially, SAC and other off-policy algorithms typically acquire a transition, put it in the replay buffer, sample it randomly, update the agent and then acquire another transition. This amounts to a UTD of 1. A few algorithms, mostly model-based RL, argue this is inneficient and agents can benefit from sampling the buffer and updating the agent multiple times (twice, ten or fourty times) between transition acquisitions, speeding up learning.
+
+Randomized Ensembled Double Q-Learning[^4] (REDQ) improves upon SAC by employing a UTD around 20. However, this alone would lead to a high bias in the Q function and a high variance in the bias as well. The authors then propose to include an ensemble of critics (~10) but only use a random sample when performing the update (~2).
+
+![](/article/images/sac_improvements/table2_3.jpeg)
 
 ## DroQ
 
