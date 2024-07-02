@@ -52,7 +52,7 @@ and $$Q_\bar{\theta}$$ the target critics.
 
 ## REDQ
 
-After SAC, a few algorithms have brought forth the concept of Update to Data ratio (UTD). Essentially, SAC and other off-policy algorithms typically acquire a transition, put it in the replay buffer, sample it randomly, update the agent and then acquire another transition. This amounts to a UTD of 1. A few algorithms, mostly model-based RL, argue this is inneficient and agents can benefit from sampling the buffer and updating the agent multiple times (twice, ten or fourty times) between transition acquisitions, speeding up learning.
+After SAC, a few algorithms have brought forth the concept of Update to Data ratio (UTD). Essentially, SAC and other off-policy algorithms typically acquire a transition, put it in the replay buffer, sample it randomly, update the agent and then acquire another transition. This amounts to a UTD of 1. A few algorithms, mostly model-based RL, argue this is inefficient and agents can benefit from sampling the buffer and updating the agent multiple times (twice, ten or fourty times) between transition acquisitions, speeding up learning.
 
 Randomized Ensembled Double Q-Learning[^4] (REDQ) improves upon SAC by employing a UTD around 20. However, this alone would lead to a high bias in the Q function and a high variance in the bias as well. The authors then propose to include an ensemble of critics (10) but only use a random sample when performing the update (2). 
 
