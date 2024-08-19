@@ -66,6 +66,10 @@ The main idea behing LLaVA implies that the LLM is fed with both image-based tok
 
 ![](/article/images/medtrinity/sc03.jpeg)
 
+The results obtained on 3 larges medical VQA dataset reveal that the LLaVA-Med++ is SOTA as of today.
+
+![](/article/images/medtrinity/sc04.jpeg)
+
 
 # References
 
