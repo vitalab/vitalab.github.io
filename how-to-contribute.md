@@ -110,7 +110,7 @@ bundle install
 jekyll -v
 ```
 
-Congratulations, you are done with setting up the Ruby environment for the MYRIAD website on your machine!
+Congratulations, you are done with setting up the Ruby environment for the VitaLab website on your machine!
  
 &nbsp;
 
