@@ -4,7 +4,7 @@ title: "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Anno
 tags: dataset transformer medical
 author: "Pierre-Marc Jodoin"
 cite:
-    authors: "Yunfei Xie, Ce Zhou1, Lang Gao1, Juncheng Wu2, Xianhang Li, Hong-Yu Zhou, Sheng Liu, Lei Xing, James Zou, Cihang Xie, Yuyin Zhou"
+    authors: "Yunfei Xie, Ce Zhou, Lang Gao, Juncheng Wu, Xianhang Li, Hong-Yu Zhou, Sheng Liu, Lei Xing, James Zou, Cihang Xie, Yuyin Zhou"
     title:   "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine"
     venue:   "arXiv:2408.02900"
 pdf: "https://arxiv.org/pdf/2408.02900.pdf"
@@ -68,7 +68,7 @@ As a reminder, **LLaMA**[^4] is Meta's LLM, with the following main characterist
 - **Positional Encoding**: Implements Rotary Positional Embedding (RoPE) for dynamic token positioning.
 - **Activation Function**: Employs SwiGLU in feed-forward layers for improved performance.
 
-These modifications make LLaMA a highly efficient and powerful language model, encouraging widespread adoption and further advancements with LLaMA 2.
+These modifications make LLaMA a highly efficient and powerful language model.
 
 ![](/article/images/medtrinity/sc05.jpeg)
 
