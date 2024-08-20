@@ -5,9 +5,12 @@ tags:   deep-learning machine-learning
 author: Pierre-Marc Jodoin
 ---
 
-In this document, I want to underline the links the following activation functions: ReLU, ELU, GELU, GLU, ReGLU, GEGLU, and SwiGLU
 
-Activation functions play a critical role in deep learning, influencing how models learn and generalize. Below is a description of the relationships between several important activation functions: ReLU, ELU, GELU, GLU, ReGLU, GEGLU, and SwiGLU.
+Activation functions play a critical role in deep learning, influencing how models learn and generalize. Below is a description of the relationships between several important activation functions: **ReLU, ELU, GELU, GLU, SiLU, Swish, ReGLU, GEGLU,** and **SwiGLU**.
+
+![](/blog/images/activationfunctions/sc01.jpeg)
+
+
 
 ## 1. ReLU (Rectified Linear Unit)
 
@@ -19,7 +22,29 @@ $$
 
 If $$x$$ comes from a previous layer, we have $$x=Wx^-+b$$ where $$x^-$$ is the output of the layer before.
 
-## 2. SiLU (Sigmoid Linear Unit)
+## 2. ELU (Exponential Linear Unit)
+
+**ELU** is an extension of ReLU that introduces smoothness for negative inputs, defined as:
+
+$$
+\text{ELU}(x) =
+\begin{cases} 
+x & \text{if } x \geq 0 \\
+\alpha(\exp(x) - 1) & \text{if } x < 0
+\end{cases}
+$$
+
+## 3. GELU (Gaussian Error Linear Unit)
+
+**GELU** is a more sophisticated activation function that models the neuron activation probabilistically:
+
+$$
+\text{GELU}(x) = x \cdot \Phi(x)
+$$
+
+where $$ \Phi(x) $$ is the cumulative distribution function of the Gaussian distribution.
+
+## 4. SiLU (Sigmoid Linear Unit)
 
 **SiLU** is a simple approximation of ReLU but without any discontinuity of the first derivative:
 
@@ -29,7 +54,7 @@ $$
 
 where $$\sigma(x)$$ is the sigmoid function. 
 
-## 3. Swish
+## 5. Swish
 
 **Swish** is a simple generalization of SiLU
 
@@ -39,7 +64,7 @@ $$
 
 where $$\beta$$ is learnable.  When  $$\beta=1$$, Swish becomes SiLU. 
 
-## 3. GLU (Gated Linear Unit)
+## 6. GLU (Gated Linear Unit)
 
 **GLU** introduces a gating mechanism where the output of a linear transformation is modulated by a gate:
 
@@ -49,7 +74,7 @@ $$
 
 where $$ x_1 = Wx^-+b$$ and $$ x_2 = Vx^-+c $$ are different linear transformations of the input $$x$$.
 
-## 5. ReGLU (Rectified Gated Linear Unit)
+## 7. ReGLU (Rectified Gated Linear Unit)
 
 **ReGLU** is a variant of GLU that uses ReLU instead of the sigmoid function as the gating mechanism:
 
@@ -57,7 +82,16 @@ $$
 \text{ReGLU}(x) = x_1 \cdot \text{ReLU}(x_2)
 $$
 
-## 7. SwiGLU (Swish-Gated Linear Unit)
+## 8. GEGLU (Gaussian Error Gated Linear Unit)
+
+**GEGLU** is another variant of GLU that uses GELU instead of the sigmoid function:
+
+$$
+\text{GEGLU}(x) = x_1 \cdot \text{GELU}(x_2)
+$$
+
+
+## 9. SwiGLU (Swish-Gated Linear Unit)
 
 **SwiGLU** replaces the gating mechanism in GLU with the Swish activation function:
 
