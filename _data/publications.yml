@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
+    year: 2024
+    title: 'Uncertainty Propagation for Echocardiography Clinical Metric Estimation via Contour Sampling'
+    journal: sumitted to IEEE Transactions on Medical Imaging
+    pages: 1-12
+
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
     year: 2024
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
@@ -8,9 +14,9 @@ journal:
     pages: 1-12
 
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
-    year: 2023
+    year: 2024
     title: 'What Matters in Reinforcement Learning for Tractography'
-    journal: in press at Medical Image Analysis
+    journal: Medical Image Analysis, vol 93
     pages: 1-52
     arxiv: arxiv:2305.09041
 
