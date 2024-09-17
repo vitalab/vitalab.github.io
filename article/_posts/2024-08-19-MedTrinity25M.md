@@ -51,7 +51,7 @@ An example of this automatic annotation is illustrated here:
 
 # Visual Q&A
 
-To demonstrate the power of their dataset, the authors implemented a multimodal vision LLM called Large Language and Vision Assistant (**LLaVA**)[^2]. LLaVA combines a vision encoder with Vicuna[^3] for general-purpose visual and language understanding. The core idea behind LLaVA is illustrated in the following figure where **f_\phi** is Vicuna:
+To demonstrate the power of their dataset, the authors implemented a multimodal vision LLM called Large Language and Vision Assistant (**LLaVA**)[^2]. LLaVA combines a vision encoder with Vicuna[^3] for general-purpose visual and language understanding. The core idea behind LLaVA is illustrated in the following figure where $$f_\phi$$ is Vicuna:
 
 ![](/article/images/medtrinity/sc03.jpeg)
 
