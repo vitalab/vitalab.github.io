@@ -6,7 +6,7 @@ author: "Arnaud Judge"
 cite:
     authors: "Sarina Thomas, Qing Cao, Anna Novikova, Daria Kulikova, Guy Ben-Yosef"
     title:   "EchoNarrator: Generating natural text explanations for ejection fraction predictions"
-    venue:   "arxiv Preprint"
+    venue:   "Accepted at MICCAI2024"
 pdf: "https://arxiv.org/pdf/2410.23744v1"
 ---
 
