@@ -31,7 +31,7 @@ The pipeline of this method is comprised of four main steps:
 2. Compute the EF using two regressors, one based on the mathematical concept of contour area variation, another based on direct prediction stemming the input encoder.
     - A second regressor relying on the differences between ES/ED contours is added to mimic manual computation and to add interpretability to the EF value.
 
-3. Extract attributes from the predicted contours.
+3. Extract attributes from the predicted contours. These attributes are designed to reflect structural or temporal changes that could affect EF values.
     - Attributes include:
         - Septal bulge: calculate wall thickness variation with convex-hulls.
         - Segment motion: contour is divided into 7 segments, their movement is compared to the general movement of the whole contour.
