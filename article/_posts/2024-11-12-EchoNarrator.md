@@ -13,8 +13,8 @@ pdf: "https://arxiv.org/pdf/2410.23744v1"
 
 # Introduction
 
-Many methods have achieved success in predicting ejection fraction (EF) of the left ventricle (LV) from echocardiography 
-acquisitions. However, most methods do not offer an explanation for the prediction. 
+Many methods have achieved success in predicting ejection fraction (EF) of the left ventricle (LV) from echocardiography acquisitions. 
+However, most methods do not offer an explanation for the prediction. 
 
 Authors argue that clear and intuitive explanations for predictions would increase trust of cardiologists in the models.
 
@@ -42,7 +42,7 @@ The pipeline of this method is comprised of four main steps:
         - Apex movement: apex movement should be limited, the apex generally does not move
         - Length-width movement: length-width ratio of the contour, identifies dialated LV if it isn't close to 2.
         - Sector intersection: LV contour visibility within ultrasound sector.
-        - Image quality:  intensity difference between LV cavity and myocardial wall.
+        - Image quality: intensity difference between LV cavity and myocardial wall.
 
 
 4. Based on a textual conversion of the attribute, output a coherent NLE aimed at clinical use.
