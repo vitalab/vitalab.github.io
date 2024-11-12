@@ -60,7 +60,9 @@ It allows for comparison between ground truth and prediction beyond textual simi
 The GCN has a ResNet3D-18 backbone. It extracts feature representations from the video, which are fed to a spatio-temporal GCN that identifies anatomical keypoints. 
 
 ### LLM
-LLMs are fine-tuned to algin generated text with clinical terminology and reasoning.
+LLMs are fine-tuned to align generated text with clinical terminology and reasoning.
+
+Fine-tuning was done based on a low-rank adaptation of LLaMA models using 8-bit quantization.
 
 Since the annotations are limited, the authors employ two data augmentation strategies to increase the amount of data:
 - Synthetic explanations are created by making more elaborate sentences from basic sentence examples.
