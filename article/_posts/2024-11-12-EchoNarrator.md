@@ -62,7 +62,7 @@ The GCN has a ResNet3D-18 backbone. It extracts feature representations from the
 ### LLM
 LLMs are fine-tuned to algin generated text with clinical terminology and reasoning.
 
-Synthetic explanations are created to augment the dataset. GPT4 is used with chain-of-thought prompts including basic inputs (from metrics) and real expert annotations to create more training data.
+Synthetic explanations are created to augment the dataset. GPT4 is used with chain-of-thought prompts including basic inputs (from metrics) and real expert annotations to create more (800 self-instructions) training data.
 
 # Data
 
