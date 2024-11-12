@@ -18,7 +18,11 @@ acquisitions. However, most methods do not offer an explanation for the predicti
 
 Authors argue that clear and intuitive explanations for predictions would increase trust of cardiologists in the models.
 
-This paper proposes a novel method for EF prediction with Natural Language Explanation (NLE). In addition to providing a value for EF, it generates short form report (or a caption) explaining reasons for the value of the prediction. A new evaluation metric based on small LLMs is also predicted.
+This paper proposes a novel method for EF prediction with Natural Language Explanation (NLE). In addition to providing a value for EF, it generates short form report (or a caption) explaining reasons for the value of the prediction. 
+
+NLE aims to provide context and clarity to predictions. Other explainability methods such as Class Activation Mapping (CAM) or Grad-CAM only highlight regions, and cannot offer reasoning for prediction values.
+
+A new evaluation metric based on small LLMs is also predicted.
 
 # Method
 
