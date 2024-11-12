@@ -28,7 +28,7 @@ The pipeline of this method is comprised of four main steps:
 
 1. Predict key points forming the LV contour using a Graph Convolutional Network (GCN). 
 
-2. Compute the EF using two regressors, one based on the mathematical concept of contour area variation, another based on direct prediction stemming the input encoder.
+2. Compute EF using two regressors, one based on the mathematical concept of contour area variation, another based on direct prediction stemming from the input encoder.
     - A second regressor relying on the differences between ES/ED contours is added to mimic manual computation and to add interpretability to the EF value.
 
 3. Extract attributes from the predicted contours. These attributes are designed to reflect structural or temporal changes that could affect EF values.
@@ -43,13 +43,13 @@ The pipeline of this method is comprised of four main steps:
 
 4. Based on a textual conversion of the attribute, output a coherent NLE aimed at clinical use.
     - Basic sentences are formed as such: `bulge=500` becomes `A bulge value of 500 means that there is no bulge.`
-    - The basic sentences are refined into more coherent and full sentences using LLMs.
+    - The basic sentences are refined into more coherent and full sentences using a LLaMA model, fine-tuned for medical text.
 
 
 ### New metric
-A novel metric is also presented, to evaluate EF explanations and complement basic metrics, which can be deceived by some adversarial examples. It's aim is to allow acessment of factual correctness.
+A novel metric is also presented, to evaluate EF explanations and complement basic metrics, which can be deceived by some adversarial examples. It's aim is to allow assessment of factual correctness.
 
-It is based on a Mistral model (small and fast LLM) that uses nine target prompts, instructions and one-shot context to evaluate the contents of the output predictions. It evaluates whether attributes are normal or pathological in the outputs. 
+It is based on a Mistral model (small and fast LLM) that uses nine target prompts, instructions and one-shot context to evaluate the contents of the output predictions. It evaluates whether attributes are considered normal or pathological in the outputs.
 
 It allows for comparison between ground truth and prediction beyond textual similarity. Accuracy, contradictions and hallucinations are reported.
 
@@ -62,7 +62,9 @@ The GCN has a ResNet3D-18 backbone. It extracts feature representations from the
 ### LLM
 LLMs are fine-tuned to algin generated text with clinical terminology and reasoning.
 
-Synthetic explanations are created to augment the dataset. GPT4 is used with chain-of-thought prompts including basic inputs (from metrics) and real expert annotations to create more (800 self-instructions) training data.
+Since the annotations are limited, the authors employ two data augmentation strategies to increase the amount of data:
+- Synthetic explanations are created by making more elaborate sentences from basic sentence examples.
+- GPT4 is prompted with expert explanations and a chain-of-thought prompt including basic inputs (from metrics) and examples of desired outputs to create new sets of explanations for basic texts.
 
 # Data
 
@@ -74,7 +76,7 @@ In addition to the videos and contour information, experts watched a subset of v
 
 ![](/article/images/EchoNarrator/examples.jpg)
 
-The authors evaluated their method on two fronts: EF prediction performance and NLE.
+The authors evaluated their method on two fronts: EF prediction performance and NLE. For NLE, they use the new custom metric, text similarity metrics (ClinicalBERT, sBERT) and Flesh Reading Ease.
 
 ![](/article/images/EchoNarrator/results_EF.jpg)
 
@@ -83,8 +85,8 @@ The authors evaluated their method on two fronts: EF prediction performance and 
 
 # Conclusions
 
-- Adding LLMs to EF predictions allows for more interpretability.
-- Architecture choices such as also improve interpretability (explicit contour prediction before EF calculation).
+- Adding LLMs to EF predictions allows for more interpretability, especially in a clinical use case.
+- Architecture choices such as separations between modules also improve interpretability (ex.: explicit contour prediction before EF calculation).
 - Leveraging synthetic and augmented data helps improve interpretability without adding biases to the predictions.
 - Using the novel metric allows for good assesment of contradictions, goes further than text similarity.
 - This method could be enhanced by the use of much more extensive datasets.
