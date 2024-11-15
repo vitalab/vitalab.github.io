@@ -53,6 +53,20 @@ permalink: /publications/
 
 </div>
 
+
+<h2>{{site.data.publications.patent_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.patents %}
+       <li>
+         {{item.authors}} ({{item.year}}) 
+         <strong>{{item.title}}</strong>, 
+         {%if item.other %}{{item.other}};{% endif %}
+       </li><br>
+       {% endfor %}
+  </ul>
+
+</div>
 <h2>{{site.data.publications.other_list_title}}</h2>
 <div class="entry-content">
   <ul>

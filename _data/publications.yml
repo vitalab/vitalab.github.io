@@ -786,8 +786,8 @@ chapters:
 
             
 
-other_list_title: Patents
-others:
+patent_list_title: Patents
+patents:
 
   - authors: 'G.girard, M.Edde, F.Dumais, M. dumont, G. Theaud, Y.David, JC Houde, M. Descoteaux, P-M Jodoin'
     year: 2024
