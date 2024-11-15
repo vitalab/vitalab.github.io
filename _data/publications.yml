@@ -784,6 +784,32 @@ chapters:
     publisher: Springer
     other:
 
+            
+
+other_list_title: Patents
+others:
+
+  - authors: 'G.girard, M.Edde, F.Dumais, M. dumont, G. Theaud, Y.David, JC Houde, M. Descoteaux, P-M Jodoin'
+    year: 2024
+    title: 'Harmonization of diffusion MRI'
+    other: USPTO Serial No.63/709,998
+
+  - authors: 'G.Grenier, L.Maltais, J-C Houde, P-M Jodoin'
+    year: 2024
+    title: 'Automatic Quality Control of Image Diffusion Processing'
+    other: USPTO Serial No.63/506,354
+
+  - authors: 'P-M Jodoin, M.Descoteau'
+    year: 2024
+    title: 'Determination of White-Matter Neurodegenerative Disease Biomarkers'
+    other: USPTO Serial No.63/222,914
+
+  - authors: 'J.Legarreta, M.Descoteaux, P-M Jodoin'
+    year: 2022
+    title: 'Processing of Tractography Results using an Autoencoder'
+    other: USPTO Serial No.17/337,413
+
+
 other_list_title: Others
 others:
 
