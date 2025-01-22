@@ -45,7 +45,7 @@ current_members:
       - grade:
         name: MSc
         startyear: 2024
-        endyear: ''
+        endyear: 2025
 
   - firstname: 'Célia'
     lastname: 'Goujat'
@@ -65,7 +65,7 @@ current_members:
       - grade:
         name: Research professional
         startyear: 2023
-        endyear: ''
+        endyear: 2025
 
   - firstname: 'Gabriel'
     lastname: 'Gigard'
@@ -75,7 +75,7 @@ current_members:
       - grade:
         name: Research professional
         startyear: 2023
-        endyear: ''
+        endyear: 2025
 
   - firstname: 'Arnaud'
     lastname: 'Judge'
@@ -85,7 +85,11 @@ current_members:
       - grade:
         name: MSc
         startyear: 2023
-        endyear: ''
+        endyear: 2024
+      - grade:
+        name: PhD
+        startyear: 2025
+        endyear:  ''
 
   - firstname: 'Antoine'
     lastname: 'Théberge'
@@ -99,7 +103,7 @@ current_members:
       - grade:
         name: PhD
         startyear: 2021
-        endyear:  ''
+        endyear:  2025
 
   - firstname: 'Thierry'
     lastname: 'Judge'
@@ -130,7 +134,7 @@ current_members:
       - grade:
         name: PhD
         startyear: 2020
-        endyear: ''
+        endyear: 2025
 
 past_members:
 
