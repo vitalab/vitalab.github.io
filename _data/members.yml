@@ -37,7 +37,7 @@ current_members:
         endyear: ''
 
   - firstname: 'Damien'
-    lastname: 'Jomby'
+    lastname: 'Djomby'
     picture: 'djomby.jpeg'
     interests: "Deep learning, multimodal LLM, cardiology, ultrasound"
     grades:
