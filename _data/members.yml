@@ -44,7 +44,7 @@ current_members:
       - grade:
         name: Ph.D. (co-direction C.Desrosiers, ETS) 
         startyear: 2025
-        endyear: 2028
+        endyear: ''
 
   - firstname: 'Jeremi'
     lastname: 'Levesque'
@@ -112,7 +112,7 @@ current_members:
       - grade:
         name: PhD
         startyear: 2021
-        endyear:  2025
+        endyear:  ''
 
   - firstname: 'Thierry'
     lastname: 'Judge'
@@ -131,6 +131,8 @@ current_members:
         startyear: 2023
         endyear: ''
 
+past_members:
+
   - firstname: 'Nathan'
     lastname: 'Painchaud'
     picture: 'npainchaud.jpeg'
@@ -145,7 +147,6 @@ current_members:
         startyear: 2020
         endyear: 2025
 
-past_members:
 
   - firstname: 'Jon Haitz'
     lastname: 'Legarreta Gorroño'
