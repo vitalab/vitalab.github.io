@@ -450,6 +450,7 @@ past_members:
 
   - firstname: 'Pierre'
     lastname: 'Clarot'
+    picture: 'pclarot.jpg'
     grades:
       - grade:
         name: MSc
