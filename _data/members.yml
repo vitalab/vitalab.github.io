@@ -36,6 +36,15 @@ current_members:
         startyear: 2025
         endyear: ''
 
+  - firstname: 'Damien'
+    lastname: 'Jomby'
+    picture: 'djomby.jpeg'
+    interests: "Deep learning, multimodal LLM, cardiology, ultrasound"
+    grades:
+      - grade:
+        name: Ph.D. (co-direction C.Desrosiers, ETS) 
+        startyear: 2025
+        endyear: 2028
 
   - firstname: 'Jeremi'
     lastname: 'Levesque'
