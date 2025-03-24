@@ -2,7 +2,7 @@
 layout: review
 title: "EchoPrime: Multi-Video View-Informed Vision-Language Model for Comprehensive
 Echocardiography Interpretation"
-tags:  
+tags: multimodal, foundation-models 
 author: "Pierre-Marc Jodoin"
 cite:
     authors: "Milos Vukadinovic, Xiu Tang, Neal Yuan, Paul Cheng, Debiao Li, Susan Cheng, Bryan He, David Ouyang"
