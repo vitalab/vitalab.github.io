@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
+    year: 2025
+    title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
+    journal: Brain Structure and Function
+    pages: 1-4
+
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
     year: 2024
     title: 'Uncertainty Propagation for Echocardiography Clinical Metric Estimation via Contour Sampling'
@@ -10,7 +16,7 @@ journal:
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
     year: 2024
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
-    journal: sumitted to IEEE Transactions on Medical Imaging
+    journal: sumitted to IEEE Journal Of Biomedical & Health Informatics
     pages: 1-12
 
   - authors: 'AA Task, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
