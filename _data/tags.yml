@@ -33,6 +33,7 @@ tags:
 - essentials
 - face-detection
 - few-shot-learning
+- foundation-models
 - GAN
 - geometric-deep-learning
 - GNN  # Graph Neural Networks
@@ -54,6 +55,7 @@ tags:
 - motion-detection
 - MRI
 - multi-agent
+- multimodal
 - multiple-sclerosis
 - multi-task
 - multi-task-learning
