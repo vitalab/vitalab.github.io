@@ -393,7 +393,12 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
-     
+   
+  - authors: 'M Roy, J-R. Bélanger, G. Girard, M. Edde, M. Dumont, J.-C. Houde, P-M. Jodoin, M. Descoteaux'
+    year: 2025
+    title: 'Harmonization of diffusion MRI measures is crucial for white matter tract assessment in ADNI'
+    conference : ISMRM Diffusion Study Group workshop 
+  
   - authors: 'A. Judge, T. Judge, N. Duchateau, J.Z. Sokol, R.A. Sandler, O. Bernard, P-M. Jodoin'
     year: 2024
     title: 'Domain Adaptation of Echocardiography Segmentation Via Reinforcement Learning'
