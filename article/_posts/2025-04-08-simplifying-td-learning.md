@@ -30,15 +30,15 @@ pdf: https://arxiv.org/abs/2404.16130
 	- Ensembling
 - PPO seems to have been the de-facto method for a lot of scenarios, but its still very unstable and hard to configure with a lot of implementation details and tricks to efficiently implement.
 - PPO has no provable convergence properties when used with NN.
-![](/article/images/simplifying-td-learning/PQN-high-level.png)
+![](/article/images/simplifying-td-learning/PQN-high-level.jpg)
 ## Context
 ### Temporal difference methods
 - TD error:
 $$\delta(\phi, \varsigma) = (r + \gamma Q_{\phi}(x') - Q_{\phi}(x))\nabla_{\phi} Q_{\phi}(x)$$
 - TD parameter update:
 $$\phi_{i+1} = \phi_i + \alpha_i \delta(\phi_i, \varsigma)$$
-Where we have:
-	- $$x = (s_t, a_t)$$ 
+Where we have:  
+	- The tuple $$x = (s_t, a_t)$$  
 	- $$x \sim d^u$$, where $$d^u$$ generally is an ergodic Markov chain or a replay buffer (offline case)
 	- $$\varsigma$$ is a tuple $$\varsigma = (x, r, x') = (s_t, a_t, r, s_{t+1}, a_{t+1})$$ 
 	- $$\phi$$ the parameters of the Q-network.
@@ -59,7 +59,7 @@ Where we have:
 
 **LayerNorm** + L2 regularized TD can stabilise TD by mitigating effects of nonlinearity and off-policy sampling as demonstrated by their extensive theoretical analysis in the paper. The authors suggest to start with LayerNorm and L2 regularisation as a strong baseline to stabilize TD algorithms.
 
-Their analysis demonstrate that L2 regularization should only be used sparingly; only when the LayerNorm alone cannot stabilize the environment and initially **only over the final layer weights**. However, *not having L2 regularization cannot completely stabilize TD learning for all domains*.
+Their analysis demonstrate that L2 regularization should only be used sparingly; only when the LayerNorm alone cannot stabilize the environment and initially **only over the final layer weights**. However, using only LayerNorm without L2 regularization *cannot completely stabilize TD learning for all domains*.
 ### Parallelized Q-Learning
 - **No target network.**
 - **Q-Networks regularized** (with LayerNorm preferably)
@@ -79,16 +79,16 @@ Special case of $$\lambda = 0$$ and $$T = 1$$ is equivalent to traditional Q-lea
 ---
 #### PQN Algorithm
 
-![](/article/images/simplifying-td-learning/PQN-Algorithm.png)
+![](/article/images/simplifying-td-learning/PQN-Algorithm.jpg)
 
 Similarily to PPO, for improved sample-efficiency, PQN divides the collected experiences into multiple minibatches while updating on them multiple times within a few epochs.
 
 PQN is an off-policy algorithm since it uses two different policies:
 1. $$\varepsilon$$-greedy policy for the current timestep
 	1. $$\varepsilon = 1$$ at the start of training. This implies that we're optimizing value functions for a fully random policy, and this requires normalization to avoid training instability as they proved in the paper.
-2. current policy for the next step (what next step?)
+2. Current policy for the next step
 
-![](/article/images/simplifying-td-learning/PQN-advantages-table.png)
+![](/article/images/simplifying-td-learning/PQN-advantages-table.jpg)
 
 Table 1 summarizes the advantages of this algorithm. The closest algorithm would be PPO in terms of these characteristics, but it requires numerous interacting implementation details and having more hyperparameters to tune, making it harder to use.
 
@@ -100,17 +100,19 @@ The algorithm can also be adapted to cooperative multi-agent scenarios by adopti
 
 1. Parallelized nature can help exploration since the natural stochasticity in the dynamics means even a greedy policy will explore several different states in parallel.
 2. Taking multiple actions in multiple states, enables PQN's sampling distribution to be a good approximation of the true stationary distribution under the current policy.
-![](/article/images/simplifying-td-learning/sampling-regimes.png)
+
+![](/article/images/simplifying-td-learning/sampling-regimes.jpg)
+
 As illustrated in Figure 3, sampling from DQN's replay buffer is kind of equivalent of sampling from an average of *older* stationary distributions under varying policies.
 
 ---
 ## Experiments
 
 #### Atari
-![](/article/images/simplifying-td-learning/Atari-Results.png)
+![](/article/images/simplifying-td-learning/Atari-Results.jpg)
 
 #### Baird's Counter and others
-![](/article/images/simplifying-td-learning/MARL-results.png)
+![](/article/images/simplifying-td-learning/MARL-results.jpg)
 - Baird's Counter is an environment designed to be provably divergent. PQN with LayerNorm and L2 loss diverges much less than its unnormalized counterpart.
 - Craftax is an environment where the agent has to solve multiple tasks before completion and PQN with an RNN is more sample efficient than PPO with an RNN and performs slightly better, while the two methods take similar time to train.
 - Smax, Overcooked and Hanabi are three multi-agent environments. PQN-VDN outperforms or is more sample efficient than all evaluated algorithms on those datasets while not requiring a huge replay buffer.
@@ -122,5 +124,5 @@ As illustrated in Figure 3, sampling from DQN's replay buffer is kind of equival
 
 **Replay Buffer**: Figure 6d) demonstrate that PQN reaches the same performance in 6x quicker than if it was using huge replay buffers to store 1M transitions on GPU memory.
 
-**Number of environments**: PQN can learn even with very few environments, but it is strongly encouraged, as shown in Figure 6e), to use much more environments as it is much quicker.
-![](/article/images/simplifying-td-learning/Ablations.png)
+**Number of environments**: PQN can learn even with very few environments, but it is strongly encouraged, as shown in Figure 6e), to use many more environments as it is much quicker.
+![](/article/images/simplifying-td-learning/Ablations.jpg)
