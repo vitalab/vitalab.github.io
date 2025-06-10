@@ -1,6 +1,24 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'J. Levesque, A. Théberge, M. Descoteaux, P-M Jodoin'
+    year: 2025
+    title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
+    journal: submitted Medical Image Analysis 
+    pages: 1-26
+
+  - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
+    year: 2025
+    title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
+    journal: submitted to Nature Scientific Report
+    pages: 1-17
+
+  - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
+    year: 2025
+    title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
+    journal: submitted to Transactions on Medical Imaging
+    pages: 1-12
+
   - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
     year: 2025
     title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
