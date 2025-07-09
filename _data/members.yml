@@ -19,6 +19,12 @@ professors:
     interests: "Brain imaging, cardiac imaging, machine learning, deep learning, surveillance"
     url: "http://info.usherbrooke.ca/pmjodoin/"
 
+  - firstname: 'Amine'
+    lastname: 'Trabelsi'
+    picture: 'aTrabelsi.jpg'
+    interests: "Artificial Intelligence, Natural Language Processing, Applied Machine Learning"
+    url: "https://amine-trabelsi.netlify.app/"
+
 
 current_members:
 
