@@ -1,12 +1,5 @@
 journal_list_title: Journal papers
 journal:
-
-  - authors: 'J. Levesque, A. Théberge, M. Descoteaux, P-M Jodoin'
-    year: 2025
-    title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
-    journal: in press at Medical Image Analysis 
-    pages: 1-26
-
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
     year: 2025
     title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
@@ -19,12 +12,6 @@ journal:
     journal: submitted to Transactions on Medical Imaging
     pages: 1-12
 
-  - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
-    year: 2025
-    title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
-    journal: Brain Structure and Function
-    pages: 1-4
-
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
     year: 2025
     title: 'Uncertainty Propagation for Echocardiography Clinical Metric Estimation via Contour Sampling'
@@ -36,6 +23,13 @@ journal:
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
     journal: in press at IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
     pages: 1-12
+
+  - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
+    year: 2025
+    title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
+    journal: Brain Structure and Function
+    pages: 1-4
+
 
   - authors: 'AA Task, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
     year: 2024
@@ -411,7 +405,12 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
-   
+    
+  - authors: 'A. Théberge, P-M. Jodoin, J. Yuan-Mou Yang, M. Descoteaux, F. Rheault'
+    year: 2025
+    title: 'BundleParc: automatic bundle parcellation in tumor data'
+    conference : International Society for Tractography (IST)
+
   - authors: 'M Roy, J-R. Bélanger, G. Girard, M. Edde, M. Dumont, J.-C. Houde, P-M. Jodoin, M. Descoteaux'
     year: 2025
     title: 'Harmonization of diffusion MRI measures is crucial for white matter tract assessment in ADNI'
