@@ -42,6 +42,18 @@ current_members:
         startyear: 2025
         endyear: ''
 
+  - firstname: 'Baptiste'
+    lastname: 'Pierrard'
+    picture: 'bPierrard.jpeg'
+    interests: "Deep learning, graph neural networks, medical imaging, harmonization"
+    grades:
+      - grade:
+        name: Ph.D. (co-direction Michael Zdika, CREATIS-Lyon) 
+        startyear: 2024
+        endyear: ''
+
+
+
   - firstname: 'Damien'
     lastname: 'Djomby'
     picture: 'djomby.jpeg'

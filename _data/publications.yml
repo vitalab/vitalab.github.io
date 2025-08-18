@@ -21,7 +21,7 @@ journal:
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
     year: 2025
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
-    journal: in press at IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
+    journal: accepted at IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
     pages: 1-12
 
   - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
@@ -405,7 +405,12 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
-    
+ 
+  - authors: 'C.Goujat, P-M Jodoin, L.Boussel, and O.Bernard'
+    year: 2025
+    title: 'How sensitive is performance to BB placement accuracy?'
+    conference : MICCAI-Stacom
+
   - authors: 'A. Théberge, P-M. Jodoin, J. Yuan-Mou Yang, M. Descoteaux, F. Rheault'
     year: 2025
     title: 'BundleParc: automatic bundle parcellation in tumor data'
