@@ -68,19 +68,16 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <!-- Tags -->
     <div class="post-meta" style="margin-bottom: 0.5rem">
       {% for tag in page.tags %}
         <span style="margin-right: 1em">{{ tag }}</span>
       {% endfor %}
     </div>
 
-    <!-- Title -->
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
     <div class="post-meta-container">
       <div class="post-meta-text">
-        <!-- Reviewed info -->
         <p class="post-meta">
           Reviewed on
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -111,7 +108,6 @@ layout: default
         {% endif %}
       </div>
 
-      <!-- Big PDF button (optional separate asset) -->
       <div class="post-meta-pdf">
         {% if page.pdf_path %}
           <a href="{{ site.url }}/{{ page.pdf_path }}" target="_blank" class="pdf-button">See the PDF</a>
@@ -120,7 +116,6 @@ layout: default
     </div>
   </header>
 
-  <!-- Body -->
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
