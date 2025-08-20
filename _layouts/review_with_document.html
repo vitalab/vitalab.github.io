@@ -1,0 +1,123 @@
+---
+layout: default
+---
+<style>
+  main.page-content {
+    padding-bottom: 0;
+  }
+  .post-content p { text-align: justify; }
+  .post-content img {
+    box-shadow: 0 0 10px 0 #737373;
+    padding: 4px;
+    margin: 8px 0;
+  }
+
+  h1 { font-size: 1.6rem; font-weight: bold; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; font-weight: bold; }
+  h4, h5, h6 { font-size: 1rem; font-weight: bold; }
+  .post-content h2 { font-size: 1.4rem; }
+  h1.post-title {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+  }
+  header p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pdf-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .pdf-button:hover { background-color: #0056b3; color: #fff; text-decoration: none; }
+  .pdf-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+    color: #fff; text-decoration: none;
+  }
+  .pdf-button:active, .pdf-button:visited { color: #fff; text-decoration: none; }
+
+  .post-meta-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .post-meta-text { min-width: 260px; }
+
+  .post-reference {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.95rem;
+    color: #333;
+  }
+</style>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <div class="post-meta" style="margin-bottom: 0.5rem">
+      {% for tag in page.tags %}
+        <span style="margin-right: 1em">{{ tag }}</span>
+      {% endfor %}
+    </div>
+
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+    <div class="post-meta-container">
+      <div class="post-meta-text">
+        <p class="post-meta">
+          Reviewed on
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: "%b %-d, %Y" }}
+          </time>
+          {% if page.author %}
+            by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ page.author }}</span>
+            </span>
+          {% endif %}
+          {% if page.pdf %}
+            • <a href="{{ page.pdf }}">{{ page.pdf }}</a>
+          {% endif %}
+        </p>
+
+        {% if page.cite %}
+          <p class="post-meta post-reference">
+            <strong>Reference:</strong>
+            {{ page.cite.authors }}.
+            <em>{{ page.cite.title | default: page.title }}.</em>
+            {{ page.cite.venue }}.
+            {% if page.cite.url %}
+              <a href="{{ page.cite.url }}">Link</a>
+            {% elsif page.cite.doi %}
+              <a href="https://doi.org/{{ page.cite.doi }}">DOI: {{ page.cite.doi }}</a>
+            {% endif %}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="post-meta-pdf">
+        {% if page.pdf_path %}
+          <a href="{{ site.url }}/{{ page.pdf_path }}" target="_blank" class="pdf-button">See the PDF</a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
