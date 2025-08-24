@@ -37,6 +37,14 @@ journal:
     journal: submitted to IEEE Journal of Biomedical and Health Informatics
     pages: 1-12
 
+  - authors: 'J. Lévesque, A. Théberge, M. Descoteaux, P-M. Jodoin'
+    year: 2025
+    title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
+    journal: Medical Image Analysis, vol 106, 103743
+    pages: 1-52
+    arxiv: arxiv.org/abs/2507.11486 
+
+
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2024
     title: 'What Matters in Reinforcement Learning for Tractography'
