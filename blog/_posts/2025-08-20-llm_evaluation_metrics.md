@@ -383,6 +383,7 @@ A robust evaluation of medical LLMs must combine **more than one type of metrics
 - **ROUGE**: [Wikipedia – ROUGE](https://en.wikipedia.org/wiki/ROUGE)  
 - **METEOR**: [Wikipedia – METEOR](https://en.wikipedia.org/wiki/METEOR)  
 - **BERTScore**: [Medium – BERTScore Explained](https://rumn.medium.com/bert-score-explained-8f384d37bb06)  
+- **Flesch–Kincaid Readability Tests**: [Wikipedia – Flesch–Kincaid](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)  
 
 ### General Overviews of Automatic Metrics
 - ROUGE, BLEU, BERTScore: [Medium – LLM Evaluation Metrics Explained](https://medium.com/data-science-in-your-pocket/llm-evaluation-metrics-explained-af14f26536d2)  
@@ -395,4 +396,3 @@ A robust evaluation of medical LLMs must combine **more than one type of metrics
 
 ### Human-Centric & Readability Metrics
 - **Flesch–Kincaid Readability in LLM Evaluation**: [PubMed – Evaluating the Readability of Patient Education Materials Revised by LLMs](https://pubmed.ncbi.nlm.nih.gov/39105460/)  
-- **Flesch–Kincaid Readability Tests**: [Wikipedia – Flesch–Kincaid](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)  
