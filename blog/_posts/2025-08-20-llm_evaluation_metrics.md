@@ -19,22 +19,65 @@ This review goes through four categories of evaluation metrics, using a consiste
 
 ### 1. Lexical Overlap Metrics (BLEU, ROUGE)
 
-- **BLEU (Bilingual Evaluation Understudy)**  
+**BLEU (Bilingual Evaluation Understudy)**  
   - **Equation**:  
-    \[
-    \text{BLEU} = BP \cdot \exp\left( \sum_{n=1}^{N} w_n \log p_n \right)
-    \]  
-    where \(p_n\) = precision of n-gram overlap, \(w_n\) = weights (often uniform), \(BP\) = brevity penalty.  
+    $$
+    \text{BLEU-n} = BP \cdot \exp\left( \sum_{n=1}^{N} w_n \log p_n \right)
+    $$  
+    where $$p_n$$ = precision of n-gram overlap, $$w_n$$ = weights (often uniform), $$BP$$ = brevity penalty.  
   - **Range**: 0 (no overlap) → 1 (perfect overlap).  
-  - In our example: *“lungs show infection”* vs. *“evidence of pneumonia”* → unigram overlap is low → BLEU near **0.2**.  
+  - In our example: → unigram overlap is low → BLEU-1 near **0.32**.  
 
-- **ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**  
+The reason for 0.32 with n=1.
+
+**Reference report**:
+"The chest X-ray shows evidence of pneumonia. No pleural effusion is present."
+
+= 12 tokens
+
+**Generated report**:
+"The lungs show infection, and a small pleural effusion is visible."
+
+= 10 tokens
+
+Overlap between generated and reference unigrams:
+
+* "the" ✅
+* "pleural" ✅
+* "effusion" ✅
+* "is" ✅
+
+That’s 4 matches out of 10 candidate tokens.   If we set BP = 0.8 (could also be computed), we get that $$BLEU-1=BP*p_1=0.8*0.4=0.32$$.
+
+**ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**  
   - **Equation (ROUGE-N)**:  
-    \[
+    $$
     \text{ROUGE-N} = \frac{\text{Count}_{\text{match}}(n\text{-grams})}{\text{Count}_{\text{reference}}(n\text{-grams})}
-    \]  
+    $$  
   - **Range**: 0 (no recall) → 1 (perfect recall).  
-  - Example: both texts contain *“pleural effusion”* → ROUGE-2 ≈ **0.5**, despite opposite clinical meaning.  
+  - Example: both texts contain *“pleural effusion”* → ROUGE-2 ≈ **0.33**, despite opposite clinical meaning.  
+
+The reason for 0.33 is :
+
+**Reference bigrams** (selected for relevant parts):
+
+* “evidence of”
+* “of pneumonia”
+* “no pleural”
+* “pleural effusion”
+* “effusion is”
+* “is present”
+
+**Generated bigrams** (selected for relevant parts):
+
+* “show infection”
+* “a small”
+* “small pleural”
+* “pleural effusion”
+* “effusion is”
+* “is visible”
+
+Both contain “pleural effusion” and “effusion is” so 2 matches out of 6 = $$0.33$$
 
 **References**  
 - ROUGE overview: [Wikipedia](https://en.wikipedia.org/wiki/ROUGE_(metric))  
@@ -46,19 +89,19 @@ This review goes through four categories of evaluation metrics, using a consiste
 
 - **METEOR**  
   - **Equation**:  
-    \[
+    $$
     \text{METEOR} = F_{mean} \cdot (1 - Penalty)
-    \]  
-    where \(F_{mean} = \frac{10 \cdot P \cdot R}{R + 9P}\), with precision \(P\), recall \(R\).  
+    $$  
+    where $$F_{mean} = \frac{10 \cdot P \cdot R}{R + 9P}$$, with precision $$P$$, recall $$R$$.  
   - **Range**: 0 → 1. Higher = better alignment (including synonyms/paraphrases).  
   - Example: maps *“infection”* ↔ *“pneumonia”* → METEOR ≈ **0.6**, better than BLEU.  
 
 - **BERTScore**  
   - **Equation**:  
-    \[
+    $$
     \text{BERTScore}(c, r) = \frac{1}{|c|} \sum_{x \in c} \max_{y \in r} \cos(e(x), e(y))
-    \]  
-    where \(c\) = candidate tokens, \(r\) = reference tokens, \(e(\cdot)\) = embeddings.  
+    $$
+    where $$c$$ = candidate tokens, $$r$$ = reference tokens, $$e(\cdot)$$ = embeddings.  
   - **Range**: -1 → 1 (usually reported 0–1).  
   - Example: *“small pleural effusion”* vs. *“No pleural effusion”* → embeddings capture negation, score ≈ **0.3** (low similarity).  
 
@@ -74,17 +117,17 @@ This review goes through four categories of evaluation metrics, using a consiste
   - Reports mapped to structured labels (e.g., pneumonia present/absent).  
   - **Equations**:  
     - Sensitivity (Recall):  
-      \[
+      $$
       \frac{TP}{TP + FN}
-      \]  
+      $$  
     - Specificity:  
-      \[
+      $$
       \frac{TN}{TN + FP}
-      \]  
+      $$  
     - F1-Score:  
-      \[
+      $$
       \frac{2 \cdot TP}{2 \cdot TP + FP + FN}
-      \]  
+      $$  
   - **Range**: 0 → 1. Higher = better classification.  
   - Example: Reference = pneumonia **present**, effusion **absent**. Generated = pneumonia **present**, effusion **present**.  
     - Sensitivity (pneumonia) = 1.0  
@@ -101,9 +144,9 @@ This review goes through four categories of evaluation metrics, using a consiste
 
 - **Readability (Flesch Reading Ease)**  
   - **Equation**:  
-    \[
+    $$
     RE = 206.835 - 1.015 \cdot \frac{\text{words}}{\text{sentences}} - 84.6 \cdot \frac{\text{syllables}}{\text{words}}
-    \]  
+    $$  
   - **Range**: 0 (very hard) → 100 (very easy).  
   - Example:  
     - *“The chest X-ray shows pneumonia”* → RE ≈ 80 (easy).  
