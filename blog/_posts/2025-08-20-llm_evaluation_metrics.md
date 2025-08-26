@@ -6,185 +6,393 @@ author: Pierre-Marc Jodoin
 ---
 
 
-Large Language Models (LLMs) are increasingly applied to critical domains such as **medical report generation**, where accuracy and trust are essential. Evaluating the quality of generated text is non-trivial: surface word matches may miss key semantic errors, while semantic metrics may overlook domain-specific mistakes.  
-This review goes through four categories of evaluation metrics, using a consistent medical example to illustrate their differences:  
 
+Large Language Models (LLMs) are increasingly applied to critical domains such as **medical report generation**, where accuracy and trust are essential. Evaluating the quality of generated text is non-trivial: surface word matches may miss key semantic errors, while semantic metrics may overlook domain-specific mistakes.  
+
+This review goes through **five categories of evaluation metrics**, using a consistent medical example to illustrate their differences:
 
 > **Reference report**: "The chest X-ray shows evidence of pneumonia. No pleural effusion is present."  
 > **Generated report**: "The lungs show infection, and a small pleural effusion is visible."
 
 ---
 
-## LLM Evaluation Metrics
-
 ### 1. Lexical Overlap Metrics (BLEU, ROUGE)
 
-**BLEU (Bilingual Evaluation Understudy)**  
-  - **Equation**:  
-    $$
-    \text{BLEU-n} = BP \cdot \exp\left( \sum_{n=1}^{N} w_n \log p_n \right)
-    $$  
-    where $$p_n$$ = precision of n-gram overlap, $$w_n$$ = weights (often uniform), $$BP$$ = brevity penalty.  
-  - **Range**: 0 (no overlap) → 1 (perfect overlap).  
-  - In our example: → unigram overlap is low → BLEU-1 near **0.32**.  
+Lexical metrics evaluate how many words or short sequences (**n-grams**) in the generated text match those in the reference text. They do **not** consider synonyms or meaning.
 
-The reason for 0.32 with n=1.
 
-**Reference report**:
-"The chest X-ray shows evidence of pneumonia. No pleural effusion is present."
+## 1.1 ROUGE (Recall-Oriented Understudy for Gisting Evaluation)
 
-= 12 tokens
+- **Equation (ROUGE-N):**  
+  $$
+  ROUGE\text{-}N = \frac{\text{Count}_{\text{match}}(n\text{-grams})}{\text{Count}_{\text{reference}}(n\text{-grams})}
+  $$
 
-**Generated report**:
-"The lungs show infection, and a small pleural effusion is visible."
+- **Range:** 0 (no recall) → 1 (perfect recall).  
 
-= 10 tokens
+- **Step-by-step medical example (unigram recall, ROUGE-1):**
+     
+  **Reference unigrams:**  
+  *The*, *chest*, *X-Ray*, *shows*, *evidence*, *of*, *pneumonia*, *no*, *pleural*, *effusion*, *is*, *present* 
 
-Overlap between generated and reference unigrams:
+  **Generated unigrams:**
+*The*, *lungs*, *show*, *infection*, *and*, *a*, *small*, *pleural*, *effusion*, *is*, *visible*
 
-* "the" ✅
-* "pleural" ✅
-* "effusion" ✅
-* "is" ✅
+  **Matches:** *the*, *pleural*, *effusion*, *is* (4 matches).
 
-That’s 4 matches out of 10 candidate tokens.   If we set BP = 0.8 (could also be computed), we get that $$BLEU-1=BP*p_1=0.8*0.4=0.32$$.
+  $$
+  ROUGE\text{-}1 = \frac{4}{12} = 0.33
+  $$
 
-**ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**  
-  - **Equation (ROUGE-N)**:  
-    $$
-    \text{ROUGE-N} = \frac{\text{Count}_{\text{match}}(n\text{-grams})}{\text{Count}_{\text{reference}}(n\text{-grams})}
-    $$  
-  - **Range**: 0 (no recall) → 1 (perfect recall).  
-  - Example: both texts contain *“pleural effusion”* → ROUGE-2 ≈ **0.33**, despite opposite clinical meaning.  
+- **interpretation:** 
+one-third of the reference words are recalled.
 
-The reason for 0.33 is :
 
-**Reference bigrams** (selected for relevant parts):
+- **Step-by-step medical example (bigram recall, ROUGE-2):**
 
-* “evidence of”
-* “of pneumonia”
-* “no pleural”
-* “pleural effusion”
-* “effusion is”
-* “is present”
+  **Reference bigrams:**  
+  *The chest*, *chest X-Ray*, *X-Ray shows*, *show evidence*, *evidence of*, *of pneumonia*, *no pleural*,*<u> pleural effusion, effusion is</u>*, *is present*  
 
-**Generated bigrams** (selected for relevant parts):
+  **Generated bigrams:**  
+  *The lungs*, *lungs show*, *show infection*, *infection and*, *and a*, *a small*, *small pleural*,*<u> pleural effusion, effusion is</u>*, *is visible*  
 
-* “show infection”
-* “a small”
-* “small pleural”
-* “pleural effusion”
-* “effusion is”
-* “is visible”
+  **Matches:** *pleural effusion*, *effusion is* (2 matches).  
 
-Both contain “pleural effusion” and “effusion is” so 2 matches out of 6 = $$0.33$$
+  $$
+  ROUGE\text{-}2 = \frac{2}{10} = 0.2
+  $$
 
-**References**  
-- ROUGE overview: [Wikipedia](https://en.wikipedia.org/wiki/ROUGE_(metric))  
-- BLEU explained: [medium.com](https://medium.com/data-science-in-your-pocket/llm-evaluation-metrics-explained-af14f26536d2)
+- **Interpretation:**  
+  ROUGE finds overlap on the phrase *pleural effusion*, but cannot detect that *“no effusion”* and *“small effusion”* have opposite meanings. This inflates the score.
+
+
+## 1.2 BLEU (Bilingual Evaluation Understudy)
+
+- **Equation:**  
+  $$
+  BLEU = BP \cdot \exp\left( \sum_{n=1}^{N} w_n \log p_n \right)
+  $$  
+
+  where:  
+  - $$p_n$$ = precision of n-gram matches  
+  - $$w_n$$ = weights (commonly uniform, e.g., 0.5 for bigrams)  
+  - $$BP$$ = brevity penalty  
+
+- **Step-by-step medical example (BLEU-2):**
+
+  1. **1-gram precision:**  
+     Reference unigrams: 12 words  
+     Candidate unigrams: 11 words  
+     Matches: *The, pleural, effusion, is* (4 words)  
+     $$
+     p_1 = \frac{4}{11} \approx 0.36
+     $$  
+
+  2. **2-gram precision:**  
+     Matches: *pleural effusion*, *effusion is* (2 out of 10)  
+     $$
+     p_2 = \frac{2}{10} = 0.20
+     $$  
+
+  3. **Brevity penalty:**  
+     Reference length = 12, Candidate length = 11  
+     $$
+     BP = \exp\left(1 - \frac{12}{11}\right) \approx 0.91
+     $$  
+
+  4. **Final BLEU score:**  
+     $$
+     BLEU = 0.91 \cdot \exp\Big(0.5 \cdot \log(0.36) + 0.5 \cdot \log(0.20)\Big)\\
+     BLEU \approx 0.25 
+     $$
+
+- **Interpretation:**  
+  BLEU ≈ 0.25 is low, reflecting limited lexical overlap. However, it ignores that *infection* ≈ *pneumonia* semantically, and it cannot capture the **contradiction** between *“no effusion”* and *“small effusion”*.
+
 ---
+
+
 
 ### 2. Semantic Similarity Metrics (METEOR, BERTScore)
 
-- **METEOR**  
-  - **Equation**:  
-    $$
-    \text{METEOR} = F_{mean} \cdot (1 - Penalty)
-    $$  
-    where $$F_{mean} = \frac{10 \cdot P \cdot R}{R + 9P}$$, with precision $$P$$, recall $$R$$.  
-  - **Range**: 0 → 1. Higher = better alignment (including synonyms/paraphrases).  
-  - Example: maps *“infection”* ↔ *“pneumonia”* → METEOR ≈ **0.6**, better than BLEU.  
+Semantic metrics attempt to evaluate **meaning**, not just word overlap. They consider synonyms, stems, or embeddings.  These methods **do not use n-grams**.
 
-- **BERTScore**  
-  - **Equation**:  
-    $$
-    \text{BERTScore}(c, r) = \frac{1}{|c|} \sum_{x \in c} \max_{y \in r} \cos(e(x), e(y))
-    $$
-    where $$c$$ = candidate tokens, $$r$$ = reference tokens, $$e(\cdot)$$ = embeddings.  
-  - **Range**: -1 → 1 (usually reported 0–1).  
-  - Example: *“small pleural effusion”* vs. *“No pleural effusion”* → embeddings capture negation, score ≈ **0.3** (low similarity).  
 
-**References**  
-- METEOR overview: [Wikipedia](https://en.wikipedia.org/wiki/METEOR)  
-- BERTScore explained: [Medium blog](https://rumn.medium.com/bert-score-explained-8f384d37bb06)  
+## 2.1 METEOR (Metric for Evaluation of Translation with Explicit ORdering)
+
+- **Equation:**  
+  $$
+  METEOR = F_{mean} \cdot (1 - Penalty)
+  $$  
+
+  where:  
+  - $$F_{mean} = \frac{10 \cdot P \cdot R}{R + 9P}$$ (recall weighted 9 times more than precision)  
+  - $$P$$ = precision = matches / candidate length  
+  - $$R$$ = recall = matches / reference length  
+  - **Penalty** = fragmentation factor (scattered matches → larger penalty)
+
+- **Step-by-step medical example:**
+
+  1. **Word alignment:**  
+     - Exact matches: *The, pleural, effusion, is*  
+     - Synonym match via WordNet: *infection* ↔ *pneumonia* (c.f. [wordnet.princeton.edu](https://wordnet.princeton.edu/) for more details)
+ 
+     → Total = 5 matches  
+
+  2. **Precision and recall:**  
+     $$
+     P = \frac{5}{11} = 0.45, \quad R = \frac{5}{12} = 0.42
+     $$  
+
+  3. **F-mean:**  
+     $$
+     F_{mean} = \frac{10 \cdot 0.45 \cdot 0.42}{0.42 + 9 \cdot 0.45} \approx 0.42
+     $$  
+
+  4. **Fragmentation penalty:**  
+  
+    As for the $$Penalty$$, the equation is
+
+    $$
+    Penalty = \gamma \cdot frag^\beta    
+    $$ 
+
+    where *frag* stands for fragmentation ratio, a value based on the notion of "chunks".  In this example, the matches are in 3 chunks   
+    * **Chunk 1:** *The*  
+    * **Chunk 2:** *pleural effusion is*  
+    * **Chunk 3:** *infection* ↔ *pneumonia* 
+
+    Total matches: **m = 5** (The, pleural, effusion, is, infection↔pneumonia)  
+    Number of chunks: **ch = 3**  
+    Fragmentation ratio:  
+    
+$$
+    frag = \frac{ch}{m} = \frac{3}{5} = 0.6
+    $$   
+       
+    and if $$\gamma=0.5, \beta=3$$ (typical values) we get 
+    
+$$
+     Penalty = 0.5 \cdot (0.6)^3 \approx 0.108
+     $$  
+
+  5. **Final score:**  
+     $$
+     METEOR = 0.42 \cdot (1 - 0.108) \approx 0.38
+     $$  
+
+- **Interpretation:**  
+  METEOR (0.38) improves over BLEU (0.25) by using **WordNet** to give credit for *infection* ≈ *pneumonia*. However, it still penalizes scattered matches and does not fully capture the effusion contradiction.
+
+
+## 2.2 BERTScore
+
+- **Equation:**  
+  $$
+  BERTScore(c, r) = \frac{1}{|c|}\sum_{x \in c} \max_{y \in r} \cos(e(x), e(y))
+  $$  
+
+  where *c* is the list of candidate tokens, *r* is the list of reference tokens, and embeddings $$e(\cdot)$$ come from a pretrained model like BERT.
+
+- **How it works:**  
+  - Each word gets a **contextual embedding**.  
+  - Similarities are based on **cosine similarity** of embeddings.  
+  - Unlike BLEU/METEOR (and like METEOR), it does not need n-grams or WordNet.  
+
+- **Step-by-step medical example:**
+  - *infection* ↔ *pneumonia* → cos ≈ 0.7
+  - *pleural (small)* ↔ *pleural (no)* → cos ≈ 0.4   
+  - *effusion (small)* ↔ *effusion (no)* → cos ≈ 0.4  
+  - *small/visible* ↔ *no/present* → cos ≈ 0.1
+- Other matches (e.g., *lungs* vs *chest (X-ray)*) → cos ≈ 0.7  
+- Averaging → BERTScore ≈ 0.3  
+
+- **Interpretation:**  
+BERTScore is harsher than METEOR because contextual embeddings **capture negation**. It penalizes the contradiction *“no effusion”* vs *“small effusion”* strongly, producing a lower score.
 
 ---
 
 ### 3. Clinical Accuracy Metrics (Sensitivity, Specificity, F1)
 
-- **Entity/Label Metrics**  
-  - Reports mapped to structured labels (e.g., pneumonia present/absent).  
-  - **Equations**:  
-    - Sensitivity (Recall):  
-      $$
-      \frac{TP}{TP + FN}
-      $$  
-    - Specificity:  
-      $$
-      \frac{TN}{TN + FP}
-      $$  
-    - F1-Score:  
-      $$
-      \frac{2 \cdot TP}{2 \cdot TP + FP + FN}
-      $$  
-  - **Range**: 0 → 1. Higher = better classification.  
-  - Example: Reference = pneumonia **present**, effusion **absent**. Generated = pneumonia **present**, effusion **present**.  
-    - Sensitivity (pneumonia) = 1.0  
-    - Specificity (effusion) = 0.0  
-    - F1 (overall) = lower than 1.  
+Clinical evaluation metrics assess the correctness of **medical findings**, not just the language. They require mapping reports to structured **labels** (done manually or via NLP pipelines like [CheXbert](https://techfinder.stanford.edu/technology/chexbert-radiologist-level-automated-radiology-report-labeler-using-deep-learning) or [RadGraph](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/c8ffe9a587b126f152ed3d89a146b445-Paper-round1.pdf)).
 
-**References**  
-- RadGraph dataset: [PhysioNet project](https://physionet.org/content/radgraph/1.0.0/)  
-- CheXbert labels: [Stanford CheXbert GitHub](https://github.com/stanfordmlgroup/CheXbert)  
+
+## 3.1 Definitions
+- **Sensitivity (recall for positives):**  
+$$
+\frac{TP}{TP + FN}
+$$  
+
+- **Specificity (recall for negatives):**  
+$$
+\frac{TN}{TN + FP}
+$$  
+
+- **F1 score (balance of precision and recall):**  
+$$
+\frac{2TP}{2TP + FP + FN}
+$$  
+
+
+## 3.2 Medical Toy Example
+- List of labels = {Pneumonia, Effusion}
+- Reference: {Pneumonia = Present, Effusion = Absent}  
+- Candidate: {Pneumonia = Present, Effusion = Present}  
+
+ Pneumonia → True Positive (TP = 1, FN = 0) → Sensitivity = **1.0**  
+ Effusion → False Positive (FP = 1, TN = 0) → Specificity = **0.0**  
+ Overall → F1 = 2 / (2+1+0) ≈ **0.67**
+
+
+## 3.3 Interpretation
+- Sensitivity = 1.0 → no pneumonia cases were missed.  
+- Specificity = 0.0 → effusion was falsely added (**hallucination**).  
+- F1 ≈ 0.67 → score penalized by false positives.  
+
+**Key point:** these metrics rely on **label extraction**. Without manually or automatically labeling *pneumonia* and *effusion*, the metric cannot know which words matter clinically.
 
 ---
 
 ### 4. Human-Centric & Readability Metrics
 
-- **Readability (Flesch Reading Ease)**  
-  - **Equation**:  
-    $$
-    RE = 206.835 - 1.015 \cdot \frac{\text{words}}{\text{sentences}} - 84.6 \cdot \frac{\text{syllables}}{\text{words}}
-    $$  
-  - **Range**: 0 (very hard) → 100 (very easy).  
-  - Example:  
-    - *“The chest X-ray shows pneumonia”* → RE ≈ 80 (easy).  
-    - *“Evidence of parenchymal infiltrates consistent with pneumonia”* → RE ≈ 30 (difficult).  
+These metrics capture **clarity, usability, and trustworthiness**, not factual correctness.
 
-- **Human Expert Ratings**  
-  - **Method**: clinicians assign Likert scores (1–5) for factual accuracy, clarity, completeness.  
-  - **Range**: typically 1 (poor) → 5 (excellent).  
-  - Example: Generated report with hallucinated effusion would score **1–2** for accuracy despite decent BLEU/METEOR.  
 
-**References**  
-- Readability overview: [Wikipedia – Flesch Reading Ease](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)  
-- Human eval in NLP: [Evidently AI guide](https://www.evidentlyai.com/llm-guide/llm-evaluation-metrics)  
+## 4.1 Flesch-Kincaid Reading Ease
+The Flesch-Kincaid Reading Ease score is given by:
+
+$$
+RE = 206.835 - 1.015 \cdot \frac{W}{S} - 84.6 \cdot \frac{Sy}{W}
+$$
+
+Where:  
+- W  = total number of words  
+- S  = total number of sentences  
+- Sy = total number of syllables  
+
+
+**Intuition behind each term**
+- **Sentence length (W/S)**  
+  - Longer sentences (more words per sentence) → harder to follow.  
+  - So the coefficient **–1.015** penalizes long sentences.  
+
+- **Word complexity (Sy/W)**  
+  - Words with more syllables are harder to read.  
+  - So the coefficient **–84.6** penalizes higher syllable density.  
+
+- **Constant (206.835)**  
+  - Ensures the scale typically falls between 0 and 100.  
+
+
+**Scale**
+
+| RE Score | Readability | 
+|----------|-------------|
+| 90-100   | Very easy   | 
+| 60-70    | Standard    | 
+| 30-50    | Difficult   | 
+| 0-30     | Very hard   | 
+
+**Reference-like text (simpler):**  
+*"The chest X-ray shows pneumonia."*  
+- Words \(W = 5\)  
+- Sentences \(S = 1\)  
+- Syllables \(Sy = 9\) (The=1, chest=1, X-ray=2, shows=1, pneumonia=4)  
+
+$$
+RE = 206.835 - 1.015 \cdot (5/1) - 84.6 \cdot (9/5)
+$$  
+
+$$
+RE \approx 206.835 - 5.075 - 152.28 \approx 49.5
+$$  
+
+**Generated text (more complex):**  
+*"Evidence of parenchymal infiltrates consistent with pneumonic infection is demonstrated."*  
+- Words W = 11  
+- Sentences S = 1
+- Syllables $$Sy = 27$$   
+
+$$
+RE = 206.835 - 1.015 \cdot (11/1) - 84.6 \cdot (27/11)
+$$  
+
+$$
+RE \approx 206.835 - 11.165 - 207.46 \approx -11.8
+$$  
+
+
+## 4.2 Expert Ratings
+- Clinicians assign scores (1–5) on factual accuracy, clarity, completeness.  
+- In our example, the hallucinated effusion report might score **1–2/5** for accuracy, even if BLEU/METEOR are moderate.  
+
+---
+
+### 5. Model-Based Metrics (Prometheus)
+
+Unlike lexical, semantic, clinical, or readability metrics, **model-based methods** use an **LLM evaluator** (a model acting as a judge) to assess generated text. These methods aim to approximate **human judgment at scale**, capturing nuances like factual accuracy, reasoning, and coherence.
+
+
+## 5.1 Prometheus
+
+**Definition:**  
+Prometheus is a family of **LLM-as-a-judge frameworks**. Instead of relying on fixed formulas like BLEU or ROUGE, a separate LLM (evaluator) is prompted with a **rubric** to rate the generated text across multiple dimensions:  
+- Factual accuracy  
+- Faithfulness to the reference  
+- Coherence  
+- Usefulness/appropriateness  
+
+**Scoring Method:**  
+- Candidate report and reference report are provided to the evaluator model.  
+- The evaluator is asked to give **dimension-specific scores** (e.g., from 1 to 5, or 0 to 1).  
+- Final score is the weighted sum of these dimensions.
+
+
+**Medical Example**  
+- **Reference:** "The chest X-ray shows evidence of pneumonia. No pleural effusion is present."  
+- **Candidate:** "The lungs show infection, and a small pleural effusion is visible."  
+
+Prometheus (if instructed to evaluate *accuracy* and *faithfulness*) might output:  
+- Pneumonia ↔ infection → partial credit (score ~0.6)  
+- Effusion contradiction (no ↔ small effusion) → strong penalty (score ~0.2)  
+- Overall weighted score ≈ **0.4**  
+
+**Interpretation:**  
+Prometheus is a "black box" metric that recognizes **synonyms** like *infection ↔ pneumonia* but penalizes critical factual mistakes like hallucinated effusion, closer to how a clinician would judge.
 
 ---
 
 ## Conclusion
-This example illustrates why **no single metric suffices**.  
-- **Lexical metrics** (BLEU, ROUGE) measure surface overlap but miss meaning.  
-- **Semantic metrics** (METEOR, BERTScore) capture paraphrasing yet may misjudge domain-specific errors.  
-- **Clinical metrics** directly validate factual correctness of findings.  
-- **Human/readability metrics** ensure clarity and trustworthiness.  
 
-A robust evaluation of LLM-generated **medical reports** requires a **hybrid pipeline**, combining automated and human-centered approaches to capture accuracy, semantics, and usability.
+This analysis shows why **no single metric suffices**:  
+- **Lexical metrics** (BLEU, ROUGE) → cheap but superficial.  
+- **Semantic metrics** (METEOR, BERTScore) → capture synonyms and context, but may misjudge contradictions.  
+- **Clinical metrics** (Sensitivity, Specificity, F1) → check factual correctness of findings, crucial for safety, need labels.  
+- **Human/readability metrics** (expert rating, Flesch–Kincaid) → ensure clarity for clinicians and patients. 
+- **Model-based metrics** → (Prometheus) leverage LLMs or structured evaluators as judges, offering more **holistic, human-like, and explainable assessments**. They are powerful for identifying critical errors and providing diagnostic insights, but come with higher complexity and cost.    The score of these metrics change depending on the LLM and the prompt used. 
 
----
-
-## Comparison Table of Metrics
-
-| **Category** | **Metric** | **Equation (simplified)** | **Range** | **Strengths** | **Weaknesses** | **Medical Example Outcome** |
-|--------------|------------|---------------------------|-----------|---------------|----------------|-----------------------------|
-| **Lexical Overlap** | **BLEU** | \( BLEU = BP \cdot \exp\big(\sum w_n \log p_n\big) \) | 0–1 | Fast, standard, language-independent | Fails on synonyms/paraphrases | Low score (~0.2) since “infection” ≠ “pneumonia” |
-|              | **ROUGE-N** | \( \text{ROUGE-N} = \frac{\text{match n-grams}}{\text{ref n-grams}} \) | 0–1 | Good recall measure, common in summarization | Matches words even if meaning opposite | Medium score (~0.5) since “pleural effusion” overlaps despite negation difference |
-| **Semantic Similarity** | **METEOR** | \( \text{METEOR} = F_{mean} \cdot (1 - Penalty) \) | 0–1 | Rewards synonyms/stemming | Limited synonym coverage | Medium score (~0.6), gives credit to “infection” ≈ “pneumonia” |
-|              | **BERTScore** | \( \frac{1}{|c|}\sum_{x\in c}\max_{y\in r}\cos(e(x),e(y)) \) | -1–1 (often 0–1) | Captures paraphrase & context | Heavy compute, domain-limited embeddings | Low score (~0.3), detects mismatch between “small effusion” vs. “no effusion” |
-| **Clinical Accuracy** | **Sensitivity** | \( \frac{TP}{TP+FN} \) | 0–1 | Checks if positives are correctly found | Ignores negatives | Pneumonia correctly flagged → 1.0 |
-|              | **Specificity** | \( \frac{TN}{TN+FP} \) | 0–1 | Checks absence detection | Ignores positives | Effusion wrongly added → 0.0 |
-|              | **F1 Score** | \( \frac{2TP}{2TP+FP+FN} \) | 0–1 | Balances precision/recall | Needs labeled data | Drops due to false effusion |
-| **Human & Readability** | **Flesch Reading Ease** | \( 206.835 - 1.015\frac{W}{S} - 84.6\frac{Sy}{W} \) | 0–100 | Objective readability | Not clinical-specific | “Chest X-ray shows pneumonia” → ~80 (easy); “parenchymal infiltrates…” → ~30 (hard) |
-|              | **Expert Ratings** | Likert 1–5 | 1–5 | Captures trust, nuance | Expensive, subjective | Radiologist flags effusion error → ~2 |
+A robust evaluation of medical LLMs must combine **more than one type of metrics**.
 
 ---
+
+## References
+
+
+### Individual Metric References
+- **BLEU**: [Wikipedia – BLEU](https://en.wikipedia.org/wiki/BLEU)  
+- **ROUGE**: [Wikipedia – ROUGE](https://en.wikipedia.org/wiki/ROUGE)  
+- **METEOR**: [Wikipedia – METEOR](https://en.wikipedia.org/wiki/METEOR)  
+- **BERTScore**: [Medium – BERTScore Explained](https://rumn.medium.com/bert-score-explained-8f384d37bb06)  
+
+### General Overviews of Automatic Metrics
+- ROUGE, BLEU, BERTScore: [Medium – LLM Evaluation Metrics Explained](https://medium.com/data-science-in-your-pocket/llm-evaluation-metrics-explained-af14f26536d2)  
+- ROUGE, BLEU, METEOR, and BERTScore:  
+  - [Plain English – Comprehensive Guide](https://plainenglish.io/blog/evaluating-nlp-models-a-comprehensive-guide-to-rouge-bleu-meteor-and-bertscore-metrics-d0f1b1)  
+  - [DigitalOcean – Automated Metrics for Generated Text](https://www.digitalocean.com/community/tutorials/automated-metrics-for-evaluating-generated-text?utm_source=chatgpt.com)  
+- ROUGE, BLEU, METEOR, BERTScore, and Prometheus:  
+  - [Confident AI – LLM Evaluation Metrics](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation)  
+
+
+### Human-Centric & Readability Metrics
+- **Flesch–Kincaid Readability in LLM Evaluation**: [PubMed – Evaluating the Readability of Patient Education Materials Revised by LLMs](https://pubmed.ncbi.nlm.nih.gov/39105460/)  
+- **Flesch–Kincaid Readability Tests**: [Wikipedia – Flesch–Kincaid](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)  
