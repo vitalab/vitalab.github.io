@@ -1,6 +1,6 @@
 ---
 layout: review
-title:  "A Survey of LLM Evaluation Metrics"
+title:  "A Survey of popular LLM Evaluation Metrics"
 tags:   deep-learning machine-learning
 author: Pierre-Marc Jodoin
 ---
