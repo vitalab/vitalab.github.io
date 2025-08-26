@@ -81,8 +81,7 @@ Both contain “pleural effusion” and “effusion is” so 2 matches out of 6 
 
 **References**  
 - ROUGE overview: [Wikipedia](https://en.wikipedia.org/wiki/ROUGE_(metric))  
-- BLEU explained: [DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/automated-metrics-for-evaluating-generated-text)
-
+- BLEU explained: [medium.com](https://medium.com/data-science-in-your-pocket/llm-evaluation-metrics-explained-af14f26536d2)
 ---
 
 ### 2. Semantic Similarity Metrics (METEOR, BERTScore)
