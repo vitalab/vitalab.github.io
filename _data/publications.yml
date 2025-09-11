@@ -31,10 +31,10 @@ journal:
     pages: 1-4
 
 
-  - authors: 'AA Task, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
-    year: 2024
+  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
+    year: 2025
     title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
-    journal: submitted to IEEE Journal of Biomedical and Health Informatics
+    journal: in press at IEEE Journal of Biomedical and Health Informatics
     pages: 1-12
 
   - authors: 'J. Lévesque, A. Théberge, M. Descoteaux, P-M. Jodoin'
