@@ -413,7 +413,15 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
- 
+
+
+  - authors: 'T. Judge, N. Duchateau, K. Faraz, P-M Jodoin, and O. Bernard'
+    year: 2025
+    title: 'Generation of realistic cardiac ultrasound sequences
+with ground truth motion and speckle decorrelation'
+    conference : International Ultrasonics Symposium (IUS)
+
+
   - authors: 'C.Goujat, P-M Jodoin, L.Boussel, and O.Bernard'
     year: 2025
     title: 'How sensitive is performance to BB placement accuracy?'
