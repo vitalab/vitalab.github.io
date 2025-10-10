@@ -1,5 +1,12 @@
 journal_list_title: Journal papers
 journal:
+
+  - authors: 'A. Judge, N. Duchateau, T. Judge, R.A. Sandler, J.Z. Sokol, C. Desrosiers, O. Bernard, and P.-M. Jodoin'
+    year: 2025
+    title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation, submitted to IEEE Transactions on Medical Imaging'
+    journal: submitted to IEEE transactions on Medical Imaging
+    pages: 1-12
+
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
     year: 2025
     title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
