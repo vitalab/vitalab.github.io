@@ -7,12 +7,6 @@ journal:
     journal: submitted to IEEE transactions on Medical Imaging
     pages: 1-12
 
-  - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
-    year: 2025
-    title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
-    journal: submitted to Nature Scientific Report
-    pages: 1-17
-
   - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
     year: 2025
     title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
@@ -25,11 +19,23 @@ journal:
     journal: submitted to IEEE Transactions on Image Processing
     pages: 1-12
 
-  - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
+  - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
+    year: 2025
+    title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
+    journal: Accepted at Nature Scientific Report
+    pages: 1-17
+
+  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
+    year: 2025
+    title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
+    journal: Accepted at IEEE Journal of Biomedical and Health Informatics
+    pages: 1-12
+
+  - authors: 'N.Painchaud, J. Stym-Popper, P-Y. Courand, N. Thome, P-M. Jodoin, N. Duchateau, O. Bernard'
     year: 2025
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
-    journal: accepted at IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
-    pages: 1-12
+    journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control 72(10)
+    pages: 1388-1400
 
   - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
     year: 2025
@@ -37,20 +43,12 @@ journal:
     journal: Brain Structure and Function
     pages: 1-4
 
-
-  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
-    year: 2025
-    title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
-    journal: in press at IEEE Journal of Biomedical and Health Informatics
-    pages: 1-12
-
   - authors: 'J. Lévesque, A. Théberge, M. Descoteaux, P-M. Jodoin'
     year: 2025
     title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
     journal: Medical Image Analysis, vol 106, 103743
     pages: 1-52
-    arxiv: arxiv.org/abs/2507.11486 
-
+    arxiv: arxiv.org/abs/2507.11486
 
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2024
