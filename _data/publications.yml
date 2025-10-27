@@ -1,16 +1,22 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'A Théberge, Z El Yamani, M Barakovic, S Magon, J Yuan-Mou Yang, M Descoteaux, F. Rheault, P-M Jodoin'
+    year: 2025
+    title: 'BundleParc: Consistent White Matter Bundle Parcellation without Tractography'
+    journal: submitted to Medical Image Analysis
+    pages: 1-19
+
   - authors: 'A. Judge, N. Duchateau, T. Judge, R.A. Sandler, J.Z. Sokol, C. Desrosiers, O. Bernard, and P.-M. Jodoin'
     year: 2025
-    title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation, submitted to IEEE Transactions on Medical Imaging'
+    title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation'
     journal: submitted to IEEE transactions on Medical Imaging
     pages: 1-12
 
   - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
     year: 2025
     title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
-    journal: submitted to Transactions on Medical Imaging
+    journal: submitted to IEEE Transactions on Medical Imaging
     pages: 1-12
 
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
