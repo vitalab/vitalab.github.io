@@ -1,15 +1,28 @@
 journal_list_title: Journal papers
 journal:
-  - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
+
+  - authors: 'G. Girard, M. Edde, F. Dumais, Y. David, M. Dumont, G. Theaud, J-C. Houde, A. Bore, M.Descoteaux, P-M. Jodoin'
     year: 2025
-    title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
-    journal: submitted to Nature Scientific Report
+    title: 'Clinical-ComBAT: a diffusion-weighted MRI harmonization method for clinical applications'
+    journal: submitted to Medical Image Analysis
     pages: 1-17
+
+  - authors: 'A Théberge, Z El Yamani, M Barakovic, S Magon, J Yuan-Mou Yang, M Descoteaux, F. Rheault, P-M Jodoin'
+    year: 2025
+    title: 'BundleParc: Consistent White Matter Bundle Parcellation without Tractography'
+    journal: submitted to Medical Image Analysis
+    pages: 1-19
+
+  - authors: 'A. Judge, N. Duchateau, T. Judge, R.A. Sandler, J.Z. Sokol, C. Desrosiers, O. Bernard, and P.-M. Jodoin'
+    year: 2025
+    title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation'
+    journal: submitted to IEEE transactions on Medical Imaging
+    pages: 1-12
 
   - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
     year: 2025
     title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
-    journal: submitted to Transactions on Medical Imaging
+    journal: submitted to IEEE Transactions on Medical Imaging
     pages: 1-12
 
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
@@ -18,10 +31,22 @@ journal:
     journal: submitted to IEEE Transactions on Image Processing
     pages: 1-12
 
+  - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
+    year: 2025
+    title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
+    journal: accepted at Nature Scientific Report
+    pages: 1-17
+
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
     year: 2025
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
-    journal: accepted at IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
+    journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control 72(10)
+    pages: 1388-1400
+
+  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
+    year: 2025
+    title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
+    journal: in press at IEEE Journal of Biomedical and Health Informatics
     pages: 1-12
 
   - authors: 'Fan Zhang, Antoine Théberge, Pierre-Marc Jodoin, Maxime Descoteaux, and Lauren J. O’Donnell'
@@ -29,21 +54,13 @@ journal:
     title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
     journal: Brain Structure and Function
     pages: 1-4
-
-
-  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
-    year: 2024
-    title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
-    journal: in press at IEEE Journal of Biomedical and Health Informatics
-    pages: 1-12
-
+    
   - authors: 'J. Lévesque, A. Théberge, M. Descoteaux, P-M. Jodoin'
     year: 2025
     title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
     journal: Medical Image Analysis, vol 106, 103743
     pages: 1-52
-    arxiv: arxiv.org/abs/2507.11486 
-
+    arxiv: arxiv.org/abs/2507.11486
 
   - authors: 'A. Theberge, C. Desrosiers, M. Descoteaux, P-M. Jodoin'
     year: 2024
@@ -413,7 +430,15 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
- 
+
+
+  - authors: 'T. Judge, N. Duchateau, K. Faraz, P-M Jodoin, and O. Bernard'
+    year: 2025
+    title: 'Generation of realistic cardiac ultrasound sequences
+with ground truth motion and speckle decorrelation'
+    conference : International Ultrasonics Symposium (IUS)
+
+
   - authors: 'C.Goujat, P-M Jodoin, L.Boussel, and O.Bernard'
     year: 2025
     title: 'How sensitive is performance to BB placement accuracy?'
