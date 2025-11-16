@@ -84,26 +84,6 @@ current_members:
         startyear: 2023
         endyear: ''
 
-  - firstname: 'Manon'
-    lastname: 'Edde'
-    picture: 'medde.jpg'
-    interests: "Neuro biology, brain imaging, myelin, White matter imaging, diffusion MRI"
-    grades:
-      - grade:
-        name: Research professional
-        startyear: 2023
-        endyear: 2025
-
-  - firstname: 'Gabriel'
-    lastname: 'Gigard'
-    picture: 'ggirard.jpg'
-    interests: "Brain imaging, harmonization, diffusion MRI"
-    grades:
-      - grade:
-        name: Research professional
-        startyear: 2023
-        endyear: 2025
-
   - firstname: 'Arnaud'
     lastname: 'Judge'
     picture: 'aJudge.jpg'
@@ -150,6 +130,27 @@ current_members:
         endyear: ''
 
 past_members:
+
+  - firstname: 'Manon'
+    lastname: 'Edde'
+    picture: 'medde.jpg'
+    interests: "Neuro biology, brain imaging, myelin, White matter imaging, diffusion MRI"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2023
+        endyear: 2025
+
+  - firstname: 'Gabriel'
+    lastname: 'Gigard'
+    picture: 'ggirard.jpg'
+    interests: "Brain imaging, harmonization, diffusion MRI"
+    grades:
+      - grade:
+        name: Research professional
+        startyear: 2023
+        endyear: 2025
+
 
   - firstname: 'Nathan'
     lastname: 'Painchaud'
