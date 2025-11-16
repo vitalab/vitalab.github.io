@@ -1,13 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
-<<<<<<< HEAD
   - authors: 'G. Girard, M. Edde, F. Dumais, Y. David, M. Dumont, G. Theaud, J-C. Houde, A. Bore, M.Descoteaux, P-M. Jodoin'
     year: 2025
     title: 'Clinical-ComBAT: a diffusion-weighted MRI harmonization method for clinical applications'
     journal: submitted to Medical Image Analysis
     pages: 1-17
-=======
+
   - authors: 'A Théberge, Z El Yamani, M Barakovic, S Magon, J Yuan-Mou Yang, M Descoteaux, F. Rheault, P-M Jodoin'
     year: 2025
     title: 'BundleParc: Consistent White Matter Bundle Parcellation without Tractography'
@@ -19,7 +18,6 @@ journal:
     title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation'
     journal: submitted to IEEE transactions on Medical Imaging
     pages: 1-12
->>>>>>> fcdbc0ada400cde7e5f986fa8d250d3e93fc7c22
 
   - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
     year: 2025
@@ -36,23 +34,10 @@ journal:
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
     year: 2025
     title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
-<<<<<<< HEAD
     journal: accepted at Nature Scientific Report
     pages: 1-17
 
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
-=======
-    journal: Accepted at Nature Scientific Report
-    pages: 1-17
-
-  - authors: 'AA Tasken, T. Judge, E. Andreas R. Berg, J. Yu, B. Grenne, F. Lindseth, S Aakhus, P-M Jodoin, N. Duchateau, O. Bernard, and G. Kiss'
-    year: 2025
-    title: 'Estimation of Segmental Longitudinal Strain in Transesophageal Echocardiography by Deep Learning'
-    journal: Accepted at IEEE Journal of Biomedical and Health Informatics
-    pages: 1-12
-
-  - authors: 'N.Painchaud, J. Stym-Popper, P-Y. Courand, N. Thome, P-M. Jodoin, N. Duchateau, O. Bernard'
->>>>>>> fcdbc0ada400cde7e5f986fa8d250d3e93fc7c22
     year: 2025
     title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
     journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control 72(10)
@@ -69,7 +54,7 @@ journal:
     title: 'Think Deep in the Tractography Game: Deep Learning for Tractography Computing and Analysis'
     journal: Brain Structure and Function
     pages: 1-4
-
+    
   - authors: 'J. Lévesque, A. Théberge, M. Descoteaux, P-M. Jodoin'
     year: 2025
     title: 'Exploring the robustness of TractOracle methods in RL-based tractography'
