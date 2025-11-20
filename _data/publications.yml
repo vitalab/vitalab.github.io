@@ -1,6 +1,13 @@
 journal_list_title: Journal papers
 journal:
 
+
+  - authors: 'F. Sinzinger, Antoine Théberge, P-M. Jodoin, M. Descoteaux, R Moreno'
+    year: 2025
+    title: 'Leveraging Rotational Equivariance for Reinforcement Learning in Tractography'
+    journal: submitted to Medical Image Analysis
+    pages: 1-28
+
   - authors: 'G. Girard, M. Edde, F. Dumais, Y. David, M. Dumont, G. Theaud, J-C. Houde, A. Bore, M.Descoteaux, P-M. Jodoin'
     year: 2025
     title: 'Clinical-ComBAT: a diffusion-weighted MRI harmonization method for clinical applications'
@@ -28,7 +35,7 @@ journal:
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
     year: 2025
     title: 'Uncertainty Propagation for Echocardiography Clinical Metric Estimation via Contour Sampling'
-    journal: submitted to IEEE Transactions on Image Processing
+    journal: accepted at IEEE Transactions on Image Processing
     pages: 1-12
 
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
