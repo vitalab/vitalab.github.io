@@ -17,7 +17,7 @@ journal:
   - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
     year: 2026
     title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
-    journal: accepted at Machine learning for Biomedical Image Analysis
+    journal: accepted at Machine learning for Biomedical Image Analysis (MELBA)
     pages: 1-12
 
 
