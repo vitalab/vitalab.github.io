@@ -2,6 +2,25 @@ journal_list_title: Journal papers
 journal:
 
 
+  - authors: 'David Y, Jodoin P-M'
+    year: 2026
+    title: 'Robust-ComBat: Mitigating Outlier Effects in Diffusion MRI Data Harmonization'
+    journal: submitted to Nature Scientific Reports
+    pages: 1-11
+
+  - authors: 'Pierrard B, Sdika M, Jodoin P-M'
+    year: 2026
+    title: 'Frugal-ComBat: Sample-Efficient Harmonization for Multi-Site Neuroimaging'
+    journal: submitted to IEEE trans on Biomedical Engineering
+    pages: 1-11
+
+  - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
+    year: 2026
+    title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
+    journal: accepted at Machine learning for Biomedical Image Analysis
+    pages: 1-12
+
+
   - authors: 'F. Sinzinger, Antoine Théberge, P-M. Jodoin, M. Descoteaux, R Moreno'
     year: 2025
     title: 'Leveraging Rotational Equivariance for Reinforcement Learning in Tractography'
@@ -26,22 +45,16 @@ journal:
     journal: submitted to IEEE transactions on Medical Imaging
     pages: 1-12
 
-  - authors: 'O. Bernard, W. Romero, C. Bouton, C. Goujat, H.J. Ling, P-M. Jodoin, F. Guo, C. Sheagren, G. Wright, A. Qayyum, M. Mazher, S.A.Niederer, H. Wang, X. Wu, F. Thaler, G. Plank, M. Urschler, R.M. Rosales, E. Pueyo, N. Duchateau, F. Cervenansky, P. Clarysse, L. Belle, N. Mewton, T. Bochaton, M. Viallon, and P. Croisille'
-    year: 2025
-    title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
-    journal: submitted to IEEE Transactions on Medical Imaging
-    pages: 1-12
-
   - authors: 'T. Judge, O. Bernard, W-J Cho Kim, A. Gomez, A. Chartsias, and P-M Jodoin'
     year: 2025
     title: 'Uncertainty Propagation for Echocardiography Clinical Metric Estimation via Contour Sampling'
-    journal: accepted at IEEE Transactions on Image Processing
+    journal: under review at IEEE Transactions on Image Processing
     pages: 1-12
 
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
     year: 2025
     title: 'ComBAT Harmonization for Diffusion MRI: Challenges and Best Practices'
-    journal: accepted at Nature Scientific Report
+    journal: Nature Scientific Reports, 15, Article number: 41508 
     pages: 1-17
 
   - authors: 'N.Painchaud, P-Y. Courand, P-M. Jodoin, N. Duchateau, O. Bernard'
@@ -437,6 +450,12 @@ database for machine learning dMRI tractography'
 
 conference_list_title: Conference papers
 conference:
+
+
+  - authors: 'Pierrard B, Sdika M, and Jodoin P-M'
+    year: 2026
+    title: 'Frugal-ComBat: An Ultra-Low-Sample Diffusion MRI Harmonization Method'
+    conference : International Symposium on Biomedical Imaging (ISBI) - Oral paper
 
 
   - authors: 'T. Judge, N. Duchateau, K. Faraz, P-M Jodoin, and O. Bernard'
