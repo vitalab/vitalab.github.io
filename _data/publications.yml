@@ -449,7 +449,11 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
-
+  - authors: 'A. Theberge, P-M. Jodoin, M. Descoteaux, D. Jones'
+    year: 2026
+    title: 'TTL-FOD2: Few Directions, Better Tracking'
+    conference : ISMRM  
+  
   - authors: 'Pierrard B, Sdika M, and Jodoin P-M'
     year: 2026
     title: 'Frugal-ComBat: An Ultra-Low-Sample Diffusion MRI Harmonization Method'
