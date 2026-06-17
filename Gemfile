@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.1.1"
+gem "jekyll", "~> 4.3"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -28,4 +28,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Resolve kramdown security warning
 gem "kramdown", ">= 2.3.0"
+
+# ffi 1.17+ requires Ruby >= 3.0; pin to last Ruby 2.7-compatible release
+gem "ffi", "< 1.17"
+
+# jekyll-sass-converter 3.x pulls in sass-embedded which requires rubygems >= 3.3.22
+gem "jekyll-sass-converter", "~> 2.0"
 

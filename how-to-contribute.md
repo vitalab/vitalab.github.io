@@ -22,7 +22,7 @@ install Ruby and Jekyll. The instructions on how to setup a Ruby environment, an
 of the website, are provided below.
 
 For further information about Jekyll's syntax, visit the [documentation page](https://jekyllrb.com/docs/). However, note
-that Jekyll's syntax may change in newer versions, and the site's version is frozen. Hence, although
+that Jekyll's syntax may change in newer versions, and the site targets Jekyll 4.x. Hence, although
 [Liquid tags](https://jekyllrb.com/docs/liquid/tags/) could be used for links, for example, plain old links are used to
 avoid issues building the site.
 
