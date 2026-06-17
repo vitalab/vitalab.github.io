@@ -64,16 +64,6 @@ current_members:
         startyear: 2025
         endyear: ''
 
-  - firstname: 'Jeremi'
-    lastname: 'Levesque'
-    picture: 'jlevesque.jpg'
-    interests: "Deep learning, reinforcement learning, white matter imaging, diffusion MRI"
-    grades:
-      - grade:
-        name: MSc
-        startyear: 2024
-        endyear: 2025
-
   - firstname: 'Célia'
     lastname: 'Goujat'
     picture: 'cgoujat.jpg'
@@ -98,20 +88,6 @@ current_members:
         startyear: 2025
         endyear:  ''
 
-  - firstname: 'Antoine'
-    lastname: 'Théberge'
-    picture: 'atheberge.jpeg'
-    interests: "Brain imaging, machine learning, reinforcement learning"
-    grades:
-      - grade:
-        name: MSc
-        startyear: 2018
-        endyear: 2021
-      - grade:
-        name: PhD
-        startyear: 2021
-        endyear:  ''
-
   - firstname: 'Thierry'
     lastname: 'Judge'
     picture: 'tjudge.jpeg'
@@ -130,6 +106,30 @@ current_members:
         endyear: ''
 
 past_members:
+
+  - firstname: 'Jeremi'
+    lastname: 'Levesque'
+    picture: 'jlevesque.jpg'
+    interests: "Deep learning, reinforcement learning, white matter imaging, diffusion MRI"
+    grades:
+      - grade:
+        name: MSc
+        startyear: 2024
+        endyear: 2026
+
+  - firstname: 'Antoine'
+    lastname: 'Théberge'
+    picture: 'atheberge.jpeg'
+    interests: "Brain imaging, machine learning, reinforcement learning"
+    grades:
+      - grade:
+        name: MSc
+        startyear: 2018
+        endyear: 2021
+      - grade:
+        name: PhD
+        startyear: 2021
+        endyear: 2026
 
   - firstname: 'Manon'
     lastname: 'Edde'
