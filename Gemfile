@@ -29,9 +29,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Resolve kramdown security warning
 gem "kramdown", ">= 2.3.0"
 
-# ffi 1.17+ requires Ruby >= 3.0; pin to last Ruby 2.7-compatible release
-gem "ffi", "< 1.17"
-
 # jekyll-sass-converter 3.x pulls in sass-embedded which requires rubygems >= 3.3.22
 gem "jekyll-sass-converter", "~> 2.0"
 
