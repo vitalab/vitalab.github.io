@@ -1,6 +1,12 @@
 journal_list_title: Journal papers
 journal:
 
+  - authors: 'T. Judge, N. Duchateau, A. Østvik, K. Faraz, A.A. Taskén, S. Karlsen, T. Edvardsen, H. Brunvand, M.A. Azad, H. Dalen, B. Grenne, G. Kiss, P-Y. Courand, L. Lovstakken, P-M. Jodoin, O. Bernard'
+    year: 2026
+    title: 'Deep Learning Strain Estimation: Is Physics-Based Simulation the Solution?'
+    journal: submitted to IEEE Transactions on Medical Imaging
+    pages: 1-10
+
   - authors: 'David Y, Jodoin P-M'
     year: 2026
     title: 'Robust-ComBat: Mitigating Outlier Effects in Diffusion MRI Data Harmonization'
