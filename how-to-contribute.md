@@ -22,7 +22,7 @@ install Ruby and Jekyll. The instructions on how to setup a Ruby environment, an
 of the website, are provided below.
 
 For further information about Jekyll's syntax, visit the [documentation page](https://jekyllrb.com/docs/). However, note
-that Jekyll's syntax may change in newer versions, and the site's version is frozen. Hence, although
+that Jekyll's syntax may change in newer versions, and the site targets Jekyll 4.x. Hence, although
 [Liquid tags](https://jekyllrb.com/docs/liquid/tags/) could be used for links, for example, plain old links are used to
 avoid issues building the site.
 
@@ -73,11 +73,11 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | 
 
 #### Install Ruby
 ```shell
-rbenv install -v 2.7.1
-rbenv global 2.7.1
+rbenv install -v 3.3.9
+rbenv global 3.3.9
 ```
 
-Make sure you have the right version installed and selected:
+Make sure you have the right version installed and selected (should show `3.3.9`):
 ```shell
 ruby -v
 ```
@@ -219,23 +219,23 @@ If that does not resolve your problem, you may have a tooling version mismatch. 
 should provide some information. Otherwise, do not hesitate to create an issue on Github to get some help.
 
 ### Running `bundle install` has modified `Gemfile.lock`
-This is likely happening because you don't have Ruby 2.7.1. Confirm by running `git diff`. If you see something like this:
+This is likely happening because you don't have Ruby 3.3.9. Confirm by running `git diff`. If you see something like this:
 ```diff
  RUBY VERSION
--   ruby 2.7.1
-+   ruby 2.4.0p0
+-   ruby 3.3.9
++   ruby 2.7.1p83
 ```
 it confirms that you need to upgrade Ruby. To do so, run the following commands:
 ```shell
 # Install the correct version of Ruby and set it as the global default
-rbenv install 2.7.1
-rbenv global 2.7.1
+rbenv install 3.3.9
+rbenv global 3.3.9
 
-# Uninstall the previous version of Ruby
-rbenv uninstall 2.4.0
+# Uninstall the previous version of Ruby (optional)
+rbenv uninstall 2.7.1
 
 # Install the dependencies for the new Ruby version
-gem install bundler:2.3.14
+gem install bundler
 bundle install
 ```
 After this, there shouldn't be changes in `Gemfile.lock`.
