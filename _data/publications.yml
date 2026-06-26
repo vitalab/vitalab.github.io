@@ -455,10 +455,15 @@ database for machine learning dMRI tractography'
 conference_list_title: Conference papers
 conference:
 
+  - authors: 'A. Théberge, P-M. Jodoin, M. Descoteaux, D. Jones'
+    year: 2026
+    title: 'TTL-FOD2: Reinforcement-Learning Tractography That Works with Clinical-Scale Diffusion Directions'
+    conference : ISMRM White Matter & Diffusion Study Groups: 24 Hours of Microstructure (ORAL)
+
   - authors: 'A. Theberge, P-M. Jodoin, M. Descoteaux, D. Jones'
     year: 2026
     title: 'TTL-FOD2: Few Directions, Better Tracking'
-    conference : ISMRM  
+    conference : ISMRM
   
   - authors: 'Pierrard B, Sdika M, and Jodoin P-M'
     year: 2026
