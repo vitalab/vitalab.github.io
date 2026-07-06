@@ -72,6 +72,8 @@ Humans are involved at 5 points (papers, codeblocks, idea selection, comments, f
 
 CodeScientist is a nice step toward broader automated discovery: grounding ideation in a *combination* of literature and executable codeblocks pushes the system past mere benchmark tweaking and lets it propose genuinely diverse artifacts (new tasks, metrics, agents).
 
+**Question**: Is the space moving so fast that this method/paper is obsolete? Claude Code does not seem to have some of the issues mentionned such as experiment builder failures. Idea diversity may not be resolved however, in my opinion.
+
 Only relying on conference-style paper review is insufficient for code-based discovery, since more than half of the paper-approved results fell apart under code inspection.
 
 That same result is the main cautionary note: the effective yield is low (6 incremental discoveries from 250 runs), and faithfulness bugs are hard to detect at scale, so the human-in-the-loop steps (idea selection, comments, code-level validation) remain load-bearing rather than optional.
