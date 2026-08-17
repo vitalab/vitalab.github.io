@@ -31,28 +31,28 @@ journal:
     journal: under review at IEEE Transactions on Image Processing
     pages: 1-12
 
-  - authors: 'F. Sinzinger, Antoine Théberge, P-M. Jodoin, M. Descoteaux, R Moreno'
-    year: 2026
-    title: 'Leveraging Rotational Equivariance for Reinforcement Learning in Tractography'
-    journal: Submitted to Medical Image Analysis
-    pages: 1-28
-
   - authors: 'G. Girard, M. Edde, F. Dumais, Y. David, M. Dumont, G. Theaud, J-C. Houde, A. Bore, M.Descoteaux, P-M. Jodoin'
     year: 2026
     title: 'Clinical-ComBAT: a diffusion-weighted MRI harmonization method for clinical applications'
     journal: submitted to Medical Image Analysis
     pages: 1-17
 
+  - authors: 'F. Sinzinger, Antoine Théberge, P-M. Jodoin, M. Descoteaux, R Moreno'
+    year: 2026
+    title: 'Leveraging Rotational Equivariance for Reinforcement Learning in Tractography'
+    journal: Medical Image Analysis, vol 114
+    pages: 1-28
+
   - authors: 'A. Judge, N. Duchateau, T. Judge, R.A. Sandler, J.Z. Sokol, C. Desrosiers, O. Bernard, and P.-M. Jodoin'
     year: 2026
     title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation'
-    journal: accepted at IEEE transactions on Medical Imaging
-    pages: 1-12
+    journal: IEEE Transactions on Medical Imaging, 45(7)
+    pages: 4161-4173
 
   - authors: 'A Théberge, Z El Yamani, M Barakovic, S Magon, J Yuan-Mou Yang, M Descoteaux, F. Rheault, P-M Jodoin'
     year: 2026
     title: 'BundleParc: Consistent White Matter Bundle Parcellation without Tractography'
-    journal: accepted at Medical Image Analysis
+    journal: Medical Image Analysis, vol 112, 104087
     pages: 1-19
 
   - authors: ' P-M Jodoin, M. Edde, G. Girard, F. Dumais, G. Theaud, M. Dumont, J-C. Houde, Y. David, M. Descoteaux'
